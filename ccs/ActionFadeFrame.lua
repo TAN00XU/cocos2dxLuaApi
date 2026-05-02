@@ -1,0 +1,53 @@
+﻿---@meta
+
+---@diagnostic disable: lowercase-global, missing-return, unused-local
+
+--- Cocos API 类：`ccs.ActionFadeFrame`。
+--- 继承：`ccs.ActionFrame`。
+---@class ccs.ActionFadeFrame : ccs.ActionFrame
+local ActionFadeFrame = {}
+ccs.ActionFadeFrame = ActionFadeFrame
+
+--- 获取 `ccs.ActionFadeFrame:getOpacity` 对应的值。
+---
+--- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
+---
+--- 返回说明：
+--- - `integer`：获取到的 整数值。
+---@return integer 获取到的 整数值。
+function ActionFadeFrame:getOpacity() end
+
+--- 获取 `ccs.ActionFadeFrame:getAction` 对应的值。
+---
+--- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
+---
+--- 参数说明：
+--- - `duration`：持续时间。类型为 `number`。
+---
+--- 返回说明：
+--- - `cc.ActionInterval`：获取到的 `cc.ActionInterval` 对象或值。
+---@param duration number 持续时间。类型为 `number`。
+---@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
+function ActionFadeFrame:getAction(duration) end
+
+--- 设置 `ccs.ActionFadeFrame:setOpacity` 对应的值。
+---
+--- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
+---
+--- 参数说明：
+--- - `opacity`：透明度。类型为 `integer`。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@param opacity integer 透明度。类型为 `integer`。
+---@return self 当前对象，便于链式调用。
+function ActionFadeFrame:setOpacity(opacity) end
+
+--- 调用 `ccs.ActionFadeFrame:ActionFadeFrame`。
+---
+--- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function ActionFadeFrame:ActionFadeFrame() end

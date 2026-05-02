@@ -1,0 +1,731 @@
+---@meta
+
+---@diagnostic disable: lowercase-global, missing-return, unused-local
+
+--- Cocos Lua API 提示入口文件。
+---
+--- 本文件提供全局命名空间、常用别名和常用结构表定义，配合其他类文件用于 EmmyLua 类型提示。
+
+--- `cc` 命名空间。
+---@class cc
+cc = cc or {}
+
+--- `ccui` 命名空间。
+---@class ccui
+ccui = ccui or {}
+
+--- `ccs` 命名空间。
+---@class ccs
+ccs = ccs or {}
+
+--- `ccb` 命名空间。
+---@class ccb
+ccb = ccb or {}
+
+--- `sp` 命名空间。
+---@class sp
+sp = sp or {}
+
+--- `tolua` 命名空间。
+---@class tolua
+tolua = tolua or {}
+
+--- Cocos 绑定中常见的整型别名。
+---@alias int integer
+
+--- Cocos 绑定中常见的无符号整型别名。
+---@alias unsigned_int integer
+
+--- Cocos 绑定中常见的无符号字节别名。
+---@alias unsigned_char integer
+
+--- Cocos 绑定中常见的浮点数别名。
+---@alias float number
+
+--- Cocos 绑定中常见的双精度浮点数别名。
+---@alias double number
+
+--- Cocos 绑定中常见的长整型别名。
+---@alias long integer
+
+--- 数组风格的 Lua 表。
+---@alias array_table table
+
+--- 键值映射风格的 Lua 表。
+---@alias map_table table
+
+--- 二维尺寸表。
+---@class size_table
+---@field width number 宽度。
+---@field height number 高度。
+
+--- 二维向量或坐标点表。
+---@class vec2_table
+---@field x number X 坐标。
+---@field y number Y 坐标。
+
+--- 二维坐标点表。
+---@class point_table
+---@field x number X 坐标。
+---@field y number Y 坐标。
+
+--- 三维向量或坐标点表。
+---@class vec3_table
+---@field x number X 坐标。
+---@field y number Y 坐标。
+---@field z number Z 坐标。
+
+--- 四维向量表。
+---@class vec4_table
+---@field x number X 分量。
+---@field y number Y 分量。
+---@field z number Z 分量。
+---@field w number W 分量。
+
+--- 矩形区域表。
+---@class rect_table
+---@field x number 左下角或原点的 X 坐标。
+---@field y number 左下角或原点的 Y 坐标。
+---@field width number 宽度。
+---@field height number 高度。
+
+--- 三通道 8 位颜色表。
+---@class color3b_table
+---@field r integer 红色通道，取值范围由引擎接口约定。
+---@field g integer 绿色通道，取值范围由引擎接口约定。
+---@field b integer 蓝色通道，取值范围由引擎接口约定。
+
+--- 四通道 8 位颜色表。
+---@class color4b_table
+---@field r integer 红色通道，取值范围由引擎接口约定。
+---@field g integer 绿色通道，取值范围由引擎接口约定。
+---@field b integer 蓝色通道，取值范围由引擎接口约定。
+---@field a integer 透明度通道，取值范围由引擎接口约定。
+
+--- 四通道浮点颜色表。
+---@class color4f_table
+---@field r number 红色通道。
+---@field g number 绿色通道。
+---@field b number 蓝色通道。
+---@field a number 透明度通道。
+
+--- 四阶矩阵表，具体字段布局遵循 Cocos 绑定约定。
+---@class mat4_table
+---@field [integer] number 矩阵元素。
+
+--- OpenGL 上下文属性表。
+---@class GLContextAttrs
+---@field redBits integer 红色通道位数。
+---@field greenBits integer 绿色通道位数。
+---@field blueBits integer 蓝色通道位数。
+---@field alphaBits integer 透明度通道位数。
+---@field depthBits integer 深度缓冲位数。
+---@field stencilBits integer 模板缓冲位数。
+---@field multisamplingCount integer 多重采样数量。
+
+--- Cocos v3 渲染程序对象。
+---@class cc.GLProgram
+
+--- Cocos v3 渲染程序状态对象。
+---@class cc.GLProgramState
+
+--- Cocos 二维点类型，常由 `cc.p` 创建。
+---@class cc.Point : vec2_table
+---@field x number X 坐标。
+---@field y number Y 坐标。
+
+--- Cocos 二维尺寸类型，常由 `cc.size` 创建。
+---@class cc.Size : size_table
+---@field width number 宽度。
+---@field height number 高度。
+
+--- Cocos 矩形类型，常由 `cc.rect` 创建。
+---@class cc.Rect : rect_table
+---@field x number 左下角或原点的 X 坐标。
+---@field y number 左下角或原点的 Y 坐标。
+---@field width number 宽度。
+---@field height number 高度。
+
+--- Cocos 三通道 8 位颜色类型，常由 `cc.c3b` 创建。
+---@class cc.Color3B : color3b_table
+---@field r integer 红色通道，通常为 0 到 255。
+---@field g integer 绿色通道，通常为 0 到 255。
+---@field b integer 蓝色通道，通常为 0 到 255。
+
+--- Cocos 四通道 8 位颜色类型，常由 `cc.c4b` 创建。
+---@class cc.Color4B : color4b_table
+---@field r integer 红色通道，通常为 0 到 255。
+---@field g integer 绿色通道，通常为 0 到 255。
+---@field b integer 蓝色通道，通常为 0 到 255。
+---@field a integer 透明度通道，通常为 0 到 255。
+
+--- Cocos 四通道浮点颜色类型，常由 `cc.c4f` 创建。
+---@class cc.Color4F : color4f_table
+---@field r number 红色通道，通常为 0 到 1。
+---@field g number 绿色通道，通常为 0 到 1。
+---@field b number 蓝色通道，通常为 0 到 1。
+---@field a number 透明度通道，通常为 0 到 1。
+
+--- 二维顶点结构。
+---@class cc.Vertex2F
+---@field x number X 坐标。
+---@field y number Y 坐标。
+
+--- 三维顶点结构。
+---@class cc.Vertex3F
+---@field x number X 坐标。
+---@field y number Y 坐标。
+---@field z number Z 坐标。
+
+--- 二维纹理坐标结构。
+---@class cc.Tex2F
+---@field u number U 纹理坐标。
+---@field v number V 纹理坐标。
+
+--- 点精灵顶点结构。
+---@class cc.PointSprite
+---@field pos cc.Point 顶点位置。
+---@field color cc.Color4B 顶点颜色。
+---@field size number 点大小。
+
+--- 混合函数结构。
+---@class (partial) cc.BlendFunc
+---@field src integer 源混合因子。
+---@field dst integer 目标混合因子。
+
+--- 二维仿射变换矩阵。
+---@class (partial) cc.AffineTransform
+---@field a number 矩阵 a 分量。
+---@field b number 矩阵 b 分量。
+---@field c number 矩阵 c 分量。
+---@field d number 矩阵 d 分量。
+---@field tx number X 平移分量。
+---@field ty number Y 平移分量。
+
+--- 下面是跨文件引用可能用到的前置类声明。
+---@class btCollisionShape
+---@class btRigidBody
+---@class btTypedConstraint
+---@class cc._ccBezierConfig
+---@class cc._ttfConfig
+---@class cc.AABB
+---@class cc.Action
+---@class cc.ActionCamera
+---@class cc.ActionEase
+---@class cc.ActionFloat
+---@class cc.ActionInstant
+---@class cc.ActionInterval
+---@class cc.ActionManager
+---@class cc.ActionTween
+---@class cc.AffineTransform
+---@class cc.AmbientLight
+---@class cc.Animate
+---@class cc.Animate3D
+---@class cc.Animation
+---@class cc.Animation3D
+---@class cc.Animation3DData
+---@class cc.AnimationCache
+---@class cc.AnimationFrame
+---@class cc.Application
+---@class cc.AssetsManager
+---@class cc.AssetsManagerEx
+---@class cc.AsyncTaskPool
+---@class cc.AtlasNode
+---@class cc.AttachNode
+---@class cc.AudioEngine
+---@class cc.AudioProfile
+---@class cc.AutoPolygon
+---@class cc.backend.Buffer
+---@class cc.backend.Program
+---@class cc.backend.ProgramState
+---@class cc.backend.SamplerDescripto
+---@class cc.backend.SamplerDescriptor
+---@class cc.backend.ShaderCache
+---@class cc.backend.ShaderModule
+---@class cc.backend.Texture2DBackend
+---@class cc.backend.TextureBacken
+---@class cc.backend.TextureBackend
+---@class cc.backend.TextureCubemapBackend
+---@class cc.backend.TextureDescriptor
+---@class cc.backend.UniformLocation
+---@class cc.backend.VertexLayout
+---@class cc.BaseLight
+---@class cc.BezierBy
+---@class cc.BezierTo
+---@class cc.BillBoard
+---@class cc.BlendFunc
+---@class cc.Blink
+---@class cc.Bone3D
+---@class cc.Bundle3D
+---@class cc.CallFunc
+---@class cc.Camer
+---@class cc.Camera
+---@class cc.CameraBackgroundBrush
+---@class cc.CameraBackgroundColorBrush
+---@class cc.CameraBackgroundDepthBrush
+---@class cc.CameraBackgroundSkyBoxBrush
+---@class cc.CardinalSplineBy
+---@class cc.CardinalSplineTo
+---@class cc.CatmullRomBy
+---@class cc.CatmullRomTo
+---@class cc.ClippingNode
+---@class cc.ClippingRectangleNode
+---@class cc.Component
+---@class cc.ComponentLua
+---@class cc.Console
+---@class cc.Control
+---@class cc.ControlButton
+---@class cc.ControlColourPicker
+---@class cc.ControlHuePicker
+---@class cc.Controller
+---@class cc.ControlPotentiometer
+---@class cc.ControlSaturationBrightnessPicker
+---@class cc.ControlSlider
+---@class cc.ControlStepper
+---@class cc.ControlSwitch
+---@class cc.CSLoader
+---@class cc.DelayTime
+---@class cc.Device
+---@class cc.DirectionLight
+---@class cc.Director
+---@class cc.DrawNode
+---@class cc.EaseBackIn
+---@class cc.EaseBackInOut
+---@class cc.EaseBackOut
+---@class cc.EaseBezierAction
+---@class cc.EaseBounce
+---@class cc.EaseBounceIn
+---@class cc.EaseBounceInOut
+---@class cc.EaseBounceOut
+---@class cc.EaseCircleActionIn
+---@class cc.EaseCircleActionInOut
+---@class cc.EaseCircleActionOut
+---@class cc.EaseCubicActionIn
+---@class cc.EaseCubicActionInOut
+---@class cc.EaseCubicActionOut
+---@class cc.EaseElastic
+---@class cc.EaseElasticIn
+---@class cc.EaseElasticInOut
+---@class cc.EaseElasticOut
+---@class cc.EaseExponentialIn
+---@class cc.EaseExponentialInOut
+---@class cc.EaseExponentialOut
+---@class cc.EaseIn
+---@class cc.EaseInOut
+---@class cc.EaseOut
+---@class cc.EaseQuadraticActionIn
+---@class cc.EaseQuadraticActionInOut
+---@class cc.EaseQuadraticActionOut
+---@class cc.EaseQuarticActionIn
+---@class cc.EaseQuarticActionInOut
+---@class cc.EaseQuarticActionOut
+---@class cc.EaseQuinticActionIn
+---@class cc.EaseQuinticActionInOut
+---@class cc.EaseQuinticActionOut
+---@class cc.EaseRateAction
+---@class cc.EaseSineIn
+---@class cc.EaseSineInOut
+---@class cc.EaseSineOut
+---@class cc.Event
+---@class cc.EventAcceleration
+---@class cc.EventAssetsManagerEx
+---@class cc.EventController
+---@class cc.EventCustom
+---@class cc.EventDispatcher
+---@class cc.EventFocus
+---@class cc.EventKeyboard
+---@class cc.EventListener
+---@class cc.EventListenerAcceleration
+---@class cc.EventListenerAssetsManagerEx
+---@class cc.EventListenerController
+---@class cc.EventListenerCustom
+---@class cc.EventListenerFocus
+---@class cc.EventListenerKeyboard
+---@class cc.EventListenerMouse
+---@class cc.EventListenerPhysicsContact
+---@class cc.EventListenerPhysicsContactWithBodies
+---@class cc.EventListenerPhysicsContactWithGroup
+---@class cc.EventListenerPhysicsContactWithShapes
+---@class cc.EventListenerTouchAllAtOnce
+---@class cc.EventListenerTouchOneByOne
+---@class cc.EventMouse
+---@class cc.EventTouch
+---@class cc.FadeIn
+---@class cc.FadeOut
+---@class cc.FadeOutBLTiles
+---@class cc.FadeOutDownTiles
+---@class cc.FadeOutTRTiles
+---@class cc.FadeOutUpTiles
+---@class cc.FadeTo
+---@class cc.FastTMXLayer
+---@class cc.FastTMXTiledMap
+---@class cc.FileUtils
+---@class cc.FiniteTimeAction
+---@class cc.FlipX
+---@class cc.FlipX3D
+---@class cc.FlipY
+---@class cc.FlipY3D
+---@class cc.Follow
+---@class cc.FontAtlas
+---@class cc.FontDefinition
+---@class cc.GLView
+---@class cc.GLViewImpl
+---@class cc.Grid3D
+---@class cc.Grid3DAction
+---@class cc.GridAction
+---@class cc.GridBase
+---@class cc.Hide
+---@class cc.Image
+---@class cc.IMEKeyboardNotificationInfo
+---@class cc.JumpBy
+---@class cc.JumpTiles3D
+---@class cc.JumpTo
+---@class cc.Label
+---@class cc.LabelAtlas
+---@class cc.Layer
+---@class cc.LayerColor
+---@class cc.LayerGradient
+---@class cc.LayerMultiplex
+---@class cc.LayerRadialGradient
+---@class cc.Lens3D
+---@class cc.Liquid
+---@class cc.Manifest
+---@class cc.Material
+---@class cc.MaterialDatas
+---@class cc.Menu
+---@class cc.MenuItem
+---@class cc.MenuItemAtlasFont
+---@class cc.MenuItemFont
+---@class cc.MenuItemImage
+---@class cc.MenuItemLabel
+---@class cc.MenuItemSprite
+---@class cc.MenuItemToggle
+---@class cc.Mesh
+---@class cc.MeshComman
+---@class cc.MeshCommand
+---@class cc.MeshIndexData
+---@class cc.MeshSkin
+---@class cc.MeshVertexAttrib
+---@class cc.MotionStreak
+---@class cc.MotionStreak3D
+---@class cc.MoveBy
+---@class cc.MoveTo
+---@class cc.NavMesh
+---@class cc.NavMeshAgent
+---@class cc.NavMeshAgentParam
+---@class cc.NavMeshObstacle
+---@class cc.Node
+---@class cc.NodeDatas
+---@class cc.NodeGrid
+---@class cc.OffMeshLinkData
+---@class cc.OrbitCamera
+---@class cc.PageTurn3D
+---@class cc.ParallaxNode
+---@class cc.Particle3DAffector
+---@class cc.Particle3DEmitter
+---@class cc.Particle3DRender
+---@class cc.ParticleBatchNode
+---@class cc.ParticleData
+---@class cc.ParticleExplosion
+---@class cc.ParticleFire
+---@class cc.ParticleFireworks
+---@class cc.ParticleFlower
+---@class cc.ParticleGalaxy
+---@class cc.ParticleMeteor
+---@class cc.ParticleRain
+---@class cc.ParticleSmoke
+---@class cc.ParticleSnow
+---@class cc.ParticleSpiral
+---@class cc.ParticleSun
+---@class cc.ParticleSystem
+---@class cc.ParticleSystem3D
+---@class cc.ParticleSystemQuad
+---@class cc.Pass
+---@class cc.Physics3D6DofConstraint
+---@class cc.Physics3DComponent
+---@class cc.Physics3DConeTwistConstraint
+---@class cc.Physics3DConstraint
+---@class cc.Physics3DHingeConstraint
+---@class cc.Physics3DObject
+---@class cc.Physics3DPointToPointConstraint
+---@class cc.Physics3DRigidBody
+---@class cc.Physics3DRigidBodyDes
+---@class cc.Physics3DShape
+---@class cc.Physics3DSliderConstraint
+---@class cc.Physics3DWorld
+---@class cc.PhysicsBody
+---@class cc.PhysicsContact
+---@class cc.PhysicsContactData
+---@class cc.PhysicsContactPostSolve
+---@class cc.PhysicsContactPreSolve
+---@class cc.PhysicsJoint
+---@class cc.PhysicsJointDistance
+---@class cc.PhysicsJointFixed
+---@class cc.PhysicsJointGear
+---@class cc.PhysicsJointGroove
+---@class cc.PhysicsJointLimit
+---@class cc.PhysicsJointMotor
+---@class cc.PhysicsJointPin
+---@class cc.PhysicsJointRatchet
+---@class cc.PhysicsJointRotaryLimit
+---@class cc.PhysicsJointRotarySpring
+---@class cc.PhysicsJointSpring
+---@class cc.PhysicsMaterial
+---@class cc.PhysicsShape
+---@class cc.PhysicsShapeBox
+---@class cc.PhysicsShapeCircle
+---@class cc.PhysicsShapeEdgeBox
+---@class cc.PhysicsShapeEdgeChain
+---@class cc.PhysicsShapeEdgePolygon
+---@class cc.PhysicsShapeEdgeSegment
+---@class cc.PhysicsShapePolygon
+---@class cc.PhysicsSprite3D
+---@class cc.PhysicsWorld
+---@class cc.Place
+---@class cc.PointLight
+---@class cc.PolygonInfo
+---@class cc.ProgressFromTo
+---@class cc.ProgressTimer
+---@class cc.ProgressTo
+---@class cc.Properties
+---@class cc.ProtectedNode
+---@class cc.PUBehaviour
+---@class cc.PUEmitter
+---@class cc.PUListener
+---@class cc.PUObserver
+---@class cc.PUParticle3D
+---@class cc.PUParticleSystem3D
+---@class cc.Quaternion
+---@class cc.Ref
+---@class cc.RemoveSelf
+---@class cc.RenderCommand
+---@class cc.Renderer
+---@class cc.RenderState
+---@class cc.RenderTexture
+---@class cc.Repeat
+---@class cc.RepeatForever
+---@class cc.ResourceData
+---@class cc.ReuseGrid
+---@class cc.Ripple3D
+---@class cc.RotateBy
+---@class cc.RotateTo
+---@class cc.ScaleBy
+---@class cc.ScaleTo
+---@class cc.Scene
+---@class cc.Scheduler
+---@class cc.ScissorRect
+---@class cc.ScrollView
+---@class cc.Sequence
+---@class cc.ShaderCache
+---@class cc.Shaky3D
+---@class cc.ShakyTiles3D
+---@class cc.ShatteredTiles3D
+---@class cc.Show
+---@class cc.ShuffleTiles
+---@class cc.Skeleton3D
+---@class cc.SkewBy
+---@class cc.SkewTo
+---@class cc.SkinData
+---@class cc.Skybox
+---@class cc.Spawn
+---@class cc.Speed
+---@class cc.SplitCols
+---@class cc.SplitRows
+---@class cc.SpotLight
+---@class cc.Sprite
+---@class cc.Sprite3D
+---@class cc.Sprite3DCache
+---@class cc.Sprite3DMaterial
+---@class cc.SpriteBatchNode
+---@class cc.SpriteFrame
+---@class cc.SpriteFrameCache
+---@class cc.StopGrid
+---@class cc.TableView
+---@class cc.TableViewCell
+---@class cc.TargetedAction
+---@class cc.Technique
+---@class cc.Terrain
+---@class cc.Terrain.DetailMap
+---@class cc.Terrain.TerrainData
+---@class cc.Texture2D
+---@class cc.TextureAtlas
+---@class cc.TextureCache
+---@class cc.TextureCub
+---@class cc.TextureCube
+---@class cc.TiledGrid3D
+---@class cc.TiledGrid3DAction
+---@class cc.TileMapAtlas
+---@class cc.Timer
+---@class cc.TintBy
+---@class cc.TintTo
+---@class cc.TMXLayer
+---@class cc.TMXLayerInfo
+---@class cc.TMXMapInfo
+---@class cc.TMXObjectGroup
+---@class cc.TMXTiledMap
+---@class cc.TMXTilesetInfo
+---@class cc.ToggleVisibility
+---@class cc.Touch
+---@class cc.TransitionCrossFade
+---@class cc.TransitionEaseScene
+---@class cc.TransitionFade
+---@class cc.TransitionFadeBL
+---@class cc.TransitionFadeDown
+---@class cc.TransitionFadeTR
+---@class cc.TransitionFadeUp
+---@class cc.TransitionFlipAngular
+---@class cc.TransitionFlipX
+---@class cc.TransitionFlipY
+---@class cc.TransitionJumpZoom
+---@class cc.TransitionMoveInB
+---@class cc.TransitionMoveInL
+---@class cc.TransitionMoveInR
+---@class cc.TransitionMoveInT
+---@class cc.TransitionPageTurn
+---@class cc.TransitionProgress
+---@class cc.TransitionProgressHorizontal
+---@class cc.TransitionProgressInOut
+---@class cc.TransitionProgressOutIn
+---@class cc.TransitionProgressRadialCCW
+---@class cc.TransitionProgressRadialCW
+---@class cc.TransitionProgressVertical
+---@class cc.TransitionRotoZoom
+---@class cc.TransitionScene
+---@class cc.TransitionSceneOriented
+---@class cc.TransitionShrinkGrow
+---@class cc.TransitionSlideInB
+---@class cc.TransitionSlideInL
+---@class cc.TransitionSlideInR
+---@class cc.TransitionSlideInT
+---@class cc.TransitionSplitCols
+---@class cc.TransitionSplitRows
+---@class cc.TransitionTurnOffTiles
+---@class cc.TransitionZoomFlipAngular
+---@class cc.TransitionZoomFlipX
+---@class cc.TransitionZoomFlipY
+---@class cc.TrianglesCommand.Triangles
+---@class cc.TurnOffTiles
+---@class cc.Twirl
+---@class cc.UserDefault
+---@class cc.V3F_C4B_T2F_Quad
+---@class cc.Value
+---@class cc.VertexAttribBinding
+---@class cc.Viewport
+---@class cc.Waves
+---@class cc.Waves3D
+---@class cc.WavesTiles3D
+---@class ccb.Program
+---@class ccb.ProgramState
+---@class ccb.Texture2DBackend
+---@class ccb.TextureBackend
+---@class ccb.TextureCubemapBackend
+---@class ccb.VertexLayout
+---@class ccs.ActionFadeFrame
+---@class ccs.ActionFrame
+---@class ccs.ActionManagerEx
+---@class ccs.ActionMoveFrame
+---@class ccs.ActionNode
+---@class ccs.ActionObject
+---@class ccs.ActionRotationFrame
+---@class ccs.ActionScaleFrame
+---@class ccs.ActionTimeline
+---@class ccs.ActionTimelineCache
+---@class ccs.ActionTimelineData
+---@class ccs.ActionTimelineNode
+---@class ccs.ActionTintFrame
+---@class ccs.AlphaFrame
+---@class ccs.AnchorPointFrame
+---@class ccs.AnimationData
+---@class ccs.AnimationInfo
+---@class ccs.Armature
+---@class ccs.ArmatureAnimation
+---@class ccs.ArmatureData
+---@class ccs.ArmatureDataManager
+---@class ccs.ArmatureDisplayData
+---@class ccs.BaseData
+---@class ccs.BatchNode
+---@class ccs.BlendFuncFrame
+---@class ccs.Bone
+---@class ccs.BoneData
+---@class ccs.BoneNode
+---@class ccs.ColliderDetector
+---@class ccs.ColorFrame
+---@class ccs.ComAttribute
+---@class ccs.ComAudio
+---@class ccs.ComController
+---@class ccs.ComExtensionData
+---@class ccs.ComRender
+---@class ccs.ContourData
+---@class ccs.DisplayData
+---@class ccs.DisplayManager
+---@class ccs.EventFrame
+---@class ccs.Frame
+---@class ccs.FrameData
+---@class ccs.GUIReader
+---@class ccs.InnerActionFrame
+---@class ccs.MovementBoneData
+---@class ccs.MovementData
+---@class ccs.ParticleDisplayData
+---@class ccs.PlayableFrame
+---@class ccs.PositionFrame
+---@class ccs.RotationFrame
+---@class ccs.RotationSkewFrame
+---@class ccs.ScaleFrame
+---@class ccs.SceneReader
+---@class ccs.SkeletonNode
+---@class ccs.SkewFrame
+---@class ccs.Skin
+---@class ccs.SpriteDisplayData
+---@class ccs.TextureData
+---@class ccs.TextureFrame
+---@class ccs.Timeline
+---@class ccs.Tween
+---@class ccs.VisibleFrame
+---@class ccs.ZOrderFrame
+---@class ccui.AbstractCheckButton
+---@class ccui.Button
+---@class ccui.CheckBox
+---@class ccui.EditBox
+---@class ccui.HBox
+---@class ccui.Helper
+---@class ccui.ImageView
+---@class ccui.Layout
+---@class ccui.LayoutComponent
+---@class ccui.LayoutParameter
+---@class ccui.LinearLayoutParameter
+---@class ccui.ListView
+---@class ccui.LoadingBar
+---@class ccui.PageView
+---@class ccui.RadioButton
+---@class ccui.RadioButtonGroup
+---@class ccui.RelativeBox
+---@class ccui.RelativeLayoutParameter
+---@class ccui.RichElement
+---@class ccui.RichElementCustomNode
+---@class ccui.RichElementImage
+---@class ccui.RichElementNewLine
+---@class ccui.RichElementText
+---@class ccui.RichText
+---@class ccui.Scale9Sprite
+---@class ccui.ScrollView
+---@class ccui.Slider
+---@class ccui.TabControl
+---@class ccui.TabHeader
+---@class ccui.Text
+---@class ccui.TextAtlas
+---@class ccui.TextBMFont
+---@class ccui.TextField
+---@class ccui.VBox
+---@class ccui.VideoPlayer
+---@class ccui.WebView
+---@class ccui.Widget
+---@class color3b_tabl
+---@class cpBody
+---@class sp.SkeletonAnimation
+---@class sp.SkeletonRenderer
+---@class spAnimation
+---@class spAtlas
+---@class spSkeleton
+---@class spSkeletonData
+---@class spTrackEntry
+---@class spVertexEffect

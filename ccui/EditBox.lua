@@ -530,17 +530,6 @@ function EditBox:setTextHorizontalAlignment(alignment) end
 ---@return self 当前对象，便于链式调用。
 function EditBox:create(size, normalImage, pressedImage, disabledImage, texType) end
 
---- 设置 `ccui.EditBox:setAnchorPoint` 对应的值。
----
---- 参数说明：
---- - `anchorPoint`：参数 `anchorPoint`，类型为 `vec2_table`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param anchorPoint vec2_table 参数 `anchorPoint`，类型为 `vec2_table`。
----@return self 当前对象，便于链式调用。
-function EditBox:setAnchorPoint(anchorPoint) end
-
 --- 调用 `ccui.EditBox:draw`。
 ---
 --- 参数说明：
@@ -562,39 +551,6 @@ function EditBox:draw(renderer, parentTransform, parentFlags) end
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function EditBox:getDescription() end
-
---- 设置 `ccui.EditBox:setPosition` 对应的值。
----
---- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
----@return self 当前对象，便于链式调用。
-function EditBox:setPosition(pos) end
-
---- 设置 `ccui.EditBox:setVisible` 对应的值。
----
---- 参数说明：
---- - `visible`：是否可见。类型为 `boolean`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param visible boolean 是否可见。类型为 `boolean`。
----@return self 当前对象，便于链式调用。
-function EditBox:setVisible(visible) end
-
---- 设置 `ccui.EditBox:setContentSize` 对应的值。
----
---- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param size size_table 尺寸。类型为 `size_table`。
----@return self 当前对象，便于链式调用。
-function EditBox:setContentSize(size) end
 
 --- 调用 `ccui.EditBox:EditBox`。
 ---

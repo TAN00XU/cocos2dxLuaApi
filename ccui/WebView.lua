@@ -179,17 +179,6 @@ function WebView:create() end
 ---@return self 当前对象，便于链式调用。
 function WebView:onEnter() end
 
---- 设置 `ccui.WebView:setVisible` 对应的值。
----
---- 参数说明：
---- - `visible`：是否可见。类型为 `boolean`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param visible boolean 是否可见。类型为 `boolean`。
----@return self 当前对象，便于链式调用。
-function WebView:setVisible(visible) end
-
 --- 调用 `ccui.WebView:onExit`。
 ---
 --- 返回说明：

@@ -224,17 +224,6 @@ function VideoPlayer:onExit() end
 ---@return self 当前对象，便于链式调用。
 function VideoPlayer:resume() end
 
---- 设置 `ccui.VideoPlayer:setVisible` 对应的值。
----
---- 参数说明：
---- - `visible`：是否可见。类型为 `boolean`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param visible boolean 是否可见。类型为 `boolean`。
----@return self 当前对象，便于链式调用。
-function VideoPlayer:setVisible(visible) end
-
 --- 调用 `ccui.VideoPlayer:VideoPlayer`。
 ---
 --- 返回说明：

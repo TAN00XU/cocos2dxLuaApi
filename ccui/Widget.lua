@@ -782,17 +782,6 @@ function Widget:setScale(scalex, scaley) end
 ---@return boolean 初始化是否成功。
 function Widget:init() end
 
---- 设置 `ccui.Widget:setPosition` 对应的值。
----
---- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
----@return self 当前对象，便于链式调用。
-function Widget:setPosition(pos) end
-
 --- 设置 `ccui.Widget:setContentSize` 对应的值。
 ---
 --- 参数说明：

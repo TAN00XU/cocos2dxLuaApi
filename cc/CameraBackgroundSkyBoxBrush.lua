@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local CameraBackgroundSkyBoxBrush = {}
 cc.CameraBackgroundSkyBoxBrush = CameraBackgroundSkyBoxBrush
 
 --- 设置 `cc.CameraBackgroundSkyBoxBrush:setTextureValid` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `valid`：参数 `valid`，类型为 `boolean`。
@@ -23,8 +21,6 @@ function CameraBackgroundSkyBoxBrush:setTextureValid(valid) end
 
 --- 设置 `cc.CameraBackgroundSkyBoxBrush:setTexture` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.TextureCube`。
 ---
@@ -35,8 +31,6 @@ function CameraBackgroundSkyBoxBrush:setTextureValid(valid) end
 function CameraBackgroundSkyBoxBrush:setTexture(texture) end
 
 --- 设置 `cc.CameraBackgroundSkyBoxBrush:setActived` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `actived`：参数 `actived`，类型为 `boolean`。
@@ -49,16 +43,12 @@ function CameraBackgroundSkyBoxBrush:setActived(actived) end
 
 --- 判断 `cc.CameraBackgroundSkyBoxBrush:isActived` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function CameraBackgroundSkyBoxBrush:isActived() end
 
 --- 创建 `cc.CameraBackgroundSkyBoxBrush:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `positive_x`：参数 `positive_x`，类型为 `string`。
@@ -83,16 +73,12 @@ function CameraBackgroundSkyBoxBrush:create(positive_x, negative_x, positive_y, 
 
 --- 获取 `cc.CameraBackgroundSkyBoxBrush:getBrushType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function CameraBackgroundSkyBoxBrush:getBrushType() end
 
 --- 调用 `cc.CameraBackgroundSkyBoxBrush:drawBackground`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `camera`：参数 `camera`，类型为 `cc.Camera`。
@@ -105,8 +91,6 @@ function CameraBackgroundSkyBoxBrush:drawBackground(camera) end
 
 --- 初始化 `cc.CameraBackgroundSkyBoxBrush:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
@@ -114,16 +98,12 @@ function CameraBackgroundSkyBoxBrush:init() end
 
 --- 判断 `cc.CameraBackgroundSkyBoxBrush:isValid` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function CameraBackgroundSkyBoxBrush:isValid() end
 
 --- 调用 `cc.CameraBackgroundSkyBoxBrush:CameraBackgroundSkyBoxBrush`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

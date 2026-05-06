@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.TransitionSplitCols = TransitionSplitCols
 
 --- 调用 `cc.TransitionSplitCols:action`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
 ---@return cc.ActionInterval `cc.ActionInterval` 对象或值。
 function TransitionSplitCols:action() end
 
 --- 调用 `cc.TransitionSplitCols:easeActionWithAction`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -31,8 +27,6 @@ function TransitionSplitCols:action() end
 function TransitionSplitCols:easeActionWithAction(action) end
 
 --- 创建 `cc.TransitionSplitCols:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -46,8 +40,6 @@ function TransitionSplitCols:easeActionWithAction(action) end
 function TransitionSplitCols:create(t, scene) end
 
 --- 调用 `cc.TransitionSplitCols:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -63,8 +55,6 @@ function TransitionSplitCols:create(t, scene) end
 function TransitionSplitCols:draw(renderer, transform, flags) end
 
 --- 调用 `cc.TransitionSplitCols:TransitionSplitCols`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TileMapAtlas = {}
 cc.TileMapAtlas = TileMapAtlas
 
 --- 初始化 `cc.TileMapAtlas:initWithTileFile` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tile`：参数 `tile`，类型为 `string`。
@@ -29,16 +27,12 @@ function TileMapAtlas:initWithTileFile(tile, mapFile, tileWidth, tileHeight) end
 
 --- 调用 `cc.TileMapAtlas:releaseMap`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TileMapAtlas:releaseMap() end
 
 --- 获取 `cc.TileMapAtlas:getTileAt` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `position`：位置坐标。类型为 `vec2_table`。
@@ -50,8 +44,6 @@ function TileMapAtlas:releaseMap() end
 function TileMapAtlas:getTileAt(position) end
 
 --- 设置 `cc.TileMapAtlas:setTile` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tile`：参数 `tile`，类型为 `color3b_table`。
@@ -65,8 +57,6 @@ function TileMapAtlas:getTileAt(position) end
 function TileMapAtlas:setTile(tile, position) end
 
 --- 创建 `cc.TileMapAtlas:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tile`：参数 `tile`，类型为 `string`。
@@ -84,8 +74,6 @@ function TileMapAtlas:setTile(tile, position) end
 function TileMapAtlas:create(tile, mapFile, tileWidth, tileHeight) end
 
 --- 调用 `cc.TileMapAtlas:TileMapAtlas`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

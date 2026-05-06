@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.Sequence = Sequence
 
 --- 初始化 `cc.Sequence:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `arrayOfActions`：参数 `arrayOfActions`，类型为 `array_table`。
 ---
@@ -22,8 +20,6 @@ cc.Sequence = Sequence
 function Sequence:init(arrayOfActions) end
 
 --- 初始化 `cc.Sequence:initWithTwoActions` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pActionOne`：参数 `pActionOne`，类型为 `cc.FiniteTimeAction`。
@@ -38,8 +34,6 @@ function Sequence:initWithTwoActions(pActionOne, pActionTwo) end
 
 --- 调用 `cc.Sequence:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -51,16 +45,12 @@ function Sequence:startWithTarget(target) end
 
 --- 调用 `cc.Sequence:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sequence:reverse() end
 
 --- 调用 `cc.Sequence:clone`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -69,16 +59,12 @@ function Sequence:clone() end
 
 --- 停止 `cc.Sequence:stop` 对应的流程。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sequence:stop() end
 
 --- 更新 `cc.Sequence:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -91,16 +77,12 @@ function Sequence:update(t) end
 
 --- 判断 `cc.Sequence:isDone` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Sequence:isDone() end
 
 --- 调用 `cc.Sequence:Sequence`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Pass = {}
 cc.Pass = Pass
 
 --- 设置 `cc.Pass:setUniformPointLightPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -25,8 +23,6 @@ function Pass:setUniformPointLightPosition(d, t) end
 
 --- 设置 `cc.Pass:setUniformDirLightDir` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -40,8 +36,6 @@ function Pass:setUniformDirLightDir(d, t) end
 
 --- 设置 `cc.Pass:setTechnique` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `technique`：参数 `technique`，类型为 `cc.Technique`。
 ---
@@ -53,16 +47,12 @@ function Pass:setTechnique(technique) end
 
 --- 获取 `cc.Pass:getVertexAttributeBinding` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.VertexAttribBinding`：获取到的 `cc.VertexAttribBinding` 对象或值。
 ---@return cc.VertexAttribBinding 获取到的 `cc.VertexAttribBinding` 对象或值。
 function Pass:getVertexAttributeBinding() end
 
 --- 设置 `cc.Pass:setUniformSpotLightOuterAngleCos` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -77,8 +67,6 @@ function Pass:setUniformSpotLightOuterAngleCos(d, t) end
 
 --- 设置 `cc.Pass:setUniformSpotLightDir` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -91,8 +79,6 @@ function Pass:setUniformSpotLightOuterAngleCos(d, t) end
 function Pass:setUniformSpotLightDir(d, t) end
 
 --- 设置 `cc.Pass:setUniformMatrixPalette` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -107,8 +93,6 @@ function Pass:setUniformMatrixPalette(d, t) end
 
 --- 设置 `cc.Pass:setName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
@@ -120,16 +104,12 @@ function Pass:setName(name) end
 
 --- 获取 `cc.Pass:getName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Pass:getName() end
 
 --- 设置 `cc.Pass:setUniformSpotLightRangeInverse` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -143,8 +123,6 @@ function Pass:getName() end
 function Pass:setUniformSpotLightRangeInverse(d, t) end
 
 --- 调用 `cc.Pass:clone`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -165,8 +143,6 @@ function Pass:clone() end
 function Pass:draw(meshCommand, globalZOrder, vertexBuffer, indexBuffer, primitive, indexFormat, indexCount, modelView) end
 --- 设置 `cc.Pass:setUniformPointLightRangeInverse` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -179,8 +155,6 @@ function Pass:draw(meshCommand, globalZOrder, vertexBuffer, indexBuffer, primiti
 function Pass:setUniformPointLightRangeInverse(d, t) end
 
 --- 设置 `cc.Pass:setUniformNormTexture` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `slot`：参数 `slot`，类型为 `integer`。
@@ -195,8 +169,6 @@ function Pass:setUniformNormTexture(slot, d) end
 
 --- 更新 `cc.Pass:updateMVPUniform` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `modelView`：参数 `modelView`，类型为 `mat4_table`。
 ---
@@ -208,16 +180,12 @@ function Pass:updateMVPUniform(modelView) end
 
 --- 获取 `cc.Pass:getProgramState` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.backend.ProgramState`：获取到的 `cc.backend.ProgramState` 对象或值。
 ---@return cc.backend.ProgramState 获取到的 `cc.backend.ProgramState` 对象或值。
 function Pass:getProgramState() end
 
 --- 设置 `cc.Pass:setUniformSpotLightColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -232,8 +200,6 @@ function Pass:setUniformSpotLightColor(d, t) end
 
 --- 设置 `cc.Pass:setUniformAmbientLigthColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -246,8 +212,6 @@ function Pass:setUniformSpotLightColor(d, t) end
 function Pass:setUniformAmbientLigthColor(d, t) end
 
 --- 设置 `cc.Pass:setUniformDirLightColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -262,8 +226,6 @@ function Pass:setUniformDirLightColor(d, t) end
 
 --- 设置 `cc.Pass:setUniformSpotLightPosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -277,8 +239,6 @@ function Pass:setUniformSpotLightPosition(d, t) end
 
 --- 设置 `cc.Pass:setVertexAttribBinding` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `binding`：参数 `binding`，类型为 `cc.VertexAttribBinding`。
 ---
@@ -289,8 +249,6 @@ function Pass:setUniformSpotLightPosition(d, t) end
 function Pass:setVertexAttribBinding(binding) end
 
 --- 设置 `cc.Pass:setUniformTexture` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `slot`：参数 `slot`，类型为 `integer`。
@@ -305,8 +263,6 @@ function Pass:setUniformTexture(slot, d) end
 
 --- 设置 `cc.Pass:setUniformSpotLightInnerAngleCos` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -319,8 +275,6 @@ function Pass:setUniformTexture(slot, d) end
 function Pass:setUniformSpotLightInnerAngleCos(d, t) end
 
 --- 设置 `cc.Pass:setUniformColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
@@ -335,8 +289,6 @@ function Pass:setUniformColor(d, t) end
 
 --- 设置 `cc.Pass:setUniformPointLightColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `nil`。
 --- - `t`：参数 `t`，类型为 `integer`。
@@ -350,8 +302,6 @@ function Pass:setUniformPointLightColor(d, t) end
 
 --- 创建 `cc.Pass:createWithProgramState` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `parent`：父节点对象。类型为 `cc.Technique`。
 --- - `programState`：参数 `programState`，类型为 `cc.backend.ProgramState`。
@@ -364,8 +314,6 @@ function Pass:setUniformPointLightColor(d, t) end
 function Pass:createWithProgramState(parent, programState) end
 
 --- 创建 `cc.Pass:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `parent`：父节点对象。类型为 `cc.Technique`。

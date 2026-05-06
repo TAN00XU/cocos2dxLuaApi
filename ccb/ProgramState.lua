@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ProgramState = {}
 ccb.ProgramState = ProgramState
 
 --- 设置 `ccb.ProgramState:setTexture` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `uniformLocation`：参数 `uniformLocation`，类型为 `cc.backend.UniformLocation`。
@@ -27,16 +25,12 @@ function ProgramState:setTexture(uniformLocation, slot, texture) end
 
 --- 调用 `ccb.ProgramState:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.backend.ProgramState`：`cc.backend.ProgramState` 对象或值。
 ---@return cc.backend.ProgramState `cc.backend.ProgramState` 对象或值。
 function ProgramState:clone() end
 
 --- 设置 `ccb.ProgramState:setParameterAutoBinding` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `uniformName`：参数 `uniformName`，类型为 `string`。
@@ -51,16 +45,12 @@ function ProgramState:setParameterAutoBinding(uniformName, autoBinding) end
 
 --- 获取 `ccb.ProgramState:getProgram` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.backend.Program`：获取到的 `cc.backend.Program` 对象或值。
 ---@return cc.backend.Program 获取到的 `cc.backend.Program` 对象或值。
 function ProgramState:getProgram() end
 
 --- 获取 `ccb.ProgramState:getAttributeLocation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -74,8 +64,6 @@ function ProgramState:getProgram() end
 function ProgramState:getAttributeLocation(name) end
 
 --- 调用 `ccb.ProgramState:ProgramState`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `program`：参数 `program`，类型为 `cc.backend.Program`。

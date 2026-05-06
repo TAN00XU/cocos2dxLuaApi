@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Material = {}
 cc.Material = Material
 
 --- 调用 `cc.Material:clone`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -31,16 +29,12 @@ function Material:clone() end
 function Material:draw(meshCommand, globalZOrder, vertexBuffer, indexBuffer, primitive, indexFormat, indexCount, modelView) end
 --- 获取 `cc.Material:getRenderState` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.RenderState`：获取到的 `cc.RenderState` 对象或值。
 ---@return cc.RenderState 获取到的 `cc.RenderState` 对象或值。
 function Material:getRenderState() end
 
 --- 设置 `cc.Material:setName` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -53,8 +47,6 @@ function Material:setName(name) end
 
 --- 获取 `cc.Material:getTechniqueByIndex` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
@@ -66,16 +58,12 @@ function Material:getTechniqueByIndex(index) end
 
 --- 获取 `cc.Material:getName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Material:getName() end
 
 --- 获取 `cc.Material:getTechniques` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
@@ -84,16 +72,12 @@ function Material:getTechniques() end
 
 --- 获取 `cc.Material:getTechniqueCount` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Material:getTechniqueCount() end
 
 --- 设置 `cc.Material:setTechnique` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `techniqueName`：参数 `techniqueName`，类型为 `string`。
@@ -106,8 +90,6 @@ function Material:setTechnique(techniqueName) end
 
 --- 获取 `cc.Material:getTechniqueByName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
@@ -118,8 +100,6 @@ function Material:setTechnique(techniqueName) end
 function Material:getTechniqueByName(name) end
 
 --- 添加 `cc.Material:addTechnique` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `technique`：参数 `technique`，类型为 `cc.Technique`。
@@ -132,16 +112,12 @@ function Material:addTechnique(technique) end
 
 --- 获取 `cc.Material:getTechnique` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Technique`：获取到的 `cc.Technique` 对象或值。
 ---@return cc.Technique 获取到的 `cc.Technique` 对象或值。
 function Material:getTechnique() end
 
 --- 创建 `cc.Material:createWithFilename` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
@@ -154,8 +130,6 @@ function Material:createWithFilename(path) end
 
 --- 创建 `cc.Material:createWithProperties` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `materialProperties`：参数 `materialProperties`，类型为 `cc.Properties`。
 ---
@@ -166,8 +140,6 @@ function Material:createWithFilename(path) end
 function Material:createWithProperties(materialProperties) end
 
 --- 创建 `cc.Material:createWithProgramState` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `programState`：参数 `programState`，类型为 `cc.backend.ProgramState`。

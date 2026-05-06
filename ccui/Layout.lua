@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Layout = {}
 ccui.Layout = Layout
 
 --- 设置 `ccui.Layout:setBackGroundColorVector` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `vector`：参数 `vector`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function Layout:setBackGroundColorVector(vector) end
 
 --- 设置 `ccui.Layout:setClippingType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
 ---
@@ -35,8 +31,6 @@ function Layout:setBackGroundColorVector(vector) end
 function Layout:setClippingType(type) end
 
 --- 设置 `ccui.Layout:setBackGroundColorType` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
@@ -49,8 +43,6 @@ function Layout:setBackGroundColorType(type) end
 
 --- 设置 `ccui.Layout:setLoopFocus` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `loop`：参数 `loop`，类型为 `boolean`。
 ---
@@ -61,8 +53,6 @@ function Layout:setBackGroundColorType(type) end
 function Layout:setLoopFocus(loop) end
 
 --- 设置 `ccui.Layout:setBackGroundImageColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -75,16 +65,12 @@ function Layout:setBackGroundImageColor(color) end
 
 --- 获取 `ccui.Layout:getBackGroundColorVector` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function Layout:getBackGroundColorVector() end
 
 --- 获取 `ccui.Layout:getClippingType` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -93,16 +79,12 @@ function Layout:getClippingType() end
 
 --- 获取 `ccui.Layout:getRenderFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function Layout:getRenderFile() end
 
 --- 判断 `ccui.Layout:isLoopFocus` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -111,16 +93,12 @@ function Layout:isLoopFocus() end
 
 --- 移除 `ccui.Layout:removeBackGroundImage` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Layout:removeBackGroundImage() end
 
 --- 获取 `ccui.Layout:getBackGroundColorOpacity` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -129,16 +107,12 @@ function Layout:getBackGroundColorOpacity() end
 
 --- 判断 `ccui.Layout:isClippingEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Layout:isClippingEnabled() end
 
 --- 设置 `ccui.Layout:setBackGroundImageOpacity` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `integer`。
@@ -150,8 +124,6 @@ function Layout:isClippingEnabled() end
 function Layout:setBackGroundImageOpacity(opacity) end
 
 --- 设置 `ccui.Layout:setBackGroundImage` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -165,8 +137,6 @@ function Layout:setBackGroundImageOpacity(opacity) end
 function Layout:setBackGroundImage(fileName, texType) end
 
 --- 设置 `ccui.Layout:setBackGroundColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `startColor`：参数 `startColor`，类型为 `color3b_table`。
@@ -183,16 +153,12 @@ function Layout:setBackGroundColor(startColor, endColor) end
 
 --- 调用 `ccui.Layout:requestDoLayout`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Layout:requestDoLayout() end
 
 --- 获取 `ccui.Layout:getBackGroundImageCapInsets` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
@@ -201,16 +167,12 @@ function Layout:getBackGroundImageCapInsets() end
 
 --- 获取 `ccui.Layout:getBackGroundColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color3b_table`：获取到的 Lua 表数据。
 ---@return color3b_table 获取到的 Lua 表数据。
 function Layout:getBackGroundColor() end
 
 --- 设置 `ccui.Layout:setClippingEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -223,16 +185,12 @@ function Layout:setClippingEnabled(enabled) end
 
 --- 获取 `ccui.Layout:getBackGroundImageColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color3b_table`：获取到的 Lua 表数据。
 ---@return color3b_table 获取到的 Lua 表数据。
 function Layout:getBackGroundImageColor() end
 
 --- 判断 `ccui.Layout:isBackGroundImageScale9Enabled` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -241,8 +199,6 @@ function Layout:isBackGroundImageScale9Enabled() end
 
 --- 获取 `ccui.Layout:getBackGroundColorType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -250,16 +206,12 @@ function Layout:getBackGroundColorType() end
 
 --- 获取 `ccui.Layout:getBackGroundEndColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color3b_table`：获取到的 Lua 表数据。
 ---@return color3b_table 获取到的 Lua 表数据。
 function Layout:getBackGroundEndColor() end
 
 --- 设置 `ccui.Layout:setBackGroundColorOpacity` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `integer`。
@@ -272,8 +224,6 @@ function Layout:setBackGroundColorOpacity(opacity) end
 
 --- 获取 `ccui.Layout:getBackGroundImageOpacity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -281,16 +231,12 @@ function Layout:getBackGroundImageOpacity() end
 
 --- 判断 `ccui.Layout:isPassFocusToChild` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Layout:isPassFocusToChild() end
 
 --- 设置 `ccui.Layout:setBackGroundImageCapInsets` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -303,16 +249,12 @@ function Layout:setBackGroundImageCapInsets(capInsets) end
 
 --- 获取 `ccui.Layout:getBackGroundImageTextureSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Layout:getBackGroundImageTextureSize() end
 
 --- 调用 `ccui.Layout:forceDoLayout`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -321,16 +263,12 @@ function Layout:forceDoLayout() end
 
 --- 获取 `ccui.Layout:getLayoutType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Layout:getLayoutType() end
 
 --- 设置 `ccui.Layout:setPassFocusToChild` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pass`：参数 `pass`，类型为 `boolean`。
@@ -343,16 +281,12 @@ function Layout:setPassFocusToChild(pass) end
 
 --- 获取 `ccui.Layout:getBackGroundStartColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color3b_table`：获取到的 Lua 表数据。
 ---@return color3b_table 获取到的 Lua 表数据。
 function Layout:getBackGroundStartColor() end
 
 --- 设置 `ccui.Layout:setBackGroundImageScale9Enabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -365,8 +299,6 @@ function Layout:setBackGroundImageScale9Enabled(enabled) end
 
 --- 设置 `ccui.Layout:setLayoutType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
 ---
@@ -378,8 +310,6 @@ function Layout:setLayoutType(type) end
 
 --- 创建 `ccui.Layout:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -387,16 +317,12 @@ function Layout:create() end
 
 --- 创建 `ccui.Layout:createInstance` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
 ---@return cc.Ref 创建出的 `cc.Ref` 对象或值。
 function Layout:createInstance() end
 
 --- 添加 `ccui.Layout:addChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -417,16 +343,12 @@ function Layout:addChild(child, localZOrder, name) end
 
 --- 获取 `ccui.Layout:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Layout:getDescription() end
 
 --- 移除 `ccui.Layout:removeAllChildrenWithCleanup` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `cleanup`：是否清理关联资源。类型为 `boolean`。
@@ -439,16 +361,12 @@ function Layout:removeAllChildrenWithCleanup(cleanup) end
 
 --- 移除 `ccui.Layout:removeAllChildren` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Layout:removeAllChildren() end
 
 --- 调用 `ccui.Layout:findNextFocusedWidget`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `direction`：参数 `direction`，类型为 `integer`。
@@ -463,8 +381,6 @@ function Layout:findNextFocusedWidget(direction, current) end
 
 --- 移除 `ccui.Layout:removeChild` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
 --- - `cleanup`：是否清理关联资源。类型为 `boolean`。
@@ -478,16 +394,12 @@ function Layout:removeChild(child, cleanup) end
 
 --- 初始化 `ccui.Layout:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Layout:init() end
 
 --- 设置 `ccui.Layout:setCameraMask` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `mask`：参数 `mask`，类型为 `integer`。
@@ -502,8 +414,6 @@ function Layout:setCameraMask(mask, applyChildren) end
 
 --- 设置 `ccui.Layout:setGlobalZOrder` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `globalZOrder`：参数 `globalZOrder`，类型为 `number`。
 ---
@@ -514,8 +424,6 @@ function Layout:setCameraMask(mask, applyChildren) end
 function Layout:setGlobalZOrder(globalZOrder) end
 
 --- 调用 `ccui.Layout:Layout`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

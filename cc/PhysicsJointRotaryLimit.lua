@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.PhysicsJointRotaryLimit = PhysicsJointRotaryLimit
 
 --- 获取 `cc.PhysicsJointRotaryLimit:getMax` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -19,16 +17,12 @@ function PhysicsJointRotaryLimit:getMax() end
 
 --- 创建 `cc.PhysicsJointRotaryLimit:createConstraints` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：创建出的 布尔值。
 ---@return boolean 创建出的 布尔值。
 function PhysicsJointRotaryLimit:createConstraints() end
 
 --- 设置 `cc.PhysicsJointRotaryLimit:setMin` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `min`：参数 `min`，类型为 `number`。
@@ -41,8 +35,6 @@ function PhysicsJointRotaryLimit:setMin(min) end
 
 --- 设置 `cc.PhysicsJointRotaryLimit:setMax` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `max`：参数 `max`，类型为 `number`。
 ---
@@ -54,16 +46,12 @@ function PhysicsJointRotaryLimit:setMax(max) end
 
 --- 获取 `cc.PhysicsJointRotaryLimit:getMin` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointRotaryLimit:getMin() end
 
 --- 调用 `cc.PhysicsJointRotaryLimit:construct`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。

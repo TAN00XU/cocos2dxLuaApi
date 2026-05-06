@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TMXLayer = {}
 cc.TMXLayer = TMXLayer
 
 --- 获取 `cc.TMXLayer:getPositionAt` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tileCoordinate`：参数 `tileCoordinate`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function TMXLayer:getPositionAt(tileCoordinate) end
 
 --- 设置 `cc.TMXLayer:setLayerOrientation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `orientation`：参数 `orientation`，类型为 `integer`。
 ---
@@ -36,8 +32,6 @@ function TMXLayer:setLayerOrientation(orientation) end
 
 --- 调用 `cc.TMXLayer:releaseMap`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -45,16 +39,12 @@ function TMXLayer:releaseMap() end
 
 --- 获取 `cc.TMXLayer:getLayerSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function TMXLayer:getLayerSize() end
 
 --- 设置 `cc.TMXLayer:setMapTileSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -67,16 +57,12 @@ function TMXLayer:setMapTileSize(size) end
 
 --- 获取 `cc.TMXLayer:getLayerOrientation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function TMXLayer:getLayerOrientation() end
 
 --- 设置 `cc.TMXLayer:setProperties` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `properties`：参数 `properties`，类型为 `map_table`。
@@ -89,8 +75,6 @@ function TMXLayer:setProperties(properties) end
 
 --- 设置 `cc.TMXLayer:setLayerName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `layerName`：参数 `layerName`，类型为 `string`。
 ---
@@ -102,8 +86,6 @@ function TMXLayer:setLayerName(layerName) end
 
 --- 移除 `cc.TMXLayer:removeTileAt` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tileCoordinate`：参数 `tileCoordinate`，类型为 `vec2_table`。
 ---
@@ -114,8 +96,6 @@ function TMXLayer:setLayerName(layerName) end
 function TMXLayer:removeTileAt(tileCoordinate) end
 
 --- 初始化 `cc.TMXLayer:initWithTilesetInfo` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tilesetInfo`：参数 `tilesetInfo`，类型为 `cc.TMXTilesetInfo`。
@@ -132,16 +112,12 @@ function TMXLayer:initWithTilesetInfo(tilesetInfo, layerInfo, mapInfo) end
 
 --- 调用 `cc.TMXLayer:setupTiles`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TMXLayer:setupTiles() end
 
 --- 设置 `cc.TMXLayer:setTileGID` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `gid`：参数 `gid`，类型为 `integer`。
@@ -160,16 +136,12 @@ function TMXLayer:setTileGID(gid, tileCoordinate, flags) end
 
 --- 获取 `cc.TMXLayer:getMapTileSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function TMXLayer:getMapTileSize() end
 
 --- 获取 `cc.TMXLayer:getProperty` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `propertyName`：参数 `propertyName`，类型为 `string`。
@@ -182,8 +154,6 @@ function TMXLayer:getProperty(propertyName) end
 
 --- 设置 `cc.TMXLayer:setLayerSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
 ---
@@ -195,16 +165,12 @@ function TMXLayer:setLayerSize(size) end
 
 --- 获取 `cc.TMXLayer:getLayerName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function TMXLayer:getLayerName() end
 
 --- 设置 `cc.TMXLayer:setTileSet` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `info`：参数 `info`，类型为 `cc.TMXTilesetInfo`。
@@ -217,16 +183,12 @@ function TMXLayer:setTileSet(info) end
 
 --- 获取 `cc.TMXLayer:getTileSet` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.TMXTilesetInfo`：获取到的 `cc.TMXTilesetInfo` 对象或值。
 ---@return cc.TMXTilesetInfo 获取到的 `cc.TMXTilesetInfo` 对象或值。
 function TMXLayer:getTileSet() end
 
 --- 获取 `cc.TMXLayer:getProperties` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `map_table`：获取到的 Lua 表数据。
@@ -235,8 +197,6 @@ function TMXLayer:getTileSet() end
 function TMXLayer:getProperties() end
 
 --- 获取 `cc.TMXLayer:getTileAt` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tileCoordinate`：参数 `tileCoordinate`，类型为 `vec2_table`。
@@ -248,8 +208,6 @@ function TMXLayer:getProperties() end
 function TMXLayer:getTileAt(tileCoordinate) end
 
 --- 创建 `cc.TMXLayer:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tilesetInfo`：参数 `tilesetInfo`，类型为 `cc.TMXTilesetInfo`。
@@ -266,8 +224,6 @@ function TMXLayer:create(tilesetInfo, layerInfo, mapInfo) end
 
 --- 添加 `cc.TMXLayer:addChild` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
 --- - `zOrder`：参数 `zOrder`，类型为 `integer`。
@@ -283,16 +239,12 @@ function TMXLayer:addChild(child, zOrder, tag) end
 
 --- 获取 `cc.TMXLayer:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function TMXLayer:getDescription() end
 
 --- 移除 `cc.TMXLayer:removeChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -306,8 +258,6 @@ function TMXLayer:getDescription() end
 function TMXLayer:removeChild(child, cleanup) end
 
 --- 调用 `cc.TMXLayer:TMXLayer`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.RenderState = RenderState
 
 --- 获取 `cc.RenderState:getName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function RenderState:getName() end
 
 --- 调用 `cc.RenderState:bindPass`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pass`：参数 `pass`，类型为 `cc.Pass`。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Timer = {}
 cc.Timer = Timer
 
 --- 调用 `cc.Timer:setupTimerWithInterval`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `seconds`：参数 `seconds`，类型为 `number`。
@@ -27,8 +25,6 @@ function Timer:setupTimerWithInterval(seconds, _repeat, delay) end
 
 --- 更新 `cc.Timer:update` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
 ---
@@ -40,8 +36,6 @@ function Timer:update(dt) end
 
 --- 判断 `cc.Timer:isAborted` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -49,16 +43,12 @@ function Timer:isAborted() end
 
 --- 判断 `cc.Timer:isExhausted` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Timer:isExhausted() end
 
 --- 调用 `cc.Timer:trigger`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
@@ -71,16 +61,12 @@ function Timer:trigger(dt) end
 
 --- 调用 `cc.Timer:cancel`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Timer:cancel() end
 
 --- 设置 `cc.Timer:setAborted` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

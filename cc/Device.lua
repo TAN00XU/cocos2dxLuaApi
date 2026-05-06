@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -8,8 +8,6 @@ local Device = {}
 cc.Device = Device
 
 --- 设置 `cc.Device:setAccelerometerEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `isEnabled`：参数 `isEnabled`，类型为 `boolean`。
@@ -22,8 +20,6 @@ function Device:setAccelerometerEnabled(isEnabled) end
 
 --- 设置 `cc.Device:setAccelerometerInterval` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `interval`：参数 `interval`，类型为 `number`。
 ---
@@ -34,8 +30,6 @@ function Device:setAccelerometerEnabled(isEnabled) end
 function Device:setAccelerometerInterval(interval) end
 
 --- 设置 `cc.Device:setKeepScreenOn` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `keepScreenOn`：参数 `keepScreenOn`，类型为 `boolean`。
@@ -48,8 +42,6 @@ function Device:setKeepScreenOn(keepScreenOn) end
 
 --- 调用 `cc.Device:vibrate`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 ---
@@ -60,8 +52,6 @@ function Device:setKeepScreenOn(keepScreenOn) end
 function Device:vibrate(duration) end
 
 --- 获取 `cc.Device:getDPI` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。

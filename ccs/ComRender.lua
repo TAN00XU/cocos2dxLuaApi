@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ComRender = {}
 ccs.ComRender = ComRender
 
 --- 设置 `ccs.ComRender:setNode` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。
@@ -23,16 +21,12 @@ function ComRender:setNode(node) end
 
 --- 获取 `ccs.ComRender:getNode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
 function ComRender:getNode() end
 
 --- 创建 `ccs.ComRender:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。
@@ -49,16 +43,12 @@ function ComRender:create(node, comName) end
 
 --- 创建 `ccs.ComRender:createInstance` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
 ---@return cc.Ref 创建出的 `cc.Ref` 对象或值。
 function ComRender:createInstance() end
 
 --- 调用 `ccs.ComRender:serialize`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `r`：参数 `r`，类型为 `nil`。
@@ -71,16 +61,12 @@ function ComRender:serialize(r) end
 
 --- 调用 `ccs.ComRender:onRemove`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ComRender:onRemove() end
 
 --- 调用 `ccs.ComRender:onAdd`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local MenuItemAtlasFont = {}
 cc.MenuItemAtlasFont = MenuItemAtlasFont
 
 --- 初始化 `cc.MenuItemAtlasFont:initWithString` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `string`。
@@ -32,8 +30,6 @@ cc.MenuItemAtlasFont = MenuItemAtlasFont
 function MenuItemAtlasFont:initWithString(value, charMapFile, itemWidth, itemHeight, startCharMap, callback) end
 
 --- 调用 `cc.MenuItemAtlasFont:MenuItemAtlasFont`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

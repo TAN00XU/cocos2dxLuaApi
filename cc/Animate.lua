@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Animate = {}
 cc.Animate = Animate
 
 --- 初始化 `cc.Animate:initWithAnimation` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `animation`：动画对象。类型为 `cc.Animation`。
@@ -23,8 +21,6 @@ function Animate:initWithAnimation(animation) end
 
 --- 获取 `cc.Animate:getAnimation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Animation`：获取到的 `cc.Animation` 对象或值。
 ---@overload fun(): cc.Animation
@@ -33,16 +29,12 @@ function Animate:getAnimation() end
 
 --- 获取 `cc.Animate:getCurrentFrameIndex` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Animate:getCurrentFrameIndex() end
 
 --- 设置 `cc.Animate:setAnimation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `animation`：动画对象。类型为 `cc.Animation`。
@@ -55,8 +47,6 @@ function Animate:setAnimation(animation) end
 
 --- 创建 `cc.Animate:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `animation`：动画对象。类型为 `cc.Animation`。
 ---
@@ -67,8 +57,6 @@ function Animate:setAnimation(animation) end
 function Animate:create(animation) end
 
 --- 调用 `cc.Animate:startWithTarget`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -81,16 +69,12 @@ function Animate:startWithTarget(target) end
 
 --- 调用 `cc.Animate:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Animate:clone() end
 
 --- 停止 `cc.Animate:stop` 对应的流程。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -99,16 +83,12 @@ function Animate:stop() end
 
 --- 调用 `cc.Animate:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Animate:reverse() end
 
 --- 更新 `cc.Animate:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -120,8 +100,6 @@ function Animate:reverse() end
 function Animate:update(t) end
 
 --- 调用 `cc.Animate:Animate`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

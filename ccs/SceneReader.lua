@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -8,8 +8,6 @@ local SceneReader = {}
 ccs.SceneReader = SceneReader
 
 --- 设置 `ccs.SceneReader:setTarget` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `selector`：参数 `selector`，类型为 `fun(...): any`。
@@ -21,8 +19,6 @@ ccs.SceneReader = SceneReader
 function SceneReader:setTarget(selector) end
 
 --- 创建 `ccs.SceneReader:createNodeWithSceneFile` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -37,16 +33,12 @@ function SceneReader:createNodeWithSceneFile(fileName, attachComponent) end
 
 --- 获取 `ccs.SceneReader:getAttachComponentType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function SceneReader:getAttachComponentType() end
 
 --- 获取 `ccs.SceneReader:getNodeByTag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `nTag`：参数 `nTag`，类型为 `integer`。
@@ -59,8 +51,6 @@ function SceneReader:getNodeByTag(nTag) end
 
 --- 调用 `ccs.SceneReader:destroyInstance`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -68,16 +58,12 @@ function SceneReader:destroyInstance() end
 
 --- 调用 `ccs.SceneReader:sceneReaderVersion`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：字符串。
 ---@return string 字符串。
 function SceneReader:sceneReaderVersion() end
 
 --- 获取 `ccs.SceneReader:getInstance` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

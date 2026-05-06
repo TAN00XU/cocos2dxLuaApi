@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ControlPotentiometer = {}
 cc.ControlPotentiometer = ControlPotentiometer
 
 --- 设置 `cc.ControlPotentiometer:setPreviousLocation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function ControlPotentiometer:setPreviousLocation(var) end
 
 --- 设置 `cc.ControlPotentiometer:setValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `number`。
 ---
@@ -36,16 +32,12 @@ function ControlPotentiometer:setValue(value) end
 
 --- 获取 `cc.ControlPotentiometer:getProgressTimer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ProgressTimer`：获取到的 `cc.ProgressTimer` 对象或值。
 ---@return cc.ProgressTimer 获取到的 `cc.ProgressTimer` 对象或值。
 function ControlPotentiometer:getProgressTimer() end
 
 --- 获取 `cc.ControlPotentiometer:getMaximumValue` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -62,8 +54,6 @@ function ControlPotentiometer:getMaximumValue() end
 function ControlPotentiometer:angleInDegreesBetweenLineFromPoint_toPoint_toLineFromPoint_toPoint(beginLineA, endLineA, beginLineB, endLineB) end
 --- 调用 `cc.ControlPotentiometer:potentiometerBegan`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `location`：参数 `location`，类型为 `vec2_table`。
 ---
@@ -74,8 +64,6 @@ function ControlPotentiometer:angleInDegreesBetweenLineFromPoint_toPoint_toLineF
 function ControlPotentiometer:potentiometerBegan(location) end
 
 --- 设置 `cc.ControlPotentiometer:setMaximumValue` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `maximumValue`：参数 `maximumValue`，类型为 `number`。
@@ -88,16 +76,12 @@ function ControlPotentiometer:setMaximumValue(maximumValue) end
 
 --- 获取 `cc.ControlPotentiometer:getMinimumValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ControlPotentiometer:getMinimumValue() end
 
 --- 设置 `cc.ControlPotentiometer:setThumbSprite` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `cc.Sprite`。
@@ -110,16 +94,12 @@ function ControlPotentiometer:setThumbSprite(var) end
 
 --- 获取 `cc.ControlPotentiometer:getValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ControlPotentiometer:getValue() end
 
 --- 调用 `cc.ControlPotentiometer:distanceBetweenPointAndPoint`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `point1`：参数 `point1`，类型为 `vec2_table`。
@@ -134,8 +114,6 @@ function ControlPotentiometer:distanceBetweenPointAndPoint(point1, point2) end
 
 --- 调用 `cc.ControlPotentiometer:potentiometerEnded`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `location`：参数 `location`，类型为 `vec2_table`。
 ---
@@ -147,16 +125,12 @@ function ControlPotentiometer:potentiometerEnded(location) end
 
 --- 获取 `cc.ControlPotentiometer:getPreviousLocation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function ControlPotentiometer:getPreviousLocation() end
 
 --- 设置 `cc.ControlPotentiometer:setProgressTimer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `cc.ProgressTimer`。
@@ -169,8 +143,6 @@ function ControlPotentiometer:setProgressTimer(var) end
 
 --- 设置 `cc.ControlPotentiometer:setMinimumValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `minimumValue`：参数 `minimumValue`，类型为 `number`。
 ---
@@ -182,16 +154,12 @@ function ControlPotentiometer:setMinimumValue(minimumValue) end
 
 --- 获取 `cc.ControlPotentiometer:getThumbSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function ControlPotentiometer:getThumbSprite() end
 
 --- 初始化 `cc.ControlPotentiometer:initWithTrackSprite_ProgressTimer_ThumbSprite` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `trackSprite`：参数 `trackSprite`，类型为 `cc.Sprite`。
@@ -208,8 +176,6 @@ function ControlPotentiometer:initWithTrackSprite_ProgressTimer_ThumbSprite(trac
 
 --- 调用 `cc.ControlPotentiometer:potentiometerMoved`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `location`：参数 `location`，类型为 `vec2_table`。
 ---
@@ -220,8 +186,6 @@ function ControlPotentiometer:initWithTrackSprite_ProgressTimer_ThumbSprite(trac
 function ControlPotentiometer:potentiometerMoved(location) end
 
 --- 创建 `cc.ControlPotentiometer:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `backgroundFile`：参数 `backgroundFile`，类型为 `string`。
@@ -238,8 +202,6 @@ function ControlPotentiometer:create(backgroundFile, progressFile, thumbFile) en
 
 --- 判断 `cc.ControlPotentiometer:isTouchInside` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `touch`：参数 `touch`，类型为 `cc.Touch`。
 ---
@@ -251,8 +213,6 @@ function ControlPotentiometer:isTouchInside(touch) end
 
 --- 设置 `cc.ControlPotentiometer:setEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
 ---
@@ -263,8 +223,6 @@ function ControlPotentiometer:isTouchInside(touch) end
 function ControlPotentiometer:setEnabled(enabled) end
 
 --- 调用 `cc.ControlPotentiometer:onTouchMoved`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
@@ -279,8 +237,6 @@ function ControlPotentiometer:onTouchMoved(pTouch, pEvent) end
 
 --- 调用 `cc.ControlPotentiometer:onTouchEnded`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
 --- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
@@ -294,8 +250,6 @@ function ControlPotentiometer:onTouchEnded(pTouch, pEvent) end
 
 --- 调用 `cc.ControlPotentiometer:onTouchBegan`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
 --- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
@@ -308,8 +262,6 @@ function ControlPotentiometer:onTouchEnded(pTouch, pEvent) end
 function ControlPotentiometer:onTouchBegan(pTouch, pEvent) end
 
 --- 调用 `cc.ControlPotentiometer:ControlPotentiometer`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

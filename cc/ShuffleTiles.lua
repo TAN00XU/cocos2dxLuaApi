@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ShuffleTiles = {}
 cc.ShuffleTiles = ShuffleTiles
 
 --- 初始化 `cc.ShuffleTiles:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -27,8 +25,6 @@ function ShuffleTiles:initWithDuration(duration, gridSize, seed) end
 
 --- 获取 `cc.ShuffleTiles:getDelta` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `size_table`。
 ---
@@ -39,8 +35,6 @@ function ShuffleTiles:initWithDuration(duration, gridSize, seed) end
 function ShuffleTiles:getDelta(pos) end
 
 --- 创建 `cc.ShuffleTiles:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -57,8 +51,6 @@ function ShuffleTiles:create(duration, gridSize, seed) end
 
 --- 调用 `cc.ShuffleTiles:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -70,16 +62,12 @@ function ShuffleTiles:startWithTarget(target) end
 
 --- 调用 `cc.ShuffleTiles:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ShuffleTiles:clone() end
 
 --- 更新 `cc.ShuffleTiles:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -91,8 +79,6 @@ function ShuffleTiles:clone() end
 function ShuffleTiles:update(time) end
 
 --- 调用 `cc.ShuffleTiles:ShuffleTiles`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

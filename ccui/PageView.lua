@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -16,8 +16,6 @@ function PageView:addEventListenerPageView(callback) end
 
 --- 设置 `ccui.PageView:setIndicatorSpaceBetweenIndexNodes` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `spaceBetweenIndexNodes`：参数 `spaceBetweenIndexNodes`，类型为 `number`。
 ---
@@ -28,8 +26,6 @@ function PageView:addEventListenerPageView(callback) end
 function PageView:setIndicatorSpaceBetweenIndexNodes(spaceBetweenIndexNodes) end
 
 --- 调用 `ccui.PageView:insertPage`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `page`：参数 `page`，类型为 `ccui.Widget`。
@@ -44,8 +40,6 @@ function PageView:insertPage(page, idx) end
 
 --- 设置 `ccui.PageView:setIndicatorIndexNodesOpacity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `integer`。
 ---
@@ -56,8 +50,6 @@ function PageView:insertPage(page, idx) end
 function PageView:setIndicatorIndexNodesOpacity(opacity) end
 
 --- 设置 `ccui.PageView:setIndicatorSelectedIndexOpacity` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `integer`。
@@ -70,16 +62,12 @@ function PageView:setIndicatorSelectedIndexOpacity(opacity) end
 
 --- 移除 `ccui.PageView:removeAllPages` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function PageView:removeAllPages() end
 
 --- 设置 `ccui.PageView:setAutoScrollStopEpsilon` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `epsilon`：参数 `epsilon`，类型为 `number`。
@@ -92,8 +80,6 @@ function PageView:setAutoScrollStopEpsilon(epsilon) end
 
 --- 设置 `ccui.PageView:setIndicatorIndexNodesScale` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `indexNodesScale`：参数 `indexNodesScale`，类型为 `number`。
 ---
@@ -104,8 +90,6 @@ function PageView:setAutoScrollStopEpsilon(epsilon) end
 function PageView:setIndicatorIndexNodesScale(indexNodesScale) end
 
 --- 设置 `ccui.PageView:setIndicatorEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -118,8 +102,6 @@ function PageView:setIndicatorEnabled(enabled) end
 
 --- 设置 `ccui.PageView:setIndicatorSelectedIndexColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
 ---
@@ -130,8 +112,6 @@ function PageView:setIndicatorEnabled(enabled) end
 function PageView:setIndicatorSelectedIndexColor(color) end
 
 --- 添加 `ccui.PageView:addEventListener` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -144,16 +124,12 @@ function PageView:addEventListener(callback) end
 
 --- 获取 `ccui.PageView:getIndicatorPosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function PageView:getIndicatorPosition() end
 
 --- 设置 `ccui.PageView:setCurrentPageIndex` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -166,16 +142,12 @@ function PageView:setCurrentPageIndex(index) end
 
 --- 获取 `ccui.PageView:getIndicatorIndexNodesColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color3b_table`：获取到的 Lua 表数据。
 ---@return color3b_table 获取到的 Lua 表数据。
 function PageView:getIndicatorIndexNodesColor() end
 
 --- 获取 `ccui.PageView:getIndicatorSelectedIndexColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `color3b_table`：获取到的 Lua 表数据。
@@ -184,16 +156,12 @@ function PageView:getIndicatorSelectedIndexColor() end
 
 --- 获取 `ccui.PageView:getIndicatorIndexNodesScale` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PageView:getIndicatorIndexNodesScale() end
 
 --- 设置 `ccui.PageView:setIndicatorPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `position`：位置坐标。类型为 `vec2_table`。
@@ -206,16 +174,12 @@ function PageView:setIndicatorPosition(position) end
 
 --- 获取 `ccui.PageView:getIndicatorSelectedIndexOpacity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function PageView:getIndicatorSelectedIndexOpacity() end
 
 --- 调用 `ccui.PageView:scrollToPage`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `idx`：参数 `idx`，类型为 `integer`。
@@ -232,8 +196,6 @@ function PageView:scrollToPage(idx, time) end
 
 --- 设置 `ccui.PageView:setIndicatorPositionAsAnchorPoint` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `positionAsAnchorPoint`：参数 `positionAsAnchorPoint`，类型为 `vec2_table`。
 ---
@@ -244,8 +206,6 @@ function PageView:scrollToPage(idx, time) end
 function PageView:setIndicatorPositionAsAnchorPoint(positionAsAnchorPoint) end
 
 --- 调用 `ccui.PageView:scrollToItem`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `idx`：参数 `idx`，类型为 `integer`。
@@ -262,8 +222,6 @@ function PageView:scrollToItem(idx, time) end
 
 --- 设置 `ccui.PageView:setIndicatorIndexNodesColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
 ---
@@ -275,16 +233,12 @@ function PageView:setIndicatorIndexNodesColor(color) end
 
 --- 获取 `ccui.PageView:getIndicatorIndexNodesOpacity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function PageView:getIndicatorIndexNodesOpacity() end
 
 --- 获取 `ccui.PageView:getIndicatorPositionAsAnchorPoint` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
@@ -293,16 +247,12 @@ function PageView:getIndicatorPositionAsAnchorPoint() end
 
 --- 获取 `ccui.PageView:getCurrentPageIndex` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function PageView:getCurrentPageIndex() end
 
 --- 移除 `ccui.PageView:removePage` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `page`：参数 `page`，类型为 `ccui.Widget`。
@@ -314,8 +264,6 @@ function PageView:getCurrentPageIndex() end
 function PageView:removePage(page) end
 
 --- 设置 `ccui.PageView:setIndicatorIndexNodesTexture` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `texName`：参数 `texName`，类型为 `string`。
@@ -330,16 +278,12 @@ function PageView:setIndicatorIndexNodesTexture(texName, texType) end
 
 --- 获取 `ccui.PageView:getIndicatorEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function PageView:getIndicatorEnabled() end
 
 --- 移除 `ccui.PageView:removePageAtIndex` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -352,16 +296,12 @@ function PageView:removePageAtIndex(index) end
 
 --- 获取 `ccui.PageView:getIndicatorSpaceBetweenIndexNodes` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PageView:getIndicatorSpaceBetweenIndexNodes() end
 
 --- 添加 `ccui.PageView:addPage` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `page`：参数 `page`，类型为 `ccui.Widget`。
@@ -374,16 +314,12 @@ function PageView:addPage(page) end
 
 --- 创建 `ccui.PageView:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function PageView:create() end
 
 --- 创建 `ccui.PageView:createInstance` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
@@ -392,16 +328,12 @@ function PageView:createInstance() end
 
 --- 调用 `ccui.PageView:doLayout`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function PageView:doLayout() end
 
 --- 初始化 `ccui.PageView:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
@@ -410,16 +342,12 @@ function PageView:init() end
 
 --- 获取 `ccui.PageView:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function PageView:getDescription() end
 
 --- 设置 `ccui.PageView:setDirection` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `direction`：参数 `direction`，类型为 `integer`。
@@ -431,8 +359,6 @@ function PageView:getDescription() end
 function PageView:setDirection(direction) end
 
 --- 调用 `ccui.PageView:PageView`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

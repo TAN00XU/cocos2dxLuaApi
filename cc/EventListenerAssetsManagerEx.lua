@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local EventListenerAssetsManagerEx = {}
 cc.EventListenerAssetsManagerEx = EventListenerAssetsManagerEx
 
 --- 初始化 `cc.EventListenerAssetsManagerEx:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `AssetsManagerEx`：参数 `AssetsManagerEx`，类型为 `cc.AssetsManagerEx`。
@@ -25,8 +23,6 @@ function EventListenerAssetsManagerEx:init(AssetsManagerEx, callback) end
 
 --- 调用 `cc.EventListenerAssetsManagerEx:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -34,16 +30,12 @@ function EventListenerAssetsManagerEx:clone() end
 
 --- 调用 `cc.EventListenerAssetsManagerEx:checkAvailable`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：布尔值。
 ---@return boolean 布尔值。
 function EventListenerAssetsManagerEx:checkAvailable() end
 
 --- 调用 `cc.EventListenerAssetsManagerEx:EventListenerAssetsManagerEx`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local BaseLight = {}
 cc.BaseLight = BaseLight
 
 --- 设置 `cc.BaseLight:setEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -23,16 +21,12 @@ function BaseLight:setEnabled(enabled) end
 
 --- 获取 `cc.BaseLight:getIntensity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function BaseLight:getIntensity() end
 
 --- 判断 `cc.BaseLight:isEnabled` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -41,16 +35,12 @@ function BaseLight:isEnabled() end
 
 --- 获取 `cc.BaseLight:getLightType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function BaseLight:getLightType() end
 
 --- 设置 `cc.BaseLight:setLightFlag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `flag`：参数 `flag`，类型为 `integer`。
@@ -63,8 +53,6 @@ function BaseLight:setLightFlag(flag) end
 
 --- 设置 `cc.BaseLight:setIntensity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `intensity`：参数 `intensity`，类型为 `number`。
 ---
@@ -75,8 +63,6 @@ function BaseLight:setLightFlag(flag) end
 function BaseLight:setIntensity(intensity) end
 
 --- 获取 `cc.BaseLight:getLightFlag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。

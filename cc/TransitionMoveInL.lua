@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.TransitionMoveInL = TransitionMoveInL
 
 --- 调用 `cc.TransitionMoveInL:action`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
 ---@return cc.ActionInterval `cc.ActionInterval` 对象或值。
 function TransitionMoveInL:action() end
 
 --- 调用 `cc.TransitionMoveInL:easeActionWithAction`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -31,8 +27,6 @@ function TransitionMoveInL:action() end
 function TransitionMoveInL:easeActionWithAction(action) end
 
 --- 创建 `cc.TransitionMoveInL:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -46,8 +40,6 @@ function TransitionMoveInL:easeActionWithAction(action) end
 function TransitionMoveInL:create(t, scene) end
 
 --- 调用 `cc.TransitionMoveInL:TransitionMoveInL`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

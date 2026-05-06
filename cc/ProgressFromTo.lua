@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ProgressFromTo = {}
 cc.ProgressFromTo = ProgressFromTo
 
 --- 初始化 `cc.ProgressFromTo:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -27,8 +25,6 @@ function ProgressFromTo:initWithDuration(duration, fromPercentage, toPercentage)
 
 --- 创建 `cc.ProgressFromTo:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 --- - `fromPercentage`：参数 `fromPercentage`，类型为 `number`。
@@ -44,8 +40,6 @@ function ProgressFromTo:create(duration, fromPercentage, toPercentage) end
 
 --- 调用 `cc.ProgressFromTo:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -57,8 +51,6 @@ function ProgressFromTo:startWithTarget(target) end
 
 --- 调用 `cc.ProgressFromTo:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -66,16 +58,12 @@ function ProgressFromTo:clone() end
 
 --- 调用 `cc.ProgressFromTo:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ProgressFromTo:reverse() end
 
 --- 更新 `cc.ProgressFromTo:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -87,8 +75,6 @@ function ProgressFromTo:reverse() end
 function ProgressFromTo:update(time) end
 
 --- 调用 `cc.ProgressFromTo:ProgressFromTo`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

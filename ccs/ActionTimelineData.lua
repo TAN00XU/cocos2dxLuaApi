@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ActionTimelineData = {}
 ccs.ActionTimelineData = ActionTimelineData
 
 --- 设置 `ccs.ActionTimelineData:setActionTag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `actionTag`：参数 `actionTag`，类型为 `integer`。
@@ -23,8 +21,6 @@ function ActionTimelineData:setActionTag(actionTag) end
 
 --- 初始化 `ccs.ActionTimelineData:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `actionTag`：参数 `actionTag`，类型为 `integer`。
 ---
@@ -36,16 +32,12 @@ function ActionTimelineData:init(actionTag) end
 
 --- 获取 `ccs.ActionTimelineData:getActionTag` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function ActionTimelineData:getActionTag() end
 
 --- 创建 `ccs.ActionTimelineData:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `actionTag`：参数 `actionTag`，类型为 `integer`。
@@ -57,8 +49,6 @@ function ActionTimelineData:getActionTag() end
 function ActionTimelineData:create(actionTag) end
 
 --- 调用 `ccs.ActionTimelineData:ActionTimelineData`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

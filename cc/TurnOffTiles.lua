@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TurnOffTiles = {}
 cc.TurnOffTiles = TurnOffTiles
 
 --- 调用 `cc.TurnOffTiles:turnOnTile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function TurnOffTiles:turnOnTile(pos) end
 
 --- 调用 `cc.TurnOffTiles:turnOffTile`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
 ---
@@ -35,8 +31,6 @@ function TurnOffTiles:turnOnTile(pos) end
 function TurnOffTiles:turnOffTile(pos) end
 
 --- 初始化 `cc.TurnOffTiles:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -52,8 +46,6 @@ function TurnOffTiles:turnOffTile(pos) end
 function TurnOffTiles:initWithDuration(duration, gridSize, seed) end
 
 --- 创建 `cc.TurnOffTiles:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -72,8 +64,6 @@ function TurnOffTiles:create(duration, gridSize, seed) end
 
 --- 调用 `cc.TurnOffTiles:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -85,16 +75,12 @@ function TurnOffTiles:startWithTarget(target) end
 
 --- 调用 `cc.TurnOffTiles:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TurnOffTiles:clone() end
 
 --- 更新 `cc.TurnOffTiles:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -106,8 +92,6 @@ function TurnOffTiles:clone() end
 function TurnOffTiles:update(time) end
 
 --- 调用 `cc.TurnOffTiles:TurnOffTiles`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

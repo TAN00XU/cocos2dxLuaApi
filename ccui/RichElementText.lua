@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -46,8 +46,6 @@ function RichElementText:init(tag, color, opacity, text, fontName, fontSize, fla
 ---@param glowColor any 参数 `glowColor`，原始类型信息缺失。
 function RichElementText:create(tag, color, opacity, text, fontName, fontSize, flags, url, outlineColor, outlineSize, shadowColor, shadowOffset, shadowBlurRadius, glowColor) end
 --- 调用 `ccui.RichElementText:RichElementText`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

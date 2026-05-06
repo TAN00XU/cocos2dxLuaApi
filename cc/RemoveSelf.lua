@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local RemoveSelf = {}
 cc.RemoveSelf = RemoveSelf
 
 --- 初始化 `cc.RemoveSelf:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `isNeedCleanUp`：参数 `isNeedCleanUp`，类型为 `boolean`。
@@ -23,8 +21,6 @@ function RemoveSelf:init(isNeedCleanUp) end
 
 --- 创建 `cc.RemoveSelf:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -32,16 +28,12 @@ function RemoveSelf:create() end
 
 --- 调用 `cc.RemoveSelf:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RemoveSelf:clone() end
 
 --- 更新 `cc.RemoveSelf:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -54,16 +46,12 @@ function RemoveSelf:update(time) end
 
 --- 调用 `cc.RemoveSelf:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RemoveSelf:reverse() end
 
 --- 调用 `cc.RemoveSelf:RemoveSelf`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

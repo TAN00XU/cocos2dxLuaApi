@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ ccui.RichElementImage = RichElementImage
 
 --- 设置 `ccui.RichElementImage:setHeight` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `height`：高度。类型为 `integer`。
 ---
@@ -22,8 +20,6 @@ ccui.RichElementImage = RichElementImage
 function RichElementImage:setHeight(height) end
 
 --- 初始化 `ccui.RichElementImage:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -46,8 +42,6 @@ function RichElementImage:init(tag, color, opacity, filePath, url, texType) end
 
 --- 设置 `ccui.RichElementImage:setWidth` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `width`：宽度。类型为 `integer`。
 ---
@@ -59,8 +53,6 @@ function RichElementImage:setWidth(width) end
 
 --- 设置 `ccui.RichElementImage:setUrl` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `url`：参数 `url`，类型为 `string`。
 ---
@@ -71,8 +63,6 @@ function RichElementImage:setWidth(width) end
 function RichElementImage:setUrl(url) end
 
 --- 创建 `ccui.RichElementImage:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -94,8 +84,6 @@ function RichElementImage:setUrl(url) end
 function RichElementImage:create(tag, color, opacity, filePath, url, texType) end
 
 --- 调用 `ccui.RichElementImage:RichElementImage`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local EventFocus = {}
 cc.EventFocus = EventFocus
 
 --- 调用 `cc.EventFocus:EventFocus`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `widgetLoseFocus`：参数 `widgetLoseFocus`，类型为 `ccui.Widget`。

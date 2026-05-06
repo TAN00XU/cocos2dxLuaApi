@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local EventListenerPhysicsContactWithGroup = {}
 cc.EventListenerPhysicsContactWithGroup = EventListenerPhysicsContactWithGroup
 
 --- 调用 `cc.EventListenerPhysicsContactWithGroup:hitTest`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `shapeA`：参数 `shapeA`，类型为 `cc.PhysicsShape`。
@@ -25,8 +23,6 @@ function EventListenerPhysicsContactWithGroup:hitTest(shapeA, shapeB) end
 
 --- 创建 `cc.EventListenerPhysicsContactWithGroup:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `group`：参数 `group`，类型为 `integer`。
 ---
@@ -37,8 +33,6 @@ function EventListenerPhysicsContactWithGroup:hitTest(shapeA, shapeB) end
 function EventListenerPhysicsContactWithGroup:create(group) end
 
 --- 调用 `cc.EventListenerPhysicsContactWithGroup:clone`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

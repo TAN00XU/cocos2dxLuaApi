@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.ParticleBatchNode = ParticleBatchNode
 
 --- 设置 `cc.ParticleBatchNode:setTexture` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
 ---
@@ -22,8 +20,6 @@ cc.ParticleBatchNode = ParticleBatchNode
 function ParticleBatchNode:setTexture(texture) end
 
 --- 初始化 `cc.ParticleBatchNode:initWithTexture` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tex`：参数 `tex`，类型为 `cc.Texture2D`。
@@ -38,8 +34,6 @@ function ParticleBatchNode:initWithTexture(tex, capacity) end
 
 --- 调用 `cc.ParticleBatchNode:disableParticle`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `particleIndex`：参数 `particleIndex`，类型为 `integer`。
 ---
@@ -51,16 +45,12 @@ function ParticleBatchNode:disableParticle(particleIndex) end
 
 --- 获取 `cc.ParticleBatchNode:getTexture` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
 ---@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
 function ParticleBatchNode:getTexture() end
 
 --- 设置 `cc.ParticleBatchNode:setTextureAtlas` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `atlas`：参数 `atlas`，类型为 `cc.TextureAtlas`。
@@ -72,8 +62,6 @@ function ParticleBatchNode:getTexture() end
 function ParticleBatchNode:setTextureAtlas(atlas) end
 
 --- 初始化 `cc.ParticleBatchNode:initWithFile` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileImage`：参数 `fileImage`，类型为 `string`。
@@ -88,8 +76,6 @@ function ParticleBatchNode:initWithFile(fileImage, capacity) end
 
 --- 设置 `cc.ParticleBatchNode:setBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
 ---
@@ -100,8 +86,6 @@ function ParticleBatchNode:initWithFile(fileImage, capacity) end
 function ParticleBatchNode:setBlendFunc(blendFunc) end
 
 --- 移除 `cc.ParticleBatchNode:removeAllChildrenWithCleanup` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `doCleanup`：参数 `doCleanup`，类型为 `boolean`。
@@ -114,8 +98,6 @@ function ParticleBatchNode:removeAllChildrenWithCleanup(doCleanup) end
 
 --- 获取 `cc.ParticleBatchNode:getTextureAtlas` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.TextureAtlas`：获取到的 `cc.TextureAtlas` 对象或值。
 ---@return cc.TextureAtlas 获取到的 `cc.TextureAtlas` 对象或值。
@@ -123,16 +105,12 @@ function ParticleBatchNode:getTextureAtlas() end
 
 --- 获取 `cc.ParticleBatchNode:getBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
 ---@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
 function ParticleBatchNode:getBlendFunc() end
 
 --- 调用 `cc.ParticleBatchNode:insertChild`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `system`：参数 `system`，类型为 `cc.ParticleSystem`。
@@ -147,8 +125,6 @@ function ParticleBatchNode:insertChild(system, index) end
 
 --- 移除 `cc.ParticleBatchNode:removeChildAtIndex` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 --- - `doCleanup`：参数 `doCleanup`，类型为 `boolean`。
@@ -161,8 +137,6 @@ function ParticleBatchNode:insertChild(system, index) end
 function ParticleBatchNode:removeChildAtIndex(index, doCleanup) end
 
 --- 创建 `cc.ParticleBatchNode:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileImage`：参数 `fileImage`，类型为 `string`。
@@ -177,8 +151,6 @@ function ParticleBatchNode:create(fileImage, capacity) end
 
 --- 创建 `cc.ParticleBatchNode:createWithTexture` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tex`：参数 `tex`，类型为 `cc.Texture2D`。
 --- - `capacity`：参数 `capacity`，类型为 `integer`。
@@ -191,8 +163,6 @@ function ParticleBatchNode:create(fileImage, capacity) end
 function ParticleBatchNode:createWithTexture(tex, capacity) end
 
 --- 添加 `cc.ParticleBatchNode:addChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -211,8 +181,6 @@ function ParticleBatchNode:addChild(child, zOrder, tag) end
 
 --- 调用 `cc.ParticleBatchNode:draw`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
 --- - `transform`：参数 `transform`，类型为 `mat4_table`。
@@ -227,8 +195,6 @@ function ParticleBatchNode:addChild(child, zOrder, tag) end
 function ParticleBatchNode:draw(renderer, transform, flags) end
 
 --- 调用 `cc.ParticleBatchNode:visit`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -245,8 +211,6 @@ function ParticleBatchNode:visit(renderer, parentTransform, parentFlags) end
 
 --- 调用 `cc.ParticleBatchNode:reorderChild`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
 --- - `zOrder`：参数 `zOrder`，类型为 `integer`。
@@ -260,8 +224,6 @@ function ParticleBatchNode:reorderChild(child, zOrder) end
 
 --- 移除 `cc.ParticleBatchNode:removeChild` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
 --- - `cleanup`：是否清理关联资源。类型为 `boolean`。
@@ -274,8 +236,6 @@ function ParticleBatchNode:reorderChild(child, zOrder) end
 function ParticleBatchNode:removeChild(child, cleanup) end
 
 --- 调用 `cc.ParticleBatchNode:ParticleBatchNode`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

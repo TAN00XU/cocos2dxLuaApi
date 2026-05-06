@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local RenderTexture = {}
 cc.RenderTexture = RenderTexture
 
 --- 设置 `cc.RenderTexture:setVirtualViewport` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rtBegin`：参数 `rtBegin`，类型为 `vec2_table`。
@@ -27,8 +25,6 @@ function RenderTexture:setVirtualViewport(rtBegin, fullRect, fullViewport) end
 
 --- 调用 `cc.RenderTexture:clearStencil`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `stencilValue`：参数 `stencilValue`，类型为 `integer`。
 ---
@@ -40,8 +36,6 @@ function RenderTexture:clearStencil(stencilValue) end
 
 --- 获取 `cc.RenderTexture:getClearDepth` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -49,16 +43,12 @@ function RenderTexture:getClearDepth() end
 
 --- 获取 `cc.RenderTexture:getClearStencil` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function RenderTexture:getClearStencil() end
 
 --- 设置 `cc.RenderTexture:setClearStencil` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `clearStencil`：参数 `clearStencil`，类型为 `integer`。
@@ -71,8 +61,6 @@ function RenderTexture:setClearStencil(clearStencil) end
 
 --- 设置 `cc.RenderTexture:setSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `sprite`：参数 `sprite`，类型为 `cc.Sprite`。
 ---
@@ -84,8 +72,6 @@ function RenderTexture:setSprite(sprite) end
 
 --- 获取 `cc.RenderTexture:getSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
@@ -93,16 +79,12 @@ function RenderTexture:getSprite() end
 
 --- 判断 `cc.RenderTexture:isAutoDraw` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function RenderTexture:isAutoDraw() end
 
 --- 调用 `cc.RenderTexture:saveToFileAsNonPMA`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -123,8 +105,6 @@ function RenderTexture:saveToFileAsNonPMA(fileName, format, isRGBA, callback) en
 
 --- 设置 `cc.RenderTexture:setKeepMatrix` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `keepMatrix`：参数 `keepMatrix`，类型为 `boolean`。
 ---
@@ -135,8 +115,6 @@ function RenderTexture:saveToFileAsNonPMA(fileName, format, isRGBA, callback) en
 function RenderTexture:setKeepMatrix(keepMatrix) end
 
 --- 设置 `cc.RenderTexture:setClearFlags` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `clearFlags`：参数 `clearFlags`，类型为 `integer`。
@@ -149,16 +127,12 @@ function RenderTexture:setClearFlags(clearFlags) end
 
 --- 调用 `cc.RenderTexture:begin`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RenderTexture:begin() end
 
 --- 调用 `cc.RenderTexture:saveToFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -179,8 +153,6 @@ function RenderTexture:saveToFile(filename, format, isRGBA, callback) end
 
 --- 设置 `cc.RenderTexture:setAutoDraw` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `isAutoDraw`：参数 `isAutoDraw`，类型为 `boolean`。
 ---
@@ -191,8 +163,6 @@ function RenderTexture:saveToFile(filename, format, isRGBA, callback) end
 function RenderTexture:setAutoDraw(isAutoDraw) end
 
 --- 设置 `cc.RenderTexture:setClearColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `clearColor`：参数 `clearColor`，类型为 `color4f_table`。
@@ -205,16 +175,12 @@ function RenderTexture:setClearColor(clearColor) end
 
 --- 调用 `cc.RenderTexture:endToLua`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RenderTexture:endToLua() end
 
 --- 调用 `cc.RenderTexture:beginWithClear`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `r`：参数 `r`，类型为 `number`。
@@ -240,8 +206,6 @@ function RenderTexture:beginWithClear(r, g, b, a, depthValue, stencilValue) end
 
 --- 调用 `cc.RenderTexture:clearDepth`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `depthValue`：参数 `depthValue`，类型为 `number`。
 ---
@@ -253,16 +217,12 @@ function RenderTexture:clearDepth(depthValue) end
 
 --- 获取 `cc.RenderTexture:getClearColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4f_table`：获取到的 Lua 表数据。
 ---@return color4f_table 获取到的 Lua 表数据。
 function RenderTexture:getClearColor() end
 
 --- 调用 `cc.RenderTexture:clear`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `r`：参数 `r`，类型为 `number`。
@@ -281,16 +241,12 @@ function RenderTexture:clear(r, g, b, a) end
 
 --- 获取 `cc.RenderTexture:getClearFlags` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function RenderTexture:getClearFlags() end
 
 --- 设置 `cc.RenderTexture:setClearDepth` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `clearDepth`：参数 `clearDepth`，类型为 `number`。
@@ -302,8 +258,6 @@ function RenderTexture:getClearFlags() end
 function RenderTexture:setClearDepth(clearDepth) end
 
 --- 初始化 `cc.RenderTexture:initWithWidthAndHeight` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `w`：参数 `w`，类型为 `integer`。
@@ -323,8 +277,6 @@ function RenderTexture:setClearDepth(clearDepth) end
 function RenderTexture:initWithWidthAndHeight(w, h, format, depthStencilFormat) end
 
 --- 创建 `cc.RenderTexture:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `w`：参数 `w`，类型为 `integer`。
@@ -346,8 +298,6 @@ function RenderTexture:create(w, h, format, depthStencilFormat) end
 
 --- 调用 `cc.RenderTexture:draw`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
 --- - `transform`：参数 `transform`，类型为 `mat4_table`。
@@ -363,8 +313,6 @@ function RenderTexture:draw(renderer, transform, flags) end
 
 --- 调用 `cc.RenderTexture:visit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
 --- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
@@ -379,8 +327,6 @@ function RenderTexture:draw(renderer, transform, flags) end
 function RenderTexture:visit(renderer, parentTransform, parentFlags) end
 
 --- 调用 `cc.RenderTexture:RenderTexture`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

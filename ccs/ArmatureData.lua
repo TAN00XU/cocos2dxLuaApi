@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ArmatureData = {}
 ccs.ArmatureData = ArmatureData
 
 --- 添加 `ccs.ArmatureData:addBoneData` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `boneData`：参数 `boneData`，类型为 `ccs.BoneData`。
@@ -23,16 +21,12 @@ function ArmatureData:addBoneData(boneData) end
 
 --- 初始化 `ccs.ArmatureData:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ArmatureData:init() end
 
 --- 获取 `ccs.ArmatureData:getBoneData` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `boneName`：参数 `boneName`，类型为 `string`。
@@ -45,16 +39,12 @@ function ArmatureData:getBoneData(boneName) end
 
 --- 创建 `ccs.ArmatureData:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ArmatureData:create() end
 
 --- 调用 `ccs.ArmatureData:ArmatureData`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

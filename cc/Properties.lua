@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -8,8 +8,6 @@ local Properties = {}
 cc.Properties = Properties
 
 --- 获取 `cc.Properties:getVariable` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -24,8 +22,6 @@ function Properties:getVariable(name, defaultValue) end
 
 --- 获取 `cc.Properties:getString` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
@@ -33,16 +29,12 @@ function Properties:getString() end
 
 --- 获取 `cc.Properties:getLong` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Properties:getLong() end
 
 --- 获取 `cc.Properties:getNamespace` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -61,8 +53,6 @@ function Properties:getNamespace(id, searchNames, recurse) end
 
 --- 获取 `cc.Properties:getPath` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 --- - `path`：路径。类型为 `string`。
@@ -75,8 +65,6 @@ function Properties:getNamespace(id, searchNames, recurse) end
 function Properties:getPath(name, path) end
 
 --- 获取 `cc.Properties:getMat4` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -91,8 +79,6 @@ function Properties:getMat4(name, out) end
 
 --- 调用 `cc.Properties:exists`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
@@ -103,8 +89,6 @@ function Properties:getMat4(name, out) end
 function Properties:exists(name) end
 
 --- 设置 `cc.Properties:setString` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -119,8 +103,6 @@ function Properties:setString(name, value) end
 
 --- 获取 `cc.Properties:getId` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
@@ -128,16 +110,12 @@ function Properties:getId() end
 
 --- 调用 `cc.Properties:rewind`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Properties:rewind() end
 
 --- 设置 `cc.Properties:setVariable` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -152,16 +130,12 @@ function Properties:setVariable(name, value) end
 
 --- 获取 `cc.Properties:getBool` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Properties:getBool() end
 
 --- 获取 `cc.Properties:getColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -178,16 +152,12 @@ function Properties:getColor(name, out) end
 
 --- 获取 `cc.Properties:getType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Properties:getType() end
 
 --- 获取 `cc.Properties:getNextNamespace` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -196,16 +166,12 @@ function Properties:getNextNamespace() end
 
 --- 获取 `cc.Properties:getInt` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Properties:getInt() end
 
 --- 获取 `cc.Properties:getVec3` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -220,8 +186,6 @@ function Properties:getVec3(name, out) end
 
 --- 获取 `cc.Properties:getVec2` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 --- - `out`：参数 `out`，类型为 `vec2_table`。
@@ -234,8 +198,6 @@ function Properties:getVec3(name, out) end
 function Properties:getVec2(name, out) end
 
 --- 获取 `cc.Properties:getVec4` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -250,8 +212,6 @@ function Properties:getVec4(name, out) end
 
 --- 获取 `cc.Properties:getNextProperty` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
@@ -259,16 +219,12 @@ function Properties:getNextProperty() end
 
 --- 获取 `cc.Properties:getFloat` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Properties:getFloat() end
 
 --- 获取 `cc.Properties:getQuaternionFromAxisAngle` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -282,8 +238,6 @@ function Properties:getFloat() end
 function Properties:getQuaternionFromAxisAngle(name, out) end
 
 --- 调用 `cc.Properties:parseColor`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `str`：参数 `str`，类型为 `string`。
@@ -300,8 +254,6 @@ function Properties:parseColor(str, out) end
 
 --- 调用 `cc.Properties:parseVec3`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `str`：参数 `str`，类型为 `string`。
 --- - `out`：参数 `out`，类型为 `vec3_table`。
@@ -314,8 +266,6 @@ function Properties:parseColor(str, out) end
 function Properties:parseVec3(str, out) end
 
 --- 调用 `cc.Properties:parseAxisAngle`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `str`：参数 `str`，类型为 `string`。
@@ -330,8 +280,6 @@ function Properties:parseAxisAngle(str, out) end
 
 --- 调用 `cc.Properties:parseVec2`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `str`：参数 `str`，类型为 `string`。
 --- - `out`：参数 `out`，类型为 `vec2_table`。
@@ -344,8 +292,6 @@ function Properties:parseAxisAngle(str, out) end
 function Properties:parseVec2(str, out) end
 
 --- 调用 `cc.Properties:parseVec4`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `str`：参数 `str`，类型为 `string`。

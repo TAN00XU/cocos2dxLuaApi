@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.ParticleSystemQuad = ParticleSystemQuad
 
 --- 设置 `cc.ParticleSystemQuad:setDisplayFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `spriteFrame`：精灵帧对象。类型为 `cc.SpriteFrame`。
 ---
@@ -22,8 +20,6 @@ cc.ParticleSystemQuad = ParticleSystemQuad
 function ParticleSystemQuad:setDisplayFrame(spriteFrame) end
 
 --- 设置 `cc.ParticleSystemQuad:setTextureWithRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
@@ -38,8 +34,6 @@ function ParticleSystemQuad:setTextureWithRect(texture, rect) end
 
 --- 调用 `cc.ParticleSystemQuad:listenRendererRecreated`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `event`：事件对象。类型为 `cc.EventCustom`。
 ---
@@ -50,8 +44,6 @@ function ParticleSystemQuad:setTextureWithRect(texture, rect) end
 function ParticleSystemQuad:listenRendererRecreated(event) end
 
 --- 创建 `cc.ParticleSystemQuad:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dictionary`：参数 `dictionary`，类型为 `map_table`。
@@ -67,8 +59,6 @@ function ParticleSystemQuad:create(dictionary) end
 
 --- 创建 `cc.ParticleSystemQuad:createWithTotalParticles` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `numberOfParticles`：参数 `numberOfParticles`，类型为 `integer`。
 ---
@@ -80,8 +70,6 @@ function ParticleSystemQuad:createWithTotalParticles(numberOfParticles) end
 
 --- 获取 `cc.ParticleSystemQuad:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
@@ -89,16 +77,12 @@ function ParticleSystemQuad:getDescription() end
 
 --- 更新 `cc.ParticleSystemQuad:updateParticleQuads` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ParticleSystemQuad:updateParticleQuads() end
 
 --- 调用 `cc.ParticleSystemQuad:ParticleSystemQuad`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

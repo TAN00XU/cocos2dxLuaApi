@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local FadeOutDownTiles = {}
 cc.FadeOutDownTiles = FadeOutDownTiles
 
 --- 创建 `cc.FadeOutDownTiles:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -25,16 +23,12 @@ function FadeOutDownTiles:create(duration, gridSize) end
 
 --- 调用 `cc.FadeOutDownTiles:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function FadeOutDownTiles:clone() end
 
 --- 调用 `cc.FadeOutDownTiles:testFunc`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `size_table`。
@@ -48,8 +42,6 @@ function FadeOutDownTiles:clone() end
 function FadeOutDownTiles:testFunc(pos, time) end
 
 --- 调用 `cc.FadeOutDownTiles:FadeOutDownTiles`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

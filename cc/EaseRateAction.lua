@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.EaseRateAction = EaseRateAction
 
 --- 设置 `cc.EaseRateAction:setRate` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `rate`：参数 `rate`，类型为 `number`。
 ---
@@ -22,8 +20,6 @@ cc.EaseRateAction = EaseRateAction
 function EaseRateAction:setRate(rate) end
 
 --- 初始化 `cc.EaseRateAction:initWithAction` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pAction`：参数 `pAction`，类型为 `cc.ActionInterval`。
@@ -38,16 +34,12 @@ function EaseRateAction:initWithAction(pAction, fRate) end
 
 --- 获取 `cc.EaseRateAction:getRate` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function EaseRateAction:getRate() end
 
 --- 创建 `cc.EaseRateAction:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ ccui.TabHeader = TabHeader
 
 --- 获取 `ccui.TabHeader:getIndexInTabControl` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -19,16 +17,12 @@ function TabHeader:getIndexInTabControl() end
 
 --- 获取 `ccui.TabHeader:getTitleText` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function TabHeader:getTitleText() end
 
 --- 设置 `ccui.TabHeader:setTitleFontSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `number`。
@@ -41,8 +35,6 @@ function TabHeader:setTitleFontSize(size) end
 
 --- 设置 `ccui.TabHeader:setTitleFontName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fontName`：字体名称。类型为 `string`。
 ---
@@ -54,16 +46,12 @@ function TabHeader:setTitleFontName(fontName) end
 
 --- 获取 `ccui.TabHeader:getTitleFontSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function TabHeader:getTitleFontSize() end
 
 --- 获取 `ccui.TabHeader:getTitleFontName` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。
@@ -72,8 +60,6 @@ function TabHeader:getTitleFontName() end
 
 --- 获取 `ccui.TabHeader:getTitleColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4b_table`：获取到的 Lua 表数据。
 ---@return color4b_table 获取到的 Lua 表数据。
@@ -81,16 +67,12 @@ function TabHeader:getTitleColor() end
 
 --- 获取 `ccui.TabHeader:getTitleRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Label`：获取到的 `cc.Label` 对象或值。
 ---@return cc.Label 获取到的 `cc.Label` 对象或值。
 function TabHeader:getTitleRenderer() end
 
 --- 设置 `ccui.TabHeader:setTitleText` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `text`：文本内容。类型为 `string`。
@@ -102,8 +84,6 @@ function TabHeader:getTitleRenderer() end
 function TabHeader:setTitleText(text) end
 
 --- 设置 `ccui.TabHeader:setTitleColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。

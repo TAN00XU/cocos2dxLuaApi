@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -8,8 +8,6 @@ local Helper = {}
 ccui.Helper = Helper
 
 --- 获取 `ccui.Helper:getSubStringOfUTF8String` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `str`：参数 `str`，类型为 `string`。
@@ -26,8 +24,6 @@ function Helper:getSubStringOfUTF8String(str, start, length) end
 
 --- 调用 `ccui.Helper:convertBoundingBoxToScreen`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。
 ---
@@ -39,8 +35,6 @@ function Helper:convertBoundingBoxToScreen(node) end
 
 --- 调用 `ccui.Helper:changeLayoutSystemActiveState`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `active`：参数 `active`，类型为 `boolean`。
 ---
@@ -51,8 +45,6 @@ function Helper:convertBoundingBoxToScreen(node) end
 function Helper:changeLayoutSystemActiveState(active) end
 
 --- 调用 `ccui.Helper:seekActionWidgetByActionTag`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `root`：参数 `root`，类型为 `ccui.Widget`。
@@ -67,8 +59,6 @@ function Helper:seekActionWidgetByActionTag(root, tag) end
 
 --- 调用 `ccui.Helper:seekWidgetByName`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `root`：参数 `root`，类型为 `ccui.Widget`。
 --- - `name`：名称或标识。类型为 `string`。
@@ -81,8 +71,6 @@ function Helper:seekActionWidgetByActionTag(root, tag) end
 function Helper:seekWidgetByName(root, name) end
 
 --- 调用 `ccui.Helper:seekWidgetByTag`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `root`：参数 `root`，类型为 `ccui.Widget`。
@@ -97,8 +85,6 @@ function Helper:seekWidgetByTag(root, tag) end
 
 --- 调用 `ccui.Helper:restrictCapInsetRect`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 --- - `textureSize`：参数 `textureSize`，类型为 `size_table`。
@@ -111,8 +97,6 @@ function Helper:seekWidgetByTag(root, tag) end
 function Helper:restrictCapInsetRect(capInsets, textureSize) end
 
 --- 调用 `ccui.Helper:doLayout`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rootNode`：参数 `rootNode`，类型为 `cc.Node`。

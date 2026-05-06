@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local GLView = {}
 cc.GLView = GLView
 
 --- 设置 `cc.GLView:setFrameSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `width`：宽度。类型为 `number`。
@@ -25,8 +23,6 @@ function GLView:setFrameSize(width, height) end
 
 --- 获取 `cc.GLView:getViewPortRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
@@ -34,16 +30,12 @@ function GLView:getViewPortRect() end
 
 --- 获取 `cc.GLView:getScaleY` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function GLView:getScaleY() end
 
 --- 设置 `cc.GLView:setContentScaleFactor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -56,16 +48,12 @@ function GLView:setContentScaleFactor(t) end
 
 --- 获取 `cc.GLView:getContentScaleFactor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function GLView:getContentScaleFactor() end
 
 --- 设置 `cc.GLView:setIMEKeyboardState` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `open`：参数 `open`，类型为 `boolean`。
@@ -78,16 +66,12 @@ function GLView:setIMEKeyboardState(open) end
 
 --- 获取 `cc.GLView:getSafeAreaRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function GLView:getSafeAreaRect() end
 
 --- 设置 `cc.GLView:setScissorInPoints` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -106,8 +90,6 @@ function GLView:setScissorInPoints(x, y, w, h) end
 
 --- 获取 `cc.GLView:getViewName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
@@ -115,16 +97,12 @@ function GLView:getViewName() end
 
 --- 判断 `cc.GLView:isOpenGLReady` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function GLView:isOpenGLReady() end
 
 --- 设置 `cc.GLView:setCursorVisible` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `l`：参数 `l`，类型为 `boolean`。
@@ -137,16 +115,12 @@ function GLView:setCursorVisible(l) end
 
 --- 获取 `cc.GLView:getFrameSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function GLView:getFrameSize() end
 
 --- 设置 `cc.GLView:setDefaultIcon` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -155,8 +129,6 @@ function GLView:setDefaultIcon() end
 
 --- 获取 `cc.GLView:getScaleX` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -164,16 +136,12 @@ function GLView:getScaleX() end
 
 --- 获取 `cc.GLView:getVisibleOrigin` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function GLView:getVisibleOrigin() end
 
 --- 设置 `cc.GLView:setFrameZoomFactor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -186,8 +154,6 @@ function GLView:setFrameZoomFactor(t) end
 
 --- 获取 `cc.GLView:getFrameZoomFactor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -195,16 +161,12 @@ function GLView:getFrameZoomFactor() end
 
 --- 获取 `cc.GLView:getDesignResolutionSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function GLView:getDesignResolutionSize() end
 
 --- 设置 `cc.GLView:setIcon` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -219,8 +181,6 @@ function GLView:setIcon(filename) end
 
 --- 调用 `cc.GLView:windowShouldClose`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：布尔值。
 ---@return boolean 布尔值。
@@ -228,16 +188,12 @@ function GLView:windowShouldClose() end
 
 --- 调用 `cc.GLView:swapBuffers`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GLView:swapBuffers() end
 
 --- 设置 `cc.GLView:setDesignResolutionSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `width`：宽度。类型为 `number`。
@@ -254,16 +210,12 @@ function GLView:setDesignResolutionSize(width, height, resolutionPolicy) end
 
 --- 获取 `cc.GLView:getResolutionPolicy` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function GLView:getResolutionPolicy() end
 
 --- 调用 `cc.GLView:endToLua`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -272,16 +224,12 @@ function GLView:endToLua() end
 
 --- 判断 `cc.GLView:isRetinaDisplay` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function GLView:isRetinaDisplay() end
 
 --- 调用 `cc.GLView:renderScene`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scene`：参数 `scene`，类型为 `cc.Scene`。
@@ -295,8 +243,6 @@ function GLView:isRetinaDisplay() end
 function GLView:renderScene(scene, renderer) end
 
 --- 设置 `cc.GLView:setViewPortInPoints` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -315,8 +261,6 @@ function GLView:setViewPortInPoints(x, y, w, h) end
 
 --- 获取 `cc.GLView:getScissorRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
@@ -324,16 +268,12 @@ function GLView:getScissorRect() end
 
 --- 获取 `cc.GLView:getRetinaFactor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function GLView:getRetinaFactor() end
 
 --- 设置 `cc.GLView:setViewName` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `viewname`：参数 `viewname`，类型为 `string`。
@@ -346,16 +286,12 @@ function GLView:setViewName(viewname) end
 
 --- 获取 `cc.GLView:getVisibleRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function GLView:getVisibleRect() end
 
 --- 获取 `cc.GLView:getVisibleSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
@@ -364,8 +300,6 @@ function GLView:getVisibleSize() end
 
 --- 判断 `cc.GLView:isScissorEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -373,16 +307,12 @@ function GLView:isScissorEnabled() end
 
 --- 调用 `cc.GLView:pollEvents`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GLView:pollEvents() end
 
 --- 设置 `cc.GLView:setGLContextAttrs` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `glContextAttrs`：参数 `glContextAttrs`，类型为 `GLContextAttrs`。
@@ -394,8 +324,6 @@ function GLView:pollEvents() end
 function GLView:setGLContextAttrs(glContextAttrs) end
 
 --- 获取 `cc.GLView:getGLContextAttrs` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `GLContextAttrs`：获取到的 `GLContextAttrs` 对象或值。

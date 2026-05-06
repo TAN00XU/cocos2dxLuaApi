@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.PhysicsJointPin = PhysicsJointPin
 
 --- 创建 `cc.PhysicsJointPin:createConstraints` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：创建出的 布尔值。
 ---@return boolean 创建出的 布尔值。
 function PhysicsJointPin:createConstraints() end
 
 --- 调用 `cc.PhysicsJointPin:construct`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。

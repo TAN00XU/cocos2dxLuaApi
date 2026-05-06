@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local FadeOutTRTiles = {}
 cc.FadeOutTRTiles = FadeOutTRTiles
 
 --- 调用 `cc.FadeOutTRTiles:turnOnTile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function FadeOutTRTiles:turnOnTile(pos) end
 
 --- 调用 `cc.FadeOutTRTiles:turnOffTile`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
 ---
@@ -35,8 +31,6 @@ function FadeOutTRTiles:turnOnTile(pos) end
 function FadeOutTRTiles:turnOffTile(pos) end
 
 --- 调用 `cc.FadeOutTRTiles:transformTile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -51,8 +45,6 @@ function FadeOutTRTiles:transformTile(pos, distance) end
 
 --- 调用 `cc.FadeOutTRTiles:testFunc`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `size_table`。
 --- - `time`：时间值。类型为 `number`。
@@ -65,8 +57,6 @@ function FadeOutTRTiles:transformTile(pos, distance) end
 function FadeOutTRTiles:testFunc(pos, time) end
 
 --- 创建 `cc.FadeOutTRTiles:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -81,16 +71,12 @@ function FadeOutTRTiles:create(duration, gridSize) end
 
 --- 调用 `cc.FadeOutTRTiles:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function FadeOutTRTiles:clone() end
 
 --- 更新 `cc.FadeOutTRTiles:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -102,8 +88,6 @@ function FadeOutTRTiles:clone() end
 function FadeOutTRTiles:update(time) end
 
 --- 调用 `cc.FadeOutTRTiles:FadeOutTRTiles`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

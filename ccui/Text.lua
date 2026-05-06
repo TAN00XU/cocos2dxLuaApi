@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ ccui.Text = Text
 
 --- 调用 `ccui.Text:enableShadow`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Text:enableShadow() end
 
 --- 获取 `ccui.Text:getFontSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -28,16 +24,12 @@ function Text:getFontSize() end
 
 --- 获取 `ccui.Text:getString` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Text:getString() end
 
 --- 调用 `ccui.Text:disableEffect`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `effect`：参数 `effect`，类型为 `integer`。
@@ -52,16 +44,12 @@ function Text:disableEffect(effect) end
 
 --- 获取 `ccui.Text:getLabelEffectType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Text:getLabelEffectType() end
 
 --- 获取 `ccui.Text:getTextColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `color4b_table`：获取到的 Lua 表数据。
@@ -70,16 +58,12 @@ function Text:getTextColor() end
 
 --- 获取 `ccui.Text:getBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
 ---@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
 function Text:getBlendFunc() end
 
 --- 设置 `ccui.Text:setTextVerticalAlignment` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `alignment`：参数 `alignment`，类型为 `integer`。
@@ -92,8 +76,6 @@ function Text:setTextVerticalAlignment(alignment) end
 
 --- 设置 `ccui.Text:setFontName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
@@ -104,8 +86,6 @@ function Text:setTextVerticalAlignment(alignment) end
 function Text:setFontName(name) end
 
 --- 设置 `ccui.Text:setTouchScaleChangeEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -118,16 +98,12 @@ function Text:setTouchScaleChangeEnabled(enabled) end
 
 --- 获取 `ccui.Text:getShadowOffset` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Text:getShadowOffset() end
 
 --- 设置 `ccui.Text:setString` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `text`：文本内容。类型为 `string`。
@@ -140,16 +116,12 @@ function Text:setString(text) end
 
 --- 获取 `ccui.Text:getOutlineSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Text:getOutlineSize() end
 
 --- 初始化 `ccui.Text:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `textContent`：参数 `textContent`，类型为 `string`。
@@ -166,16 +138,12 @@ function Text:init(textContent, fontName, fontSize) end
 
 --- 获取 `ccui.Text:getShadowBlurRadius` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Text:getShadowBlurRadius() end
 
 --- 判断 `ccui.Text:isTouchScaleChangeEnabled` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -184,16 +152,12 @@ function Text:isTouchScaleChangeEnabled() end
 
 --- 获取 `ccui.Text:getFontName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Text:getFontName() end
 
 --- 设置 `ccui.Text:setTextAreaSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -206,8 +170,6 @@ function Text:setTextAreaSize(size) end
 
 --- 获取 `ccui.Text:getStringLength` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -215,16 +177,12 @@ function Text:getStringLength() end
 
 --- 获取 `ccui.Text:getAutoRenderSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Text:getAutoRenderSize() end
 
 --- 调用 `ccui.Text:enableOutline`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `outlineColor`：参数 `outlineColor`，类型为 `color4b_table`。
@@ -239,16 +197,12 @@ function Text:enableOutline(outlineColor, outlineSize) end
 
 --- 获取 `ccui.Text:getEffectColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4b_table`：获取到的 Lua 表数据。
 ---@return color4b_table 获取到的 Lua 表数据。
 function Text:getEffectColor() end
 
 --- 获取 `ccui.Text:getType` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -257,8 +211,6 @@ function Text:getType() end
 
 --- 获取 `ccui.Text:getTextHorizontalAlignment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -266,16 +218,12 @@ function Text:getTextHorizontalAlignment() end
 
 --- 判断 `ccui.Text:isShadowEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Text:isShadowEnabled() end
 
 --- 设置 `ccui.Text:setFontSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `number`。
@@ -288,16 +236,12 @@ function Text:setFontSize(size) end
 
 --- 获取 `ccui.Text:getShadowColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4b_table`：获取到的 Lua 表数据。
 ---@return color4b_table 获取到的 Lua 表数据。
 function Text:getShadowColor() end
 
 --- 设置 `ccui.Text:setTextColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -310,8 +254,6 @@ function Text:setTextColor(color) end
 
 --- 调用 `ccui.Text:enableGlow`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `glowColor`：参数 `glowColor`，类型为 `color4b_table`。
 ---
@@ -322,8 +264,6 @@ function Text:setTextColor(color) end
 function Text:enableGlow(glowColor) end
 
 --- 获取 `ccui.Text:getLetter` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `lettetIndex`：参数 `lettetIndex`，类型为 `integer`。
@@ -336,8 +276,6 @@ function Text:getLetter(lettetIndex) end
 
 --- 设置 `ccui.Text:setBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
 ---
@@ -349,8 +287,6 @@ function Text:setBlendFunc(blendFunc) end
 
 --- 获取 `ccui.Text:getTextVerticalAlignment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -358,16 +294,12 @@ function Text:getTextVerticalAlignment() end
 
 --- 获取 `ccui.Text:getTextAreaSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Text:getTextAreaSize() end
 
 --- 设置 `ccui.Text:setTextHorizontalAlignment` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `alignment`：参数 `alignment`，类型为 `integer`。
@@ -379,8 +311,6 @@ function Text:getTextAreaSize() end
 function Text:setTextHorizontalAlignment(alignment) end
 
 --- 创建 `ccui.Text:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `textContent`：参数 `textContent`，类型为 `string`。
@@ -399,16 +329,12 @@ function Text:create(textContent, fontName, fontSize) end
 
 --- 创建 `ccui.Text:createInstance` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
 ---@return cc.Ref 创建出的 `cc.Ref` 对象或值。
 function Text:createInstance() end
 
 --- 获取 `ccui.Text:getVirtualRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
@@ -417,16 +343,12 @@ function Text:getVirtualRenderer() end
 
 --- 初始化 `ccui.Text:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Text:init() end
 
 --- 获取 `ccui.Text:getDescription` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。
@@ -435,16 +357,12 @@ function Text:getDescription() end
 
 --- 获取 `ccui.Text:getVirtualRendererSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Text:getVirtualRendererSize() end
 
 --- 调用 `ccui.Text:Text`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

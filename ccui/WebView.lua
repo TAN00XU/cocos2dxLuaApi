@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local WebView = {}
 ccui.WebView = WebView
 
 --- 设置 `ccui.WebView:setOpacityWebView` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `number`。
@@ -23,16 +21,12 @@ function WebView:setOpacityWebView(opacity) end
 
 --- 判断 `ccui.WebView:canGoBack` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function WebView:canGoBack() end
 
 --- 加载 `ccui.WebView:loadHTMLString` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `string`：参数 `string`，类型为 `string`。
@@ -47,8 +41,6 @@ function WebView:loadHTMLString(string, baseURL) end
 
 --- 调用 `ccui.WebView:goForward`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -56,16 +48,12 @@ function WebView:goForward() end
 
 --- 调用 `ccui.WebView:goBack`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function WebView:goBack() end
 
 --- 设置 `ccui.WebView:setScalesPageToFit` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scalesPageToFit`：参数 `scalesPageToFit`，类型为 `boolean`。
@@ -78,8 +66,6 @@ function WebView:setScalesPageToFit(scalesPageToFit) end
 
 --- 加载 `ccui.WebView:loadFile` 对应的资源或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
@@ -90,8 +76,6 @@ function WebView:setScalesPageToFit(scalesPageToFit) end
 function WebView:loadFile(fileName) end
 
 --- 加载 `ccui.WebView:loadURL` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `url`：参数 `url`，类型为 `string`。
@@ -108,8 +92,6 @@ function WebView:loadURL(url, cleanCachedData) end
 
 --- 设置 `ccui.WebView:setBounces` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `bounce`：参数 `bounce`，类型为 `boolean`。
 ---
@@ -120,8 +102,6 @@ function WebView:loadURL(url, cleanCachedData) end
 function WebView:setBounces(bounce) end
 
 --- 调用 `ccui.WebView:evaluateJS`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `js`：参数 `js`，类型为 `string`。
@@ -134,16 +114,12 @@ function WebView:evaluateJS(js) end
 
 --- 设置 `ccui.WebView:setBackgroundTransparent` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function WebView:setBackgroundTransparent() end
 
 --- 获取 `ccui.WebView:getOnJSCallback` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `fun(...): any`：获取到的 函数回调。
@@ -152,16 +128,12 @@ function WebView:getOnJSCallback() end
 
 --- 判断 `ccui.WebView:canGoForward` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function WebView:canGoForward() end
 
 --- 停止 `ccui.WebView:stopLoading` 对应的流程。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -170,8 +142,6 @@ function WebView:stopLoading() end
 
 --- 获取 `ccui.WebView:getOpacityWebView` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -179,16 +149,12 @@ function WebView:getOpacityWebView() end
 
 --- 调用 `ccui.WebView:reload`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function WebView:reload() end
 
 --- 设置 `ccui.WebView:setJavascriptInterfaceScheme` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scheme`：参数 `scheme`，类型为 `string`。
@@ -201,8 +167,6 @@ function WebView:setJavascriptInterfaceScheme(scheme) end
 
 --- 创建 `ccui.WebView:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -210,16 +174,12 @@ function WebView:create() end
 
 --- 调用 `ccui.WebView:onEnter`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function WebView:onEnter() end
 
 --- 设置 `ccui.WebView:setVisible` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `visible`：是否可见。类型为 `boolean`。
@@ -232,16 +192,12 @@ function WebView:setVisible(visible) end
 
 --- 调用 `ccui.WebView:onExit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function WebView:onExit() end
 
 --- 调用 `ccui.WebView:WebView`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

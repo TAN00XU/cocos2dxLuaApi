@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ActionCamera = {}
 cc.ActionCamera = ActionCamera
 
 --- 设置 `cc.ActionCamera:setEye` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -29,16 +27,16 @@ function ActionCamera:setEye(x, y, z) end
 
 --- 获取 `cc.ActionCamera:getEye` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `x`：X 分量。
+--- - `y`：Y 分量。
+--- - `z`：Z 分量。
+---@return number x X 分量。
+---@return number y Y 分量。
+---@return number z Z 分量。
 function ActionCamera:getEye() end
 
 --- 设置 `cc.ActionCamera:setUp` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `up`：参数 `up`，类型为 `vec3_table`。
@@ -51,16 +49,16 @@ function ActionCamera:setUp(up) end
 
 --- 获取 `cc.ActionCamera:getCenter` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `x`：X 分量。
+--- - `y`：Y 分量。
+--- - `z`：Z 分量。
+---@return number x X 分量。
+---@return number y Y 分量。
+---@return number z Z 分量。
 function ActionCamera:getCenter() end
 
 --- 设置 `cc.ActionCamera:setCenter` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `center`：中心点。类型为 `vec3_table`。
@@ -73,16 +71,16 @@ function ActionCamera:setCenter(center) end
 
 --- 获取 `cc.ActionCamera:getUp` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `x`：X 分量。
+--- - `y`：Y 分量。
+--- - `z`：Z 分量。
+---@return number x X 分量。
+---@return number y Y 分量。
+---@return number z Z 分量。
 function ActionCamera:getUp() end
 
 --- 调用 `cc.ActionCamera:startWithTarget`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -95,8 +93,6 @@ function ActionCamera:startWithTarget(target) end
 
 --- 调用 `cc.ActionCamera:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -104,16 +100,12 @@ function ActionCamera:clone() end
 
 --- 调用 `cc.ActionCamera:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionCamera:reverse() end
 
 --- 调用 `cc.ActionCamera:ActionCamera`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

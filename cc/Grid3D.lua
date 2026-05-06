@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.Grid3D = Grid3D
 
 --- 获取 `cc.Grid3D:getNeedDepthTestForBlit` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Grid3D:getNeedDepthTestForBlit() end
 
 --- 设置 `cc.Grid3D:setNeedDepthTestForBlit` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `neededDepthTest`：参数 `neededDepthTest`，类型为 `boolean`。
@@ -31,8 +27,6 @@ function Grid3D:getNeedDepthTestForBlit() end
 function Grid3D:setNeedDepthTestForBlit(neededDepthTest) end
 
 --- 创建 `cc.Grid3D:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
@@ -55,16 +49,12 @@ function Grid3D:create(gridSize, texture, flipped, rect) end
 
 --- 调用 `cc.Grid3D:calculateVertexPoints`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Grid3D:calculateVertexPoints() end
 
 --- 调用 `cc.Grid3D:beforeBlit`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -73,16 +63,12 @@ function Grid3D:beforeBlit() end
 
 --- 调用 `cc.Grid3D:afterBlit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Grid3D:afterBlit() end
 
 --- 调用 `cc.Grid3D:reuse`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -91,16 +77,12 @@ function Grid3D:reuse() end
 
 --- 调用 `cc.Grid3D:blit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Grid3D:blit() end
 
 --- 调用 `cc.Grid3D:Grid3D`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

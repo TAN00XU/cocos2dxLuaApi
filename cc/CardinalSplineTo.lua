@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.CardinalSplineTo = CardinalSplineTo
 
 --- 获取 `cc.CardinalSplineTo:getPoints` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `point_table`：获取到的 Lua 表数据。
 ---@return point_table 获取到的 Lua 表数据。
 function CardinalSplineTo:getPoints() end
 
 --- 更新 `cc.CardinalSplineTo:updatePosition` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `newPos`：参数 `newPos`，类型为 `vec2_table`。
@@ -31,8 +27,6 @@ function CardinalSplineTo:getPoints() end
 function CardinalSplineTo:updatePosition(newPos) end
 
 --- 初始化 `cc.CardinalSplineTo:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -49,8 +43,6 @@ function CardinalSplineTo:initWithDuration(duration, points, tension) end
 
 --- 调用 `cc.CardinalSplineTo:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -62,8 +54,6 @@ function CardinalSplineTo:startWithTarget(target) end
 
 --- 调用 `cc.CardinalSplineTo:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -71,16 +61,12 @@ function CardinalSplineTo:clone() end
 
 --- 调用 `cc.CardinalSplineTo:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function CardinalSplineTo:reverse() end
 
 --- 更新 `cc.CardinalSplineTo:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -92,8 +78,6 @@ function CardinalSplineTo:reverse() end
 function CardinalSplineTo:update(time) end
 
 --- 调用 `cc.CardinalSplineTo:CardinalSplineTo`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ ccs.ActionRotationFrame = ActionRotationFrame
 
 --- 设置 `ccs.ActionRotationFrame:setRotation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `rotation`：旋转角度。类型为 `number`。
 ---
@@ -22,8 +20,6 @@ ccs.ActionRotationFrame = ActionRotationFrame
 function ActionRotationFrame:setRotation(rotation) end
 
 --- 获取 `ccs.ActionRotationFrame:getAction` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -40,16 +36,12 @@ function ActionRotationFrame:getAction(duration, srcFrame) end
 
 --- 获取 `ccs.ActionRotationFrame:getRotation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ActionRotationFrame:getRotation() end
 
 --- 调用 `ccs.ActionRotationFrame:ActionRotationFrame`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local EaseBezierAction = {}
 cc.EaseBezierAction = EaseBezierAction
 
 --- 设置 `cc.EaseBezierAction:setBezierParamer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `p0`：参数 `p0`，类型为 `number`。
@@ -29,8 +27,6 @@ function EaseBezierAction:setBezierParamer(p0, p1, p2, p3) end
 
 --- 创建 `cc.EaseBezierAction:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
 ---
@@ -42,16 +38,12 @@ function EaseBezierAction:create(action) end
 
 --- 调用 `cc.EaseBezierAction:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EaseBezierAction:clone() end
 
 --- 更新 `cc.EaseBezierAction:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -64,16 +56,12 @@ function EaseBezierAction:update(time) end
 
 --- 调用 `cc.EaseBezierAction:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EaseBezierAction:reverse() end
 
 --- 调用 `cc.EaseBezierAction:EaseBezierAction`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

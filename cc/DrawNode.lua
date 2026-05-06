@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local DrawNode = {}
 cc.DrawNode = DrawNode
 
 --- 调用 `cc.DrawNode:drawLine`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `origin`：参数 `origin`，类型为 `vec2_table`。
@@ -27,8 +25,6 @@ function DrawNode:drawLine(origin, destination, color) end
 
 --- 设置 `cc.DrawNode:setIsolated` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `isolated`：参数 `isolated`，类型为 `boolean`。
 ---
@@ -39,8 +35,6 @@ function DrawNode:drawLine(origin, destination, color) end
 function DrawNode:setIsolated(isolated) end
 
 --- 调用 `cc.DrawNode:drawRect`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `p1`：参数 `p1`，类型为 `vec2_table`。
@@ -62,8 +56,6 @@ function DrawNode:setIsolated(isolated) end
 function DrawNode:drawRect(p1, p2, p3, p4, color) end
 
 --- 调用 `cc.DrawNode:drawSolidCircle`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `center`：中心点。类型为 `vec2_table`。
@@ -90,8 +82,6 @@ function DrawNode:drawSolidCircle(center, radius, angle, segments, scaleX, scale
 
 --- 设置 `cc.DrawNode:setLineWidth` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `lineWidth`：参数 `lineWidth`，类型为 `number`。
 ---
@@ -102,8 +92,6 @@ function DrawNode:drawSolidCircle(center, radius, angle, segments, scaleX, scale
 function DrawNode:setLineWidth(lineWidth) end
 
 --- 调用 `cc.DrawNode:drawDot`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -119,8 +107,6 @@ function DrawNode:setLineWidth(lineWidth) end
 function DrawNode:drawDot(pos, radius, color) end
 
 --- 调用 `cc.DrawNode:drawSegment`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `from`：参数 `from`，类型为 `vec2_table`。
@@ -139,16 +125,12 @@ function DrawNode:drawSegment(from, to, radius, color) end
 
 --- 获取 `cc.DrawNode:getBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
 ---@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
 function DrawNode:getBlendFunc() end
 
 --- 调用 `cc.DrawNode:drawCircle`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `center`：中心点。类型为 `vec2_table`。
@@ -177,8 +159,6 @@ function DrawNode:drawCircle(center, radius, angle, segments, drawLineToCenter, 
 
 --- 调用 `cc.DrawNode:drawQuadBezier`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `origin`：参数 `origin`，类型为 `vec2_table`。
 --- - `control`：参数 `control`，类型为 `vec2_table`。
@@ -198,8 +178,6 @@ function DrawNode:drawQuadBezier(origin, control, destination, segments, color) 
 
 --- 调用 `cc.DrawNode:drawTriangle`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `p1`：参数 `p1`，类型为 `vec2_table`。
 --- - `p2`：参数 `p2`，类型为 `vec2_table`。
@@ -217,8 +195,6 @@ function DrawNode:drawTriangle(p1, p2, p3, color) end
 
 --- 设置 `cc.DrawNode:setBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
 ---
@@ -230,16 +206,12 @@ function DrawNode:setBlendFunc(blendFunc) end
 
 --- 调用 `cc.DrawNode:clear`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:clear() end
 
 --- 调用 `cc.DrawNode:drawSolidRect`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `origin`：参数 `origin`，类型为 `vec2_table`。
@@ -256,16 +228,12 @@ function DrawNode:drawSolidRect(origin, destination, color) end
 
 --- 获取 `cc.DrawNode:getLineWidth` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function DrawNode:getLineWidth() end
 
 --- 调用 `cc.DrawNode:drawPoint`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `point`：参数 `point`，类型为 `vec2_table`。
@@ -282,16 +250,12 @@ function DrawNode:drawPoint(point, pointSize, color) end
 
 --- 判断 `cc.DrawNode:isIsolated` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function DrawNode:isIsolated() end
 
 --- 调用 `cc.DrawNode:drawCubicBezier`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `origin`：参数 `origin`，类型为 `vec2_table`。
@@ -314,16 +278,12 @@ function DrawNode:drawCubicBezier(origin, control1, control2, destination, segme
 
 --- 创建 `cc.DrawNode:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:create() end
 
 --- 调用 `cc.DrawNode:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -340,8 +300,6 @@ function DrawNode:draw(renderer, transform, flags) end
 
 --- 调用 `cc.DrawNode:visit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
 --- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
@@ -357,16 +315,12 @@ function DrawNode:visit(renderer, parentTransform, parentFlags) end
 
 --- 初始化 `cc.DrawNode:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function DrawNode:init() end
 
 --- 调用 `cc.DrawNode:DrawNode`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

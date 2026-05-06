@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ ccui.HBox = HBox
 
 --- 初始化 `ccui.HBox:initWithSize` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
 ---
@@ -22,8 +20,6 @@ ccui.HBox = HBox
 function HBox:initWithSize(size) end
 
 --- 创建 `ccui.HBox:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -38,16 +34,12 @@ function HBox:create(size) end
 
 --- 初始化 `ccui.HBox:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function HBox:init() end
 
 --- 调用 `ccui.HBox:HBox`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TextureCubemapBackend = {}
 ccb.TextureCubemapBackend = TextureCubemapBackend
 
 --- 更新 `ccb.TextureCubemapBackend:updateFaceData` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `side`：参数 `side`，类型为 `integer`。

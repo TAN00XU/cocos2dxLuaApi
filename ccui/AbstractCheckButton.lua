@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ ccui.AbstractCheckButton = AbstractCheckButton
 
 --- 获取 `ccui.AbstractCheckButton:getCrossDisabledFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
@@ -19,16 +17,12 @@ function AbstractCheckButton:getCrossDisabledFile() end
 
 --- 获取 `ccui.AbstractCheckButton:getBackDisabledFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function AbstractCheckButton:getBackDisabledFile() end
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureBackGroundSelected` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `backGroundSelected`：参数 `backGroundSelected`，类型为 `string`。
@@ -43,8 +37,6 @@ function AbstractCheckButton:loadTextureBackGroundSelected(backGroundSelected, t
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureBackGroundDisabled` 对应的资源或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `backGroundDisabled`：参数 `backGroundDisabled`，类型为 `string`。
 --- - `texType`：参数 `texType`，类型为 `integer`。
@@ -58,16 +50,12 @@ function AbstractCheckButton:loadTextureBackGroundDisabled(backGroundDisabled, t
 
 --- 获取 `ccui.AbstractCheckButton:getCrossNormalFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function AbstractCheckButton:getCrossNormalFile() end
 
 --- 设置 `ccui.AbstractCheckButton:setSelected` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `selected`：参数 `selected`，类型为 `boolean`。
@@ -80,16 +68,12 @@ function AbstractCheckButton:setSelected(selected) end
 
 --- 获取 `ccui.AbstractCheckButton:getBackPressedFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function AbstractCheckButton:getBackPressedFile() end
 
 --- 获取 `ccui.AbstractCheckButton:getRendererFrontCrossDisabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
@@ -98,16 +82,12 @@ function AbstractCheckButton:getRendererFrontCrossDisabled() end
 
 --- 获取 `ccui.AbstractCheckButton:getRendererBackground` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function AbstractCheckButton:getRendererBackground() end
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureFrontCross` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `crossTextureName`：参数 `crossTextureName`，类型为 `string`。
@@ -122,16 +102,12 @@ function AbstractCheckButton:loadTextureFrontCross(crossTextureName, texType) en
 
 --- 获取 `ccui.AbstractCheckButton:getRendererBackgroundDisabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function AbstractCheckButton:getRendererBackgroundDisabled() end
 
 --- 判断 `ccui.AbstractCheckButton:isSelected` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -150,8 +126,6 @@ function AbstractCheckButton:isSelected() end
 function AbstractCheckButton:init(backGround, backGroundSelected, cross, backGroundDisabled, frontCrossDisabled, texType) end
 --- 获取 `ccui.AbstractCheckButton:getBackNormalFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
@@ -169,16 +143,12 @@ function AbstractCheckButton:getBackNormalFile() end
 function AbstractCheckButton:loadTextures(background, backgroundSelected, cross, backgroundDisabled, frontCrossDisabled, texType) end
 --- 获取 `ccui.AbstractCheckButton:getZoomScale` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function AbstractCheckButton:getZoomScale() end
 
 --- 获取 `ccui.AbstractCheckButton:getRendererFrontCross` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
@@ -187,16 +157,12 @@ function AbstractCheckButton:getRendererFrontCross() end
 
 --- 获取 `ccui.AbstractCheckButton:getRendererBackgroundSelected` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function AbstractCheckButton:getRendererBackgroundSelected() end
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureBackGround` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `backGround`：参数 `backGround`，类型为 `string`。
@@ -211,8 +177,6 @@ function AbstractCheckButton:loadTextureBackGround(backGround, type) end
 
 --- 设置 `ccui.AbstractCheckButton:setZoomScale` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `scale`：缩放比例。类型为 `number`。
 ---
@@ -223,8 +187,6 @@ function AbstractCheckButton:loadTextureBackGround(backGround, type) end
 function AbstractCheckButton:setZoomScale(scale) end
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureFrontCrossDisabled` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `frontCrossDisabled`：参数 `frontCrossDisabled`，类型为 `string`。
@@ -239,8 +201,6 @@ function AbstractCheckButton:loadTextureFrontCrossDisabled(frontCrossDisabled, t
 
 --- 获取 `ccui.AbstractCheckButton:getVirtualRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
@@ -248,16 +208,12 @@ function AbstractCheckButton:getVirtualRenderer() end
 
 --- 初始化 `ccui.AbstractCheckButton:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function AbstractCheckButton:init() end
 
 --- 获取 `ccui.AbstractCheckButton:getVirtualRendererSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。

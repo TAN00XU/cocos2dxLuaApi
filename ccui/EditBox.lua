@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ ccui.EditBox = EditBox
 
 --- 获取 `ccui.EditBox:getFontSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getFontSize() end
 
 --- 调用 `ccui.EditBox:keyboardDidShow`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
@@ -32,8 +28,6 @@ function EditBox:keyboardDidShow(info) end
 
 --- 设置 `ccui.EditBox:setMaxLength` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `maxLength`：参数 `maxLength`，类型为 `integer`。
 ---
@@ -45,16 +39,12 @@ function EditBox:setMaxLength(maxLength) end
 
 --- 调用 `ccui.EditBox:openKeyboard`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EditBox:openKeyboard() end
 
 --- 设置 `ccui.EditBox:setFontSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fontSize`：参数 `fontSize`，类型为 `integer`。
@@ -67,8 +57,6 @@ function EditBox:setFontSize(fontSize) end
 
 --- 获取 `ccui.EditBox:getText` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
@@ -76,16 +64,12 @@ function EditBox:getText() end
 
 --- 获取 `ccui.EditBox:getInputMode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getInputMode() end
 
 --- 初始化 `ccui.EditBox:initWithSizeAndBackgroundSprite` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -107,16 +91,12 @@ function EditBox:initWithSizeAndBackgroundSprite(size, normalSprite, pressedSpri
 
 --- 获取 `ccui.EditBox:getPlaceholderFontName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function EditBox:getPlaceholderFontName() end
 
 --- 调用 `ccui.EditBox:keyboardDidHide`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
@@ -129,8 +109,6 @@ function EditBox:keyboardDidHide(info) end
 
 --- 设置 `ccui.EditBox:setPlaceholderFontName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pFontName`：参数 `pFontName`，类型为 `string`。
 ---
@@ -142,16 +120,12 @@ function EditBox:setPlaceholderFontName(pFontName) end
 
 --- 获取 `ccui.EditBox:getPlaceholderFontSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getPlaceholderFontSize() end
 
 --- 获取 `ccui.EditBox:getCapInsetsDisabledRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
@@ -160,16 +134,12 @@ function EditBox:getCapInsetsDisabledRenderer() end
 
 --- 获取 `ccui.EditBox:getPlaceHolder` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function EditBox:getPlaceHolder() end
 
 --- 设置 `ccui.EditBox:setFontName` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pFontName`：参数 `pFontName`，类型为 `string`。
@@ -182,8 +152,6 @@ function EditBox:setFontName(pFontName) end
 
 --- 调用 `ccui.EditBox:registerScriptEditBoxHandler`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `handler`：参数 `handler`，类型为 `integer`。
 ---
@@ -194,8 +162,6 @@ function EditBox:setFontName(pFontName) end
 function EditBox:registerScriptEditBoxHandler(handler) end
 
 --- 设置 `ccui.EditBox:setCapInsetsDisabledRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -208,8 +174,6 @@ function EditBox:setCapInsetsDisabledRenderer(capInsets) end
 
 --- 设置 `ccui.EditBox:setPlaceholderFontSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fontSize`：参数 `fontSize`，类型为 `integer`。
 ---
@@ -220,8 +184,6 @@ function EditBox:setCapInsetsDisabledRenderer(capInsets) end
 function EditBox:setPlaceholderFontSize(fontSize) end
 
 --- 加载 `ccui.EditBox:loadTextureDisabled` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `disabled`：参数 `disabled`，类型为 `string`。
@@ -236,8 +198,6 @@ function EditBox:loadTextureDisabled(disabled, texType) end
 
 --- 设置 `ccui.EditBox:setInputMode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `inputMode`：参数 `inputMode`，类型为 `integer`。
 ---
@@ -249,16 +209,12 @@ function EditBox:setInputMode(inputMode) end
 
 --- 调用 `ccui.EditBox:unregisterScriptEditBoxHandler`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EditBox:unregisterScriptEditBoxHandler() end
 
 --- 调用 `ccui.EditBox:keyboardWillShow`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
@@ -270,8 +226,6 @@ function EditBox:unregisterScriptEditBoxHandler() end
 function EditBox:keyboardWillShow(info) end
 
 --- 设置 `ccui.EditBox:setPlaceholderFontColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -286,16 +240,12 @@ function EditBox:setPlaceholderFontColor(color) end
 
 --- 获取 `ccui.EditBox:getReturnType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getReturnType() end
 
 --- 设置 `ccui.EditBox:setFontColor` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -310,16 +260,12 @@ function EditBox:setFontColor(color) end
 
 --- 获取 `ccui.EditBox:getFontName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function EditBox:getFontName() end
 
 --- 调用 `ccui.EditBox:keyboardWillHide`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
@@ -332,8 +278,6 @@ function EditBox:keyboardWillHide(info) end
 
 --- 设置 `ccui.EditBox:setCapInsetsNormalRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 ---
@@ -344,8 +288,6 @@ function EditBox:keyboardWillHide(info) end
 function EditBox:setCapInsetsNormalRenderer(capInsets) end
 
 --- 加载 `ccui.EditBox:loadTexturePressed` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pressed`：参数 `pressed`，类型为 `string`。
@@ -360,8 +302,6 @@ function EditBox:loadTexturePressed(pressed, texType) end
 
 --- 获取 `ccui.EditBox:getFontColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4b_table`：获取到的 Lua 表数据。
 ---@return color4b_table 获取到的 Lua 表数据。
@@ -369,16 +309,12 @@ function EditBox:getFontColor() end
 
 --- 获取 `ccui.EditBox:getInputFlag` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getInputFlag() end
 
 --- 初始化 `ccui.EditBox:initWithSizeAndTexture` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -399,16 +335,12 @@ function EditBox:initWithSizeAndTexture(size, normalImage, pressedImage, disable
 
 --- 获取 `ccui.EditBox:getTextHorizontalAlignment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getTextHorizontalAlignment() end
 
 --- 获取 `ccui.EditBox:getCapInsetsNormalRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
@@ -417,8 +349,6 @@ function EditBox:getCapInsetsNormalRenderer() end
 
 --- 获取 `ccui.EditBox:getCapInsetsPressedRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
@@ -426,16 +356,12 @@ function EditBox:getCapInsetsPressedRenderer() end
 
 --- 获取 `ccui.EditBox:getScriptEditBoxHandler` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getScriptEditBoxHandler() end
 
 --- 加载 `ccui.EditBox:loadTextures` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `normal`：参数 `normal`，类型为 `string`。
@@ -454,8 +380,6 @@ function EditBox:loadTextures(normal, pressed, disabled, texType) end
 
 --- 设置 `ccui.EditBox:setPlaceHolder` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pText`：参数 `pText`，类型为 `string`。
 ---
@@ -466,8 +390,6 @@ function EditBox:loadTextures(normal, pressed, disabled, texType) end
 function EditBox:setPlaceHolder(pText) end
 
 --- 设置 `ccui.EditBox:setInputFlag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `inputFlag`：参数 `inputFlag`，类型为 `integer`。
@@ -480,8 +402,6 @@ function EditBox:setInputFlag(inputFlag) end
 
 --- 设置 `ccui.EditBox:setReturnType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `returnType`：参数 `returnType`，类型为 `integer`。
 ---
@@ -492,8 +412,6 @@ function EditBox:setInputFlag(inputFlag) end
 function EditBox:setReturnType(returnType) end
 
 --- 加载 `ccui.EditBox:loadTextureNormal` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `normal`：参数 `normal`，类型为 `string`。
@@ -508,16 +426,12 @@ function EditBox:loadTextureNormal(normal, texType) end
 
 --- 获取 `ccui.EditBox:getMaxLength` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EditBox:getMaxLength() end
 
 --- 设置 `ccui.EditBox:setCapInsetsPressedRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -530,8 +444,6 @@ function EditBox:setCapInsetsPressedRenderer(capInsets) end
 
 --- 设置 `ccui.EditBox:setText` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pText`：参数 `pText`，类型为 `string`。
 ---
@@ -542,8 +454,6 @@ function EditBox:setCapInsetsPressedRenderer(capInsets) end
 function EditBox:setText(pText) end
 
 --- 设置 `ccui.EditBox:setPlaceholderFont` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pFontName`：参数 `pFontName`，类型为 `string`。
@@ -558,16 +468,12 @@ function EditBox:setPlaceholderFont(pFontName, fontSize) end
 
 --- 获取 `ccui.EditBox:getPlaceholderFontColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4b_table`：获取到的 Lua 表数据。
 ---@return color4b_table 获取到的 Lua 表数据。
 function EditBox:getPlaceholderFontColor() end
 
 --- 设置 `ccui.EditBox:setCapInsets` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -579,8 +485,6 @@ function EditBox:getPlaceholderFontColor() end
 function EditBox:setCapInsets(capInsets) end
 
 --- 设置 `ccui.EditBox:setFont` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pFontName`：参数 `pFontName`，类型为 `string`。
@@ -595,8 +499,6 @@ function EditBox:setFont(pFontName, fontSize) end
 
 --- 设置 `ccui.EditBox:setTextHorizontalAlignment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `alignment`：参数 `alignment`，类型为 `integer`。
 ---
@@ -607,8 +509,6 @@ function EditBox:setFont(pFontName, fontSize) end
 function EditBox:setTextHorizontalAlignment(alignment) end
 
 --- 创建 `ccui.EditBox:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -632,8 +532,6 @@ function EditBox:create(size, normalImage, pressedImage, disabledImage, texType)
 
 --- 设置 `ccui.EditBox:setAnchorPoint` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `anchorPoint`：参数 `anchorPoint`，类型为 `vec2_table`。
 ---
@@ -644,8 +542,6 @@ function EditBox:create(size, normalImage, pressedImage, disabledImage, texType)
 function EditBox:setAnchorPoint(anchorPoint) end
 
 --- 调用 `ccui.EditBox:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -662,16 +558,12 @@ function EditBox:draw(renderer, parentTransform, parentFlags) end
 
 --- 获取 `ccui.EditBox:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function EditBox:getDescription() end
 
 --- 设置 `ccui.EditBox:setPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -684,8 +576,6 @@ function EditBox:setPosition(pos) end
 
 --- 设置 `ccui.EditBox:setVisible` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `visible`：是否可见。类型为 `boolean`。
 ---
@@ -697,8 +587,6 @@ function EditBox:setVisible(visible) end
 
 --- 设置 `ccui.EditBox:setContentSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
 ---
@@ -709,8 +597,6 @@ function EditBox:setVisible(visible) end
 function EditBox:setContentSize(size) end
 
 --- 调用 `ccui.EditBox:EditBox`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

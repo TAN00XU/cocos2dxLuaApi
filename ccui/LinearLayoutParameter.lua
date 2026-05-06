@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local LinearLayoutParameter = {}
 ccui.LinearLayoutParameter = LinearLayoutParameter
 
 --- 设置 `ccui.LinearLayoutParameter:setGravity` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `gravity`：参数 `gravity`，类型为 `integer`。
@@ -23,16 +21,12 @@ function LinearLayoutParameter:setGravity(gravity) end
 
 --- 获取 `ccui.LinearLayoutParameter:getGravity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function LinearLayoutParameter:getGravity() end
 
 --- 创建 `ccui.LinearLayoutParameter:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -41,16 +35,12 @@ function LinearLayoutParameter:create() end
 
 --- 创建 `ccui.LinearLayoutParameter:createCloneInstance` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `ccui.LayoutParameter`：创建出的 `ccui.LayoutParameter` 对象或值。
 ---@return ccui.LayoutParameter 创建出的 `ccui.LayoutParameter` 对象或值。
 function LinearLayoutParameter:createCloneInstance() end
 
 --- 调用 `ccui.LinearLayoutParameter:copyProperties`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `model`：参数 `model`，类型为 `ccui.LayoutParameter`。
@@ -62,8 +52,6 @@ function LinearLayoutParameter:createCloneInstance() end
 function LinearLayoutParameter:copyProperties(model) end
 
 --- 调用 `ccui.LinearLayoutParameter:LinearLayoutParameter`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

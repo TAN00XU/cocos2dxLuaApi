@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local FadeIn = {}
 cc.FadeIn = FadeIn
 
 --- 设置 `cc.FadeIn:setReverseAction` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `ac`：参数 `ac`，类型为 `cc.FadeTo`。
@@ -23,8 +21,6 @@ function FadeIn:setReverseAction(ac) end
 
 --- 创建 `cc.FadeIn:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `d`：参数 `d`，类型为 `number`。
 ---
@@ -35,8 +31,6 @@ function FadeIn:setReverseAction(ac) end
 function FadeIn:create(d) end
 
 --- 调用 `cc.FadeIn:startWithTarget`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -49,8 +43,6 @@ function FadeIn:startWithTarget(target) end
 
 --- 调用 `cc.FadeIn:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -58,16 +50,12 @@ function FadeIn:clone() end
 
 --- 调用 `cc.FadeIn:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.FadeTo`：`cc.FadeTo` 对象或值。
 ---@return cc.FadeTo `cc.FadeTo` 对象或值。
 function FadeIn:reverse() end
 
 --- 调用 `cc.FadeIn:FadeIn`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

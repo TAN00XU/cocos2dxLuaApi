@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.ParticleFlower = ParticleFlower
 
 --- 初始化 `cc.ParticleFlower:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ParticleFlower:init() end
 
 --- 初始化 `cc.ParticleFlower:initWithTotalParticles` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `numberOfParticles`：参数 `numberOfParticles`，类型为 `integer`。
@@ -32,16 +28,12 @@ function ParticleFlower:initWithTotalParticles(numberOfParticles) end
 
 --- 创建 `cc.ParticleFlower:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ParticleFlower:create() end
 
 --- 创建 `cc.ParticleFlower:createWithTotalParticles` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `numberOfParticles`：参数 `numberOfParticles`，类型为 `integer`。
@@ -53,8 +45,6 @@ function ParticleFlower:create() end
 function ParticleFlower:createWithTotalParticles(numberOfParticles) end
 
 --- 调用 `cc.ParticleFlower:ParticleFlower`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.AttachNode = AttachNode
 
 --- 创建 `cc.AttachNode:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `attachBone`：参数 `attachBone`，类型为 `cc.Bone3D`。
 ---
@@ -22,8 +20,6 @@ cc.AttachNode = AttachNode
 function AttachNode:create(attachBone) end
 
 --- 调用 `cc.AttachNode:visit`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -40,16 +36,12 @@ function AttachNode:visit(renderer, parentTransform, parentFlags) end
 
 --- 获取 `cc.AttachNode:getWorldToNodeTransform` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function AttachNode:getWorldToNodeTransform() end
 
 --- 获取 `cc.AttachNode:getNodeToWorldTransform` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
@@ -58,16 +50,12 @@ function AttachNode:getNodeToWorldTransform() end
 
 --- 获取 `cc.AttachNode:getNodeToParentTransform` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function AttachNode:getNodeToParentTransform() end
 
 --- 调用 `cc.AttachNode:AttachNode`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local NodeGrid = {}
 cc.NodeGrid = NodeGrid
 
 --- 设置 `cc.NodeGrid:setGridRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `gridRect`：参数 `gridRect`，类型为 `rect_table`。
@@ -23,8 +21,6 @@ function NodeGrid:setGridRect(gridRect) end
 
 --- 设置 `cc.NodeGrid:setTarget` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -35,8 +31,6 @@ function NodeGrid:setGridRect(gridRect) end
 function NodeGrid:setTarget(target) end
 
 --- 设置 `cc.NodeGrid:setGrid` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `grid`：参数 `grid`，类型为 `cc.GridBase`。
@@ -49,8 +43,6 @@ function NodeGrid:setGrid(grid) end
 
 --- 获取 `cc.NodeGrid:getGrid` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.GridBase`：获取到的 `cc.GridBase` 对象或值。
 ---@overload fun(): cc.GridBase
@@ -59,16 +51,12 @@ function NodeGrid:getGrid() end
 
 --- 获取 `cc.NodeGrid:getGridRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function NodeGrid:getGridRect() end
 
 --- 创建 `cc.NodeGrid:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rect`：矩形区域。类型为 `rect_table`。
@@ -82,8 +70,6 @@ function NodeGrid:getGridRect() end
 function NodeGrid:create(rect) end
 
 --- 调用 `cc.NodeGrid:visit`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -99,8 +85,6 @@ function NodeGrid:create(rect) end
 function NodeGrid:visit(renderer, parentTransform, parentFlags) end
 
 --- 调用 `cc.NodeGrid:NodeGrid`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local RotateTo = {}
 cc.RotateTo = RotateTo
 
 --- 初始化 `cc.RotateTo:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -28,8 +26,6 @@ cc.RotateTo = RotateTo
 function RotateTo:initWithDuration(duration, dstAngleX, dstAngleY) end
 
 --- 创建 `cc.RotateTo:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -49,8 +45,6 @@ function RotateTo:create(duration, dstAngleX, dstAngleY) end
 
 --- 调用 `cc.RotateTo:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -62,8 +56,6 @@ function RotateTo:startWithTarget(target) end
 
 --- 调用 `cc.RotateTo:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -71,16 +63,12 @@ function RotateTo:clone() end
 
 --- 调用 `cc.RotateTo:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RotateTo:reverse() end
 
 --- 更新 `cc.RotateTo:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -92,8 +80,6 @@ function RotateTo:reverse() end
 function RotateTo:update(time) end
 
 --- 调用 `cc.RotateTo:RotateTo`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

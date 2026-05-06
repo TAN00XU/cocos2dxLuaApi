@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.PhysicsJointDistance = PhysicsJointDistance
 
 --- 创建 `cc.PhysicsJointDistance:createConstraints` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：创建出的 布尔值。
 ---@return boolean 创建出的 布尔值。
 function PhysicsJointDistance:createConstraints() end
 
 --- 设置 `cc.PhysicsJointDistance:setDistance` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `distance`：参数 `distance`，类型为 `number`。
@@ -32,16 +28,12 @@ function PhysicsJointDistance:setDistance(distance) end
 
 --- 获取 `cc.PhysicsJointDistance:getDistance` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointDistance:getDistance() end
 
 --- 调用 `cc.PhysicsJointDistance:construct`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。

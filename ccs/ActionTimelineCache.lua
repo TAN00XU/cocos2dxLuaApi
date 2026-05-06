@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -8,8 +8,6 @@ local ActionTimelineCache = {}
 ccs.ActionTimelineCache = ActionTimelineCache
 
 --- 创建 `ccs.ActionTimelineCache:createActionFromJson` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -22,8 +20,6 @@ function ActionTimelineCache:createActionFromJson(fileName) end
 
 --- 创建 `ccs.ActionTimelineCache:createActionWithFlatBuffersFile` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
@@ -35,8 +31,6 @@ function ActionTimelineCache:createActionWithFlatBuffersFile(fileName) end
 
 --- 加载 `ccs.ActionTimelineCache:loadAnimationActionWithFlatBuffersFile` 对应的资源或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
@@ -47,8 +41,6 @@ function ActionTimelineCache:createActionWithFlatBuffersFile(fileName) end
 function ActionTimelineCache:loadAnimationActionWithFlatBuffersFile(fileName) end
 
 --- 创建 `ccs.ActionTimelineCache:createActionFromContent` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -63,8 +55,6 @@ function ActionTimelineCache:createActionFromContent(fileName, content) end
 
 --- 调用 `ccs.ActionTimelineCache:purge`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -72,16 +62,12 @@ function ActionTimelineCache:purge() end
 
 --- 初始化 `ccs.ActionTimelineCache:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimelineCache:init() end
 
 --- 加载 `ccs.ActionTimelineCache:loadAnimationActionWithContent` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -96,8 +82,6 @@ function ActionTimelineCache:loadAnimationActionWithContent(fileName, content) e
 
 --- 加载 `ccs.ActionTimelineCache:loadAnimationActionWithFile` 对应的资源或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
@@ -108,8 +92,6 @@ function ActionTimelineCache:loadAnimationActionWithContent(fileName, content) e
 function ActionTimelineCache:loadAnimationActionWithFile(fileName) end
 
 --- 移除 `ccs.ActionTimelineCache:removeAction` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -122,8 +104,6 @@ function ActionTimelineCache:removeAction(fileName) end
 
 --- 创建 `ccs.ActionTimelineCache:createActionWithFlatBuffersForSimulator` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
@@ -135,16 +115,12 @@ function ActionTimelineCache:createActionWithFlatBuffersForSimulator(fileName) e
 
 --- 调用 `ccs.ActionTimelineCache:destroyInstance`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimelineCache:destroyInstance() end
 
 --- 创建 `ccs.ActionTimelineCache:createAction` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。

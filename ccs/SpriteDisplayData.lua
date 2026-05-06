@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local SpriteDisplayData = {}
 ccs.SpriteDisplayData = SpriteDisplayData
 
 --- 调用 `ccs.SpriteDisplayData:copy`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `displayData`：参数 `displayData`，类型为 `ccs.DisplayData`。
@@ -23,16 +21,12 @@ function SpriteDisplayData:copy(displayData) end
 
 --- 创建 `ccs.SpriteDisplayData:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SpriteDisplayData:create() end
 
 --- 调用 `ccs.SpriteDisplayData:SpriteDisplayData`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

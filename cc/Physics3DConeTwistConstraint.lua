@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.Physics3DConeTwistConstraint = Physics3DConeTwistConstraint
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getBFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function Physics3DConeTwistConstraint:getBFrame() end
 
 --- 设置 `cc.Physics3DConeTwistConstraint:setFixThresh` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fixThresh`：参数 `fixThresh`，类型为 `number`。
@@ -32,16 +28,12 @@ function Physics3DConeTwistConstraint:setFixThresh(fixThresh) end
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getFrameOffsetB` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function Physics3DConeTwistConstraint:getFrameOffsetB() end
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getFrameOffsetA` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
@@ -50,16 +42,12 @@ function Physics3DConeTwistConstraint:getFrameOffsetA() end
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getFixThresh` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DConeTwistConstraint:getFixThresh() end
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getSwingSpan2` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -68,16 +56,12 @@ function Physics3DConeTwistConstraint:getSwingSpan2() end
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getSwingSpan1` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DConeTwistConstraint:getSwingSpan1() end
 
 --- 设置 `cc.Physics3DConeTwistConstraint:setMaxMotorImpulse` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `maxMotorImpulse`：参数 `maxMotorImpulse`，类型为 `number`。
@@ -89,8 +73,6 @@ function Physics3DConeTwistConstraint:getSwingSpan1() end
 function Physics3DConeTwistConstraint:setMaxMotorImpulse(maxMotorImpulse) end
 
 --- 设置 `cc.Physics3DConeTwistConstraint:setFrames` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `frameA`：参数 `frameA`，类型为 `mat4_table`。
@@ -105,16 +87,12 @@ function Physics3DConeTwistConstraint:setFrames(frameA, frameB) end
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getTwistAngle` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DConeTwistConstraint:getTwistAngle() end
 
 --- 调用 `cc.Physics3DConeTwistConstraint:GetPointForAngle`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fAngleInRadians`：参数 `fAngleInRadians`，类型为 `number`。
@@ -129,8 +107,6 @@ function Physics3DConeTwistConstraint:GetPointForAngle(fAngleInRadians, fLength)
 
 --- 设置 `cc.Physics3DConeTwistConstraint:setMaxMotorImpulseNormalized` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `maxMotorImpulse`：参数 `maxMotorImpulse`，类型为 `number`。
 ---
@@ -142,16 +118,12 @@ function Physics3DConeTwistConstraint:setMaxMotorImpulseNormalized(maxMotorImpul
 
 --- 获取 `cc.Physics3DConeTwistConstraint:getTwistSpan` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DConeTwistConstraint:getTwistSpan() end
 
 --- 设置 `cc.Physics3DConeTwistConstraint:setDamping` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `damping`：参数 `damping`，类型为 `number`。
@@ -174,16 +146,12 @@ function Physics3DConeTwistConstraint:setDamping(damping) end
 function Physics3DConeTwistConstraint:setLimit(swingSpan1, swingSpan2, twistSpan, softness, biasFactor, relaxationFactor) end
 --- 获取 `cc.Physics3DConeTwistConstraint:getAFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function Physics3DConeTwistConstraint:getAFrame() end
 
 --- 调用 `cc.Physics3DConeTwistConstraint:enableMotor`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `b`：参数 `b`，类型为 `boolean`。
@@ -195,8 +163,6 @@ function Physics3DConeTwistConstraint:getAFrame() end
 function Physics3DConeTwistConstraint:enableMotor(b) end
 
 --- 创建 `cc.Physics3DConeTwistConstraint:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rbA`：参数 `rbA`，类型为 `cc.Physics3DRigidBody`。
@@ -216,8 +182,6 @@ function Physics3DConeTwistConstraint:enableMotor(b) end
 function Physics3DConeTwistConstraint:create(rbA, rbB, frameA, frameB) end
 
 --- 调用 `cc.Physics3DConeTwistConstraint:Physics3DConeTwistConstraint`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

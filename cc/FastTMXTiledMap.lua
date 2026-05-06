@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local FastTMXTiledMap = {}
 cc.FastTMXTiledMap = FastTMXTiledMap
 
 --- 设置 `cc.FastTMXTiledMap:setObjectGroups` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `groups`：参数 `groups`，类型为 `array_table`。
@@ -23,8 +21,6 @@ function FastTMXTiledMap:setObjectGroups(groups) end
 
 --- 获取 `cc.FastTMXTiledMap:getProperty` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `propertyName`：参数 `propertyName`，类型为 `string`。
 ---
@@ -35,8 +31,6 @@ function FastTMXTiledMap:setObjectGroups(groups) end
 function FastTMXTiledMap:getProperty(propertyName) end
 
 --- 设置 `cc.FastTMXTiledMap:setMapSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `mapSize`：参数 `mapSize`，类型为 `size_table`。
@@ -49,8 +43,6 @@ function FastTMXTiledMap:setMapSize(mapSize) end
 
 --- 获取 `cc.FastTMXTiledMap:getObjectGroup` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `groupName`：参数 `groupName`，类型为 `string`。
 ---
@@ -62,8 +54,6 @@ function FastTMXTiledMap:getObjectGroup(groupName) end
 
 --- 获取 `cc.FastTMXTiledMap:getObjectGroups` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
 ---@overload fun(): array_table
@@ -72,16 +62,12 @@ function FastTMXTiledMap:getObjectGroups() end
 
 --- 获取 `cc.FastTMXTiledMap:getTileSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function FastTMXTiledMap:getTileSize() end
 
 --- 获取 `cc.FastTMXTiledMap:getMapSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
@@ -90,16 +76,12 @@ function FastTMXTiledMap:getMapSize() end
 
 --- 获取 `cc.FastTMXTiledMap:getProperties` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `map_table`：获取到的 Lua 表数据。
 ---@return map_table 获取到的 Lua 表数据。
 function FastTMXTiledMap:getProperties() end
 
 --- 获取 `cc.FastTMXTiledMap:getPropertiesForGID` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `GID`：参数 `GID`，类型为 `integer`。
@@ -112,8 +94,6 @@ function FastTMXTiledMap:getPropertiesForGID(GID) end
 
 --- 设置 `cc.FastTMXTiledMap:setTileSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tileSize`：参数 `tileSize`，类型为 `size_table`。
 ---
@@ -124,8 +104,6 @@ function FastTMXTiledMap:getPropertiesForGID(GID) end
 function FastTMXTiledMap:setTileSize(tileSize) end
 
 --- 设置 `cc.FastTMXTiledMap:setProperties` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `properties`：参数 `properties`，类型为 `map_table`。
@@ -138,8 +116,6 @@ function FastTMXTiledMap:setProperties(properties) end
 
 --- 获取 `cc.FastTMXTiledMap:getLayer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `layerName`：参数 `layerName`，类型为 `string`。
 ---
@@ -151,16 +127,12 @@ function FastTMXTiledMap:getLayer(layerName) end
 
 --- 获取 `cc.FastTMXTiledMap:getMapOrientation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function FastTMXTiledMap:getMapOrientation() end
 
 --- 设置 `cc.FastTMXTiledMap:setMapOrientation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `mapOrientation`：参数 `mapOrientation`，类型为 `integer`。
@@ -173,8 +145,6 @@ function FastTMXTiledMap:setMapOrientation(mapOrientation) end
 
 --- 创建 `cc.FastTMXTiledMap:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tmxFile`：参数 `tmxFile`，类型为 `string`。
 ---
@@ -185,8 +155,6 @@ function FastTMXTiledMap:setMapOrientation(mapOrientation) end
 function FastTMXTiledMap:create(tmxFile) end
 
 --- 创建 `cc.FastTMXTiledMap:createWithXML` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tmxString`：参数 `tmxString`，类型为 `string`。
@@ -200,8 +168,6 @@ function FastTMXTiledMap:create(tmxFile) end
 function FastTMXTiledMap:createWithXML(tmxString, resourcePath) end
 
 --- 获取 `cc.FastTMXTiledMap:getDescription` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。

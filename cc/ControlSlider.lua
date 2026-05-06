@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.ControlSlider = ControlSlider
 
 --- 获取 `cc.ControlSlider:getMaximumAllowedValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ControlSlider:getMaximumAllowedValue() end
 
 --- 初始化 `cc.ControlSlider:initWithSprites` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `backgroundSprite`：参数 `backgroundSprite`，类型为 `cc.Sprite`。
@@ -40,16 +36,12 @@ function ControlSlider:initWithSprites(backgroundSprite, progressSprite, thumbSp
 
 --- 获取 `cc.ControlSlider:getMinimumAllowedValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ControlSlider:getMinimumAllowedValue() end
 
 --- 获取 `cc.ControlSlider:getMaximumValue` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -58,16 +50,12 @@ function ControlSlider:getMaximumValue() end
 
 --- 获取 `cc.ControlSlider:getSelectedThumbSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function ControlSlider:getSelectedThumbSprite() end
 
 --- 设置 `cc.ControlSlider:setProgressSprite` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `cc.Sprite`。
@@ -80,8 +68,6 @@ function ControlSlider:setProgressSprite(var) end
 
 --- 设置 `cc.ControlSlider:setMaximumValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `val`：参数 `val`，类型为 `number`。
 ---
@@ -93,16 +79,12 @@ function ControlSlider:setMaximumValue(val) end
 
 --- 获取 `cc.ControlSlider:getMinimumValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ControlSlider:getMinimumValue() end
 
 --- 设置 `cc.ControlSlider:setThumbSprite` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `cc.Sprite`。
@@ -115,16 +97,12 @@ function ControlSlider:setThumbSprite(var) end
 
 --- 获取 `cc.ControlSlider:getValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ControlSlider:getValue() end
 
 --- 获取 `cc.ControlSlider:getBackgroundSprite` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
@@ -133,16 +111,12 @@ function ControlSlider:getBackgroundSprite() end
 
 --- 获取 `cc.ControlSlider:getThumbSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function ControlSlider:getThumbSprite() end
 
 --- 设置 `cc.ControlSlider:setValue` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `val`：参数 `val`，类型为 `number`。
@@ -155,8 +129,6 @@ function ControlSlider:setValue(val) end
 
 --- 调用 `cc.ControlSlider:locationFromTouch`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `touch`：参数 `touch`，类型为 `cc.Touch`。
 ---
@@ -167,8 +139,6 @@ function ControlSlider:setValue(val) end
 function ControlSlider:locationFromTouch(touch) end
 
 --- 设置 `cc.ControlSlider:setMinimumValue` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `val`：参数 `val`，类型为 `number`。
@@ -181,8 +151,6 @@ function ControlSlider:setMinimumValue(val) end
 
 --- 设置 `cc.ControlSlider:setMinimumAllowedValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `number`。
 ---
@@ -194,16 +162,12 @@ function ControlSlider:setMinimumAllowedValue(var) end
 
 --- 获取 `cc.ControlSlider:getProgressSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function ControlSlider:getProgressSprite() end
 
 --- 设置 `cc.ControlSlider:setSelectedThumbSprite` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `cc.Sprite`。
@@ -216,8 +180,6 @@ function ControlSlider:setSelectedThumbSprite(var) end
 
 --- 设置 `cc.ControlSlider:setBackgroundSprite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `cc.Sprite`。
 ---
@@ -229,8 +191,6 @@ function ControlSlider:setBackgroundSprite(var) end
 
 --- 设置 `cc.ControlSlider:setMaximumAllowedValue` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `number`。
 ---
@@ -241,8 +201,6 @@ function ControlSlider:setBackgroundSprite(var) end
 function ControlSlider:setMaximumAllowedValue(var) end
 
 --- 创建 `cc.ControlSlider:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `backgroundSprite`：参数 `backgroundSprite`，类型为 `cc.Sprite`。
@@ -265,8 +223,6 @@ function ControlSlider:create(backgroundSprite, pogressSprite, thumbSprite, sele
 
 --- 判断 `cc.ControlSlider:isTouchInside` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `touch`：参数 `touch`，类型为 `cc.Touch`。
 ---
@@ -277,8 +233,6 @@ function ControlSlider:create(backgroundSprite, pogressSprite, thumbSprite, sele
 function ControlSlider:isTouchInside(touch) end
 
 --- 设置 `cc.ControlSlider:setEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -291,16 +245,12 @@ function ControlSlider:setEnabled(enabled) end
 
 --- 调用 `cc.ControlSlider:needsLayout`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ControlSlider:needsLayout() end
 
 --- 调用 `cc.ControlSlider:ControlSlider`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

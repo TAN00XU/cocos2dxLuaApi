@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local RichElementCustomNode = {}
 ccui.RichElementCustomNode = RichElementCustomNode
 
 --- 初始化 `ccui.RichElementCustomNode:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -29,8 +27,6 @@ function RichElementCustomNode:init(tag, color, opacity, customNode) end
 
 --- 创建 `ccui.RichElementCustomNode:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -47,8 +43,6 @@ function RichElementCustomNode:init(tag, color, opacity, customNode) end
 function RichElementCustomNode:create(tag, color, opacity, customNode) end
 
 --- 调用 `ccui.RichElementCustomNode:RichElementCustomNode`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

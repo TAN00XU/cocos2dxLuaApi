@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.PhysicsJointRatchet = PhysicsJointRatchet
 
 --- 获取 `cc.PhysicsJointRatchet:getAngle` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointRatchet:getAngle() end
 
 --- 设置 `cc.PhysicsJointRatchet:setAngle` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `angle`：参数 `angle`，类型为 `number`。
@@ -32,16 +28,12 @@ function PhysicsJointRatchet:setAngle(angle) end
 
 --- 创建 `cc.PhysicsJointRatchet:createConstraints` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：创建出的 布尔值。
 ---@return boolean 创建出的 布尔值。
 function PhysicsJointRatchet:createConstraints() end
 
 --- 设置 `cc.PhysicsJointRatchet:setPhase` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `phase`：参数 `phase`，类型为 `number`。
@@ -54,16 +46,12 @@ function PhysicsJointRatchet:setPhase(phase) end
 
 --- 获取 `cc.PhysicsJointRatchet:getPhase` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointRatchet:getPhase() end
 
 --- 设置 `cc.PhysicsJointRatchet:setRatchet` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `ratchet`：参数 `ratchet`，类型为 `number`。
@@ -76,16 +64,12 @@ function PhysicsJointRatchet:setRatchet(ratchet) end
 
 --- 获取 `cc.PhysicsJointRatchet:getRatchet` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointRatchet:getRatchet() end
 
 --- 调用 `cc.PhysicsJointRatchet:construct`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local EventDispatcher = {}
 cc.EventDispatcher = EventDispatcher
 
 --- 暂停 `cc.EventDispatcher:pauseEventListenersForTarget` 对应的流程。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -25,8 +23,6 @@ function EventDispatcher:pauseEventListenersForTarget(target, recursive) end
 
 --- 添加 `cc.EventDispatcher:addEventListenerWithSceneGraphPriority` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `cc.EventListener`。
 --- - `node`：节点对象。类型为 `cc.Node`。
@@ -40,8 +36,6 @@ function EventDispatcher:addEventListenerWithSceneGraphPriority(listener, node) 
 
 --- 设置 `cc.EventDispatcher:setEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `isEnabled`：参数 `isEnabled`，类型为 `boolean`。
 ---
@@ -52,8 +46,6 @@ function EventDispatcher:addEventListenerWithSceneGraphPriority(listener, node) 
 function EventDispatcher:setEnabled(isEnabled) end
 
 --- 添加 `cc.EventDispatcher:addEventListenerWithFixedPriority` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `cc.EventListener`。
@@ -68,8 +60,6 @@ function EventDispatcher:addEventListenerWithFixedPriority(listener, fixedPriori
 
 --- 移除 `cc.EventDispatcher:removeEventListener` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `cc.EventListener`。
 ---
@@ -80,8 +70,6 @@ function EventDispatcher:addEventListenerWithFixedPriority(listener, fixedPriori
 function EventDispatcher:removeEventListener(listener) end
 
 --- 调用 `cc.EventDispatcher:dispatchCustomEvent`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `eventName`：事件名称。类型为 `string`。
@@ -96,8 +84,6 @@ function EventDispatcher:dispatchCustomEvent(eventName, optionalUserData) end
 
 --- 恢复 `cc.EventDispatcher:resumeEventListenersForTarget` 对应的流程。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 --- - `recursive`：参数 `recursive`，类型为 `boolean`。
@@ -110,8 +96,6 @@ function EventDispatcher:dispatchCustomEvent(eventName, optionalUserData) end
 function EventDispatcher:resumeEventListenersForTarget(target, recursive) end
 
 --- 移除 `cc.EventDispatcher:removeEventListenersForTarget` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -126,8 +110,6 @@ function EventDispatcher:removeEventListenersForTarget(target, recursive) end
 
 --- 设置 `cc.EventDispatcher:setPriority` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `cc.EventListener`。
 --- - `fixedPriority`：参数 `fixedPriority`，类型为 `integer`。
@@ -140,8 +122,6 @@ function EventDispatcher:removeEventListenersForTarget(target, recursive) end
 function EventDispatcher:setPriority(listener, fixedPriority) end
 
 --- 添加 `cc.EventDispatcher:addCustomEventListener` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `eventName`：事件名称。类型为 `string`。
@@ -156,8 +136,6 @@ function EventDispatcher:addCustomEventListener(eventName, callback) end
 
 --- 调用 `cc.EventDispatcher:dispatchEvent`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `event`：事件对象。类型为 `cc.Event`。
 ---
@@ -168,8 +146,6 @@ function EventDispatcher:addCustomEventListener(eventName, callback) end
 function EventDispatcher:dispatchEvent(event) end
 
 --- 判断 `cc.EventDispatcher:hasEventListener` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `listenerID`：参数 `listenerID`，类型为 `string`。
@@ -182,16 +158,12 @@ function EventDispatcher:hasEventListener(listenerID) end
 
 --- 移除 `cc.EventDispatcher:removeAllEventListeners` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EventDispatcher:removeAllEventListeners() end
 
 --- 移除 `cc.EventDispatcher:removeCustomEventListeners` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `customEventName`：参数 `customEventName`，类型为 `string`。
@@ -204,16 +176,12 @@ function EventDispatcher:removeCustomEventListeners(customEventName) end
 
 --- 判断 `cc.EventDispatcher:isEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function EventDispatcher:isEnabled() end
 
 --- 移除 `cc.EventDispatcher:removeEventListenersForType` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `listenerType`：参数 `listenerType`，类型为 `integer`。
@@ -225,8 +193,6 @@ function EventDispatcher:isEnabled() end
 function EventDispatcher:removeEventListenersForType(listenerType) end
 
 --- 调用 `cc.EventDispatcher:EventDispatcher`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

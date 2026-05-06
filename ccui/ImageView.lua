@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ ccui.ImageView = ImageView
 
 --- 获取 `ccui.ImageView:getBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
 ---@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
 function ImageView:getBlendFunc() end
 
 --- 加载 `ccui.ImageView:loadTexture` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -34,8 +30,6 @@ function ImageView:loadTexture(fileName, texType) end
 
 --- 设置 `ccui.ImageView:setBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
 ---
@@ -46,8 +40,6 @@ function ImageView:loadTexture(fileName, texType) end
 function ImageView:setBlendFunc(blendFunc) end
 
 --- 初始化 `ccui.ImageView:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `imageFileName`：参数 `imageFileName`，类型为 `string`。
@@ -62,8 +54,6 @@ function ImageView:init(imageFileName, texType) end
 
 --- 设置 `ccui.ImageView:setScale9Enabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
 ---
@@ -74,8 +64,6 @@ function ImageView:init(imageFileName, texType) end
 function ImageView:setScale9Enabled(enabled) end
 
 --- 设置 `ccui.ImageView:setTextureRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rect`：矩形区域。类型为 `rect_table`。
@@ -88,8 +76,6 @@ function ImageView:setTextureRect(rect) end
 
 --- 设置 `ccui.ImageView:setCapInsets` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 ---
@@ -101,16 +87,12 @@ function ImageView:setCapInsets(capInsets) end
 
 --- 获取 `ccui.ImageView:getRenderFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function ImageView:getRenderFile() end
 
 --- 获取 `ccui.ImageView:getCapInsets` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
@@ -119,16 +101,12 @@ function ImageView:getCapInsets() end
 
 --- 判断 `ccui.ImageView:isScale9Enabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function ImageView:isScale9Enabled() end
 
 --- 创建 `ccui.ImageView:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `imageFileName`：参数 `imageFileName`，类型为 `string`。
@@ -145,16 +123,12 @@ function ImageView:create(imageFileName, texType) end
 
 --- 创建 `ccui.ImageView:createInstance` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
 ---@return cc.Ref 创建出的 `cc.Ref` 对象或值。
 function ImageView:createInstance() end
 
 --- 获取 `ccui.ImageView:getVirtualRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
@@ -163,16 +137,12 @@ function ImageView:getVirtualRenderer() end
 
 --- 初始化 `ccui.ImageView:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ImageView:init() end
 
 --- 获取 `ccui.ImageView:getDescription` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。
@@ -181,16 +151,12 @@ function ImageView:getDescription() end
 
 --- 获取 `ccui.ImageView:getVirtualRendererSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function ImageView:getVirtualRendererSize() end
 
 --- 调用 `ccui.ImageView:ignoreContentAdaptWithSize`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `ignore`：参数 `ignore`，类型为 `boolean`。
@@ -202,8 +168,6 @@ function ImageView:getVirtualRendererSize() end
 function ImageView:ignoreContentAdaptWithSize(ignore) end
 
 --- 调用 `ccui.ImageView:ImageView`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

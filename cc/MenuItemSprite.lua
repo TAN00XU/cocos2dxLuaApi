@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local MenuItemSprite = {}
 cc.MenuItemSprite = MenuItemSprite
 
 --- 设置 `cc.MenuItemSprite:setEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `bEnabled`：参数 `bEnabled`，类型为 `boolean`。
@@ -23,16 +21,12 @@ function MenuItemSprite:setEnabled(bEnabled) end
 
 --- 调用 `cc.MenuItemSprite:selected`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MenuItemSprite:selected() end
 
 --- 设置 `cc.MenuItemSprite:setNormalImage` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `image`：参数 `image`，类型为 `cc.Node`。
@@ -45,8 +39,6 @@ function MenuItemSprite:setNormalImage(image) end
 
 --- 设置 `cc.MenuItemSprite:setDisabledImage` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `image`：参数 `image`，类型为 `cc.Node`。
 ---
@@ -57,8 +49,6 @@ function MenuItemSprite:setNormalImage(image) end
 function MenuItemSprite:setDisabledImage(image) end
 
 --- 初始化 `cc.MenuItemSprite:initWithNormalSprite` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `normalSprite`：参数 `normalSprite`，类型为 `cc.Node`。
@@ -77,8 +67,6 @@ function MenuItemSprite:initWithNormalSprite(normalSprite, selectedSprite, disab
 
 --- 设置 `cc.MenuItemSprite:setSelectedImage` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `image`：参数 `image`，类型为 `cc.Node`。
 ---
@@ -90,16 +78,12 @@ function MenuItemSprite:setSelectedImage(image) end
 
 --- 获取 `cc.MenuItemSprite:getDisabledImage` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
 function MenuItemSprite:getDisabledImage() end
 
 --- 获取 `cc.MenuItemSprite:getSelectedImage` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
@@ -108,8 +92,6 @@ function MenuItemSprite:getSelectedImage() end
 
 --- 获取 `cc.MenuItemSprite:getNormalImage` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
@@ -117,16 +99,12 @@ function MenuItemSprite:getNormalImage() end
 
 --- 调用 `cc.MenuItemSprite:unselected`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MenuItemSprite:unselected() end
 
 --- 调用 `cc.MenuItemSprite:MenuItemSprite`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ActionMoveFrame = {}
 ccs.ActionMoveFrame = ActionMoveFrame
 
 --- 设置 `ccs.ActionMoveFrame:setPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function ActionMoveFrame:setPosition(pos) end
 
 --- 获取 `ccs.ActionMoveFrame:getAction` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 ---
@@ -36,16 +32,12 @@ function ActionMoveFrame:getAction(duration) end
 
 --- 获取 `ccs.ActionMoveFrame:getPosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function ActionMoveFrame:getPosition() end
 
 --- 调用 `ccs.ActionMoveFrame:ActionMoveFrame`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

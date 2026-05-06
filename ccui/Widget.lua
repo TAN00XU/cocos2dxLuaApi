@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -99,8 +99,6 @@ function Widget:onTouchCancelled(touch, event) end
 
 --- 设置 `ccui.Widget:setLayoutComponentEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
 ---
@@ -111,8 +109,6 @@ function Widget:onTouchCancelled(touch, event) end
 function Widget:setLayoutComponentEnabled(enable) end
 
 --- 设置 `ccui.Widget:setSizePercent` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `percent`：百分比数值。类型为 `vec2_table`。
@@ -125,8 +121,6 @@ function Widget:setSizePercent(percent) end
 
 --- 获取 `ccui.Widget:getCustomSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
@@ -134,16 +128,12 @@ function Widget:getCustomSize() end
 
 --- 获取 `ccui.Widget:getLeftBoundary` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Widget:getLeftBoundary() end
 
 --- 设置 `ccui.Widget:setFlippedX` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `flippedX`：是否水平翻转。类型为 `boolean`。
@@ -156,8 +146,6 @@ function Widget:setFlippedX(flippedX) end
 
 --- 设置 `ccui.Widget:setCallbackName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `callbackName`：参数 `callbackName`，类型为 `string`。
 ---
@@ -169,16 +157,12 @@ function Widget:setCallbackName(callbackName) end
 
 --- 获取 `ccui.Widget:getVirtualRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
 function Widget:getVirtualRenderer() end
 
 --- 设置 `ccui.Widget:setPropagateTouchEvents` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `isPropagate`：参数 `isPropagate`，类型为 `boolean`。
@@ -191,8 +175,6 @@ function Widget:setPropagateTouchEvents(isPropagate) end
 
 --- 判断 `ccui.Widget:isUnifySizeEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -200,16 +182,12 @@ function Widget:isUnifySizeEnabled() end
 
 --- 获取 `ccui.Widget:getSizePercent` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function Widget:getSizePercent() end
 
 --- 设置 `ccui.Widget:setPositionPercent` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `percent`：百分比数值。类型为 `vec2_table`。
@@ -222,8 +200,6 @@ function Widget:setPositionPercent(percent) end
 
 --- 设置 `ccui.Widget:setSwallowTouches` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `swallow`：参数 `swallow`，类型为 `boolean`。
 ---
@@ -235,16 +211,12 @@ function Widget:setSwallowTouches(swallow) end
 
 --- 获取 `ccui.Widget:getLayoutSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Widget:getLayoutSize() end
 
 --- 设置 `ccui.Widget:setHighlighted` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `highlight`：参数 `highlight`，类型为 `boolean`。
@@ -257,8 +229,6 @@ function Widget:setHighlighted(highlight) end
 
 --- 设置 `ccui.Widget:setPositionType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
 ---
@@ -270,16 +240,12 @@ function Widget:setPositionType(type) end
 
 --- 判断 `ccui.Widget:isIgnoreContentAdaptWithSize` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isIgnoreContentAdaptWithSize() end
 
 --- 获取 `ccui.Widget:getVirtualRendererSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
@@ -288,16 +254,12 @@ function Widget:getVirtualRendererSize() end
 
 --- 判断 `ccui.Widget:isHighlighted` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isHighlighted() end
 
 --- 获取 `ccui.Widget:getLayoutParameter` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `ccui.LayoutParameter`：获取到的 `ccui.LayoutParameter` 对象或值。
@@ -306,8 +268,6 @@ function Widget:getLayoutParameter() end
 
 --- 获取 `ccui.Widget:getPositionType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -315,16 +275,12 @@ function Widget:getPositionType() end
 
 --- 获取 `ccui.Widget:getTopBoundary` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Widget:getTopBoundary() end
 
 --- 调用 `ccui.Widget:ignoreContentAdaptWithSize`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `ignore`：参数 `ignore`，类型为 `boolean`。
@@ -336,8 +292,6 @@ function Widget:getTopBoundary() end
 function Widget:ignoreContentAdaptWithSize(ignore) end
 
 --- 调用 `ccui.Widget:findNextFocusedWidget`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `direction`：参数 `direction`，类型为 `integer`。
@@ -352,16 +306,12 @@ function Widget:findNextFocusedWidget(direction, current) end
 
 --- 判断 `ccui.Widget:isEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isEnabled() end
 
 --- 判断 `ccui.Widget:isFocused` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -370,16 +320,12 @@ function Widget:isFocused() end
 
 --- 获取 `ccui.Widget:getTouchBeganPosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function Widget:getTouchBeganPosition() end
 
 --- 判断 `ccui.Widget:isTouchEnabled` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -388,16 +334,12 @@ function Widget:isTouchEnabled() end
 
 --- 获取 `ccui.Widget:getCallbackName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Widget:getCallbackName() end
 
 --- 获取 `ccui.Widget:getActionTag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -406,8 +348,6 @@ function Widget:getActionTag() end
 
 --- 获取 `ccui.Widget:getWorldPosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
@@ -415,16 +355,12 @@ function Widget:getWorldPosition() end
 
 --- 判断 `ccui.Widget:isFocusEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isFocusEnabled() end
 
 --- 设置 `ccui.Widget:setFocused` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `focus`：参数 `focus`，类型为 `boolean`。
@@ -437,8 +373,6 @@ function Widget:setFocused(focus) end
 
 --- 设置 `ccui.Widget:setActionTag` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
 ---
@@ -449,8 +383,6 @@ function Widget:setFocused(focus) end
 function Widget:setActionTag(tag) end
 
 --- 设置 `ccui.Widget:setTouchEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -463,8 +395,6 @@ function Widget:setTouchEnabled(enabled) end
 
 --- 设置 `ccui.Widget:setFlippedY` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `flippedY`：是否垂直翻转。类型为 `boolean`。
 ---
@@ -475,8 +405,6 @@ function Widget:setTouchEnabled(enabled) end
 function Widget:setFlippedY(flippedY) end
 
 --- 设置 `ccui.Widget:setEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -489,16 +417,12 @@ function Widget:setEnabled(enabled) end
 
 --- 获取 `ccui.Widget:getRightBoundary` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Widget:getRightBoundary() end
 
 --- 设置 `ccui.Widget:setBrightStyle` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `style`：参数 `style`，类型为 `integer`。
@@ -511,8 +435,6 @@ function Widget:setBrightStyle(style) end
 
 --- 设置 `ccui.Widget:setLayoutParameter` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `parameter`：参数 `parameter`，类型为 `ccui.LayoutParameter`。
 ---
@@ -524,16 +446,12 @@ function Widget:setLayoutParameter(parameter) end
 
 --- 调用 `ccui.Widget:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:clone() end
 
 --- 设置 `ccui.Widget:setFocusEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -546,8 +464,6 @@ function Widget:setFocusEnabled(enable) end
 
 --- 获取 `ccui.Widget:getBottomBoundary` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -555,16 +471,12 @@ function Widget:getBottomBoundary() end
 
 --- 判断 `ccui.Widget:isBright` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isBright() end
 
 --- 调用 `ccui.Widget:dispatchFocusEvent`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `widgetLoseFocus`：参数 `widgetLoseFocus`，类型为 `ccui.Widget`。
@@ -579,8 +491,6 @@ function Widget:dispatchFocusEvent(widgetLoseFocus, widgetGetFocus) end
 
 --- 设置 `ccui.Widget:setUnifySizeEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
 ---
@@ -592,16 +502,12 @@ function Widget:setUnifySizeEnabled(enable) end
 
 --- 判断 `ccui.Widget:isPropagateTouchEvents` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isPropagateTouchEvents() end
 
 --- 调用 `ccui.Widget:hitTest`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pt`：参数 `pt`，类型为 `vec2_table`。
@@ -618,8 +524,6 @@ function Widget:hitTest(pt, camera, p) end
 
 --- 判断 `ccui.Widget:isLayoutComponentEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -627,16 +531,12 @@ function Widget:isLayoutComponentEnabled() end
 
 --- 调用 `ccui.Widget:requestFocus`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:requestFocus() end
 
 --- 更新 `ccui.Widget:updateSizeAndPosition` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `parentSize`：参数 `parentSize`，类型为 `size_table`。
@@ -651,8 +551,6 @@ function Widget:updateSizeAndPosition(parentSize) end
 
 --- 调用 `ccui.Widget:onFocusChange`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `widgetLostFocus`：参数 `widgetLostFocus`，类型为 `ccui.Widget`。
 --- - `widgetGetFocus`：参数 `widgetGetFocus`，类型为 `ccui.Widget`。
@@ -666,16 +564,12 @@ function Widget:onFocusChange(widgetLostFocus, widgetGetFocus) end
 
 --- 获取 `ccui.Widget:getTouchMovePosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function Widget:getTouchMovePosition() end
 
 --- 获取 `ccui.Widget:getSizeType` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -684,16 +578,12 @@ function Widget:getSizeType() end
 
 --- 获取 `ccui.Widget:getCallbackType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Widget:getCallbackType() end
 
 --- 获取 `ccui.Widget:getTouchEndPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
@@ -702,16 +592,12 @@ function Widget:getTouchEndPosition() end
 
 --- 获取 `ccui.Widget:getPositionPercent` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function Widget:getPositionPercent() end
 
 --- 调用 `ccui.Widget:propagateTouchEvent`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `integer`。
@@ -728,8 +614,6 @@ function Widget:propagateTouchEvent(event, sender, touch) end
 
 --- 判断 `ccui.Widget:isFlippedX` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -737,16 +621,12 @@ function Widget:isFlippedX() end
 
 --- 判断 `ccui.Widget:isFlippedY` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isFlippedY() end
 
 --- 判断 `ccui.Widget:isClippingParentContainsPoint` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pt`：参数 `pt`，类型为 `vec2_table`。
@@ -759,8 +639,6 @@ function Widget:isClippingParentContainsPoint(pt) end
 
 --- 设置 `ccui.Widget:setSizeType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
 ---
@@ -771,8 +649,6 @@ function Widget:isClippingParentContainsPoint(pt) end
 function Widget:setSizeType(type) end
 
 --- 调用 `ccui.Widget:interceptTouchEvent`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `integer`。
@@ -789,8 +665,6 @@ function Widget:interceptTouchEvent(event, sender, touch) end
 
 --- 设置 `ccui.Widget:setBright` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `bright`：参数 `bright`，类型为 `boolean`。
 ---
@@ -801,8 +675,6 @@ function Widget:interceptTouchEvent(event, sender, touch) end
 function Widget:setBright(bright) end
 
 --- 设置 `ccui.Widget:setCallbackType` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `callbackType`：参数 `callbackType`，类型为 `string`。
@@ -815,16 +687,12 @@ function Widget:setCallbackType(callbackType) end
 
 --- 判断 `ccui.Widget:isSwallowTouches` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Widget:isSwallowTouches() end
 
 --- 调用 `ccui.Widget:enableDpadNavigation`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -837,8 +705,6 @@ function Widget:enableDpadNavigation(enable) end
 
 --- 获取 `ccui.Widget:getCurrentFocusedWidget` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -846,16 +712,12 @@ function Widget:getCurrentFocusedWidget() end
 
 --- 创建 `ccui.Widget:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:create() end
 
 --- 设置 `ccui.Widget:setScaleY` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scaleY`：参数 `scaleY`，类型为 `number`。
@@ -868,8 +730,6 @@ function Widget:setScaleY(scaleY) end
 
 --- 设置 `ccui.Widget:setScaleX` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `scaleX`：参数 `scaleX`，类型为 `number`。
 ---
@@ -881,16 +741,12 @@ function Widget:setScaleX(scaleX) end
 
 --- 获取 `ccui.Widget:getScaleY` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Widget:getScaleY() end
 
 --- 获取 `ccui.Widget:getScaleX` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -899,16 +755,12 @@ function Widget:getScaleX() end
 
 --- 获取 `ccui.Widget:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Widget:getDescription() end
 
 --- 设置 `ccui.Widget:setScale` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scalex`：参数 `scalex`，类型为 `number`。
@@ -925,16 +777,12 @@ function Widget:setScale(scalex, scaley) end
 
 --- 初始化 `ccui.Widget:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Widget:init() end
 
 --- 设置 `ccui.Widget:setPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pos`：参数 `pos`，类型为 `vec2_table`。
@@ -947,8 +795,6 @@ function Widget:setPosition(pos) end
 
 --- 设置 `ccui.Widget:setContentSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `contentSize`：内容尺寸。类型为 `size_table`。
 ---
@@ -960,16 +806,12 @@ function Widget:setContentSize(contentSize) end
 
 --- 获取 `ccui.Widget:getScale` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Widget:getScale() end
 
 --- 调用 `ccui.Widget:Widget`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

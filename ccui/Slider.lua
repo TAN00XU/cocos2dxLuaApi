@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Slider = {}
 ccui.Slider = Slider
 
 --- 设置 `ccui.Slider:setPercent` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `percent`：百分比数值。类型为 `integer`。
@@ -23,16 +21,12 @@ function Slider:setPercent(percent) end
 
 --- 获取 `ccui.Slider:getMaxPercent` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Slider:getMaxPercent() end
 
 --- 加载 `ccui.Slider:loadSlidBallTextureNormal` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `normal`：参数 `normal`，类型为 `string`。
@@ -47,8 +41,6 @@ function Slider:loadSlidBallTextureNormal(normal, resType) end
 
 --- 加载 `ccui.Slider:loadProgressBarTexture` 对应的资源或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 --- - `resType`：参数 `resType`，类型为 `integer`。
@@ -62,8 +54,6 @@ function Slider:loadProgressBarTexture(fileName, resType) end
 
 --- 获取 `ccui.Slider:getBallNormalFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
@@ -71,16 +61,12 @@ function Slider:getBallNormalFile() end
 
 --- 获取 `ccui.Slider:getSlidBallDisabledRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function Slider:getSlidBallDisabledRenderer() end
 
 --- 设置 `ccui.Slider:setScale9Enabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `able`：参数 `able`，类型为 `boolean`。
@@ -93,8 +79,6 @@ function Slider:setScale9Enabled(able) end
 
 --- 获取 `ccui.Slider:getBallPressedFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
@@ -102,16 +86,12 @@ function Slider:getBallPressedFile() end
 
 --- 获取 `ccui.Slider:getZoomScale` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Slider:getZoomScale() end
 
 --- 设置 `ccui.Slider:setCapInsetProgressBarRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -123,8 +103,6 @@ function Slider:getZoomScale() end
 function Slider:setCapInsetProgressBarRenderer(capInsets) end
 
 --- 加载 `ccui.Slider:loadSlidBallTextures` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `normal`：参数 `normal`，类型为 `string`。
@@ -143,16 +121,12 @@ function Slider:loadSlidBallTextures(normal, pressed, disabled, texType) end
 
 --- 获取 `ccui.Slider:getSlidBallRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
 function Slider:getSlidBallRenderer() end
 
 --- 添加 `ccui.Slider:addEventListener` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -165,8 +139,6 @@ function Slider:addEventListener(callback) end
 
 --- 设置 `ccui.Slider:setMaxPercent` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `percent`：百分比数值。类型为 `integer`。
 ---
@@ -177,8 +149,6 @@ function Slider:addEventListener(callback) end
 function Slider:setMaxPercent(percent) end
 
 --- 加载 `ccui.Slider:loadBarTexture` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
@@ -193,16 +163,12 @@ function Slider:loadBarTexture(fileName, resType) end
 
 --- 获取 `ccui.Slider:getProgressBarFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function Slider:getProgressBarFile() end
 
 --- 获取 `ccui.Slider:getCapInsetsBarRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
@@ -211,16 +177,12 @@ function Slider:getCapInsetsBarRenderer() end
 
 --- 更新 `ccui.Slider:updateVisualSlider` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Slider:updateVisualSlider() end
 
 --- 获取 `ccui.Slider:getCapInsetsProgressBarRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
@@ -229,16 +191,12 @@ function Slider:getCapInsetsProgressBarRenderer() end
 
 --- 获取 `ccui.Slider:getSlidBallPressedRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function Slider:getSlidBallPressedRenderer() end
 
 --- 加载 `ccui.Slider:loadSlidBallTexturePressed` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pressed`：参数 `pressed`，类型为 `string`。
@@ -253,16 +211,12 @@ function Slider:loadSlidBallTexturePressed(pressed, resType) end
 
 --- 获取 `ccui.Slider:getBackFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function Slider:getBackFile() end
 
 --- 判断 `ccui.Slider:isScale9Enabled` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -271,16 +225,12 @@ function Slider:isScale9Enabled() end
 
 --- 获取 `ccui.Slider:getBallDisabledFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
 ---@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
 function Slider:getBallDisabledFile() end
 
 --- 设置 `ccui.Slider:setCapInsetsBarRenderer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -293,16 +243,12 @@ function Slider:setCapInsetsBarRenderer(capInsets) end
 
 --- 获取 `ccui.Slider:getPercent` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Slider:getPercent() end
 
 --- 设置 `ccui.Slider:setCapInsets` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
@@ -314,8 +260,6 @@ function Slider:getPercent() end
 function Slider:setCapInsets(capInsets) end
 
 --- 加载 `ccui.Slider:loadSlidBallTextureDisabled` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `disabled`：参数 `disabled`，类型为 `string`。
@@ -330,16 +274,12 @@ function Slider:loadSlidBallTextureDisabled(disabled, resType) end
 
 --- 获取 `ccui.Slider:getSlidBallNormalRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
 ---@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
 function Slider:getSlidBallNormalRenderer() end
 
 --- 设置 `ccui.Slider:setZoomScale` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scale`：缩放比例。类型为 `number`。
@@ -351,8 +291,6 @@ function Slider:getSlidBallNormalRenderer() end
 function Slider:setZoomScale(scale) end
 
 --- 创建 `ccui.Slider:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `barTextureName`：参数 `barTextureName`，类型为 `string`。
@@ -371,8 +309,6 @@ function Slider:create(barTextureName, normalBallTextureName, resType) end
 
 --- 创建 `ccui.Slider:createInstance` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
 ---@return cc.Ref 创建出的 `cc.Ref` 对象或值。
@@ -380,16 +316,12 @@ function Slider:createInstance() end
 
 --- 获取 `ccui.Slider:getVirtualRenderer` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
 function Slider:getVirtualRenderer() end
 
 --- 调用 `ccui.Slider:ignoreContentAdaptWithSize`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `ignore`：参数 `ignore`，类型为 `boolean`。
@@ -402,16 +334,12 @@ function Slider:ignoreContentAdaptWithSize(ignore) end
 
 --- 获取 `ccui.Slider:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Slider:getDescription() end
 
 --- 调用 `ccui.Slider:hitTest`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pt`：参数 `pt`，类型为 `vec2_table`。
@@ -428,8 +356,6 @@ function Slider:hitTest(pt, camera, p) end
 
 --- 初始化 `ccui.Slider:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
@@ -437,16 +363,12 @@ function Slider:init() end
 
 --- 获取 `ccui.Slider:getVirtualRendererSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Slider:getVirtualRendererSize() end
 
 --- 调用 `ccui.Slider:Slider`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

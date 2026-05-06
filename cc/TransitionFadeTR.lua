@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TransitionFadeTR = {}
 cc.TransitionFadeTR = TransitionFadeTR
 
 --- 调用 `cc.TransitionFadeTR:easeActionWithAction`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -23,8 +21,6 @@ function TransitionFadeTR:easeActionWithAction(action) end
 
 --- 调用 `cc.TransitionFadeTR:actionWithSize`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
 ---
@@ -35,8 +31,6 @@ function TransitionFadeTR:easeActionWithAction(action) end
 function TransitionFadeTR:actionWithSize(size) end
 
 --- 创建 `cc.TransitionFadeTR:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -50,8 +44,6 @@ function TransitionFadeTR:actionWithSize(size) end
 function TransitionFadeTR:create(t, scene) end
 
 --- 调用 `cc.TransitionFadeTR:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -67,8 +59,6 @@ function TransitionFadeTR:create(t, scene) end
 function TransitionFadeTR:draw(renderer, transform, flags) end
 
 --- 调用 `cc.TransitionFadeTR:TransitionFadeTR`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

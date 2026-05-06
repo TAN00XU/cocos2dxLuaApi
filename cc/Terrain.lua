@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Terrain = {}
 cc.Terrain = Terrain
 
 --- 初始化 `cc.Terrain:initHeightMap` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `heightMap`：参数 `heightMap`，类型为 `string`。
@@ -23,8 +21,6 @@ function Terrain:initHeightMap(heightMap) end
 
 --- 设置 `cc.Terrain:setMaxDetailMapAmount` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `maxValue`：参数 `maxValue`，类型为 `integer`。
 ---
@@ -35,8 +31,6 @@ function Terrain:initHeightMap(heightMap) end
 function Terrain:setMaxDetailMapAmount(maxValue) end
 
 --- 设置 `cc.Terrain:setDrawWire` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `boolValue`：参数 `boolValue`，类型为 `boolean`。
@@ -49,16 +43,12 @@ function Terrain:setDrawWire(boolValue) end
 
 --- 获取 `cc.Terrain:getHeightData` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
 ---@return array_table 获取到的 Lua 表数据。
 function Terrain:getHeightData() end
 
 --- 设置 `cc.Terrain:setDetailMap` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -73,8 +63,6 @@ function Terrain:setDetailMap(index, detailMap) end
 
 --- 重置 `cc.Terrain:resetHeightMap` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `heightMap`：参数 `heightMap`，类型为 `string`。
 ---
@@ -85,8 +73,6 @@ function Terrain:setDetailMap(index, detailMap) end
 function Terrain:resetHeightMap(heightMap) end
 
 --- 设置 `cc.Terrain:setLightDir` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `lightDir`：参数 `lightDir`，类型为 `vec3_table`。
@@ -99,8 +85,6 @@ function Terrain:setLightDir(lightDir) end
 
 --- 设置 `cc.Terrain:setAlphaMap` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `newAlphaMapTexture`：参数 `newAlphaMapTexture`，类型为 `cc.Texture2D`。
 ---
@@ -111,8 +95,6 @@ function Terrain:setLightDir(lightDir) end
 function Terrain:setAlphaMap(newAlphaMapTexture) end
 
 --- 设置 `cc.Terrain:setSkirtHeightRatio` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `ratio`：参数 `ratio`，类型为 `number`。
@@ -125,8 +107,6 @@ function Terrain:setSkirtHeightRatio(ratio) end
 
 --- 调用 `cc.Terrain:convertToTerrainSpace`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `worldSpace`：参数 `worldSpace`，类型为 `vec2_table`。
 ---
@@ -138,8 +118,6 @@ function Terrain:convertToTerrainSpace(worldSpace) end
 
 --- 初始化 `cc.Terrain:initTextures` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
@@ -147,16 +125,12 @@ function Terrain:initTextures() end
 
 --- 初始化 `cc.Terrain:initProperties` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Terrain:initProperties() end
 
 --- 初始化 `cc.Terrain:initWithTerrainData` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `parameter`：参数 `parameter`，类型为 `cc.Terrain.TerrainData`。
@@ -170,8 +144,6 @@ function Terrain:initProperties() end
 function Terrain:initWithTerrainData(parameter, fixedType) end
 
 --- 设置 `cc.Terrain:setLODDistance` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `lod1`：参数 `lod1`，类型为 `number`。
@@ -188,16 +160,12 @@ function Terrain:setLODDistance(lod1, lod2, lod3) end
 
 --- 获取 `cc.Terrain:getTerrainSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `size_table`：获取到的 Lua 表数据。
 ---@return size_table 获取到的 Lua 表数据。
 function Terrain:getTerrainSize() end
 
 --- 获取 `cc.Terrain:getNormal` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pixelX`：参数 `pixelX`，类型为 `integer`。
@@ -212,16 +180,12 @@ function Terrain:getNormal(pixelX, pixelY) end
 
 --- 调用 `cc.Terrain:reload`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Terrain:reload() end
 
 --- 获取 `cc.Terrain:getImageHeight` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pixelX`：参数 `pixelX`，类型为 `integer`。
@@ -236,8 +200,6 @@ function Terrain:getImageHeight(pixelX, pixelY) end
 
 --- 设置 `cc.Terrain:setLightMap` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
@@ -248,8 +210,6 @@ function Terrain:getImageHeight(pixelX, pixelY) end
 function Terrain:setLightMap(fileName) end
 
 --- 设置 `cc.Terrain:setIsEnableFrustumCull` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `boolValue`：参数 `boolValue`，类型为 `boolean`。
@@ -262,8 +222,6 @@ function Terrain:setIsEnableFrustumCull(boolValue) end
 
 --- 获取 `cc.Terrain:getMinHeight` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -271,16 +229,12 @@ function Terrain:getMinHeight() end
 
 --- 获取 `cc.Terrain:getMaxHeight` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Terrain:getMaxHeight() end
 
 --- 调用 `cc.Terrain:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -296,8 +250,6 @@ function Terrain:getMaxHeight() end
 function Terrain:draw(renderer, transform, flags) end
 
 --- 调用 `cc.Terrain:Terrain`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

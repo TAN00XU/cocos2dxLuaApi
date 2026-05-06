@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.Waves = Waves
 
 --- 设置 `cc.Waves:setAmplitudeRate` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `amplitudeRate`：参数 `amplitudeRate`，类型为 `number`。
 ---
@@ -22,8 +20,6 @@ cc.Waves = Waves
 function Waves:setAmplitudeRate(amplitudeRate) end
 
 --- 初始化 `cc.Waves:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -46,8 +42,6 @@ function Waves:initWithDuration(duration, gridSize, waves, amplitude, horizontal
 
 --- 获取 `cc.Waves:getAmplitude` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -55,16 +49,12 @@ function Waves:getAmplitude() end
 
 --- 获取 `cc.Waves:getAmplitudeRate` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Waves:getAmplitudeRate() end
 
 --- 设置 `cc.Waves:setAmplitude` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `amplitude`：参数 `amplitude`，类型为 `number`。
@@ -76,8 +66,6 @@ function Waves:getAmplitudeRate() end
 function Waves:setAmplitude(amplitude) end
 
 --- 创建 `cc.Waves:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -100,16 +88,12 @@ function Waves:create(duration, gridSize, waves, amplitude, horizontal, vertical
 
 --- 调用 `cc.Waves:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Waves:clone() end
 
 --- 更新 `cc.Waves:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -121,8 +105,6 @@ function Waves:clone() end
 function Waves:update(time) end
 
 --- 调用 `cc.Waves:Waves`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

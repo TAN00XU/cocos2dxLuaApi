@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.Spawn = Spawn
 
 --- 初始化 `cc.Spawn:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `arrayOfActions`：参数 `arrayOfActions`，类型为 `array_table`。
 ---
@@ -22,8 +20,6 @@ cc.Spawn = Spawn
 function Spawn:init(arrayOfActions) end
 
 --- 初始化 `cc.Spawn:initWithTwoActions` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `action1`：参数 `action1`，类型为 `cc.FiniteTimeAction`。
@@ -38,8 +34,6 @@ function Spawn:initWithTwoActions(action1, action2) end
 
 --- 调用 `cc.Spawn:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -51,16 +45,12 @@ function Spawn:startWithTarget(target) end
 
 --- 调用 `cc.Spawn:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Spawn:clone() end
 
 --- 停止 `cc.Spawn:stop` 对应的流程。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -69,16 +59,12 @@ function Spawn:stop() end
 
 --- 调用 `cc.Spawn:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Spawn:reverse() end
 
 --- 更新 `cc.Spawn:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -90,8 +76,6 @@ function Spawn:reverse() end
 function Spawn:update(time) end
 
 --- 调用 `cc.Spawn:Spawn`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

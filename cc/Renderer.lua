@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,16 +9,12 @@ cc.Renderer = Renderer
 
 --- 获取 `cc.Renderer:getWinding` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getWinding() end
 
 --- 获取 `cc.Renderer:getDrawnVertices` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -27,16 +23,12 @@ function Renderer:getDrawnVertices() end
 
 --- 调用 `cc.Renderer:render`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Renderer:render() end
 
 --- 创建 `cc.Renderer:createRenderQueue` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：创建出的 整数值。
@@ -45,16 +37,12 @@ function Renderer:createRenderQueue() end
 
 --- 获取 `cc.Renderer:getStencilTest` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Renderer:getStencilTest() end
 
 --- 获取 `cc.Renderer:getRenderTargetFlag` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -63,16 +51,12 @@ function Renderer:getRenderTargetFlag() end
 
 --- 获取 `cc.Renderer:getClearFlag` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getClearFlag() end
 
 --- 获取 `cc.Renderer:getStencilReferenceValue` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -81,16 +65,12 @@ function Renderer:getStencilReferenceValue() end
 
 --- 获取 `cc.Renderer:getStencilAttachment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
 ---@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
 function Renderer:getStencilAttachment() end
 
 --- 设置 `cc.Renderer:setViewPort` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `integer`。
@@ -109,8 +89,6 @@ function Renderer:setViewPort(x, y, w, h) end
 
 --- 获取 `cc.Renderer:getStencilReadMask` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -118,16 +96,12 @@ function Renderer:getStencilReadMask() end
 
 --- 获取 `cc.Renderer:getClearDepth` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Renderer:getClearDepth() end
 
 --- 设置 `cc.Renderer:setStencilCompareFunction` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `func`：参数 `func`，类型为 `integer`。
@@ -144,8 +118,6 @@ function Renderer:setStencilCompareFunction(func, ref, readMask) end
 
 --- 获取 `cc.Renderer:getViewport` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Viewport`：获取到的 `cc.Viewport` 对象或值。
 ---@return cc.Viewport 获取到的 `cc.Viewport` 对象或值。
@@ -153,16 +125,12 @@ function Renderer:getViewport() end
 
 --- 获取 `cc.Renderer:getClearStencil` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getClearStencil() end
 
 --- 设置 `cc.Renderer:setStencilTest` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `boolean`。
@@ -175,8 +143,6 @@ function Renderer:setStencilTest(value) end
 
 --- 获取 `cc.Renderer:getStencilFailureOperation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -184,16 +150,12 @@ function Renderer:getStencilFailureOperation() end
 
 --- 获取 `cc.Renderer:getColorAttachment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
 ---@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
 function Renderer:getColorAttachment() end
 
 --- 添加 `cc.Renderer:addCommand` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `command`：参数 `command`，类型为 `cc.RenderCommand`。
@@ -210,8 +172,6 @@ function Renderer:addCommand(command, renderQueueID) end
 
 --- 设置 `cc.Renderer:setDepthTest` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `boolean`。
 ---
@@ -222,8 +182,6 @@ function Renderer:addCommand(command, renderQueueID) end
 function Renderer:setDepthTest(value) end
 
 --- 设置 `cc.Renderer:setScissorRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -242,8 +200,6 @@ function Renderer:setScissorRect(x, y, width, height) end
 
 --- 获取 `cc.Renderer:getDepthTest` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
@@ -251,16 +207,12 @@ function Renderer:getDepthTest() end
 
 --- 初始化 `cc.Renderer:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Renderer:init() end
 
 --- 设置 `cc.Renderer:setDepthWrite` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `boolean`。
@@ -273,16 +225,12 @@ function Renderer:setDepthWrite(value) end
 
 --- 获取 `cc.Renderer:getStencilPassDepthFailureOperation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getStencilPassDepthFailureOperation() end
 
 --- 设置 `cc.Renderer:setCullMode` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `mode`：参数 `mode`，类型为 `integer`。
@@ -295,16 +243,12 @@ function Renderer:setCullMode(mode) end
 
 --- 调用 `cc.Renderer:popGroup`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Renderer:popGroup() end
 
 --- 调用 `cc.Renderer:pushGroup`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderQueueID`：参数 `renderQueueID`，类型为 `integer`。
@@ -317,16 +261,12 @@ function Renderer:pushGroup(renderQueueID) end
 
 --- 获取 `cc.Renderer:getScissorRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.ScissorRect`：获取到的 `cc.ScissorRect` 对象或值。
 ---@return cc.ScissorRect 获取到的 `cc.ScissorRect` 对象或值。
 function Renderer:getScissorRect() end
 
 --- 获取 `cc.Renderer:getScissorTest` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
@@ -335,16 +275,12 @@ function Renderer:getScissorTest() end
 
 --- 获取 `cc.Renderer:getStencilWriteMask` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getStencilWriteMask() end
 
 --- 添加 `cc.Renderer:addDrawnBatches` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `number`：参数 `number`，类型为 `integer`。
@@ -356,8 +292,6 @@ function Renderer:getStencilWriteMask() end
 function Renderer:addDrawnBatches(number) end
 
 --- 调用 `cc.Renderer:checkVisibility`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `transform`：参数 `transform`，类型为 `mat4_table`。
@@ -371,8 +305,6 @@ function Renderer:addDrawnBatches(number) end
 function Renderer:checkVisibility(transform, size) end
 
 --- 设置 `cc.Renderer:setStencilOperation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `stencilFailureOp`：参数 `stencilFailureOp`，类型为 `integer`。
@@ -389,16 +321,12 @@ function Renderer:setStencilOperation(stencilFailureOp, depthFailureOp, stencilD
 
 --- 获取 `cc.Renderer:getDepthWrite` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Renderer:getDepthWrite() end
 
 --- 获取 `cc.Renderer:getCullMode` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -407,8 +335,6 @@ function Renderer:getCullMode() end
 
 --- 获取 `cc.Renderer:getStencilCompareFunction` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -416,16 +342,12 @@ function Renderer:getStencilCompareFunction() end
 
 --- 获取 `cc.Renderer:getClearColor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `color4f_table`：获取到的 Lua 表数据。
 ---@return color4f_table 获取到的 Lua 表数据。
 function Renderer:getClearColor() end
 
 --- 设置 `cc.Renderer:setDepthCompareFunction` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `func`：参数 `func`，类型为 `integer`。
@@ -438,8 +360,6 @@ function Renderer:setDepthCompareFunction(func) end
 
 --- 设置 `cc.Renderer:setStencilWriteMask` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `mask`：参数 `mask`，类型为 `integer`。
 ---
@@ -451,16 +371,12 @@ function Renderer:setStencilWriteMask(mask) end
 
 --- 获取 `cc.Renderer:getStencilDepthPassOperation` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getStencilDepthPassOperation() end
 
 --- 设置 `cc.Renderer:setScissorTest` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -473,8 +389,6 @@ function Renderer:setScissorTest(enabled) end
 
 --- 设置 `cc.Renderer:setWinding` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `winding`：参数 `winding`，类型为 `integer`。
 ---
@@ -485,8 +399,6 @@ function Renderer:setScissorTest(enabled) end
 function Renderer:setWinding(winding) end
 
 --- 调用 `cc.Renderer:clear`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `flags`：标志位。类型为 `integer`。
@@ -507,8 +419,6 @@ function Renderer:clear(flags, color, depth, stencil, globalOrder) end
 
 --- 设置 `cc.Renderer:setRenderTarget` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `flags`：标志位。类型为 `integer`。
 --- - `colorAttachment`：参数 `colorAttachment`，类型为 `cc.Texture2D`。
@@ -526,16 +436,12 @@ function Renderer:setRenderTarget(flags, colorAttachment, depthAttachment, stenc
 
 --- 获取 `cc.Renderer:getDepthAttachment` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
 ---@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
 function Renderer:getDepthAttachment() end
 
 --- 添加 `cc.Renderer:addDrawnVertices` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `number`：参数 `number`，类型为 `integer`。
@@ -548,16 +454,12 @@ function Renderer:addDrawnVertices(number) end
 
 --- 调用 `cc.Renderer:clean`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Renderer:clean() end
 
 --- 获取 `cc.Renderer:getDrawnBatches` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -566,8 +468,6 @@ function Renderer:getDrawnBatches() end
 
 --- 调用 `cc.Renderer:clearDrawStats`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -575,16 +475,12 @@ function Renderer:clearDrawStats() end
 
 --- 获取 `cc.Renderer:getDepthCompareFunction` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Renderer:getDepthCompareFunction() end
 
 --- 调用 `cc.Renderer:Renderer`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

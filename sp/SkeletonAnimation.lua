@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local SkeletonAnimation = {}
 sp.SkeletonAnimation = SkeletonAnimation
 
 --- 设置 `sp.SkeletonAnimation:setTrackCompleteListener` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `entry`：参数 `entry`，类型为 `spTrackEntry`。
@@ -25,8 +23,6 @@ function SkeletonAnimation:setTrackCompleteListener(entry, listener) end
 
 --- 调用 `sp.SkeletonAnimation:findAnimation`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
@@ -38,8 +34,6 @@ function SkeletonAnimation:findAnimation(name) end
 
 --- 设置 `sp.SkeletonAnimation:setCompleteListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
 ---
@@ -50,8 +44,6 @@ function SkeletonAnimation:findAnimation(name) end
 function SkeletonAnimation:setCompleteListener(listener) end
 
 --- 设置 `sp.SkeletonAnimation:setMix` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fromAnimation`：参数 `fromAnimation`，类型为 `string`。
@@ -68,8 +60,6 @@ function SkeletonAnimation:setMix(fromAnimation, toAnimation, duration) end
 
 --- 设置 `sp.SkeletonAnimation:setTrackStartListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `entry`：参数 `entry`，类型为 `spTrackEntry`。
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
@@ -82,8 +72,6 @@ function SkeletonAnimation:setMix(fromAnimation, toAnimation, duration) end
 function SkeletonAnimation:setTrackStartListener(entry, listener) end
 
 --- 添加 `sp.SkeletonAnimation:addEmptyAnimation` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `trackIndex`：参数 `trackIndex`，类型为 `integer`。
@@ -100,8 +88,6 @@ function SkeletonAnimation:addEmptyAnimation(trackIndex, mixDuration, delay) end
 
 --- 设置 `sp.SkeletonAnimation:setDisposeListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
 ---
@@ -112,8 +98,6 @@ function SkeletonAnimation:addEmptyAnimation(trackIndex, mixDuration, delay) end
 function SkeletonAnimation:setDisposeListener(listener) end
 
 --- 设置 `sp.SkeletonAnimation:setTrackInterruptListener` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `entry`：参数 `entry`，类型为 `spTrackEntry`。
@@ -128,8 +112,6 @@ function SkeletonAnimation:setTrackInterruptListener(entry, listener) end
 
 --- 设置 `sp.SkeletonAnimation:setEndListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
 ---
@@ -140,8 +122,6 @@ function SkeletonAnimation:setTrackInterruptListener(entry, listener) end
 function SkeletonAnimation:setEndListener(listener) end
 
 --- 设置 `sp.SkeletonAnimation:setTrackDisposeListener` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `entry`：参数 `entry`，类型为 `spTrackEntry`。
@@ -156,8 +136,6 @@ function SkeletonAnimation:setTrackDisposeListener(entry, listener) end
 
 --- 设置 `sp.SkeletonAnimation:setEventListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
 ---
@@ -168,8 +146,6 @@ function SkeletonAnimation:setTrackDisposeListener(entry, listener) end
 function SkeletonAnimation:setEventListener(listener) end
 
 --- 设置 `sp.SkeletonAnimation:setEmptyAnimation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `trackIndex`：参数 `trackIndex`，类型为 `integer`。
@@ -184,8 +160,6 @@ function SkeletonAnimation:setEmptyAnimation(trackIndex, mixDuration) end
 
 --- 设置 `sp.SkeletonAnimation:setTrackEventListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `entry`：参数 `entry`，类型为 `spTrackEntry`。
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
@@ -199,16 +173,12 @@ function SkeletonAnimation:setTrackEventListener(entry, listener) end
 
 --- 调用 `sp.SkeletonAnimation:clearTrack`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonAnimation:clearTrack() end
 
 --- 设置 `sp.SkeletonAnimation:setInterruptListener` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
@@ -221,8 +191,6 @@ function SkeletonAnimation:setInterruptListener(listener) end
 
 --- 设置 `sp.SkeletonAnimation:setEmptyAnimations` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `mixDuration`：参数 `mixDuration`，类型为 `number`。
 ---
@@ -234,16 +202,12 @@ function SkeletonAnimation:setEmptyAnimations(mixDuration) end
 
 --- 调用 `sp.SkeletonAnimation:clearTracks`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonAnimation:clearTracks() end
 
 --- 设置 `sp.SkeletonAnimation:setTrackEndListener` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `entry`：参数 `entry`，类型为 `spTrackEntry`。
@@ -258,8 +222,6 @@ function SkeletonAnimation:setTrackEndListener(entry, listener) end
 
 --- 设置 `sp.SkeletonAnimation:setStartListener` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `listener`：参数 `listener`，类型为 `fun(...): any`。
 ---
@@ -270,8 +232,6 @@ function SkeletonAnimation:setTrackEndListener(entry, listener) end
 function SkeletonAnimation:setStartListener(listener) end
 
 --- 创建 `sp.SkeletonAnimation:createWithBinaryFile` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `skeletonBinaryFile`：参数 `skeletonBinaryFile`，类型为 `string`。
@@ -290,16 +250,12 @@ function SkeletonAnimation:createWithBinaryFile(skeletonBinaryFile, atlas, scale
 
 --- 创建 `sp.SkeletonAnimation:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonAnimation:create() end
 
 --- 创建 `sp.SkeletonAnimation:createWithJsonFile` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `skeletonJsonFile`：参数 `skeletonJsonFile`，类型为 `string`。
@@ -317,8 +273,6 @@ function SkeletonAnimation:create() end
 function SkeletonAnimation:createWithJsonFile(skeletonJsonFile, atlas, scale) end
 
 --- 初始化 `sp.SkeletonAnimation:initialize` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

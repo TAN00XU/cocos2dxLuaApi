@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -14,16 +14,12 @@ function VideoPlayer:addEventListener(callback) end
 
 --- 获取 `ccui.VideoPlayer:getFileName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function VideoPlayer:getFileName() end
 
 --- 获取 `ccui.VideoPlayer:getURL` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。
@@ -32,8 +28,6 @@ function VideoPlayer:getURL() end
 
 --- 调用 `ccui.VideoPlayer:play`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -41,16 +35,12 @@ function VideoPlayer:play() end
 
 --- 判断 `ccui.VideoPlayer:isUserInputEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function VideoPlayer:isUserInputEnabled() end
 
 --- 设置 `ccui.VideoPlayer:setKeepAspectRatioEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -63,16 +53,12 @@ function VideoPlayer:setKeepAspectRatioEnabled(enable) end
 
 --- 停止 `ccui.VideoPlayer:stop` 对应的流程。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function VideoPlayer:stop() end
 
 --- 设置 `ccui.VideoPlayer:setFullScreenEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fullscreen`：参数 `fullscreen`，类型为 `boolean`。
@@ -85,8 +71,6 @@ function VideoPlayer:setFullScreenEnabled(fullscreen) end
 
 --- 设置 `ccui.VideoPlayer:setFileName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `videoPath`：参数 `videoPath`，类型为 `string`。
 ---
@@ -97,8 +81,6 @@ function VideoPlayer:setFullScreenEnabled(fullscreen) end
 function VideoPlayer:setFileName(videoPath) end
 
 --- 设置 `ccui.VideoPlayer:setURL` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `_videoURL`：参数 `_videoURL`，类型为 `string`。
@@ -111,8 +93,6 @@ function VideoPlayer:setURL(_videoURL) end
 
 --- 设置 `ccui.VideoPlayer:setStyle` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `style`：参数 `style`，类型为 `integer`。
 ---
@@ -123,8 +103,6 @@ function VideoPlayer:setURL(_videoURL) end
 function VideoPlayer:setStyle(style) end
 
 --- 调用 `ccui.VideoPlayer:seekTo`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `sec`：参数 `sec`，类型为 `number`。
@@ -137,16 +115,12 @@ function VideoPlayer:seekTo(sec) end
 
 --- 判断 `ccui.VideoPlayer:isKeepAspectRatioEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function VideoPlayer:isKeepAspectRatioEnabled() end
 
 --- 调用 `ccui.VideoPlayer:onPlayEvent`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `integer`。
@@ -159,16 +133,12 @@ function VideoPlayer:onPlayEvent(event) end
 
 --- 判断 `ccui.VideoPlayer:isFullScreenEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function VideoPlayer:isFullScreenEnabled() end
 
 --- 判断 `ccui.VideoPlayer:isLooping` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -177,16 +147,12 @@ function VideoPlayer:isLooping() end
 
 --- 判断 `ccui.VideoPlayer:isPlaying` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function VideoPlayer:isPlaying() end
 
 --- 设置 `ccui.VideoPlayer:setLooping` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `looping`：参数 `looping`，类型为 `boolean`。
@@ -199,8 +165,6 @@ function VideoPlayer:setLooping(looping) end
 
 --- 设置 `ccui.VideoPlayer:setUserInputEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `enableInput`：参数 `enableInput`，类型为 `boolean`。
 ---
@@ -212,16 +176,12 @@ function VideoPlayer:setUserInputEnabled(enableInput) end
 
 --- 创建 `ccui.VideoPlayer:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function VideoPlayer:create() end
 
 --- 调用 `ccui.VideoPlayer:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -238,16 +198,12 @@ function VideoPlayer:draw(renderer, transform, flags) end
 
 --- 暂停 `ccui.VideoPlayer:pause` 对应的流程。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function VideoPlayer:pause() end
 
 --- 调用 `ccui.VideoPlayer:onEnter`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -256,8 +212,6 @@ function VideoPlayer:onEnter() end
 
 --- 调用 `ccui.VideoPlayer:onExit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -265,16 +219,12 @@ function VideoPlayer:onExit() end
 
 --- 恢复 `ccui.VideoPlayer:resume` 对应的流程。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function VideoPlayer:resume() end
 
 --- 设置 `ccui.VideoPlayer:setVisible` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `visible`：是否可见。类型为 `boolean`。
@@ -286,8 +236,6 @@ function VideoPlayer:resume() end
 function VideoPlayer:setVisible(visible) end
 
 --- 调用 `ccui.VideoPlayer:VideoPlayer`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

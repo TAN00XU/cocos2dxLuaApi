@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.EventAssetsManagerEx = EventAssetsManagerEx
 
 --- 获取 `cc.EventAssetsManagerEx:getAssetsManagerEx` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.AssetsManagerEx`：获取到的 `cc.AssetsManagerEx` 对象或值。
 ---@return cc.AssetsManagerEx 获取到的 `cc.AssetsManagerEx` 对象或值。
 function EventAssetsManagerEx:getAssetsManagerEx() end
 
 --- 获取 `cc.EventAssetsManagerEx:getAssetId` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。
@@ -28,16 +24,12 @@ function EventAssetsManagerEx:getAssetId() end
 
 --- 获取 `cc.EventAssetsManagerEx:getCURLECode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EventAssetsManagerEx:getCURLECode() end
 
 --- 获取 `cc.EventAssetsManagerEx:getMessage` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `string`：获取到的 字符串。
@@ -46,16 +38,12 @@ function EventAssetsManagerEx:getMessage() end
 
 --- 获取 `cc.EventAssetsManagerEx:getCURLMCode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EventAssetsManagerEx:getCURLMCode() end
 
 --- 获取 `cc.EventAssetsManagerEx:getPercentByFile` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -64,16 +52,12 @@ function EventAssetsManagerEx:getPercentByFile() end
 
 --- 获取 `cc.EventAssetsManagerEx:getEventCode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function EventAssetsManagerEx:getEventCode() end
 
 --- 获取 `cc.EventAssetsManagerEx:getPercent` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local SplitCols = {}
 cc.SplitCols = SplitCols
 
 --- 初始化 `cc.SplitCols:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -25,8 +23,6 @@ function SplitCols:initWithDuration(duration, cols) end
 
 --- 创建 `cc.SplitCols:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 --- - `cols`：参数 `cols`，类型为 `integer`。
@@ -40,8 +36,6 @@ function SplitCols:create(duration, cols) end
 
 --- 调用 `cc.SplitCols:startWithTarget`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
 ---
@@ -53,16 +47,12 @@ function SplitCols:startWithTarget(target) end
 
 --- 调用 `cc.SplitCols:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SplitCols:clone() end
 
 --- 更新 `cc.SplitCols:update` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -74,8 +64,6 @@ function SplitCols:clone() end
 function SplitCols:update(time) end
 
 --- 调用 `cc.SplitCols:SplitCols`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

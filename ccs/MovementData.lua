@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local MovementData = {}
 ccs.MovementData = MovementData
 
 --- 获取 `ccs.MovementData:getMovementBoneData` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `boneName`：参数 `boneName`，类型为 `string`。
@@ -23,8 +21,6 @@ function MovementData:getMovementBoneData(boneName) end
 
 --- 添加 `ccs.MovementData:addMovementBoneData` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `movBoneData`：参数 `movBoneData`，类型为 `ccs.MovementBoneData`。
 ---
@@ -36,16 +32,12 @@ function MovementData:addMovementBoneData(movBoneData) end
 
 --- 创建 `ccs.MovementData:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MovementData:create() end
 
 --- 调用 `ccs.MovementData:MovementData`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

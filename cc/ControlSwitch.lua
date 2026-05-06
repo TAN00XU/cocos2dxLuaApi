@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ControlSwitch = {}
 cc.ControlSwitch = ControlSwitch
 
 --- 设置 `cc.ControlSwitch:setOn` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `isOn`：参数 `isOn`，类型为 `boolean`。
@@ -27,8 +25,6 @@ function ControlSwitch:setOn(isOn, animated) end
 
 --- 调用 `cc.ControlSwitch:locationFromTouch`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `touch`：参数 `touch`，类型为 `cc.Touch`。
 ---
@@ -40,16 +36,12 @@ function ControlSwitch:locationFromTouch(touch) end
 
 --- 判断 `cc.ControlSwitch:isOn` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function ControlSwitch:isOn() end
 
 --- 初始化 `cc.ControlSwitch:initWithMaskSprite` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `maskSprite`：参数 `maskSprite`，类型为 `cc.Sprite`。
@@ -74,16 +66,12 @@ function ControlSwitch:initWithMaskSprite(maskSprite, onSprite, offSprite, thumb
 
 --- 判断 `cc.ControlSwitch:hasMoved` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function ControlSwitch:hasMoved() end
 
 --- 创建 `cc.ControlSwitch:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `maskSprite`：参数 `maskSprite`，类型为 `cc.Sprite`。
@@ -108,8 +96,6 @@ function ControlSwitch:create(maskSprite, onSprite, offSprite, thumbSprite, onLa
 
 --- 设置 `cc.ControlSwitch:setEnabled` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
 ---
@@ -120,8 +106,6 @@ function ControlSwitch:create(maskSprite, onSprite, offSprite, thumbSprite, onLa
 function ControlSwitch:setEnabled(enabled) end
 
 --- 调用 `cc.ControlSwitch:onTouchMoved`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
@@ -136,8 +120,6 @@ function ControlSwitch:onTouchMoved(pTouch, pEvent) end
 
 --- 调用 `cc.ControlSwitch:onTouchEnded`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
 --- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
@@ -150,8 +132,6 @@ function ControlSwitch:onTouchMoved(pTouch, pEvent) end
 function ControlSwitch:onTouchEnded(pTouch, pEvent) end
 
 --- 调用 `cc.ControlSwitch:onTouchCancelled`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
@@ -166,8 +146,6 @@ function ControlSwitch:onTouchCancelled(pTouch, pEvent) end
 
 --- 调用 `cc.ControlSwitch:onTouchBegan`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
 --- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
@@ -180,8 +158,6 @@ function ControlSwitch:onTouchCancelled(pTouch, pEvent) end
 function ControlSwitch:onTouchBegan(pTouch, pEvent) end
 
 --- 调用 `cc.ControlSwitch:ControlSwitch`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

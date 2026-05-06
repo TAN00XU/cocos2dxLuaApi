@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ ccb.VertexLayout = VertexLayout
 
 --- 获取 `ccb.VertexLayout:getVertexStepMode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
@@ -18,16 +16,12 @@ function VertexLayout:getVertexStepMode() end
 
 --- 判断 `ccb.VertexLayout:isValid` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function VertexLayout:isValid() end
 
 --- 设置 `ccb.VertexLayout:setLayout` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `stride`：参数 `stride`，类型为 `integer`。
@@ -39,8 +33,6 @@ function VertexLayout:isValid() end
 function VertexLayout:setLayout(stride) end
 
 --- 设置 `ccb.VertexLayout:setAttribute` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -61,16 +53,12 @@ function VertexLayout:setAttribute(name, index, format, offset, needToBeNormalli
 
 --- 获取 `ccb.VertexLayout:getStride` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function VertexLayout:getStride() end
 
 --- 调用 `ccb.VertexLayout:VertexLayout`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `cc.backend.VertexLayout`：`cc.backend.VertexLayout` 对象或值。

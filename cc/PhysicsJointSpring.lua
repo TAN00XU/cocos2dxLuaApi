@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local PhysicsJointSpring = {}
 cc.PhysicsJointSpring = PhysicsJointSpring
 
 --- 设置 `cc.PhysicsJointSpring:setAnchr2` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `anchr2`：参数 `anchr2`，类型为 `vec2_table`。
@@ -23,8 +21,6 @@ function PhysicsJointSpring:setAnchr2(anchr2) end
 
 --- 设置 `cc.PhysicsJointSpring:setAnchr1` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `anchr1`：参数 `anchr1`，类型为 `vec2_table`。
 ---
@@ -36,16 +32,12 @@ function PhysicsJointSpring:setAnchr1(anchr1) end
 
 --- 获取 `cc.PhysicsJointSpring:getDamping` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointSpring:getDamping() end
 
 --- 设置 `cc.PhysicsJointSpring:setStiffness` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `stiffness`：参数 `stiffness`，类型为 `number`。
@@ -58,16 +50,12 @@ function PhysicsJointSpring:setStiffness(stiffness) end
 
 --- 获取 `cc.PhysicsJointSpring:getRestLength` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PhysicsJointSpring:getRestLength() end
 
 --- 获取 `cc.PhysicsJointSpring:getAnchr2` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
@@ -76,16 +64,12 @@ function PhysicsJointSpring:getAnchr2() end
 
 --- 获取 `cc.PhysicsJointSpring:getAnchr1` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function PhysicsJointSpring:getAnchr1() end
 
 --- 获取 `cc.PhysicsJointSpring:getStiffness` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -94,16 +78,12 @@ function PhysicsJointSpring:getStiffness() end
 
 --- 创建 `cc.PhysicsJointSpring:createConstraints` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：创建出的 布尔值。
 ---@return boolean 创建出的 布尔值。
 function PhysicsJointSpring:createConstraints() end
 
 --- 设置 `cc.PhysicsJointSpring:setRestLength` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `restLength`：参数 `restLength`，类型为 `number`。
@@ -116,8 +96,6 @@ function PhysicsJointSpring:setRestLength(restLength) end
 
 --- 设置 `cc.PhysicsJointSpring:setDamping` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `damping`：参数 `damping`，类型为 `number`。
 ---
@@ -128,8 +106,6 @@ function PhysicsJointSpring:setRestLength(restLength) end
 function PhysicsJointSpring:setDamping(damping) end
 
 --- 调用 `cc.PhysicsJointSpring:construct`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。

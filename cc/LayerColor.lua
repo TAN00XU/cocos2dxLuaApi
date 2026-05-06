@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local LayerColor = {}
 cc.LayerColor = LayerColor
 
 --- 调用 `cc.LayerColor:changeWidthAndHeight`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `w`：参数 `w`，类型为 `number`。
@@ -25,16 +23,12 @@ function LayerColor:changeWidthAndHeight(w, h) end
 
 --- 获取 `cc.LayerColor:getBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
 ---@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
 function LayerColor:getBlendFunc() end
 
 --- 设置 `cc.LayerColor:setBlendFunc` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
@@ -47,8 +41,6 @@ function LayerColor:setBlendFunc(blendFunc) end
 
 --- 调用 `cc.LayerColor:changeWidth`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `w`：参数 `w`，类型为 `number`。
 ---
@@ -59,8 +51,6 @@ function LayerColor:setBlendFunc(blendFunc) end
 function LayerColor:changeWidth(w) end
 
 --- 初始化 `cc.LayerColor:initWithColor` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -79,8 +69,6 @@ function LayerColor:initWithColor(color, width, height) end
 
 --- 调用 `cc.LayerColor:changeHeight`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `h`：参数 `h`，类型为 `number`。
 ---
@@ -91,8 +79,6 @@ function LayerColor:initWithColor(color, width, height) end
 function LayerColor:changeHeight(h) end
 
 --- 创建 `cc.LayerColor:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -112,8 +98,6 @@ function LayerColor:create(color, width, height) end
 
 --- 调用 `cc.LayerColor:draw`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
 --- - `transform`：参数 `transform`，类型为 `mat4_table`。
@@ -129,16 +113,12 @@ function LayerColor:draw(renderer, transform, flags) end
 
 --- 初始化 `cc.LayerColor:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function LayerColor:init() end
 
 --- 设置 `cc.LayerColor:setContentSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `size_table`。
@@ -150,8 +130,6 @@ function LayerColor:init() end
 function LayerColor:setContentSize(var) end
 
 --- 调用 `cc.LayerColor:LayerColor`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

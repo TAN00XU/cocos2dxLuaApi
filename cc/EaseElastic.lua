@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.EaseElastic = EaseElastic
 
 --- 设置 `cc.EaseElastic:setPeriod` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `fPeriod`：参数 `fPeriod`，类型为 `number`。
 ---
@@ -22,8 +20,6 @@ cc.EaseElastic = EaseElastic
 function EaseElastic:setPeriod(fPeriod) end
 
 --- 初始化 `cc.EaseElastic:initWithAction` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -37,8 +33,6 @@ function EaseElastic:setPeriod(fPeriod) end
 function EaseElastic:initWithAction(action, period) end
 
 --- 获取 `cc.EaseElastic:getPeriod` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。

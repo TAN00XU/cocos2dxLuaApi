@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TiledGrid3D = {}
 cc.TiledGrid3D = TiledGrid3D
 
 --- 创建 `cc.TiledGrid3D:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
@@ -33,8 +31,6 @@ function TiledGrid3D:create(gridSize, texture, flipped, rect) end
 
 --- 调用 `cc.TiledGrid3D:calculateVertexPoints`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -42,16 +38,12 @@ function TiledGrid3D:calculateVertexPoints() end
 
 --- 调用 `cc.TiledGrid3D:blit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TiledGrid3D:blit() end
 
 --- 调用 `cc.TiledGrid3D:reuse`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

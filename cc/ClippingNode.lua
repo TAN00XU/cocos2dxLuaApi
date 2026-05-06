@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.ClippingNode = ClippingNode
 
 --- 判断 `cc.ClippingNode:hasContent` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function ClippingNode:hasContent() end
 
 --- 设置 `cc.ClippingNode:setInverted` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `inverted`：参数 `inverted`，类型为 `boolean`。
@@ -32,8 +28,6 @@ function ClippingNode:setInverted(inverted) end
 
 --- 设置 `cc.ClippingNode:setStencil` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `stencil`：参数 `stencil`，类型为 `cc.Node`。
 ---
@@ -45,16 +39,12 @@ function ClippingNode:setStencil(stencil) end
 
 --- 获取 `cc.ClippingNode:getAlphaThreshold` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ClippingNode:getAlphaThreshold() end
 
 --- 初始化 `cc.ClippingNode:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `stencil`：参数 `stencil`，类型为 `cc.Node`。
@@ -67,16 +57,12 @@ function ClippingNode:init(stencil) end
 
 --- 获取 `cc.ClippingNode:getStencil` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Node`：获取到的 `cc.Node` 对象或值。
 ---@return cc.Node 获取到的 `cc.Node` 对象或值。
 function ClippingNode:getStencil() end
 
 --- 设置 `cc.ClippingNode:setAlphaThreshold` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `alphaThreshold`：参数 `alphaThreshold`，类型为 `number`。
@@ -89,16 +75,12 @@ function ClippingNode:setAlphaThreshold(alphaThreshold) end
 
 --- 判断 `cc.ClippingNode:isInverted` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function ClippingNode:isInverted() end
 
 --- 创建 `cc.ClippingNode:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `stencil`：参数 `stencil`，类型为 `cc.Node`。
@@ -113,8 +95,6 @@ function ClippingNode:create(stencil) end
 
 --- 设置 `cc.ClippingNode:setCameraMask` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `mask`：参数 `mask`，类型为 `integer`。
 --- - `applyChildren`：参数 `applyChildren`，类型为 `boolean`。
@@ -127,8 +107,6 @@ function ClippingNode:create(stencil) end
 function ClippingNode:setCameraMask(mask, applyChildren) end
 
 --- 调用 `cc.ClippingNode:visit`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -144,8 +122,6 @@ function ClippingNode:setCameraMask(mask, applyChildren) end
 function ClippingNode:visit(renderer, parentTransform, parentFlags) end
 
 --- 初始化 `cc.ClippingNode:init` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。

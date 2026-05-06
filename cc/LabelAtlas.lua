@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.LabelAtlas = LabelAtlas
 
 --- 设置 `cc.LabelAtlas:setString` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `label`：标签渲染对象。类型为 `string`。
 ---
@@ -22,8 +20,6 @@ cc.LabelAtlas = LabelAtlas
 function LabelAtlas:setString(label) end
 
 --- 初始化 `cc.LabelAtlas:initWithString` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `string`：参数 `string`，类型为 `string`。
@@ -47,16 +43,12 @@ function LabelAtlas:initWithString(string, texture, itemWidth, itemHeight, start
 
 --- 获取 `cc.LabelAtlas:getString` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function LabelAtlas:getString() end
 
 --- 创建 `cc.LabelAtlas:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `string`：参数 `string`，类型为 `string`。
@@ -80,8 +72,6 @@ function LabelAtlas:create(string, charMapFile, itemWidth, itemHeight, startChar
 
 --- 更新 `cc.LabelAtlas:updateAtlasValues` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -89,16 +79,12 @@ function LabelAtlas:updateAtlasValues() end
 
 --- 获取 `cc.LabelAtlas:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function LabelAtlas:getDescription() end
 
 --- 调用 `cc.LabelAtlas:LabelAtlas`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

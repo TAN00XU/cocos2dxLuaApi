@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ cc.Follow = Follow
 
 --- 设置 `cc.Follow:setBoundarySet` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `boolean`。
 ---
@@ -22,8 +20,6 @@ cc.Follow = Follow
 function Follow:setBoundarySet(value) end
 
 --- 初始化 `cc.Follow:initWithTarget` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
@@ -37,8 +33,6 @@ function Follow:setBoundarySet(value) end
 function Follow:initWithTarget(followedNode, rect) end
 
 --- 初始化 `cc.Follow:initWithTargetAndOffset` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
@@ -57,16 +51,12 @@ function Follow:initWithTargetAndOffset(followedNode, xOffset, yOffset, rect) en
 
 --- 判断 `cc.Follow:isBoundarySet` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Follow:isBoundarySet() end
 
 --- 创建 `cc.Follow:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
@@ -80,8 +70,6 @@ function Follow:isBoundarySet() end
 function Follow:create(followedNode, rect) end
 
 --- 创建 `cc.Follow:createWithOffset` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
@@ -100,8 +88,6 @@ function Follow:createWithOffset(followedNode, xOffset, yOffset, rect) end
 
 --- 调用 `cc.Follow:step`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
 ---
@@ -113,16 +99,12 @@ function Follow:step(dt) end
 
 --- 调用 `cc.Follow:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Follow:clone() end
 
 --- 停止 `cc.Follow:stop` 对应的流程。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -131,8 +113,6 @@ function Follow:stop() end
 
 --- 调用 `cc.Follow:reverse`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -140,16 +120,12 @@ function Follow:reverse() end
 
 --- 判断 `cc.Follow:isDone` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Follow:isDone() end
 
 --- 调用 `cc.Follow:Follow`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

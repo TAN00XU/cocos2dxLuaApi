@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TransitionFade = {}
 cc.TransitionFade = TransitionFade
 
 --- 初始化 `cc.TransitionFade:initWithDuration` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `t`：参数 `t`，类型为 `number`。
@@ -29,8 +27,6 @@ function TransitionFade:initWithDuration(t, scene, color) end
 
 --- 创建 `cc.TransitionFade:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 --- - `scene`：参数 `scene`，类型为 `cc.Scene`。
@@ -47,8 +43,6 @@ function TransitionFade:initWithDuration(t, scene, color) end
 function TransitionFade:create(duration, scene, color) end
 
 --- 调用 `cc.TransitionFade:TransitionFade`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

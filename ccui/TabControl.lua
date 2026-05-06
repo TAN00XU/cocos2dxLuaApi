@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local TabControl = {}
 ccui.TabControl = TabControl
 
 --- 设置 `ccui.TabControl:setHeaderWidth` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `headerWidth`：参数 `headerWidth`，类型为 `number`。
@@ -23,8 +21,6 @@ function TabControl:setHeaderWidth(headerWidth) end
 
 --- 移除 `ccui.TabControl:removeTab` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
@@ -36,16 +32,12 @@ function TabControl:removeTab(index) end
 
 --- 获取 `ccui.TabControl:getTabCount` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function TabControl:getTabCount() end
 
 --- 获取 `ccui.TabControl:getHeaderDockPlace` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
@@ -54,16 +46,12 @@ function TabControl:getHeaderDockPlace() end
 
 --- 获取 `ccui.TabControl:getSelectedTabIndex` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function TabControl:getSelectedTabIndex() end
 
 --- 调用 `ccui.TabControl:insertTab`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -80,8 +68,6 @@ function TabControl:insertTab(index, header, container) end
 
 --- 调用 `ccui.TabControl:ignoreHeadersTextureSize`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `ignore`：参数 `ignore`，类型为 `boolean`。
 ---
@@ -93,16 +79,12 @@ function TabControl:ignoreHeadersTextureSize(ignore) end
 
 --- 获取 `ccui.TabControl:getHeaderWidth` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function TabControl:getHeaderWidth() end
 
 --- 设置 `ccui.TabControl:setHeaderDockPlace` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dockPlace`：参数 `dockPlace`，类型为 `integer`。
@@ -114,8 +96,6 @@ function TabControl:getHeaderWidth() end
 function TabControl:setHeaderDockPlace(dockPlace) end
 
 --- 设置 `ccui.TabControl:setSelectTab` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -130,8 +110,6 @@ function TabControl:setSelectTab(index) end
 
 --- 获取 `ccui.TabControl:getTabHeader` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
@@ -143,16 +121,12 @@ function TabControl:getTabHeader(index) end
 
 --- 判断 `ccui.TabControl:isIgnoreHeadersTextureSize` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function TabControl:isIgnoreHeadersTextureSize() end
 
 --- 设置 `ccui.TabControl:setTabChangedEventListener` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -165,8 +139,6 @@ function TabControl:setTabChangedEventListener(callback) end
 
 --- 设置 `ccui.TabControl:setHeaderSelectedZoom` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `zoom`：参数 `zoom`，类型为 `number`。
 ---
@@ -177,8 +149,6 @@ function TabControl:setTabChangedEventListener(callback) end
 function TabControl:setHeaderSelectedZoom(zoom) end
 
 --- 设置 `ccui.TabControl:setHeaderHeight` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `headerHeight`：参数 `headerHeight`，类型为 `number`。
@@ -191,8 +161,6 @@ function TabControl:setHeaderHeight(headerHeight) end
 
 --- 调用 `ccui.TabControl:indexOfTabHeader`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `tabCell`：参数 `tabCell`，类型为 `ccui.TabHeader`。
 ---
@@ -203,8 +171,6 @@ function TabControl:setHeaderHeight(headerHeight) end
 function TabControl:indexOfTabHeader(tabCell) end
 
 --- 获取 `ccui.TabControl:getTabContainer` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -217,8 +183,6 @@ function TabControl:getTabContainer(index) end
 
 --- 获取 `ccui.TabControl:getHeaderSelectedZoom` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -226,16 +190,12 @@ function TabControl:getHeaderSelectedZoom() end
 
 --- 获取 `ccui.TabControl:getHeaderHeight` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function TabControl:getHeaderHeight() end
 
 --- 创建 `ccui.TabControl:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

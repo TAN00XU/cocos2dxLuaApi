@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Physics3DHingeConstraint = {}
 cc.Physics3DHingeConstraint = Physics3DHingeConstraint
 
 --- 获取 `cc.Physics3DHingeConstraint:getHingeAngle` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `transA`：参数 `transA`，类型为 `mat4_table`。
@@ -27,16 +25,12 @@ function Physics3DHingeConstraint:getHingeAngle(transA, transB) end
 
 --- 获取 `cc.Physics3DHingeConstraint:getMotorTargetVelosity` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DHingeConstraint:getMotorTargetVelosity() end
 
 --- 获取 `cc.Physics3DHingeConstraint:getFrameOffsetA` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
@@ -45,16 +39,12 @@ function Physics3DHingeConstraint:getFrameOffsetA() end
 
 --- 获取 `cc.Physics3DHingeConstraint:getFrameOffsetB` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function Physics3DHingeConstraint:getFrameOffsetB() end
 
 --- 设置 `cc.Physics3DHingeConstraint:setMaxMotorImpulse` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `maxMotorImpulse`：参数 `maxMotorImpulse`，类型为 `number`。
@@ -66,8 +56,6 @@ function Physics3DHingeConstraint:getFrameOffsetB() end
 function Physics3DHingeConstraint:setMaxMotorImpulse(maxMotorImpulse) end
 
 --- 调用 `cc.Physics3DHingeConstraint:enableAngularMotor`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enableMotor`：参数 `enableMotor`，类型为 `boolean`。
@@ -84,16 +72,12 @@ function Physics3DHingeConstraint:enableAngularMotor(enableMotor, targetVelocity
 
 --- 获取 `cc.Physics3DHingeConstraint:getUpperLimit` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DHingeConstraint:getUpperLimit() end
 
 --- 获取 `cc.Physics3DHingeConstraint:getMaxMotorImpulse` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `number`：获取到的 数值。
@@ -102,16 +86,12 @@ function Physics3DHingeConstraint:getMaxMotorImpulse() end
 
 --- 获取 `cc.Physics3DHingeConstraint:getLowerLimit` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Physics3DHingeConstraint:getLowerLimit() end
 
 --- 设置 `cc.Physics3DHingeConstraint:setUseFrameOffset` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `frameOffsetOnOff`：参数 `frameOffsetOnOff`，类型为 `boolean`。
@@ -124,16 +104,12 @@ function Physics3DHingeConstraint:setUseFrameOffset(frameOffsetOnOff) end
 
 --- 获取 `cc.Physics3DHingeConstraint:getEnableAngularMotor` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Physics3DHingeConstraint:getEnableAngularMotor() end
 
 --- 调用 `cc.Physics3DHingeConstraint:enableMotor`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enableMotor`：参数 `enableMotor`，类型为 `boolean`。
@@ -146,16 +122,12 @@ function Physics3DHingeConstraint:enableMotor(enableMotor) end
 
 --- 获取 `cc.Physics3DHingeConstraint:getBFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function Physics3DHingeConstraint:getBFrame() end
 
 --- 设置 `cc.Physics3DHingeConstraint:setFrames` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `frameA`：参数 `frameA`，类型为 `mat4_table`。
@@ -170,16 +142,12 @@ function Physics3DHingeConstraint:setFrames(frameA, frameB) end
 
 --- 获取 `cc.Physics3DHingeConstraint:getUseFrameOffset` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Physics3DHingeConstraint:getUseFrameOffset() end
 
 --- 设置 `cc.Physics3DHingeConstraint:setAngularOnly` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `angularOnly`：参数 `angularOnly`，类型为 `boolean`。
@@ -191,8 +159,6 @@ function Physics3DHingeConstraint:getUseFrameOffset() end
 function Physics3DHingeConstraint:setAngularOnly(angularOnly) end
 
 --- 设置 `cc.Physics3DHingeConstraint:setLimit` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `low`：参数 `low`，类型为 `number`。
@@ -213,16 +179,12 @@ function Physics3DHingeConstraint:setLimit(low, high, _softness, _biasFactor, _r
 
 --- 获取 `cc.Physics3DHingeConstraint:getAngularOnly` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Physics3DHingeConstraint:getAngularOnly() end
 
 --- 设置 `cc.Physics3DHingeConstraint:setAxis` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `axisInA`：参数 `axisInA`，类型为 `vec3_table`。
@@ -235,16 +197,12 @@ function Physics3DHingeConstraint:setAxis(axisInA) end
 
 --- 获取 `cc.Physics3DHingeConstraint:getAFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `mat4_table`：获取到的 Lua 表数据。
 ---@return mat4_table 获取到的 Lua 表数据。
 function Physics3DHingeConstraint:getAFrame() end
 
 --- 创建 `cc.Physics3DHingeConstraint:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rbA`：参数 `rbA`，类型为 `cc.Physics3DRigidBody`。
@@ -272,8 +230,6 @@ function Physics3DHingeConstraint:getAFrame() end
 function Physics3DHingeConstraint:create(rbA, rbB, pivotInA, pivotInB, axisInA, axisInB, useReferenceFrameA) end
 
 --- 调用 `cc.Physics3DHingeConstraint:Physics3DHingeConstraint`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

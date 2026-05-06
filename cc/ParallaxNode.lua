@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local ParallaxNode = {}
 cc.ParallaxNode = ParallaxNode
 
 --- 添加 `cc.ParallaxNode:addChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -29,8 +27,6 @@ function ParallaxNode:addChild(child, z, parallaxRatio, positionOffset) end
 
 --- 移除 `cc.ParallaxNode:removeAllChildrenWithCleanup` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `cleanup`：是否清理关联资源。类型为 `boolean`。
 ---
@@ -42,16 +38,12 @@ function ParallaxNode:removeAllChildrenWithCleanup(cleanup) end
 
 --- 创建 `cc.ParallaxNode:create` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ParallaxNode:create() end
 
 --- 添加 `cc.ParallaxNode:addChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -70,8 +62,6 @@ function ParallaxNode:addChild(child, zOrder, tag) end
 
 --- 调用 `cc.ParallaxNode:visit`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
 --- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
@@ -87,8 +77,6 @@ function ParallaxNode:visit(renderer, parentTransform, parentFlags) end
 
 --- 移除 `cc.ParallaxNode:removeChild` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
 --- - `cleanup`：是否清理关联资源。类型为 `boolean`。
@@ -101,8 +89,6 @@ function ParallaxNode:visit(renderer, parentTransform, parentFlags) end
 function ParallaxNode:removeChild(child, cleanup) end
 
 --- 调用 `cc.ParallaxNode:ParallaxNode`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

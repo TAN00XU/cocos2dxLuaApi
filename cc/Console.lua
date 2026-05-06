@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Console = {}
 cc.Console = Console
 
 --- 调用 `cc.Console:listenOnTCP`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `port`：参数 `port`，类型为 `integer`。
@@ -23,8 +21,6 @@ function Console:listenOnTCP(port) end
 
 --- 调用 `cc.Console:log`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `buf`：参数 `buf`，类型为 `string`。
 ---
@@ -35,8 +31,6 @@ function Console:listenOnTCP(port) end
 function Console:log(buf) end
 
 --- 调用 `cc.Console:delCommand`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `cmdName`：参数 `cmdName`，类型为 `string`。
@@ -49,16 +43,12 @@ function Console:delCommand(cmdName) end
 
 --- 停止 `cc.Console:stop` 对应的流程。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Console:stop() end
 
 --- 调用 `cc.Console:listenOnFileDescriptor`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fd`：参数 `fd`，类型为 `integer`。
@@ -71,8 +61,6 @@ function Console:listenOnFileDescriptor(fd) end
 
 --- 设置 `cc.Console:setCommandSeparator` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `var`：参数 `var`，类型为 `string`。
 ---
@@ -84,8 +72,6 @@ function Console:setCommandSeparator(var) end
 
 --- 设置 `cc.Console:setBindAddress` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `address`：参数 `address`，类型为 `string`。
 ---
@@ -96,8 +82,6 @@ function Console:setCommandSeparator(var) end
 function Console:setBindAddress(address) end
 
 --- 判断 `cc.Console:isIpv6Server` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.PointLight = PointLight
 
 --- 获取 `cc.PointLight:getRange` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function PointLight:getRange() end
 
 --- 设置 `cc.PointLight:setRange` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `range`：参数 `range`，类型为 `number`。
@@ -31,8 +27,6 @@ function PointLight:getRange() end
 function PointLight:setRange(range) end
 
 --- 创建 `cc.PointLight:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `position`：位置坐标。类型为 `vec3_table`。
@@ -49,16 +43,12 @@ function PointLight:create(position, color, range) end
 
 --- 获取 `cc.PointLight:getLightType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function PointLight:getLightType() end
 
 --- 调用 `cc.PointLight:PointLight`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `point_table`：Lua 表数据。

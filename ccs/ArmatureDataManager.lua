@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,8 +10,6 @@ ccs.ArmatureDataManager = ArmatureDataManager
 
 --- 移除 `ccs.ArmatureDataManager:removeAnimationData` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
 ---
@@ -22,8 +20,6 @@ ccs.ArmatureDataManager = ArmatureDataManager
 function ArmatureDataManager:removeAnimationData(id) end
 
 --- 添加 `ccs.ArmatureDataManager:addArmatureData` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -39,8 +35,6 @@ function ArmatureDataManager:removeAnimationData(id) end
 function ArmatureDataManager:addArmatureData(id, armatureData, configFilePath) end
 
 --- 添加 `ccs.ArmatureDataManager:addArmatureFileInfo` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `imagePath`：参数 `imagePath`，类型为 `string`。
@@ -59,8 +53,6 @@ function ArmatureDataManager:addArmatureFileInfo(imagePath, plistPath, configFil
 
 --- 移除 `ccs.ArmatureDataManager:removeArmatureFileInfo` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `configFilePath`：参数 `configFilePath`，类型为 `string`。
 ---
@@ -72,16 +64,12 @@ function ArmatureDataManager:removeArmatureFileInfo(configFilePath) end
 
 --- 获取 `ccs.ArmatureDataManager:getTextureDatas` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `map_table`：获取到的 Lua 表数据。
 ---@return map_table 获取到的 Lua 表数据。
 function ArmatureDataManager:getTextureDatas() end
 
 --- 获取 `ccs.ArmatureDataManager:getTextureData` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -94,8 +82,6 @@ function ArmatureDataManager:getTextureData(id) end
 
 --- 获取 `ccs.ArmatureDataManager:getArmatureData` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
 ---
@@ -107,8 +93,6 @@ function ArmatureDataManager:getArmatureData(id) end
 
 --- 获取 `ccs.ArmatureDataManager:getAnimationData` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
 ---
@@ -119,8 +103,6 @@ function ArmatureDataManager:getArmatureData(id) end
 function ArmatureDataManager:getAnimationData(id) end
 
 --- 添加 `ccs.ArmatureDataManager:addAnimationData` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -137,16 +119,12 @@ function ArmatureDataManager:addAnimationData(id, animationData, configFilePath)
 
 --- 初始化 `ccs.ArmatureDataManager:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ArmatureDataManager:init() end
 
 --- 移除 `ccs.ArmatureDataManager:removeArmatureData` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -159,16 +137,12 @@ function ArmatureDataManager:removeArmatureData(id) end
 
 --- 获取 `ccs.ArmatureDataManager:getArmatureDatas` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `map_table`：获取到的 Lua 表数据。
 ---@return map_table 获取到的 Lua 表数据。
 function ArmatureDataManager:getArmatureDatas() end
 
 --- 移除 `ccs.ArmatureDataManager:removeTextureData` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -180,8 +154,6 @@ function ArmatureDataManager:getArmatureDatas() end
 function ArmatureDataManager:removeTextureData(id) end
 
 --- 添加 `ccs.ArmatureDataManager:addTextureData` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `id`：参数 `id`，类型为 `string`。
@@ -198,8 +170,6 @@ function ArmatureDataManager:addTextureData(id, textureData, configFilePath) end
 
 --- 获取 `ccs.ArmatureDataManager:getAnimationDatas` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `map_table`：获取到的 Lua 表数据。
 ---@return map_table 获取到的 Lua 表数据。
@@ -207,16 +177,12 @@ function ArmatureDataManager:getAnimationDatas() end
 
 --- 判断 `ccs.ArmatureDataManager:isAutoLoadSpriteFile` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function ArmatureDataManager:isAutoLoadSpriteFile() end
 
 --- 添加 `ccs.ArmatureDataManager:addSpriteFrameFromFile` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `plistPath`：参数 `plistPath`，类型为 `string`。
@@ -233,16 +199,12 @@ function ArmatureDataManager:addSpriteFrameFromFile(plistPath, imagePath, config
 
 --- 调用 `ccs.ArmatureDataManager:destroyInstance`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ArmatureDataManager:destroyInstance() end
 
 --- 获取 `ccs.ArmatureDataManager:getInstance` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

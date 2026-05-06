@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -8,8 +8,6 @@ local FileUtils = {}
 cc.FileUtils = FileUtils
 
 --- 调用 `cc.FileUtils:fullPathForFilename`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -22,24 +20,17 @@ function FileUtils:fullPathForFilename(filename) end
 
 --- 获取 `cc.FileUtils:getStringFromFile` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@overload fun(path: string, callback: fun(...): any): self
----@overload fun(path: string): self
----@param path? string 路径。类型为 `string`。
----@param callback? fun(...): any 回调函数。类型为 `fun(...): any`。
----@return self 当前对象，便于链式调用。
-function FileUtils:getStringFromFile(path, callback) end
+--- - `string`：文件内容。
+---@param path string 路径。类型为 `string`。
+---@return string content 文件内容。
+function FileUtils:getStringFromFile(path) end
 
 --- 设置 `cc.FileUtils:setFilenameLookupDictionary` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filenameLookupDict`：参数 `filenameLookupDict`，类型为 `map_table`。
@@ -51,8 +42,6 @@ function FileUtils:getStringFromFile(path, callback) end
 function FileUtils:setFilenameLookupDictionary(filenameLookupDict) end
 
 --- 移除 `cc.FileUtils:removeFile` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filepath`：文件路径。类型为 `string`。
@@ -69,8 +58,6 @@ function FileUtils:removeFile(filepath, callback) end
 
 --- 调用 `cc.FileUtils:listFilesRecursivelyAsync`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `dirPath`：参数 `dirPath`，类型为 `string`。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -84,8 +71,6 @@ function FileUtils:listFilesRecursivelyAsync(dirPath, callback) end
 
 --- 判断 `cc.FileUtils:isAbsolutePath` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
 ---
@@ -96,8 +81,6 @@ function FileUtils:listFilesRecursivelyAsync(dirPath, callback) end
 function FileUtils:isAbsolutePath(path) end
 
 --- 调用 `cc.FileUtils:renameFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
@@ -120,16 +103,12 @@ function FileUtils:renameFile(path, oldname, name, callback) end
 
 --- 获取 `cc.FileUtils:getDefaultResourceRootPath` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function FileUtils:getDefaultResourceRootPath() end
 
 --- 加载 `cc.FileUtils:loadFilenameLookupDictionaryFromFile` 对应的资源或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -142,16 +121,12 @@ function FileUtils:loadFilenameLookupDictionaryFromFile(filename) end
 
 --- 判断 `cc.FileUtils:isPopupNotify` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function FileUtils:isPopupNotify() end
 
 --- 获取 `cc.FileUtils:getValueVectorFromFile` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -164,16 +139,12 @@ function FileUtils:getValueVectorFromFile(filename) end
 
 --- 获取 `cc.FileUtils:getSearchPaths` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
 ---@return array_table 获取到的 Lua 表数据。
 function FileUtils:getSearchPaths() end
 
 --- 调用 `cc.FileUtils:writeToFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dict`：参数 `dict`，类型为 `map_table`。
@@ -188,16 +159,12 @@ function FileUtils:writeToFile(dict, fullPath) end
 
 --- 获取 `cc.FileUtils:getOriginalSearchPaths` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
 ---@return array_table 获取到的 Lua 表数据。
 function FileUtils:getOriginalSearchPaths() end
 
 --- 获取 `cc.FileUtils:getNewFilename` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -210,8 +177,6 @@ function FileUtils:getNewFilename(filename) end
 
 --- 调用 `cc.FileUtils:listFiles`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `dirPath`：参数 `dirPath`，类型为 `string`。
 ---
@@ -222,8 +187,6 @@ function FileUtils:getNewFilename(filename) end
 function FileUtils:listFiles(dirPath) end
 
 --- 获取 `cc.FileUtils:getValueMapFromFile` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -236,24 +199,17 @@ function FileUtils:getValueMapFromFile(filename) end
 
 --- 获取 `cc.FileUtils:getFileSize` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `filepath`：文件路径。类型为 `string`。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@overload fun(filepath: string, callback: fun(...): any): self
----@overload fun(filepath: string): self
----@param filepath? string 文件路径。类型为 `string`。
----@param callback? fun(...): any 回调函数。类型为 `fun(...): any`。
----@return self 当前对象，便于链式调用。
-function FileUtils:getFileSize(filepath, callback) end
+--- - `integer`：文件大小，单位为字节。
+---@param filepath string 文件路径。类型为 `string`。
+---@return integer size 文件大小，单位为字节。
+function FileUtils:getFileSize(filepath) end
 
 --- 获取 `cc.FileUtils:getValueMapFromData` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filedata`：参数 `filedata`，类型为 `string`。
@@ -267,8 +223,6 @@ function FileUtils:getFileSize(filepath, callback) end
 function FileUtils:getValueMapFromData(filedata, filesize) end
 
 --- 移除 `cc.FileUtils:removeDirectory` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dirPath`：参数 `dirPath`，类型为 `string`。
@@ -285,8 +239,6 @@ function FileUtils:removeDirectory(dirPath, callback) end
 
 --- 设置 `cc.FileUtils:setSearchPaths` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `searchPaths`：参数 `searchPaths`，类型为 `array_table`。
 ---
@@ -297,8 +249,6 @@ function FileUtils:removeDirectory(dirPath, callback) end
 function FileUtils:setSearchPaths(searchPaths) end
 
 --- 调用 `cc.FileUtils:writeStringToFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dataStr`：参数 `dataStr`，类型为 `string`。
@@ -317,8 +267,6 @@ function FileUtils:writeStringToFile(dataStr, fullPath, callback) end
 
 --- 设置 `cc.FileUtils:setSearchResolutionsOrder` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `searchResolutionsOrder`：参数 `searchResolutionsOrder`，类型为 `array_table`。
 ---
@@ -329,8 +277,6 @@ function FileUtils:writeStringToFile(dataStr, fullPath, callback) end
 function FileUtils:setSearchResolutionsOrder(searchResolutionsOrder) end
 
 --- 添加 `cc.FileUtils:addSearchResolutionsOrder` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `order`：参数 `order`，类型为 `string`。
@@ -345,8 +291,6 @@ function FileUtils:addSearchResolutionsOrder(order, front) end
 
 --- 添加 `cc.FileUtils:addSearchPath` 对应的对象或数据。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
 --- - `front`：参数 `front`，类型为 `boolean`。
@@ -359,8 +303,6 @@ function FileUtils:addSearchResolutionsOrder(order, front) end
 function FileUtils:addSearchPath(path, front) end
 
 --- 调用 `cc.FileUtils:writeValueVectorToFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `vecData`：参数 `vecData`，类型为 `array_table`。
@@ -379,8 +321,6 @@ function FileUtils:writeValueVectorToFile(vecData, fullPath, callback) end
 
 --- 判断 `cc.FileUtils:isFileExist` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -396,16 +336,12 @@ function FileUtils:isFileExist(filename, callback) end
 
 --- 调用 `cc.FileUtils:purgeCachedEntries`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function FileUtils:purgeCachedEntries() end
 
 --- 调用 `cc.FileUtils:fullPathFromRelativeFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -420,8 +356,6 @@ function FileUtils:fullPathFromRelativeFile(filename, relativeFile) end
 
 --- 获取 `cc.FileUtils:getSuitableFOpen` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `filenameUtf8`：参数 `filenameUtf8`，类型为 `string`。
 ---
@@ -432,8 +366,6 @@ function FileUtils:fullPathFromRelativeFile(filename, relativeFile) end
 function FileUtils:getSuitableFOpen(filenameUtf8) end
 
 --- 调用 `cc.FileUtils:writeValueMapToFile`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dict`：参数 `dict`，类型为 `map_table`。
@@ -452,8 +384,6 @@ function FileUtils:writeValueMapToFile(dict, fullPath, callback) end
 
 --- 获取 `cc.FileUtils:getFileExtension` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `filePath`：文件路径。类型为 `string`。
 ---
@@ -464,8 +394,6 @@ function FileUtils:writeValueMapToFile(dict, fullPath, callback) end
 function FileUtils:getFileExtension(filePath) end
 
 --- 设置 `cc.FileUtils:setWritablePath` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `writablePath`：参数 `writablePath`，类型为 `string`。
@@ -478,8 +406,6 @@ function FileUtils:setWritablePath(writablePath) end
 
 --- 设置 `cc.FileUtils:setPopupNotify` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `notify`：参数 `notify`，类型为 `boolean`。
 ---
@@ -490,8 +416,6 @@ function FileUtils:setWritablePath(writablePath) end
 function FileUtils:setPopupNotify(notify) end
 
 --- 判断 `cc.FileUtils:isDirectoryExist` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `fullPath`：参数 `fullPath`，类型为 `string`。
@@ -508,8 +432,6 @@ function FileUtils:isDirectoryExist(fullPath, callback) end
 
 --- 设置 `cc.FileUtils:setDefaultResourceRootPath` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
 ---
@@ -521,16 +443,12 @@ function FileUtils:setDefaultResourceRootPath(path) end
 
 --- 获取 `cc.FileUtils:getSearchResolutionsOrder` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
 ---@return array_table 获取到的 Lua 表数据。
 function FileUtils:getSearchResolutionsOrder() end
 
 --- 创建 `cc.FileUtils:createDirectory` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dirPath`：参数 `dirPath`，类型为 `string`。
@@ -547,8 +465,6 @@ function FileUtils:createDirectory(dirPath, callback) end
 
 --- 调用 `cc.FileUtils:listFilesAsync`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `dirPath`：参数 `dirPath`，类型为 `string`。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -562,16 +478,12 @@ function FileUtils:listFilesAsync(dirPath, callback) end
 
 --- 获取 `cc.FileUtils:getWritablePath` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function FileUtils:getWritablePath() end
 
 --- 调用 `cc.FileUtils:listFilesRecursively`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `dirPath`：参数 `dirPath`，类型为 `string`。
@@ -586,16 +498,12 @@ function FileUtils:listFilesRecursively(dirPath, files) end
 
 --- 调用 `cc.FileUtils:destroyInstance`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function FileUtils:destroyInstance() end
 
 --- 获取 `cc.FileUtils:getInstance` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

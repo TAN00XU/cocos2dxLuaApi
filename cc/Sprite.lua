@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -9,8 +9,6 @@ local Sprite = {}
 cc.Sprite = Sprite
 
 --- 设置 `cc.Sprite:setSpriteFrame` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `spriteFrameName`：精灵帧名称。类型为 `string`。
@@ -25,8 +23,6 @@ function Sprite:setSpriteFrame(spriteFrameName) end
 
 --- 设置 `cc.Sprite:setTexture` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
 ---
@@ -40,16 +36,12 @@ function Sprite:setTexture(filename) end
 
 --- 获取 `cc.Sprite:getTexture` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
 ---@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
 function Sprite:getTexture() end
 
 --- 设置 `cc.Sprite:setFlippedY` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `flippedY`：是否垂直翻转。类型为 `boolean`。
@@ -62,8 +54,6 @@ function Sprite:setFlippedY(flippedY) end
 
 --- 设置 `cc.Sprite:setFlippedX` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `flippedX`：是否水平翻转。类型为 `boolean`。
 ---
@@ -75,16 +65,12 @@ function Sprite:setFlippedX(flippedX) end
 
 --- 获取 `cc.Sprite:getResourceType` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Sprite:getResourceType() end
 
 --- 设置 `cc.Sprite:setDisplayFrameWithAnimationName` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `animationName`：动画名称。类型为 `string`。
@@ -99,16 +85,12 @@ function Sprite:setDisplayFrameWithAnimationName(animationName, frameIndex) end
 
 --- 获取 `cc.Sprite:getBatchNode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.SpriteBatchNode`：获取到的 `cc.SpriteBatchNode` 对象或值。
 ---@return cc.SpriteBatchNode 获取到的 `cc.SpriteBatchNode` 对象或值。
 function Sprite:getBatchNode() end
 
 --- 获取 `cc.Sprite:getOffsetPosition` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `vec2_table`：获取到的 Lua 表数据。
@@ -117,16 +99,12 @@ function Sprite:getOffsetPosition() end
 
 --- 获取 `cc.Sprite:getCenterRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function Sprite:getCenterRect() end
 
 --- 设置 `cc.Sprite:setCenterRectNormalized` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rect`：矩形区域。类型为 `rect_table`。
@@ -139,16 +117,12 @@ function Sprite:setCenterRectNormalized(rect) end
 
 --- 判断 `cc.Sprite:isStretchEnabled` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Sprite:isStretchEnabled() end
 
 --- 设置 `cc.Sprite:setTextureRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rect`：矩形区域。类型为 `rect_table`。
@@ -167,8 +141,6 @@ function Sprite:setTextureRect(rect, rotated, untrimmedSize) end
 
 --- 初始化 `cc.Sprite:initWithSpriteFrameName` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `spriteFrameName`：精灵帧名称。类型为 `string`。
 ---
@@ -179,8 +151,6 @@ function Sprite:setTextureRect(rect, rotated, untrimmedSize) end
 function Sprite:initWithSpriteFrameName(spriteFrameName) end
 
 --- 设置 `cc.Sprite:setStretchEnabled` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -193,8 +163,6 @@ function Sprite:setStretchEnabled(enabled) end
 
 --- 判断 `cc.Sprite:isFrameDisplayed` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `frame`：帧对象。类型为 `cc.SpriteFrame`。
 ---
@@ -206,16 +174,12 @@ function Sprite:isFrameDisplayed(frame) end
 
 --- 获取 `cc.Sprite:getAtlasIndex` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Sprite:getAtlasIndex() end
 
 --- 设置 `cc.Sprite:setTextureAtlas` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `textureAtlas`：纹理图集对象。类型为 `cc.TextureAtlas`。
@@ -228,8 +192,6 @@ function Sprite:setTextureAtlas(textureAtlas) end
 
 --- 设置 `cc.Sprite:setBatchNode` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `spriteBatchNode`：参数 `spriteBatchNode`，类型为 `cc.SpriteBatchNode`。
 ---
@@ -241,16 +203,12 @@ function Sprite:setBatchNode(spriteBatchNode) end
 
 --- 获取 `cc.Sprite:getBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
 ---@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
 function Sprite:getBlendFunc() end
 
 --- 设置 `cc.Sprite:setCenterRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rect`：矩形区域。类型为 `rect_table`。
@@ -263,8 +221,6 @@ function Sprite:setCenterRect(rect) end
 
 --- 获取 `cc.Sprite:getSpriteFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.SpriteFrame`：获取到的 `cc.SpriteFrame` 对象或值。
 ---@return cc.SpriteFrame 获取到的 `cc.SpriteFrame` 对象或值。
@@ -272,16 +228,12 @@ function Sprite:getSpriteFrame() end
 
 --- 设置 `cc.Sprite:setVertexLayout` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite:setVertexLayout() end
 
 --- 移除 `cc.Sprite:removeAllChildrenWithCleanup` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `cleanup`：是否清理关联资源。类型为 `boolean`。
@@ -294,16 +246,12 @@ function Sprite:removeAllChildrenWithCleanup(cleanup) end
 
 --- 获取 `cc.Sprite:getResourceName` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Sprite:getResourceName() end
 
 --- 判断 `cc.Sprite:isDirty` 对应状态是否成立。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `boolean`：状态判断结果。
@@ -312,16 +260,12 @@ function Sprite:isDirty() end
 
 --- 获取 `cc.Sprite:getCenterRectNormalized` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function Sprite:getCenterRectNormalized() end
 
 --- 设置 `cc.Sprite:setAtlasIndex` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `atlasIndex`：纹理图集索引。类型为 `integer`。
@@ -333,8 +277,6 @@ function Sprite:getCenterRectNormalized() end
 function Sprite:setAtlasIndex(atlasIndex) end
 
 --- 初始化 `cc.Sprite:initWithTexture` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
@@ -354,8 +296,6 @@ function Sprite:initWithTexture(texture, rect, rotated) end
 
 --- 设置 `cc.Sprite:setDirty` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `dirty`：参数 `dirty`，类型为 `boolean`。
 ---
@@ -367,8 +307,6 @@ function Sprite:setDirty(dirty) end
 
 --- 判断 `cc.Sprite:isTextureRectRotated` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -376,16 +314,12 @@ function Sprite:isTextureRectRotated() end
 
 --- 获取 `cc.Sprite:getTextureRect` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function Sprite:getTextureRect() end
 
 --- 初始化 `cc.Sprite:initWithFile` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -402,8 +336,6 @@ function Sprite:initWithFile(filename, rect) end
 
 --- 设置 `cc.Sprite:setBlendFunc` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
 ---
@@ -414,8 +346,6 @@ function Sprite:initWithFile(filename, rect) end
 function Sprite:setBlendFunc(blendFunc) end
 
 --- 更新 `cc.Sprite:updateShaders` 对应的状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `vert`：参数 `vert`，类型为 `string`。
@@ -430,16 +360,12 @@ function Sprite:updateShaders(vert, frag) end
 
 --- 获取 `cc.Sprite:getTextureAtlas` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.TextureAtlas`：获取到的 `cc.TextureAtlas` 对象或值。
 ---@return cc.TextureAtlas 获取到的 `cc.TextureAtlas` 对象或值。
 function Sprite:getTextureAtlas() end
 
 --- 初始化 `cc.Sprite:initWithSpriteFrame` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `spriteFrame`：精灵帧对象。类型为 `cc.SpriteFrame`。
@@ -452,8 +378,6 @@ function Sprite:initWithSpriteFrame(spriteFrame) end
 
 --- 判断 `cc.Sprite:isFlippedX` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
@@ -461,16 +385,12 @@ function Sprite:isFlippedX() end
 
 --- 判断 `cc.Sprite:isFlippedY` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Sprite:isFlippedY() end
 
 --- 设置 `cc.Sprite:setVertexRect` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rect`：矩形区域。类型为 `rect_table`。
@@ -482,8 +402,6 @@ function Sprite:isFlippedY() end
 function Sprite:setVertexRect(rect) end
 
 --- 创建 `cc.Sprite:createWithTexture` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
@@ -502,8 +420,6 @@ function Sprite:createWithTexture(texture, rect, rotated) end
 
 --- 创建 `cc.Sprite:createWithSpriteFrameName` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `spriteFrameName`：精灵帧名称。类型为 `string`。
 ---
@@ -515,8 +431,6 @@ function Sprite:createWithSpriteFrameName(spriteFrameName) end
 
 --- 创建 `cc.Sprite:createWithSpriteFrame` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `spriteFrame`：精灵帧对象。类型为 `cc.SpriteFrame`。
 ---
@@ -527,8 +441,6 @@ function Sprite:createWithSpriteFrameName(spriteFrameName) end
 function Sprite:createWithSpriteFrame(spriteFrame) end
 
 --- 添加 `cc.Sprite:addChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -547,8 +459,6 @@ function Sprite:addChild(child, zOrder, tag) end
 
 --- 设置 `cc.Sprite:setAnchorPoint` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `anchor`：参数 `anchor`，类型为 `vec2_table`。
 ---
@@ -559,8 +469,6 @@ function Sprite:addChild(child, zOrder, tag) end
 function Sprite:setAnchorPoint(anchor) end
 
 --- 设置 `cc.Sprite:setRotationSkewX` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rotationX`：参数 `rotationX`，类型为 `number`。
@@ -573,8 +481,6 @@ function Sprite:setRotationSkewX(rotationX) end
 
 --- 设置 `cc.Sprite:setScaleY` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `scaleY`：参数 `scaleY`，类型为 `number`。
 ---
@@ -585,8 +491,6 @@ function Sprite:setRotationSkewX(rotationX) end
 function Sprite:setScaleY(scaleY) end
 
 --- 设置 `cc.Sprite:setScale` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `scaleX`：参数 `scaleX`，类型为 `number`。
@@ -603,8 +507,6 @@ function Sprite:setScale(scaleX, scaleY) end
 
 --- 设置 `cc.Sprite:setProgramState` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `programState`：参数 `programState`，类型为 `cc.backend.ProgramState`。
 ---
@@ -615,8 +517,6 @@ function Sprite:setScale(scaleX, scaleY) end
 function Sprite:setProgramState(programState) end
 
 --- 设置 `cc.Sprite:setContentSize` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -629,16 +529,12 @@ function Sprite:setContentSize(size) end
 
 --- 判断 `cc.Sprite:isOpacityModifyRGB` 对应状态是否成立。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：状态判断结果。
 ---@return boolean 状态判断结果。
 function Sprite:isOpacityModifyRGB() end
 
 --- 设置 `cc.Sprite:setOpacityModifyRGB` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `modify`：参数 `modify`，类型为 `boolean`。
@@ -651,16 +547,12 @@ function Sprite:setOpacityModifyRGB(modify) end
 
 --- 初始化 `cc.Sprite:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Sprite:init() end
 
 --- 设置 `cc.Sprite:setRotation` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rotation`：旋转角度。类型为 `number`。
@@ -673,8 +565,6 @@ function Sprite:setRotation(rotation) end
 
 --- 设置 `cc.Sprite:setIgnoreAnchorPointForPosition` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `boolean`。
 ---
@@ -685,8 +575,6 @@ function Sprite:setRotation(rotation) end
 function Sprite:setIgnoreAnchorPointForPosition(value) end
 
 --- 调用 `cc.Sprite:draw`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
@@ -703,8 +591,6 @@ function Sprite:draw(renderer, transform, flags) end
 
 --- 设置 `cc.Sprite:setScaleX` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `scaleX`：参数 `scaleX`，类型为 `number`。
 ---
@@ -716,16 +602,12 @@ function Sprite:setScaleX(scaleX) end
 
 --- 获取 `cc.Sprite:getDescription` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `string`：获取到的 字符串。
 ---@return string 获取到的 字符串。
 function Sprite:getDescription() end
 
 --- 设置 `cc.Sprite:setRotationSkewY` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `rotationY`：参数 `rotationY`，类型为 `number`。
@@ -738,8 +620,6 @@ function Sprite:setRotationSkewY(rotationY) end
 
 --- 获取 `cc.Sprite:getProgramState` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `cc.backend.ProgramState`：获取到的 `cc.backend.ProgramState` 对象或值。
 ---@return cc.backend.ProgramState 获取到的 `cc.backend.ProgramState` 对象或值。
@@ -747,16 +627,12 @@ function Sprite:getProgramState() end
 
 --- 调用 `cc.Sprite:sortAllChildren`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite:sortAllChildren() end
 
 --- 调用 `cc.Sprite:reorderChild`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -771,8 +647,6 @@ function Sprite:reorderChild(child, zOrder) end
 
 --- 设置 `cc.Sprite:setPositionZ` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `positionZ`：参数 `positionZ`，类型为 `number`。
 ---
@@ -783,8 +657,6 @@ function Sprite:reorderChild(child, zOrder) end
 function Sprite:setPositionZ(positionZ) end
 
 --- 移除 `cc.Sprite:removeChild` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -799,16 +671,12 @@ function Sprite:removeChild(child, cleanup) end
 
 --- 更新 `cc.Sprite:updateTransform` 对应的状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite:updateTransform() end
 
 --- 设置 `cc.Sprite:setSkewX` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `sx`：参数 `sx`，类型为 `number`。
@@ -821,8 +689,6 @@ function Sprite:setSkewX(sx) end
 
 --- 设置 `cc.Sprite:setSkewY` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `sy`：参数 `sy`，类型为 `number`。
 ---
@@ -834,8 +700,6 @@ function Sprite:setSkewY(sy) end
 
 --- 设置 `cc.Sprite:setVisible` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `bVisible`：参数 `bVisible`，类型为 `boolean`。
 ---
@@ -846,8 +710,6 @@ function Sprite:setSkewY(sy) end
 function Sprite:setVisible(bVisible) end
 
 --- 调用 `cc.Sprite:Sprite`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -1,4 +1,4 @@
-﻿---@meta
+---@meta
 
 ---@diagnostic disable: lowercase-global, missing-return, unused-local
 
@@ -10,16 +10,12 @@ cc.Animation = Animation
 
 --- 获取 `cc.Animation:getLoops` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function Animation:getLoops() end
 
 --- 添加 `cc.Animation:addSpriteFrame` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `frame`：帧对象。类型为 `cc.SpriteFrame`。
@@ -32,8 +28,6 @@ function Animation:addSpriteFrame(frame) end
 
 --- 设置 `cc.Animation:setRestoreOriginalFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `restoreOriginalFrame`：参数 `restoreOriginalFrame`，类型为 `boolean`。
 ---
@@ -45,8 +39,6 @@ function Animation:setRestoreOriginalFrame(restoreOriginalFrame) end
 
 --- 调用 `cc.Animation:clone`。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
@@ -54,16 +46,12 @@ function Animation:clone() end
 
 --- 获取 `cc.Animation:getDuration` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Animation:getDuration() end
 
 --- 初始化 `cc.Animation:initWithAnimationFrames` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `arrayOfAnimationFrameNames`：参数 `arrayOfAnimationFrameNames`，类型为 `array_table`。
@@ -80,16 +68,12 @@ function Animation:initWithAnimationFrames(arrayOfAnimationFrameNames, delayPerU
 
 --- 初始化 `cc.Animation:init` 对应的对象或状态。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Animation:init() end
 
 --- 设置 `cc.Animation:setFrames` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `frames`：参数 `frames`，类型为 `array_table`。
@@ -102,16 +86,12 @@ function Animation:setFrames(frames) end
 
 --- 获取 `cc.Animation:getFrames` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `array_table`：获取到的 Lua 表数据。
 ---@return array_table 获取到的 Lua 表数据。
 function Animation:getFrames() end
 
 --- 设置 `cc.Animation:setLoops` 对应的值。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `loops`：参数 `loops`，类型为 `integer`。
@@ -124,8 +104,6 @@ function Animation:setLoops(loops) end
 
 --- 设置 `cc.Animation:setDelayPerUnit` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `delayPerUnit`：参数 `delayPerUnit`，类型为 `number`。
 ---
@@ -136,8 +114,6 @@ function Animation:setLoops(loops) end
 function Animation:setDelayPerUnit(delayPerUnit) end
 
 --- 添加 `cc.Animation:addSpriteFrameWithFile` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -150,8 +126,6 @@ function Animation:addSpriteFrameWithFile(filename) end
 
 --- 获取 `cc.Animation:getTotalDelayUnits` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
@@ -159,16 +133,12 @@ function Animation:getTotalDelayUnits() end
 
 --- 获取 `cc.Animation:getDelayPerUnit` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function Animation:getDelayPerUnit() end
 
 --- 初始化 `cc.Animation:initWithSpriteFrames` 对应的对象或状态。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `arrayOfSpriteFrameNames`：参数 `arrayOfSpriteFrameNames`，类型为 `array_table`。
@@ -185,16 +155,12 @@ function Animation:initWithSpriteFrames(arrayOfSpriteFrameNames, delay, loops) e
 
 --- 获取 `cc.Animation:getRestoreOriginalFrame` 对应的值。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 返回说明：
 --- - `boolean`：获取到的 布尔值。
 ---@return boolean 获取到的 布尔值。
 function Animation:getRestoreOriginalFrame() end
 
 --- 添加 `cc.Animation:addSpriteFrameWithTexture` 对应的对象或数据。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `pobTexture`：参数 `pobTexture`，类型为 `cc.Texture2D`。
@@ -208,8 +174,6 @@ function Animation:getRestoreOriginalFrame() end
 function Animation:addSpriteFrameWithTexture(pobTexture, rect) end
 
 --- 创建 `cc.Animation:create` 对应的对象。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 参数说明：
 --- - `arrayOfAnimationFrameNames`：参数 `arrayOfAnimationFrameNames`，类型为 `array_table`。
@@ -228,8 +192,6 @@ function Animation:create(arrayOfAnimationFrameNames, delayPerUnit, loops) end
 
 --- 创建 `cc.Animation:createWithSpriteFrames` 对应的对象。
 ---
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
----
 --- 参数说明：
 --- - `arrayOfSpriteFrameNames`：参数 `arrayOfSpriteFrameNames`，类型为 `array_table`。
 --- - `delay`：参数 `delay`，类型为 `number`。
@@ -244,8 +206,6 @@ function Animation:create(arrayOfAnimationFrameNames, delayPerUnit, loops) end
 function Animation:createWithSpriteFrames(arrayOfSpriteFrameNames, delay, loops) end
 
 --- 调用 `cc.Animation:Animation`。
----
---- 该声明来自 Cocos Lua 绑定提示桩，函数体为空，仅用于类型检查、补全和文档提示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

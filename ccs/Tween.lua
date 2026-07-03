@@ -6,6 +6,9 @@
 ---@class ccs.Tween
 local Tween = {}
 ccs.Tween = Tween
+--- 创建 Tween 对应的对象。
+---@return ccs.Tween
+function Tween:new() end
 
 --- 获取 `ccs.Tween:getAnimation` 对应的值。
 ---
@@ -87,10 +90,3 @@ function Tween:setAnimation(animation) end
 ---@param bone ccs.Bone 参数 `bone`，类型为 `ccs.Bone`。
 ---@return self 当前对象，便于链式调用。
 function Tween:create(bone) end
-
---- 调用 `ccs.Tween:Tween`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function Tween:Tween() end

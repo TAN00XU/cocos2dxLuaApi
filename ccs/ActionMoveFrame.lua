@@ -7,6 +7,9 @@
 ---@class ccs.ActionMoveFrame : ccs.ActionFrame
 local ActionMoveFrame = {}
 ccs.ActionMoveFrame = ActionMoveFrame
+--- 创建 ActionMoveFrame 对应的对象。
+---@return ccs.ActionMoveFrame
+function ActionMoveFrame:new() end
 
 --- 设置 `ccs.ActionMoveFrame:setPosition` 对应的值。
 ---
@@ -36,10 +39,3 @@ function ActionMoveFrame:getAction(duration) end
 --- - `vec2_table`：获取到的 Lua 表数据。
 ---@return vec2_table 获取到的 Lua 表数据。
 function ActionMoveFrame:getPosition() end
-
---- 调用 `ccs.ActionMoveFrame:ActionMoveFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionMoveFrame:ActionMoveFrame() end

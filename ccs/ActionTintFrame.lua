@@ -7,6 +7,9 @@
 ---@class ccs.ActionTintFrame : ccs.ActionFrame
 local ActionTintFrame = {}
 ccs.ActionTintFrame = ActionTintFrame
+--- 创建 ActionTintFrame 对应的对象。
+---@return ccs.ActionTintFrame
+function ActionTintFrame:new() end
 
 --- 获取 `ccs.ActionTintFrame:getColor` 对应的值。
 ---
@@ -36,10 +39,3 @@ function ActionTintFrame:getAction(duration) end
 ---@param ccolor color3b_table 参数 `ccolor`，类型为 `color3b_table`。
 ---@return self 当前对象，便于链式调用。
 function ActionTintFrame:setColor(ccolor) end
-
---- 调用 `ccs.ActionTintFrame:ActionTintFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionTintFrame:ActionTintFrame() end

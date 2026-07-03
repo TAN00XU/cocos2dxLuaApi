@@ -7,6 +7,9 @@
 ---@class ccs.ActionObject : cc.Ref
 local ActionObject = {}
 ccs.ActionObject = ActionObject
+--- 创建 ActionObject 对应的对象。
+---@return ccs.ActionObject
+function ActionObject:new() end
 
 --- 设置 `ccs.ActionObject:setCurrentTime` 对应的值。
 ---
@@ -164,10 +167,3 @@ function ActionObject:setLoop(bLoop) end
 ---@param dt number 帧间隔时间。类型为 `number`。
 ---@return self 当前对象，便于链式调用。
 function ActionObject:simulationActionUpdate(dt) end
-
---- 调用 `ccs.ActionObject:ActionObject`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionObject:ActionObject() end

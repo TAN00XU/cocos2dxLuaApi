@@ -8,6 +8,13 @@
 local Component = {}
 cc.Component = Component
 
+--- 创建 `cc.Component:new` 对应的对象。
+---
+--- 返回说明：
+--- - `cc.Component`：创建出的 `cc.Component` 对象或值。
+---@return cc.Component 创建出的 `cc.Component` 对象或值。
+function Component:new() end
+
 --- 设置 `cc.Component:setEnabled` 对应的值。
 ---
 --- 参数说明：

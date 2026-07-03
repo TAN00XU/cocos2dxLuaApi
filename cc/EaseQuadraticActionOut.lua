@@ -44,9 +44,9 @@ function EaseQuadraticActionOut:update(time) end
 ---@return cc.ActionEase `cc.ActionEase` 对象或值。
 function EaseQuadraticActionOut:reverse() end
 
---- 调用 `cc.EaseQuadraticActionOut:EaseQuadraticActionOut`。
+--- 调用 `cc.EaseQuadraticActionOut:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EaseQuadraticActionOut:EaseQuadraticActionOut() end
+function EaseQuadraticActionOut:new() end

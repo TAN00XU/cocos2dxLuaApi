@@ -7,6 +7,9 @@
 ---@class ccs.ActionFadeFrame : ccs.ActionFrame
 local ActionFadeFrame = {}
 ccs.ActionFadeFrame = ActionFadeFrame
+--- 创建 ActionFadeFrame 对应的对象。
+---@return ccs.ActionFadeFrame
+function ActionFadeFrame:new() end
 
 --- 获取 `ccs.ActionFadeFrame:getOpacity` 对应的值。
 ---
@@ -36,10 +39,3 @@ function ActionFadeFrame:getAction(duration) end
 ---@param opacity integer 透明度。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function ActionFadeFrame:setOpacity(opacity) end
-
---- 调用 `ccs.ActionFadeFrame:ActionFadeFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionFadeFrame:ActionFadeFrame() end

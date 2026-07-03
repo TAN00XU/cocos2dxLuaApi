@@ -8,6 +8,13 @@
 local CameraBackgroundDepthBrush = {}
 cc.CameraBackgroundDepthBrush = CameraBackgroundDepthBrush
 
+--- 创建 `cc.CameraBackgroundDepthBrush:new` 对应的对象。
+---
+--- 返回说明：
+--- - `cc.CameraBackgroundDepthBrush`：创建出的 `cc.CameraBackgroundDepthBrush` 对象或值。
+---@return cc.CameraBackgroundDepthBrush 创建出的 `cc.CameraBackgroundDepthBrush` 对象或值。
+function CameraBackgroundDepthBrush.new() end
+
 --- 设置 `cc.CameraBackgroundDepthBrush:setDepth` 对应的值。
 ---
 --- 参数说明：
@@ -60,4 +67,4 @@ function CameraBackgroundDepthBrush:init() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function CameraBackgroundDepthBrush:CameraBackgroundDepthBrush() end
+function CameraBackgroundDepthBrush:new() end

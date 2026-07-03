@@ -7,6 +7,9 @@
 ---@class ccs.ArmatureData : cc.Ref
 local ArmatureData = {}
 ccs.ArmatureData = ArmatureData
+--- 创建 ArmatureData 对应的对象。
+---@return ccs.ArmatureData
+function ArmatureData:new() end
 
 --- 添加 `ccs.ArmatureData:addBoneData` 对应的对象或数据。
 ---
@@ -43,10 +46,3 @@ function ArmatureData:getBoneData(boneName) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ArmatureData:create() end
-
---- 调用 `ccs.ArmatureData:ArmatureData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ArmatureData:ArmatureData() end

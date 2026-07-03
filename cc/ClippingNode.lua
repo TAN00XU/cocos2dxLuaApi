@@ -8,6 +8,13 @@
 local ClippingNode = {}
 cc.ClippingNode = ClippingNode
 
+--- 创建 ClippingNode 对应的对象。
+---
+--- 返回说明：
+--- - `cc.ClippingNode`：新创建的对象。
+---@return cc.ClippingNode 新创建的对象。
+function ClippingNode:new() end
+
 --- 判断 `cc.ClippingNode:hasContent` 对应状态是否成立。
 ---
 --- 返回说明：

@@ -8,6 +8,19 @@
 local Scene = {}
 cc.Scene = Scene
 
+--- 创建一个场景。
+---@return cc.Scene
+function Scene:create() end
+
+--- 创建一个包含物理引擎的场景。
+---@return cc.Scene
+function Scene:createWithPhysics() end
+
+--- 创建一个指定大小的场景。
+---@param size cc.Size 场景大小。
+---@return cc.Scene
+function Scene:createWithSize(size) end
+
 --- 获取当前场景中的摄像机列表。
 ---@return array_table cameras 摄像机列表。
 function Scene:getCameras() end
@@ -143,9 +156,9 @@ function Scene:getDescription() end
 ---@return self 当前对象，便于链式调用。
 function Scene:removeAllChildren() end
 
---- 调用 `cc.Scene:Scene`。
+--- 调用 `cc.Scene:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function Scene:Scene() end
+function Scene:new() end

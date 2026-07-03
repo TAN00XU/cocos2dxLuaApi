@@ -7,6 +7,10 @@
 local SceneReader = {}
 ccs.SceneReader = SceneReader
 
+--- 创建 SceneReader 对应的对象。
+---@return ccs.SceneReader
+function SceneReader:new() end
+
 --- 设置 `ccs.SceneReader:setTarget` 对应的值。
 ---
 --- 参数说明：

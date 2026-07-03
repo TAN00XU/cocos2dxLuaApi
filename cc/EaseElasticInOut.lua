@@ -46,9 +46,9 @@ function EaseElasticInOut:update(time) end
 ---@return cc.EaseElastic `cc.EaseElastic` 对象或值。
 function EaseElasticInOut:reverse() end
 
---- 调用 `cc.EaseElasticInOut:EaseElasticInOut`。
+--- 调用 `cc.EaseElasticInOut:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EaseElasticInOut:EaseElasticInOut() end
+function EaseElasticInOut:new() end

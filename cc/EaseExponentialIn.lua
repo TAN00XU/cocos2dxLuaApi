@@ -44,9 +44,9 @@ function EaseExponentialIn:update(time) end
 ---@return cc.ActionEase `cc.ActionEase` 对象或值。
 function EaseExponentialIn:reverse() end
 
---- 调用 `cc.EaseExponentialIn:EaseExponentialIn`。
+--- 调用 `cc.EaseExponentialIn:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EaseExponentialIn:EaseExponentialIn() end
+function EaseExponentialIn:new() end

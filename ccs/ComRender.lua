@@ -8,6 +8,10 @@
 local ComRender = {}
 ccs.ComRender = ComRender
 
+--- 创建 ComRender 对应的对象。
+---@return ccs.ComRender
+function ComRender:new() end
+
 --- 设置 `ccs.ComRender:setNode` 对应的值。
 ---
 --- 参数说明：

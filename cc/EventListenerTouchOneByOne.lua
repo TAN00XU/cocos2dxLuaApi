@@ -8,6 +8,20 @@
 local EventListenerTouchOneByOne = {}
 cc.EventListenerTouchOneByOne = EventListenerTouchOneByOne
 
+--- 创建 `cc.EventListenerTouchOneByOne:create` 对应的对象。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function EventListenerTouchOneByOne:create() end
+
+--- 创建 `cc.EventListenerTouchOneByOne:new` 对应的对象。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function EventListenerTouchOneByOne:new() end
+
 --- 判断 `cc.EventListenerTouchOneByOne:isSwallowTouches` 对应状态是否成立。
 ---
 --- 返回说明：
@@ -46,10 +60,3 @@ function EventListenerTouchOneByOne:clone() end
 --- - `boolean`：布尔值。
 ---@return boolean 布尔值。
 function EventListenerTouchOneByOne:checkAvailable() end
-
---- 调用 `cc.EventListenerTouchOneByOne:EventListenerTouchOneByOne`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function EventListenerTouchOneByOne:EventListenerTouchOneByOne() end

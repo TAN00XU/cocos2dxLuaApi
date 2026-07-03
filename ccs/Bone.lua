@@ -7,6 +7,9 @@
 ---@class ccs.Bone : cc.Node
 local Bone = {}
 ccs.Bone = Bone
+--- 创建 Bone 对应的对象。
+---@return ccs.Bone
+function Bone:new() end
 
 --- 判断 `ccs.Bone:isTransformDirty` 对应状态是否成立。
 ---
@@ -379,10 +382,3 @@ function Bone:init() end
 ---@param parentColor color3b_table 参数 `parentColor`，类型为 `color3b_table`。
 ---@return self 当前对象，便于链式调用。
 function Bone:updateDisplayedColor(parentColor) end
-
---- 调用 `ccs.Bone:Bone`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function Bone:Bone() end

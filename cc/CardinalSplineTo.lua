@@ -8,6 +8,21 @@
 local CardinalSplineTo = {}
 cc.CardinalSplineTo = CardinalSplineTo
 
+--- 创建 CardinalSplineTo 对应的对象。
+---
+--- 参数说明：
+--- - `duration`：持续时间。类型为 `number`。
+--- - `points`：参数 `points`，类型为 `cc.PointArray`。
+--- - `tension`：参数 `tension`，类型为 `number`。
+---
+--- 返回说明：
+--- - `cc.CardinalSplineTo`：新创建的对象。
+---@param duration number 持续时间。类型为 `number`。
+---@param points cc.PointArray 参数 `points`，类型为 `cc.PointArray`。
+---@param tension number 参数 `tension`，类型为 `number`。
+---@return cc.CardinalSplineTo 新创建的对象。
+function CardinalSplineTo:create(duration, points, tension) end
+
 --- 获取 `cc.CardinalSplineTo:getPoints` 对应的值。
 ---
 --- 返回说明：
@@ -82,4 +97,4 @@ function CardinalSplineTo:update(time) end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function CardinalSplineTo:CardinalSplineTo() end
+function CardinalSplineTo:new() end

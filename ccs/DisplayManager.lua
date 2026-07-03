@@ -7,6 +7,9 @@
 ---@class ccs.DisplayManager : cc.Ref
 local DisplayManager = {}
 ccs.DisplayManager = DisplayManager
+--- 创建 DisplayManager 对应的对象。
+---@return ccs.DisplayManager
+function DisplayManager:new() end
 
 --- 获取 `ccs.DisplayManager:getDisplayRenderNode` 对应的值。
 ---
@@ -188,10 +191,3 @@ function DisplayManager:setVisible(visible) end
 ---@param bone ccs.Bone 参数 `bone`，类型为 `ccs.Bone`。
 ---@return self 当前对象，便于链式调用。
 function DisplayManager:create(bone) end
-
---- 调用 `ccs.DisplayManager:DisplayManager`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function DisplayManager:DisplayManager() end

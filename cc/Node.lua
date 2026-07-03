@@ -8,6 +8,10 @@
 local Node = {}
 cc.Node = Node
 
+--- 创建一个节点。
+---@return cc.Node
+function Node:create() end
+
 --- 获取节点位置。
 ---
 --- 旧 Lua 绑定会直接返回两个数值，而不是 `vec2_table`。
@@ -1439,9 +1443,9 @@ function Node:create() end
 ---@return integer 获取到的 整数值。
 function Node:getAttachedNodeCount() end
 
---- 调用 `cc.Node:Node`。
+--- 调用 `cc.Node:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function Node:Node() end
+function Node:new() end

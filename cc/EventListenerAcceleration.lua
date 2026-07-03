@@ -8,6 +8,17 @@
 local EventListenerAcceleration = {}
 cc.EventListenerAcceleration = EventListenerAcceleration
 
+--- 创建 `cc.EventListenerAcceleration:create` 对应的对象。
+---
+--- 参数说明：
+--- - `callback`：回调函数。类型为 `fun(...): any`。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
+---@return self 当前对象，便于链式调用。
+function EventListenerAcceleration:create(callback) end
+
 --- 初始化 `cc.EventListenerAcceleration:init` 对应的对象或状态。
 ---
 --- 参数说明：
@@ -38,4 +49,4 @@ function EventListenerAcceleration:checkAvailable() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EventListenerAcceleration:EventListenerAcceleration() end
+function EventListenerAcceleration:new() end

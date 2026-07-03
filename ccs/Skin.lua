@@ -7,6 +7,9 @@
 ---@class ccs.Skin : cc.Sprite
 local Skin = {}
 ccs.Skin = Skin
+--- 创建 Skin 对应的对象。
+---@return ccs.Skin
+function Skin:new() end
 
 --- 获取 `ccs.Skin:getBone` 对应的值。
 ---
@@ -121,10 +124,3 @@ function Skin:initWithFile(filename) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Skin:updateTransform() end
-
---- 调用 `ccs.Skin:Skin`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function Skin:Skin() end

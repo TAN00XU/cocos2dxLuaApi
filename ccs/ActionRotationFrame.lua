@@ -7,6 +7,9 @@
 ---@class ccs.ActionRotationFrame : ccs.ActionFrame
 local ActionRotationFrame = {}
 ccs.ActionRotationFrame = ActionRotationFrame
+--- 创建 ActionRotationFrame 对应的对象。
+---@return ccs.ActionRotationFrame
+function ActionRotationFrame:new() end
 
 --- 设置 `ccs.ActionRotationFrame:setRotation` 对应的值。
 ---
@@ -40,10 +43,3 @@ function ActionRotationFrame:getAction(duration, srcFrame) end
 --- - `number`：获取到的 数值。
 ---@return number 获取到的 数值。
 function ActionRotationFrame:getRotation() end
-
---- 调用 `ccs.ActionRotationFrame:ActionRotationFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionRotationFrame:ActionRotationFrame() end

@@ -7,6 +7,9 @@
 ---@class ccs.AnimationData : cc.Ref
 local AnimationData = {}
 ccs.AnimationData = AnimationData
+--- 创建 AnimationData 对应的对象。
+---@return ccs.AnimationData
+function AnimationData:new() end
 
 --- 获取 `ccs.AnimationData:getMovement` 对应的值。
 ---
@@ -43,10 +46,3 @@ function AnimationData:addMovement(movData) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function AnimationData:create() end
-
---- 调用 `ccs.AnimationData:AnimationData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function AnimationData:AnimationData() end

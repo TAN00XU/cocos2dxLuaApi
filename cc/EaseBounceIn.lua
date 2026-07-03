@@ -44,9 +44,9 @@ function EaseBounceIn:update(time) end
 ---@return cc.ActionEase `cc.ActionEase` 对象或值。
 function EaseBounceIn:reverse() end
 
---- 调用 `cc.EaseBounceIn:EaseBounceIn`。
+--- 调用 `cc.EaseBounceIn:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EaseBounceIn:EaseBounceIn() end
+function EaseBounceIn:new() end

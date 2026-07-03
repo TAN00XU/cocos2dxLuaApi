@@ -7,6 +7,9 @@
 ---@class ccs.TextureData : cc.Ref
 local TextureData = {}
 ccs.TextureData = TextureData
+--- 创建 TextureData 对应的对象。
+---@return ccs.TextureData
+function TextureData:new() end
 
 --- 获取 `ccs.TextureData:getContourData` 对应的值。
 ---
@@ -43,10 +46,3 @@ function TextureData:addContourData(contourData) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TextureData:create() end
-
---- 调用 `ccs.TextureData:TextureData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function TextureData:TextureData() end

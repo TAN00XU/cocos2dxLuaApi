@@ -7,6 +7,9 @@
 ---@class ccs.ContourData : cc.Ref
 local ContourData = {}
 ccs.ContourData = ContourData
+--- 创建 ContourData 对应的对象。
+---@return ccs.ContourData
+function ContourData:new() end
 
 --- 初始化 `ccs.ContourData:init` 对应的对象或状态。
 ---
@@ -32,10 +35,3 @@ function ContourData:addVertex(vertex) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ContourData:create() end
-
---- 调用 `ccs.ContourData:ContourData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ContourData:ContourData() end

@@ -8,6 +8,10 @@
 local Layer = {}
 cc.Layer = Layer
 
+--- 创建一个全屏黑色层。
+---@return cc.Layer
+function Layer:create() end
+
 --- 判断是否启用加速度计。
 ---@return boolean enabled 是否启用加速度计。
 function Layer:isAccelerometerEnabled() end

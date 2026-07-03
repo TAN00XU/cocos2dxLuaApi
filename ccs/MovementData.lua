@@ -7,6 +7,9 @@
 ---@class ccs.MovementData : cc.Ref
 local MovementData = {}
 ccs.MovementData = MovementData
+--- 创建 MovementData 对应的对象。
+---@return ccs.MovementData
+function MovementData:new() end
 
 --- 获取 `ccs.MovementData:getMovementBoneData` 对应的值。
 ---
@@ -36,10 +39,3 @@ function MovementData:addMovementBoneData(movBoneData) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MovementData:create() end
-
---- 调用 `ccs.MovementData:MovementData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function MovementData:MovementData() end

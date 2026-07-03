@@ -7,6 +7,9 @@
 ---@class ccs.FrameData : ccs.BaseData
 local FrameData = {}
 ccs.FrameData = FrameData
+--- 创建 FrameData 对应的对象。
+---@return ccs.FrameData
+function FrameData:new() end
 
 --- 调用 `ccs.FrameData:copy`。
 ---
@@ -25,10 +28,3 @@ function FrameData:copy(baseData) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function FrameData:create() end
-
---- 调用 `ccs.FrameData:FrameData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function FrameData:FrameData() end

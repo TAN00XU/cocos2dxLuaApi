@@ -8,6 +8,10 @@
 local ComAudio = {}
 ccs.ComAudio = ComAudio
 
+--- 创建 ComAudio 对应的对象。
+---@return ccs.ComAudio
+function ComAudio:new() end
+
 --- 停止 `ccs.ComAudio:stopAllEffects` 对应的流程。
 ---
 --- 返回说明：

@@ -8,6 +8,10 @@
 local ActionManagerEx = {}
 ccs.ActionManagerEx = ActionManagerEx
 
+--- 创建 ActionManagerEx 对应的对象。
+---@return ccs.ActionManagerEx
+function ActionManagerEx:new() end
+
 --- 停止 `ccs.ActionManagerEx:stopActionByName` 对应的流程。
 ---
 --- 参数说明：

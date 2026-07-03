@@ -8,6 +8,32 @@
 local Button = {}
 ccui.Button = Button
 
+--- 创建 `ccui.Button:create` 对应的对象。
+---
+--- 参数说明：
+--- - `normalImage`：参数 `normalImage`，类型为 `string`。
+--- - `selectedImage`：参数 `selectedImage`，类型为 `string`。
+--- - `disableImage`：参数 `disableImage`，类型为 `string`。
+--- - `texType`：参数 `texType`，类型为 `integer`。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@overload fun(normalImage: string, selectedImage: string, disableImage: string, texType: integer): self
+---@overload fun(): self
+---@param normalImage? string 参数 `normalImage`，类型为 `string`。
+---@param selectedImage? string 参数 `selectedImage`，类型为 `string`。
+---@param disableImage? string 参数 `disableImage`，类型为 `string`。
+---@param texType? integer 参数 `texType`，类型为 `integer`。
+---@return self 当前对象，便于链式调用。
+function Button:create(normalImage, selectedImage, disableImage, texType) end
+
+--- 创建 `ccui.Button:createInstance` 对应的对象。
+---
+--- 返回说明：
+--- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
+---@return cc.Ref 创建出的 `cc.Ref` 对象或值。
+function Button:createInstance() end
+
 --- 获取 `ccui.Button:getNormalTextureSize` 对应的值。
 ---
 --- 返回说明：
@@ -374,32 +400,6 @@ function Button:setPressedActionEnabled(enabled) end
 ---@param scale number 缩放比例。类型为 `number`。
 ---@return self 当前对象，便于链式调用。
 function Button:setZoomScale(scale) end
-
---- 创建 `ccui.Button:create` 对应的对象。
----
---- 参数说明：
---- - `normalImage`：参数 `normalImage`，类型为 `string`。
---- - `selectedImage`：参数 `selectedImage`，类型为 `string`。
---- - `disableImage`：参数 `disableImage`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@overload fun(normalImage: string, selectedImage: string, disableImage: string, texType: integer): self
----@overload fun(): self
----@param normalImage? string 参数 `normalImage`，类型为 `string`。
----@param selectedImage? string 参数 `selectedImage`，类型为 `string`。
----@param disableImage? string 参数 `disableImage`，类型为 `string`。
----@param texType? integer 参数 `texType`，类型为 `integer`。
----@return self 当前对象，便于链式调用。
-function Button:create(normalImage, selectedImage, disableImage, texType) end
-
---- 创建 `ccui.Button:createInstance` 对应的对象。
----
---- 返回说明：
---- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
----@return cc.Ref 创建出的 `cc.Ref` 对象或值。
-function Button:createInstance() end
 
 --- 获取 `ccui.Button:getVirtualRenderer` 对应的值。
 ---

@@ -8,6 +8,13 @@
 local Camera = {}
 cc.Camera = Camera
 
+--- 创建 `cc.Camera:new` 对应的对象。
+---
+--- 返回说明：
+--- - `cc.Camera`：创建出的 `cc.Camera` 对象或值。
+---@return cc.Camera 创建出的 `cc.Camera` 对象或值。
+function Camera.new() end
+
 --- 获取 `cc.Camera:getDepth` 对应的值。
 ---
 --- 返回说明：
@@ -359,4 +366,4 @@ function Camera:visit(renderer, parentTransform, parentFlags) end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function Camera:Camera() end
+function Camera:new() end

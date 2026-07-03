@@ -44,9 +44,9 @@ function EaseCircleActionIn:update(time) end
 ---@return cc.ActionEase `cc.ActionEase` 对象或值。
 function EaseCircleActionIn:reverse() end
 
---- 调用 `cc.EaseCircleActionIn:EaseCircleActionIn`。
+--- 调用 `cc.EaseCircleActionIn:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EaseCircleActionIn:EaseCircleActionIn() end
+function EaseCircleActionIn:new() end

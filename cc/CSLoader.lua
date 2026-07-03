@@ -7,6 +7,36 @@
 local CSLoader = {}
 cc.CSLoader = CSLoader
 
+--- 创建 `cc.CSLoader:createNode` 对应的对象。
+---
+--- 参数说明：
+--- - `filename`：文件名或文件路径。类型为 `string`。
+--- - `callback`：回调函数。类型为 `fun(...): any`。
+---
+--- 返回说明：
+--- - `cc.Node`：创建出的 `cc.Node` 对象或值。
+---@overload fun(filename: string, callback: fun(...): any): cc.Node
+---@overload fun(filename: string): cc.Node
+---@param filename? string 文件名或文件路径。类型为 `string`。
+---@param callback? fun(...): any 回调函数。类型为 `fun(...): any`。
+---@return cc.Node 创建出的 `cc.Node` 对象或值。
+function CSLoader:createNode(filename, callback) end
+
+--- 创建 `cc.CSLoader:createTimeline` 对应的对象。
+---
+--- 参数说明：
+--- - `filename`：文件名或文件路径。类型为 `string`。
+--- - `data`：数据。类型为 `any`。
+---
+--- 返回说明：
+--- - `ccs.timeline.ActionTimeline`：创建出的 `ccs.timeline.ActionTimeline` 对象或值。
+---@overload fun(data: any, filename: string): ccs.timeline.ActionTimeline
+---@overload fun(filename: string): ccs.timeline.ActionTimeline
+---@param filename? string 文件名或文件路径。类型为 `string`。
+---@param data? any 数据。类型为 `any`。
+---@return ccs.timeline.ActionTimeline 创建出的 `ccs.timeline.ActionTimeline` 对象或值。
+function CSLoader:createTimeline(filename, data) end
+
 --- 创建 `cc.CSLoader:createNodeFromJson` 对应的对象。
 ---
 --- 参数说明：
@@ -156,4 +186,17 @@ function CSLoader:getInstance() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function CSLoader:CSLoader() end
+function CSLoader:new() end
+
+--- 调用 `cc.CSLoader:nodeWithFlatBuffersFile`。
+---
+--- 参数说明：
+--- - `fileName`：参数 `fileName`，类型为 `string`。
+---
+--- 返回说明：
+--- - `cc.Node`：创建出的 `cc.Node` 对象或值。
+---@param fileName string 参数 `fileName`，类型为 `string`。
+---@return cc.Node 创建出的 `cc.Node` 对象或值。
+function CSLoader:nodeWithFlatBuffersFile(fileName) end
+
+return CSLoader

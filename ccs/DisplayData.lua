@@ -7,6 +7,9 @@
 ---@class ccs.DisplayData : cc.Ref
 local DisplayData = {}
 ccs.DisplayData = DisplayData
+--- 创建 DisplayData 对应的对象。
+---@return ccs.DisplayData
+function DisplayData:new() end
 
 --- 调用 `ccs.DisplayData:copy`。
 ---
@@ -36,10 +39,3 @@ function DisplayData:changeDisplayToTexture(displayName) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function DisplayData:create() end
-
---- 调用 `ccs.DisplayData:DisplayData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function DisplayData:DisplayData() end

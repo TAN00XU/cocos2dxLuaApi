@@ -7,6 +7,13 @@
 local Director = {}
 cc.Director = Director
 
+--- 创建 `cc.Director:new` 对应的对象。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function Director:new() end
+
 --- 暂停 `cc.Director:pause` 对应的流程。
 ---
 --- 返回说明：

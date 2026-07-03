@@ -8,6 +8,19 @@
 local CatmullRomBy = {}
 cc.CatmullRomBy = CatmullRomBy
 
+--- 创建 CatmullRomBy 对应的对象。
+---
+--- 参数说明：
+--- - `dt`：帧间隔时间。类型为 `number`。
+--- - `points`：参数 `points`，类型为 `cc.PointArray`。
+---
+--- 返回说明：
+--- - `cc.CatmullRomBy`：新创建的对象。
+---@param dt number 帧间隔时间。类型为 `number`。
+---@param points cc.PointArray 参数 `points`，类型为 `cc.PointArray`。
+---@return cc.CatmullRomBy 新创建的对象。
+function CatmullRomBy:create(dt, points) end
+
 --- 初始化 `cc.CatmullRomBy:initWithDuration` 对应的对象或状态。
 ---
 --- 参数说明：

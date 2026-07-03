@@ -7,6 +7,9 @@
 ---@class ccs.Armature : cc.Node
 local Armature = {}
 ccs.Armature = Armature
+--- 创建 Armature 对应的对象。
+---@return ccs.Armature
+function Armature:new() end
 
 --- 获取 `ccs.Armature:getBone` 对应的值。
 ---
@@ -302,10 +305,3 @@ function Armature:getNodeToParentTransform() end
 --- - `rect_table`：获取到的 Lua 表数据。
 ---@return rect_table 获取到的 Lua 表数据。
 function Armature:getBoundingBox() end
-
---- 调用 `ccs.Armature:Armature`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function Armature:Armature() end

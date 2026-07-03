@@ -7,6 +7,9 @@
 ---@class ccs.ComController : cc.Component
 local ComController = {}
 ccs.ComController = ComController
+--- 创建 ComController 对应的对象。
+---@return ccs.ComController
+function ComController:new() end
 
 --- 创建 `ccs.ComController:create` 对应的对象。
 ---
@@ -53,10 +56,3 @@ function ComController:init() end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ComController:onAdd() end
-
---- 调用 `ccs.ComController:ComController`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ComController:ComController() end

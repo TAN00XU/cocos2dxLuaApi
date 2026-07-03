@@ -8,6 +8,13 @@
 local BillBoard = {}
 cc.BillBoard = BillBoard
 
+--- 创建一个空的 `cc.BillBoard` 对象，不包含纹理。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function BillBoard:new() end
+
 --- 获取 `cc.BillBoard:getMode` 对应的值。
 ---
 --- 返回说明：
@@ -72,9 +79,4 @@ function BillBoard:createWithTexture(texture, mode) end
 ---@return self 当前对象，便于链式调用。
 function BillBoard:visit(renderer, parentTransform, parentFlags) end
 
---- 调用 `cc.BillBoard:BillBoard`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function BillBoard:BillBoard() end
+

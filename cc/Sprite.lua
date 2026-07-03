@@ -8,6 +8,37 @@
 local Sprite = {}
 cc.Sprite = Sprite
 
+--- 创建一个空的精灵，不包含纹理，之后可以调用 `setTexture` 设置纹理。
+--- 通过图片文件名创建精灵。创建后 rect 为图片大小，offset 为 (0,0)。
+--- 通过图片文件名和子矩形区域创建精灵。
+---@overload fun(self: cc.Sprite): cc.Sprite
+---@overload fun(self: cc.Sprite, filename: string): cc.Sprite
+---@overload fun(self: cc.Sprite, filename: string, rect: cc.Rect): cc.Sprite
+---@param filename? string 图片文件路径。
+---@param rect? cc.Rect 图片文件的子矩形区域。
+---@return cc.Sprite
+function Sprite:create(filename, rect) end
+
+--- 通过精灵帧创建精灵。
+---@param spriteFrame cc.SpriteFrame 精灵帧对象。
+---@return cc.Sprite
+function Sprite:createWithSpriteFrame(spriteFrame) end
+
+--- 通过精灵帧名称创建精灵。从 SpriteFrameCache 中获取对应帧。
+---@param spriteFrameName string 精灵帧名称。
+---@return cc.Sprite
+function Sprite:createWithSpriteFrameName(spriteFrameName) end
+
+--- 通过纹理对象创建精灵。
+---@overload fun(self: cc.Sprite, texture: cc.Texture2D): cc.Sprite
+---@overload fun(self: cc.Sprite, texture: cc.Texture2D, rect: cc.Rect): cc.Sprite
+---@overload fun(self: cc.Sprite, texture: cc.Texture2D, rect: cc.Rect, rotated: boolean): cc.Sprite
+---@param texture? cc.Texture2D 纹理对象。
+---@param rect? cc.Rect 矩形区域。
+---@param rotated? boolean 是否旋转。
+---@return cc.Sprite
+function Sprite:createWithTexture(texture, rect, rotated) end
+
 --- 设置 `cc.Sprite:setSpriteFrame` 对应的值。
 ---
 --- 参数说明：
@@ -401,45 +432,6 @@ function Sprite:isFlippedY() end
 ---@return self 当前对象，便于链式调用。
 function Sprite:setVertexRect(rect) end
 
---- 创建 `cc.Sprite:createWithTexture` 对应的对象。
----
---- 参数说明：
---- - `texture`：纹理对象。类型为 `cc.Texture2D`。
---- - `rect`：矩形区域。类型为 `rect_table`。
---- - `rotated`：参数 `rotated`，类型为 `boolean`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@overload fun(texture: cc.Texture2D, rect: rect_table, rotated: boolean): self
----@overload fun(texture: cc.Texture2D): self
----@param texture? cc.Texture2D 纹理对象。类型为 `cc.Texture2D`。
----@param rect? rect_table 矩形区域。类型为 `rect_table`。
----@param rotated? boolean 参数 `rotated`，类型为 `boolean`。
----@return self 当前对象，便于链式调用。
-function Sprite:createWithTexture(texture, rect, rotated) end
-
---- 创建 `cc.Sprite:createWithSpriteFrameName` 对应的对象。
----
---- 参数说明：
---- - `spriteFrameName`：精灵帧名称。类型为 `string`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param spriteFrameName string 精灵帧名称。类型为 `string`。
----@return self 当前对象，便于链式调用。
-function Sprite:createWithSpriteFrameName(spriteFrameName) end
-
---- 创建 `cc.Sprite:createWithSpriteFrame` 对应的对象。
----
---- 参数说明：
---- - `spriteFrame`：精灵帧对象。类型为 `cc.SpriteFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@param spriteFrame cc.SpriteFrame 精灵帧对象。类型为 `cc.SpriteFrame`。
----@return self 当前对象，便于链式调用。
-function Sprite:createWithSpriteFrame(spriteFrame) end
-
 --- 添加 `cc.Sprite:addChild` 对应的对象或数据。
 ---
 --- 参数说明：
@@ -709,9 +701,9 @@ function Sprite:setSkewY(sy) end
 ---@return self 当前对象，便于链式调用。
 function Sprite:setVisible(bVisible) end
 
---- 调用 `cc.Sprite:Sprite`。
+--- 调用 `cc.Sprite:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function Sprite:Sprite() end
+function Sprite:new() end

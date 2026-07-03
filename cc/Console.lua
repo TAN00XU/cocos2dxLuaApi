@@ -8,6 +8,13 @@
 local Console = {}
 cc.Console = Console
 
+--- 创建 `cc.Console:new` 对应的对象。
+---
+--- 返回说明：
+--- - `cc.Console`：创建出的 `cc.Console` 对象或值。
+---@return cc.Console 创建出的 `cc.Console` 对象或值。
+function Console:new() end
+
 --- 调用 `cc.Console:listenOnTCP`。
 ---
 --- 参数说明：

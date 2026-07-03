@@ -7,6 +7,9 @@
 ---@class ccs.BoneData : ccs.BaseData
 local BoneData = {}
 ccs.BoneData = BoneData
+--- 创建 BoneData 对应的对象。
+---@return ccs.BoneData
+function BoneData:new() end
 
 --- 获取 `ccs.BoneData:getDisplayData` 对应的值。
 ---
@@ -43,10 +46,3 @@ function BoneData:addDisplayData(displayData) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function BoneData:create() end
-
---- 调用 `ccs.BoneData:BoneData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function BoneData:BoneData() end

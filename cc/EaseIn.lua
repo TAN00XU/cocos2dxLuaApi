@@ -46,9 +46,9 @@ function EaseIn:update(time) end
 ---@return cc.EaseRateAction `cc.EaseRateAction` 对象或值。
 function EaseIn:reverse() end
 
---- 调用 `cc.EaseIn:EaseIn`。
+--- 调用 `cc.EaseIn:new`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EaseIn:EaseIn() end
+function EaseIn:new() end

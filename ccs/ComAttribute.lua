@@ -8,6 +8,10 @@
 local ComAttribute = {}
 ccs.ComAttribute = ComAttribute
 
+--- 创建 ComAttribute 对应的对象。
+---@return ccs.ComAttribute
+function ComAttribute:new() end
+
 --- 获取 `ccs.ComAttribute:getFloat` 对应的值。
 ---
 --- 参数说明：

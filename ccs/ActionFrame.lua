@@ -7,6 +7,9 @@
 ---@class ccs.ActionFrame : cc.Ref
 local ActionFrame = {}
 ccs.ActionFrame = ActionFrame
+--- 创建 ActionFrame 对应的对象。
+---@return ccs.ActionFrame
+function ActionFrame:new() end
 
 --- 获取 `ccs.ActionFrame:getAction` 对应的值。
 ---
@@ -105,10 +108,3 @@ function ActionFrame:setEasingParameter(parameter) end
 --- - `integer`：获取到的 整数值。
 ---@return integer 获取到的 整数值。
 function ActionFrame:getEasingType() end
-
---- 调用 `ccs.ActionFrame:ActionFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionFrame:ActionFrame() end

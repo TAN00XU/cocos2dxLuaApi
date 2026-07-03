@@ -8,6 +8,17 @@
 local CallFunc = {}
 cc.CallFunc = CallFunc
 
+--- 创建 `cc.CallFunc:create` 对应的对象。
+---
+--- 参数说明：
+--- - `func`：回调函数。类型为 `function`。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@param func function 回调函数。类型为 `function`。
+---@return self 当前对象，便于链式调用。
+function CallFunc:create(func) end
+
 --- 调用 `cc.CallFunc:execute`。
 ---
 --- 返回说明：
@@ -45,4 +56,4 @@ function CallFunc:reverse() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function CallFunc:CallFunc() end
+function CallFunc:new() end

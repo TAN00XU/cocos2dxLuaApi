@@ -8,6 +8,19 @@
 local BezierBy = {}
 cc.BezierBy = BezierBy
 
+--- 创建 `cc.BezierBy:create` 对应的对象。
+---
+--- 参数说明：
+--- - `t`：持续时间，单位为秒。类型为 `number`。
+--- - `c`：贝塞尔配置。类型为 `cc._ccBezierConfig`。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@param t number 持续时间，单位为秒。类型为 `number`。
+---@param c cc._ccBezierConfig 贝塞尔配置。类型为 `cc._ccBezierConfig`。
+---@return self 当前对象，便于链式调用。
+function BezierBy:create(t, c) end
+
 --- 初始化 `cc.BezierBy:initWithDuration` 对应的对象或状态。
 ---
 --- 参数说明：
@@ -62,4 +75,4 @@ function BezierBy:update(time) end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function BezierBy:BezierBy() end
+function BezierBy:new() end

@@ -7,6 +7,9 @@
 ---@class ccs.SpriteDisplayData : ccs.DisplayData
 local SpriteDisplayData = {}
 ccs.SpriteDisplayData = SpriteDisplayData
+--- 创建 SpriteDisplayData 对应的对象。
+---@return ccs.SpriteDisplayData
+function SpriteDisplayData:new() end
 
 --- 调用 `ccs.SpriteDisplayData:copy`。
 ---
@@ -25,10 +28,3 @@ function SpriteDisplayData:copy(displayData) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SpriteDisplayData:create() end
-
---- 调用 `ccs.SpriteDisplayData:SpriteDisplayData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function SpriteDisplayData:SpriteDisplayData() end

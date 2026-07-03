@@ -8,6 +8,20 @@
 local EventListenerTouchAllAtOnce = {}
 cc.EventListenerTouchAllAtOnce = EventListenerTouchAllAtOnce
 
+--- 创建 `cc.EventListenerTouchAllAtOnce:create` 对应的对象。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function EventListenerTouchAllAtOnce:create() end
+
+--- 创建 `cc.EventListenerTouchAllAtOnce:new` 对应的对象。
+---
+--- 返回说明：
+--- - `self`：当前对象，便于链式调用。
+---@return self 当前对象，便于链式调用。
+function EventListenerTouchAllAtOnce:new() end
+
 --- 初始化 `cc.EventListenerTouchAllAtOnce:init` 对应的对象或状态。
 ---
 --- 返回说明：
@@ -28,10 +42,3 @@ function EventListenerTouchAllAtOnce:clone() end
 --- - `boolean`：布尔值。
 ---@return boolean 布尔值。
 function EventListenerTouchAllAtOnce:checkAvailable() end
-
---- 调用 `cc.EventListenerTouchAllAtOnce:EventListenerTouchAllAtOnce`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function EventListenerTouchAllAtOnce:EventListenerTouchAllAtOnce() end

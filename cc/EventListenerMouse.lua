@@ -8,6 +8,13 @@
 local EventListenerMouse = {}
 cc.EventListenerMouse = EventListenerMouse
 
+--- 创建一个 `cc.EventListenerMouse` 鼠标事件监听器。
+---
+--- 返回说明：
+--- - `cc.EventListenerMouse`：新创建的鼠标事件监听器对象。
+---@return cc.EventListenerMouse 新创建的鼠标事件监听器对象
+function EventListenerMouse:create() end
+
 --- 初始化 `cc.EventListenerMouse:init` 对应的对象或状态。
 ---
 --- 返回说明：
@@ -34,4 +41,4 @@ function EventListenerMouse:checkAvailable() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EventListenerMouse:EventListenerMouse() end
+function EventListenerMouse:new() end

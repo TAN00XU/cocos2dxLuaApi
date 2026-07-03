@@ -8,6 +8,10 @@
 local BatchNode = {}
 ccs.BatchNode = BatchNode
 
+--- 创建 BatchNode 对应的对象。
+---@return ccs.BatchNode
+function BatchNode:new() end
+
 --- 创建 `ccs.BatchNode:create` 对应的对象。
 ---
 --- 返回说明：

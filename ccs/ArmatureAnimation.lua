@@ -6,6 +6,9 @@
 ---@class ccs.ArmatureAnimation
 local ArmatureAnimation = {}
 ccs.ArmatureAnimation = ArmatureAnimation
+--- 创建 ArmatureAnimation 对应的对象。
+---@return ccs.ArmatureAnimation
+function ArmatureAnimation:new() end
 
 --- 获取 `ccs.ArmatureAnimation:getSpeedScale` 对应的值。
 ---
@@ -192,10 +195,3 @@ function ArmatureAnimation:update(dt) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ArmatureAnimation:resume() end
-
---- 调用 `ccs.ArmatureAnimation:ArmatureAnimation`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ArmatureAnimation:ArmatureAnimation() end

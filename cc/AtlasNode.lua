@@ -205,4 +205,4 @@ function AtlasNode:setOpacity(opacity) end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function AtlasNode:AtlasNode() end
+function AtlasNode:new() end

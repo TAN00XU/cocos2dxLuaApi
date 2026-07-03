@@ -7,6 +7,9 @@
 ---@class ccs.BaseData : cc.Ref
 local BaseData = {}
 ccs.BaseData = BaseData
+--- 创建 BaseData 对应的对象。
+---@return ccs.BaseData
+function BaseData:new() end
 
 --- 获取 `ccs.BaseData:getColor` 对应的值。
 ---
@@ -32,10 +35,3 @@ function BaseData:setColor(color) end
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function BaseData:create() end
-
---- 调用 `ccs.BaseData:BaseData`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function BaseData:BaseData() end

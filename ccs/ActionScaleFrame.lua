@@ -7,6 +7,9 @@
 ---@class ccs.ActionScaleFrame : ccs.ActionFrame
 local ActionScaleFrame = {}
 ccs.ActionScaleFrame = ActionScaleFrame
+--- 创建 ActionScaleFrame 对应的对象。
+---@return ccs.ActionScaleFrame
+function ActionScaleFrame:new() end
 
 --- 设置 `ccs.ActionScaleFrame:setScaleY` 对应的值。
 ---
@@ -54,10 +57,3 @@ function ActionScaleFrame:getScaleX() end
 ---@param duration number 持续时间。类型为 `number`。
 ---@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
 function ActionScaleFrame:getAction(duration) end
-
---- 调用 `ccs.ActionScaleFrame:ActionScaleFrame`。
----
---- 返回说明：
---- - `self`：当前对象，便于链式调用。
----@return self 当前对象，便于链式调用。
-function ActionScaleFrame:ActionScaleFrame() end

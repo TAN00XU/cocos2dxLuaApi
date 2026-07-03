@@ -8,6 +8,13 @@
 local EventListenerFocus = {}
 cc.EventListenerFocus = EventListenerFocus
 
+--- 创建一个 `cc.EventListenerFocus` 焦点事件监听器。
+---
+--- 返回说明：
+--- - `cc.EventListenerFocus`：新创建的焦点事件监听器对象。
+---@return cc.EventListenerFocus 新创建的焦点事件监听器对象
+function EventListenerFocus:create() end
+
 --- 初始化 `cc.EventListenerFocus:init` 对应的对象或状态。
 ---
 --- 返回说明：
@@ -34,4 +41,4 @@ function EventListenerFocus:checkAvailable() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
-function EventListenerFocus:EventListenerFocus() end
+function EventListenerFocus:new() end

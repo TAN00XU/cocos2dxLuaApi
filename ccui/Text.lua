@@ -337,8 +337,8 @@ function Text:createInstance() end
 --- 获取 `ccui.Text:getVirtualRenderer` 对应的值。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Label`：获取到的 `cc.Label` 对象或值。
+---@return cc.Label 获取到的 `cc.Label` 对象或值。
 function Text:getVirtualRenderer() end
 
 --- 初始化 `ccui.Text:init` 对应的对象或状态。

@@ -22,22 +22,24 @@ function Layout:setBackGroundColorVector(vector) end
 --- 设置 `ccui.Layout:setClippingType` 对应的值。
 ---
 --- 参数说明：
---- - `type`：类型标识。类型为 `integer`。
+--- - `type`：裁剪类型。类型为 `integer`。
+---   - `0`：模板裁剪（STENCIL）。
+---   - `1`：矩形裁剪（SCISSOR）。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param type integer 类型标识。类型为 `integer`。
+---@param type integer 裁剪类型。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Layout:setClippingType(type) end
 
 --- 设置 `ccui.Layout:setBackGroundColorType` 对应的值。
 ---
 --- 参数说明：
---- - `type`：类型标识。类型为 `integer`。
+--- - `type`：背景颜色类型。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param type integer 类型标识。类型为 `integer`。
+---@param type ccui.LayoutBackGroundColorType 背景颜色类型。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Layout:setBackGroundColorType(type) end
 
@@ -300,11 +302,11 @@ function Layout:setBackGroundImageScale9Enabled(enabled) end
 --- 设置 `ccui.Layout:setLayoutType` 对应的值。
 ---
 --- 参数说明：
---- - `type`：类型标识。类型为 `integer`。
+--- - `type`：布局类型。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param type integer 类型标识。类型为 `integer`。
+---@param type ccui.LayoutType 布局类型。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Layout:setLayoutType(type) end
 

@@ -142,10 +142,16 @@ function ProgressTimer:create(sp) end
 ---
 --- 参数说明：
 --- - `anchorPoint`：参数 `anchorPoint`，类型为 `vec2_table`。
+--- - `x`：X 坐标或 X 分量。类型为 `number`。
+--- - `y`：Y 坐标或 Y 分量。类型为 `number`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param anchorPoint vec2_table 参数 `anchorPoint`，类型为 `vec2_table`。
+---@overload fun(anchorPoint: vec2_table): self
+---@overload fun(x: number, y: number): self
+---@param anchorPoint? vec2_table 参数 `anchorPoint`，类型为 `vec2_table`。
+---@param x? number X 坐标或 X 分量。类型为 `number`。
+---@param y? number Y 坐标或 Y 分量。类型为 `number`。
 ---@return self 当前对象，便于链式调用。
 function ProgressTimer:setAnchorPoint(anchorPoint) end
 

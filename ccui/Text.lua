@@ -4,16 +4,26 @@
 
 --- Cocos API 类：`ccui.Text`。
 --- 继承：`ccui.Widget`。
----@class ccui.Text : ccui.Widget
+---@class ccui.Text: ccui.Widget
 local Text = {}
 ccui.Text = Text
 
 --- 调用 `ccui.Text:enableShadow`。
 ---
+--- 参数说明：
+--- - `shadowColor`：阴影颜色。类型为 `cc.Color4B`，默认值为黑色。
+--- - `offset`：阴影偏移量。类型为 `cc.Size`，默认值为 `cc.size(2, -2)`。
+--- - `blurRadius`：阴影模糊半径。类型为 `integer`，默认值为 `0`；当前 Cocos2d-x v3 实现暂不支持模糊。
+---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
+---@overload fun(): self
+---@overload fun(shadowColor: cc.Color4B, offset: cc.Size): self
+---@param shadowColor? cc.Color4B 阴影颜色，默认值为黑色。
+---@param offset?      cc.Size    阴影偏移量，默认值为 `cc.size(2, -2)`。
+---@param blurRadius?  integer    阴影模糊半径，默认值为 `0`；当前 Cocos2d-x v3 实现暂不支持模糊。
 ---@return self 当前对象，便于链式调用。
-function Text:enableShadow() end
+function Text:enableShadow(shadowColor, offset, blurRadius) end
 
 --- 获取 `ccui.Text:getFontSize` 对应的值。
 ---
@@ -131,8 +141,8 @@ function Text:getOutlineSize() end
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param textContent string 参数 `textContent`，类型为 `string`。
----@param fontName string 字体名称。类型为 `string`。
----@param fontSize number 参数 `fontSize`，类型为 `number`。
+---@param fontName    string 字体名称。类型为 `string`。
+---@param fontSize    number 参数 `fontSize`，类型为 `number`。
 ---@return boolean 初始化是否成功。
 function Text:init(textContent, fontName, fontSize) end
 
@@ -191,7 +201,7 @@ function Text:getAutoRenderSize() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param outlineColor color4b_table 参数 `outlineColor`，类型为 `color4b_table`。
----@param outlineSize integer 参数 `outlineSize`，类型为 `integer`。
+---@param outlineSize  integer       参数 `outlineSize`，类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Text:enableOutline(outlineColor, outlineSize) end
 
@@ -322,8 +332,8 @@ function Text:setTextHorizontalAlignment(alignment) end
 ---@overload fun(textContent: string, fontName: string, fontSize: number): self
 ---@overload fun(): self
 ---@param textContent? string 参数 `textContent`，类型为 `string`。
----@param fontName? string 字体名称。类型为 `string`。
----@param fontSize? number 参数 `fontSize`，类型为 `number`。
+---@param fontName?    string 字体名称。类型为 `string`。
+---@param fontSize?    number 参数 `fontSize`，类型为 `number`。
 ---@return self 当前对象，便于链式调用。
 function Text:create(textContent, fontName, fontSize) end
 

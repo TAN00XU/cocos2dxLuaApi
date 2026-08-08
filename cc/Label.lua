@@ -4,7 +4,7 @@
 
 --- Cocos API 类：`cc.Label`。
 --- 继承：`cc.Node`。
----@class cc.Label : cc.Node
+---@class cc.Label: cc.Node
 local Label = {}
 cc.Label = Label
 
@@ -17,10 +17,20 @@ function Label:isClipMarginEnabled() end
 
 --- 调用 `cc.Label:enableShadow`。
 ---
+--- 参数说明：
+--- - `shadowColor`：阴影颜色。类型为 `cc.Color4B`，默认值为黑色。
+--- - `offset`：阴影偏移量。类型为 `cc.Size`，默认值为 `cc.size(2, -2)`。
+--- - `blurRadius`：阴影模糊半径。类型为 `integer`，默认值为 `0`；当前 Cocos2d-x v3 实现暂不支持模糊。
+---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
+---@overload fun(): self
+---@overload fun(shadowColor: cc.Color4B, offset: cc.Size): self
+---@param shadowColor? cc.Color4B 阴影颜色，默认值为黑色。
+---@param offset?      cc.Size    阴影偏移量，默认值为 `cc.size(2, -2)`。
+---@param blurRadius?  integer    阴影模糊半径，默认值为 `0`；当前 Cocos2d-x v3 实现暂不支持模糊。
 ---@return self 当前对象，便于链式调用。
-function Label:enableShadow() end
+function Label:enableShadow(shadowColor, offset, blurRadius) end
 
 --- 设置 `cc.Label:setDimensions` 对应的值。
 ---
@@ -30,7 +40,7 @@ function Label:enableShadow() end
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param width number 宽度。类型为 `number`。
+---@param width  number 宽度。类型为 `number`。
 ---@param height number 高度。类型为 `number`。
 ---@return self 当前对象，便于链式调用。
 function Label:setDimensions(width, height) end
@@ -221,9 +231,9 @@ function Label:getOutlineSize() end
 ---
 --- 返回说明：
 --- - `boolean`：布尔值。
----@param bmfontFilePath string 参数 `bmfontFilePath`，类型为 `string`。
----@param imageOffset vec2_table 参数 `imageOffset`，类型为 `vec2_table`。
----@param fontSize number 参数 `fontSize`，类型为 `number`。
+---@param bmfontFilePath string     参数 `bmfontFilePath`，类型为 `string`。
+---@param imageOffset    vec2_table 参数 `imageOffset`，类型为 `vec2_table`。
+---@param fontSize       number     参数 `fontSize`，类型为 `number`。
 ---@return boolean 布尔值。
 function Label:setBMFontFilePath(bmfontFilePath, imageOffset, fontSize) end
 
@@ -241,12 +251,12 @@ function Label:setBMFontFilePath(bmfontFilePath, imageOffset, fontSize) end
 --- - `boolean`：初始化是否成功。
 ---@overload fun(text: cc._ttfConfig, fontFilePath: string, fontSize: integer, dimensions: integer): boolean
 ---@overload fun(text: string, fontFilePath: string, fontSize: number, dimensions: size_table, hAlignment: integer, vAlignment: integer): boolean
----@param text? string 文本内容。类型为 `string`。
----@param fontFilePath? string 参数 `fontFilePath`，类型为 `string`。
----@param fontSize? number 参数 `fontSize`，类型为 `number`。
----@param dimensions? size_table 参数 `dimensions`，类型为 `size_table`。
----@param hAlignment? integer 参数 `hAlignment`，类型为 `integer`。
----@param vAlignment? integer 参数 `vAlignment`，类型为 `integer`。
+---@param text?         string     文本内容。类型为 `string`。
+---@param fontFilePath? string     参数 `fontFilePath`，类型为 `string`。
+---@param fontSize?     number     参数 `fontSize`，类型为 `number`。
+---@param dimensions?   size_table 参数 `dimensions`，类型为 `size_table`。
+---@param hAlignment?   integer    参数 `hAlignment`，类型为 `integer`。
+---@param vAlignment?   integer    参数 `vAlignment`，类型为 `integer`。
 ---@return boolean 初始化是否成功。
 function Label:initWithTTF(text, fontFilePath, fontSize, dimensions, hAlignment, vAlignment) end
 
@@ -338,7 +348,7 @@ function Label:getStringNumLines() end
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param outlineColor color4b_table 参数 `outlineColor`，类型为 `color4b_table`。
----@param outlineSize integer 参数 `outlineSize`，类型为 `integer`。
+---@param outlineSize  integer       参数 `outlineSize`，类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Label:enableOutline(outlineColor, outlineSize) end
 
@@ -380,9 +390,9 @@ function Label:removeAllChildrenWithCleanup(cleanup) end
 ---@overload fun(charMapFile: cc.Texture2D, itemWidth: integer, itemHeight: integer, startCharMap: integer): boolean
 ---@overload fun(charMapFile: string, itemWidth: integer, itemHeight: integer, startCharMap: integer): boolean
 ---@overload fun(charMapFile: string): boolean
----@param charMapFile? string 参数 `charMapFile`，类型为 `string`。
----@param itemWidth? integer 参数 `itemWidth`，类型为 `integer`。
----@param itemHeight? integer 参数 `itemHeight`，类型为 `integer`。
+---@param charMapFile?  string  参数 `charMapFile`，类型为 `string`。
+---@param itemWidth?    integer 参数 `itemWidth`，类型为 `integer`。
+---@param itemHeight?   integer 参数 `itemHeight`，类型为 `integer`。
 ---@param startCharMap? integer 参数 `startCharMap`，类型为 `integer`。
 ---@return boolean 布尔值。
 function Label:setCharMap(charMapFile, itemWidth, itemHeight, startCharMap) end
@@ -653,11 +663,11 @@ function Label:setBMFontSize(fontSize) end
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param bmfontPath string 参数 `bmfontPath`，类型为 `string`。
----@param text string 文本内容。类型为 `string`。
----@param hAlignment integer 参数 `hAlignment`，类型为 `integer`。
----@param maxLineWidth integer 参数 `maxLineWidth`，类型为 `integer`。
----@param imageOffset vec2_table 参数 `imageOffset`，类型为 `vec2_table`。
+---@param bmfontPath   string     参数 `bmfontPath`，类型为 `string`。
+---@param text         string     文本内容。类型为 `string`。
+---@param hAlignment   integer    参数 `hAlignment`，类型为 `integer`。
+---@param maxLineWidth integer    参数 `maxLineWidth`，类型为 `integer`。
+---@param imageOffset  vec2_table 参数 `imageOffset`，类型为 `vec2_table`。
 ---@return self 当前对象，便于链式调用。
 function Label:createWithBMFont(bmfontPath, text, hAlignment, maxLineWidth, imageOffset) end
 
@@ -681,9 +691,9 @@ function Label:create() end
 ---@overload fun(charMapFile: cc.Texture2D, itemWidth: integer, itemHeight: integer, startCharMap: integer): self
 ---@overload fun(charMapFile: string, itemWidth: integer, itemHeight: integer, startCharMap: integer): self
 ---@overload fun(charMapFile: string): self
----@param charMapFile? string 参数 `charMapFile`，类型为 `string`。
----@param itemWidth? integer 参数 `itemWidth`，类型为 `integer`。
----@param itemHeight? integer 参数 `itemHeight`，类型为 `integer`。
+---@param charMapFile?  string  参数 `charMapFile`，类型为 `string`。
+---@param itemWidth?    integer 参数 `itemWidth`，类型为 `integer`。
+---@param itemHeight?   integer 参数 `itemHeight`，类型为 `integer`。
 ---@param startCharMap? integer 参数 `startCharMap`，类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Label:createWithCharMap(charMapFile, itemWidth, itemHeight, startCharMap) end
@@ -700,12 +710,12 @@ function Label:createWithCharMap(charMapFile, itemWidth, itemHeight, startCharMa
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param text string 文本内容。类型为 `string`。
----@param font string 参数 `font`，类型为 `string`。
----@param fontSize number 参数 `fontSize`，类型为 `number`。
+---@param text       string     文本内容。类型为 `string`。
+---@param font       string     参数 `font`，类型为 `string`。
+---@param fontSize   number     参数 `fontSize`，类型为 `number`。
 ---@param dimensions size_table 参数 `dimensions`，类型为 `size_table`。
----@param hAlignment integer 参数 `hAlignment`，类型为 `integer`。
----@param vAlignment integer 参数 `vAlignment`，类型为 `integer`。
+---@param hAlignment integer    参数 `hAlignment`，类型为 `integer`。
+---@param vAlignment integer    参数 `vAlignment`，类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Label:createWithSystemFont(text, font, fontSize, dimensions, hAlignment, vAlignment) end
 
@@ -718,9 +728,9 @@ function Label:createWithSystemFont(text, font, fontSize, dimensions, hAlignment
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
----@param flags integer 标志位。类型为 `integer`。
+---@param renderer  cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
+---@param transform mat4_table  参数 `transform`，类型为 `mat4_table`。
+---@param flags     integer     标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Label:draw(renderer, transform, flags) end
 
@@ -739,7 +749,7 @@ function Label:isOpacityModifyRGB() end
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param mask integer 参数 `mask`，类型为 `integer`。
+---@param mask          integer 参数 `mask`，类型为 `integer`。
 ---@param applyChildren boolean 参数 `applyChildren`，类型为 `boolean`。
 ---@return self 当前对象，便于链式调用。
 function Label:setCameraMask(mask, applyChildren) end
@@ -752,7 +762,7 @@ function Label:setCameraMask(mask, applyChildren) end
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param child cc.Node 子节点对象。类型为 `cc.Node`。
+---@param child   cc.Node 子节点对象。类型为 `cc.Node`。
 ---@param cleanup boolean 是否清理关联资源。类型为 `boolean`。
 ---@return self 当前对象，便于链式调用。
 function Label:removeChild(child, cleanup) end
@@ -766,9 +776,9 @@ function Label:removeChild(child, cleanup) end
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param parentTransform mat4_table 参数 `parentTransform`，类型为 `mat4_table`。
----@param parentFlags integer 参数 `parentFlags`，类型为 `integer`。
+---@param renderer        cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
+---@param parentTransform mat4_table  参数 `parentTransform`，类型为 `mat4_table`。
+---@param parentFlags     integer     参数 `parentFlags`，类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function Label:visit(renderer, parentTransform, parentFlags) end
 

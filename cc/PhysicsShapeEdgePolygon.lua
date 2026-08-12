@@ -8,16 +8,16 @@
 local PhysicsShapeEdgePolygon = {}
 cc.PhysicsShapeEdgePolygon = PhysicsShapeEdgePolygon
 
---- 获取 `cc.PhysicsShapeEdgePolygon:getPointsCount` 对应的值。
+--- 获取边多边形形状中的顶点数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：边多边形顶点数量。
+---@return integer 边多边形顶点数量。
 function PhysicsShapeEdgePolygon:getPointsCount() end
 
---- 获取 `cc.PhysicsShapeEdgePolygon:getCenter` 对应的值。
+--- 获取闭合边缘多边形的中心位置。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：闭合边缘多边形的中心坐标。
+---@return vec2_table 闭合边缘多边形的中心坐标。
 function PhysicsShapeEdgePolygon:getCenter() end

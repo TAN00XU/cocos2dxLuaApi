@@ -15,9 +15,9 @@ cc.TiledGrid3DAction = TiledGrid3DAction
 ---@return self 当前对象，便于链式调用。
 function TiledGrid3DAction:clone() end
 
---- 获取 `cc.TiledGrid3DAction:getGrid` 对应的值。
+--- 获取动作当前使用的三维瓦片网格。
 ---
 --- 返回说明：
---- - `cc.GridBase`：获取到的 `cc.GridBase` 对象或值。
----@return cc.GridBase 获取到的 `cc.GridBase` 对象或值。
+--- - `cc.GridBase`：当前动作的网格对象。
+---@return cc.GridBase 当前动作的网格对象。
 function TiledGrid3DAction:getGrid() end

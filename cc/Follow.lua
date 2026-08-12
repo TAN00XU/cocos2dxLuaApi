@@ -8,124 +8,124 @@
 local Follow = {}
 cc.Follow = Follow
 
---- 设置 `cc.Follow:setBoundarySet` 对应的值。
+--- 设置是否限制跟随节点的位置在边界矩形内。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `boolean`。
+--- - `value`：是否启用边界限制。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param value boolean 数值或对象值。类型为 `boolean`。
+---@param value boolean 是否启用边界限制。
 ---@return self 当前对象，便于链式调用。
 function Follow:setBoundarySet(value) end
 
---- 初始化 `cc.Follow:initWithTarget` 对应的对象或状态。
+--- 初始化跟随动作，使承载动作的节点跟随指定目标节点。
 ---
 --- 参数说明：
---- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
+--- - `followedNode`：要跟随的目标节点。
 --- - `rect`：矩形区域。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param followedNode cc.Node 参数 `followedNode`，类型为 `cc.Node`。
+---@param followedNode cc.Node 要跟随的目标节点。
 ---@param rect rect_table 矩形区域。类型为 `rect_table`。
 ---@return boolean 初始化是否成功。
 function Follow:initWithTarget(followedNode, rect) end
 
---- 初始化 `cc.Follow:initWithTargetAndOffset` 对应的对象或状态。
+--- 初始化带屏幕偏移和边界矩形的跟随动作。
 ---
 --- 参数说明：
---- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
---- - `xOffset`：参数 `xOffset`，类型为 `number`。
---- - `yOffset`：参数 `yOffset`，类型为 `number`。
+--- - `followedNode`：要跟随的目标节点。
+--- - `xOffset`：目标相对承载节点的水平偏移。
+--- - `yOffset`：目标相对承载节点的垂直偏移。
 --- - `rect`：矩形区域。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param followedNode cc.Node 参数 `followedNode`，类型为 `cc.Node`。
----@param xOffset number 参数 `xOffset`，类型为 `number`。
----@param yOffset number 参数 `yOffset`，类型为 `number`。
+---@param followedNode cc.Node 要跟随的目标节点。
+---@param xOffset number 水平偏移。
+---@param yOffset number 垂直偏移。
 ---@param rect rect_table 矩形区域。类型为 `rect_table`。
 ---@return boolean 初始化是否成功。
 function Follow:initWithTargetAndOffset(followedNode, xOffset, yOffset, rect) end
 
---- 判断 `cc.Follow:isBoundarySet` 对应状态是否成立。
+--- 判断是否启用了边界矩形限制。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用边界限制。
+---@return boolean 是否启用边界限制。
 function Follow:isBoundarySet() end
 
---- 创建 `cc.Follow:create` 对应的对象。
+--- 创建跟随指定目标节点的动作。
 ---
 --- 参数说明：
---- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
+--- - `followedNode`：要跟随的目标节点。
 --- - `rect`：矩形区域。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param followedNode cc.Node 参数 `followedNode`，类型为 `cc.Node`。
+---@param followedNode cc.Node 要跟随的目标节点。
 ---@param rect rect_table 矩形区域。类型为 `rect_table`。
 ---@return self 当前对象，便于链式调用。
 function Follow:create(followedNode, rect) end
 
---- 创建 `cc.Follow:createWithOffset` 对应的对象。
+--- 创建带偏移量并可受边界限制的跟随动作。
 ---
 --- 参数说明：
---- - `followedNode`：参数 `followedNode`，类型为 `cc.Node`。
---- - `xOffset`：参数 `xOffset`，类型为 `number`。
---- - `yOffset`：参数 `yOffset`，类型为 `number`。
+--- - `followedNode`：要跟随的目标节点。
+--- - `xOffset`：水平偏移。
+--- - `yOffset`：垂直偏移。
 --- - `rect`：矩形区域。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param followedNode cc.Node 参数 `followedNode`，类型为 `cc.Node`。
----@param xOffset number 参数 `xOffset`，类型为 `number`。
----@param yOffset number 参数 `yOffset`，类型为 `number`。
+---@param followedNode cc.Node 要跟随的目标节点。
+---@param xOffset number 水平偏移。
+---@param yOffset number 垂直偏移。
 ---@param rect rect_table 矩形区域。类型为 `rect_table`。
 ---@return self 当前对象，便于链式调用。
 function Follow:createWithOffset(followedNode, xOffset, yOffset, rect) end
 
---- 调用 `cc.Follow:step`。
+--- 根据目标节点当前位置更新承载动作节点的位置。
 ---
 --- 参数说明：
---- - `dt`：帧间隔时间。类型为 `number`。
+--- - `dt`：本帧经过的时间，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param dt number 帧间隔时间。类型为 `number`。
+---@param dt number 本帧经过的时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Follow:step(dt) end
 
---- 调用 `cc.Follow:clone`。
+--- 克隆跟随动作及其边界设置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Follow:clone() end
 
---- 停止 `cc.Follow:stop` 对应的流程。
+--- 停止跟随并保留承载节点当前位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Follow:stop() end
 
---- 调用 `cc.Follow:reverse`。
+--- 创建跟随动作的反向副本。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Follow:reverse() end
 
---- 判断 `cc.Follow:isDone` 对应状态是否成立。
+--- 判断跟随动作是否已结束，通常在目标节点失效时结束。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：跟随动作是否已结束。
+---@return boolean 跟随动作是否已结束。
 function Follow:isDone() end
 
---- 调用 `cc.Follow:Follow`。
+--- 构造跟随动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

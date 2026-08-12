@@ -7,53 +7,53 @@
 ---@class ccs.ActionScaleFrame : ccs.ActionFrame
 local ActionScaleFrame = {}
 ccs.ActionScaleFrame = ActionScaleFrame
---- 创建 ActionScaleFrame 对应的对象。
+--- 创建缩放动作关键帧对象。
 ---@return ccs.ActionScaleFrame
 function ActionScaleFrame:new() end
 
---- 设置 `ccs.ActionScaleFrame:setScaleY` 对应的值。
+--- 设置关键帧目标 Y 轴缩放比例。
 ---
 --- 参数说明：
---- - `scaleY`：参数 `scaleY`，类型为 `number`。
+--- - `scaleY`：Y 轴缩放比例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scaleY number 参数 `scaleY`，类型为 `number`。
+---@param scaleY number Y 轴缩放比例。
 ---@return self 当前对象，便于链式调用。
 function ActionScaleFrame:setScaleY(scaleY) end
 
---- 设置 `ccs.ActionScaleFrame:setScaleX` 对应的值。
+--- 设置关键帧目标 X 轴缩放比例。
 ---
 --- 参数说明：
---- - `scaleX`：参数 `scaleX`，类型为 `number`。
+--- - `scaleX`：X 轴缩放比例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scaleX number 参数 `scaleX`，类型为 `number`。
+---@param scaleX number X 轴缩放比例。
 ---@return self 当前对象，便于链式调用。
 function ActionScaleFrame:setScaleX(scaleX) end
 
---- 获取 `ccs.ActionScaleFrame:getScaleY` 对应的值。
+--- 获取关键帧目标 Y 轴缩放比例。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：Y 轴缩放比例。
+---@return number Y 轴缩放比例。
 function ActionScaleFrame:getScaleY() end
 
---- 获取 `ccs.ActionScaleFrame:getScaleX` 对应的值。
+--- 获取关键帧目标 X 轴缩放比例。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：X 轴缩放比例。
+---@return number X 轴缩放比例。
 function ActionScaleFrame:getScaleX() end
 
---- 获取 `ccs.ActionScaleFrame:getAction` 对应的值。
+--- 根据源帧生成缩放区间动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：获取到的 `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：生成的缩放区间动作。
 ---@param duration number 持续时间。类型为 `number`。
----@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
+---@return cc.ActionInterval 生成的缩放区间动作。
 function ActionScaleFrame:getAction(duration) end

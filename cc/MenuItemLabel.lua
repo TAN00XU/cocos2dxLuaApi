@@ -8,106 +8,106 @@
 local MenuItemLabel = {}
 cc.MenuItemLabel = MenuItemLabel
 
---- 设置 `cc.MenuItemLabel:setLabel` 对应的值。
+--- 替换菜单项用于显示文字的标签节点。
 ---
 --- 参数说明：
---- - `node`：节点对象。类型为 `cc.Node`。
+--- - `node`：实现文本显示的标签节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param node cc.Node 节点对象。类型为 `cc.Node`。
+---@param node cc.Node 实现文本显示的标签节点。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:setLabel(node) end
 
---- 获取 `cc.MenuItemLabel:getString` 对应的值。
+--- 获取标签节点当前显示的文字。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：标签节点当前显示的文字。
+---@return string 标签节点当前显示的文字。
 function MenuItemLabel:getString() end
 
---- 获取 `cc.MenuItemLabel:getDisabledColor` 对应的值。
+--- 获取菜单项禁用时应用于标签的颜色。
 ---
 --- 返回说明：
---- - `color3b_table`：获取到的 Lua 表数据。
----@return color3b_table 获取到的 Lua 表数据。
+--- - `color3b_table`：菜单项禁用时的 RGB 颜色。
+---@return color3b_table 菜单项禁用时的 RGB 颜色。
 function MenuItemLabel:getDisabledColor() end
 
---- 设置 `cc.MenuItemLabel:setString` 对应的值。
+--- 设置标签节点显示的文字。
 ---
 --- 参数说明：
---- - `label`：标签渲染对象。类型为 `string`。
+--- - `label`：新的显示文字。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param label string 标签渲染对象。类型为 `string`。
+---@param label string 新的显示文字。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:setString(label) end
 
---- 初始化 `cc.MenuItemLabel:initWithLabel` 对应的对象或状态。
+--- 使用标签节点和激活回调初始化菜单项。
 ---
 --- 参数说明：
---- - `label`：标签渲染对象。类型为 `cc.Node`。
---- - `callback`：回调函数。类型为 `fun(...): any`。
+--- - `label`：用于显示菜单项文字的标签节点。
+--- - `callback`：菜单项被激活时调用的回调。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param label cc.Node 标签渲染对象。类型为 `cc.Node`。
----@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
+---@param label cc.Node 用于显示菜单项文字的标签节点。
+---@param callback fun(...): any 菜单项被激活时调用的回调。
 ---@return boolean 初始化是否成功。
 function MenuItemLabel:initWithLabel(label, callback) end
 
---- 设置 `cc.MenuItemLabel:setDisabledColor` 对应的值。
+--- 设置菜单项禁用时应用于标签的颜色。
 ---
 --- 参数说明：
---- - `color`：颜色值。类型为 `color3b_table`。
+--- - `color`：禁用状态下标签使用的 RGB 颜色。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param color color3b_table 颜色值。类型为 `color3b_table`。
+---@param color color3b_table 禁用状态下标签使用的 RGB 颜色。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:setDisabledColor(color) end
 
---- 获取 `cc.MenuItemLabel:getLabel` 对应的值。
+--- 获取菜单项用于显示文字的标签节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：当前标签节点。
+---@return cc.Node 当前标签节点。
 function MenuItemLabel:getLabel() end
 
---- 设置 `cc.MenuItemLabel:setEnabled` 对应的值。
+--- 设置菜单项是否可交互，并同步更新标签颜色。
 ---
 --- 参数说明：
---- - `enabled`：是否启用。类型为 `boolean`。
+--- - `enabled`：是否允许菜单项响应激活操作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enabled boolean 是否启用。类型为 `boolean`。
+---@param enabled boolean 是否允许菜单项响应激活操作。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:setEnabled(enabled) end
 
---- 调用 `cc.MenuItemLabel:activate`。
+--- 激活菜单项并执行已注册的回调。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:activate() end
 
---- 调用 `cc.MenuItemLabel:unselected`。
+--- 取消选中菜单项，并恢复标签的正常显示状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:unselected() end
 
---- 调用 `cc.MenuItemLabel:selected`。
+--- 选中菜单项，并对标签应用选中缩放效果。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MenuItemLabel:selected() end
 
---- 调用 `cc.MenuItemLabel:MenuItemLabel`。
+--- 构造标签菜单项。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

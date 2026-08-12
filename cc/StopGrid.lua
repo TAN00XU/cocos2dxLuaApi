@@ -8,7 +8,7 @@
 local StopGrid = {}
 cc.StopGrid = StopGrid
 
---- 创建 `cc.StopGrid:create` 对应的对象。
+--- 创建用于停用目标网格的即时动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,7 +8,7 @@
 local Repeat = {}
 cc.Repeat = Repeat
 
---- 设置 `cc.Repeat:setInnerAction` 对应的值。
+--- 设置要重复执行的内部有限时间动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.FiniteTimeAction`。
@@ -19,40 +19,40 @@ cc.Repeat = Repeat
 ---@return self 当前对象，便于链式调用。
 function Repeat:setInnerAction(action) end
 
---- 初始化 `cc.Repeat:initWithAction` 对应的对象或状态。
+--- 使用内部动作和重复次数初始化重复动作。
 ---
 --- 参数说明：
---- - `pAction`：参数 `pAction`，类型为 `cc.FiniteTimeAction`。
---- - `times`：参数 `times`，类型为 `integer`。
+--- - `pAction`：要重复执行的有限时间动作。
+--- - `times`：重复执行次数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param pAction cc.FiniteTimeAction 参数 `pAction`，类型为 `cc.FiniteTimeAction`。
----@param times integer 参数 `times`，类型为 `integer`。
+---@param pAction cc.FiniteTimeAction 要重复执行的有限时间动作。
+---@param times integer 重复执行次数。
 ---@return boolean 初始化是否成功。
 function Repeat:initWithAction(pAction, times) end
 
---- 获取 `cc.Repeat:getInnerAction` 对应的值。
+--- 获取被重复执行的内部有限时间动作。
 ---
 --- 返回说明：
---- - `cc.FiniteTimeAction`：获取到的 `cc.FiniteTimeAction` 对象或值。
----@return cc.FiniteTimeAction 获取到的 `cc.FiniteTimeAction` 对象或值。
+--- - `cc.FiniteTimeAction`：内部有限时间动作。
+---@return cc.FiniteTimeAction 内部有限时间动作。
 function Repeat:getInnerAction() end
 
---- 创建 `cc.Repeat:create` 对应的对象。
+--- 创建按指定次数重复执行内部动作的动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.FiniteTimeAction`。
---- - `times`：参数 `times`，类型为 `integer`。
+--- - `times`：重复执行次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param action cc.FiniteTimeAction 动作对象。类型为 `cc.FiniteTimeAction`。
----@param times integer 参数 `times`，类型为 `integer`。
+---@param times integer 重复执行次数。
 ---@return self 当前对象，便于链式调用。
 function Repeat:create(action, times) end
 
---- 调用 `cc.Repeat:startWithTarget`。
+--- 在目标节点上启动重复动作。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -63,46 +63,46 @@ function Repeat:create(action, times) end
 ---@return self 当前对象，便于链式调用。
 function Repeat:startWithTarget(target) end
 
---- 调用 `cc.Repeat:reverse`。
+--- 创建内部动作反向执行的新重复动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Repeat:reverse() end
 
---- 调用 `cc.Repeat:clone`。
+--- 克隆重复动作及其内部动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Repeat:clone() end
 
---- 停止 `cc.Repeat:stop` 对应的流程。
+--- 停止内部动作和当前重复动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Repeat:stop() end
 
---- 更新 `cc.Repeat:update` 对应的状态。
+--- 按归一化进度更新重复动作及当前一轮内部动作。
 ---
 --- 参数说明：
---- - `dt`：帧间隔时间。类型为 `number`。
+--- - `dt`：归一化动作进度，通常取值为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param dt number 帧间隔时间。类型为 `number`。
+---@param dt number 归一化动作进度，通常取值为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function Repeat:update(dt) end
 
---- 判断 `cc.Repeat:isDone` 对应状态是否成立。
+--- 判断内部动作是否已完成指定重复次数。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：指定重复次数是否已全部完成。
+---@return boolean 重复动作是否已完成。
 function Repeat:isDone() end
 
---- 调用 `cc.Repeat:Repeat`。
+--- 构造重复动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

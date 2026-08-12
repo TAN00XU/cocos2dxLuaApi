@@ -7,40 +7,40 @@
 ---@class ccs.BoneData : ccs.BaseData
 local BoneData = {}
 ccs.BoneData = BoneData
---- 创建 BoneData 对应的对象。
+--- 创建骨骼数据对象。
 ---@return ccs.BoneData
 function BoneData:new() end
 
---- 获取 `ccs.BoneData:getDisplayData` 对应的值。
+--- 按索引获取骨骼的显示数据。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `ccs.DisplayData`：获取到的 `ccs.DisplayData` 对象或值。
----@param index integer 索引值。类型为 `integer`。
----@return ccs.DisplayData 获取到的 `ccs.DisplayData` 对象或值。
+--- - `ccs.DisplayData`：指定索引处的显示数据。
+---@param index integer 显示数据索引。
+---@return ccs.DisplayData 指定索引处的显示数据。
 function BoneData:getDisplayData(index) end
 
---- 初始化 `ccs.BoneData:init` 对应的对象或状态。
+--- 初始化骨骼数据及其显示数据列表。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function BoneData:init() end
 
---- 添加 `ccs.BoneData:addDisplayData` 对应的对象或数据。
+--- 向骨骼数据添加一个显示数据。
 ---
 --- 参数说明：
---- - `displayData`：参数 `displayData`，类型为 `ccs.DisplayData`。
+--- - `displayData`：要添加的显示数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param displayData ccs.DisplayData 参数 `displayData`，类型为 `ccs.DisplayData`。
+---@param displayData ccs.DisplayData 要添加的显示数据。
 ---@return self 当前对象，便于链式调用。
 function BoneData:addDisplayData(displayData) end
 
---- 创建 `ccs.BoneData:create` 对应的对象。
+--- 创建并初始化骨骼数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

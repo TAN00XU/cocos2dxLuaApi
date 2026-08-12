@@ -8,33 +8,33 @@
 local MoveBy = {}
 cc.MoveBy = MoveBy
 
---- 初始化 `cc.MoveBy:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和位移向量初始化相对移动动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `deltaPosition`：参数 `deltaPosition`，类型为 `vec2_table`。
+--- - `deltaPosition`：相对于起点的二维或三维位移。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@overload fun(duration: number, deltaPosition: vec3_table): boolean
 ---@overload fun(duration: number, deltaPosition: vec2_table): boolean
 ---@param duration number 持续时间。类型为 `number`。
----@param deltaPosition vec2_table 参数 `deltaPosition`，类型为 `vec2_table`。
+---@param deltaPosition vec2_table 相对于起点的二维或三维位移。
 ---@return boolean 初始化是否成功。
 function MoveBy:initWithDuration(duration, deltaPosition) end
 
---- 创建 `cc.MoveBy:create` 对应的对象。
+--- 创建按指定位移相对移动目标节点的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `deltaPosition`：参数 `deltaPosition`，类型为 `vec2_table`。
+--- - `deltaPosition`：相对于起点的二维或三维位移。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(duration: number, deltaPosition: vec3_table): self
 ---@overload fun(duration: number, deltaPosition: vec2_table): self
 ---@param duration number 持续时间。类型为 `number`。
----@param deltaPosition vec2_table 参数 `deltaPosition`，类型为 `vec2_table`。
+---@param deltaPosition vec2_table 相对于起点的二维或三维位移。
 ---@return self 当前对象，便于链式调用。
 function MoveBy:create(duration, deltaPosition) end
 
@@ -63,14 +63,14 @@ function MoveBy:clone() end
 ---@return self 当前对象，便于链式调用。
 function MoveBy:reverse() end
 
---- 更新 `cc.MoveBy:update` 对应的状态。
+--- 按归一化进度应用相对位移。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度，通常范围为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度，通常范围为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function MoveBy:update(time) end
 

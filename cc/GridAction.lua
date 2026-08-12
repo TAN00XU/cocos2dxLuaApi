@@ -8,23 +8,23 @@
 local GridAction = {}
 cc.GridAction = GridAction
 
---- 获取 `cc.GridAction:getGrid` 对应的值。
+--- 获取该动作创建或使用的网格对象。
 ---
 --- 返回说明：
---- - `cc.GridBase`：获取到的 `cc.GridBase` 对象或值。
----@return cc.GridBase 获取到的 `cc.GridBase` 对象或值。
+--- - `cc.GridBase`：动作使用的网格。
+---@return cc.GridBase 动作使用的网格。
 function GridAction:getGrid() end
 
---- 初始化 `cc.GridAction:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和网格尺寸初始化网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
+--- - `gridSize`：网格的列数和行数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param gridSize size_table 参数 `gridSize`，类型为 `size_table`。
+---@param gridSize size_table 网格的列数和行数。
 ---@return boolean 初始化是否成功。
 function GridAction:initWithDuration(duration, gridSize) end
 

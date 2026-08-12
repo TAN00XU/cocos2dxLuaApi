@@ -8,25 +8,25 @@
 local FlipY = {}
 cc.FlipY = FlipY
 
---- 初始化 `cc.FlipY:initWithFlipY` 对应的对象或状态。
+--- 初始化沿 Y 轴翻转精灵的瞬时动作。
 ---
 --- 参数说明：
---- - `y`：Y 坐标或 Y 分量。类型为 `boolean`。
+--- - `y`：是否执行垂直翻转。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param y boolean Y 坐标或 Y 分量。类型为 `boolean`。
+---@param y boolean 是否执行垂直翻转。
 ---@return boolean 初始化是否成功。
 function FlipY:initWithFlipY(y) end
 
---- 创建 `cc.FlipY:create` 对应的对象。
+--- 创建沿 Y 轴翻转精灵的瞬时动作。
 ---
 --- 参数说明：
---- - `y`：Y 坐标或 Y 分量。类型为 `boolean`。
+--- - `y`：是否执行垂直翻转。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param y boolean Y 坐标或 Y 分量。类型为 `boolean`。
+---@param y boolean 是否执行垂直翻转。
 ---@return self 当前对象，便于链式调用。
 function FlipY:create(y) end
 
@@ -37,14 +37,14 @@ function FlipY:create(y) end
 ---@return self 当前对象，便于链式调用。
 function FlipY:clone() end
 
---- 更新 `cc.FlipY:update` 对应的状态。
+--- 执行垂直翻转；瞬时动作不使用进度值。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度参数。
 ---@return self 当前对象，便于链式调用。
 function FlipY:update(time) end
 

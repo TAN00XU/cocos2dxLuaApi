@@ -8,7 +8,7 @@
 local VBox = {}
 ccui.VBox = VBox
 
---- 初始化 `ccui.VBox:initWithSize` 对应的对象或状态。
+--- 按指定尺寸初始化垂直盒式布局。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -19,7 +19,7 @@ ccui.VBox = VBox
 ---@return boolean 初始化是否成功。
 function VBox:initWithSize(size) end
 
---- 创建 `ccui.VBox:create` 对应的对象。
+--- 创建垂直盒式布局，可选定初始尺寸。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -32,14 +32,14 @@ function VBox:initWithSize(size) end
 ---@return self 当前对象，便于链式调用。
 function VBox:create(size) end
 
---- 初始化 `ccui.VBox:init` 对应的对象或状态。
+--- 初始化垂直盒式布局。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function VBox:init() end
 
---- 调用 `ccui.VBox:VBox`。
+--- 构造垂直盒式布局对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

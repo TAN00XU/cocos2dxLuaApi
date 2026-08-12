@@ -8,61 +8,61 @@
 local MotionStreak = {}
 cc.MotionStreak = MotionStreak
 
---- 重置 `cc.MotionStreak:reset` 对应的状态。
+--- 清除当前全部轨迹点并重新开始采样。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:reset() end
 
---- 获取 `cc.MotionStreak:getBlendFunc` 对应的值。
+--- 获取拖尾纹理的混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：拖尾混合函数。
+---@return cc.BlendFunc 拖尾混合函数。
 function MotionStreak:getBlendFunc() end
 
---- 设置 `cc.MotionStreak:setBlendFunc` 对应的值。
+--- 设置拖尾纹理的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：拖尾源颜色和目标颜色的混合因子。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 拖尾混合函数。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setBlendFunc(blendFunc) end
 
---- 调用 `cc.MotionStreak:tintWithColor`。
+--- 将所有现有轨迹点重新染为指定颜色。
 ---
 --- 参数说明：
---- - `colors`：参数 `colors`，类型为 `color3b_table`。
+--- - `colors`：应用到整条拖尾的 RGB 颜色。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param colors color3b_table 参数 `colors`，类型为 `color3b_table`。
+---@param colors color3b_table 拖尾颜色。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:tintWithColor(colors) end
 
---- 获取 `cc.MotionStreak:getTexture` 对应的值。
+--- 获取拖尾使用的纹理。
 ---
 --- 返回说明：
---- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
----@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
+--- - `cc.Texture2D`：拖尾纹理。
+---@return cc.Texture2D 拖尾纹理。
 function MotionStreak:getTexture() end
 
---- 设置 `cc.MotionStreak:setStartingPositionInitialized` 对应的值。
+--- 设置是否已记录用于生成首个轨迹段的起始位置。
 ---
 --- 参数说明：
---- - `bStartingPositionInitialized`：参数 `bStartingPositionInitialized`，类型为 `boolean`。
+--- - `bStartingPositionInitialized`：是否已记录拖尾起始位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param bStartingPositionInitialized boolean 参数 `bStartingPositionInitialized`，类型为 `boolean`。
+---@param bStartingPositionInitialized boolean 起始位置是否已初始化。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setStartingPositionInitialized(bStartingPositionInitialized) end
 
---- 设置 `cc.MotionStreak:setTexture` 对应的值。
+--- 设置拖尾使用的纹理。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
@@ -73,33 +73,33 @@ function MotionStreak:setStartingPositionInitialized(bStartingPositionInitialize
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setTexture(texture) end
 
---- 判断 `cc.MotionStreak:isStartingPositionInitialized` 对应状态是否成立。
+--- 判断是否已记录拖尾起始位置。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：起始位置是否已初始化。
+---@return boolean 起始位置是否已初始化。
 function MotionStreak:isStartingPositionInitialized() end
 
---- 判断 `cc.MotionStreak:isFastMode` 对应状态是否成立。
+--- 判断是否使用较少顶点重算的快速更新模式。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用快速模式。
+---@return boolean 是否启用快速模式。
 function MotionStreak:isFastMode() end
 
---- 获取 `cc.MotionStreak:getStroke` 对应的值。
+--- 获取拖尾带宽度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：拖尾宽度。
+---@return number 拖尾宽度。
 function MotionStreak:getStroke() end
 
---- 初始化 `cc.MotionStreak:initWithFade` 对应的对象或状态。
+--- 使用淡出时间、采样间距、宽度、颜色和纹理初始化运动拖尾。
 ---
 --- 参数说明：
---- - `fade`：参数 `fade`，类型为 `number`。
---- - `minSeg`：参数 `minSeg`，类型为 `number`。
---- - `stroke`：参数 `stroke`，类型为 `number`。
+--- - `fade`：每个轨迹点从生成到完全消失的时间，单位为秒。
+--- - `minSeg`：生成新轨迹点所需的最小移动距离。
+--- - `stroke`：拖尾带宽度。
 --- - `color`：颜色值。类型为 `color3b_table`。
 --- - `path`：路径。类型为 `string`。
 ---
@@ -107,65 +107,65 @@ function MotionStreak:getStroke() end
 --- - `boolean`：初始化是否成功。
 ---@overload fun(fade: number, minSeg: number, stroke: number, color: color3b_table, path: cc.Texture2D): boolean
 ---@overload fun(fade: number, minSeg: number, stroke: number, color: color3b_table, path: string): boolean
----@param fade number 参数 `fade`，类型为 `number`。
----@param minSeg number 参数 `minSeg`，类型为 `number`。
----@param stroke number 参数 `stroke`，类型为 `number`。
+---@param fade number 轨迹点淡出时间，单位为秒。
+---@param minSeg number 最小采样距离。
+---@param stroke number 拖尾宽度。
 ---@param color color3b_table 颜色值。类型为 `color3b_table`。
 ---@param path string 路径。类型为 `string`。
 ---@return boolean 初始化是否成功。
 function MotionStreak:initWithFade(fade, minSeg, stroke, color, path) end
 
---- 设置 `cc.MotionStreak:setFastMode` 对应的值。
+--- 设置是否使用较少顶点重算的快速更新模式。
 ---
 --- 参数说明：
---- - `bFastMode`：参数 `bFastMode`，类型为 `boolean`。
+--- - `bFastMode`：是否启用快速模式。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param bFastMode boolean 参数 `bFastMode`，类型为 `boolean`。
+---@param bFastMode boolean 是否启用快速模式。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setFastMode(bFastMode) end
 
---- 设置 `cc.MotionStreak:setStroke` 对应的值。
+--- 设置拖尾带宽度。
 ---
 --- 参数说明：
---- - `stroke`：参数 `stroke`，类型为 `number`。
+--- - `stroke`：新的拖尾宽度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param stroke number 参数 `stroke`，类型为 `number`。
+---@param stroke number 拖尾宽度。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setStroke(stroke) end
 
---- 创建 `cc.MotionStreak:create` 对应的对象。
+--- 创建按节点移动路径生成并逐渐淡出的运动拖尾。
 ---
 --- 参数说明：
---- - `timeToFade`：参数 `timeToFade`，类型为 `number`。
---- - `minSeg`：参数 `minSeg`，类型为 `number`。
---- - `strokeWidth`：参数 `strokeWidth`，类型为 `number`。
---- - `strokeColor`：参数 `strokeColor`，类型为 `color3b_table`。
---- - `imagePath`：参数 `imagePath`，类型为 `string`。
+--- - `timeToFade`：轨迹点淡出时间，单位为秒。
+--- - `minSeg`：生成新轨迹点所需的最小移动距离。
+--- - `strokeWidth`：拖尾带宽度。
+--- - `strokeColor`：拖尾 RGB 颜色。
+--- - `imagePath`：拖尾纹理文件路径；纹理对象形式见重载。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(timeToFade: number, minSeg: number, strokeWidth: number, strokeColor: color3b_table, imagePath: cc.Texture2D): self
 ---@overload fun(timeToFade: number, minSeg: number, strokeWidth: number, strokeColor: color3b_table, imagePath: string): self
----@param timeToFade number 参数 `timeToFade`，类型为 `number`。
----@param minSeg number 参数 `minSeg`，类型为 `number`。
----@param strokeWidth number 参数 `strokeWidth`，类型为 `number`。
----@param strokeColor color3b_table 参数 `strokeColor`，类型为 `color3b_table`。
----@param imagePath string 参数 `imagePath`，类型为 `string`。
+---@param timeToFade number 轨迹点淡出时间，单位为秒。
+---@param minSeg number 最小采样距离。
+---@param strokeWidth number 拖尾宽度。
+---@param strokeColor color3b_table 拖尾颜色。
+---@param imagePath string 拖尾纹理文件路径。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:create(timeToFade, minSeg, strokeWidth, strokeColor, imagePath) end
 
---- 判断 `cc.MotionStreak:isOpacityModifyRGB` 对应状态是否成立。
+--- 判断拖尾颜色是否按不透明度使用预乘 Alpha 方式调整。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否按不透明度修改 RGB。
+---@return boolean 是否按不透明度修改 RGB。
 function MotionStreak:isOpacityModifyRGB() end
 
---- 设置 `cc.MotionStreak:setOpacity` 对应的值。
+--- 设置整条拖尾的不透明度。
 ---
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `integer`。
@@ -176,7 +176,7 @@ function MotionStreak:isOpacityModifyRGB() end
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setOpacity(opacity) end
 
---- 设置 `cc.MotionStreak:setPositionY` 对应的值。
+--- 设置用于生成新轨迹点的 Y 坐标。
 ---
 --- 参数说明：
 --- - `y`：Y 坐标或 Y 分量。类型为 `number`。
@@ -187,7 +187,7 @@ function MotionStreak:setOpacity(opacity) end
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setPositionY(y) end
 
---- 设置 `cc.MotionStreak:setPositionX` 对应的值。
+--- 设置用于生成新轨迹点的 X 坐标。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -198,46 +198,46 @@ function MotionStreak:setPositionY(y) end
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setPositionX(x) end
 
---- 获取 `cc.MotionStreak:getPositionY` 对应的值。
+--- 获取当前轨迹采样位置的 Y 坐标。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：轨迹采样位置 Y 坐标。
+---@return number 轨迹采样位置 Y 坐标。
 function MotionStreak:getPositionY() end
 
---- 获取 `cc.MotionStreak:getPositionX` 对应的值。
+--- 获取当前轨迹采样位置的 X 坐标。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：轨迹采样位置 X 坐标。
+---@return number 轨迹采样位置 X 坐标。
 function MotionStreak:getPositionX() end
 
---- 获取 `cc.MotionStreak:getPosition3D` 对应的值。
+--- 获取当前轨迹采样位置的三维坐标。
 ---
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `vec3_table`：轨迹采样位置三维坐标。
+---@return vec3_table 轨迹采样位置三维坐标。
 function MotionStreak:getPosition3D() end
 
---- 设置 `cc.MotionStreak:setOpacityModifyRGB` 对应的值。
+--- 设置拖尾颜色是否按不透明度同步修改 RGB。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `boolean`。
+--- - `value`：是否按不透明度修改 RGB。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param value boolean 数值或对象值。类型为 `boolean`。
+---@param value boolean 是否按不透明度修改 RGB。
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setOpacityModifyRGB(value) end
 
---- 获取 `cc.MotionStreak:getOpacity` 对应的值。
+--- 获取整条拖尾的不透明度。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：拖尾不透明度，范围通常为 0 到 255。
+---@return integer 拖尾不透明度。
 function MotionStreak:getOpacity() end
 
---- 设置 `cc.MotionStreak:setPosition` 对应的值。
+--- 设置用于生成新轨迹点的二维位置。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -252,7 +252,7 @@ function MotionStreak:getOpacity() end
 ---@return self 当前对象，便于链式调用。
 function MotionStreak:setPosition(x, y) end
 
---- 获取 `cc.MotionStreak:getPosition` 对应的值。
+--- 获取当前轨迹采样位置的二维坐标分量。
 ---
 --- 返回说明：
 --- - `x`：X 坐标。
@@ -261,7 +261,7 @@ function MotionStreak:setPosition(x, y) end
 ---@return number y Y 坐标。
 function MotionStreak:getPosition() end
 
---- 调用 `cc.MotionStreak:MotionStreak`。
+--- 构造运动拖尾节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

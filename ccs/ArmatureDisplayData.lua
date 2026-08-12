@@ -7,11 +7,11 @@
 ---@class ccs.ArmatureDisplayData : ccs.DisplayData
 local ArmatureDisplayData = {}
 ccs.ArmatureDisplayData = ArmatureDisplayData
---- 创建 ArmatureDisplayData 对应的对象。
+--- 构造骨骼动画显示数据对象。
 ---@return ccs.ArmatureDisplayData
 function ArmatureDisplayData:new() end
 
---- 创建 `ccs.ArmatureDisplayData:create` 对应的对象。
+--- 创建骨骼动画显示数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

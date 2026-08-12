@@ -8,18 +8,18 @@
 local RemoveSelf = {}
 cc.RemoveSelf = RemoveSelf
 
---- 初始化 `cc.RemoveSelf:init` 对应的对象或状态。
+--- 初始化移除自身动作。
 ---
 --- 参数说明：
---- - `isNeedCleanUp`：参数 `isNeedCleanUp`，类型为 `boolean`。
+--- - `isNeedCleanUp`：移除节点时是否清理其动作和子节点资源。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param isNeedCleanUp boolean 参数 `isNeedCleanUp`，类型为 `boolean`。
+---@param isNeedCleanUp boolean 移除节点时是否清理其动作和子节点资源。
 ---@return boolean 初始化是否成功。
 function RemoveSelf:init(isNeedCleanUp) end
 
---- 创建 `cc.RemoveSelf:create` 对应的对象。
+--- 创建移除自身动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -33,7 +33,7 @@ function RemoveSelf:create() end
 ---@return self 当前对象，便于链式调用。
 function RemoveSelf:clone() end
 
---- 更新 `cc.RemoveSelf:update` 对应的状态。
+--- 执行动作并从父节点移除目标节点。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

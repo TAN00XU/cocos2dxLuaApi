@@ -8,144 +8,144 @@
 local BoneNode = {}
 ccs.BoneNode = BoneNode
 
---- 获取 `ccs.BoneNode:getDebugDrawWidth` 对应的值。
+--- 获取调试绘制骨骼的线宽。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：调试绘制线宽。
+---@return number 调试绘制线宽。
 function BoneNode:getDebugDrawWidth() end
 
---- 获取 `ccs.BoneNode:getChildBones` 对应的值。
+--- 获取直接子骨骼节点列表。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
+--- - `array_table`：直接子骨骼节点数组。
 ---@overload fun(): array_table
----@return array_table 获取到的 Lua 表数据。
+---@return array_table 直接子骨骼节点数组。
 function BoneNode:getChildBones() end
 
---- 获取 `ccs.BoneNode:getBlendFunc` 对应的值。
+--- 获取骨骼节点的渲染混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：当前源因子和目标因子。
+---@return cc.BlendFunc 当前源因子和目标因子。
 function BoneNode:getBlendFunc() end
 
---- 获取 `ccs.BoneNode:getAllSubBones` 对应的值。
+--- 获取所有后代骨骼节点列表。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：直接子骨骼节点数组。
+---@return array_table 直接子骨骼节点数组。
 function BoneNode:getAllSubBones() end
 
---- 设置 `ccs.BoneNode:setBlendFunc` 对应的值。
+--- 设置骨骼节点的渲染混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：源因子和目标因子组成的混合函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 源因子和目标因子组成的混合函数。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setBlendFunc(blendFunc) end
 
---- 设置 `ccs.BoneNode:setDebugDrawEnabled` 对应的值。
+--- 设置是否绘制骨骼调试图形。
 ---
 --- 参数说明：
---- - `isDebugDraw`：参数 `isDebugDraw`，类型为 `boolean`。
+--- - `isDebugDraw`：是否启用调试绘制。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param isDebugDraw boolean 参数 `isDebugDraw`，类型为 `boolean`。
+---@param isDebugDraw boolean 是否启用调试绘制。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setDebugDrawEnabled(isDebugDraw) end
 
---- 获取 `ccs.BoneNode:getVisibleSkinsRect` 对应的值。
+--- 获取所有可见皮肤合并后的包围盒。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：可见皮肤包围盒。
+---@return rect_table 可见皮肤包围盒。
 function BoneNode:getVisibleSkinsRect() end
 
---- 获取 `ccs.BoneNode:getAllSubSkins` 对应的值。
+--- 获取所有后代骨骼的皮肤列表。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：相关骨骼或皮肤数组。
+---@return array_table 相关骨骼或皮肤数组。
 function BoneNode:getAllSubSkins() end
 
---- 调用 `ccs.BoneNode:displaySkin`。
+--- 显示指定皮肤，并可选择隐藏其他皮肤。
 ---
 --- 参数说明：
---- - `skin`：参数 `skin`，类型为 `cc.Node`。
---- - `hideOthers`：参数 `hideOthers`，类型为 `boolean`。
+--- - `skin`：要显示的皮肤节点或名称。
+--- - `hideOthers`：是否隐藏同一骨骼的其他皮肤。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(skin: string, hideOthers: boolean): self
 ---@overload fun(skin: cc.Node, hideOthers: boolean): self
----@param skin cc.Node 参数 `skin`，类型为 `cc.Node`。
----@param hideOthers boolean 参数 `hideOthers`，类型为 `boolean`。
+---@param skin cc.Node 要显示的皮肤节点。
+---@param hideOthers boolean 是否隐藏同一骨骼的其他皮肤。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:displaySkin(skin, hideOthers) end
 
 --- 判断 `ccs.BoneNode:isDebugDrawEnabled` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用了调试绘制。
+---@return boolean 是否启用了调试绘制。
 function BoneNode:isDebugDrawEnabled() end
 
---- 添加 `ccs.BoneNode:addSkin` 对应的对象或数据。
+--- 添加皮肤节点并设置其显示状态。
 ---
 --- 参数说明：
---- - `skin`：参数 `skin`，类型为 `cc.Node`。
---- - `display`：参数 `display`，类型为 `boolean`。
---- - `hideOthers`：参数 `hideOthers`，类型为 `boolean`。
+--- - `skin`：要添加的皮肤节点。
+--- - `display`：是否立即显示该皮肤。
+--- - `hideOthers`：是否隐藏其他皮肤。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(skin: cc.Node, display: boolean, hideOthers: boolean): self
 ---@overload fun(skin: cc.Node, display: boolean): self
----@param skin? cc.Node 参数 `skin`，类型为 `cc.Node`。
----@param display? boolean 参数 `display`，类型为 `boolean`。
----@param hideOthers? boolean 参数 `hideOthers`，类型为 `boolean`。
+---@param skin? cc.Node 要添加的皮肤节点。
+---@param display? boolean 是否立即显示该皮肤。
+---@param hideOthers? boolean 是否隐藏其他皮肤。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:addSkin(skin, display, hideOthers) end
 
---- 获取 `ccs.BoneNode:getRootSkeletonNode` 对应的值。
+--- 获取所属的根骨架节点。
 ---
 --- 返回说明：
---- - `ccs.SkeletonNode`：获取到的 `ccs.SkeletonNode` 对象或值。
----@return ccs.SkeletonNode 获取到的 `ccs.SkeletonNode` 对象或值。
+--- - `ccs.SkeletonNode`：根骨架节点。
+---@return ccs.SkeletonNode 根骨架节点。
 function BoneNode:getRootSkeletonNode() end
 
---- 设置 `ccs.BoneNode:setDebugDrawLength` 对应的值。
+--- 设置调试绘制骨骼线段长度。
 ---
 --- 参数说明：
---- - `length`：参数 `length`，类型为 `number`。
+--- - `length`：调试绘制线段长度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param length number 参数 `length`，类型为 `number`。
+---@param length number 调试绘制线段长度。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setDebugDrawLength(length) end
 
---- 获取 `ccs.BoneNode:getSkins` 对应的值。
+--- 获取当前骨骼的全部皮肤列表。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
+--- - `array_table`：当前骨骼皮肤数组。
 ---@overload fun(): array_table
----@return array_table 获取到的 Lua 表数据。
+---@return array_table 当前骨骼皮肤数组。
 function BoneNode:getSkins() end
 
---- 获取 `ccs.BoneNode:getVisibleSkins` 对应的值。
+--- 获取当前可见皮肤列表。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：相关骨骼或皮肤数组。
+---@return array_table 相关骨骼或皮肤数组。
 function BoneNode:getVisibleSkins() end
 
---- 设置 `ccs.BoneNode:setDebugDrawWidth` 对应的值。
+--- 设置调试绘制骨骼线宽。
 ---
 --- 参数说明：
 --- - `width`：宽度。类型为 `number`。
@@ -156,14 +156,14 @@ function BoneNode:getVisibleSkins() end
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setDebugDrawWidth(width) end
 
---- 获取 `ccs.BoneNode:getDebugDrawLength` 对应的值。
+--- 获取调试绘制骨骼线段长度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：调试绘制线段长度。
+---@return number 调试绘制线段长度。
 function BoneNode:getDebugDrawLength() end
 
---- 设置 `ccs.BoneNode:setDebugDrawColor` 对应的值。
+--- 设置骨骼调试绘制颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4f_table`。
@@ -174,27 +174,27 @@ function BoneNode:getDebugDrawLength() end
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setDebugDrawColor(color) end
 
---- 获取 `ccs.BoneNode:getDebugDrawColor` 对应的值。
+--- 获取骨骼调试绘制颜色。
 ---
 --- 返回说明：
---- - `color4f_table`：获取到的 Lua 表数据。
----@return color4f_table 获取到的 Lua 表数据。
+--- - `color4f_table`：调试绘制颜色。
+---@return color4f_table 调试绘制颜色。
 function BoneNode:getDebugDrawColor() end
 
---- 创建 `ccs.BoneNode:create` 对应的对象。
+--- 创建骨骼节点。
 ---
 --- 参数说明：
---- - `length`：参数 `length`，类型为 `integer`。
+--- - `length`：调试绘制骨骼长度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(length: integer): self
 ---@overload fun(): self
----@param length? integer 参数 `length`，类型为 `integer`。
+---@param length? integer 调试绘制骨骼长度。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:create(length) end
 
---- 添加 `ccs.BoneNode:addChild` 对应的对象或数据。
+--- 添加子节点并设置局部 Z 顺序和名称。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -214,19 +214,19 @@ function BoneNode:addChild(child, localZOrder, name) end
 --- 调用 `ccs.BoneNode:draw`。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
+--- - `renderer`：用于提交绘制命令的渲染器。
+--- - `transform`：父节点变换矩阵。
 --- - `flags`：标志位。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param transform mat4_table 父节点变换矩阵。
 ---@param flags integer 标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:draw(renderer, transform, flags) end
 
---- 设置 `ccs.BoneNode:setName` 对应的值。
+--- 设置骨骼节点名称。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -237,10 +237,10 @@ function BoneNode:draw(renderer, transform, flags) end
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setName(name) end
 
---- 设置 `ccs.BoneNode:setAnchorPoint` 对应的值。
+--- 设置骨骼节点锚点。
 ---
 --- 参数说明：
---- - `anchorPoint`：参数 `anchorPoint`，类型为 `vec2_table`。
+--- - `anchorPoint`：归一化锚点坐标。
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
 --- - `y`：Y 坐标或 Y 分量。类型为 `number`。
 ---
@@ -248,13 +248,13 @@ function BoneNode:setName(name) end
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(anchorPoint: vec2_table): self
 ---@overload fun(x: number, y: number): self
----@param anchorPoint? vec2_table 参数 `anchorPoint`，类型为 `vec2_table`。
+---@param anchorPoint? vec2_table 归一化锚点坐标。
 ---@param x? number X 坐标或 X 分量。类型为 `number`。
 ---@param y? number Y 坐标或 Y 分量。类型为 `number`。
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setAnchorPoint(anchorPoint) end
 
---- 设置 `ccs.BoneNode:setLocalZOrder` 对应的值。
+--- 设置骨骼节点局部 Z 顺序。
 ---
 --- 参数说明：
 --- - `localZOrder`：本地 Z 顺序。类型为 `integer`。
@@ -265,7 +265,7 @@ function BoneNode:setAnchorPoint(anchorPoint) end
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setLocalZOrder(localZOrder) end
 
---- 移除 `ccs.BoneNode:removeChild` 对应的对象或数据。
+--- 移除指定子节点。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -278,21 +278,21 @@ function BoneNode:setLocalZOrder(localZOrder) end
 ---@return self 当前对象，便于链式调用。
 function BoneNode:removeChild(child, cleanup) end
 
---- 初始化 `ccs.BoneNode:init` 对应的对象或状态。
+--- 初始化骨骼节点。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function BoneNode:init() end
 
---- 获取 `ccs.BoneNode:getBoundingBox` 对应的值。
+--- 获取骨骼节点包围盒。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：骨骼节点包围盒。
+---@return rect_table 骨骼节点包围盒。
 function BoneNode:getBoundingBox() end
 
---- 设置 `ccs.BoneNode:setContentSize` 对应的值。
+--- 设置骨骼节点内容尺寸。
 ---
 --- 参数说明：
 --- - `contentSize`：内容尺寸。类型为 `size_table`。
@@ -303,7 +303,7 @@ function BoneNode:getBoundingBox() end
 ---@return self 当前对象，便于链式调用。
 function BoneNode:setContentSize(contentSize) end
 
---- 设置 `ccs.BoneNode:setVisible` 对应的值。
+--- 设置骨骼节点可见性。
 ---
 --- 参数说明：
 --- - `visible`：是否可见。类型为 `boolean`。

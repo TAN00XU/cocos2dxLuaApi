@@ -8,46 +8,46 @@
 local EaseRateAction = {}
 cc.EaseRateAction = EaseRateAction
 
---- 设置 `cc.EaseRateAction:setRate` 对应的值。
+--- 设置指数缓动倍率。
 ---
 --- 参数说明：
---- - `rate`：参数 `rate`，类型为 `number`。
+--- - `rate`：指数缓动倍率。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param rate number 参数 `rate`，类型为 `number`。
+---@param rate number 指数缓动倍率。
 ---@return self 当前对象，便于链式调用。
 function EaseRateAction:setRate(rate) end
 
---- 初始化 `cc.EaseRateAction:initWithAction` 对应的对象或状态。
+--- 使用区间动作和倍率初始化指数缓动。
 ---
 --- 参数说明：
---- - `pAction`：参数 `pAction`，类型为 `cc.ActionInterval`。
---- - `fRate`：参数 `fRate`，类型为 `number`。
+--- - `pAction`：要包装的区间动作。
+--- - `fRate`：指数缓动倍率。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param pAction cc.ActionInterval 参数 `pAction`，类型为 `cc.ActionInterval`。
----@param fRate number 参数 `fRate`，类型为 `number`。
+---@param pAction cc.ActionInterval 要包装的区间动作。
+---@param fRate number 指数缓动倍率。
 ---@return boolean 初始化是否成功。
 function EaseRateAction:initWithAction(pAction, fRate) end
 
---- 获取 `cc.EaseRateAction:getRate` 对应的值。
+--- 获取当前指数缓动倍率。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前指数缓动倍率。
+---@return number 当前指数缓动倍率。
 function EaseRateAction:getRate() end
 
---- 创建 `cc.EaseRateAction:create` 对应的对象。
+--- 使用内部动作和速率指数创建缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
---- - `rate`：参数 `rate`，类型为 `number`。
+--- - `rate`：指数缓动倍率。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param action cc.ActionInterval 动作对象。类型为 `cc.ActionInterval`。
----@param rate number 参数 `rate`，类型为 `number`。
+---@param rate number 指数缓动倍率。
 ---@return self 当前对象，便于链式调用。
 function EaseRateAction:create(action, rate) end

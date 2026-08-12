@@ -8,89 +8,89 @@
 local Console = {}
 cc.Console = Console
 
---- 创建 `cc.Console:new` 对应的对象。
+--- 创建调试控制台对象。
 ---
 --- 返回说明：
---- - `cc.Console`：创建出的 `cc.Console` 对象或值。
----@return cc.Console 创建出的 `cc.Console` 对象或值。
+--- - `cc.Console`：新创建的控制台对象。
+---@return cc.Console 新创建的控制台对象。
 function Console:new() end
 
---- 调用 `cc.Console:listenOnTCP`。
+--- 在指定 TCP 端口监听远程控制台连接。
 ---
 --- 参数说明：
---- - `port`：参数 `port`，类型为 `integer`。
+--- - `port`：用于监听的 TCP 端口号。
 ---
 --- 返回说明：
 --- - `boolean`：布尔值。
----@param port integer 参数 `port`，类型为 `integer`。
----@return boolean 布尔值。
+---@param port integer 用于监听的 TCP 端口号。
+---@return boolean 是否成功开始监听。
 function Console:listenOnTCP(port) end
 
---- 调用 `cc.Console:log`。
+--- 向控制台输出日志文本。
 ---
 --- 参数说明：
---- - `buf`：参数 `buf`，类型为 `string`。
+--- - `buf`：要输出的日志文本。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param buf string 参数 `buf`，类型为 `string`。
+---@param buf string 要输出的日志文本。
 ---@return self 当前对象，便于链式调用。
 function Console:log(buf) end
 
---- 调用 `cc.Console:delCommand`。
+--- 删除已注册的控制台命令。
 ---
 --- 参数说明：
---- - `cmdName`：参数 `cmdName`，类型为 `string`。
+--- - `cmdName`：要删除的命令名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param cmdName string 参数 `cmdName`，类型为 `string`。
+---@param cmdName string 要删除的命令名称。
 ---@return self 当前对象，便于链式调用。
 function Console:delCommand(cmdName) end
 
---- 停止 `cc.Console:stop` 对应的流程。
+--- 停止控制台监听和连接处理。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Console:stop() end
 
---- 调用 `cc.Console:listenOnFileDescriptor`。
+--- 使用指定文件描述符监听控制台连接。
 ---
 --- 参数说明：
---- - `fd`：参数 `fd`，类型为 `integer`。
+--- - `fd`：已打开的监听文件描述符。
 ---
 --- 返回说明：
 --- - `boolean`：布尔值。
----@param fd integer 参数 `fd`，类型为 `integer`。
----@return boolean 布尔值。
+---@param fd integer 已打开的监听文件描述符。
+---@return boolean 是否成功开始监听。
 function Console:listenOnFileDescriptor(fd) end
 
---- 设置 `cc.Console:setCommandSeparator` 对应的值。
+--- 设置控制台命令参数的分隔符。
 ---
 --- 参数说明：
---- - `var`：参数 `var`，类型为 `string`。
+--- - `var`：命令分隔符字符串。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param var string 参数 `var`，类型为 `string`。
+---@param var string 命令分隔符字符串。
 ---@return self 当前对象，便于链式调用。
 function Console:setCommandSeparator(var) end
 
---- 设置 `cc.Console:setBindAddress` 对应的值。
+--- 设置控制台监听绑定的网络地址。
 ---
 --- 参数说明：
---- - `address`：参数 `address`，类型为 `string`。
+--- - `address`：要绑定的 IPv4 或 IPv6 地址。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param address string 参数 `address`，类型为 `string`。
+---@param address string 要绑定的 IPv4 或 IPv6 地址。
 ---@return self 当前对象，便于链式调用。
 function Console:setBindAddress(address) end
 
---- 判断 `cc.Console:isIpv6Server` 对应状态是否成立。
+--- 判断当前控制台是否使用 IPv6 监听。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否为 IPv6 服务器。
+---@return boolean 是否为 IPv6 服务器。
 function Console:isIpv6Server() end

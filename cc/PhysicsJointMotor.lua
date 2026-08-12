@@ -8,42 +8,42 @@
 local PhysicsJointMotor = {}
 cc.PhysicsJointMotor = PhysicsJointMotor
 
---- 设置 `cc.PhysicsJointMotor:setRate` 对应的值。
+--- 设置电机关节的目标角速度。
 ---
 --- 参数说明：
---- - `rate`：参数 `rate`，类型为 `number`。
+--- - `rate`：目标角速度，单位为弧度/秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param rate number 参数 `rate`，类型为 `number`。
+---@param rate number 目标角速度，单位为弧度/秒。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointMotor:setRate(rate) end
 
---- 获取 `cc.PhysicsJointMotor:getRate` 对应的值。
+--- 获取电机关节的目标角速度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：目标角速度，单位为弧度/秒。
+---@return number 目标角速度，单位为弧度/秒。
 function PhysicsJointMotor:getRate() end
 
---- 创建 `cc.PhysicsJointMotor:createConstraints` 对应的对象。
+--- 创建电机关节的物理约束。
 ---
 --- 返回说明：
---- - `boolean`：创建出的 布尔值。
----@return boolean 创建出的 布尔值。
+--- - `boolean`：物理约束是否创建成功。
+---@return boolean 物理约束是否创建成功。
 function PhysicsJointMotor:createConstraints() end
 
---- 调用 `cc.PhysicsJointMotor:construct`。
+--- 使用两个刚体和目标角速度构造电机关节。
 ---
 --- 参数说明：
---- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。
---- - `b`：参数 `b`，类型为 `cc.PhysicsBody`。
---- - `rate`：参数 `rate`，类型为 `number`。
+--- - `a`：第一个物理刚体。
+--- - `b`：第二个物理刚体。
+--- - `rate`：目标角速度，单位为弧度/秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param a cc.PhysicsBody 参数 `a`，类型为 `cc.PhysicsBody`。
----@param b cc.PhysicsBody 参数 `b`，类型为 `cc.PhysicsBody`。
----@param rate number 参数 `rate`，类型为 `number`。
+---@param a cc.PhysicsBody 第一个物理刚体。
+---@param b cc.PhysicsBody 第二个物理刚体。
+---@param rate number 目标角速度，单位为弧度/秒。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointMotor:construct(a, b, rate) end

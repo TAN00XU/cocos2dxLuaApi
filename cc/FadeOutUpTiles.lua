@@ -8,16 +8,16 @@
 local FadeOutUpTiles = {}
 cc.FadeOutUpTiles = FadeOutUpTiles
 
---- 创建 `cc.FadeOutUpTiles:create` 对应的对象。
+--- 创建从上方开始淡出瓦片的网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
+--- - `gridSize`：瓦片网格列数和行数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param gridSize size_table 参数 `gridSize`，类型为 `size_table`。
+---@param gridSize size_table 瓦片网格列数和行数。
 ---@return self 当前对象，便于链式调用。
 function FadeOutUpTiles:create(duration, gridSize) end
 
@@ -28,30 +28,30 @@ function FadeOutUpTiles:create(duration, gridSize) end
 ---@return self 当前对象，便于链式调用。
 function FadeOutUpTiles:clone() end
 
---- 调用 `cc.FadeOutUpTiles:transformTile`。
+--- 按距离参数变换指定瓦片的顶点。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
---- - `distance`：参数 `distance`，类型为 `number`。
+--- - `pos`：瓦片在网格中的二维索引。
+--- - `distance`：沿淡出方向的变换距离。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
----@param distance number 参数 `distance`，类型为 `number`。
+---@param pos vec2_table 瓦片在网格中的二维索引。
+---@param distance number 沿淡出方向的变换距离。
 ---@return self 当前对象，便于链式调用。
 function FadeOutUpTiles:transformTile(pos, distance) end
 
---- 调用 `cc.FadeOutUpTiles:testFunc`。
+--- 计算指定瓦片在当前进度下的淡出比例。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `size_table`。
---- - `time`：时间值。类型为 `number`。
+--- - `pos`：瓦片网格位置。
+--- - `time`：动作归一化进度。
 ---
 --- 返回说明：
---- - `number`：数值。
----@param pos size_table 参数 `pos`，类型为 `size_table`。
----@param time number 时间值。类型为 `number`。
----@return number 数值。
+--- - `number`：当前瓦片的淡出比例。
+---@param pos size_table 瓦片网格位置。
+---@param time number 动作归一化进度。
+---@return number 当前瓦片的淡出比例。
 function FadeOutUpTiles:testFunc(pos, time) end
 
 --- 调用 `cc.FadeOutUpTiles:FadeOutUpTiles`。

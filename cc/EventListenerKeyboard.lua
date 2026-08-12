@@ -15,7 +15,7 @@ cc.EventListenerKeyboard = EventListenerKeyboard
 ---@return cc.EventListenerKeyboard 新创建的键盘事件监听器对象
 function EventListenerKeyboard:create() end
 
---- 初始化 `cc.EventListenerKeyboard:init` 对应的对象或状态。
+--- 初始化键盘事件监听器及其按键回调。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。

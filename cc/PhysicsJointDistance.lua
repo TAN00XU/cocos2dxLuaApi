@@ -8,44 +8,44 @@
 local PhysicsJointDistance = {}
 cc.PhysicsJointDistance = PhysicsJointDistance
 
---- 创建 `cc.PhysicsJointDistance:createConstraints` 对应的对象。
+--- 创建距离关节的物理约束。
 ---
 --- 返回说明：
---- - `boolean`：创建出的 布尔值。
----@return boolean 创建出的 布尔值。
+--- - `boolean`：物理约束是否创建成功。
+---@return boolean 物理约束是否创建成功。
 function PhysicsJointDistance:createConstraints() end
 
---- 设置 `cc.PhysicsJointDistance:setDistance` 对应的值。
+--- 设置两个锚点之间的目标距离。
 ---
 --- 参数说明：
---- - `distance`：参数 `distance`，类型为 `number`。
+--- - `distance`：目标距离，单位为物理世界长度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param distance number 参数 `distance`，类型为 `number`。
+---@param distance number 目标距离，单位为物理世界长度。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointDistance:setDistance(distance) end
 
---- 获取 `cc.PhysicsJointDistance:getDistance` 对应的值。
+--- 获取两个锚点之间的目标距离。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：目标距离，单位为物理世界长度。
+---@return number 目标距离，单位为物理世界长度。
 function PhysicsJointDistance:getDistance() end
 
---- 调用 `cc.PhysicsJointDistance:construct`。
+--- 使用两个刚体上的锚点构造距离关节。
 ---
 --- 参数说明：
---- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。
---- - `b`：参数 `b`，类型为 `cc.PhysicsBody`。
---- - `anchr1`：参数 `anchr1`，类型为 `vec2_table`。
---- - `anchr2`：参数 `anchr2`，类型为 `vec2_table`。
+--- - `a`：第一个物理刚体。
+--- - `b`：第二个物理刚体。
+--- - `anchr1`：第一个刚体上的锚点。
+--- - `anchr2`：第二个刚体上的锚点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param a cc.PhysicsBody 参数 `a`，类型为 `cc.PhysicsBody`。
----@param b cc.PhysicsBody 参数 `b`，类型为 `cc.PhysicsBody`。
----@param anchr1 vec2_table 参数 `anchr1`，类型为 `vec2_table`。
----@param anchr2 vec2_table 参数 `anchr2`，类型为 `vec2_table`。
+---@param a cc.PhysicsBody 第一个物理刚体。
+---@param b cc.PhysicsBody 第二个物理刚体。
+---@param anchr1 vec2_table 第一个刚体上的锚点。
+---@param anchr2 vec2_table 第二个刚体上的锚点。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointDistance:construct(a, b, anchr1, anchr2) end

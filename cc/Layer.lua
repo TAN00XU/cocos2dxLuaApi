@@ -98,25 +98,25 @@ function Layer:onTouchesEnded(touches, event) end
 ---@return self 当前对象，便于链式调用。
 function Layer:onTouchesCancelled(touches, event) end
 
---- 创建 `cc.Layer:create` 对应的对象。
+--- 创建并初始化基础图层。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Layer:create() end
 
---- 初始化 `cc.Layer:init` 对应的对象或状态。
+--- 初始化基础图层。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Layer:init() end
 
---- 获取 `cc.Layer:getDescription` 对应的值。
+--- 获取图层的调试描述字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：图层描述文本。
+---@return string 图层描述文本。
 function Layer:getDescription() end
 
 --- 调用 `cc.Layer:Layer`。

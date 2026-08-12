@@ -8,29 +8,29 @@
 local Blink = {}
 cc.Blink = Blink
 
---- 初始化 `cc.Blink:initWithDuration` 对应的对象或状态。
+--- 初始化在指定时间内闪烁指定次数的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `blinks`：参数 `blinks`，类型为 `integer`。
+--- - `blinks`：闪烁次数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param blinks integer 参数 `blinks`，类型为 `integer`。
+---@param blinks integer 闪烁次数。
 ---@return boolean 初始化是否成功。
 function Blink:initWithDuration(duration, blinks) end
 
---- 创建 `cc.Blink:create` 对应的对象。
+--- 创建闪烁动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `blinks`：参数 `blinks`，类型为 `integer`。
+--- - `blinks`：闪烁次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param blinks integer 参数 `blinks`，类型为 `integer`。
+---@param blinks integer 闪烁次数。
 ---@return self 当前对象，便于链式调用。
 function Blink:create(duration, blinks) end
 
@@ -52,7 +52,7 @@ function Blink:startWithTarget(target) end
 ---@return self 当前对象，便于链式调用。
 function Blink:clone() end
 
---- 停止 `cc.Blink:stop` 对应的流程。
+--- 停止闪烁并恢复目标可见状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -66,18 +66,18 @@ function Blink:stop() end
 ---@return self 当前对象，便于链式调用。
 function Blink:reverse() end
 
---- 更新 `cc.Blink:update` 对应的状态。
+--- 根据归一化进度切换目标节点的可见性。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度，通常范围为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度，通常范围为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function Blink:update(time) end
 
---- 调用 `cc.Blink:Blink`。
+--- 构造闪烁动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

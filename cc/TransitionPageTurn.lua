@@ -8,63 +8,63 @@
 local TransitionPageTurn = {}
 cc.TransitionPageTurn = TransitionPageTurn
 
---- 调用 `cc.TransitionPageTurn:actionWithSize`。
+--- 创建用于页翻转过渡的三维网格动作。
 ---
 --- 参数说明：
---- - `vector`：参数 `vector`，类型为 `size_table`。
+--- - `vector`：页翻转网格的列数和行数。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
----@param vector size_table 参数 `vector`，类型为 `size_table`。
----@return cc.ActionInterval `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：页翻转网格动作。
+---@param vector size_table 页翻转网格的列数和行数。
+---@return cc.ActionInterval 页翻转网格动作。
 function TransitionPageTurn:actionWithSize(vector) end
 
---- 初始化 `cc.TransitionPageTurn:initWithDuration` 对应的对象或状态。
+--- 使用持续时间、目标场景和翻页方向初始化页翻转过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
---- - `backwards`：参数 `backwards`，类型为 `boolean`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
+--- - `backwards`：是否反向翻页，显示从目标场景翻回退出场景的视觉方向。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
----@param backwards boolean 参数 `backwards`，类型为 `boolean`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
+---@param backwards boolean 是否反向翻页。
 ---@return boolean 初始化是否成功。
 function TransitionPageTurn:initWithDuration(t, scene, backwards) end
 
---- 创建 `cc.TransitionPageTurn:create` 对应的对象。
+--- 创建页翻转场景过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
---- - `backwards`：参数 `backwards`，类型为 `boolean`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
+--- - `backwards`：是否反向翻页。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
----@param backwards boolean 参数 `backwards`，类型为 `boolean`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
+---@param backwards boolean 是否反向翻页。
 ---@return self 当前对象，便于链式调用。
 function TransitionPageTurn:create(t, scene, backwards) end
 
---- 调用 `cc.TransitionPageTurn:draw`。
+--- 按页翻转方向绘制进入场景和退出场景。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
+--- - `renderer`：用于提交绘制命令的渲染器。
+--- - `transform`：过渡场景的变换矩阵。
 --- - `flags`：标志位。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param transform mat4_table 过渡场景的变换矩阵。
 ---@param flags integer 标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function TransitionPageTurn:draw(renderer, transform, flags) end
 
---- 调用 `cc.TransitionPageTurn:TransitionPageTurn`。
+--- 构造页翻转场景过渡。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

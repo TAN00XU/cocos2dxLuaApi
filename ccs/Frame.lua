@@ -8,25 +8,25 @@
 local Frame = {}
 ccs.Frame = Frame
 
---- 调用 `ccs.Frame:clone`。
+--- 克隆当前关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Frame:clone() end
 
---- 设置 `ccs.Frame:setTweenType` 对应的值。
+--- 设置关键帧使用的缓动类型。
 ---
 --- 参数说明：
---- - `tweenType`：参数 `tweenType`，类型为 `integer`。
+--- - `tweenType`：缓动类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tweenType integer 参数 `tweenType`，类型为 `integer`。
+---@param tweenType integer 缓动类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function Frame:setTweenType(tweenType) end
 
---- 设置 `ccs.Frame:setNode` 对应的值。
+--- 设置该关键帧作用的节点。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。
@@ -37,60 +37,60 @@ function Frame:setTweenType(tweenType) end
 ---@return self 当前对象，便于链式调用。
 function Frame:setNode(node) end
 
---- 设置 `ccs.Frame:setTimeline` 对应的值。
+--- 设置该关键帧所属的时间轴。
 ---
 --- 参数说明：
---- - `timeline`：参数 `timeline`，类型为 `ccs.Timeline`。
+--- - `timeline`：所属的时间轴对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param timeline ccs.Timeline 参数 `timeline`，类型为 `ccs.Timeline`。
+---@param timeline ccs.Timeline 所属的时间轴对象。
 ---@return self 当前对象，便于链式调用。
 function Frame:setTimeline(timeline) end
 
---- 判断 `ccs.Frame:isEnterWhenPassed` 对应状态是否成立。
+--- 判断播放位置越过该帧时是否需要触发进入逻辑。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：越过该帧时是否进入该帧。
+---@return boolean 越过该帧时是否进入该帧。
 function Frame:isEnterWhenPassed() end
 
---- 获取 `ccs.Frame:getTweenType` 对应的值。
+--- 获取关键帧使用的缓动类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：缓动类型枚举值。
+---@return integer 缓动类型枚举值。
 function Frame:getTweenType() end
 
---- 获取 `ccs.Frame:getEasingParams` 对应的值。
+--- 获取缓动函数的附加参数。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：缓动参数列表。
+---@return array_table 缓动参数列表。
 function Frame:getEasingParams() end
 
---- 设置 `ccs.Frame:setEasingParams` 对应的值。
+--- 设置缓动函数的附加参数。
 ---
 --- 参数说明：
---- - `easingParams`：参数 `easingParams`，类型为 `array_table`。
+--- - `easingParams`：缓动参数列表。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param easingParams array_table 参数 `easingParams`，类型为 `array_table`。
+---@param easingParams array_table 缓动参数列表。
 ---@return self 当前对象，便于链式调用。
 function Frame:setEasingParams(easingParams) end
 
---- 获取 `ccs.Frame:getFrameIndex` 对应的值。
+--- 获取该关键帧在时间轴中的帧索引。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：帧索引。
+---@return integer 帧索引。
 function Frame:getFrameIndex() end
 
---- 调用 `ccs.Frame:apply`。
+--- 按插值进度将该帧的属性应用到目标节点。
 ---
 --- 参数说明：
---- - `percent`：百分比数值。类型为 `number`。
+--- - `percent`：当前关键帧区间内的插值进度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -98,14 +98,14 @@ function Frame:getFrameIndex() end
 ---@return self 当前对象，便于链式调用。
 function Frame:apply(percent) end
 
---- 判断 `ccs.Frame:isTween` 对应状态是否成立。
+--- 判断是否在该关键帧与下一关键帧之间执行补间。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用补间。
+---@return boolean 是否启用补间。
 function Frame:isTween() end
 
---- 设置 `ccs.Frame:setFrameIndex` 对应的值。
+--- 设置该关键帧在时间轴中的帧索引。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
@@ -116,27 +116,27 @@ function Frame:isTween() end
 ---@return self 当前对象，便于链式调用。
 function Frame:setFrameIndex(frameIndex) end
 
---- 设置 `ccs.Frame:setTween` 对应的值。
+--- 设置是否在该关键帧与下一关键帧之间执行补间。
 ---
 --- 参数说明：
---- - `tween`：参数 `tween`，类型为 `boolean`。
+--- - `tween`：是否启用补间。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tween boolean 参数 `tween`，类型为 `boolean`。
+---@param tween boolean 是否启用补间。
 ---@return self 当前对象，便于链式调用。
 function Frame:setTween(tween) end
 
---- 获取 `ccs.Frame:getTimeline` 对应的值。
+--- 获取该关键帧所属的时间轴。
 ---
 --- 返回说明：
---- - `ccs.Timeline`：获取到的 `ccs.Timeline` 对象或值。
----@return ccs.Timeline 获取到的 `ccs.Timeline` 对象或值。
+--- - `ccs.Timeline`：所属的时间轴对象。
+---@return ccs.Timeline 所属的时间轴对象。
 function Frame:getTimeline() end
 
---- 获取 `ccs.Frame:getNode` 对应的值。
+--- 获取该关键帧作用的节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：目标节点。
+---@return cc.Node 目标节点。
 function Frame:getNode() end

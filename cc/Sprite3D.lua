@@ -8,274 +8,274 @@
 local Sprite3D = {}
 cc.Sprite3D = Sprite3D
 
---- 设置 `cc.Sprite3D:setCullFaceEnabled` 对应的值。
+--- 设置是否启用背面剔除。
 ---
 --- 参数说明：
---- - `enable`：是否启用。类型为 `boolean`。
+--- - `enable`：是否启用面剔除。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enable boolean 是否启用。类型为 `boolean`。
+---@param enable boolean 是否启用面剔除。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setCullFaceEnabled(enable) end
 
---- 设置 `cc.Sprite3D:setTexture` 对应的值。
+--- 为精灵的网格设置纹理。
 ---
 --- 参数说明：
---- - `texFile`：参数 `texFile`，类型为 `string`。
+--- - `texFile`：纹理文件路径；重载也接受已加载的纹理对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(texFile: cc.Texture2D): self
 ---@overload fun(texFile: string): self
----@param texFile string 参数 `texFile`，类型为 `string`。
+---@param texFile string 纹理文件路径。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setTexture(texFile) end
 
---- 获取 `cc.Sprite3D:getLightMask` 对应的值。
+--- 获取灯光掩码，用于筛选影响该精灵的灯光。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：当前灯光掩码位集。
+---@return integer 当前灯光掩码位集。
 function Sprite3D:getLightMask() end
 
---- 获取 `cc.Sprite3D:getMaterial` 对应的值。
+--- 获取指定网格使用的材质。
 ---
 --- 参数说明：
---- - `meshIndex`：参数 `meshIndex`，类型为 `integer`。
+--- - `meshIndex`：网格索引。
 ---
 --- 返回说明：
---- - `cc.Material`：获取到的 `cc.Material` 对象或值。
----@param meshIndex integer 参数 `meshIndex`，类型为 `integer`。
----@return cc.Material 获取到的 `cc.Material` 对象或值。
+--- - `cc.Material`：该网格当前使用的材质。
+---@param meshIndex integer 网格索引。
+---@return cc.Material 该网格当前使用的材质。
 function Sprite3D:getMaterial(meshIndex) end
 
---- 设置 `cc.Sprite3D:setCullFace` 对应的值。
+--- 设置要剔除的面。
 ---
 --- 参数说明：
---- - `side`：参数 `side`，类型为 `integer`。
+--- - `side`：面剔除模式枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param side integer 参数 `side`，类型为 `integer`。
+---@param side integer 面剔除模式枚举值。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setCullFace(side) end
 
---- 获取 `cc.Sprite3D:getMeshes` 对应的值。
+--- 获取模型包含的全部网格。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：由 `cc.Mesh` 组成的数组。
+---@return array_table 由 `cc.Mesh` 组成的数组。
 function Sprite3D:getMeshes() end
 
---- 移除 `cc.Sprite3D:removeAllAttachNode` 对应的对象或数据。
+--- 移除所有骨骼挂接节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:removeAllAttachNode() end
 
---- 设置 `cc.Sprite3D:setMaterial` 对应的值。
+--- 为全部网格或指定网格设置材质。
 ---
 --- 参数说明：
---- - `material`：参数 `material`，类型为 `cc.Material`。
---- - `meshIndex`：参数 `meshIndex`，类型为 `integer`。
+--- - `material`：要应用的材质。
+--- - `meshIndex`：可选网格索引；省略时应用到全部网格。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(material: cc.Material, meshIndex: integer): self
 ---@overload fun(material: cc.Material): self
----@param material? cc.Material 参数 `material`，类型为 `cc.Material`。
----@param meshIndex? integer 参数 `meshIndex`，类型为 `integer`。
+---@param material? cc.Material 要应用的材质。
+---@param meshIndex? integer 可选网格索引；省略时应用到全部网格。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setMaterial(material, meshIndex) end
 
---- 获取 `cc.Sprite3D:getMesh` 对应的值。
+--- 获取模型的首个网格。
 ---
 --- 返回说明：
---- - `cc.Mesh`：获取到的 `cc.Mesh` 对象或值。
----@return cc.Mesh 获取到的 `cc.Mesh` 对象或值。
+--- - `cc.Mesh`：首个网格。
+---@return cc.Mesh 首个网格。
 function Sprite3D:getMesh() end
 
---- 获取 `cc.Sprite3D:getMeshCount` 对应的值。
+--- 获取模型包含的网格数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：网格数量。
+---@return integer 网格数量。
 function Sprite3D:getMeshCount() end
 
---- 获取 `cc.Sprite3D:getMeshByIndex` 对应的值。
+--- 按索引获取网格。
 ---
 --- 参数说明：
---- - `index`：索引值。类型为 `integer`。
+--- - `index`：网格索引。
 ---
 --- 返回说明：
---- - `cc.Mesh`：获取到的 `cc.Mesh` 对象或值。
----@param index integer 索引值。类型为 `integer`。
----@return cc.Mesh 获取到的 `cc.Mesh` 对象或值。
+--- - `cc.Mesh`：指定索引的网格。
+---@param index integer 网格索引。
+---@return cc.Mesh 指定索引的网格。
 function Sprite3D:getMeshByIndex(index) end
 
---- 判断 `cc.Sprite3D:isForceDepthWrite` 对应状态是否成立。
+--- 判断是否强制写入深度缓冲区。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用强制深度写入时返回 `true`。
+---@return boolean 是否强制写入深度缓冲区。
 function Sprite3D:isForceDepthWrite() end
 
---- 获取 `cc.Sprite3D:getBlendFunc` 对应的值。
+--- 获取当前颜色混合因子。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：当前混合配置。
+---@return cc.BlendFunc 当前混合配置。
 function Sprite3D:getBlendFunc() end
 
---- 设置 `cc.Sprite3D:setLightMask` 对应的值。
+--- 设置灯光掩码，用于筛选影响该精灵的灯光。
 ---
 --- 参数说明：
---- - `mask`：参数 `mask`，类型为 `integer`。
+--- - `mask`：灯光掩码位集。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param mask integer 参数 `mask`，类型为 `integer`。
+---@param mask integer 灯光掩码位集。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setLightMask(mask) end
 
---- 获取 `cc.Sprite3D:getAttachNode` 对应的值。
+--- 获取指定骨骼对应的挂接节点。
 ---
 --- 参数说明：
---- - `boneName`：参数 `boneName`，类型为 `string`。
+--- - `boneName`：骨骼名称。
 ---
 --- 返回说明：
---- - `cc.AttachNode`：获取到的 `cc.AttachNode` 对象或值。
----@param boneName string 参数 `boneName`，类型为 `string`。
----@return cc.AttachNode 获取到的 `cc.AttachNode` 对象或值。
+--- - `cc.AttachNode`：绑定到该骨骼的挂接节点。
+---@param boneName string 骨骼名称。
+---@return cc.AttachNode 绑定到该骨骼的挂接节点。
 function Sprite3D:getAttachNode(boneName) end
 
---- 设置 `cc.Sprite3D:setBlendFunc` 对应的值。
+--- 设置颜色混合因子。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：源颜色与目标颜色的混合配置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 源颜色与目标颜色的混合配置。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setBlendFunc(blendFunc) end
 
---- 设置 `cc.Sprite3D:setForce2DQueue` 对应的值。
+--- 设置是否强制将该精灵放入 2D 渲染队列。
 ---
 --- 参数说明：
---- - `force2D`：参数 `force2D`，类型为 `boolean`。
+--- - `force2D`：是否强制使用 2D 渲染队列。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param force2D boolean 参数 `force2D`，类型为 `boolean`。
+---@param force2D boolean 是否强制使用 2D 渲染队列。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setForce2DQueue(force2D) end
 
---- 调用 `cc.Sprite3D:genMaterial`。
+--- 根据网格数据生成默认材质。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:genMaterial() end
 
---- 移除 `cc.Sprite3D:removeAttachNode` 对应的对象或数据。
+--- 移除指定骨骼的挂接节点。
 ---
 --- 参数说明：
---- - `boneName`：参数 `boneName`，类型为 `string`。
+--- - `boneName`：骨骼名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param boneName string 参数 `boneName`，类型为 `string`。
+---@param boneName string 骨骼名称。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:removeAttachNode(boneName) end
 
---- 获取 `cc.Sprite3D:getSkeleton` 对应的值。
+--- 获取模型骨骼结构。
 ---
 --- 返回说明：
---- - `cc.Skeleton3D`：获取到的 `cc.Skeleton3D` 对象或值。
----@return cc.Skeleton3D 获取到的 `cc.Skeleton3D` 对象或值。
+--- - `cc.Skeleton3D`：当前骨骼结构。
+---@return cc.Skeleton3D 当前骨骼结构。
 function Sprite3D:getSkeleton() end
 
---- 设置 `cc.Sprite3D:setForceDepthWrite` 对应的值。
+--- 设置是否忽略材质状态并强制写入深度缓冲区。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `boolean`。
+--- - `value`：是否强制写入深度缓冲区。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param value boolean 数值或对象值。类型为 `boolean`。
+---@param value boolean 是否强制写入深度缓冲区。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setForceDepthWrite(value) end
 
---- 获取 `cc.Sprite3D:getMeshByName` 对应的值。
+--- 按名称获取网格。
 ---
 --- 参数说明：
---- - `name`：名称或标识。类型为 `string`。
+--- - `name`：网格名称。
 ---
 --- 返回说明：
---- - `cc.Mesh`：获取到的 `cc.Mesh` 对象或值。
----@param name string 名称或标识。类型为 `string`。
----@return cc.Mesh 获取到的 `cc.Mesh` 对象或值。
+--- - `cc.Mesh`：匹配名称的网格。
+---@param name string 网格名称。
+---@return cc.Mesh 匹配名称的网格。
 function Sprite3D:getMeshByName(name) end
 
---- 创建 `cc.Sprite3D:create` 对应的对象。
+--- 创建空的三维精灵，或从模型文件创建并可选指定纹理。
 ---
 --- 参数说明：
---- - `modelPath`：参数 `modelPath`，类型为 `string`。
---- - `texturePath`：参数 `texturePath`，类型为 `string`。
+--- - `modelPath`：模型文件路径。
+--- - `texturePath`：可选纹理文件路径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(modelPath: string): self
 ---@overload fun(): self
 ---@overload fun(modelPath: string, texturePath: string): self
----@param modelPath? string 参数 `modelPath`，类型为 `string`。
----@param texturePath? string 参数 `texturePath`，类型为 `string`。
+---@param modelPath? string 模型文件路径。
+---@param texturePath? string 可选纹理文件路径。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:create(modelPath, texturePath) end
 
---- 调用 `cc.Sprite3D:draw`。
+--- 将三维精灵的网格绘制命令提交给渲染器。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
---- - `flags`：标志位。类型为 `integer`。
+--- - `renderer`：接收绘制命令的渲染器。
+--- - `transform`：精灵的世界变换矩阵。
+--- - `flags`：节点变换与状态更新标志。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
----@param flags integer 标志位。类型为 `integer`。
+---@param renderer cc.Renderer 接收绘制命令的渲染器。
+---@param transform mat4_table 精灵的世界变换矩阵。
+---@param flags integer 节点变换与状态更新标志。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:draw(renderer, transform, flags) end
 
---- 执行 `cc.Sprite3D:runAction` 对应的流程。
+--- 在三维精灵上运行动作。
 ---
 --- 参数说明：
---- - `action`：动作对象。类型为 `cc.Action`。
+--- - `action`：要运行的动作。
 ---
 --- 返回说明：
---- - `cc.Action`：`cc.Action` 对象或值。
----@param action cc.Action 动作对象。类型为 `cc.Action`。
----@return cc.Action `cc.Action` 对象或值。
+--- - `cc.Action`：已加入动作管理器的动作。
+---@param action cc.Action 要运行的动作。
+---@return cc.Action 已加入动作管理器的动作。
 function Sprite3D:runAction(action) end
 
---- 设置 `cc.Sprite3D:setProgramState` 对应的值。
+--- 为精灵的材质通道设置后端着色程序状态。
 ---
 --- 参数说明：
---- - `programState`：参数 `programState`，类型为 `cc.backend.ProgramState`。
+--- - `programState`：包含着色程序及统一变量状态的后端对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param programState cc.backend.ProgramState 参数 `programState`，类型为 `cc.backend.ProgramState`。
+---@param programState cc.backend.ProgramState 包含着色程序及统一变量状态的后端对象。
 ---@return self 当前对象，便于链式调用。
 function Sprite3D:setProgramState(programState) end
 
---- 获取 `cc.Sprite3D:getBoundingBox` 对应的值。
+--- 获取三维精灵投影到父节点平面后的轴对齐包围矩形。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：父节点坐标系中的包围矩形。
+---@return rect_table 父节点坐标系中的包围矩形。
 function Sprite3D:getBoundingBox() end

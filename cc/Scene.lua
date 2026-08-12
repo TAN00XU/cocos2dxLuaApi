@@ -34,47 +34,47 @@ function Scene:getLights() end
 ---@return self 当前对象，便于链式调用。
 function Scene:setPhysics3DDebugCamera(camera) end
 
---- 初始化 `cc.Scene:initWithPhysics` 对应的对象或状态。
+--- 初始化场景并创建二维物理世界。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Scene:initWithPhysics() end
 
---- 设置 `cc.Scene:setCameraOrderDirty` 对应的值。
+--- 标记摄像机排序已失效，使场景在下次渲染前重新排序摄像机。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Scene:setCameraOrderDirty() end
 
---- 调用 `cc.Scene:render`。
+--- 使用指定观察变换和投影矩阵渲染场景。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `eyeTransform`：参数 `eyeTransform`，类型为 `mat4_table`。
---- - `eyeProjection`：参数 `eyeProjection`，类型为 `mat4_table`。
+--- - `renderer`：用于提交场景绘制命令的渲染器。
+--- - `eyeTransform`：观察空间变换矩阵。
+--- - `eyeProjection`：投影矩阵。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param eyeTransform mat4_table 参数 `eyeTransform`，类型为 `mat4_table`。
----@param eyeProjection mat4_table 参数 `eyeProjection`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交场景绘制命令的渲染器。
+---@param eyeTransform mat4_table 观察空间变换矩阵。
+---@param eyeProjection mat4_table 投影矩阵。
 ---@return self 当前对象，便于链式调用。
 function Scene:render(renderer, eyeTransform, eyeProjection) end
 
---- 调用 `cc.Scene:stepPhysicsAndNavigation`。
+--- 按帧间隔推进场景中的物理模拟和导航系统。
 ---
 --- 参数说明：
---- - `deltaTime`：参数 `deltaTime`，类型为 `number`。
+--- - `deltaTime`：本帧经过的时间，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param deltaTime number 参数 `deltaTime`，类型为 `number`。
+---@param deltaTime number 本帧经过的时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Scene:stepPhysicsAndNavigation(deltaTime) end
 
---- 调用 `cc.Scene:onProjectionChanged`。
+--- 响应导演投影模式变化并更新场景默认摄像机。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `cc.EventCustom`。
@@ -85,14 +85,14 @@ function Scene:stepPhysicsAndNavigation(deltaTime) end
 ---@return self 当前对象，便于链式调用。
 function Scene:onProjectionChanged(event) end
 
---- 获取 `cc.Scene:getPhysicsWorld` 对应的值。
+--- 获取场景拥有的二维物理世界。
 ---
 --- 返回说明：
---- - `cc.PhysicsWorld`：获取到的 `cc.PhysicsWorld` 对象或值。
----@return cc.PhysicsWorld 获取到的 `cc.PhysicsWorld` 对象或值。
+--- - `cc.PhysicsWorld`：二维物理世界；未启用物理时可能为空。
+---@return cc.PhysicsWorld 场景的二维物理世界。
 function Scene:getPhysicsWorld() end
 
---- 初始化 `cc.Scene:initWithSize` 对应的对象或状态。
+--- 使用指定内容尺寸初始化场景。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -103,14 +103,14 @@ function Scene:getPhysicsWorld() end
 ---@return boolean 初始化是否成功。
 function Scene:initWithSize(size) end
 
---- 获取 `cc.Scene:getDefaultCamera` 对应的值。
+--- 获取场景自动创建的默认摄像机。
 ---
 --- 返回说明：
---- - `cc.Camera`：获取到的 `cc.Camera` 对象或值。
----@return cc.Camera 获取到的 `cc.Camera` 对象或值。
+--- - `cc.Camera`：默认摄像机。
+---@return cc.Camera 默认摄像机。
 function Scene:getDefaultCamera() end
 
---- 创建 `cc.Scene:createWithSize` 对应的对象。
+--- 创建指定内容尺寸的场景。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -121,42 +121,42 @@ function Scene:getDefaultCamera() end
 ---@return self 当前对象，便于链式调用。
 function Scene:createWithSize(size) end
 
---- 创建 `cc.Scene:create` 对应的对象。
+--- 创建使用默认尺寸的场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Scene:create() end
 
---- 创建 `cc.Scene:createWithPhysics` 对应的对象。
+--- 创建包含二维物理世界的场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Scene:createWithPhysics() end
 
---- 初始化 `cc.Scene:init` 对应的对象或状态。
+--- 初始化使用默认尺寸和默认摄像机的场景。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Scene:init() end
 
---- 获取 `cc.Scene:getDescription` 对应的值。
+--- 获取场景的调试描述文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：场景描述文本。
+---@return string 场景描述文本。
 function Scene:getDescription() end
 
---- 移除 `cc.Scene:removeAllChildren` 对应的对象或数据。
+--- 移除场景中的所有子节点，并同步清理摄像机和灯光列表。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Scene:removeAllChildren() end
 
---- 调用 `cc.Scene:new`。
+--- 构造场景对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

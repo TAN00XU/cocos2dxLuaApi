@@ -8,43 +8,43 @@
 local ScaleFrame = {}
 ccs.ScaleFrame = ScaleFrame
 
---- 设置 `ccs.ScaleFrame:setScaleY` 对应的值。
+--- 设置目标 Y 轴缩放比例。
 ---
 --- 参数说明：
---- - `scaleY`：参数 `scaleY`，类型为 `number`。
+--- - `scaleY`：Y 轴缩放比例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scaleY number 参数 `scaleY`，类型为 `number`。
+---@param scaleY number 目标 Y 轴缩放倍率。
 ---@return self 当前对象，便于链式调用。
 function ScaleFrame:setScaleY(scaleY) end
 
---- 设置 `ccs.ScaleFrame:setScaleX` 对应的值。
+--- 设置目标 X 轴缩放比例。
 ---
 --- 参数说明：
---- - `scaleX`：参数 `scaleX`，类型为 `number`。
+--- - `scaleX`：X 轴缩放比例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scaleX number 参数 `scaleX`，类型为 `number`。
+---@param scaleX number 目标 X 轴缩放倍率。
 ---@return self 当前对象，便于链式调用。
 function ScaleFrame:setScaleX(scaleX) end
 
---- 获取 `ccs.ScaleFrame:getScaleY` 对应的值。
+--- 获取目标 Y 轴缩放比例。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：Y 轴缩放比例。
+---@return number 目标 Y 轴缩放倍率。
 function ScaleFrame:getScaleY() end
 
---- 获取 `ccs.ScaleFrame:getScaleX` 对应的值。
+--- 获取目标 X 轴缩放比例。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：X 轴缩放比例。
+---@return number 目标 X 轴缩放倍率。
 function ScaleFrame:getScaleX() end
 
---- 设置 `ccs.ScaleFrame:setScale` 对应的值。
+--- 同时设置 X、Y 轴目标缩放比例。
 ---
 --- 参数说明：
 --- - `scale`：缩放比例。类型为 `number`。
@@ -55,21 +55,21 @@ function ScaleFrame:getScaleX() end
 ---@return self 当前对象，便于链式调用。
 function ScaleFrame:setScale(scale) end
 
---- 创建 `ccs.ScaleFrame:create` 对应的对象。
+--- 创建缩放关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ScaleFrame:create() end
 
---- 调用 `ccs.ScaleFrame:clone`。
+--- 复制当前缩放关键帧。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：创建的缩放关键帧。
+---@return ccs.Frame 缩放关键帧副本。
 function ScaleFrame:clone() end
 
---- 调用 `ccs.ScaleFrame:ScaleFrame`。
+--- 构造缩放关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

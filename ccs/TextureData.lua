@@ -7,40 +7,40 @@
 ---@class ccs.TextureData : cc.Ref
 local TextureData = {}
 ccs.TextureData = TextureData
---- 创建 TextureData 对应的对象。
+--- 创建纹理显示数据对象。
 ---@return ccs.TextureData
 function TextureData:new() end
 
---- 获取 `ccs.TextureData:getContourData` 对应的值。
+--- 按索引获取纹理轮廓数据。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `ccs.ContourData`：获取到的 `ccs.ContourData` 对象或值。
----@param index integer 索引值。类型为 `integer`。
----@return ccs.ContourData 获取到的 `ccs.ContourData` 对象或值。
+--- - `ccs.ContourData`：指定索引处的轮廓数据。
+---@param index integer 轮廓数据索引。
+---@return ccs.ContourData 指定索引处的轮廓数据。
 function TextureData:getContourData(index) end
 
---- 初始化 `ccs.TextureData:init` 对应的对象或状态。
+--- 初始化纹理显示数据及其轮廓列表。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function TextureData:init() end
 
---- 添加 `ccs.TextureData:addContourData` 对应的对象或数据。
+--- 向纹理数据添加一个轮廓。
 ---
 --- 参数说明：
---- - `contourData`：参数 `contourData`，类型为 `ccs.ContourData`。
+--- - `contourData`：要添加的轮廓数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param contourData ccs.ContourData 参数 `contourData`，类型为 `ccs.ContourData`。
+---@param contourData ccs.ContourData 要添加的轮廓数据。
 ---@return self 当前对象，便于链式调用。
 function TextureData:addContourData(contourData) end
 
---- 创建 `ccs.TextureData:create` 对应的对象。
+--- 创建并初始化纹理显示数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

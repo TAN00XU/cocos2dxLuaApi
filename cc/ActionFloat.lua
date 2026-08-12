@@ -8,36 +8,36 @@
 local ActionFloat = {}
 cc.ActionFloat = ActionFloat
 
---- 初始化 `cc.ActionFloat:initWithDuration` 对应的对象或状态。
+--- 初始化在指定时间内插值变化的浮点动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `from`：参数 `from`，类型为 `number`。
---- - `to`：参数 `to`，类型为 `number`。
+--- - `from`：插值起始值。
+--- - `to`：插值结束值。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param from number 参数 `from`，类型为 `number`。
----@param to number 参数 `to`，类型为 `number`。
+---@param from number 插值起始值。
+---@param to number 插值结束值。
 ---@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
 ---@return boolean 初始化是否成功。
 function ActionFloat:initWithDuration(duration, from, to, callback) end
 
---- 创建 `cc.ActionFloat:create` 对应的对象。
+--- 创建在指定时间内插值变化的浮点动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `from`：参数 `from`，类型为 `number`。
---- - `to`：参数 `to`，类型为 `number`。
+--- - `from`：插值起始值。
+--- - `to`：插值结束值。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param from number 参数 `from`，类型为 `number`。
----@param to number 参数 `to`，类型为 `number`。
+---@param from number 插值起始值。
+---@param to number 插值结束值。
 ---@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
 ---@return self 当前对象，便于链式调用。
 function ActionFloat:create(duration, from, to, callback) end
@@ -60,7 +60,7 @@ function ActionFloat:startWithTarget(target) end
 ---@return self 当前对象，便于链式调用。
 function ActionFloat:clone() end
 
---- 更新 `cc.ActionFloat:update` 对应的状态。
+--- 按归一化进度计算当前浮点值并触发回调。
 ---
 --- 参数说明：
 --- - `delta`：变化量。类型为 `number`。
@@ -78,7 +78,7 @@ function ActionFloat:update(delta) end
 ---@return self 当前对象，便于链式调用。
 function ActionFloat:reverse() end
 
---- 调用 `cc.ActionFloat:ActionFloat`。
+--- 构造浮点动作对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

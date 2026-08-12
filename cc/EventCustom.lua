@@ -8,20 +8,20 @@
 local EventCustom = {}
 cc.EventCustom = EventCustom
 
---- 获取 `cc.EventCustom:getEventName` 对应的值。
+--- 获取自定义事件名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：自定义事件名称。
+---@return string 自定义事件名称。
 function EventCustom:getEventName() end
 
---- 调用 `cc.EventCustom:EventCustom`。
+--- 使用事件名称初始化自定义事件。
 ---
 --- 参数说明：
 --- - `eventName`：事件名称。类型为 `string`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param eventName string 事件名称。类型为 `string`。
+---@param eventName string 自定义事件名称。
 ---@return self 当前对象，便于链式调用。
 function EventCustom:EventCustom(eventName) end

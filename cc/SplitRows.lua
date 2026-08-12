@@ -8,29 +8,29 @@
 local SplitRows = {}
 cc.SplitRows = SplitRows
 
---- 初始化 `cc.SplitRows:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和行数初始化分割行网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `rows`：参数 `rows`，类型为 `integer`。
+--- - `rows`：网格行数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param rows integer 参数 `rows`，类型为 `integer`。
+---@param rows integer 网格行数。
 ---@return boolean 初始化是否成功。
 function SplitRows:initWithDuration(duration, rows) end
 
---- 创建 `cc.SplitRows:create` 对应的对象。
+--- 创建分割行网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `rows`：参数 `rows`，类型为 `integer`。
+--- - `rows`：网格行数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param rows integer 参数 `rows`，类型为 `integer`。
+---@param rows integer 网格行数。
 ---@return self 当前对象，便于链式调用。
 function SplitRows:create(duration, rows) end
 
@@ -52,7 +52,7 @@ function SplitRows:startWithTarget(target) end
 ---@return self 当前对象，便于链式调用。
 function SplitRows:clone() end
 
---- 更新 `cc.SplitRows:update` 对应的状态。
+--- 按分割行效果更新网格顶点。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

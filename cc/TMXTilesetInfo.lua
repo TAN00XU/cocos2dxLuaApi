@@ -8,18 +8,18 @@
 local TMXTilesetInfo = {}
 cc.TMXTilesetInfo = TMXTilesetInfo
 
---- 获取 `cc.TMXTilesetInfo:getRectForGID` 对应的值。
+--- 根据全局瓦片 ID 获取其在图集中的纹理矩形。
 ---
 --- 参数说明：
---- - `gid`：参数 `gid`，类型为 `integer`。
+--- - `gid`：全局瓦片 ID。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@param gid integer 参数 `gid`，类型为 `integer`。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：图集中对应瓦片的矩形区域。
+---@param gid integer 全局瓦片 ID。
+---@return rect_table 图集中对应瓦片的矩形区域。
 function TMXTilesetInfo:getRectForGID(gid) end
 
---- 调用 `cc.TMXTilesetInfo:TMXTilesetInfo`。
+--- 初始化 TMX 图块集信息对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

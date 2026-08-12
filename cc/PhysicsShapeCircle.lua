@@ -8,64 +8,64 @@
 local PhysicsShapeCircle = {}
 cc.PhysicsShapeCircle = PhysicsShapeCircle
 
---- 获取 `cc.PhysicsShapeCircle:getRadius` 对应的值。
+--- 获取圆形碰撞形状的半径。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：圆形半径。
+---@return number 圆形半径。
 function PhysicsShapeCircle:getRadius() end
 
---- 创建 `cc.PhysicsShapeCircle:create` 对应的对象。
+--- 创建圆形碰撞形状。
 ---
 --- 参数说明：
---- - `radius`：参数 `radius`，类型为 `number`。
---- - `material`：参数 `material`，类型为 `cc.PhysicsMaterial`。
---- - `offset`：参数 `offset`，类型为 `vec2_table`。
+--- - `radius`：圆形半径。
+--- - `material`：密度、摩擦力和弹性等物理材质参数。
+--- - `offset`：圆心在刚体局部坐标系中相对刚体重心的偏移。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param radius number 参数 `radius`，类型为 `number`。
----@param material cc.PhysicsMaterial 参数 `material`，类型为 `cc.PhysicsMaterial`。
----@param offset vec2_table 参数 `offset`，类型为 `vec2_table`。
+---@param radius number 圆形半径。
+---@param material cc.PhysicsMaterial 物理材质参数。
+---@param offset vec2_table 圆心在刚体局部坐标系中相对刚体重心的偏移。
 ---@return self 当前对象，便于链式调用。
 function PhysicsShapeCircle:create(radius, material, offset) end
 
---- 调用 `cc.PhysicsShapeCircle:calculateArea`。
+--- 计算指定半径圆形的面积。
 ---
 --- 参数说明：
---- - `radius`：参数 `radius`，类型为 `number`。
+--- - `radius`：圆形半径。
 ---
 --- 返回说明：
---- - `number`：数值。
----@param radius number 参数 `radius`，类型为 `number`。
----@return number 数值。
+--- - `number`：圆形面积。
+---@param radius number 圆形半径。
+---@return number 圆形面积。
 function PhysicsShapeCircle:calculateArea(radius) end
 
---- 调用 `cc.PhysicsShapeCircle:calculateMoment`。
+--- 计算带偏移圆形绕刚体原点的转动惯量。
 ---
 --- 参数说明：
---- - `mass`：参数 `mass`，类型为 `number`。
---- - `radius`：参数 `radius`，类型为 `number`。
---- - `offset`：参数 `offset`，类型为 `vec2_table`。
+--- - `mass`：形状质量。
+--- - `radius`：圆形半径。
+--- - `offset`：圆心在刚体局部坐标系中相对刚体重心的偏移。
 ---
 --- 返回说明：
---- - `number`：数值。
----@param mass number 参数 `mass`，类型为 `number`。
----@param radius number 参数 `radius`，类型为 `number`。
----@param offset vec2_table 参数 `offset`，类型为 `vec2_table`。
----@return number 数值。
+--- - `number`：转动惯量。
+---@param mass number 形状质量。
+---@param radius number 圆形半径。
+---@param offset vec2_table 圆心在刚体局部坐标系中相对刚体重心的偏移。
+---@return number 转动惯量。
 function PhysicsShapeCircle:calculateMoment(mass, radius, offset) end
 
---- 获取 `cc.PhysicsShapeCircle:getOffset` 对应的值。
+--- 获取圆心相对于刚体重心的位置偏移。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：圆心偏移向量。
+---@return vec2_table 圆心偏移向量。
 function PhysicsShapeCircle:getOffset() end
 
---- 调用 `cc.PhysicsShapeCircle:calculateDefaultMoment`。
+--- 根据当前形状质量、半径和偏移计算默认转动惯量。
 ---
 --- 返回说明：
---- - `number`：数值。
----@return number 数值。
+--- - `number`：当前圆形形状的默认转动惯量。
+---@return number 当前圆形形状的默认转动惯量。
 function PhysicsShapeCircle:calculateDefaultMoment() end

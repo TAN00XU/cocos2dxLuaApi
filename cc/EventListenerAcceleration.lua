@@ -8,7 +8,7 @@
 local EventListenerAcceleration = {}
 cc.EventListenerAcceleration = EventListenerAcceleration
 
---- 创建 `cc.EventListenerAcceleration:create` 对应的对象。
+--- 创建加速度传感器事件监听器。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -19,7 +19,7 @@ cc.EventListenerAcceleration = EventListenerAcceleration
 ---@return self 当前对象，便于链式调用。
 function EventListenerAcceleration:create(callback) end
 
---- 初始化 `cc.EventListenerAcceleration:init` 对应的对象或状态。
+--- 初始化加速度传感器监听器及回调。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。

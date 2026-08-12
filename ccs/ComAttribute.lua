@@ -8,153 +8,153 @@
 local ComAttribute = {}
 ccs.ComAttribute = ComAttribute
 
---- 创建 ComAttribute 对应的对象。
+--- 创建键值属性组件。
 ---@return ccs.ComAttribute
 function ComAttribute:new() end
 
---- 获取 `ccs.ComAttribute:getFloat` 对应的值。
+--- 获取浮点属性；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `def`：参数 `def`，类型为 `number`。
+--- - `def`：键不存在时使用的默认浮点值。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
+--- - `number`：属性值或默认值。
 ---@param key string 键名。类型为 `string`。
----@param def number 参数 `def`，类型为 `number`。
----@return number 获取到的 数值。
+---@param def number 键不存在时使用的默认浮点值。
+---@return number 属性值或默认值。
 function ComAttribute:getFloat(key, def) end
 
---- 获取 `ccs.ComAttribute:getString` 对应的值。
+--- 获取字符串属性；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `def`：参数 `def`，类型为 `string`。
+--- - `def`：键不存在时使用的默认字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
+--- - `string`：属性值或默认值。
 ---@param key string 键名。类型为 `string`。
----@param def string 参数 `def`，类型为 `string`。
----@return string 获取到的 字符串。
+---@param def string 键不存在时使用的默认字符串。
+---@return string 属性值或默认值。
 function ComAttribute:getString(key, def) end
 
---- 设置 `ccs.ComAttribute:setFloat` 对应的值。
+--- 设置指定键的浮点属性。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `number`。
+--- - `value`：要保存的浮点值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value number 数值或对象值。类型为 `number`。
+---@param value number 要保存的浮点值。
 ---@return self 当前对象，便于链式调用。
 function ComAttribute:setFloat(key, value) end
 
---- 设置 `ccs.ComAttribute:setString` 对应的值。
+--- 设置指定键的字符串属性。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `string`。
+--- - `value`：要保存的字符串。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value string 数值或对象值。类型为 `string`。
+---@param value string 要保存的字符串。
 ---@return self 当前对象，便于链式调用。
 function ComAttribute:setString(key, value) end
 
---- 获取 `ccs.ComAttribute:getBool` 对应的值。
+--- 获取布尔属性；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `def`：参数 `def`，类型为 `boolean`。
+--- - `def`：键不存在时使用的默认布尔值。
 ---
 --- 返回说明：
---- - `boolean`：获取到的 布尔值。
+--- - `boolean`：属性值或默认值。
 ---@param key string 键名。类型为 `string`。
----@param def boolean 参数 `def`，类型为 `boolean`。
----@return boolean 获取到的 布尔值。
+---@param def boolean 键不存在时使用的默认布尔值。
+---@return boolean 属性值或默认值。
 function ComAttribute:getBool(key, def) end
 
---- 设置 `ccs.ComAttribute:setInt` 对应的值。
+--- 设置指定键的整数属性。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `integer`。
+--- - `value`：要保存的整数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value integer 数值或对象值。类型为 `integer`。
+---@param value integer 要保存的整数。
 ---@return self 当前对象，便于链式调用。
 function ComAttribute:setInt(key, value) end
 
---- 调用 `ccs.ComAttribute:parse`。
+--- 从 JSON 文件读取并合并属性。
 ---
 --- 参数说明：
---- - `jsonFile`：参数 `jsonFile`，类型为 `string`。
+--- - `jsonFile`：属性 JSON 文件路径。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@param jsonFile string 参数 `jsonFile`，类型为 `string`。
----@return boolean 布尔值。
+--- - `boolean`：是否成功读取属性文件。
+---@param jsonFile string 属性 JSON 文件路径。
+---@return boolean 是否成功读取属性文件。
 function ComAttribute:parse(jsonFile) end
 
---- 获取 `ccs.ComAttribute:getInt` 对应的值。
+--- 获取整数属性；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `def`：参数 `def`，类型为 `integer`。
+--- - `def`：键不存在时使用的默认整数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
+--- - `integer`：属性值或默认值。
 ---@param key string 键名。类型为 `string`。
----@param def integer 参数 `def`，类型为 `integer`。
----@return integer 获取到的 整数值。
+---@param def integer 键不存在时使用的默认整数。
+---@return integer 属性值或默认值。
 function ComAttribute:getInt(key, def) end
 
---- 设置 `ccs.ComAttribute:setBool` 对应的值。
+--- 设置指定键的布尔属性。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `boolean`。
+--- - `value`：要保存的布尔值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value boolean 数值或对象值。类型为 `boolean`。
+---@param value boolean 要保存的布尔值。
 ---@return self 当前对象，便于链式调用。
 function ComAttribute:setBool(key, value) end
 
---- 创建 `ccs.ComAttribute:create` 对应的对象。
+--- 创建并初始化键值属性组件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ComAttribute:create() end
 
---- 创建 `ccs.ComAttribute:createInstance` 对应的对象。
+--- 创建键值属性组件实例。
 ---
 --- 返回说明：
---- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
----@return cc.Ref 创建出的 `cc.Ref` 对象或值。
+--- - `cc.Ref`：新建的引用计数对象。
+---@return cc.Ref 新建的引用计数对象。
 function ComAttribute:createInstance() end
 
---- 初始化 `ccs.ComAttribute:init` 对应的对象或状态。
+--- 初始化键值属性组件。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ComAttribute:init() end
 
---- 调用 `ccs.ComAttribute:serialize`。
+--- 将属性组件序列化到给定目标。
 ---
 --- 参数说明：
---- - `r`：参数 `r`，类型为 `nil`。
+--- - `r`：序列化目标；Lua 绑定中通常传入 `nil`。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@param r nil 参数 `r`，类型为 `nil`。
----@return boolean 布尔值。
+--- - `boolean`：是否序列化成功。
+---@param r nil 序列化目标；Lua 绑定中通常传入 `nil`。
+---@return boolean 是否序列化成功。
 function ComAttribute:serialize(r) end

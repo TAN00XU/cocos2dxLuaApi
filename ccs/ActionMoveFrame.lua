@@ -7,35 +7,35 @@
 ---@class ccs.ActionMoveFrame : ccs.ActionFrame
 local ActionMoveFrame = {}
 ccs.ActionMoveFrame = ActionMoveFrame
---- 创建 ActionMoveFrame 对应的对象。
+--- 创建时间轴移动帧对象。
 ---@return ccs.ActionMoveFrame
 function ActionMoveFrame:new() end
 
---- 设置 `ccs.ActionMoveFrame:setPosition` 对应的值。
+--- 设置时间轴移动帧的目标位置。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
+--- - `pos`：目标二维位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
+---@param pos vec2_table 目标二维位置。
 ---@return self 当前对象，便于链式调用。
 function ActionMoveFrame:setPosition(pos) end
 
---- 获取 `ccs.ActionMoveFrame:getAction` 对应的值。
+--- 根据帧持续时间生成移动动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：获取到的 `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：根据移动帧生成的区间动作。
 ---@param duration number 持续时间。类型为 `number`。
----@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
+---@return cc.ActionInterval 根据移动帧生成的区间动作。
 function ActionMoveFrame:getAction(duration) end
 
---- 获取 `ccs.ActionMoveFrame:getPosition` 对应的值。
+--- 获取时间轴移动帧的目标位置。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：目标二维位置。
+---@return vec2_table 目标二维位置。
 function ActionMoveFrame:getPosition() end

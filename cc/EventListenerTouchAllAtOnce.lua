@@ -8,21 +8,21 @@
 local EventListenerTouchAllAtOnce = {}
 cc.EventListenerTouchAllAtOnce = EventListenerTouchAllAtOnce
 
---- 创建 `cc.EventListenerTouchAllAtOnce:create` 对应的对象。
+--- 创建多点触摸全量事件监听器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EventListenerTouchAllAtOnce:create() end
 
---- 创建 `cc.EventListenerTouchAllAtOnce:new` 对应的对象。
+--- 构造多点触摸全量事件监听器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EventListenerTouchAllAtOnce:new() end
 
---- 初始化 `cc.EventListenerTouchAllAtOnce:init` 对应的对象或状态。
+--- 初始化多点触摸监听器及其回调。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。

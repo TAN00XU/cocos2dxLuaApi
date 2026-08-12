@@ -8,39 +8,39 @@
 local AlphaFrame = {}
 ccs.AlphaFrame = AlphaFrame
 
---- 获取 `ccs.AlphaFrame:getAlpha` 对应的值。
+--- 获取目标透明度。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：目标透明度，范围通常为 0 到 255。
+---@return integer 目标透明度，范围通常为 0 到 255。
 function AlphaFrame:getAlpha() end
 
---- 设置 `ccs.AlphaFrame:setAlpha` 对应的值。
+--- 设置目标透明度。
 ---
 --- 参数说明：
---- - `alpha`：参数 `alpha`，类型为 `integer`。
+--- - `alpha`：目标透明度，范围通常为 0 到 255。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param alpha integer 参数 `alpha`，类型为 `integer`。
+---@param alpha integer 目标透明度，范围通常为 0 到 255。
 ---@return self 当前对象，便于链式调用。
 function AlphaFrame:setAlpha(alpha) end
 
---- 创建 `ccs.AlphaFrame:create` 对应的对象。
+--- 创建透明度关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function AlphaFrame:create() end
 
---- 调用 `ccs.AlphaFrame:clone`。
+--- 复制当前透明度关键帧。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：复制得到的关键帧。
+---@return ccs.Frame 复制得到的关键帧。
 function AlphaFrame:clone() end
 
---- 调用 `ccs.AlphaFrame:AlphaFrame`。
+--- 构造透明度关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,18 +8,18 @@
 local CardinalSplineBy = {}
 cc.CardinalSplineBy = CardinalSplineBy
 
---- 创建 CardinalSplineBy 对应的对象。
+--- 创建沿控制点相对路径移动的基数样条动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `points`：参数 `points`，类型为 `cc.PointArray`。
---- - `tension`：参数 `tension`，类型为 `number`。
+--- - `points`：控制样条曲线的点集合。
+--- - `tension`：样条张力系数。
 ---
 --- 返回说明：
 --- - `cc.CardinalSplineBy`：新创建的对象。
 ---@param duration number 持续时间。类型为 `number`。
----@param points cc.PointArray 参数 `points`，类型为 `cc.PointArray`。
----@param tension number 参数 `tension`，类型为 `number`。
+---@param points cc.PointArray 控制样条曲线的点集合。
+---@param tension number 样条张力系数。
 ---@return cc.CardinalSplineBy 新创建的对象。
 function CardinalSplineBy:create(duration, points, tension) end
 
@@ -41,14 +41,14 @@ function CardinalSplineBy:startWithTarget(target) end
 ---@return self 当前对象，便于链式调用。
 function CardinalSplineBy:clone() end
 
---- 更新 `cc.CardinalSplineBy:updatePosition` 对应的状态。
+--- 根据样条计算出的新位置更新目标节点。
 ---
 --- 参数说明：
---- - `newPos`：参数 `newPos`，类型为 `vec2_table`。
+--- - `newPos`：样条计算出的二维位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param newPos vec2_table 参数 `newPos`，类型为 `vec2_table`。
+---@param newPos vec2_table 样条计算出的二维位置。
 ---@return self 当前对象，便于链式调用。
 function CardinalSplineBy:updatePosition(newPos) end
 

@@ -8,16 +8,16 @@
 local TransitionProgressRadialCCW = {}
 cc.TransitionProgressRadialCCW = TransitionProgressRadialCCW
 
---- 创建 `cc.TransitionProgressRadialCCW:create` 对应的对象。
+--- 创建逆时针径向展开的场景进度过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：要切换到的目标场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 要切换到的目标场景。
 ---@return self 当前对象，便于链式调用。
 function TransitionProgressRadialCCW:create(t, scene) end
 

@@ -7,23 +7,23 @@
 local PhysicsContactPostSolve = {}
 cc.PhysicsContactPostSolve = PhysicsContactPostSolve
 
---- 获取 `cc.PhysicsContactPostSolve:getFriction` 对应的值。
+--- 获取碰撞求解后使用的摩擦系数。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：接触面的摩擦系数。
+---@return number 接触面的摩擦系数。
 function PhysicsContactPostSolve:getFriction() end
 
---- 获取 `cc.PhysicsContactPostSolve:getSurfaceVelocity` 对应的值。
+--- 获取碰撞求解后接触面的相对表面速度。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：接触面的相对表面速度向量。
+---@return vec2_table 接触面的相对表面速度向量。
 function PhysicsContactPostSolve:getSurfaceVelocity() end
 
---- 获取 `cc.PhysicsContactPostSolve:getRestitution` 对应的值。
+--- 获取碰撞求解后使用的弹性系数。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：接触面的弹性恢复系数。
+---@return number 接触面的弹性恢复系数。
 function PhysicsContactPostSolve:getRestitution() end

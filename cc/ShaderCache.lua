@@ -8,45 +8,45 @@
 local ShaderCache = {}
 cc.ShaderCache = ShaderCache
 
---- 移除 `cc.ShaderCache:removeUnusedShader` 对应的对象或数据。
+--- 从全局缓存中移除当前未被使用的着色器模块。
 ---
 --- 返回说明：
---- - `cc.backend.ShaderCache`：`cc.backend.ShaderCache` 对象或值。
----@return cc.backend.ShaderCache `cc.backend.ShaderCache` 对象或值。
+--- - `cc.backend.ShaderCache`：执行清理操作的后端着色器缓存实例。
+---@return cc.backend.ShaderCache 执行清理操作的后端着色器缓存实例。
 function ShaderCache:removeUnusedShader() end
 
---- 调用 `cc.ShaderCache:destroyInstance`。
+--- 销毁全局后端着色器缓存单例。
 ---
 --- 返回说明：
---- - `cc.backend.ShaderCache`：`cc.backend.ShaderCache` 对象或值。
----@return cc.backend.ShaderCache `cc.backend.ShaderCache` 对象或值。
+--- - `cc.backend.ShaderCache`：被销毁的后端着色器缓存实例。
+---@return cc.backend.ShaderCache 被销毁的后端着色器缓存实例。
 function ShaderCache:destroyInstance() end
 
---- 调用 `cc.ShaderCache:newVertexShaderModule`。
+--- 根据着色器源码创建或复用一个顶点着色器模块。
 ---
 --- 参数说明：
---- - `shaderSource`：参数 `shaderSource`，类型为 `string`。
+--- - `shaderSource`：顶点着色器源代码。
 ---
 --- 返回说明：
---- - `cc.backend.ShaderModule`：`cc.backend.ShaderModule` 对象或值。
----@param shaderSource string 参数 `shaderSource`，类型为 `string`。
----@return cc.backend.ShaderModule `cc.backend.ShaderModule` 对象或值。
+--- - `cc.backend.ShaderModule`：编译得到的顶点着色器模块。
+---@param shaderSource string 顶点着色器源代码。
+---@return cc.backend.ShaderModule 编译得到的顶点着色器模块。
 function ShaderCache:newVertexShaderModule(shaderSource) end
 
---- 调用 `cc.ShaderCache:newFragmentShaderModule`。
+--- 根据着色器源码创建或复用一个片元着色器模块。
 ---
 --- 参数说明：
---- - `shaderSource`：参数 `shaderSource`，类型为 `string`。
+--- - `shaderSource`：片元着色器源代码。
 ---
 --- 返回说明：
---- - `cc.backend.ShaderModule`：`cc.backend.ShaderModule` 对象或值。
----@param shaderSource string 参数 `shaderSource`，类型为 `string`。
----@return cc.backend.ShaderModule `cc.backend.ShaderModule` 对象或值。
+--- - `cc.backend.ShaderModule`：编译得到的片元着色器模块。
+---@param shaderSource string 片元着色器源代码。
+---@return cc.backend.ShaderModule 编译得到的片元着色器模块。
 function ShaderCache:newFragmentShaderModule(shaderSource) end
 
---- 获取 `cc.ShaderCache:getInstance` 对应的值。
+--- 获取全局后端着色器缓存单例。
 ---
 --- 返回说明：
---- - `cc.backend.ShaderCache`：获取到的 `cc.backend.ShaderCache` 对象或值。
----@return cc.backend.ShaderCache 获取到的 `cc.backend.ShaderCache` 对象或值。
+--- - `cc.backend.ShaderCache`：全局后端着色器缓存实例。
+---@return cc.backend.ShaderCache 全局后端着色器缓存实例。
 function ShaderCache:getInstance() end

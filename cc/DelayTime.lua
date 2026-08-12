@@ -8,14 +8,14 @@
 local DelayTime = {}
 cc.DelayTime = DelayTime
 
---- 创建 `cc.DelayTime:create` 对应的对象。
+--- 创建指定持续时间的延时动作。
 ---
 --- 参数说明：
---- - `d`：参数 `d`，类型为 `number`。
+--- - `d`：延时时长，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param d number 参数 `d`，类型为 `number`。
+---@param d number 延时时长，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function DelayTime:create(d) end
 
@@ -26,14 +26,14 @@ function DelayTime:create(d) end
 ---@return self 当前对象，便于链式调用。
 function DelayTime:clone() end
 
---- 更新 `cc.DelayTime:update` 对应的状态。
+--- 按归一化进度更新延时动作状态。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度，通常范围为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度，通常范围为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function DelayTime:update(time) end
 

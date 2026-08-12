@@ -8,7 +8,7 @@
 local Animation3D = {}
 cc.Animation3D = Animation3D
 
---- 初始化 `cc.Animation3D:initWithFile` 对应的对象或状态。
+--- 从 3D 文件中的指定动画名称初始化动画资源。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -21,25 +21,25 @@ cc.Animation3D = Animation3D
 ---@return boolean 初始化是否成功。
 function Animation3D:initWithFile(filename, animationName) end
 
---- 初始化 `cc.Animation3D:init` 对应的对象或状态。
+--- 使用 3D 动画数据初始化动画资源。
 ---
 --- 参数说明：
---- - `data`：参数 `data`，类型为 `cc.Animation3DData`。
+--- - `data`：3D 动画数据对象。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param data cc.Animation3DData 参数 `data`，类型为 `cc.Animation3DData`。
+---@param data cc.Animation3DData 3D 动画数据对象。
 ---@return boolean 初始化是否成功。
 function Animation3D:init(data) end
 
---- 获取 `cc.Animation3D:getDuration` 对应的值。
+--- 获取 3D 动画持续时间。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：动画持续时间，单位为秒。
+---@return number 动画持续时间，单位为秒。
 function Animation3D:getDuration() end
 
---- 创建 `cc.Animation3D:create` 对应的对象。
+--- 从 3D 文件创建指定动画资源。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -52,7 +52,7 @@ function Animation3D:getDuration() end
 ---@return self 当前对象，便于链式调用。
 function Animation3D:create(filename, animationName) end
 
---- 调用 `cc.Animation3D:Animation3D`。
+--- 构造 3D 动画对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

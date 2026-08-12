@@ -8,16 +8,16 @@
 local FadeOutDownTiles = {}
 cc.FadeOutDownTiles = FadeOutDownTiles
 
---- 创建 `cc.FadeOutDownTiles:create` 对应的对象。
+--- 创建从下方开始淡出瓦片的网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
+--- - `gridSize`：瓦片网格列数和行数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param gridSize size_table 参数 `gridSize`，类型为 `size_table`。
+---@param gridSize size_table 瓦片网格列数和行数。
 ---@return self 当前对象，便于链式调用。
 function FadeOutDownTiles:create(duration, gridSize) end
 
@@ -28,17 +28,17 @@ function FadeOutDownTiles:create(duration, gridSize) end
 ---@return self 当前对象，便于链式调用。
 function FadeOutDownTiles:clone() end
 
---- 调用 `cc.FadeOutDownTiles:testFunc`。
+--- 计算指定瓦片在当前进度下的淡出比例。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `size_table`。
---- - `time`：时间值。类型为 `number`。
+--- - `pos`：瓦片网格位置。
+--- - `time`：动作归一化进度。
 ---
 --- 返回说明：
---- - `number`：数值。
----@param pos size_table 参数 `pos`，类型为 `size_table`。
----@param time number 时间值。类型为 `number`。
----@return number 数值。
+--- - `number`：当前瓦片的淡出比例。
+---@param pos size_table 瓦片网格位置。
+---@param time number 动作归一化进度。
+---@return number 当前瓦片的淡出比例。
 function FadeOutDownTiles:testFunc(pos, time) end
 
 --- 调用 `cc.FadeOutDownTiles:FadeOutDownTiles`。

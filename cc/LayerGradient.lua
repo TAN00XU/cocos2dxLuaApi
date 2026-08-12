@@ -8,164 +8,164 @@
 local LayerGradient = {}
 cc.LayerGradient = LayerGradient
 
---- 获取 `cc.LayerGradient:getStartColor` 对应的值。
+--- 获取线性渐变起始端的 RGB 颜色。
 ---
 --- 返回说明：
---- - `color3b_table`：获取到的 Lua 表数据。
----@return color3b_table 获取到的 Lua 表数据。
+--- - `color3b_table`：渐变起始颜色。
+---@return color3b_table 渐变起始颜色。
 function LayerGradient:getStartColor() end
 
---- 判断 `cc.LayerGradient:isCompressedInterpolation` 对应状态是否成立。
+--- 判断是否压缩插值范围以避免对角渐变颜色变暗。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否使用压缩插值。
+---@return boolean 是否使用压缩插值。
 function LayerGradient:isCompressedInterpolation() end
 
---- 获取 `cc.LayerGradient:getStartOpacity` 对应的值。
+--- 获取渐变起始端不透明度。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：起始不透明度，范围通常为 0 到 255。
+---@return integer 起始不透明度。
 function LayerGradient:getStartOpacity() end
 
---- 设置 `cc.LayerGradient:setVector` 对应的值。
+--- 设置从起始颜色指向结束颜色的渐变方向向量。
 ---
 --- 参数说明：
---- - `alongVector`：参数 `alongVector`，类型为 `vec2_table`。
+--- - `alongVector`：渐变方向向量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param alongVector vec2_table 参数 `alongVector`，类型为 `vec2_table`。
+---@param alongVector vec2_table 渐变方向向量。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:setVector(alongVector) end
 
---- 设置 `cc.LayerGradient:setStartOpacity` 对应的值。
+--- 设置渐变起始端不透明度。
 ---
 --- 参数说明：
---- - `startOpacity`：参数 `startOpacity`，类型为 `integer`。
+--- - `startOpacity`：起始不透明度，范围通常为 0 到 255。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param startOpacity integer 参数 `startOpacity`，类型为 `integer`。
+---@param startOpacity integer 起始不透明度。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:setStartOpacity(startOpacity) end
 
---- 设置 `cc.LayerGradient:setCompressedInterpolation` 对应的值。
+--- 设置是否压缩插值范围以保持对角渐变的颜色强度。
 ---
 --- 参数说明：
---- - `compressedInterpolation`：参数 `compressedInterpolation`，类型为 `boolean`。
+--- - `compressedInterpolation`：是否使用压缩插值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param compressedInterpolation boolean 参数 `compressedInterpolation`，类型为 `boolean`。
+---@param compressedInterpolation boolean 是否使用压缩插值。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:setCompressedInterpolation(compressedInterpolation) end
 
---- 设置 `cc.LayerGradient:setEndOpacity` 对应的值。
+--- 设置渐变结束端不透明度。
 ---
 --- 参数说明：
---- - `endOpacity`：参数 `endOpacity`，类型为 `integer`。
+--- - `endOpacity`：结束不透明度，范围通常为 0 到 255。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param endOpacity integer 参数 `endOpacity`，类型为 `integer`。
+---@param endOpacity integer 结束不透明度。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:setEndOpacity(endOpacity) end
 
---- 获取 `cc.LayerGradient:getVector` 对应的值。
+--- 获取线性渐变方向向量。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：渐变方向向量。
+---@return vec2_table 渐变方向向量。
 function LayerGradient:getVector() end
 
---- 设置 `cc.LayerGradient:setEndColor` 对应的值。
+--- 设置线性渐变结束端的 RGB 颜色。
 ---
 --- 参数说明：
---- - `endColor`：参数 `endColor`，类型为 `color3b_table`。
+--- - `endColor`：渐变结束颜色。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param endColor color3b_table 参数 `endColor`，类型为 `color3b_table`。
+---@param endColor color3b_table 渐变结束颜色。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:setEndColor(endColor) end
 
---- 初始化 `cc.LayerGradient:initWithColor` 对应的对象或状态。
+--- 使用起始颜色、结束颜色和可选方向向量初始化线性渐变层。
 ---
 --- 参数说明：
---- - `start`：参数 `start`，类型为 `color4b_table`。
---- - `_end`：参数 `_end`，类型为 `color4b_table`。
---- - `v`：参数 `v`，类型为 `vec2_table`。
+--- - `start`：渐变起始 RGBA 颜色。
+--- - `_end`：渐变结束 RGBA 颜色。
+--- - `v`：从起始端指向结束端的方向向量。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@overload fun(start: color4b_table, _end: color4b_table, v: vec2_table): boolean
 ---@overload fun(start: color4b_table, _end: color4b_table): boolean
----@param start? color4b_table 参数 `start`，类型为 `color4b_table`。
----@param _end? color4b_table 参数 `_end`，类型为 `color4b_table`。
----@param v? vec2_table 参数 `v`，类型为 `vec2_table`。
+---@param start? color4b_table 渐变起始 RGBA 颜色。
+---@param _end? color4b_table 渐变结束 RGBA 颜色。
+---@param v? vec2_table 渐变方向向量。
 ---@return boolean 初始化是否成功。
 function LayerGradient:initWithColor(start, _end, v) end
 
---- 获取 `cc.LayerGradient:getEndColor` 对应的值。
+--- 获取线性渐变结束端的 RGB 颜色。
 ---
 --- 返回说明：
---- - `color3b_table`：获取到的 Lua 表数据。
----@return color3b_table 获取到的 Lua 表数据。
+--- - `color3b_table`：渐变结束颜色。
+---@return color3b_table 渐变结束颜色。
 function LayerGradient:getEndColor() end
 
---- 获取 `cc.LayerGradient:getEndOpacity` 对应的值。
+--- 获取渐变结束端不透明度。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：结束不透明度。
+---@return integer 结束不透明度。
 function LayerGradient:getEndOpacity() end
 
---- 设置 `cc.LayerGradient:setStartColor` 对应的值。
+--- 设置线性渐变起始端的 RGB 颜色。
 ---
 --- 参数说明：
---- - `startColor`：参数 `startColor`，类型为 `color3b_table`。
+--- - `startColor`：渐变起始颜色。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param startColor color3b_table 参数 `startColor`，类型为 `color3b_table`。
+---@param startColor color3b_table 渐变起始颜色。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:setStartColor(startColor) end
 
---- 创建 `cc.LayerGradient:create` 对应的对象。
+--- 创建线性渐变层，可指定起止颜色和渐变方向。
 ---
 --- 参数说明：
---- - `start`：参数 `start`，类型为 `color4b_table`。
---- - `_end`：参数 `_end`，类型为 `color4b_table`。
---- - `v`：参数 `v`，类型为 `vec2_table`。
+--- - `start`：渐变起始 RGBA 颜色。
+--- - `_end`：渐变结束 RGBA 颜色。
+--- - `v`：渐变方向向量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(start: color4b_table, _end: color4b_table): self
 ---@overload fun(): self
 ---@overload fun(start: color4b_table, _end: color4b_table, v: vec2_table): self
----@param start? color4b_table 参数 `start`，类型为 `color4b_table`。
----@param _end? color4b_table 参数 `_end`，类型为 `color4b_table`。
----@param v? vec2_table 参数 `v`，类型为 `vec2_table`。
+---@param start? color4b_table 渐变起始 RGBA 颜色。
+---@param _end? color4b_table 渐变结束 RGBA 颜色。
+---@param v? vec2_table 渐变方向向量。
 ---@return self 当前对象，便于链式调用。
 function LayerGradient:create(start, _end, v) end
 
---- 初始化 `cc.LayerGradient:init` 对应的对象或状态。
+--- 初始化默认线性渐变层。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function LayerGradient:init() end
 
---- 获取 `cc.LayerGradient:getDescription` 对应的值。
+--- 获取线性渐变层的调试描述文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：渐变层描述文本。
+---@return string 渐变层描述文本。
 function LayerGradient:getDescription() end
 
---- 调用 `cc.LayerGradient:LayerGradient`。
+--- 构造线性渐变层。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

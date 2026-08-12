@@ -8,25 +8,25 @@
 local FlipX = {}
 cc.FlipX = FlipX
 
---- 初始化 `cc.FlipX:initWithFlipX` 对应的对象或状态。
+--- 初始化沿 X 轴翻转精灵的瞬时动作。
 ---
 --- 参数说明：
---- - `x`：X 坐标或 X 分量。类型为 `boolean`。
+--- - `x`：是否执行水平翻转。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param x boolean X 坐标或 X 分量。类型为 `boolean`。
+---@param x boolean 是否执行水平翻转。
 ---@return boolean 初始化是否成功。
 function FlipX:initWithFlipX(x) end
 
---- 创建 `cc.FlipX:create` 对应的对象。
+--- 创建沿 X 轴翻转精灵的瞬时动作。
 ---
 --- 参数说明：
---- - `x`：X 坐标或 X 分量。类型为 `boolean`。
+--- - `x`：是否执行水平翻转。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param x boolean X 坐标或 X 分量。类型为 `boolean`。
+---@param x boolean 是否执行水平翻转。
 ---@return self 当前对象，便于链式调用。
 function FlipX:create(x) end
 
@@ -37,14 +37,14 @@ function FlipX:create(x) end
 ---@return self 当前对象，便于链式调用。
 function FlipX:clone() end
 
---- 更新 `cc.FlipX:update` 对应的状态。
+--- 执行水平翻转；瞬时动作不使用进度值。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度参数。
 ---@return self 当前对象，便于链式调用。
 function FlipX:update(time) end
 

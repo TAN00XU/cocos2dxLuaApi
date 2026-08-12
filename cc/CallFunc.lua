@@ -8,7 +8,7 @@
 local CallFunc = {}
 cc.CallFunc = CallFunc
 
---- 创建 `cc.CallFunc:create` 对应的对象。
+--- 创建执行指定回调函数的瞬时动作。
 ---
 --- 参数说明：
 --- - `func`：回调函数。类型为 `function`。
@@ -19,7 +19,7 @@ cc.CallFunc = CallFunc
 ---@return self 当前对象，便于链式调用。
 function CallFunc:create(func) end
 
---- 调用 `cc.CallFunc:execute`。
+--- 执行存储的回调函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -33,7 +33,7 @@ function CallFunc:execute() end
 ---@return self 当前对象，便于链式调用。
 function CallFunc:clone() end
 
---- 更新 `cc.CallFunc:update` 对应的状态。
+--- 在动作更新时执行回调逻辑。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -51,7 +51,7 @@ function CallFunc:update(time) end
 ---@return self 当前对象，便于链式调用。
 function CallFunc:reverse() end
 
---- 调用 `cc.CallFunc:CallFunc`。
+--- 构造回调动作对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,16 +8,16 @@
 local EaseElasticInOut = {}
 cc.EaseElasticInOut = EaseElasticInOut
 
---- 创建 `cc.EaseElasticInOut:create` 对应的对象。
+--- 创建弹性渐入渐出缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
---- - `rate`：参数 `rate`，类型为 `number`。
+--- - `rate`：弹性振荡周期，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param action cc.ActionInterval 动作对象。类型为 `cc.ActionInterval`。
----@param rate number 参数 `rate`，类型为 `number`。
+---@param rate number 弹性振荡周期，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function EaseElasticInOut:create(action, rate) end
 
@@ -28,7 +28,7 @@ function EaseElasticInOut:create(action, rate) end
 ---@return self 当前对象，便于链式调用。
 function EaseElasticInOut:clone() end
 
---- 更新 `cc.EaseElasticInOut:update` 对应的状态。
+--- 按弹性渐入渐出曲线更新内部动作进度。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -42,8 +42,8 @@ function EaseElasticInOut:update(time) end
 --- 调用 `cc.EaseElasticInOut:reverse`。
 ---
 --- 返回说明：
---- - `cc.EaseElastic`：`cc.EaseElastic` 对象或值。
----@return cc.EaseElastic `cc.EaseElastic` 对象或值。
+--- - `cc.EaseElastic`：反向弹性缓动动作。
+---@return cc.EaseElastic 反向弹性缓动动作。
 function EaseElasticInOut:reverse() end
 
 --- 调用 `cc.EaseElasticInOut:new`。

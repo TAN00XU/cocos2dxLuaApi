@@ -8,551 +8,551 @@
 local EditBox = {}
 ccui.EditBox = EditBox
 
---- 获取 `ccui.EditBox:getFontSize` 对应的值。
+--- 获取输入文本的字体大小。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：当前字体大小。
+---@return integer 当前字体大小。
 function EditBox:getFontSize() end
 
---- 调用 `ccui.EditBox:keyboardDidShow`。
+--- 处理软键盘已经显示的 IME 通知。
 ---
 --- 参数说明：
---- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+--- - `info`：软键盘通知信息。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param info cc.IMEKeyboardNotificationInfo 参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+---@param info cc.IMEKeyboardNotificationInfo 软键盘通知信息。
 ---@return self 当前对象，便于链式调用。
 function EditBox:keyboardDidShow(info) end
 
---- 设置 `ccui.EditBox:setMaxLength` 对应的值。
+--- 设置允许输入的最大字符数；官方实现仅保证 Android、iOS 和 Windows Phone 可用。
 ---
 --- 参数说明：
---- - `maxLength`：参数 `maxLength`，类型为 `integer`。
+--- - `maxLength`：允许输入的最大字符数；设置后默认启用多行输入模式。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param maxLength integer 参数 `maxLength`，类型为 `integer`。
+---@param maxLength integer 允许输入的最大字符数。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setMaxLength(maxLength) end
 
---- 调用 `ccui.EditBox:openKeyboard`。
+--- 让编辑框获得输入焦点并打开软键盘。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EditBox:openKeyboard() end
 
---- 设置 `ccui.EditBox:setFontSize` 对应的值。
+--- 设置输入文本的字体大小。
 ---
 --- 参数说明：
---- - `fontSize`：参数 `fontSize`，类型为 `integer`。
+--- - `fontSize`：输入文本的字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param fontSize integer 参数 `fontSize`，类型为 `integer`。
+---@param fontSize integer 输入文本的字体大小。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setFontSize(fontSize) end
 
---- 获取 `ccui.EditBox:getText` 对应的值。
+--- 获取编辑框中已经输入的文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：当前输入文本。
+---@return string 当前输入文本。
 function EditBox:getText() end
 
---- 获取 `ccui.EditBox:getInputMode` 对应的值。
+--- 获取编辑框的输入模式。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：输入模式枚举值（任意文本、邮箱、数字、电话、URL、小数或单行文本）。
+---@return integer 输入模式枚举值。
 function EditBox:getInputMode() end
 
---- 初始化 `ccui.EditBox:initWithSizeAndBackgroundSprite` 对应的对象或状态。
+--- 使用指定尺寸和九宫格背景精灵初始化编辑框。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
---- - `normalSprite`：参数 `normalSprite`，类型为 `ccui.Scale9Sprite`。
---- - `pressedSprite`：参数 `pressedSprite`，类型为 `ccui.Scale9Sprite`。
---- - `disabledSprite`：参数 `disabledSprite`，类型为 `ccui.Scale9Sprite`。
+--- - `size`：编辑框尺寸。
+--- - `normalSprite`：普通状态的九宫格背景精灵；字符串重载中为背景纹理路径。
+--- - `pressedSprite`：按下状态的九宫格背景精灵；字符串重载中为纹理资源类型。
+--- - `disabledSprite`：禁用状态的九宫格背景精灵。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@overload fun(size: size_table, normalSprite: ccui.Scale9Sprite): boolean
 ---@overload fun(size: size_table, normalSprite: string, pressedSprite: integer): boolean
 ---@overload fun(size: size_table, normalSprite: ccui.Scale9Sprite, pressedSprite: ccui.Scale9Sprite, disabledSprite: ccui.Scale9Sprite): boolean
----@param size? size_table 尺寸。类型为 `size_table`。
----@param normalSprite? ccui.Scale9Sprite 参数 `normalSprite`，类型为 `ccui.Scale9Sprite`。
----@param pressedSprite? ccui.Scale9Sprite 参数 `pressedSprite`，类型为 `ccui.Scale9Sprite`。
----@param disabledSprite? ccui.Scale9Sprite 参数 `disabledSprite`，类型为 `ccui.Scale9Sprite`。
+---@param size? size_table 编辑框尺寸。
+---@param normalSprite? ccui.Scale9Sprite 普通状态的九宫格背景精灵。
+---@param pressedSprite? ccui.Scale9Sprite 按下状态的九宫格背景精灵。
+---@param disabledSprite? ccui.Scale9Sprite 禁用状态的九宫格背景精灵。
 ---@return boolean 初始化是否成功。
 function EditBox:initWithSizeAndBackgroundSprite(size, normalSprite, pressedSprite, disabledSprite) end
 
---- 获取 `ccui.EditBox:getPlaceholderFontName` 对应的值。
+--- 获取占位文本使用的系统字体名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：占位文本的字体名称。
+---@return string 占位文本的字体名称。
 function EditBox:getPlaceholderFontName() end
 
---- 调用 `ccui.EditBox:keyboardDidHide`。
+--- 处理软键盘已经隐藏的 IME 通知。
 ---
 --- 参数说明：
---- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+--- - `info`：软键盘通知信息。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param info cc.IMEKeyboardNotificationInfo 参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+---@param info cc.IMEKeyboardNotificationInfo 软键盘通知信息。
 ---@return self 当前对象，便于链式调用。
 function EditBox:keyboardDidHide(info) end
 
---- 设置 `ccui.EditBox:setPlaceholderFontName` 对应的值。
+--- 设置占位文本使用的系统字体名称。
 ---
 --- 参数说明：
---- - `pFontName`：参数 `pFontName`，类型为 `string`。
+--- - `pFontName`：系统字体名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pFontName string 参数 `pFontName`，类型为 `string`。
+---@param pFontName string 系统字体名称。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setPlaceholderFontName(pFontName) end
 
---- 获取 `ccui.EditBox:getPlaceholderFontSize` 对应的值。
+--- 获取占位文本的字体大小。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：占位文本的字体大小。
+---@return integer 占位文本的字体大小。
 function EditBox:getPlaceholderFontSize() end
 
---- 获取 `ccui.EditBox:getCapInsetsDisabledRenderer` 对应的值。
+--- 获取禁用状态九宫格背景的拉伸边距。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：禁用状态九宫格背景的拉伸边距。
+---@return rect_table 禁用状态九宫格背景的拉伸边距。
 function EditBox:getCapInsetsDisabledRenderer() end
 
---- 获取 `ccui.EditBox:getPlaceHolder` 对应的值。
+--- 获取输入为空时显示的占位文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：当前占位文本。
+---@return string 当前占位文本。
 function EditBox:getPlaceHolder() end
 
---- 设置 `ccui.EditBox:setFontName` 对应的值。
+--- 设置输入文本使用的系统字体名称。
 ---
 --- 参数说明：
---- - `pFontName`：参数 `pFontName`，类型为 `string`。
+--- - `pFontName`：系统字体名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pFontName string 参数 `pFontName`，类型为 `string`。
+---@param pFontName string 系统字体名称。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setFontName(pFontName) end
 
---- 调用 `ccui.EditBox:registerScriptEditBoxHandler`。
+--- 注册用于接收编辑框事件的 Lua 函数处理器。
 ---
 --- 参数说明：
---- - `handler`：参数 `handler`，类型为 `integer`。
+--- - `handler`：Lua 函数在脚本引擎中的处理器编号。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param handler integer 参数 `handler`，类型为 `integer`。
+---@param handler integer Lua 函数的处理器编号。
 ---@return self 当前对象，便于链式调用。
 function EditBox:registerScriptEditBoxHandler(handler) end
 
---- 设置 `ccui.EditBox:setCapInsetsDisabledRenderer` 对应的值。
+--- 设置禁用状态九宫格背景的拉伸边距。
 ---
 --- 参数说明：
---- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
+--- - `capInsets`：禁用状态背景中保持不拉伸的区域边距。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 禁用状态九宫格背景的拉伸边距。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setCapInsetsDisabledRenderer(capInsets) end
 
---- 设置 `ccui.EditBox:setPlaceholderFontSize` 对应的值。
+--- 设置占位文本的字体大小。
 ---
 --- 参数说明：
---- - `fontSize`：参数 `fontSize`，类型为 `integer`。
+--- - `fontSize`：占位文本的字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param fontSize integer 参数 `fontSize`，类型为 `integer`。
+---@param fontSize integer 占位文本的字体大小。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setPlaceholderFontSize(fontSize) end
 
---- 加载 `ccui.EditBox:loadTextureDisabled` 对应的资源或数据。
+--- 加载编辑框的禁用状态背景纹理。
 ---
 --- 参数说明：
---- - `disabled`：参数 `disabled`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `disabled`：禁用状态纹理路径或精灵帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param disabled string 参数 `disabled`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param disabled string 禁用状态纹理路径或精灵帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function EditBox:loadTextureDisabled(disabled, texType) end
 
---- 设置 `ccui.EditBox:setInputMode` 对应的值。
+--- 设置允许用户输入的文本类型。
 ---
 --- 参数说明：
---- - `inputMode`：参数 `inputMode`，类型为 `integer`。
+--- - `inputMode`：输入模式枚举值（任意文本、邮箱、数字、电话、URL、小数或单行文本）。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param inputMode integer 参数 `inputMode`，类型为 `integer`。
+---@param inputMode integer 输入模式枚举值。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setInputMode(inputMode) end
 
---- 调用 `ccui.EditBox:unregisterScriptEditBoxHandler`。
+--- 注销编辑框事件的 Lua 函数处理器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EditBox:unregisterScriptEditBoxHandler() end
 
---- 调用 `ccui.EditBox:keyboardWillShow`。
+--- 处理软键盘即将显示的 IME 通知。
 ---
 --- 参数说明：
---- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+--- - `info`：软键盘通知信息。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param info cc.IMEKeyboardNotificationInfo 参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+---@param info cc.IMEKeyboardNotificationInfo 软键盘通知信息。
 ---@return self 当前对象，便于链式调用。
 function EditBox:keyboardWillShow(info) end
 
---- 设置 `ccui.EditBox:setPlaceholderFontColor` 对应的值。
+--- 设置输入为空时占位文本的颜色。
 ---
 --- 参数说明：
---- - `color`：颜色值。类型为 `color3b_table`。
+--- - `color`：占位文本颜色；支持 RGB 或 RGBA 颜色值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(color: color4b_table): self
 ---@overload fun(color: color3b_table): self
----@param color color3b_table 颜色值。类型为 `color3b_table`。
+---@param color color3b_table 占位文本颜色。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setPlaceholderFontColor(color) end
 
---- 获取 `ccui.EditBox:getReturnType` 对应的值。
+--- 获取软键盘返回键的显示类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：软键盘返回键类型枚举值。
+---@return integer 软键盘返回键类型枚举值。
 function EditBox:getReturnType() end
 
---- 设置 `ccui.EditBox:setFontColor` 对应的值。
+--- 设置编辑框输入文本的颜色。
 ---
 --- 参数说明：
---- - `color`：颜色值。类型为 `color3b_table`。
+--- - `color`：输入文本颜色；支持 RGB 或 RGBA 颜色值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(color: color4b_table): self
 ---@overload fun(color: color3b_table): self
----@param color color3b_table 颜色值。类型为 `color3b_table`。
+---@param color color3b_table 输入文本颜色。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setFontColor(color) end
 
---- 获取 `ccui.EditBox:getFontName` 对应的值。
+--- 获取输入文本使用的系统字体名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：当前字体名称。
+---@return string 当前字体名称。
 function EditBox:getFontName() end
 
---- 调用 `ccui.EditBox:keyboardWillHide`。
+--- 处理软键盘即将隐藏的 IME 通知。
 ---
 --- 参数说明：
---- - `info`：参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+--- - `info`：软键盘通知信息。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param info cc.IMEKeyboardNotificationInfo 参数 `info`，类型为 `cc.IMEKeyboardNotificationInfo`。
+---@param info cc.IMEKeyboardNotificationInfo 软键盘通知信息。
 ---@return self 当前对象，便于链式调用。
 function EditBox:keyboardWillHide(info) end
 
---- 设置 `ccui.EditBox:setCapInsetsNormalRenderer` 对应的值。
+--- 设置普通状态九宫格背景的拉伸边距。
 ---
 --- 参数说明：
---- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
+--- - `capInsets`：普通状态背景中保持不拉伸的区域边距。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 普通状态九宫格背景的拉伸边距。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setCapInsetsNormalRenderer(capInsets) end
 
---- 加载 `ccui.EditBox:loadTexturePressed` 对应的资源或数据。
+--- 加载编辑框的按下状态背景纹理。
 ---
 --- 参数说明：
---- - `pressed`：参数 `pressed`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `pressed`：按下状态纹理路径或精灵帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pressed string 参数 `pressed`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param pressed string 按下状态纹理路径或精灵帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function EditBox:loadTexturePressed(pressed, texType) end
 
---- 获取 `ccui.EditBox:getFontColor` 对应的值。
+--- 获取编辑框输入文本的颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：当前输入文本的 RGBA 颜色。
+---@return color4b_table 当前输入文本的 RGBA 颜色。
 function EditBox:getFontColor() end
 
---- 获取 `ccui.EditBox:getInputFlag` 对应的值。
+--- 获取输入文本的显示与格式化标志。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：输入标志，例如密码遮蔽或自动大小写模式。
+---@return integer 当前输入标志。
 function EditBox:getInputFlag() end
 
---- 初始化 `ccui.EditBox:initWithSizeAndTexture` 对应的对象或状态。
+--- 使用指定尺寸及普通、按下和禁用状态纹理初始化编辑框。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
---- - `normalImage`：参数 `normalImage`，类型为 `string`。
---- - `pressedImage`：参数 `pressedImage`，类型为 `string`。
---- - `disabledImage`：参数 `disabledImage`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `size`：编辑框尺寸。
+--- - `normalImage`：普通状态纹理路径或精灵帧名称。
+--- - `pressedImage`：按下状态纹理路径或精灵帧名称。
+--- - `disabledImage`：禁用状态纹理路径或精灵帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param size size_table 尺寸。类型为 `size_table`。
----@param normalImage string 参数 `normalImage`，类型为 `string`。
----@param pressedImage string 参数 `pressedImage`，类型为 `string`。
----@param disabledImage string 参数 `disabledImage`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param size size_table 编辑框尺寸。
+---@param normalImage string 普通状态纹理路径或精灵帧名称。
+---@param pressedImage string 按下状态纹理路径或精灵帧名称。
+---@param disabledImage string 禁用状态纹理路径或精灵帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return boolean 初始化是否成功。
 function EditBox:initWithSizeAndTexture(size, normalImage, pressedImage, disabledImage, texType) end
 
---- 获取 `ccui.EditBox:getTextHorizontalAlignment` 对应的值。
+--- 获取输入文本的水平对齐方式。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：水平对齐方式，参见 `cc.TextHAlignment`。
+---@return integer 水平对齐方式，参见 `cc.TextHAlignment`。
 function EditBox:getTextHorizontalAlignment() end
 
---- 获取 `ccui.EditBox:getCapInsetsNormalRenderer` 对应的值。
+--- 获取普通状态九宫格背景的拉伸边距。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：普通状态九宫格背景的拉伸边距。
+---@return rect_table 普通状态九宫格背景的拉伸边距。
 function EditBox:getCapInsetsNormalRenderer() end
 
---- 获取 `ccui.EditBox:getCapInsetsPressedRenderer` 对应的值。
+--- 获取按下状态九宫格背景的拉伸边距。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：按下状态九宫格背景的拉伸边距。
+---@return rect_table 按下状态九宫格背景的拉伸边距。
 function EditBox:getCapInsetsPressedRenderer() end
 
---- 获取 `ccui.EditBox:getScriptEditBoxHandler` 对应的值。
+--- 获取已注册的编辑框事件 Lua 处理器编号。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：Lua 函数的处理器编号。
+---@return integer Lua 函数的处理器编号。
 function EditBox:getScriptEditBoxHandler() end
 
---- 加载 `ccui.EditBox:loadTextures` 对应的资源或数据。
+--- 同时加载普通、按下和禁用状态的背景纹理。
 ---
 --- 参数说明：
---- - `normal`：参数 `normal`，类型为 `string`。
---- - `pressed`：参数 `pressed`，类型为 `string`。
---- - `disabled`：参数 `disabled`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `normal`：普通状态纹理路径或精灵帧名称。
+--- - `pressed`：按下状态纹理路径或精灵帧名称。
+--- - `disabled`：禁用状态纹理路径或精灵帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param normal string 参数 `normal`，类型为 `string`。
----@param pressed string 参数 `pressed`，类型为 `string`。
----@param disabled string 参数 `disabled`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param normal string 普通状态纹理路径或精灵帧名称。
+---@param pressed string 按下状态纹理路径或精灵帧名称。
+---@param disabled string 禁用状态纹理路径或精灵帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function EditBox:loadTextures(normal, pressed, disabled, texType) end
 
---- 设置 `ccui.EditBox:setPlaceHolder` 对应的值。
+--- 设置输入为空时显示的占位文本。
 ---
 --- 参数说明：
---- - `pText`：参数 `pText`，类型为 `string`。
+--- - `pText`：占位文本内容。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pText string 参数 `pText`，类型为 `string`。
+---@param pText string 占位文本内容。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setPlaceHolder(pText) end
 
---- 设置 `ccui.EditBox:setInputFlag` 对应的值。
+--- 设置输入文本的显示与格式化标志。
 ---
 --- 参数说明：
---- - `inputFlag`：参数 `inputFlag`，类型为 `integer`。
+--- - `inputFlag`：输入标志，例如密码遮蔽或自动大小写模式。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param inputFlag integer 参数 `inputFlag`，类型为 `integer`。
+---@param inputFlag integer 输入标志。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setInputFlag(inputFlag) end
 
---- 设置 `ccui.EditBox:setReturnType` 对应的值。
+--- 设置软键盘返回键的显示类型。
 ---
 --- 参数说明：
---- - `returnType`：参数 `returnType`，类型为 `integer`。
+--- - `returnType`：软键盘返回键类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param returnType integer 参数 `returnType`，类型为 `integer`。
+---@param returnType integer 返回键类型。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setReturnType(returnType) end
 
---- 加载 `ccui.EditBox:loadTextureNormal` 对应的资源或数据。
+--- 加载编辑框的普通状态背景纹理。
 ---
 --- 参数说明：
---- - `normal`：参数 `normal`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `normal`：普通状态纹理路径或精灵帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param normal string 参数 `normal`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param normal string 普通状态纹理路径或精灵帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function EditBox:loadTextureNormal(normal, texType) end
 
---- 获取 `ccui.EditBox:getMaxLength` 对应的值。
+--- 获取允许输入的最大字符数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：允许输入的最大字符数。
+---@return integer 允许输入的最大字符数。
 function EditBox:getMaxLength() end
 
---- 设置 `ccui.EditBox:setCapInsetsPressedRenderer` 对应的值。
+--- 设置按下状态九宫格背景的拉伸边距。
 ---
 --- 参数说明：
---- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
+--- - `capInsets`：按下状态背景中保持不拉伸的区域边距。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 按下状态九宫格背景的拉伸边距。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setCapInsetsPressedRenderer(capInsets) end
 
---- 设置 `ccui.EditBox:setText` 对应的值。
+--- 设置编辑框中的输入文本。
 ---
 --- 参数说明：
---- - `pText`：参数 `pText`，类型为 `string`。
+--- - `pText`：要设置的输入文本。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pText string 参数 `pText`，类型为 `string`。
+---@param pText string 要设置的输入文本。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setText(pText) end
 
---- 设置 `ccui.EditBox:setPlaceholderFont` 对应的值。
+--- 同时设置占位文本的系统字体名称和字体大小。
 ---
 --- 参数说明：
---- - `pFontName`：参数 `pFontName`，类型为 `string`。
---- - `fontSize`：参数 `fontSize`，类型为 `integer`。
+--- - `pFontName`：系统字体名称。
+--- - `fontSize`：占位文本的字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pFontName string 参数 `pFontName`，类型为 `string`。
----@param fontSize integer 参数 `fontSize`，类型为 `integer`。
+---@param pFontName string 系统字体名称。
+---@param fontSize integer 占位文本的字体大小。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setPlaceholderFont(pFontName, fontSize) end
 
---- 获取 `ccui.EditBox:getPlaceholderFontColor` 对应的值。
+--- 获取输入为空时占位文本的颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：当前占位文本的 RGBA 颜色。
+---@return color4b_table 当前占位文本的 RGBA 颜色。
 function EditBox:getPlaceholderFontColor() end
 
---- 设置 `ccui.EditBox:setCapInsets` 对应的值。
+--- 为普通、按下和禁用状态的九宫格背景设置相同拉伸边距。
 ---
 --- 参数说明：
---- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
+--- - `capInsets`：三个状态背景中保持不拉伸的区域边距。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 九宫格背景的拉伸边距。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setCapInsets(capInsets) end
 
---- 设置 `ccui.EditBox:setFont` 对应的值。
+--- 同时设置输入文本的系统字体名称和字体大小。
 ---
 --- 参数说明：
---- - `pFontName`：参数 `pFontName`，类型为 `string`。
---- - `fontSize`：参数 `fontSize`，类型为 `integer`。
+--- - `pFontName`：系统字体名称。
+--- - `fontSize`：输入文本的字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pFontName string 参数 `pFontName`，类型为 `string`。
----@param fontSize integer 参数 `fontSize`，类型为 `integer`。
+---@param pFontName string 系统字体名称。
+---@param fontSize integer 输入文本的字体大小。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setFont(pFontName, fontSize) end
 
---- 设置 `ccui.EditBox:setTextHorizontalAlignment` 对应的值。
+--- 设置输入文本的水平对齐方式。
 ---
 --- 参数说明：
---- - `alignment`：参数 `alignment`，类型为 `integer`。
+--- - `alignment`：水平对齐方式，参见 `cc.TextHAlignment`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param alignment integer 参数 `alignment`，类型为 `integer`。
+---@param alignment integer 水平对齐方式，参见 `cc.TextHAlignment`。
 ---@return self 当前对象，便于链式调用。
 function EditBox:setTextHorizontalAlignment(alignment) end
 
---- 创建 `ccui.EditBox:create` 对应的对象。
+--- 创建指定尺寸和状态背景的编辑框。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
---- - `normalImage`：参数 `normalImage`，类型为 `string`。
---- - `pressedImage`：参数 `pressedImage`，类型为 `string`。
---- - `disabledImage`：参数 `disabledImage`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `size`：编辑框尺寸。
+--- - `normalImage`：普通状态纹理路径、精灵帧名称或九宫格背景精灵。
+--- - `pressedImage`：按下状态纹理路径、纹理资源类型或九宫格背景精灵，具体取决于重载。
+--- - `disabledImage`：禁用状态纹理路径或九宫格背景精灵。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(size: size_table, normalImage: string, pressedImage: integer): self
 ---@overload fun(size: size_table, normalImage: ccui.Scale9Sprite, pressedImage: ccui.Scale9Sprite, disabledImage: ccui.Scale9Sprite): self
 ---@overload fun(size: size_table, normalImage: string, pressedImage: string, disabledImage: string, texType: integer): self
----@param size? size_table 尺寸。类型为 `size_table`。
----@param normalImage? string 参数 `normalImage`，类型为 `string`。
----@param pressedImage? string 参数 `pressedImage`，类型为 `string`。
----@param disabledImage? string 参数 `disabledImage`，类型为 `string`。
----@param texType? integer 参数 `texType`，类型为 `integer`。
+---@param size? size_table 编辑框尺寸。
+---@param normalImage? string 普通状态纹理路径或精灵帧名称。
+---@param pressedImage? string 按下状态纹理路径或精灵帧名称。
+---@param disabledImage? string 禁用状态纹理路径或精灵帧名称。
+---@param texType? integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function EditBox:create(size, normalImage, pressedImage, disabledImage, texType) end
 
---- 调用 `ccui.EditBox:draw`。
+--- 将编辑框提交给渲染器绘制，并同步原生输入控件的位置与显示状态。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
---- - `parentFlags`：参数 `parentFlags`，类型为 `integer`。
+--- - `renderer`：当前场景使用的渲染器。
+--- - `parentTransform`：父节点的世界变换矩阵。
+--- - `parentFlags`：父节点传入的渲染标志。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param parentTransform mat4_table 参数 `parentTransform`，类型为 `mat4_table`。
----@param parentFlags integer 参数 `parentFlags`，类型为 `integer`。
+---@param renderer cc.Renderer 当前场景使用的渲染器。
+---@param parentTransform mat4_table 父节点的世界变换矩阵。
+---@param parentFlags integer 父节点传入的渲染标志。
 ---@return self 当前对象，便于链式调用。
 function EditBox:draw(renderer, parentTransform, parentFlags) end
 
---- 获取 `ccui.EditBox:getDescription` 对应的值。
+--- 获取控件的类名描述字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：编辑框的类名描述。
+---@return string 编辑框的类名描述。
 function EditBox:getDescription() end
 
---- 调用 `ccui.EditBox:EditBox`。
+--- 构造编辑框对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

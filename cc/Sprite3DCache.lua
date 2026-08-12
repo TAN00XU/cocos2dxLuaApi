@@ -7,7 +7,7 @@
 local Sprite3DCache = {}
 cc.Sprite3DCache = Sprite3DCache
 
---- 移除 `cc.Sprite3DCache:removeSprite3DData` 对应的对象或数据。
+--- 从缓存中移除指定 3D 精灵数据。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
@@ -18,7 +18,7 @@ cc.Sprite3DCache = Sprite3DCache
 ---@return self 当前对象，便于链式调用。
 function Sprite3DCache:removeSprite3DData(key) end
 
---- 移除 `cc.Sprite3DCache:removeAllSprite3DData` 对应的对象或数据。
+--- 清空缓存中的全部 3D 精灵数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -32,7 +32,7 @@ function Sprite3DCache:removeAllSprite3DData() end
 ---@return self 当前对象，便于链式调用。
 function Sprite3DCache:destroyInstance() end
 
---- 获取 `cc.Sprite3DCache:getInstance` 对应的值。
+--- 获取 3D 精灵缓存单例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

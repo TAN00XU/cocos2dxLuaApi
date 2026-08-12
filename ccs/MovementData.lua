@@ -7,33 +7,33 @@
 ---@class ccs.MovementData : cc.Ref
 local MovementData = {}
 ccs.MovementData = MovementData
---- 创建 MovementData 对应的对象。
+--- 创建动画片段数据对象。
 ---@return ccs.MovementData
 function MovementData:new() end
 
---- 获取 `ccs.MovementData:getMovementBoneData` 对应的值。
+--- 按骨骼名称获取该动画片段的骨骼轨迹数据。
 ---
 --- 参数说明：
---- - `boneName`：参数 `boneName`，类型为 `string`。
+--- - `boneName`：目标骨骼名称。
 ---
 --- 返回说明：
---- - `ccs.MovementBoneData`：获取到的 `ccs.MovementBoneData` 对象或值。
----@param boneName string 参数 `boneName`，类型为 `string`。
----@return ccs.MovementBoneData 获取到的 `ccs.MovementBoneData` 对象或值。
+--- - `ccs.MovementBoneData`：匹配骨骼的轨迹数据。
+---@param boneName string 目标骨骼名称。
+---@return ccs.MovementBoneData 匹配骨骼的轨迹数据。
 function MovementData:getMovementBoneData(boneName) end
 
---- 添加 `ccs.MovementData:addMovementBoneData` 对应的对象或数据。
+--- 向动画片段添加一条骨骼轨迹。
 ---
 --- 参数说明：
---- - `movBoneData`：参数 `movBoneData`，类型为 `ccs.MovementBoneData`。
+--- - `movBoneData`：要添加的骨骼轨迹数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param movBoneData ccs.MovementBoneData 参数 `movBoneData`，类型为 `ccs.MovementBoneData`。
+---@param movBoneData ccs.MovementBoneData 要添加的骨骼轨迹数据。
 ---@return self 当前对象，便于链式调用。
 function MovementData:addMovementBoneData(movBoneData) end
 
---- 创建 `ccs.MovementData:create` 对应的对象。
+--- 创建并初始化动画片段数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

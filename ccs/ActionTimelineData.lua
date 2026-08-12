@@ -8,47 +8,47 @@
 local ActionTimelineData = {}
 ccs.ActionTimelineData = ActionTimelineData
 
---- 设置 `ccs.ActionTimelineData:setActionTag` 对应的值。
+--- 设置动作时间轴关联的节点标签。
 ---
 --- 参数说明：
---- - `actionTag`：参数 `actionTag`，类型为 `integer`。
+--- - `actionTag`：用于将时间轴动作匹配到节点的标签。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param actionTag integer 参数 `actionTag`，类型为 `integer`。
+---@param actionTag integer 用于将时间轴动作匹配到节点的标签。
 ---@return self 当前对象，便于链式调用。
 function ActionTimelineData:setActionTag(actionTag) end
 
---- 初始化 `ccs.ActionTimelineData:init` 对应的对象或状态。
+--- 使用节点标签初始化动作时间轴数据。
 ---
 --- 参数说明：
---- - `actionTag`：参数 `actionTag`，类型为 `integer`。
+--- - `actionTag`：用于将时间轴动作匹配到节点的标签。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param actionTag integer 参数 `actionTag`，类型为 `integer`。
+---@param actionTag integer 用于将时间轴动作匹配到节点的标签。
 ---@return boolean 初始化是否成功。
 function ActionTimelineData:init(actionTag) end
 
---- 获取 `ccs.ActionTimelineData:getActionTag` 对应的值。
+--- 获取动作时间轴关联的节点标签。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：关联的节点动作标签。
+---@return integer 关联的节点动作标签。
 function ActionTimelineData:getActionTag() end
 
---- 创建 `ccs.ActionTimelineData:create` 对应的对象。
+--- 创建动作时间轴数据。
 ---
 --- 参数说明：
---- - `actionTag`：参数 `actionTag`，类型为 `integer`。
+--- - `actionTag`：用于将时间轴动作匹配到节点的标签。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param actionTag integer 参数 `actionTag`，类型为 `integer`。
+---@param actionTag integer 用于将时间轴动作匹配到节点的标签。
 ---@return self 当前对象，便于链式调用。
 function ActionTimelineData:create(actionTag) end
 
---- 调用 `ccs.ActionTimelineData:ActionTimelineData`。
+--- 构造动作时间轴数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

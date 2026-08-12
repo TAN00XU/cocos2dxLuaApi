@@ -8,29 +8,29 @@
 local CatmullRomTo = {}
 cc.CatmullRomTo = CatmullRomTo
 
---- 创建 CatmullRomTo 对应的对象。
+--- 创建沿控制点绝对路径移动的 Catmull-Rom 样条动作。
 ---
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
---- - `points`：参数 `points`，类型为 `cc.PointArray`。
+--- - `points`：控制样条曲线的点集合。
 ---
 --- 返回说明：
 --- - `cc.CatmullRomTo`：新创建的对象。
 ---@param dt number 帧间隔时间。类型为 `number`。
----@param points cc.PointArray 参数 `points`，类型为 `cc.PointArray`。
+---@param points cc.PointArray 控制样条曲线的点集合。
 ---@return cc.CatmullRomTo 新创建的对象。
 function CatmullRomTo:create(dt, points) end
 
---- 初始化 `cc.CatmullRomTo:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和控制点初始化 Catmull-Rom 样条动作。
 ---
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
---- - `points`：参数 `points`，类型为 `point_table`。
+--- - `points`：控制样条曲线的点集合。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param dt number 帧间隔时间。类型为 `number`。
----@param points point_table 参数 `points`，类型为 `point_table`。
+---@param points point_table 控制样条曲线的点集合。
 ---@return boolean 初始化是否成功。
 function CatmullRomTo:initWithDuration(dt, points) end
 

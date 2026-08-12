@@ -8,59 +8,59 @@
 local ShakyTiles3D = {}
 cc.ShakyTiles3D = ShakyTiles3D
 
---- 初始化 `cc.ShakyTiles3D:initWithDuration` 对应的对象或状态。
+--- 初始化使三维瓦片随机抖动的动作。
 ---
 --- 参数说明：
---- - `duration`：持续时间。类型为 `number`。
---- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
---- - `range`：参数 `range`，类型为 `integer`。
---- - `shakeZ`：参数 `shakeZ`，类型为 `boolean`。
+--- - `duration`：动作持续时间，单位为秒。
+--- - `gridSize`：瓦片列数和行数。
+--- - `range`：随机位移范围。
+--- - `shakeZ`：是否同时随机改变 Z 轴坐标。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param gridSize size_table 参数 `gridSize`，类型为 `size_table`。
----@param range integer 参数 `range`，类型为 `integer`。
----@param shakeZ boolean 参数 `shakeZ`，类型为 `boolean`。
+---@param gridSize size_table 瓦片列数和行数。
+---@param range integer 随机位移范围。
+---@param shakeZ boolean 是否同时改变 Z 轴坐标。
 ---@return boolean 初始化是否成功。
 function ShakyTiles3D:initWithDuration(duration, gridSize, range, shakeZ) end
 
---- 创建 `cc.ShakyTiles3D:create` 对应的对象。
+--- 创建使三维瓦片随机抖动的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
---- - `range`：参数 `range`，类型为 `integer`。
---- - `shakeZ`：参数 `shakeZ`，类型为 `boolean`。
+--- - `gridSize`：瓦片列数和行数。
+--- - `range`：随机位移范围。
+--- - `shakeZ`：是否同时随机改变 Z 轴坐标。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param gridSize size_table 参数 `gridSize`，类型为 `size_table`。
----@param range integer 参数 `range`，类型为 `integer`。
----@param shakeZ boolean 参数 `shakeZ`，类型为 `boolean`。
+---@param gridSize size_table 瓦片列数和行数。
+---@param range integer 随机位移范围。
+---@param shakeZ boolean 是否同时改变 Z 轴坐标。
 ---@return self 当前对象，便于链式调用。
 function ShakyTiles3D:create(duration, gridSize, range, shakeZ) end
 
---- 调用 `cc.ShakyTiles3D:clone`。
+--- 克隆三维瓦片抖动动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ShakyTiles3D:clone() end
 
---- 更新 `cc.ShakyTiles3D:update` 对应的状态。
+--- 按归一化进度更新瓦片的随机抖动顶点。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：归一化动作进度，通常取值为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 归一化动作进度，通常取值为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function ShakyTiles3D:update(time) end
 
---- 调用 `cc.ShakyTiles3D:ShakyTiles3D`。
+--- 构造三维瓦片抖动动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

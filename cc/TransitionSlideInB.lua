@@ -8,24 +8,24 @@
 local TransitionSlideInB = {}
 cc.TransitionSlideInB = TransitionSlideInB
 
---- 创建 `cc.TransitionSlideInB:create` 对应的对象。
+--- 创建新场景从下方滑入的过渡效果。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：要切换到的目标场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 要切换到的目标场景。
 ---@return self 当前对象，便于链式调用。
 function TransitionSlideInB:create(t, scene) end
 
---- 调用 `cc.TransitionSlideInB:action`。
+--- 创建从下方滑入的场景动作。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
----@return cc.ActionInterval `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：底部滑入动作。
+---@return cc.ActionInterval 底部滑入动作。
 function TransitionSlideInB:action() end
 
 --- 调用 `cc.TransitionSlideInB:TransitionSlideInB`。

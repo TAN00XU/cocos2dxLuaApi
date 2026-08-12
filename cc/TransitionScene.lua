@@ -8,83 +8,83 @@
 local TransitionScene = {}
 cc.TransitionScene = TransitionScene
 
---- 获取 `cc.TransitionScene:getInScene` 对应的值。
+--- 获取过渡结束后进入并显示的目标场景。
 ---
 --- 返回说明：
---- - `cc.Scene`：获取到的 `cc.Scene` 对象或值。
----@return cc.Scene 获取到的 `cc.Scene` 对象或值。
+--- - `cc.Scene`：进入场景。
+---@return cc.Scene 进入场景。
 function TransitionScene:getInScene() end
 
---- 调用 `cc.TransitionScene:finish`。
+--- 完成过渡，将进入场景恢复到正常状态并交给导演显示。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TransitionScene:finish() end
 
---- 初始化 `cc.TransitionScene:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和目标场景初始化场景过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
 ---@return boolean 初始化是否成功。
 function TransitionScene:initWithDuration(t, scene) end
 
---- 获取 `cc.TransitionScene:getDuration` 对应的值。
+--- 获取场景过渡持续时间。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：过渡持续时间，单位为秒。
+---@return number 过渡持续时间，单位为秒。
 function TransitionScene:getDuration() end
 
---- 调用 `cc.TransitionScene:hideOutShowIn`。
+--- 隐藏退出场景并显示进入场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TransitionScene:hideOutShowIn() end
 
---- 创建 `cc.TransitionScene:create` 对应的对象。
+--- 创建在指定时间内切换到目标场景的基础过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
 ---@return self 当前对象，便于链式调用。
 function TransitionScene:create(t, scene) end
 
---- 调用 `cc.TransitionScene:draw`。
+--- 按过渡顺序绘制退出场景和进入场景。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
+--- - `renderer`：用于提交绘制命令的渲染器。
+--- - `transform`：过渡场景的变换矩阵。
 --- - `flags`：标志位。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param transform mat4_table 过渡场景的变换矩阵。
 ---@param flags integer 标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function TransitionScene:draw(renderer, transform, flags) end
 
---- 调用 `cc.TransitionScene:cleanup`。
+--- 清理过渡场景，并按导演设置决定是否清理退出场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TransitionScene:cleanup() end
 
---- 调用 `cc.TransitionScene:TransitionScene`。
+--- 构造基础场景过渡。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

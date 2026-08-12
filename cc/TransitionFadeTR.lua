@@ -8,57 +8,57 @@
 local TransitionFadeTR = {}
 cc.TransitionFadeTR = TransitionFadeTR
 
---- 调用 `cc.TransitionFadeTR:easeActionWithAction`。
+--- 为右上到左下方向的逐格淡出动作包装缓动效果。
 ---
 --- 参数说明：
---- - `action`：动作对象。类型为 `cc.ActionInterval`。
+--- - `action`：待包装的逐格淡出动作。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
----@param action cc.ActionInterval 动作对象。类型为 `cc.ActionInterval`。
----@return cc.ActionInterval `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：应用缓动效果后的逐格淡出动作。
+---@param action cc.ActionInterval 待包装的逐格淡出动作。
+---@return cc.ActionInterval 应用缓动效果后的逐格淡出动作。
 function TransitionFadeTR:easeActionWithAction(action) end
 
---- 调用 `cc.TransitionFadeTR:actionWithSize`。
+--- 按网格尺寸创建右上到左下方向的逐格淡出动作。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
+--- - `size`：网格列数和行数。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
----@param size size_table 尺寸。类型为 `size_table`。
----@return cc.ActionInterval `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：按指定网格尺寸生成的逐格淡出动作。
+---@param size size_table 网格列数和行数。
+---@return cc.ActionInterval 按指定网格尺寸生成的逐格淡出动作。
 function TransitionFadeTR:actionWithSize(size) end
 
---- 创建 `cc.TransitionFadeTR:create` 对应的对象。
+--- 创建右上到左下方向的逐格淡出场景过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
 ---@return self 当前对象，便于链式调用。
 function TransitionFadeTR:create(t, scene) end
 
---- 调用 `cc.TransitionFadeTR:draw`。
+--- 绘制逐格淡出过渡的当前帧。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
---- - `flags`：标志位。类型为 `integer`。
+--- - `renderer`：用于提交绘制命令的渲染器。
+--- - `transform`：节点变换矩阵。
+--- - `flags`：控制渲染提交行为的标志位。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
----@param flags integer 标志位。类型为 `integer`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param transform mat4_table 节点变换矩阵。
+---@param flags integer 控制渲染提交行为的标志位。
 ---@return self 当前对象，便于链式调用。
 function TransitionFadeTR:draw(renderer, transform, flags) end
 
---- 调用 `cc.TransitionFadeTR:TransitionFadeTR`。
+--- 构造逐格淡出过渡对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

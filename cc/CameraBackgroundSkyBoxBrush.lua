@@ -8,18 +8,18 @@
 local CameraBackgroundSkyBoxBrush = {}
 cc.CameraBackgroundSkyBoxBrush = CameraBackgroundSkyBoxBrush
 
---- 设置 `cc.CameraBackgroundSkyBoxBrush:setTextureValid` 对应的值。
+--- 设置立方体纹理是否有效。
 ---
 --- 参数说明：
---- - `valid`：参数 `valid`，类型为 `boolean`。
+--- - `valid`：是否使用当前立方体纹理绘制天空盒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param valid boolean 参数 `valid`，类型为 `boolean`。
+---@param valid boolean 是否使用当前立方体纹理绘制天空盒。
 ---@return self 当前对象，便于链式调用。
 function CameraBackgroundSkyBoxBrush:setTextureValid(valid) end
 
---- 设置 `cc.CameraBackgroundSkyBoxBrush:setTexture` 对应的值。
+--- 设置天空盒使用的立方体纹理。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.TextureCube`。
@@ -30,77 +30,77 @@ function CameraBackgroundSkyBoxBrush:setTextureValid(valid) end
 ---@return self 当前对象，便于链式调用。
 function CameraBackgroundSkyBoxBrush:setTexture(texture) end
 
---- 设置 `cc.CameraBackgroundSkyBoxBrush:setActived` 对应的值。
+--- 设置天空盒画刷是否处于激活状态。
 ---
 --- 参数说明：
---- - `actived`：参数 `actived`，类型为 `boolean`。
+--- - `actived`：是否激活天空盒画刷。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param actived boolean 参数 `actived`，类型为 `boolean`。
+---@param actived boolean 是否激活天空盒画刷。
 ---@return self 当前对象，便于链式调用。
 function CameraBackgroundSkyBoxBrush:setActived(actived) end
 
---- 判断 `cc.CameraBackgroundSkyBoxBrush:isActived` 对应状态是否成立。
+--- 判断天空盒画刷是否处于激活状态。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：画刷是否已激活。
+---@return boolean 画刷是否已激活。
 function CameraBackgroundSkyBoxBrush:isActived() end
 
---- 创建 `cc.CameraBackgroundSkyBoxBrush:create` 对应的对象。
+--- 创建天空盒画刷，可选传入六个方向的纹理路径。
 ---
 --- 参数说明：
---- - `positive_x`：参数 `positive_x`，类型为 `string`。
---- - `negative_x`：参数 `negative_x`，类型为 `string`。
---- - `positive_y`：参数 `positive_y`，类型为 `string`。
---- - `negative_y`：参数 `negative_y`，类型为 `string`。
---- - `positive_z`：参数 `positive_z`，类型为 `string`。
---- - `negative_z`：参数 `negative_z`，类型为 `string`。
+--- - `positive_x`：X 正方向纹理路径。
+--- - `negative_x`：X 负方向纹理路径。
+--- - `positive_y`：Y 正方向纹理路径。
+--- - `negative_y`：Y 负方向纹理路径。
+--- - `positive_z`：Z 正方向纹理路径。
+--- - `negative_z`：Z 负方向纹理路径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(): self
 ---@overload fun(positive_x: string, negative_x: string, positive_y: string, negative_y: string, positive_z: string, negative_z: string): self
----@param positive_x? string 参数 `positive_x`，类型为 `string`。
----@param negative_x? string 参数 `negative_x`，类型为 `string`。
----@param positive_y? string 参数 `positive_y`，类型为 `string`。
----@param negative_y? string 参数 `negative_y`，类型为 `string`。
----@param positive_z? string 参数 `positive_z`，类型为 `string`。
----@param negative_z? string 参数 `negative_z`，类型为 `string`。
+---@param positive_x? string X 正方向纹理路径。
+---@param negative_x? string X 负方向纹理路径。
+---@param positive_y? string Y 正方向纹理路径。
+---@param negative_y? string Y 负方向纹理路径。
+---@param positive_z? string Z 正方向纹理路径。
+---@param negative_z? string Z 负方向纹理路径。
 ---@return self 当前对象，便于链式调用。
 function CameraBackgroundSkyBoxBrush:create(positive_x, negative_x, positive_y, negative_y, positive_z, negative_z) end
 
---- 获取 `cc.CameraBackgroundSkyBoxBrush:getBrushType` 对应的值。
+--- 获取天空盒画刷类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：天空盒画刷类型枚举值。
+---@return integer 天空盒画刷类型枚举值。
 function CameraBackgroundSkyBoxBrush:getBrushType() end
 
---- 调用 `cc.CameraBackgroundSkyBoxBrush:drawBackground`。
+--- 使用天空盒纹理绘制摄像机背景。
 ---
 --- 参数说明：
---- - `camera`：参数 `camera`，类型为 `cc.Camera`。
+--- - `camera`：负责绘制背景的摄像机。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param camera cc.Camera 参数 `camera`，类型为 `cc.Camera`。
+---@param camera cc.Camera 负责绘制背景的摄像机。
 ---@return self 当前对象，便于链式调用。
 function CameraBackgroundSkyBoxBrush:drawBackground(camera) end
 
---- 初始化 `cc.CameraBackgroundSkyBoxBrush:init` 对应的对象或状态。
+--- 初始化天空盒画刷。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function CameraBackgroundSkyBoxBrush:init() end
 
---- 判断 `cc.CameraBackgroundSkyBoxBrush:isValid` 对应状态是否成立。
+--- 判断天空盒纹理和画刷状态是否有效。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：天空盒画刷是否有效。
+---@return boolean 天空盒画刷是否有效。
 function CameraBackgroundSkyBoxBrush:isValid() end
 
 --- 调用 `cc.CameraBackgroundSkyBoxBrush:CameraBackgroundSkyBoxBrush`。

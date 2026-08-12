@@ -8,28 +8,28 @@
 local MenuItemAtlasFont = {}
 cc.MenuItemAtlasFont = MenuItemAtlasFont
 
---- 初始化 `cc.MenuItemAtlasFont:initWithString` 对应的对象或状态。
+--- 使用字符图集和点击回调初始化菜单项。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `string`。
---- - `charMapFile`：参数 `charMapFile`，类型为 `string`。
---- - `itemWidth`：参数 `itemWidth`，类型为 `integer`。
---- - `itemHeight`：参数 `itemHeight`，类型为 `integer`。
---- - `startCharMap`：参数 `startCharMap`，类型为 `string`。
---- - `callback`：回调函数。类型为 `fun(...): any`。
+--- - `value`：菜单项显示的文本。
+--- - `charMapFile`：字符图集纹理文件路径。
+--- - `itemWidth`：单个字符的像素宽度。
+--- - `itemHeight`：单个字符的像素高度。
+--- - `startCharMap`：图集中第一个字符。
+--- - `callback`：菜单项被激活时调用的回调。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param value string 数值或对象值。类型为 `string`。
----@param charMapFile string 参数 `charMapFile`，类型为 `string`。
----@param itemWidth integer 参数 `itemWidth`，类型为 `integer`。
----@param itemHeight integer 参数 `itemHeight`，类型为 `integer`。
----@param startCharMap string 参数 `startCharMap`，类型为 `string`。
----@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
+---@param value string 菜单项显示的文本。
+---@param charMapFile string 字符图集纹理文件路径。
+---@param itemWidth integer 单个字符的像素宽度。
+---@param itemHeight integer 单个字符的像素高度。
+---@param startCharMap string 图集中第一个字符。
+---@param callback fun(...): any 菜单项被激活时调用的回调。
 ---@return boolean 初始化是否成功。
 function MenuItemAtlasFont:initWithString(value, charMapFile, itemWidth, itemHeight, startCharMap, callback) end
 
---- 调用 `cc.MenuItemAtlasFont:MenuItemAtlasFont`。
+--- 初始化图集字体菜单项对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

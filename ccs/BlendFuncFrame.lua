@@ -8,25 +8,25 @@
 local BlendFuncFrame = {}
 ccs.BlendFuncFrame = BlendFuncFrame
 
---- 获取 `ccs.BlendFuncFrame:getBlendFunc` 对应的值。
+--- 获取关键帧中的混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：源因子和目标因子组成的混合函数。
+---@return cc.BlendFunc 源因子和目标因子组成的混合函数。
 function BlendFuncFrame:getBlendFunc() end
 
---- 设置 `ccs.BlendFuncFrame:setBlendFunc` 对应的值。
+--- 设置关键帧中的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：源因子和目标因子组成的混合函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 源因子和目标因子组成的混合函数。
 ---@return self 当前对象，便于链式调用。
 function BlendFuncFrame:setBlendFunc(blendFunc) end
 
---- 创建 `ccs.BlendFuncFrame:create` 对应的对象。
+--- 创建混合函数关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -36,8 +36,8 @@ function BlendFuncFrame:create() end
 --- 调用 `ccs.BlendFuncFrame:clone`。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：创建的混合函数关键帧。
+---@return ccs.Frame 混合函数关键帧副本。
 function BlendFuncFrame:clone() end
 
 --- 调用 `ccs.BlendFuncFrame:BlendFuncFrame`。

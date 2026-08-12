@@ -8,25 +8,25 @@
 local TextureFrame = {}
 ccs.TextureFrame = TextureFrame
 
---- 获取 `ccs.TextureFrame:getTextureName` 对应的值。
+--- 获取关键帧中的纹理资源名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：纹理文件或纹理图集中的精灵帧名称。
+---@return string 纹理文件或纹理图集中的精灵帧名称。
 function TextureFrame:getTextureName() end
 
---- 设置 `ccs.TextureFrame:setTextureName` 对应的值。
+--- 设置关键帧中的纹理资源名称。
 ---
 --- 参数说明：
---- - `textureName`：参数 `textureName`，类型为 `string`。
+--- - `textureName`：纹理文件或纹理图集中的精灵帧名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param textureName string 参数 `textureName`，类型为 `string`。
+---@param textureName string 纹理文件或纹理图集中的精灵帧名称。
 ---@return self 当前对象，便于链式调用。
 function TextureFrame:setTextureName(textureName) end
 
---- 创建 `ccs.TextureFrame:create` 对应的对象。
+--- 创建纹理关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -36,11 +36,11 @@ function TextureFrame:create() end
 --- 调用 `ccs.TextureFrame:clone`。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：创建的纹理关键帧。
+---@return ccs.Frame 纹理关键帧副本。
 function TextureFrame:clone() end
 
---- 设置 `ccs.TextureFrame:setNode` 对应的值。
+--- 设置纹理关键帧作用的节点。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。

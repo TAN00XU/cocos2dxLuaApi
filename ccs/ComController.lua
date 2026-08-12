@@ -7,32 +7,32 @@
 ---@class ccs.ComController : cc.Component
 local ComController = {}
 ccs.ComController = ComController
---- 创建 ComController 对应的对象。
+--- 构造组件控制器对象。
 ---@return ccs.ComController
 function ComController:new() end
 
---- 创建 `ccs.ComController:create` 对应的对象。
+--- 创建组件控制器对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ComController:create() end
 
---- 创建 `ccs.ComController:createInstance` 对应的对象。
+--- 创建组件控制器实例对象。
 ---
 --- 返回说明：
---- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
----@return cc.Ref 创建出的 `cc.Ref` 对象或值。
+--- - `cc.Ref`：新创建的组件控制器实例。
+---@return cc.Ref 新创建的组件控制器实例。
 function ComController:createInstance() end
 
---- 调用 `ccs.ComController:onRemove`。
+--- 从节点移除组件时执行清理。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ComController:onRemove() end
 
---- 更新 `ccs.ComController:update` 对应的状态。
+--- 更新组件控制器状态。
 ---
 --- 参数说明：
 --- - `delta`：变化量。类型为 `number`。
@@ -43,14 +43,14 @@ function ComController:onRemove() end
 ---@return self 当前对象，便于链式调用。
 function ComController:update(delta) end
 
---- 初始化 `ccs.ComController:init` 对应的对象或状态。
+--- 初始化组件控制器。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ComController:init() end
 
---- 调用 `ccs.ComController:onAdd`。
+--- 将组件添加到节点时执行初始化。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

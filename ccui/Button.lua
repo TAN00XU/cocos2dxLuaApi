@@ -8,439 +8,439 @@
 local Button = {}
 ccui.Button = Button
 
---- 创建 `ccui.Button:create` 对应的对象。
+--- 创建按钮；可同时指定普通、按下和禁用状态的纹理。
 ---
 --- 参数说明：
---- - `normalImage`：参数 `normalImage`，类型为 `string`。
---- - `selectedImage`：参数 `selectedImage`，类型为 `string`。
---- - `disableImage`：参数 `disableImage`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `normalImage`：普通状态纹理路径或帧名称。
+--- - `selectedImage`：按下状态纹理路径或帧名称。
+--- - `disableImage`：禁用状态纹理路径或帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(normalImage: string, selectedImage: string, disableImage: string, texType: integer): self
 ---@overload fun(): self
----@param normalImage? string 参数 `normalImage`，类型为 `string`。
----@param selectedImage? string 参数 `selectedImage`，类型为 `string`。
----@param disableImage? string 参数 `disableImage`，类型为 `string`。
----@param texType? integer 参数 `texType`，类型为 `integer`。
+---@param normalImage? string 普通状态纹理路径或帧名称。
+---@param selectedImage? string 按下状态纹理路径或帧名称。
+---@param disableImage? string 禁用状态纹理路径或帧名称。
+---@param texType? integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function Button:create(normalImage, selectedImage, disableImage, texType) end
 
---- 创建 `ccui.Button:createInstance` 对应的对象。
+--- 创建空的引用对象实例。
 ---
 --- 返回说明：
---- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
----@return cc.Ref 创建出的 `cc.Ref` 对象或值。
+--- - `cc.Ref`：创建出的引用对象实例。
+---@return cc.Ref 创建出的引用对象实例。
 function Button:createInstance() end
 
---- 获取 `ccui.Button:getNormalTextureSize` 对应的值。
+--- 获取普通状态纹理的尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：普通状态纹理尺寸。
+---@return size_table 普通状态纹理尺寸。
 function Button:getNormalTextureSize() end
 
---- 获取 `ccui.Button:getTitleText` 对应的值。
+--- 获取按钮标题文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：按钮标题文本。
+---@return string 按钮标题文本。
 function Button:getTitleText() end
 
---- 设置 `ccui.Button:setTitleLabel` 对应的值。
+--- 替换按钮当前使用的标题标签。
 ---
 --- 参数说明：
 --- - `label`：标签渲染对象。类型为 `cc.Label`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param label cc.Label 标签渲染对象。类型为 `cc.Label`。
+---@param label cc.Label 用作标题的标签对象。
 ---@return self 当前对象，便于链式调用。
 function Button:setTitleLabel(label) end
 
---- 设置 `ccui.Button:setTitleFontSize` 对应的值。
+--- 设置标题字体大小。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `number`。
+--- - `size`：标题字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param size number 尺寸。类型为 `number`。
+---@param size number 标题字体大小。
 ---@return self 当前对象，便于链式调用。
 function Button:setTitleFontSize(size) end
 
---- 重置 `ccui.Button:resetPressedRender` 对应的状态。
+--- 清空按下状态纹理及其加载信息，并重置对应渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Button:resetPressedRender() end
 
---- 设置 `ccui.Button:setScale9Enabled` 对应的值。
+--- 启用或禁用九宫格渲染器。
 ---
 --- 参数说明：
---- - `enable`：是否启用。类型为 `boolean`。
+--- - `enable`：为 `true` 时使用九宫格渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enable boolean 是否启用。类型为 `boolean`。
+---@param enable boolean 为 `true` 时使用九宫格渲染器。
 ---@return self 当前对象，便于链式调用。
 function Button:setScale9Enabled(enable) end
 
---- 重置 `ccui.Button:resetDisabledRender` 对应的状态。
+--- 清空禁用状态纹理及其加载信息，并重置对应渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Button:resetDisabledRender() end
 
---- 获取 `ccui.Button:getTitleRenderer` 对应的值。
+--- 获取内部标题渲染器。
 ---
 --- 返回说明：
---- - `cc.Label`：获取到的 `cc.Label` 对象或值。
----@return cc.Label 获取到的 `cc.Label` 对象或值。
+--- - `cc.Label`：内部标题渲染器。
+---@return cc.Label 内部标题渲染器。
 function Button:getTitleRenderer() end
 
---- 获取 `ccui.Button:getRendererClicked` 对应的值。
+--- 获取按下状态的九宫格精灵渲染器。
 ---
 --- 返回说明：
---- - `ccui.Scale9Sprite`：获取到的 `ccui.Scale9Sprite` 对象或值。
----@return ccui.Scale9Sprite 获取到的 `ccui.Scale9Sprite` 对象或值。
+--- - `ccui.Scale9Sprite`：按下状态渲染器。
+---@return ccui.Scale9Sprite 按下状态渲染器。
 function Button:getRendererClicked() end
 
---- 获取 `ccui.Button:getDisabledFile` 对应的值。
+--- 获取禁用状态纹理的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：禁用状态纹理资源描述。
+---@return cc.ResourceData 禁用状态纹理资源描述。
 function Button:getDisabledFile() end
 
---- 获取 `ccui.Button:getZoomScale` 对应的值。
+--- 获取按钮按下时叠加到原始缩放值上的增量。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：按下时叠加到原始缩放值上的增量。
+---@return number 按下缩放增量。
 function Button:getZoomScale() end
 
---- 获取 `ccui.Button:getCapInsetsDisabledRenderer` 对应的值。
+--- 获取禁用状态九宫格渲染器的边距。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：禁用状态九宫格边距。
+---@return rect_table 禁用状态九宫格边距。
 function Button:getCapInsetsDisabledRenderer() end
 
---- 设置 `ccui.Button:setTitleColor` 对应的值。
+--- 设置标题颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param color color3b_table 颜色值。类型为 `color3b_table`。
+---@param color color3b_table 标题颜色，使用 `cc.c3b` 创建。
 ---@return self 当前对象，便于链式调用。
 function Button:setTitleColor(color) end
 
---- 获取 `ccui.Button:getNormalFile` 对应的值。
+--- 获取普通状态纹理的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：普通状态纹理资源描述。
+---@return cc.ResourceData 普通状态纹理资源描述。
 function Button:getNormalFile() end
 
---- 重置 `ccui.Button:resetNormalRender` 对应的状态。
+--- 清空普通状态纹理及其加载信息，并重置对应渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Button:resetNormalRender() end
 
---- 获取 `ccui.Button:getRendererDisabled` 对应的值。
+--- 获取禁用状态的九宫格精灵渲染器。
 ---
 --- 返回说明：
---- - `ccui.Scale9Sprite`：获取到的 `ccui.Scale9Sprite` 对象或值。
----@return ccui.Scale9Sprite 获取到的 `ccui.Scale9Sprite` 对象或值。
+--- - `ccui.Scale9Sprite`：禁用状态渲染器。
+---@return ccui.Scale9Sprite 禁用状态渲染器。
 function Button:getRendererDisabled() end
 
---- 设置 `ccui.Button:setCapInsetsDisabledRenderer` 对应的值。
+--- 设置禁用状态九宫格渲染器的边距。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 九宫格渲染器的保留边距。
 ---@return self 当前对象，便于链式调用。
 function Button:setCapInsetsDisabledRenderer(capInsets) end
 
---- 设置 `ccui.Button:setCapInsets` 对应的值。
+--- 设置普通、按下和禁用状态九宫格渲染器共用的拉伸边距。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 九宫格渲染器的保留边距。
 ---@return self 当前对象，便于链式调用。
 function Button:setCapInsets(capInsets) end
 
---- 加载 `ccui.Button:loadTextureDisabled` 对应的资源或数据。
+--- 加载禁用状态纹理。
 ---
 --- 参数说明：
---- - `disabled`：参数 `disabled`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `disabled`：禁用状态纹理路径或帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param disabled string 参数 `disabled`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param disabled string 禁用状态纹理路径或帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function Button:loadTextureDisabled(disabled, texType) end
 
---- 初始化 `ccui.Button:init` 对应的对象或状态。
+--- 使用指定状态纹理初始化按钮。
 ---
 --- 参数说明：
---- - `normalImage`：参数 `normalImage`，类型为 `string`。
---- - `selectedImage`：参数 `selectedImage`，类型为 `string`。
---- - `disableImage`：参数 `disableImage`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `normalImage`：普通状态纹理路径或帧名称。
+--- - `selectedImage`：按下状态纹理路径或帧名称。
+--- - `disableImage`：禁用状态纹理路径或帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param normalImage string 参数 `normalImage`，类型为 `string`。
----@param selectedImage string 参数 `selectedImage`，类型为 `string`。
----@param disableImage string 参数 `disableImage`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param normalImage string 普通状态纹理路径或帧名称。
+---@param selectedImage string 按下状态纹理路径或帧名称。
+---@param disableImage string 禁用状态纹理路径或帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return boolean 初始化是否成功。
 function Button:init(normalImage, selectedImage, disableImage, texType) end
 
---- 设置 `ccui.Button:setTitleText` 对应的值。
+--- 设置按钮标题文本。
 ---
 --- 参数说明：
 --- - `text`：文本内容。类型为 `string`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param text string 文本内容。类型为 `string`。
+---@param text string 要显示的标题文本。
 ---@return self 当前对象，便于链式调用。
 function Button:setTitleText(text) end
 
---- 设置 `ccui.Button:setCapInsetsNormalRenderer` 对应的值。
+--- 设置普通状态九宫格渲染器的边距。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 九宫格渲染器的保留边距。
 ---@return self 当前对象，便于链式调用。
 function Button:setCapInsetsNormalRenderer(capInsets) end
 
---- 加载 `ccui.Button:loadTexturePressed` 对应的资源或数据。
+--- 加载按下状态纹理。
 ---
 --- 参数说明：
---- - `selected`：参数 `selected`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `selected`：按下状态纹理路径或帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param selected string 参数 `selected`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param selected string 按下状态纹理路径或帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function Button:loadTexturePressed(selected, texType) end
 
---- 设置 `ccui.Button:setTitleFontName` 对应的值。
+--- 设置标题字体名称。
 ---
 --- 参数说明：
 --- - `fontName`：字体名称。类型为 `string`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param fontName string 字体名称。类型为 `string`。
+---@param fontName string 标题字体名称。
 ---@return self 当前对象，便于链式调用。
 function Button:setTitleFontName(fontName) end
 
---- 获取 `ccui.Button:getCapInsetsNormalRenderer` 对应的值。
+--- 获取普通状态九宫格渲染器的边距。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：普通状态九宫格边距。
+---@return rect_table 普通状态九宫格边距。
 function Button:getCapInsetsNormalRenderer() end
 
---- 设置 `ccui.Button:setTitleAlignment` 对应的值。
+--- 设置标题文本的水平和垂直对齐方式。
 ---
 --- 参数说明：
---- - `hAlignment`：参数 `hAlignment`，类型为 `integer`。
---- - `vAlignment`：参数 `vAlignment`，类型为 `integer`。
+--- - `hAlignment`：水平对齐方式，参见 `cc.TextHAlignment`。
+--- - `vAlignment`：垂直对齐方式，参见 `cc.TextVAlignment`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(hAlignment: integer, vAlignment: integer): self
 ---@overload fun(hAlignment: integer): self
----@param hAlignment? integer 参数 `hAlignment`，类型为 `integer`。
----@param vAlignment? integer 参数 `vAlignment`，类型为 `integer`。
+---@param hAlignment? integer 水平对齐方式，参见 `cc.TextHAlignment`。
+---@param vAlignment? integer 垂直对齐方式，参见 `cc.TextVAlignment`。
 ---@return self 当前对象，便于链式调用。
 function Button:setTitleAlignment(hAlignment, vAlignment) end
 
---- 获取 `ccui.Button:getCapInsetsPressedRenderer` 对应的值。
+--- 获取按下状态九宫格渲染器的边距。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：按下状态九宫格边距。
+---@return rect_table 按下状态九宫格边距。
 function Button:getCapInsetsPressedRenderer() end
 
---- 加载 `ccui.Button:loadTextures` 对应的资源或数据。
+--- 同时加载普通、按下和禁用状态纹理。
 ---
 --- 参数说明：
---- - `normal`：参数 `normal`，类型为 `string`。
---- - `selected`：参数 `selected`，类型为 `string`。
---- - `disabled`：参数 `disabled`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `normal`：普通状态纹理路径或帧名称。
+--- - `selected`：按下状态纹理路径或帧名称。
+--- - `disabled`：禁用状态纹理路径或帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param normal string 参数 `normal`，类型为 `string`。
----@param selected string 参数 `selected`，类型为 `string`。
----@param disabled string 参数 `disabled`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param normal string 普通状态纹理路径或帧名称。
+---@param selected string 按下状态纹理路径或帧名称。
+---@param disabled string 禁用状态纹理路径或帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function Button:loadTextures(normal, selected, disabled, texType) end
 
---- 判断 `ccui.Button:isScale9Enabled` 对应状态是否成立。
+--- 判断按钮是否启用了九宫格渲染。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：按钮是否启用了九宫格渲染。
+---@return boolean 按钮是否启用了九宫格渲染。
 function Button:isScale9Enabled() end
 
---- 加载 `ccui.Button:loadTextureNormal` 对应的资源或数据。
+--- 加载普通状态纹理。
 ---
 --- 参数说明：
---- - `normal`：参数 `normal`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `normal`：普通状态纹理路径或帧名称。
+--- - `texType`：纹理资源类型，参见 `ccui.TextureResType`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param normal string 参数 `normal`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param normal string 普通状态纹理路径或帧名称。
+---@param texType integer 纹理资源类型，参见 `ccui.TextureResType`。
 ---@return self 当前对象，便于链式调用。
 function Button:loadTextureNormal(normal, texType) end
 
---- 设置 `ccui.Button:setCapInsetsPressedRenderer` 对应的值。
+--- 设置按下状态九宫格渲染器的边距。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
+---@param capInsets rect_table 九宫格渲染器的保留边距。
 ---@return self 当前对象，便于链式调用。
 function Button:setCapInsetsPressedRenderer(capInsets) end
 
---- 获取 `ccui.Button:getPressedFile` 对应的值。
+--- 获取按下状态纹理的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：按下状态纹理资源描述。
+---@return cc.ResourceData 按下状态纹理资源描述。
 function Button:getPressedFile() end
 
---- 获取 `ccui.Button:getTitleLabel` 对应的值。
+--- 获取当前使用的标题标签。
 ---
 --- 返回说明：
---- - `cc.Label`：获取到的 `cc.Label` 对象或值。
----@return cc.Label 获取到的 `cc.Label` 对象或值。
+--- - `cc.Label`：按钮当前使用的标题标签。
+---@return cc.Label 按钮当前使用的标题标签。
 function Button:getTitleLabel() end
 
---- 获取 `ccui.Button:getTitleFontSize` 对应的值。
+--- 获取标题字体大小。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：标题字体大小。
+---@return number 标题字体大小。
 function Button:getTitleFontSize() end
 
---- 获取 `ccui.Button:getRendererNormal` 对应的值。
+--- 获取普通状态的九宫格精灵渲染器。
 ---
 --- 返回说明：
---- - `ccui.Scale9Sprite`：获取到的 `ccui.Scale9Sprite` 对象或值。
----@return ccui.Scale9Sprite 获取到的 `ccui.Scale9Sprite` 对象或值。
+--- - `ccui.Scale9Sprite`：普通状态渲染器。
+---@return ccui.Scale9Sprite 普通状态渲染器。
 function Button:getRendererNormal() end
 
---- 获取 `ccui.Button:getTitleFontName` 对应的值。
+--- 获取标题字体名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：标题字体名称。
+---@return string 标题字体名称。
 function Button:getTitleFontName() end
 
---- 获取 `ccui.Button:getTitleColor` 对应的值。
+--- 获取标题颜色。
 ---
 --- 返回说明：
---- - `color3b_table`：获取到的 Lua 表数据。
----@return color3b_table 获取到的 Lua 表数据。
+--- - `color3b_table`：标题颜色。
+---@return color3b_table 标题颜色。
 function Button:getTitleColor() end
 
---- 设置 `ccui.Button:setPressedActionEnabled` 对应的值。
+--- 启用或禁用按下时的缩放动画。
 ---
 --- 参数说明：
---- - `enabled`：是否启用。类型为 `boolean`。
+--- - `enabled`：为 `true` 时启用按下缩放动画。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enabled boolean 是否启用。类型为 `boolean`。
+---@param enabled boolean 为 `true` 时启用按下缩放动画。
 ---@return self 当前对象，便于链式调用。
 function Button:setPressedActionEnabled(enabled) end
 
---- 设置 `ccui.Button:setZoomScale` 对应的值。
+--- 设置按下时附加的缩放值。
 ---
 --- 参数说明：
---- - `scale`：缩放比例。类型为 `number`。
+--- - `scale`：在原始缩放值基础上增加的缩放值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scale number 缩放比例。类型为 `number`。
+---@param scale number 在原始缩放值基础上增加的缩放值。
 ---@return self 当前对象，便于链式调用。
 function Button:setZoomScale(scale) end
 
---- 获取 `ccui.Button:getVirtualRenderer` 对应的值。
+--- 获取与按钮当前普通、按下或禁用状态对应的渲染器。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：与按钮当前状态对应的渲染器。
+---@return cc.Node 当前状态渲染器。
 function Button:getVirtualRenderer() end
 
---- 初始化 `ccui.Button:init` 对应的对象或状态。
+--- 初始化空按钮。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Button:init() end
 
---- 获取 `ccui.Button:getDescription` 对应的值。
+--- 获取控件类型描述字符串 `"Button"`。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：固定类型描述字符串 `"Button"`。
+---@return string 固定类型描述字符串 `"Button"`。
 function Button:getDescription() end
 
---- 获取 `ccui.Button:getVirtualRendererSize` 对应的值。
+--- 获取按钮用于布局的渲染尺寸；无普通纹理且标题非空时返回标题尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：按钮用于布局的渲染尺寸。
+---@return size_table 按钮用于布局的渲染尺寸。
 function Button:getVirtualRendererSize() end
 
---- 调用 `ccui.Button:ignoreContentAdaptWithSize`。
+--- 设置是否忽略手动内容尺寸并按渲染内容自适应大小。
 ---
 --- 参数说明：
---- - `ignore`：参数 `ignore`，类型为 `boolean`。
+--- - `ignore`：为 `true` 时忽略手动内容尺寸并按渲染内容自适应。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param ignore boolean 参数 `ignore`，类型为 `boolean`。
+---@param ignore boolean 为 `true` 时忽略手动内容尺寸并按渲染内容自适应。
 ---@return self 当前对象，便于链式调用。
 function Button:ignoreContentAdaptWithSize(ignore) end
 
---- 调用 `ccui.Button:Button`。
+--- 构造按钮对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

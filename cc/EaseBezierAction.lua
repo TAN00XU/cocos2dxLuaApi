@@ -8,24 +8,24 @@
 local EaseBezierAction = {}
 cc.EaseBezierAction = EaseBezierAction
 
---- 设置 `cc.EaseBezierAction:setBezierParamer` 对应的值。
+--- 设置四阶贝塞尔缓动曲线的控制参数。
 ---
 --- 参数说明：
---- - `p0`：参数 `p0`，类型为 `number`。
---- - `p1`：参数 `p1`，类型为 `number`。
---- - `p2`：参数 `p2`，类型为 `number`。
---- - `p3`：参数 `p3`，类型为 `number`。
+--- - `p0`：贝塞尔曲线第一个控制参数。
+--- - `p1`：贝塞尔曲线第二个控制参数。
+--- - `p2`：贝塞尔曲线第三个控制参数。
+--- - `p3`：贝塞尔曲线第四个控制参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param p0 number 参数 `p0`，类型为 `number`。
----@param p1 number 参数 `p1`，类型为 `number`。
----@param p2 number 参数 `p2`，类型为 `number`。
----@param p3 number 参数 `p3`，类型为 `number`。
+---@param p0 number 第一个贝塞尔控制参数。
+---@param p1 number 第二个贝塞尔控制参数。
+---@param p2 number 第三个贝塞尔控制参数。
+---@param p3 number 第四个贝塞尔控制参数。
 ---@return self 当前对象，便于链式调用。
 function EaseBezierAction:setBezierParamer(p0, p1, p2, p3) end
 
---- 创建 `cc.EaseBezierAction:create` 对应的对象。
+--- 创建贝塞尔曲线缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -43,7 +43,7 @@ function EaseBezierAction:create(action) end
 ---@return self 当前对象，便于链式调用。
 function EaseBezierAction:clone() end
 
---- 更新 `cc.EaseBezierAction:update` 对应的状态。
+--- 按贝塞尔曲线更新内部动作进度。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

@@ -8,7 +8,7 @@
 local EaseCubicActionInOut = {}
 cc.EaseCubicActionInOut = EaseCubicActionInOut
 
---- 创建 `cc.EaseCubicActionInOut:create` 对应的对象。
+--- 创建三次方渐入渐出缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -26,7 +26,7 @@ function EaseCubicActionInOut:create(action) end
 ---@return self 当前对象，便于链式调用。
 function EaseCubicActionInOut:clone() end
 
---- 更新 `cc.EaseCubicActionInOut:update` 对应的状态。
+--- 按三次方渐入渐出曲线更新内部动作进度。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -40,8 +40,8 @@ function EaseCubicActionInOut:update(time) end
 --- 调用 `cc.EaseCubicActionInOut:reverse`。
 ---
 --- 返回说明：
---- - `cc.ActionEase`：`cc.ActionEase` 对象或值。
----@return cc.ActionEase `cc.ActionEase` 对象或值。
+--- - `cc.ActionEase`：反向缓动动作。
+---@return cc.ActionEase 反向缓动动作。
 function EaseCubicActionInOut:reverse() end
 
 --- 调用 `cc.EaseCubicActionInOut:new`。

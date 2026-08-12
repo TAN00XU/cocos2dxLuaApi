@@ -8,33 +8,33 @@
 local ProgressFromTo = {}
 cc.ProgressFromTo = ProgressFromTo
 
---- 初始化 `cc.ProgressFromTo:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和起止百分比初始化进度变化动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `fromPercentage`：参数 `fromPercentage`，类型为 `number`。
---- - `toPercentage`：参数 `toPercentage`，类型为 `number`。
+--- - `fromPercentage`：起始进度百分比，通常范围为 0 到 100。
+--- - `toPercentage`：结束进度百分比，通常范围为 0 到 100。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param fromPercentage number 参数 `fromPercentage`，类型为 `number`。
----@param toPercentage number 参数 `toPercentage`，类型为 `number`。
+---@param fromPercentage number 起始进度百分比，通常范围为 0 到 100。
+---@param toPercentage number 结束进度百分比，通常范围为 0 到 100。
 ---@return boolean 初始化是否成功。
 function ProgressFromTo:initWithDuration(duration, fromPercentage, toPercentage) end
 
---- 创建 `cc.ProgressFromTo:create` 对应的对象。
+--- 创建在两个百分比之间插值的进度动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `fromPercentage`：参数 `fromPercentage`，类型为 `number`。
---- - `toPercentage`：参数 `toPercentage`，类型为 `number`。
+--- - `fromPercentage`：起始进度百分比，通常范围为 0 到 100。
+--- - `toPercentage`：结束进度百分比，通常范围为 0 到 100。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param fromPercentage number 参数 `fromPercentage`，类型为 `number`。
----@param toPercentage number 参数 `toPercentage`，类型为 `number`。
+---@param fromPercentage number 起始进度百分比，通常范围为 0 到 100。
+---@param toPercentage number 结束进度百分比，通常范围为 0 到 100。
 ---@return self 当前对象，便于链式调用。
 function ProgressFromTo:create(duration, fromPercentage, toPercentage) end
 
@@ -63,14 +63,14 @@ function ProgressFromTo:clone() end
 ---@return self 当前对象，便于链式调用。
 function ProgressFromTo:reverse() end
 
---- 更新 `cc.ProgressFromTo:update` 对应的状态。
+--- 按归一化进度更新当前百分比。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度，通常范围为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度，通常范围为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function ProgressFromTo:update(time) end
 

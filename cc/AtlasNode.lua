@@ -8,42 +8,42 @@
 local AtlasNode = {}
 cc.AtlasNode = AtlasNode
 
---- 获取 `cc.AtlasNode:getBlendFunc` 对应的值。
+--- 获取纹理图集的混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：当前纹理混合函数。
+---@return cc.BlendFunc 当前纹理混合函数。
 function AtlasNode:getBlendFunc() end
 
---- 初始化 `cc.AtlasNode:initWithTileFile` 对应的对象或状态。
+--- 使用图集文件和瓦片尺寸初始化图集节点。
 ---
 --- 参数说明：
---- - `tile`：参数 `tile`，类型为 `string`。
---- - `tileWidth`：参数 `tileWidth`，类型为 `integer`。
---- - `tileHeight`：参数 `tileHeight`，类型为 `integer`。
---- - `itemsToRender`：参数 `itemsToRender`，类型为 `integer`。
+--- - `tile`：图集纹理文件路径。
+--- - `tileWidth`：单个瓦片宽度。
+--- - `tileHeight`：单个瓦片高度。
+--- - `itemsToRender`：要绘制的瓦片数量。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param tile string 参数 `tile`，类型为 `string`。
----@param tileWidth integer 参数 `tileWidth`，类型为 `integer`。
----@param tileHeight integer 参数 `tileHeight`，类型为 `integer`。
----@param itemsToRender integer 参数 `itemsToRender`，类型为 `integer`。
+---@param tile string 图集纹理文件路径。
+---@param tileWidth integer 单个瓦片宽度。
+---@param tileHeight integer 单个瓦片高度。
+---@param itemsToRender integer 要绘制的瓦片数量。
 ---@return boolean 初始化是否成功。
 function AtlasNode:initWithTileFile(tile, tileWidth, tileHeight, itemsToRender) end
 
---- 设置 `cc.AtlasNode:setBlendFunc` 对应的值。
+--- 设置纹理图集的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：新的纹理混合函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 新的纹理混合函数。
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:setBlendFunc(blendFunc) end
 
---- 设置 `cc.AtlasNode:setTextureAtlas` 对应的值。
+--- 设置使用的纹理图集对象。
 ---
 --- 参数说明：
 --- - `textureAtlas`：纹理图集对象。类型为 `cc.TextureAtlas`。
@@ -54,28 +54,28 @@ function AtlasNode:setBlendFunc(blendFunc) end
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:setTextureAtlas(textureAtlas) end
 
---- 获取 `cc.AtlasNode:getTexture` 对应的值。
+--- 获取图集节点使用的纹理对象。
 ---
 --- 返回说明：
---- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
----@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
+--- - `cc.Texture2D`：当前图集纹理。
+---@return cc.Texture2D 当前图集纹理。
 function AtlasNode:getTexture() end
 
---- 获取 `cc.AtlasNode:getTextureAtlas` 对应的值。
+--- 获取使用的纹理图集对象。
 ---
 --- 返回说明：
---- - `cc.TextureAtlas`：获取到的 `cc.TextureAtlas` 对象或值。
----@return cc.TextureAtlas 获取到的 `cc.TextureAtlas` 对象或值。
+--- - `cc.TextureAtlas`：当前纹理图集。
+---@return cc.TextureAtlas 当前纹理图集。
 function AtlasNode:getTextureAtlas() end
 
---- 更新 `cc.AtlasNode:updateAtlasValues` 对应的状态。
+--- 根据节点属性更新图集顶点数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:updateAtlasValues() end
 
---- 设置 `cc.AtlasNode:setTexture` 对应的值。
+--- 设置图集节点使用的纹理。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
@@ -86,69 +86,69 @@ function AtlasNode:updateAtlasValues() end
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:setTexture(texture) end
 
---- 初始化 `cc.AtlasNode:initWithTexture` 对应的对象或状态。
+--- 使用纹理对象和瓦片尺寸初始化图集节点。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
---- - `tileWidth`：参数 `tileWidth`，类型为 `integer`。
---- - `tileHeight`：参数 `tileHeight`，类型为 `integer`。
---- - `itemsToRender`：参数 `itemsToRender`，类型为 `integer`。
+--- - `tileWidth`：单个瓦片宽度。
+--- - `tileHeight`：单个瓦片高度。
+--- - `itemsToRender`：要绘制的瓦片数量。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param texture cc.Texture2D 纹理对象。类型为 `cc.Texture2D`。
----@param tileWidth integer 参数 `tileWidth`，类型为 `integer`。
----@param tileHeight integer 参数 `tileHeight`，类型为 `integer`。
----@param itemsToRender integer 参数 `itemsToRender`，类型为 `integer`。
+---@param tileWidth integer 单个瓦片宽度。
+---@param tileHeight integer 单个瓦片高度。
+---@param itemsToRender integer 要绘制的瓦片数量。
 ---@return boolean 初始化是否成功。
 function AtlasNode:initWithTexture(texture, tileWidth, tileHeight, itemsToRender) end
 
---- 获取 `cc.AtlasNode:getQuadsToDraw` 对应的值。
+--- 获取当前要绘制的图集四边形数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：要绘制的四边形数量。
+---@return integer 要绘制的四边形数量。
 function AtlasNode:getQuadsToDraw() end
 
---- 设置 `cc.AtlasNode:setQuadsToDraw` 对应的值。
+--- 设置要绘制的图集四边形数量。
 ---
 --- 参数说明：
---- - `quadsToDraw`：参数 `quadsToDraw`，类型为 `integer`。
+--- - `quadsToDraw`：要绘制的四边形数量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param quadsToDraw integer 参数 `quadsToDraw`，类型为 `integer`。
+---@param quadsToDraw integer 要绘制的四边形数量。
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:setQuadsToDraw(quadsToDraw) end
 
---- 创建 `cc.AtlasNode:create` 对应的对象。
+--- 从图集文件创建图集节点。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
---- - `tileWidth`：参数 `tileWidth`，类型为 `integer`。
---- - `tileHeight`：参数 `tileHeight`，类型为 `integer`。
---- - `itemsToRender`：参数 `itemsToRender`，类型为 `integer`。
+--- - `tileWidth`：单个瓦片宽度。
+--- - `tileHeight`：单个瓦片高度。
+--- - `itemsToRender`：要绘制的瓦片数量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param filename string 文件名或文件路径。类型为 `string`。
----@param tileWidth integer 参数 `tileWidth`，类型为 `integer`。
----@param tileHeight integer 参数 `tileHeight`，类型为 `integer`。
----@param itemsToRender integer 参数 `itemsToRender`，类型为 `integer`。
+---@param tileWidth integer 单个瓦片宽度。
+---@param tileHeight integer 单个瓦片高度。
+---@param itemsToRender integer 要绘制的瓦片数量。
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:create(filename, tileWidth, tileHeight, itemsToRender) end
 
 --- 调用 `cc.AtlasNode:draw`。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
+--- - `renderer`：用于提交批次的渲染器。
+--- - `transform`：节点当前的世界变换矩阵。
 --- - `flags`：标志位。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交批次的渲染器。
+---@param transform mat4_table 节点当前的世界变换矩阵。
 ---@param flags integer 标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:draw(renderer, transform, flags) end
@@ -156,11 +156,11 @@ function AtlasNode:draw(renderer, transform, flags) end
 --- 判断 `cc.AtlasNode:isOpacityModifyRGB` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用透明度对颜色的影响。
+---@return boolean 是否启用透明度对颜色的影响。
 function AtlasNode:isOpacityModifyRGB() end
 
---- 设置 `cc.AtlasNode:setColor` 对应的值。
+--- 设置图集节点的 RGB 颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -171,25 +171,25 @@ function AtlasNode:isOpacityModifyRGB() end
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:setColor(color) end
 
---- 获取 `cc.AtlasNode:getColor` 对应的值。
+--- 获取图集节点当前的 RGB 颜色。
 ---
 --- 返回说明：
---- - `color3b_table`：获取到的 Lua 表数据。
----@return color3b_table 获取到的 Lua 表数据。
+--- - `color3b_table`：包含 `r`、`g`、`b` 分量的颜色表。
+---@return color3b_table 包含 `r`、`g`、`b` 分量的颜色表。
 function AtlasNode:getColor() end
 
---- 设置 `cc.AtlasNode:setOpacityModifyRGB` 对应的值。
+--- 设置透明度是否参与 RGB 颜色计算。
 ---
 --- 参数说明：
---- - `isOpacityModifyRGB`：参数 `isOpacityModifyRGB`，类型为 `boolean`。
+--- - `isOpacityModifyRGB`：是否启用透明度对 RGB 的预乘影响。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param isOpacityModifyRGB boolean 参数 `isOpacityModifyRGB`，类型为 `boolean`。
+---@param isOpacityModifyRGB boolean 是否启用透明度对 RGB 的预乘影响。
 ---@return self 当前对象，便于链式调用。
 function AtlasNode:setOpacityModifyRGB(isOpacityModifyRGB) end
 
---- 设置 `cc.AtlasNode:setOpacity` 对应的值。
+--- 设置图集节点的不透明度，取值范围通常为 0 到 255。
 ---
 --- 参数说明：
 --- - `opacity`：透明度。类型为 `integer`。

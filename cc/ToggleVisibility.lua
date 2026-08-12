@@ -8,7 +8,7 @@
 local ToggleVisibility = {}
 cc.ToggleVisibility = ToggleVisibility
 
---- 创建 `cc.ToggleVisibility:create` 对应的对象。
+--- 创建切换目标节点可见性的瞬时动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -22,18 +22,18 @@ function ToggleVisibility:create() end
 ---@return self 当前对象，便于链式调用。
 function ToggleVisibility:clone() end
 
---- 更新 `cc.ToggleVisibility:update` 对应的状态。
+--- 执行可见性切换；瞬时动作不使用进度值。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度参数。
 ---@return self 当前对象，便于链式调用。
 function ToggleVisibility:update(time) end
 
---- 调用 `cc.ToggleVisibility:reverse`。
+--- 反向动作仍会切换目标节点当前的可见性。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

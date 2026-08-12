@@ -8,7 +8,7 @@
 local RepeatForever = {}
 cc.RepeatForever = RepeatForever
 
---- 设置 `cc.RepeatForever:setInnerAction` 对应的值。
+--- 设置要无限循环执行的内部动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -19,7 +19,7 @@ cc.RepeatForever = RepeatForever
 ---@return self 当前对象，便于链式调用。
 function RepeatForever:setInnerAction(action) end
 
---- 初始化 `cc.RepeatForever:initWithAction` 对应的对象或状态。
+--- 使用内部动作初始化无限循环动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -30,14 +30,14 @@ function RepeatForever:setInnerAction(action) end
 ---@return boolean 初始化是否成功。
 function RepeatForever:initWithAction(action) end
 
---- 获取 `cc.RepeatForever:getInnerAction` 对应的值。
+--- 获取无限循环动作包装的内部动作。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：获取到的 `cc.ActionInterval` 对象或值。
----@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：内部区间动作。
+---@return cc.ActionInterval 内部区间动作。
 function RepeatForever:getInnerAction() end
 
---- 创建 `cc.RepeatForever:create` 对应的对象。
+--- 创建无限循环执行内部动作的动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -69,8 +69,8 @@ function RepeatForever:clone() end
 --- 判断 `cc.RepeatForever:isDone` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：动作是否已完成。
+---@return boolean 动作是否已完成。
 function RepeatForever:isDone() end
 
 --- 调用 `cc.RepeatForever:reverse`。

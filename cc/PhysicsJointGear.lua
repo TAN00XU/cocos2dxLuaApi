@@ -8,62 +8,59 @@
 local PhysicsJointGear = {}
 cc.PhysicsJointGear = PhysicsJointGear
 
---- 设置 `cc.PhysicsJointGear:setRatio` 对应的值。
+--- 设置两个刚体角速度之间的传动比。
 ---
 --- 参数说明：
---- - `ratchet`：参数 `ratchet`，类型为 `number`。
+--- - `ratchet`：新的传动比；参数名沿用原生绑定。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param ratchet number 参数 `ratchet`，类型为 `number`。
+---@param ratchet number 两个刚体角速度之间的传动比。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointGear:setRatio(ratchet) end
 
---- 获取 `cc.PhysicsJointGear:getPhase` 对应的值。
+--- 获取齿轮关节保持的初始相位差。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+---@return number 初始相位差，单位为弧度。
 function PhysicsJointGear:getPhase() end
 
---- 设置 `cc.PhysicsJointGear:setPhase` 对应的值。
+--- 设置齿轮关节保持的初始相位差。
 ---
 --- 参数说明：
---- - `phase`：参数 `phase`，类型为 `number`。
+--- - `phase`：初始相位差，单位为弧度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param phase number 参数 `phase`，类型为 `number`。
+---@param phase number 初始相位差，单位为弧度。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointGear:setPhase(phase) end
 
---- 创建 `cc.PhysicsJointGear:createConstraints` 对应的对象。
+--- 为齿轮关节创建底层物理约束。
 ---
 --- 返回说明：
---- - `boolean`：创建出的 布尔值。
----@return boolean 创建出的 布尔值。
+---@return boolean 底层约束是否创建成功。
 function PhysicsJointGear:createConstraints() end
 
---- 获取 `cc.PhysicsJointGear:getRatio` 对应的值。
+--- 获取两个刚体角速度之间的传动比。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+---@return number 当前传动比。
 function PhysicsJointGear:getRatio() end
 
---- 调用 `cc.PhysicsJointGear:construct`。
+--- 构造连接两个刚体的齿轮关节。
 ---
 --- 参数说明：
---- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。
---- - `b`：参数 `b`，类型为 `cc.PhysicsBody`。
---- - `phase`：参数 `phase`，类型为 `number`。
---- - `ratio`：参数 `ratio`，类型为 `number`。
+--- - `a`：第一个物理刚体。
+--- - `b`：第二个物理刚体。
+--- - `phase`：初始相位差，单位为弧度。
+--- - `ratio`：两个刚体角速度之间的传动比。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param a cc.PhysicsBody 参数 `a`，类型为 `cc.PhysicsBody`。
----@param b cc.PhysicsBody 参数 `b`，类型为 `cc.PhysicsBody`。
----@param phase number 参数 `phase`，类型为 `number`。
----@param ratio number 参数 `ratio`，类型为 `number`。
+---@param a cc.PhysicsBody 第一个物理刚体。
+---@param b cc.PhysicsBody 第二个物理刚体。
+---@param phase number 初始相位差，单位为弧度。
+---@param ratio number 两个刚体角速度之间的传动比。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointGear:construct(a, b, phase, ratio) end

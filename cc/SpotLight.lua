@@ -8,128 +8,128 @@
 local SpotLight = {}
 cc.SpotLight = SpotLight
 
---- 获取 `cc.SpotLight:getRange` 对应的值。
+--- 获取聚光灯的最大照射距离。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：光源影响场景的最大距离。
+---@return number 光源影响场景的最大距离。
 function SpotLight:getRange() end
 
---- 设置 `cc.SpotLight:setDirection` 对应的值。
+--- 设置聚光灯节点局部坐标系中的照射方向。
 ---
 --- 参数说明：
---- - `dir`：参数 `dir`，类型为 `vec3_table`。
+--- - `dir`：从光源位置指向照射区域的局部方向向量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param dir vec3_table 参数 `dir`，类型为 `vec3_table`。
+---@param dir vec3_table 从光源位置指向照射区域的局部方向向量。
 ---@return self 当前对象，便于链式调用。
 function SpotLight:setDirection(dir) end
 
---- 获取 `cc.SpotLight:getCosInnerAngle` 对应的值。
+--- 获取内锥角的余弦值。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：聚光灯内锥角（度）的余弦值。
+---@return number 聚光灯内锥角的余弦值。
 function SpotLight:getCosInnerAngle() end
 
---- 获取 `cc.SpotLight:getOuterAngle` 对应的值。
+--- 获取聚光灯外锥角。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：外锥角，单位为度。
+---@return number 外锥角，单位为度。
 function SpotLight:getOuterAngle() end
 
---- 获取 `cc.SpotLight:getInnerAngle` 对应的值。
+--- 获取聚光灯内锥角。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：内锥角，单位为度。
+---@return number 内锥角，单位为度。
 function SpotLight:getInnerAngle() end
 
---- 获取 `cc.SpotLight:getDirection` 对应的值。
+--- 获取聚光灯节点局部坐标系中的照射方向。
 ---
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `vec3_table`：从光源位置指向照射区域的局部方向向量。
+---@return vec3_table 从光源位置指向照射区域的局部方向向量。
 function SpotLight:getDirection() end
 
---- 获取 `cc.SpotLight:getCosOuterAngle` 对应的值。
+--- 获取外锥角的余弦值。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：聚光灯外锥角（度）的余弦值。
+---@return number 聚光灯外锥角的余弦值。
 function SpotLight:getCosOuterAngle() end
 
---- 设置 `cc.SpotLight:setOuterAngle` 对应的值。
+--- 设置聚光灯外锥角。
 ---
 --- 参数说明：
---- - `outerAngle`：参数 `outerAngle`，类型为 `number`。
+--- - `outerAngle`：外锥角，单位为度；应不小于内锥角。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param outerAngle number 参数 `outerAngle`，类型为 `number`。
+---@param outerAngle number 外锥角，单位为度。
 ---@return self 当前对象，便于链式调用。
 function SpotLight:setOuterAngle(outerAngle) end
 
---- 设置 `cc.SpotLight:setInnerAngle` 对应的值。
+--- 设置聚光灯内锥角。
 ---
 --- 参数说明：
---- - `angle`：参数 `angle`，类型为 `number`。
+--- - `angle`：内锥角，单位为度；应不大于外锥角。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param angle number 参数 `angle`，类型为 `number`。
+---@param angle number 内锥角，单位为度。
 ---@return self 当前对象，便于链式调用。
 function SpotLight:setInnerAngle(angle) end
 
---- 获取 `cc.SpotLight:getDirectionInWorld` 对应的值。
+--- 获取经过节点变换后的世界空间照射方向。
 ---
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `vec3_table`：世界坐标系中的照射方向向量。
+---@return vec3_table 世界坐标系中的照射方向向量。
 function SpotLight:getDirectionInWorld() end
 
---- 设置 `cc.SpotLight:setRange` 对应的值。
+--- 设置聚光灯的最大照射距离。
 ---
 --- 参数说明：
---- - `range`：参数 `range`，类型为 `number`。
+--- - `range`：光源影响场景的最大距离。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param range number 参数 `range`，类型为 `number`。
+---@param range number 光源影响场景的最大距离。
 ---@return self 当前对象，便于链式调用。
 function SpotLight:setRange(range) end
 
---- 创建 `cc.SpotLight:create` 对应的对象。
+--- 创建具有方向、锥角和照射范围的聚光灯。
 ---
 --- 参数说明：
---- - `direction`：参数 `direction`，类型为 `vec3_table`。
---- - `position`：位置坐标。类型为 `vec3_table`。
---- - `color`：颜色值。类型为 `color3b_table`。
---- - `innerAngle`：参数 `innerAngle`，类型为 `number`。
---- - `outerAngle`：参数 `outerAngle`，类型为 `number`。
---- - `range`：参数 `range`，类型为 `number`。
+--- - `direction`：聚光灯局部照射方向向量。
+--- - `position`：光源在父节点坐标系中的位置。
+--- - `color`：光源 RGB 颜色。
+--- - `innerAngle`：内锥角，单位为度。
+--- - `outerAngle`：外锥角，单位为度。
+--- - `range`：光源最大照射距离。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param direction vec3_table 参数 `direction`，类型为 `vec3_table`。
----@param position vec3_table 位置坐标。类型为 `vec3_table`。
----@param color color3b_table 颜色值。类型为 `color3b_table`。
----@param innerAngle number 参数 `innerAngle`，类型为 `number`。
----@param outerAngle number 参数 `outerAngle`，类型为 `number`。
----@param range number 参数 `range`，类型为 `number`。
+---@param direction vec3_table 聚光灯局部照射方向向量。
+---@param position vec3_table 光源在父节点坐标系中的位置。
+---@param color color3b_table 光源 RGB 颜色。
+---@param innerAngle number 内锥角，单位为度。
+---@param outerAngle number 外锥角，单位为度。
+---@param range number 光源最大照射距离。
 ---@return self 当前对象，便于链式调用。
 function SpotLight:create(direction, position, color, innerAngle, outerAngle, range) end
 
---- 获取 `cc.SpotLight:getLightType` 对应的值。
+--- 获取光源类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：表示聚光灯类型的 `LightType` 枚举值。
+---@return integer 表示聚光灯类型的 `LightType` 枚举值。
 function SpotLight:getLightType() end
 
---- 调用 `cc.SpotLight:SpotLight`。
+--- 构造聚光灯对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

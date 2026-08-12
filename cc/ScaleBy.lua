@@ -8,13 +8,13 @@
 local ScaleBy = {}
 cc.ScaleBy = ScaleBy
 
---- 创建 `cc.ScaleBy:create` 对应的对象。
+--- 创建按相对缩放倍率缩放目标节点的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `sx`：参数 `sx`，类型为 `number`。
---- - `sy`：参数 `sy`，类型为 `number`。
---- - `sz`：参数 `sz`，类型为 `number`。
+--- - `sx`：X 轴相对缩放倍率。
+--- - `sy`：Y 轴相对缩放倍率。
+--- - `sz`：Z 轴相对缩放倍率。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -22,9 +22,9 @@ cc.ScaleBy = ScaleBy
 ---@overload fun(duration: number, sx: number): self
 ---@overload fun(duration: number, sx: number, sy: number, sz: number): self
 ---@param duration? number 持续时间。类型为 `number`。
----@param sx? number 参数 `sx`，类型为 `number`。
----@param sy? number 参数 `sy`，类型为 `number`。
----@param sz? number 参数 `sz`，类型为 `number`。
+---@param sx? number X 轴相对缩放倍率。
+---@param sy? number Y 轴相对缩放倍率。
+---@param sz? number Z 轴相对缩放倍率。
 ---@return self 当前对象，便于链式调用。
 function ScaleBy:create(duration, sx, sy, sz) end
 

@@ -8,7 +8,7 @@
 local MoveTo = {}
 cc.MoveTo = MoveTo
 
---- 初始化 `cc.MoveTo:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和目标坐标初始化绝对移动动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -19,11 +19,11 @@ cc.MoveTo = MoveTo
 ---@overload fun(duration: number, position: vec3_table): boolean
 ---@overload fun(duration: number, position: vec2_table): boolean
 ---@param duration number 持续时间。类型为 `number`。
----@param position vec2_table 位置坐标。类型为 `vec2_table`。
+---@param position vec2_table 目标二维或三维坐标。
 ---@return boolean 初始化是否成功。
 function MoveTo:initWithDuration(duration, position) end
 
---- 创建 `cc.MoveTo:create` 对应的对象。
+--- 创建移动目标节点到指定坐标的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -34,7 +34,7 @@ function MoveTo:initWithDuration(duration, position) end
 ---@overload fun(duration: number, position: vec3_table): self
 ---@overload fun(duration: number, position: vec2_table): self
 ---@param duration number 持续时间。类型为 `number`。
----@param position vec2_table 位置坐标。类型为 `vec2_table`。
+---@param position vec2_table 目标二维或三维坐标。
 ---@return self 当前对象，便于链式调用。
 function MoveTo:create(duration, position) end
 

@@ -11,22 +11,22 @@ cc.Event = Event
 --- 判断 `cc.Event:isStopped` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：事件是否已停止传播。
+---@return boolean 事件是否已停止传播。
 function Event:isStopped() end
 
---- 获取 `cc.Event:getType` 对应的值。
+--- 获取事件类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：事件类型枚举值。
+---@return integer 事件类型枚举值。
 function Event:getType() end
 
---- 获取 `cc.Event:getCurrentTarget` 对应的值。
+--- 获取当前正在处理该事件的节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：当前事件目标节点。
+---@return cc.Node 当前事件目标节点。
 function Event:getCurrentTarget() end
 
 --- 停止 `cc.Event:stopPropagation` 对应的流程。

@@ -7,20 +7,20 @@
 local UserDefault = {}
 cc.UserDefault = UserDefault
 
---- 设置 `cc.UserDefault:setIntegerForKey` 对应的值。
+--- 保存整数偏好值到指定键。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `integer`。
+--- - `value`：要保存的整数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value integer 数值或对象值。类型为 `integer`。
+---@param value integer 要保存的整数。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:setIntegerForKey(key, value) end
 
---- 调用 `cc.UserDefault:deleteValueForKey`。
+--- 删除指定键及其持久化值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
@@ -31,157 +31,157 @@ function UserDefault:setIntegerForKey(key, value) end
 ---@return self 当前对象，便于链式调用。
 function UserDefault:deleteValueForKey(key) end
 
---- 获取 `cc.UserDefault:getFloatForKey` 对应的值。
+--- 读取浮点偏好值；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `defaultValue`：参数 `defaultValue`，类型为 `number`。
+--- - `defaultValue`：键不存在时返回的浮点默认值。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
+--- - `number`：保存的浮点值或默认值。
 ---@overload fun(key: string, defaultValue: number): number
 ---@overload fun(key: string): number
 ---@param key? string 键名。类型为 `string`。
----@param defaultValue? number 参数 `defaultValue`，类型为 `number`。
----@return number 获取到的 数值。
+---@param defaultValue? number 键不存在时的浮点默认值。
+---@return number 保存的浮点值或默认值。
 function UserDefault:getFloatForKey(key, defaultValue) end
 
---- 获取 `cc.UserDefault:getBoolForKey` 对应的值。
+--- 读取布尔偏好值；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `defaultValue`：参数 `defaultValue`，类型为 `boolean`。
+--- - `defaultValue`：键不存在时返回的布尔默认值。
 ---
 --- 返回说明：
---- - `boolean`：获取到的 布尔值。
+--- - `boolean`：保存的布尔值或默认值。
 ---@overload fun(key: string, defaultValue: boolean): boolean
 ---@overload fun(key: string): boolean
 ---@param key? string 键名。类型为 `string`。
----@param defaultValue? boolean 参数 `defaultValue`，类型为 `boolean`。
----@return boolean 获取到的 布尔值。
+---@param defaultValue? boolean 键不存在时的布尔默认值。
+---@return boolean 保存的布尔值或默认值。
 function UserDefault:getBoolForKey(key, defaultValue) end
 
---- 设置 `cc.UserDefault:setDoubleForKey` 对应的值。
+--- 保存双精度浮点偏好值到指定键。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `number`。
+--- - `value`：要保存的双精度浮点数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value number 数值或对象值。类型为 `number`。
+---@param value number 要保存的双精度浮点数。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:setDoubleForKey(key, value) end
 
---- 设置 `cc.UserDefault:setFloatForKey` 对应的值。
+--- 保存单精度浮点偏好值到指定键。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `number`。
+--- - `value`：要保存的浮点数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value number 数值或对象值。类型为 `number`。
+---@param value number 要保存的浮点数。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:setFloatForKey(key, value) end
 
---- 获取 `cc.UserDefault:getStringForKey` 对应的值。
+--- 读取字符串偏好值；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `defaultValue`：参数 `defaultValue`，类型为 `string`。
+--- - `defaultValue`：键不存在时返回的字符串默认值。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
+--- - `string`：保存的字符串或默认值。
 ---@overload fun(key: string, defaultValue: string): string
 ---@overload fun(key: string): string
 ---@param key? string 键名。类型为 `string`。
----@param defaultValue? string 参数 `defaultValue`，类型为 `string`。
----@return string 获取到的 字符串。
+---@param defaultValue? string 键不存在时的字符串默认值。
+---@return string 保存的字符串或默认值。
 function UserDefault:getStringForKey(key, defaultValue) end
 
---- 设置 `cc.UserDefault:setStringForKey` 对应的值。
+--- 保存字符串偏好值到指定键。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `string`。
+--- - `value`：要保存的字符串。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value string 数值或对象值。类型为 `string`。
+---@param value string 要保存的字符串。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:setStringForKey(key, value) end
 
---- 调用 `cc.UserDefault:flush`。
+--- 将当前内存中的偏好值写入持久化文件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:flush() end
 
---- 获取 `cc.UserDefault:getIntegerForKey` 对应的值。
+--- 读取整数偏好值；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `defaultValue`：参数 `defaultValue`，类型为 `integer`。
+--- - `defaultValue`：键不存在时返回的整数默认值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
+--- - `integer`：保存的整数或默认值。
 ---@overload fun(key: string, defaultValue: integer): integer
 ---@overload fun(key: string): integer
 ---@param key? string 键名。类型为 `string`。
----@param defaultValue? integer 参数 `defaultValue`，类型为 `integer`。
----@return integer 获取到的 整数值。
+---@param defaultValue? integer 键不存在时的整数默认值。
+---@return integer 保存的整数或默认值。
 function UserDefault:getIntegerForKey(key, defaultValue) end
 
---- 获取 `cc.UserDefault:getDoubleForKey` 对应的值。
+--- 读取双精度浮点偏好值；键不存在时返回默认值。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `defaultValue`：参数 `defaultValue`，类型为 `number`。
+--- - `defaultValue`：键不存在时返回的双精度默认值。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
+--- - `number`：保存的双精度值或默认值。
 ---@overload fun(key: string, defaultValue: number): number
 ---@overload fun(key: string): number
 ---@param key? string 键名。类型为 `string`。
----@param defaultValue? number 参数 `defaultValue`，类型为 `number`。
----@return number 获取到的 数值。
+---@param defaultValue? number 键不存在时的双精度默认值。
+---@return number 保存的双精度值或默认值。
 function UserDefault:getDoubleForKey(key, defaultValue) end
 
---- 设置 `cc.UserDefault:setBoolForKey` 对应的值。
+--- 保存布尔偏好值到指定键。
 ---
 --- 参数说明：
 --- - `key`：键名。类型为 `string`。
---- - `value`：数值或对象值。类型为 `boolean`。
+--- - `value`：要保存的布尔值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param key string 键名。类型为 `string`。
----@param value boolean 数值或对象值。类型为 `boolean`。
+---@param value boolean 要保存的布尔值。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:setBoolForKey(key, value) end
 
---- 调用 `cc.UserDefault:destroyInstance`。
+--- 销毁用户默认值单例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function UserDefault:destroyInstance() end
 
---- 获取 `cc.UserDefault:getXMLFilePath` 对应的值。
+--- 获取用户默认值 XML 持久化文件路径。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：XML 文件路径。
+---@return string XML 文件路径。
 function UserDefault:getXMLFilePath() end
 
---- 判断 `cc.UserDefault:isXMLFileExist` 对应状态是否成立。
+--- 判断用户默认值 XML 文件是否存在。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：XML 文件是否存在。
+---@return boolean XML 文件是否存在。
 function UserDefault:isXMLFileExist() end

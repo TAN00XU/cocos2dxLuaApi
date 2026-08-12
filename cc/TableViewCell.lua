@@ -8,39 +8,39 @@
 local TableViewCell = {}
 cc.TableViewCell = TableViewCell
 
---- 重置 `cc.TableViewCell:reset` 对应的状态。
+--- 重置单元格状态，以便表格视图复用该单元格。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TableViewCell:reset() end
 
---- 获取 `cc.TableViewCell:getIdx` 对应的值。
+--- 获取单元格在表格视图中的索引。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：单元格索引。
+---@return integer 单元格索引。
 function TableViewCell:getIdx() end
 
---- 设置 `cc.TableViewCell:setIdx` 对应的值。
+--- 设置单元格在表格视图中的索引。
 ---
 --- 参数说明：
---- - `uIdx`：参数 `uIdx`，类型为 `integer`。
+--- - `uIdx`：单元格索引。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param uIdx integer 参数 `uIdx`，类型为 `integer`。
+---@param uIdx integer 单元格索引。
 ---@return self 当前对象，便于链式调用。
 function TableViewCell:setIdx(uIdx) end
 
---- 创建 `cc.TableViewCell:create` 对应的对象。
+--- 创建表格视图单元格。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TableViewCell:create() end
 
---- 调用 `cc.TableViewCell:TableViewCell`。
+--- 构造表格视图单元格。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

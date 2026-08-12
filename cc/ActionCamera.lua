@@ -8,7 +8,7 @@
 local ActionCamera = {}
 cc.ActionCamera = ActionCamera
 
---- 设置 `cc.ActionCamera:setEye` 对应的值。
+--- 设置摄像机观察位置。
 ---
 --- 参数说明：
 --- - `x`：X 坐标或 X 分量。类型为 `number`。
@@ -25,7 +25,7 @@ cc.ActionCamera = ActionCamera
 ---@return self 当前对象，便于链式调用。
 function ActionCamera:setEye(x, y, z) end
 
---- 获取 `cc.ActionCamera:getEye` 对应的值。
+--- 获取摄像机观察位置的三个坐标分量。
 ---
 --- 返回说明：
 --- - `x`：X 分量。
@@ -36,18 +36,18 @@ function ActionCamera:setEye(x, y, z) end
 ---@return number z Z 分量。
 function ActionCamera:getEye() end
 
---- 设置 `cc.ActionCamera:setUp` 对应的值。
+--- 设置摄像机上方向量。
 ---
 --- 参数说明：
---- - `up`：参数 `up`，类型为 `vec3_table`。
+--- - `up`：摄像机上方向量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param up vec3_table 参数 `up`，类型为 `vec3_table`。
+---@param up vec3_table 摄像机上方向量。
 ---@return self 当前对象，便于链式调用。
 function ActionCamera:setUp(up) end
 
---- 获取 `cc.ActionCamera:getCenter` 对应的值。
+--- 获取摄像机观察中心点的三个坐标分量。
 ---
 --- 返回说明：
 --- - `x`：X 分量。
@@ -58,7 +58,7 @@ function ActionCamera:setUp(up) end
 ---@return number z Z 分量。
 function ActionCamera:getCenter() end
 
---- 设置 `cc.ActionCamera:setCenter` 对应的值。
+--- 设置摄像机观察中心点。
 ---
 --- 参数说明：
 --- - `center`：中心点。类型为 `vec3_table`。
@@ -69,7 +69,7 @@ function ActionCamera:getCenter() end
 ---@return self 当前对象，便于链式调用。
 function ActionCamera:setCenter(center) end
 
---- 获取 `cc.ActionCamera:getUp` 对应的值。
+--- 获取摄像机上方向量的三个坐标分量。
 ---
 --- 返回说明：
 --- - `x`：X 分量。
@@ -105,7 +105,7 @@ function ActionCamera:clone() end
 ---@return self 当前对象，便于链式调用。
 function ActionCamera:reverse() end
 
---- 调用 `cc.ActionCamera:ActionCamera`。
+--- 构造摄像机动作对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

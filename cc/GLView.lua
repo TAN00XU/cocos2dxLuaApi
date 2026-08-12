@@ -8,324 +8,324 @@
 local GLView = {}
 cc.GLView = GLView
 
---- 设置 `cc.GLView:setFrameSize` 对应的值。
+--- 设置窗口或视图的帧尺寸。
 ---
 --- 参数说明：
---- - `width`：宽度。类型为 `number`。
---- - `height`：高度。类型为 `number`。
+--- - `width`：帧宽度。
+--- - `height`：帧高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param width number 宽度。类型为 `number`。
----@param height number 高度。类型为 `number`。
+---@param width number 帧宽度。
+---@param height number 帧高度。
 ---@return self 当前对象，便于链式调用。
 function GLView:setFrameSize(width, height) end
 
---- 获取 `cc.GLView:getViewPortRect` 对应的值。
+--- 获取当前视口在窗口坐标中的矩形。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：视口矩形。
+---@return rect_table 视口矩形。
 function GLView:getViewPortRect() end
 
---- 获取 `cc.GLView:getScaleY` 对应的值。
+--- 获取视图的 Y 轴内容缩放因子。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：Y 轴缩放因子。
+---@return number Y 轴缩放因子。
 function GLView:getScaleY() end
 
---- 设置 `cc.GLView:setContentScaleFactor` 对应的值。
+--- 设置内容缩放因子，用于将设计单位换算为像素。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
+--- - `t`：新的内容缩放因子。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@param t number 参数 `t`，类型为 `number`。
----@return boolean 布尔值。
+--- - `boolean`：设置成功时返回 `true`。
+---@param t number 新的内容缩放因子。
+---@return boolean 设置成功时返回 `true`。
 function GLView:setContentScaleFactor(t) end
 
---- 获取 `cc.GLView:getContentScaleFactor` 对应的值。
+--- 获取内容缩放因子。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前内容缩放因子。
+---@return number 当前内容缩放因子。
 function GLView:getContentScaleFactor() end
 
---- 设置 `cc.GLView:setIMEKeyboardState` 对应的值。
+--- 请求打开或关闭输入法键盘。
 ---
 --- 参数说明：
---- - `open`：参数 `open`，类型为 `boolean`。
+--- - `open`：是否打开输入法键盘。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param open boolean 参数 `open`，类型为 `boolean`。
+---@param open boolean 是否打开输入法键盘。
 ---@return self 当前对象，便于链式调用。
 function GLView:setIMEKeyboardState(open) end
 
---- 获取 `cc.GLView:getSafeAreaRect` 对应的值。
+--- 获取设备安全区域矩形。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：避开刘海和系统栏后的安全区域。
+---@return rect_table 避开刘海和系统栏后的安全区域。
 function GLView:getSafeAreaRect() end
 
---- 设置 `cc.GLView:setScissorInPoints` 对应的值。
+--- 以设计单位设置 OpenGL 裁剪矩形。
 ---
 --- 参数说明：
---- - `x`：X 坐标或 X 分量。类型为 `number`。
---- - `y`：Y 坐标或 Y 分量。类型为 `number`。
---- - `w`：参数 `w`，类型为 `number`。
---- - `h`：参数 `h`，类型为 `number`。
+--- - `x`：矩形左下角 X 坐标。
+--- - `y`：矩形左下角 Y 坐标。
+--- - `w`：矩形宽度。
+--- - `h`：矩形高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param x number X 坐标或 X 分量。类型为 `number`。
----@param y number Y 坐标或 Y 分量。类型为 `number`。
----@param w number 参数 `w`，类型为 `number`。
----@param h number 参数 `h`，类型为 `number`。
+---@param x number 矩形左下角 X 坐标。
+---@param y number 矩形左下角 Y 坐标。
+---@param w number 矩形宽度。
+---@param h number 矩形高度。
 ---@return self 当前对象，便于链式调用。
 function GLView:setScissorInPoints(x, y, w, h) end
 
---- 获取 `cc.GLView:getViewName` 对应的值。
+--- 获取视图名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：当前视图名称。
+---@return string 当前视图名称。
 function GLView:getViewName() end
 
---- 判断 `cc.GLView:isOpenGLReady` 对应状态是否成立。
+--- 判断 OpenGL 渲染上下文是否已准备就绪。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：上下文就绪时返回 `true`。
+---@return boolean 上下文就绪时返回 `true`。
 function GLView:isOpenGLReady() end
 
---- 设置 `cc.GLView:setCursorVisible` 对应的值。
+--- 设置窗口光标是否可见。
 ---
 --- 参数说明：
---- - `l`：参数 `l`，类型为 `boolean`。
+--- - `l`：是否显示光标。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param l boolean 参数 `l`，类型为 `boolean`。
+---@param l boolean 是否显示光标。
 ---@return self 当前对象，便于链式调用。
 function GLView:setCursorVisible(l) end
 
---- 获取 `cc.GLView:getFrameSize` 对应的值。
+--- 获取窗口帧尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：窗口宽高。
+---@return size_table 窗口宽高。
 function GLView:getFrameSize() end
 
---- 设置 `cc.GLView:setDefaultIcon` 对应的值。
+--- 将应用默认图标设置到窗口。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GLView:setDefaultIcon() end
 
---- 获取 `cc.GLView:getScaleX` 对应的值。
+--- 获取视图的 X 轴内容缩放因子。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：X 轴缩放因子。
+---@return number X 轴缩放因子。
 function GLView:getScaleX() end
 
---- 获取 `cc.GLView:getVisibleOrigin` 对应的值。
+--- 获取可见区域左下角的设计坐标。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：可见区域原点。
+---@return vec2_table 可见区域原点。
 function GLView:getVisibleOrigin() end
 
---- 设置 `cc.GLView:setFrameZoomFactor` 对应的值。
+--- 设置桌面窗口帧的缩放因子。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
+--- - `t`：新的窗口缩放因子。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
+---@param t number 新的窗口缩放因子。
 ---@return self 当前对象，便于链式调用。
 function GLView:setFrameZoomFactor(t) end
 
---- 获取 `cc.GLView:getFrameZoomFactor` 对应的值。
+--- 获取桌面窗口帧的缩放因子。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前窗口缩放因子。
+---@return number 当前窗口缩放因子。
 function GLView:getFrameZoomFactor() end
 
---- 获取 `cc.GLView:getDesignResolutionSize` 对应的值。
+--- 获取设计分辨率尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：设计宽高。
+---@return size_table 设计宽高。
 function GLView:getDesignResolutionSize() end
 
---- 设置 `cc.GLView:setIcon` 对应的值。
+--- 设置窗口图标。
 ---
 --- 参数说明：
---- - `filename`：文件名或文件路径。类型为 `string`。
+--- - `filename`：图标文件路径，重载也接受图标路径数组。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(filename: array_table): self
 ---@overload fun(filename: string): self
----@param filename string 文件名或文件路径。类型为 `string`。
+---@param filename string 图标文件路径。
 ---@return self 当前对象，便于链式调用。
 function GLView:setIcon(filename) end
 
---- 调用 `cc.GLView:windowShouldClose`。
+--- 判断窗口是否收到关闭请求。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@return boolean 布尔值。
+--- - `boolean`：收到关闭请求时返回 `true`。
+---@return boolean 收到关闭请求时返回 `true`。
 function GLView:windowShouldClose() end
 
---- 调用 `cc.GLView:swapBuffers`。
+--- 交换前后缓冲区并显示本帧渲染结果。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GLView:swapBuffers() end
 
---- 设置 `cc.GLView:setDesignResolutionSize` 对应的值。
+--- 设置逻辑设计分辨率及适配策略。
 ---
 --- 参数说明：
---- - `width`：宽度。类型为 `number`。
---- - `height`：高度。类型为 `number`。
---- - `resolutionPolicy`：参数 `resolutionPolicy`，类型为 `integer`。
+--- - `width`：设计宽度。
+--- - `height`：设计高度。
+--- - `resolutionPolicy`：设计分辨率适配策略枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param width number 宽度。类型为 `number`。
----@param height number 高度。类型为 `number`。
----@param resolutionPolicy integer 参数 `resolutionPolicy`，类型为 `integer`。
+---@param width number 设计宽度。
+---@param height number 设计高度。
+---@param resolutionPolicy integer 设计分辨率适配策略枚举值。
 ---@return self 当前对象，便于链式调用。
 function GLView:setDesignResolutionSize(width, height, resolutionPolicy) end
 
---- 获取 `cc.GLView:getResolutionPolicy` 对应的值。
+--- 获取当前设计分辨率适配策略。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：适配策略枚举值。
+---@return integer 适配策略枚举值。
 function GLView:getResolutionPolicy() end
 
---- 调用 `cc.GLView:endToLua`。
+--- 通知视图结束当前帧并返回 Lua 调用流程。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GLView:endToLua() end
 
---- 判断 `cc.GLView:isRetinaDisplay` 对应状态是否成立。
+--- 判断当前显示设备是否使用高密度 Retina 显示。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：高密度显示时返回 `true`。
+---@return boolean 高密度显示时返回 `true`。
 function GLView:isRetinaDisplay() end
 
---- 调用 `cc.GLView:renderScene`。
+--- 使用指定渲染器渲染场景到当前视图。
 ---
 --- 参数说明：
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
+--- - `scene`：要渲染的场景。
+--- - `renderer`：执行场景渲染的渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
+---@param scene cc.Scene 要渲染的场景。
+---@param renderer cc.Renderer 执行场景渲染的渲染器。
 ---@return self 当前对象，便于链式调用。
 function GLView:renderScene(scene, renderer) end
 
---- 设置 `cc.GLView:setViewPortInPoints` 对应的值。
+--- 以设计单位设置 OpenGL 视口。
 ---
 --- 参数说明：
---- - `x`：X 坐标或 X 分量。类型为 `number`。
---- - `y`：Y 坐标或 Y 分量。类型为 `number`。
---- - `w`：参数 `w`，类型为 `number`。
---- - `h`：参数 `h`，类型为 `number`。
+--- - `x`：视口左下角 X 坐标。
+--- - `y`：视口左下角 Y 坐标。
+--- - `w`：视口宽度。
+--- - `h`：视口高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param x number X 坐标或 X 分量。类型为 `number`。
----@param y number Y 坐标或 Y 分量。类型为 `number`。
----@param w number 参数 `w`，类型为 `number`。
----@param h number 参数 `h`，类型为 `number`。
+---@param x number 视口左下角 X 坐标。
+---@param y number 视口左下角 Y 坐标。
+---@param w number 视口宽度。
+---@param h number 视口高度。
 ---@return self 当前对象，便于链式调用。
 function GLView:setViewPortInPoints(x, y, w, h) end
 
---- 获取 `cc.GLView:getScissorRect` 对应的值。
+--- 获取当前 OpenGL 裁剪矩形。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：以设计单位表示的裁剪矩形。
+---@return rect_table 以设计单位表示的裁剪矩形。
 function GLView:getScissorRect() end
 
---- 获取 `cc.GLView:getRetinaFactor` 对应的值。
+--- 获取 Retina 显示的像素倍率。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：逻辑点到物理像素的倍率。
+---@return integer 逻辑点到物理像素的倍率。
 function GLView:getRetinaFactor() end
 
---- 设置 `cc.GLView:setViewName` 对应的值。
+--- 设置视图名称，桌面平台通常用作窗口标题。
 ---
 --- 参数说明：
---- - `viewname`：参数 `viewname`，类型为 `string`。
+--- - `viewname`：新的视图名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param viewname string 参数 `viewname`，类型为 `string`。
+---@param viewname string 新的视图名称。
 ---@return self 当前对象，便于链式调用。
 function GLView:setViewName(viewname) end
 
---- 获取 `cc.GLView:getVisibleRect` 对应的值。
+--- 获取设计坐标系中的可见区域矩形。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：可见区域矩形。
+---@return rect_table 可见区域矩形。
 function GLView:getVisibleRect() end
 
---- 获取 `cc.GLView:getVisibleSize` 对应的值。
+--- 获取设计坐标系中的可见区域尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：可见区域宽高。
+---@return size_table 可见区域宽高。
 function GLView:getVisibleSize() end
 
---- 判断 `cc.GLView:isScissorEnabled` 对应状态是否成立。
+--- 判断 OpenGL 裁剪测试是否启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：裁剪测试启用时返回 `true`。
+---@return boolean 裁剪测试启用时返回 `true`。
 function GLView:isScissorEnabled() end
 
---- 调用 `cc.GLView:pollEvents`。
+--- 轮询并分发窗口系统事件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GLView:pollEvents() end
 
---- 设置 `cc.GLView:setGLContextAttrs` 对应的值。
+--- 设置 OpenGL 渲染上下文属性。
 ---
 --- 参数说明：
---- - `glContextAttrs`：参数 `glContextAttrs`，类型为 `GLContextAttrs`。
+--- - `glContextAttrs`：颜色、深度、模板和抗锯齿等上下文属性。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param glContextAttrs GLContextAttrs 参数 `glContextAttrs`，类型为 `GLContextAttrs`。
+---@param glContextAttrs GLContextAttrs 颜色、深度、模板和抗锯齿等上下文属性。
 ---@return self 当前对象，便于链式调用。
 function GLView:setGLContextAttrs(glContextAttrs) end
 
---- 获取 `cc.GLView:getGLContextAttrs` 对应的值。
+--- 获取 OpenGL 渲染上下文属性。
 ---
 --- 返回说明：
---- - `GLContextAttrs`：获取到的 `GLContextAttrs` 对象或值。
----@return GLContextAttrs 获取到的 `GLContextAttrs` 对象或值。
+--- - `GLContextAttrs`：当前上下文属性。
+---@return GLContextAttrs 当前上下文属性。
 function GLView:getGLContextAttrs() end

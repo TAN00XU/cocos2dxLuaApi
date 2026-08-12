@@ -8,7 +8,7 @@
 local EaseBounceIn = {}
 cc.EaseBounceIn = EaseBounceIn
 
---- 创建 `cc.EaseBounceIn:create` 对应的对象。
+--- 创建弹跳渐入缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -26,7 +26,7 @@ function EaseBounceIn:create(action) end
 ---@return self 当前对象，便于链式调用。
 function EaseBounceIn:clone() end
 
---- 更新 `cc.EaseBounceIn:update` 对应的状态。
+--- 按弹跳渐入曲线更新内部动作进度。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -40,8 +40,8 @@ function EaseBounceIn:update(time) end
 --- 调用 `cc.EaseBounceIn:reverse`。
 ---
 --- 返回说明：
---- - `cc.ActionEase`：`cc.ActionEase` 对象或值。
----@return cc.ActionEase `cc.ActionEase` 对象或值。
+--- - `cc.ActionEase`：反向缓动动作。
+---@return cc.ActionEase 反向缓动动作。
 function EaseBounceIn:reverse() end
 
 --- 调用 `cc.EaseBounceIn:new`。

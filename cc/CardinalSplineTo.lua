@@ -8,51 +8,51 @@
 local CardinalSplineTo = {}
 cc.CardinalSplineTo = CardinalSplineTo
 
---- 创建 CardinalSplineTo 对应的对象。
+--- 创建沿控制点绝对路径移动的基数样条动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `points`：参数 `points`，类型为 `cc.PointArray`。
---- - `tension`：参数 `tension`，类型为 `number`。
+--- - `points`：控制样条曲线的点集合。
+--- - `tension`：样条张力系数。
 ---
 --- 返回说明：
 --- - `cc.CardinalSplineTo`：新创建的对象。
 ---@param duration number 持续时间。类型为 `number`。
----@param points cc.PointArray 参数 `points`，类型为 `cc.PointArray`。
----@param tension number 参数 `tension`，类型为 `number`。
+---@param points cc.PointArray 控制样条曲线的点集合。
+---@param tension number 样条张力系数。
 ---@return cc.CardinalSplineTo 新创建的对象。
 function CardinalSplineTo:create(duration, points, tension) end
 
---- 获取 `cc.CardinalSplineTo:getPoints` 对应的值。
+--- 获取当前动作使用的样条控制点集合。
 ---
 --- 返回说明：
---- - `point_table`：获取到的 Lua 表数据。
----@return point_table 获取到的 Lua 表数据。
+--- - `point_table`：当前动作使用的控制点集合。
+---@return point_table 当前动作使用的控制点集合。
 function CardinalSplineTo:getPoints() end
 
---- 更新 `cc.CardinalSplineTo:updatePosition` 对应的状态。
+--- 根据样条计算出的新位置更新目标节点。
 ---
 --- 参数说明：
---- - `newPos`：参数 `newPos`，类型为 `vec2_table`。
+--- - `newPos`：样条计算出的二维位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param newPos vec2_table 参数 `newPos`，类型为 `vec2_table`。
+---@param newPos vec2_table 样条计算出的二维位置。
 ---@return self 当前对象，便于链式调用。
 function CardinalSplineTo:updatePosition(newPos) end
 
---- 初始化 `cc.CardinalSplineTo:initWithDuration` 对应的对象或状态。
+--- 使用持续时间、控制点和张力初始化基数样条动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `points`：参数 `points`，类型为 `point_table`。
---- - `tension`：参数 `tension`，类型为 `number`。
+--- - `points`：控制样条曲线的点集合。
+--- - `tension`：样条张力系数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param points point_table 参数 `points`，类型为 `point_table`。
----@param tension number 参数 `tension`，类型为 `number`。
+---@param points point_table 控制样条曲线的点集合。
+---@param tension number 样条张力系数。
 ---@return boolean 初始化是否成功。
 function CardinalSplineTo:initWithDuration(duration, points, tension) end
 
@@ -81,7 +81,7 @@ function CardinalSplineTo:clone() end
 ---@return self 当前对象，便于链式调用。
 function CardinalSplineTo:reverse() end
 
---- 更新 `cc.CardinalSplineTo:update` 对应的状态。
+--- 按归一化进度计算并应用样条位置。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

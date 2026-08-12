@@ -8,37 +8,37 @@
 local TransitionSceneOriented = {}
 cc.TransitionSceneOriented = TransitionSceneOriented
 
---- 初始化 `cc.TransitionSceneOriented:initWithDuration` 对应的对象或状态。
+--- 使用持续时间、目标场景和过渡方向初始化定向场景过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
---- - `orientation`：参数 `orientation`，类型为 `integer`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
+--- - `orientation`：过渡方向枚举，例如从左向右或从右向左。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
----@param orientation integer 参数 `orientation`，类型为 `integer`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
+---@param orientation integer 过渡方向枚举。
 ---@return boolean 初始化是否成功。
 function TransitionSceneOriented:initWithDuration(t, scene, orientation) end
 
---- 创建 `cc.TransitionSceneOriented:create` 对应的对象。
+--- 创建具有指定方向的场景过渡。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `scene`：参数 `scene`，类型为 `cc.Scene`。
---- - `orientation`：参数 `orientation`，类型为 `integer`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `scene`：过渡结束后显示的目标场景。
+--- - `orientation`：过渡方向枚举。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param scene cc.Scene 参数 `scene`，类型为 `cc.Scene`。
----@param orientation integer 参数 `orientation`，类型为 `integer`。
+---@param t number 过渡持续时间，单位为秒。
+---@param scene cc.Scene 过渡结束后显示的目标场景。
+---@param orientation integer 过渡方向枚举。
 ---@return self 当前对象，便于链式调用。
 function TransitionSceneOriented:create(t, scene, orientation) end
 
---- 调用 `cc.TransitionSceneOriented:TransitionSceneOriented`。
+--- 构造定向场景过渡。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -7,146 +7,141 @@
 local PhysicsWorld = {}
 cc.PhysicsWorld = PhysicsWorld
 
---- 设置 `cc.PhysicsWorld:setGravity` 对应的值。
+--- 设置物理世界的重力向量，影响世界中非静态刚体的加速度。
 ---
 --- 参数说明：
---- - `gravity`：参数 `gravity`，类型为 `vec2_table`。
+--- - `gravity`：重力向量，单位通常为像素/秒平方。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param gravity vec2_table 参数 `gravity`，类型为 `vec2_table`。
+---@param gravity vec2_table 重力向量。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setGravity(gravity) end
 
---- 获取 `cc.PhysicsWorld:getAllBodies` 对应的值。
+--- 获取当前物理世界中的全部物理刚体。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+---@return array_table 包含全部 `cc.PhysicsBody` 的数组。
 function PhysicsWorld:getAllBodies() end
 
---- 设置 `cc.PhysicsWorld:setFixedUpdateRate` 对应的值。
+--- 设置固定物理更新频率（每秒执行的固定步数）。
 ---
 --- 参数说明：
---- - `updatesPerSecond`：参数 `updatesPerSecond`，类型为 `integer`。
+--- - `updatesPerSecond`：每秒固定更新次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param updatesPerSecond integer 参数 `updatesPerSecond`，类型为 `integer`。
+---@param updatesPerSecond integer 每秒固定更新次数。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setFixedUpdateRate(updatesPerSecond) end
 
---- 设置 `cc.PhysicsWorld:setSubsteps` 对应的值。
+--- 设置每个固定更新内执行的物理子步数。
 ---
 --- 参数说明：
---- - `steps`：参数 `steps`，类型为 `integer`。
+--- - `steps`：每次固定更新的子步数量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param steps integer 参数 `steps`，类型为 `integer`。
+---@param steps integer 每次固定更新的子步数量。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setSubsteps(steps) end
 
---- 设置 `cc.PhysicsWorld:setAutoStep` 对应的值。
+--- 设置是否由物理世界自动执行步进。
 ---
 --- 参数说明：
---- - `autoStep`：参数 `autoStep`，类型为 `boolean`。
+--- - `autoStep`：为 `true` 时自动更新，为 `false` 时需手动调用 `step`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param autoStep boolean 参数 `autoStep`，类型为 `boolean`。
+---@param autoStep boolean 是否自动更新。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setAutoStep(autoStep) end
 
---- 添加 `cc.PhysicsWorld:addJoint` 对应的对象或数据。
+--- 将物理关节加入当前世界并开始参与求解。
 ---
 --- 参数说明：
---- - `joint`：参数 `joint`，类型为 `cc.PhysicsJoint`。
+--- - `joint`：要添加的物理关节。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param joint cc.PhysicsJoint 参数 `joint`，类型为 `cc.PhysicsJoint`。
+---@param joint cc.PhysicsJoint 要添加的物理关节。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:addJoint(joint) end
 
---- 移除 `cc.PhysicsWorld:removeAllJoints` 对应的对象或数据。
+--- 从世界中移除全部物理关节。
 ---
 --- 返回说明：
---- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:removeAllJoints() end
 
---- 获取 `cc.PhysicsWorld:getDebugDrawMask` 对应的值。
+--- 获取物理调试绘制掩码。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+---@return integer 当前调试绘制选项的位掩码。
 function PhysicsWorld:getDebugDrawMask() end
 
---- 设置 `cc.PhysicsWorld:setPreUpdateCallback` 对应的值。
+--- 设置物理步进前调用的回调函数。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
+---@param callback fun(...): any 物理步进前执行的回调。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setPreUpdateCallback(callback) end
 
 --- 判断 `cc.PhysicsWorld:isAutoStep` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+---@return boolean 是否启用了自动步进。
 function PhysicsWorld:isAutoStep() end
 
---- 设置 `cc.PhysicsWorld:setPostUpdateCallback` 对应的值。
+--- 设置物理步进完成后调用的回调函数。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
+---@param callback fun(...): any 物理步进后执行的回调。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setPostUpdateCallback(callback) end
 
---- 移除 `cc.PhysicsWorld:removeBody` 对应的对象或数据。
+--- 从世界中移除指定物理刚体。
 ---
 --- 参数说明：
---- - `body`：参数 `body`，类型为 `cc.PhysicsBody`。
+--- - `body`：要移除的刚体对象或刚体标签。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(body: integer): self
 ---@overload fun(body: cc.PhysicsBody): self
----@param body cc.PhysicsBody 参数 `body`，类型为 `cc.PhysicsBody`。
+---@param body cc.PhysicsBody 要移除的刚体（也可传入标签整数）。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:removeBody(body) end
 
---- 移除 `cc.PhysicsWorld:removeJoint` 对应的对象或数据。
+--- 从世界中移除指定物理关节。
 ---
 --- 参数说明：
---- - `joint`：参数 `joint`，类型为 `cc.PhysicsJoint`。
---- - `destroy`：参数 `destroy`，类型为 `boolean`。
+--- - `joint`：要移除的物理关节。
+--- - `destroy`：是否同时销毁关节底层对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param joint cc.PhysicsJoint 参数 `joint`，类型为 `cc.PhysicsJoint`。
----@param destroy boolean 参数 `destroy`，类型为 `boolean`。
+---@param joint cc.PhysicsJoint 要移除的物理关节。
+---@param destroy boolean 是否销毁关节底层对象。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:removeJoint(joint, destroy) end
 
---- 获取 `cc.PhysicsWorld:getShapes` 对应的值。
+--- 查询包含指定世界坐标点的全部物理形状。
 ---
 --- 参数说明：
---- - `point`：参数 `point`，类型为 `vec2_table`。
+--- - `point`：用于点查询的世界坐标。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@param point vec2_table 参数 `point`，类型为 `vec2_table`。
----@return array_table 获取到的 Lua 表数据。
+---@param point vec2_table 用于点查询的世界坐标。
+---@return array_table 命中的 `cc.PhysicsShape` 数组。
 function PhysicsWorld:getShapes(point) end
 
 --- 调用 `cc.PhysicsWorld:step`。
@@ -160,99 +155,93 @@ function PhysicsWorld:getShapes(point) end
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:step(delta) end
 
---- 设置 `cc.PhysicsWorld:setDebugDrawMask` 对应的值。
+--- 设置物理调试绘制掩码，以控制调试信息显示内容。
 ---
 --- 参数说明：
---- - `mask`：参数 `mask`，类型为 `integer`。
+--- - `mask`：调试绘制选项的位掩码。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param mask integer 参数 `mask`，类型为 `integer`。
+---@param mask integer 调试绘制选项的位掩码。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setDebugDrawMask(mask) end
 
---- 获取 `cc.PhysicsWorld:getGravity` 对应的值。
+--- 获取当前物理世界的重力向量。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+---@return vec2_table 当前重力向量。
 function PhysicsWorld:getGravity() end
 
---- 设置 `cc.PhysicsWorld:setUpdateRate` 对应的值。
+--- 设置物理世界的更新频率。
 ---
 --- 参数说明：
---- - `rate`：参数 `rate`，类型为 `integer`。
+--- - `rate`：每秒更新次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param rate integer 参数 `rate`，类型为 `integer`。
+---@param rate integer 每秒更新次数。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setUpdateRate(rate) end
 
---- 获取 `cc.PhysicsWorld:getFixedUpdateRate` 对应的值。
+--- 获取固定物理更新频率。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+---@return integer 每秒固定更新次数。
 function PhysicsWorld:getFixedUpdateRate() end
 
---- 获取 `cc.PhysicsWorld:getSubsteps` 对应的值。
+--- 获取每个固定更新使用的物理子步数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+---@return integer 每次固定更新的子步数量。
 function PhysicsWorld:getSubsteps() end
 
---- 获取 `cc.PhysicsWorld:getSpeed` 对应的值。
+--- 获取物理世界的时间缩放速度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+---@return number 当前速度倍率。
 function PhysicsWorld:getSpeed() end
 
---- 获取 `cc.PhysicsWorld:getUpdateRate` 对应的值。
+--- 获取物理世界更新频率。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+---@return integer 每秒更新次数。
 function PhysicsWorld:getUpdateRate() end
 
---- 移除 `cc.PhysicsWorld:removeAllBodies` 对应的对象或数据。
+--- 从物理世界中移除全部刚体。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:removeAllBodies() end
 
---- 设置 `cc.PhysicsWorld:setSpeed` 对应的值。
+--- 设置物理世界的时间缩放速度。
 ---
 --- 参数说明：
---- - `speed`：参数 `speed`，类型为 `number`。
+--- - `speed`：时间速度倍率，`1` 表示正常速度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param speed number 参数 `speed`，类型为 `number`。
+---@param speed number 时间速度倍率。
 ---@return self 当前对象，便于链式调用。
 function PhysicsWorld:setSpeed(speed) end
 
---- 获取 `cc.PhysicsWorld:getShape` 对应的值。
+--- 查询包含指定世界坐标点的第一个物理形状。
 ---
 --- 参数说明：
---- - `point`：参数 `point`，类型为 `vec2_table`。
+--- - `point`：用于点查询的世界坐标。
 ---
 --- 返回说明：
---- - `cc.PhysicsShape`：获取到的 `cc.PhysicsShape` 对象或值。
----@param point vec2_table 参数 `point`，类型为 `vec2_table`。
----@return cc.PhysicsShape 获取到的 `cc.PhysicsShape` 对象或值。
+---@param point vec2_table 用于点查询的世界坐标。
+---@return cc.PhysicsShape 命中的物理形状；没有命中时返回 `nil`。
 function PhysicsWorld:getShape(point) end
 
---- 获取 `cc.PhysicsWorld:getBody` 对应的值。
+--- 按标签查找物理刚体。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `cc.PhysicsBody`：获取到的 `cc.PhysicsBody` 对象或值。
+--- - `cc.PhysicsBody`：匹配标签的刚体；未找到时为 `nil`。
 ---@param tag integer 标签值。类型为 `integer`。
----@return cc.PhysicsBody 获取到的 `cc.PhysicsBody` 对象或值。
+---@return cc.PhysicsBody 匹配标签的刚体；未找到时返回 `nil`。
 function PhysicsWorld:getBody(tag) end

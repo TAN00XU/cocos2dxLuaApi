@@ -8,22 +8,22 @@
 local RenderState = {}
 cc.RenderState = RenderState
 
---- 获取 `cc.RenderState:getName` 对应的值。
+--- 获取渲染状态名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：渲染状态名称。
+---@return string 渲染状态名称。
 function RenderState:getName() end
 
---- 调用 `cc.RenderState:bindPass`。
+--- 将材质 Pass 的渲染状态绑定到网格绘制命令。
 ---
 --- 参数说明：
---- - `pass`：参数 `pass`，类型为 `cc.Pass`。
---- - `d`：参数 `d`，类型为 `cc.MeshComman`。
+--- - `pass`：要绑定的材质渲染 Pass。
+--- - `d`：接收渲染状态的网格绘制命令。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pass cc.Pass 参数 `pass`，类型为 `cc.Pass`。
----@param d cc.MeshComman 参数 `d`，类型为 `cc.MeshComman`。
+---@param pass cc.Pass 要绑定的材质渲染 Pass。
+---@param d cc.MeshComman 接收渲染状态的网格绘制命令。
 ---@return self 当前对象，便于链式调用。
 function RenderState:bindPass(pass, d) end

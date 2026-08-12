@@ -8,21 +8,21 @@
 local TabHeader = {}
 ccui.TabHeader = TabHeader
 
---- 获取 `ccui.TabHeader:getIndexInTabControl` 对应的值。
+--- 获取标签头在所属标签控件中的索引。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：标签头索引。
+---@return integer 标签头索引。
 function TabHeader:getIndexInTabControl() end
 
---- 获取 `ccui.TabHeader:getTitleText` 对应的值。
+--- 获取标签头标题文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：标题文本。
+---@return string 标题文本。
 function TabHeader:getTitleText() end
 
---- 设置 `ccui.TabHeader:setTitleFontSize` 对应的值。
+--- 设置标签头标题字体大小。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `number`。
@@ -33,7 +33,7 @@ function TabHeader:getTitleText() end
 ---@return self 当前对象，便于链式调用。
 function TabHeader:setTitleFontSize(size) end
 
---- 设置 `ccui.TabHeader:setTitleFontName` 对应的值。
+--- 设置标签头标题字体名称。
 ---
 --- 参数说明：
 --- - `fontName`：字体名称。类型为 `string`。
@@ -44,35 +44,35 @@ function TabHeader:setTitleFontSize(size) end
 ---@return self 当前对象，便于链式调用。
 function TabHeader:setTitleFontName(fontName) end
 
---- 获取 `ccui.TabHeader:getTitleFontSize` 对应的值。
+--- 获取标签头标题字体大小。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：标题字体大小。
+---@return number 标题字体大小。
 function TabHeader:getTitleFontSize() end
 
---- 获取 `ccui.TabHeader:getTitleFontName` 对应的值。
+--- 获取标签头标题字体名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：标题字体名称。
+---@return string 标题字体名称。
 function TabHeader:getTitleFontName() end
 
---- 获取 `ccui.TabHeader:getTitleColor` 对应的值。
+--- 获取标签头标题颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：标题颜色及透明度。
+---@return color4b_table 标题颜色及透明度。
 function TabHeader:getTitleColor() end
 
---- 获取 `ccui.TabHeader:getTitleRenderer` 对应的值。
+--- 获取标签头标题的 Label 渲染节点。
 ---
 --- 返回说明：
---- - `cc.Label`：获取到的 `cc.Label` 对象或值。
----@return cc.Label 获取到的 `cc.Label` 对象或值。
+--- - `cc.Label`：标题对应的 Label 节点。
+---@return cc.Label 标题对应的 Label 节点。
 function TabHeader:getTitleRenderer() end
 
---- 设置 `ccui.TabHeader:setTitleText` 对应的值。
+--- 设置标签头标题文本。
 ---
 --- 参数说明：
 --- - `text`：文本内容。类型为 `string`。
@@ -83,7 +83,7 @@ function TabHeader:getTitleRenderer() end
 ---@return self 当前对象，便于链式调用。
 function TabHeader:setTitleText(text) end
 
---- 设置 `ccui.TabHeader:setTitleColor` 对应的值。
+--- 设置标签头标题颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -94,14 +94,14 @@ function TabHeader:setTitleText(text) end
 ---@return self 当前对象，便于链式调用。
 function TabHeader:setTitleColor(color) end
 
---- 调用 `TabHeader:create`。
+--- 创建带标题和状态纹理的标签头。
 ---
 --- 该声明来自原始多行函数签名，当前本地没有更精确的类型注解；保留完整参数列表用于补全和跳转。
----@param titleStr any 参数 `titleStr`，原始类型信息缺失。
----@param backGround any 参数 `backGround`，原始类型信息缺失。
----@param backGroundSelected any 参数 `backGroundSelected`，原始类型信息缺失。
----@param cross any 参数 `cross`，原始类型信息缺失。
----@param backGroundDisabled any 参数 `backGroundDisabled`，原始类型信息缺失。
----@param frontCrossDisabled any 参数 `frontCrossDisabled`，原始类型信息缺失。
----@param texType any 参数 `texType`，原始类型信息缺失。
+---@param titleStr any 标签头标题文本。
+---@param backGround any 未选中状态背景纹理路径。
+---@param backGroundSelected any 选中状态背景纹理路径。
+---@param cross any 未选中状态标记纹理路径。
+---@param backGroundDisabled any 禁用状态背景纹理路径。
+---@param frontCrossDisabled any 禁用状态标记纹理路径。
+---@param texType any 纹理资源类型。
 function TabHeader:create(titleStr, backGround, backGroundSelected, cross, backGroundDisabled, frontCrossDisabled, texType) end

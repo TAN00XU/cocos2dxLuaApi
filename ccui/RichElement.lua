@@ -8,18 +8,18 @@
 local RichElement = {}
 ccui.RichElement = RichElement
 
---- 调用 `ccui.RichElement:equalType`。
+--- 判断富文本元素是否为指定类型。
 ---
 --- 参数说明：
---- - `type`：类型标识。类型为 `integer`。
+--- - `type`：要比较的富文本元素类型枚举值。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@param type integer 类型标识。类型为 `integer`。
----@return boolean 布尔值。
+--- - `boolean`：类型是否相同。
+---@param type integer 要比较的富文本元素类型枚举值。
+---@return boolean 类型是否相同。
 function RichElement:equalType(type) end
 
---- 初始化 `ccui.RichElement:init` 对应的对象或状态。
+--- 使用标签、颜色和不透明度初始化富文本元素。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -34,7 +34,7 @@ function RichElement:equalType(type) end
 ---@return boolean 初始化是否成功。
 function RichElement:init(tag, color, opacity) end
 
---- 设置 `ccui.RichElement:setColor` 对应的值。
+--- 设置富文本元素的颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -45,7 +45,7 @@ function RichElement:init(tag, color, opacity) end
 ---@return self 当前对象，便于链式调用。
 function RichElement:setColor(color) end
 
---- 调用 `ccui.RichElement:RichElement`。
+--- 构造富文本元素基类对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,25 +8,25 @@
 local PlayableFrame = {}
 ccs.PlayableFrame = PlayableFrame
 
---- 设置 `ccs.PlayableFrame:setPlayableAct` 对应的值。
+--- 设置要触发的可播放动作名称。
 ---
 --- 参数说明：
---- - `playact`：参数 `playact`，类型为 `string`。
+--- - `playact`：可播放动作名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param playact string 参数 `playact`，类型为 `string`。
+---@param playact string 可播放动作名称。
 ---@return self 当前对象，便于链式调用。
 function PlayableFrame:setPlayableAct(playact) end
 
---- 获取 `ccs.PlayableFrame:getPlayableAct` 对应的值。
+--- 获取要触发的可播放动作名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：可播放动作名称。
+---@return string 可播放动作名称。
 function PlayableFrame:getPlayableAct() end
 
---- 创建 `ccs.PlayableFrame:create` 对应的对象。
+--- 创建可播放动作关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -36,8 +36,8 @@ function PlayableFrame:create() end
 --- 调用 `ccs.PlayableFrame:clone`。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：创建的可播放动作关键帧。
+---@return ccs.Frame 可播放动作关键帧副本。
 function PlayableFrame:clone() end
 
 --- 调用 `ccs.PlayableFrame:PlayableFrame`。

@@ -8,16 +8,16 @@
 local PageTurn3D = {}
 cc.PageTurn3D = PageTurn3D
 
---- 创建 `cc.PageTurn3D:create` 对应的对象。
+--- 创建 3D 页面翻转网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `gridSize`：参数 `gridSize`，类型为 `size_table`。
+--- - `gridSize`：网格列数和行数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param gridSize size_table 参数 `gridSize`，类型为 `size_table`。
+---@param gridSize size_table 网格列数和行数。
 ---@return self 当前对象，便于链式调用。
 function PageTurn3D:create(duration, gridSize) end
 
@@ -28,14 +28,14 @@ function PageTurn3D:create(duration, gridSize) end
 ---@return self 当前对象，便于链式调用。
 function PageTurn3D:clone() end
 
---- 获取 `cc.PageTurn3D:getGrid` 对应的值。
+--- 获取页面翻转动作使用的网格。
 ---
 --- 返回说明：
---- - `cc.GridBase`：获取到的 `cc.GridBase` 对象或值。
----@return cc.GridBase 获取到的 `cc.GridBase` 对象或值。
+--- - `cc.GridBase`：页面翻转网格。
+---@return cc.GridBase 页面翻转网格。
 function PageTurn3D:getGrid() end
 
---- 更新 `cc.PageTurn3D:update` 对应的状态。
+--- 按页面翻转曲线更新网格顶点。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

@@ -19,14 +19,14 @@ cc.Action = Action
 ---@return self 当前对象，便于链式调用。
 function Action:startWithTarget(target) end
 
---- 设置 `cc.Action:setOriginalTarget` 对应的值。
+--- 设置动作的原始目标节点。
 ---
 --- 参数说明：
---- - `originalTarget`：参数 `originalTarget`，类型为 `cc.Node`。
+--- - `originalTarget`：动作最初绑定的节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param originalTarget cc.Node 参数 `originalTarget`，类型为 `cc.Node`。
+---@param originalTarget cc.Node 动作最初绑定的节点。
 ---@return self 当前对象，便于链式调用。
 function Action:setOriginalTarget(originalTarget) end
 
@@ -37,21 +37,21 @@ function Action:setOriginalTarget(originalTarget) end
 ---@return self 当前对象，便于链式调用。
 function Action:clone() end
 
---- 获取 `cc.Action:getOriginalTarget` 对应的值。
+--- 获取动作的原始目标节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：动作原始目标节点。
+---@return cc.Node 动作原始目标节点。
 function Action:getOriginalTarget() end
 
---- 停止 `cc.Action:stop` 对应的流程。
+--- 停止动作并解除其运行状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Action:stop() end
 
---- 更新 `cc.Action:update` 对应的状态。
+--- 按归一化时间更新动作状态。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -62,18 +62,18 @@ function Action:stop() end
 ---@return self 当前对象，便于链式调用。
 function Action:update(time) end
 
---- 获取 `cc.Action:getTarget` 对应的值。
+--- 获取动作当前绑定的目标节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：动作当前目标节点。
+---@return cc.Node 动作当前目标节点。
 function Action:getTarget() end
 
---- 获取 `cc.Action:getFlags` 对应的值。
+--- 获取动作标志位。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：动作标志位。
+---@return integer 动作标志位。
 function Action:getFlags() end
 
 --- 调用 `cc.Action:step`。
@@ -87,7 +87,7 @@ function Action:getFlags() end
 ---@return self 当前对象，便于链式调用。
 function Action:step(dt) end
 
---- 设置 `cc.Action:setTag` 对应的值。
+--- 设置动作标签。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -98,7 +98,7 @@ function Action:step(dt) end
 ---@return self 当前对象，便于链式调用。
 function Action:setTag(tag) end
 
---- 设置 `cc.Action:setFlags` 对应的值。
+--- 设置动作标志位。
 ---
 --- 参数说明：
 --- - `flags`：标志位。类型为 `integer`。
@@ -109,14 +109,14 @@ function Action:setTag(tag) end
 ---@return self 当前对象，便于链式调用。
 function Action:setFlags(flags) end
 
---- 获取 `cc.Action:getTag` 对应的值。
+--- 获取动作标签。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：动作标签值。
+---@return integer 动作标签值。
 function Action:getTag() end
 
---- 设置 `cc.Action:setTarget` 对应的值。
+--- 设置动作当前目标节点。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -127,11 +127,11 @@ function Action:getTag() end
 ---@return self 当前对象，便于链式调用。
 function Action:setTarget(target) end
 
---- 判断 `cc.Action:isDone` 对应状态是否成立。
+--- 判断动作是否已完成。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：动作是否已完成。
+---@return boolean 动作是否已完成。
 function Action:isDone() end
 
 --- 调用 `cc.Action:reverse`。

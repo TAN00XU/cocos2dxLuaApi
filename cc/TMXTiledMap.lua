@@ -8,200 +8,200 @@
 local TMXTiledMap = {}
 cc.TMXTiledMap = TMXTiledMap
 
---- 设置 `cc.TMXTiledMap:setObjectGroups` 对应的值。
+--- 替换地图中的全部对象组。
 ---
 --- 参数说明：
---- - `groups`：参数 `groups`，类型为 `array_table`。
+--- - `groups`：按 TMX 文件顺序排列的对象组数组。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param groups array_table 参数 `groups`，类型为 `array_table`。
+---@param groups array_table 按 TMX 文件顺序排列的对象组数组。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:setObjectGroups(groups) end
 
---- 获取 `cc.TMXTiledMap:getProperty` 对应的值。
+--- 按名称获取地图的自定义属性。
 ---
 --- 参数说明：
---- - `propertyName`：参数 `propertyName`，类型为 `string`。
+--- - `propertyName`：要查询的地图属性名称。
 ---
 --- 返回说明：
---- - `cc.Value`：获取到的 `cc.Value` 对象或值。
----@param propertyName string 参数 `propertyName`，类型为 `string`。
----@return cc.Value 获取到的 `cc.Value` 对象或值。
+--- - `cc.Value`：地图中对应的属性值。
+---@param propertyName string 要查询的地图属性名称。
+---@return cc.Value 地图中对应的属性值。
 function TMXTiledMap:getProperty(propertyName) end
 
---- 获取 `cc.TMXTiledMap:getLayerNum` 对应的值。
+--- 获取地图包含的瓦片图层数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：已解析并创建的 `TMXLayer` 数量。
+---@return integer 地图包含的瓦片图层数量。
 function TMXTiledMap:getLayerNum() end
 
---- 设置 `cc.TMXTiledMap:setMapSize` 对应的值。
+--- 设置地图的瓦片行列数。
 ---
 --- 参数说明：
---- - `mapSize`：参数 `mapSize`，类型为 `size_table`。
+--- - `mapSize`：地图的列数和行数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param mapSize size_table 参数 `mapSize`，类型为 `size_table`。
+---@param mapSize size_table 地图的列数和行数。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:setMapSize(mapSize) end
 
---- 获取 `cc.TMXTiledMap:getObjectGroup` 对应的值。
+--- 按名称获取地图对象组。
 ---
 --- 参数说明：
---- - `groupName`：参数 `groupName`，类型为 `string`。
+--- - `groupName`：TMX 文件中定义的对象组名称。
 ---
 --- 返回说明：
---- - `cc.TMXObjectGroup`：获取到的 `cc.TMXObjectGroup` 对象或值。
----@param groupName string 参数 `groupName`，类型为 `string`。
----@return cc.TMXObjectGroup 获取到的 `cc.TMXObjectGroup` 对象或值。
+--- - `cc.TMXObjectGroup`：匹配的对象组。
+---@param groupName string TMX 文件中定义的对象组名称。
+---@return cc.TMXObjectGroup 匹配的对象组。
 function TMXTiledMap:getObjectGroup(groupName) end
 
---- 获取 `cc.TMXTiledMap:getObjectGroups` 对应的值。
+--- 获取地图中的全部对象组。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
+--- - `array_table`：按 TMX 文件顺序排列的对象组数组。
 ---@overload fun(): array_table
----@return array_table 获取到的 Lua 表数据。
+---@return array_table 按 TMX 文件顺序排列的对象组数组。
 function TMXTiledMap:getObjectGroups() end
 
---- 获取 `cc.TMXTiledMap:getResourceFile` 对应的值。
+--- 获取此地图加载时使用的 TMX 资源文件路径。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：当前 TMX 地图文件路径。
+---@return string 当前 TMX 地图文件路径。
 function TMXTiledMap:getResourceFile() end
 
---- 初始化 `cc.TMXTiledMap:initWithTMXFile` 对应的对象或状态。
+--- 从 TMX 文件初始化瓦片地图。
 ---
 --- 参数说明：
---- - `tmxFile`：参数 `tmxFile`，类型为 `string`。
+--- - `tmxFile`：TMX 地图文件路径。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param tmxFile string 参数 `tmxFile`，类型为 `string`。
+---@param tmxFile string TMX 地图文件路径。
 ---@return boolean 初始化是否成功。
 function TMXTiledMap:initWithTMXFile(tmxFile) end
 
---- 获取 `cc.TMXTiledMap:getTileSize` 对应的值。
+--- 获取地图中单个瓦片的像素尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：单个瓦片的宽度和高度。
+---@return size_table 单个瓦片的宽度和高度。
 function TMXTiledMap:getTileSize() end
 
---- 获取 `cc.TMXTiledMap:getMapSize` 对应的值。
+--- 获取地图的瓦片行列数。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：地图的列数和行数。
+---@return size_table 地图的列数和行数。
 function TMXTiledMap:getMapSize() end
 
---- 初始化 `cc.TMXTiledMap:initWithXML` 对应的对象或状态。
+--- 从 XML 字符串和资源目录初始化瓦片地图。
 ---
 --- 参数说明：
---- - `tmxString`：参数 `tmxString`，类型为 `string`。
---- - `resourcePath`：参数 `resourcePath`，类型为 `string`。
+--- - `tmxString`：TMX XML 文本内容。
+--- - `resourcePath`：XML 中引用的纹理和外部资源所在目录。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param tmxString string 参数 `tmxString`，类型为 `string`。
----@param resourcePath string 参数 `resourcePath`，类型为 `string`。
+---@param tmxString string TMX XML 文本内容。
+---@param resourcePath string XML 中引用的纹理和外部资源所在目录。
 ---@return boolean 初始化是否成功。
 function TMXTiledMap:initWithXML(tmxString, resourcePath) end
 
---- 获取 `cc.TMXTiledMap:getProperties` 对应的值。
+--- 获取地图的全部自定义属性。
 ---
 --- 返回说明：
---- - `map_table`：获取到的 Lua 表数据。
----@return map_table 获取到的 Lua 表数据。
+--- - `map_table`：属性名称到属性值的映射表。
+---@return map_table 属性名称到属性值的映射表。
 function TMXTiledMap:getProperties() end
 
---- 设置 `cc.TMXTiledMap:setTileSize` 对应的值。
+--- 设置地图中单个瓦片的像素尺寸。
 ---
 --- 参数说明：
---- - `tileSize`：参数 `tileSize`，类型为 `size_table`。
+--- - `tileSize`：单个瓦片的宽度和高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tileSize size_table 参数 `tileSize`，类型为 `size_table`。
+---@param tileSize size_table 单个瓦片的宽度和高度。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:setTileSize(tileSize) end
 
---- 设置 `cc.TMXTiledMap:setProperties` 对应的值。
+--- 替换地图的全部自定义属性。
 ---
 --- 参数说明：
---- - `properties`：参数 `properties`，类型为 `map_table`。
+--- - `properties`：属性名称到属性值的映射表。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param properties map_table 参数 `properties`，类型为 `map_table`。
+---@param properties map_table 属性名称到属性值的映射表。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:setProperties(properties) end
 
---- 获取 `cc.TMXTiledMap:getLayer` 对应的值。
+--- 按名称获取瓦片图层。
 ---
 --- 参数说明：
---- - `layerName`：参数 `layerName`，类型为 `string`。
+--- - `layerName`：TMX 文件中定义的图层名称。
 ---
 --- 返回说明：
---- - `cc.TMXLayer`：获取到的 `cc.TMXLayer` 对象或值。
----@param layerName string 参数 `layerName`，类型为 `string`。
----@return cc.TMXLayer 获取到的 `cc.TMXLayer` 对象或值。
+--- - `cc.TMXLayer`：匹配的瓦片图层。
+---@param layerName string TMX 文件中定义的图层名称。
+---@return cc.TMXLayer 匹配的瓦片图层。
 function TMXTiledMap:getLayer(layerName) end
 
---- 获取 `cc.TMXTiledMap:getMapOrientation` 对应的值。
+--- 获取地图方向枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：正交、等距或六边形等地图方向值。
+---@return integer 地图方向枚举值。
 function TMXTiledMap:getMapOrientation() end
 
---- 设置 `cc.TMXTiledMap:setMapOrientation` 对应的值。
+--- 设置地图方向枚举值。
 ---
 --- 参数说明：
---- - `mapOrientation`：参数 `mapOrientation`，类型为 `integer`。
+--- - `mapOrientation`：正交、等距或六边形等地图方向值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param mapOrientation integer 参数 `mapOrientation`，类型为 `integer`。
+---@param mapOrientation integer 地图方向枚举值。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:setMapOrientation(mapOrientation) end
 
---- 创建 `cc.TMXTiledMap:create` 对应的对象。
+--- 从 TMX 文件创建瓦片地图。
 ---
 --- 参数说明：
---- - `tmxFile`：参数 `tmxFile`，类型为 `string`。
+--- - `tmxFile`：TMX 地图文件路径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tmxFile string 参数 `tmxFile`，类型为 `string`。
+---@param tmxFile string TMX 地图文件路径。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:create(tmxFile) end
 
---- 创建 `cc.TMXTiledMap:createWithXML` 对应的对象。
+--- 从 XML 字符串和资源目录创建瓦片地图。
 ---
 --- 参数说明：
---- - `tmxString`：参数 `tmxString`，类型为 `string`。
---- - `resourcePath`：参数 `resourcePath`，类型为 `string`。
+--- - `tmxString`：TMX XML 文本内容。
+--- - `resourcePath`：XML 中引用的纹理和外部资源所在目录。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tmxString string 参数 `tmxString`，类型为 `string`。
----@param resourcePath string 参数 `resourcePath`，类型为 `string`。
+---@param tmxString string TMX XML 文本内容。
+---@param resourcePath string XML 中引用的纹理和外部资源所在目录。
 ---@return self 当前对象，便于链式调用。
 function TMXTiledMap:createWithXML(tmxString, resourcePath) end
 
---- 获取 `cc.TMXTiledMap:getDescription` 对应的值。
+--- 获取包含地图基本信息的调试描述。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：瓦片地图的可读调试描述。
+---@return string 瓦片地图的可读调试描述。
 function TMXTiledMap:getDescription() end
 
---- 调用 `cc.TMXTiledMap:TMXTiledMap`。
+--- 构造瓦片地图对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,7 +8,7 @@
 local FlipY3D = {}
 cc.FlipY3D = FlipY3D
 
---- 创建 `cc.FlipY3D:create` 对应的对象。
+--- 创建沿 Y 轴进行 3D 翻转的网格动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
@@ -26,14 +26,14 @@ function FlipY3D:create(duration) end
 ---@return self 当前对象，便于链式调用。
 function FlipY3D:clone() end
 
---- 更新 `cc.FlipY3D:update` 对应的状态。
+--- 按归一化进度更新 Y 轴 3D 翻转。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度，通常范围为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度，通常范围为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function FlipY3D:update(time) end
 

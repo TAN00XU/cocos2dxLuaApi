@@ -8,25 +8,25 @@
 local FadeIn = {}
 cc.FadeIn = FadeIn
 
---- 设置 `cc.FadeIn:setReverseAction` 对应的值。
+--- 设置淡入动作对应的反向淡出动作。
 ---
 --- 参数说明：
---- - `ac`：参数 `ac`，类型为 `cc.FadeTo`。
+--- - `ac`：反向淡化动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param ac cc.FadeTo 参数 `ac`，类型为 `cc.FadeTo`。
+---@param ac cc.FadeTo 反向淡化动作。
 ---@return self 当前对象，便于链式调用。
 function FadeIn:setReverseAction(ac) end
 
---- 创建 `cc.FadeIn:create` 对应的对象。
+--- 创建在指定时间内淡入到完全不透明的动作。
 ---
 --- 参数说明：
---- - `d`：参数 `d`，类型为 `number`。
+--- - `d`：淡入时长，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param d number 参数 `d`，类型为 `number`。
+---@param d number 淡入时长，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function FadeIn:create(d) end
 
@@ -51,8 +51,8 @@ function FadeIn:clone() end
 --- 调用 `cc.FadeIn:reverse`。
 ---
 --- 返回说明：
---- - `cc.FadeTo`：`cc.FadeTo` 对象或值。
----@return cc.FadeTo `cc.FadeTo` 对象或值。
+--- - `cc.FadeTo`：反向淡出动作。
+---@return cc.FadeTo 反向淡出动作。
 function FadeIn:reverse() end
 
 --- 调用 `cc.FadeIn:FadeIn`。

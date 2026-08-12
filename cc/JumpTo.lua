@@ -8,37 +8,37 @@
 local JumpTo = {}
 cc.JumpTo = JumpTo
 
---- 初始化 `cc.JumpTo:initWithDuration` 对应的对象或状态。
+--- 使用持续时间、目标位置、跳跃高度和次数初始化跳跃动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `position`：位置坐标。类型为 `vec2_table`。
---- - `height`：高度。类型为 `number`。
---- - `jumps`：参数 `jumps`，类型为 `integer`。
+--- - `position`：动作结束时的绝对目标位置。
+--- - `height`：跳跃高度。
+--- - `jumps`：跳跃次数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@param duration number 持续时间。类型为 `number`。
----@param position vec2_table 位置坐标。类型为 `vec2_table`。
----@param height number 高度。类型为 `number`。
----@param jumps integer 参数 `jumps`，类型为 `integer`。
+---@param position vec2_table 动作结束时的绝对目标位置。
+---@param height number 跳跃高度。
+---@param jumps integer 跳跃次数。
 ---@return boolean 初始化是否成功。
 function JumpTo:initWithDuration(duration, position, height, jumps) end
 
---- 创建 `cc.JumpTo:create` 对应的对象。
+--- 创建跳跃到指定绝对位置的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `position`：位置坐标。类型为 `vec2_table`。
---- - `height`：高度。类型为 `number`。
---- - `jumps`：参数 `jumps`，类型为 `integer`。
+--- - `position`：动作结束时的绝对目标位置。
+--- - `height`：跳跃高度。
+--- - `jumps`：跳跃次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param duration number 持续时间。类型为 `number`。
----@param position vec2_table 位置坐标。类型为 `vec2_table`。
----@param height number 高度。类型为 `number`。
----@param jumps integer 参数 `jumps`，类型为 `integer`。
+---@param position vec2_table 动作结束时的绝对目标位置。
+---@param height number 跳跃高度。
+---@param jumps integer 跳跃次数。
 ---@return self 当前对象，便于链式调用。
 function JumpTo:create(duration, position, height, jumps) end
 

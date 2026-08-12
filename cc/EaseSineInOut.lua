@@ -8,7 +8,7 @@
 local EaseSineInOut = {}
 cc.EaseSineInOut = EaseSineInOut
 
---- 创建 `cc.EaseSineInOut:create` 对应的对象。
+--- 创建正弦渐入渐出缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -26,7 +26,7 @@ function EaseSineInOut:create(action) end
 ---@return self 当前对象，便于链式调用。
 function EaseSineInOut:clone() end
 
---- 更新 `cc.EaseSineInOut:update` 对应的状态。
+--- 按正弦渐入渐出曲线更新内部动作进度。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -40,8 +40,8 @@ function EaseSineInOut:update(time) end
 --- 调用 `cc.EaseSineInOut:reverse`。
 ---
 --- 返回说明：
---- - `cc.ActionEase`：`cc.ActionEase` 对象或值。
----@return cc.ActionEase `cc.ActionEase` 对象或值。
+--- - `cc.ActionEase`：反向缓动动作。
+---@return cc.ActionEase 反向缓动动作。
 function EaseSineInOut:reverse() end
 
 --- 调用 `cc.EaseSineInOut:EaseSineInOut`。

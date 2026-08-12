@@ -7,53 +7,53 @@
 local Device = {}
 cc.Device = Device
 
---- 设置 `cc.Device:setAccelerometerEnabled` 对应的值。
+--- 启用或禁用设备加速度计。
 ---
 --- 参数说明：
---- - `isEnabled`：参数 `isEnabled`，类型为 `boolean`。
+--- - `isEnabled`：是否启用加速度计。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param isEnabled boolean 参数 `isEnabled`，类型为 `boolean`。
+---@param isEnabled boolean 是否启用加速度计。
 ---@return self 当前对象，便于链式调用。
 function Device:setAccelerometerEnabled(isEnabled) end
 
---- 设置 `cc.Device:setAccelerometerInterval` 对应的值。
+--- 设置加速度计事件的采样间隔。
 ---
 --- 参数说明：
---- - `interval`：参数 `interval`，类型为 `number`。
+--- - `interval`：采样间隔，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param interval number 参数 `interval`，类型为 `number`。
+---@param interval number 采样间隔，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Device:setAccelerometerInterval(interval) end
 
---- 设置 `cc.Device:setKeepScreenOn` 对应的值。
+--- 设置应用运行时是否保持屏幕常亮。
 ---
 --- 参数说明：
---- - `keepScreenOn`：参数 `keepScreenOn`，类型为 `boolean`。
+--- - `keepScreenOn`：是否阻止屏幕自动熄灭。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param keepScreenOn boolean 参数 `keepScreenOn`，类型为 `boolean`。
+---@param keepScreenOn boolean 是否阻止屏幕自动熄灭。
 ---@return self 当前对象，便于链式调用。
 function Device:setKeepScreenOn(keepScreenOn) end
 
---- 调用 `cc.Device:vibrate`。
+--- 触发设备振动。
 ---
 --- 参数说明：
---- - `duration`：持续时间。类型为 `number`。
+--- - `duration`：振动持续时间，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param duration number 持续时间。类型为 `number`。
+---@param duration number 振动持续时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Device:vibrate(duration) end
 
---- 获取 `cc.Device:getDPI` 对应的值。
+--- 获取设备屏幕的每英寸像素数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：屏幕 DPI。
+---@return integer 屏幕 DPI。
 function Device:getDPI() end

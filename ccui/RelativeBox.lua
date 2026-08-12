@@ -8,7 +8,7 @@
 local RelativeBox = {}
 ccui.RelativeBox = RelativeBox
 
---- 初始化 `ccui.RelativeBox:initWithSize` 对应的对象或状态。
+--- 按指定尺寸初始化相对盒式布局。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -19,7 +19,7 @@ ccui.RelativeBox = RelativeBox
 ---@return boolean 初始化是否成功。
 function RelativeBox:initWithSize(size) end
 
---- 创建 `ccui.RelativeBox:create` 对应的对象。
+--- 创建相对盒式布局，可选定初始尺寸。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -32,14 +32,14 @@ function RelativeBox:initWithSize(size) end
 ---@return self 当前对象，便于链式调用。
 function RelativeBox:create(size) end
 
---- 初始化 `ccui.RelativeBox:init` 对应的对象或状态。
+--- 初始化相对盒式布局。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function RelativeBox:init() end
 
---- 调用 `ccui.RelativeBox:RelativeBox`。
+--- 构造相对盒式布局对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

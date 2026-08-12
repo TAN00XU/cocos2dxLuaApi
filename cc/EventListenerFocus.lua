@@ -15,7 +15,7 @@ cc.EventListenerFocus = EventListenerFocus
 ---@return cc.EventListenerFocus 新创建的焦点事件监听器对象
 function EventListenerFocus:create() end
 
---- 初始化 `cc.EventListenerFocus:init` 对应的对象或状态。
+--- 初始化焦点事件监听器及其回调。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。

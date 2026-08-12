@@ -8,25 +8,25 @@
 local Place = {}
 cc.Place = Place
 
---- 初始化 `cc.Place:initWithPosition` 对应的对象或状态。
+--- 使用目标位置初始化瞬移动作。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
+--- - `pos`：目标二维位置。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
+---@param pos vec2_table 目标二维位置。
 ---@return boolean 初始化是否成功。
 function Place:initWithPosition(pos) end
 
---- 创建 `cc.Place:create` 对应的对象。
+--- 创建瞬移到目标位置的即时动作。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
+--- - `pos`：目标二维位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
+---@param pos vec2_table 目标二维位置。
 ---@return self 当前对象，便于链式调用。
 function Place:create(pos) end
 
@@ -37,7 +37,7 @@ function Place:create(pos) end
 ---@return self 当前对象，便于链式调用。
 function Place:clone() end
 
---- 更新 `cc.Place:update` 对应的状态。
+--- 将目标节点立即设置到目标位置。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

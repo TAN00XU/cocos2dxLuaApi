@@ -8,33 +8,33 @@
 local PhysicsShapeBox = {}
 cc.PhysicsShapeBox = PhysicsShapeBox
 
---- 获取 `cc.PhysicsShapeBox:getSize` 对应的值。
+--- 获取盒形物理形状的尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：盒形的宽度和高度。
+---@return size_table 盒形的宽度和高度。
 function PhysicsShapeBox:getSize() end
 
---- 创建 `cc.PhysicsShapeBox:create` 对应的对象。
+--- 创建带材质、偏移和圆角半径的盒形物理形状。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
---- - `material`：参数 `material`，类型为 `cc.PhysicsMaterial`。
---- - `offset`：参数 `offset`，类型为 `vec2_table`。
---- - `radius`：参数 `radius`，类型为 `number`。
+--- - `size`：盒形的宽度和高度。
+--- - `material`：物理材质参数。
+--- - `offset`：在刚体局部坐标系中相对刚体重心的偏移量。
+--- - `radius`：盒形边角的圆角半径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param size size_table 尺寸。类型为 `size_table`。
----@param material cc.PhysicsMaterial 参数 `material`，类型为 `cc.PhysicsMaterial`。
----@param offset vec2_table 参数 `offset`，类型为 `vec2_table`。
----@param radius number 参数 `radius`，类型为 `number`。
+---@param size size_table 盒形的宽度和高度。
+---@param material cc.PhysicsMaterial 物理材质参数。
+---@param offset vec2_table 在刚体局部坐标系中相对刚体重心的偏移量。
+---@param radius number 盒形边角的圆角半径。
 ---@return self 当前对象，便于链式调用。
 function PhysicsShapeBox:create(size, material, offset, radius) end
 
---- 获取 `cc.PhysicsShapeBox:getOffset` 对应的值。
+--- 获取盒形相对刚体重心的位置偏移量。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：刚体局部坐标系中的位置偏移量。
+---@return vec2_table 刚体局部坐标系中的位置偏移量。
 function PhysicsShapeBox:getOffset() end

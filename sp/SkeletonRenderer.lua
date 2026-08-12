@@ -8,237 +8,237 @@
 local SkeletonRenderer = {}
 sp.SkeletonRenderer = SkeletonRenderer
 
---- 设置 `sp.SkeletonRenderer:setTimeScale` 对应的值。
+--- 设置骨骼动画的时间缩放倍率。
 ---
 --- 参数说明：
---- - `scale`：缩放比例。类型为 `number`。
+--- - `scale`：动画更新时间相对于实际时间的倍率；`1` 表示正常速度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param scale number 缩放比例。类型为 `number`。
+---@param scale number 动画更新时间相对于实际时间的倍率。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setTimeScale(scale) end
 
---- 获取 `sp.SkeletonRenderer:getDebugSlotsEnabled` 对应的值。
+--- 获取是否绘制调试插槽轮廓。
 ---
 --- 返回说明：
---- - `boolean`：获取到的 布尔值。
----@return boolean 获取到的 布尔值。
+--- - `boolean`：启用时返回 `true`。
+---@return boolean 是否启用调试插槽绘制。
 function SkeletonRenderer:getDebugSlotsEnabled() end
 
---- 设置 `sp.SkeletonRenderer:setBonesToSetupPose` 对应的值。
+--- 将所有骨骼恢复到设置姿态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setBonesToSetupPose() end
 
---- 初始化 `sp.SkeletonRenderer:initWithData` 对应的对象或状态。
+--- 使用已加载的骨骼数据初始化渲染器。
 ---
 --- 参数说明：
---- - `skeletonData`：参数 `skeletonData`，类型为 `spSkeletonData`。
---- - `ownsSkeletonData`：参数 `ownsSkeletonData`，类型为 `boolean`。
+--- - `skeletonData`：用于创建骨骼实例的已加载 Spine 骨骼数据。
+--- - `ownsSkeletonData`：是否由渲染器负责释放传入的骨骼数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param skeletonData spSkeletonData 参数 `skeletonData`，类型为 `spSkeletonData`。
----@param ownsSkeletonData boolean 参数 `ownsSkeletonData`，类型为 `boolean`。
+---@param skeletonData spSkeletonData 用于创建骨骼实例的已加载 Spine 骨骼数据。
+---@param ownsSkeletonData boolean 是否由渲染器负责释放传入的骨骼数据。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:initWithData(skeletonData, ownsSkeletonData) end
 
---- 设置 `sp.SkeletonRenderer:setDebugSlotsEnabled` 对应的值。
+--- 设置是否绘制调试插槽轮廓。
 ---
 --- 参数说明：
---- - `enabled`：是否启用。类型为 `boolean`。
+--- - `enabled`：是否绘制插槽的调试轮廓。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enabled boolean 是否启用。类型为 `boolean`。
+---@param enabled boolean 是否绘制插槽的调试轮廓。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setDebugSlotsEnabled(enabled) end
 
---- 初始化 `sp.SkeletonRenderer:initWithJsonFile` 对应的对象或状态。
+--- 从 JSON 骨骼数据文件和图集初始化渲染器。
 ---
 --- 参数说明：
---- - `skeletonDataFile`：参数 `skeletonDataFile`，类型为 `string`。
---- - `atlas`：参数 `atlas`，类型为 `spAtlas`。
---- - `scale`：缩放比例。类型为 `number`。
+--- - `skeletonDataFile`：Spine JSON 骨骼数据文件路径。
+--- - `atlas`：已加载的 Spine 图集对象，或图集文件路径。
+--- - `scale`：读取骨骼数据时应用的缩放系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(skeletonDataFile: string, atlas: string, scale: number): self
 ---@overload fun(skeletonDataFile: string, atlas: spAtlas, scale: number): self
----@param skeletonDataFile string 参数 `skeletonDataFile`，类型为 `string`。
----@param atlas spAtlas 参数 `atlas`，类型为 `spAtlas`。
----@param scale number 缩放比例。类型为 `number`。
+---@param skeletonDataFile string Spine JSON 骨骼数据文件路径。
+---@param atlas spAtlas 已加载的 Spine 图集对象。
+---@param scale number 读取骨骼数据时应用的缩放系数。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:initWithJsonFile(skeletonDataFile, atlas, scale) end
 
---- 设置 `sp.SkeletonRenderer:setSlotsToSetupPose` 对应的值。
+--- 将所有插槽恢复到设置姿态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setSlotsToSetupPose() end
 
---- 初始化 `sp.SkeletonRenderer:initWithBinaryFile` 对应的对象或状态。
+--- 从二进制骨骼数据文件和图集初始化渲染器。
 ---
 --- 参数说明：
---- - `skeletonDataFile`：参数 `skeletonDataFile`，类型为 `string`。
---- - `atlas`：参数 `atlas`，类型为 `spAtlas`。
---- - `scale`：缩放比例。类型为 `number`。
+--- - `skeletonDataFile`：Spine 二进制骨骼数据文件路径。
+--- - `atlas`：已加载的 Spine 图集对象，或图集文件路径。
+--- - `scale`：读取骨骼数据时应用的缩放系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(skeletonDataFile: string, atlas: string, scale: number): self
 ---@overload fun(skeletonDataFile: string, atlas: spAtlas, scale: number): self
----@param skeletonDataFile string 参数 `skeletonDataFile`，类型为 `string`。
----@param atlas spAtlas 参数 `atlas`，类型为 `spAtlas`。
----@param scale number 缩放比例。类型为 `number`。
+---@param skeletonDataFile string Spine 二进制骨骼数据文件路径。
+---@param atlas spAtlas 已加载的 Spine 图集对象。
+---@param scale number 读取骨骼数据时应用的缩放系数。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:initWithBinaryFile(skeletonDataFile, atlas, scale) end
 
---- 设置 `sp.SkeletonRenderer:setToSetupPose` 对应的值。
+--- 将骨骼和插槽全部恢复到设置姿态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setToSetupPose() end
 
---- 设置 `sp.SkeletonRenderer:setDebugMeshesEnabled` 对应的值。
+--- 设置是否绘制调试网格三角形。
 ---
 --- 参数说明：
---- - `enabled`：是否启用。类型为 `boolean`。
+--- - `enabled`：是否绘制网格附件的调试三角形。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enabled boolean 是否启用。类型为 `boolean`。
+---@param enabled boolean 是否绘制网格附件的调试三角形。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setDebugMeshesEnabled(enabled) end
 
---- 判断 `sp.SkeletonRenderer:isTwoColorTint` 对应状态是否成立。
+--- 判断是否启用了双颜色着色。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用双颜色着色时为 `true`。
+---@return boolean 是否启用双颜色着色。
 function SkeletonRenderer:isTwoColorTint() end
 
---- 获取 `sp.SkeletonRenderer:getBlendFunc` 对应的值。
+--- 获取渲染器使用的混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：当前使用的源因子和目标因子。
+---@return cc.BlendFunc 当前使用的混合函数。
 function SkeletonRenderer:getBlendFunc() end
 
---- 初始化 `sp.SkeletonRenderer:initialize` 对应的对象或状态。
+--- 初始化渲染器内部状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:initialize() end
 
---- 设置 `sp.SkeletonRenderer:setDebugBonesEnabled` 对应的值。
+--- 设置是否绘制调试骨骼线段。
 ---
 --- 参数说明：
---- - `enabled`：是否启用。类型为 `boolean`。
+--- - `enabled`：是否绘制骨骼的调试线段。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enabled boolean 是否启用。类型为 `boolean`。
+---@param enabled boolean 是否绘制骨骼的调试线段。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setDebugBonesEnabled(enabled) end
 
---- 获取 `sp.SkeletonRenderer:getDebugBonesEnabled` 对应的值。
+--- 获取是否绘制调试骨骼线段。
 ---
 --- 返回说明：
---- - `boolean`：获取到的 布尔值。
----@return boolean 获取到的 布尔值。
+--- - `boolean`：启用时返回 `true`。
+---@return boolean 是否启用调试骨骼绘制。
 function SkeletonRenderer:getDebugBonesEnabled() end
 
---- 获取 `sp.SkeletonRenderer:getTimeScale` 对应的值。
+--- 获取骨骼动画的时间缩放倍率。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：时间缩放倍率。
+---@return number 时间缩放倍率。
 function SkeletonRenderer:getTimeScale() end
 
---- 设置 `sp.SkeletonRenderer:setTwoColorTint` 对应的值。
+--- 设置是否启用双颜色着色。
 ---
 --- 参数说明：
---- - `enabled`：是否启用。类型为 `boolean`。
+--- - `enabled`：是否为每个顶点同时应用亮色和暗色着色。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enabled boolean 是否启用。类型为 `boolean`。
+---@param enabled boolean 是否为每个顶点同时应用亮色和暗色着色。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setTwoColorTint(enabled) end
 
---- 获取 `sp.SkeletonRenderer:getDebugMeshesEnabled` 对应的值。
+--- 获取是否绘制调试网格三角形。
 ---
 --- 返回说明：
---- - `boolean`：获取到的 布尔值。
----@return boolean 获取到的 布尔值。
+--- - `boolean`：启用调试网格绘制时为 `true`。
+---@return boolean 是否启用调试网格绘制。
 function SkeletonRenderer:getDebugMeshesEnabled() end
 
---- 设置 `sp.SkeletonRenderer:setBlendFunc` 对应的值。
+--- 设置渲染器使用的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：渲染骨骼附件时使用的源、目标混合因子。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 渲染骨骼附件时使用的源、目标混合因子。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setBlendFunc(blendFunc) end
 
---- 设置 `sp.SkeletonRenderer:setVertexEffect` 对应的值。
+--- 设置顶点效果处理器。
 ---
 --- 参数说明：
---- - `effect`：参数 `effect`，类型为 `spVertexEffect`。
+--- - `effect`：绘制前作用于骨骼顶点的 Spine 顶点效果；传入空值可移除效果。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param effect spVertexEffect 参数 `effect`，类型为 `spVertexEffect`。
+---@param effect spVertexEffect 绘制前作用于骨骼顶点的 Spine 顶点效果。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setVertexEffect(effect) end
 
---- 设置 `sp.SkeletonRenderer:setSkin` 对应的值。
+--- 切换到指定名称的皮肤。
 ---
 --- 参数说明：
---- - `skinName`：参数 `skinName`，类型为 `string`。
+--- - `skinName`：骨骼数据中已定义的皮肤名称。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
+--- - `boolean`：找到并应用皮肤时返回 `true`，名称不存在时返回 `false`。
 ---@overload fun(skinName: string): boolean
----@param skinName string 参数 `skinName`，类型为 `string`。
----@return boolean 布尔值。
+---@param skinName string 骨骼数据中已定义的皮肤名称。
+---@return boolean 是否成功找到并应用皮肤。
 function SkeletonRenderer:setSkin(skinName) end
 
---- 获取 `sp.SkeletonRenderer:getSkeleton` 对应的值。
+--- 获取底层 Spine 骨骼实例。
 ---
 --- 返回说明：
---- - `spSkeleton`：获取到的 `spSkeleton` 对象或值。
----@return spSkeleton 获取到的 `spSkeleton` 对象或值。
+--- - `spSkeleton`：底层 Spine 骨骼实例。
+---@return spSkeleton 底层 Spine 骨骼实例。
 function SkeletonRenderer:getSkeleton() end
 
---- 创建 `sp.SkeletonRenderer:createWithFile` 对应的对象。
+--- 从骨骼数据文件和图集创建渲染器。
 ---
 --- 参数说明：
---- - `skeletonDataFile`：参数 `skeletonDataFile`，类型为 `string`。
---- - `atlas`：参数 `atlas`，类型为 `spAtlas`。
---- - `scale`：缩放比例。类型为 `number`。
+--- - `skeletonDataFile`：Spine JSON 或二进制骨骼数据文件路径。
+--- - `atlas`：已加载的 Spine 图集对象，或图集文件路径。
+--- - `scale`：读取骨骼数据时应用的缩放系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(skeletonDataFile: string, atlas: string, scale: number): self
 ---@overload fun(skeletonDataFile: string, atlas: spAtlas, scale: number): self
----@param skeletonDataFile string 参数 `skeletonDataFile`，类型为 `string`。
----@param atlas spAtlas 参数 `atlas`，类型为 `spAtlas`。
----@param scale number 缩放比例。类型为 `number`。
+---@param skeletonDataFile string Spine JSON 或二进制骨骼数据文件路径。
+---@param atlas spAtlas 已加载的 Spine 图集对象。
+---@param scale number 读取骨骼数据时应用的缩放系数。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:createWithFile(skeletonDataFile, atlas, scale) end
 
---- 创建 `sp.SkeletonRenderer:create` 对应的对象。
+--- 创建空的骨骼渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -259,37 +259,37 @@ function SkeletonRenderer:onEnter() end
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:onExit() end
 
---- 设置 `sp.SkeletonRenderer:setOpacityModifyRGB` 对应的值。
+--- 设置是否根据透明度预乘颜色。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `boolean`。
+--- - `value`：是否启用透明度修改 RGB。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param value boolean 数值或对象值。类型为 `boolean`。
+---@param value boolean 是否根据透明度修改 RGB。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:setOpacityModifyRGB(value) end
 
---- 获取 `sp.SkeletonRenderer:getBoundingBox` 对应的值。
+--- 获取骨骼渲染器的世界坐标包围盒。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：包含 `x`、`y`、`width`、`height` 的矩形表。
+---@return rect_table 世界坐标包围盒。
 function SkeletonRenderer:getBoundingBox() end
 
---- 判断 `sp.SkeletonRenderer:isOpacityModifyRGB` 对应状态是否成立。
+--- 判断是否根据透明度预乘颜色。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用透明度修改 RGB 时为 `true`。
+---@return boolean 是否启用透明度修改 RGB。
 function SkeletonRenderer:isOpacityModifyRGB() end
 
---- 调用 `sp.SkeletonRenderer:SkeletonRenderer`。
+--- 构造骨骼渲染器，可使用骨骼数据对象或骨骼文件与图集初始化。
 ---
 --- 参数说明：
---- - `skeletonDataFile`：参数 `skeletonDataFile`，类型为 `string`。
---- - `atlasFile`：参数 `atlasFile`，类型为 `string`。
---- - `scale`：缩放比例。类型为 `number`。
+--- - `skeletonDataFile`：Spine 骨骼数据文件路径；对应重载也可传入已加载的骨骼数据对象。
+--- - `atlasFile`：Spine 图集文件路径；对应重载也可传入图集对象或骨骼数据所有权标志。
+--- - `scale`：读取骨骼数据时应用的缩放系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -297,8 +297,8 @@ function SkeletonRenderer:isOpacityModifyRGB() end
 ---@overload fun(): self
 ---@overload fun(skeletonDataFile: string, atlasFile: spAtlas, scale: number): self
 ---@overload fun(skeletonDataFile: string, atlasFile: string, scale: number): self
----@param skeletonDataFile? string 参数 `skeletonDataFile`，类型为 `string`。
----@param atlasFile? string 参数 `atlasFile`，类型为 `string`。
----@param scale? number 缩放比例。类型为 `number`。
+---@param skeletonDataFile? string Spine 骨骼数据文件路径。
+---@param atlasFile? string Spine 图集文件路径。
+---@param scale? number 读取骨骼数据时应用的缩放系数。
 ---@return self 当前对象，便于链式调用。
 function SkeletonRenderer:SkeletonRenderer(skeletonDataFile, atlasFile, scale) end

@@ -8,40 +8,40 @@
 local ActionInterval = {}
 cc.ActionInterval = ActionInterval
 
---- 获取 `cc.ActionInterval:getAmplitudeRate` 对应的值。
+--- 获取区间动作的振幅倍率。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前振幅倍率。
+---@return number 当前振幅倍率。
 function ActionInterval:getAmplitudeRate() end
 
---- 初始化 `cc.ActionInterval:initWithDuration` 对应的对象或状态。
+--- 使用持续时间初始化区间动作。
 ---
 --- 参数说明：
---- - `d`：参数 `d`，类型为 `number`。
+--- - `d`：动作持续时间，单位为秒。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param d number 参数 `d`，类型为 `number`。
+---@param d number 动作持续时间，单位为秒。
 ---@return boolean 初始化是否成功。
 function ActionInterval:initWithDuration(d) end
 
---- 设置 `cc.ActionInterval:setAmplitudeRate` 对应的值。
+--- 设置区间动作的振幅倍率。
 ---
 --- 参数说明：
---- - `amp`：参数 `amp`，类型为 `number`。
+--- - `amp`：振幅倍率。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param amp number 参数 `amp`，类型为 `number`。
+---@param amp number 振幅倍率。
 ---@return self 当前对象，便于链式调用。
 function ActionInterval:setAmplitudeRate(amp) end
 
---- 获取 `cc.ActionInterval:getElapsed` 对应的值。
+--- 获取动作已经经过的时间。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：已经过的时间，单位为秒。
+---@return number 已经过的时间，单位为秒。
 function ActionInterval:getElapsed() end
 
 --- 调用 `cc.ActionInterval:startWithTarget`。
@@ -80,9 +80,9 @@ function ActionInterval:clone() end
 ---@return self 当前对象，便于链式调用。
 function ActionInterval:reverse() end
 
---- 判断 `cc.ActionInterval:isDone` 对应状态是否成立。
+--- 判断区间动作是否已完成。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：区间动作是否已完成。
+---@return boolean 区间动作是否已完成。
 function ActionInterval:isDone() end

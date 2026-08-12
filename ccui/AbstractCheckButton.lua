@@ -8,110 +8,110 @@
 local AbstractCheckButton = {}
 ccui.AbstractCheckButton = AbstractCheckButton
 
---- 获取 `ccui.AbstractCheckButton:getCrossDisabledFile` 对应的值。
+--- 获取禁用状态下前景交叉标记的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：对应状态纹理的资源信息。
+---@return cc.ResourceData 对应状态纹理的资源信息。
 function AbstractCheckButton:getCrossDisabledFile() end
 
---- 获取 `ccui.AbstractCheckButton:getBackDisabledFile` 对应的值。
+--- 获取禁用状态下背景纹理的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：禁用状态背景纹理资源信息。
+---@return cc.ResourceData 禁用状态背景纹理资源信息。
 function AbstractCheckButton:getBackDisabledFile() end
 
---- 加载 `ccui.AbstractCheckButton:loadTextureBackGroundSelected` 对应的资源或数据。
+--- 设置选中状态的背景纹理。
 ---
 --- 参数说明：
---- - `backGroundSelected`：参数 `backGroundSelected`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `backGroundSelected`：选中状态背景纹理路径。
+--- - `texType`：纹理资源类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param backGroundSelected string 参数 `backGroundSelected`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param backGroundSelected string 选中状态背景纹理路径。
+---@param texType integer 纹理资源类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function AbstractCheckButton:loadTextureBackGroundSelected(backGroundSelected, texType) end
 
---- 加载 `ccui.AbstractCheckButton:loadTextureBackGroundDisabled` 对应的资源或数据。
+--- 设置禁用状态的背景纹理。
 ---
 --- 参数说明：
---- - `backGroundDisabled`：参数 `backGroundDisabled`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `backGroundDisabled`：禁用状态背景纹理路径。
+--- - `texType`：纹理资源类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param backGroundDisabled string 参数 `backGroundDisabled`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param backGroundDisabled string 禁用状态背景纹理路径。
+---@param texType integer 纹理资源类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function AbstractCheckButton:loadTextureBackGroundDisabled(backGroundDisabled, texType) end
 
---- 获取 `ccui.AbstractCheckButton:getCrossNormalFile` 对应的值。
+--- 获取正常状态下前景交叉标记的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：正常状态交叉标记纹理资源信息。
+---@return cc.ResourceData 正常状态交叉标记纹理资源信息。
 function AbstractCheckButton:getCrossNormalFile() end
 
---- 设置 `ccui.AbstractCheckButton:setSelected` 对应的值。
+--- 设置控件是否处于选中状态。
 ---
 --- 参数说明：
---- - `selected`：参数 `selected`，类型为 `boolean`。
+--- - `selected`：是否将控件设为选中。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param selected boolean 参数 `selected`，类型为 `boolean`。
+---@param selected boolean 是否将控件设为选中。
 ---@return self 当前对象，便于链式调用。
 function AbstractCheckButton:setSelected(selected) end
 
---- 获取 `ccui.AbstractCheckButton:getBackPressedFile` 对应的值。
+--- 获取按下状态下背景纹理的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：按下状态背景纹理资源信息。
+---@return cc.ResourceData 按下状态背景纹理资源信息。
 function AbstractCheckButton:getBackPressedFile() end
 
---- 获取 `ccui.AbstractCheckButton:getRendererFrontCrossDisabled` 对应的值。
+--- 获取禁用状态的前景交叉标记渲染精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：对应状态的前景或背景渲染精灵。
+---@return cc.Sprite 对应状态的前景或背景渲染精灵。
 function AbstractCheckButton:getRendererFrontCrossDisabled() end
 
---- 获取 `ccui.AbstractCheckButton:getRendererBackground` 对应的值。
+--- 获取正常状态的背景渲染精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：正常状态背景渲染精灵。
+---@return cc.Sprite 正常状态背景渲染精灵。
 function AbstractCheckButton:getRendererBackground() end
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureFrontCross` 对应的资源或数据。
 ---
 --- 参数说明：
---- - `crossTextureName`：参数 `crossTextureName`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `crossTextureName`：前景交叉标记纹理路径。
+--- - `texType`：纹理资源类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param crossTextureName string 参数 `crossTextureName`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param crossTextureName string 前景交叉标记纹理路径。
+---@param texType integer 纹理资源类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function AbstractCheckButton:loadTextureFrontCross(crossTextureName, texType) end
 
---- 获取 `ccui.AbstractCheckButton:getRendererBackgroundDisabled` 对应的值。
+--- 获取禁用状态的背景渲染精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：禁用状态背景渲染精灵。
+---@return cc.Sprite 禁用状态背景渲染精灵。
 function AbstractCheckButton:getRendererBackgroundDisabled() end
 
---- 判断 `ccui.AbstractCheckButton:isSelected` 对应状态是否成立。
+--- 判断控件当前是否处于选中状态。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否处于选中状态。
+---@return boolean 控件是否处于选中状态。
 function AbstractCheckButton:isSelected() end
 
 --- 调用 `AbstractCheckButton:init`。
@@ -124,11 +124,11 @@ function AbstractCheckButton:isSelected() end
 ---@param frontCrossDisabled any 参数 `frontCrossDisabled`，原始类型信息缺失。
 ---@param texType any 参数 `texType`，原始类型信息缺失。
 function AbstractCheckButton:init(backGround, backGroundSelected, cross, backGroundDisabled, frontCrossDisabled, texType) end
---- 获取 `ccui.AbstractCheckButton:getBackNormalFile` 对应的值。
+--- 获取正常状态下背景纹理的资源数据。
 ---
 --- 返回说明：
---- - `cc.ResourceData`：获取到的 `cc.ResourceData` 对象或值。
----@return cc.ResourceData 获取到的 `cc.ResourceData` 对象或值。
+--- - `cc.ResourceData`：正常状态背景纹理资源信息。
+---@return cc.ResourceData 正常状态背景纹理资源信息。
 function AbstractCheckButton:getBackNormalFile() end
 
 --- 调用 `AbstractCheckButton:loadTextures`。
@@ -141,41 +141,41 @@ function AbstractCheckButton:getBackNormalFile() end
 ---@param frontCrossDisabled any 参数 `frontCrossDisabled`，原始类型信息缺失。
 ---@param texType any 参数 `texType`，原始类型信息缺失。
 function AbstractCheckButton:loadTextures(background, backgroundSelected, cross, backgroundDisabled, frontCrossDisabled, texType) end
---- 获取 `ccui.AbstractCheckButton:getZoomScale` 对应的值。
+--- 获取选中控件的缩放比例。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：按下或选中状态使用的缩放值。
+---@return number 按下或选中状态使用的缩放值。
 function AbstractCheckButton:getZoomScale() end
 
---- 获取 `ccui.AbstractCheckButton:getRendererFrontCross` 对应的值。
+--- 获取正常状态的前景交叉标记渲染精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：正常状态交叉标记渲染精灵。
+---@return cc.Sprite 正常状态交叉标记渲染精灵。
 function AbstractCheckButton:getRendererFrontCross() end
 
---- 获取 `ccui.AbstractCheckButton:getRendererBackgroundSelected` 对应的值。
+--- 获取选中状态的背景渲染精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：选中状态背景渲染精灵。
+---@return cc.Sprite 选中状态背景渲染精灵。
 function AbstractCheckButton:getRendererBackgroundSelected() end
 
 --- 加载 `ccui.AbstractCheckButton:loadTextureBackGround` 对应的资源或数据。
 ---
 --- 参数说明：
---- - `backGround`：参数 `backGround`，类型为 `string`。
+--- - `backGround`：正常状态背景纹理路径。
 --- - `type`：类型标识。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param backGround string 参数 `backGround`，类型为 `string`。
+---@param backGround string 正常状态背景纹理路径。
 ---@param type integer 类型标识。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function AbstractCheckButton:loadTextureBackGround(backGround, type) end
 
---- 设置 `ccui.AbstractCheckButton:setZoomScale` 对应的值。
+--- 设置选中状态下控件的缩放比例。
 ---
 --- 参数说明：
 --- - `scale`：缩放比例。类型为 `number`。
@@ -189,33 +189,33 @@ function AbstractCheckButton:setZoomScale(scale) end
 --- 加载 `ccui.AbstractCheckButton:loadTextureFrontCrossDisabled` 对应的资源或数据。
 ---
 --- 参数说明：
---- - `frontCrossDisabled`：参数 `frontCrossDisabled`，类型为 `string`。
---- - `texType`：参数 `texType`，类型为 `integer`。
+--- - `frontCrossDisabled`：禁用状态交叉标记纹理路径。
+--- - `texType`：纹理资源类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param frontCrossDisabled string 参数 `frontCrossDisabled`，类型为 `string`。
----@param texType integer 参数 `texType`，类型为 `integer`。
+---@param frontCrossDisabled string 禁用状态交叉标记纹理路径。
+---@param texType integer 纹理资源类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function AbstractCheckButton:loadTextureFrontCrossDisabled(frontCrossDisabled, texType) end
 
---- 获取 `ccui.AbstractCheckButton:getVirtualRenderer` 对应的值。
+--- 获取用于绘制控件的虚拟渲染节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：当前状态对应的虚拟渲染节点。
+---@return cc.Node 当前状态对应的虚拟渲染节点。
 function AbstractCheckButton:getVirtualRenderer() end
 
---- 初始化 `ccui.AbstractCheckButton:init` 对应的对象或状态。
+--- 使用默认设置初始化抽象复选按钮。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function AbstractCheckButton:init() end
 
---- 获取 `ccui.AbstractCheckButton:getVirtualRendererSize` 对应的值。
+--- 获取虚拟渲染节点的尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：虚拟渲染节点的宽度和高度。
+---@return size_table 虚拟渲染节点的宽度和高度。
 function AbstractCheckButton:getVirtualRendererSize() end

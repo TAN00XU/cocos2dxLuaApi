@@ -8,19 +8,19 @@
 local TargetedAction = {}
 cc.TargetedAction = TargetedAction
 
---- 获取 `cc.TargetedAction:getForcedTarget` 对应的值。
+--- 获取内部动作被强制作用的目标节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：内部动作实际作用的目标节点。
 ---@overload fun(): cc.Node
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+---@return cc.Node 内部动作实际作用的目标节点。
 function TargetedAction:getForcedTarget() end
 
---- 初始化 `cc.TargetedAction:initWithTarget` 对应的对象或状态。
+--- 使用强制目标节点和内部动作初始化定向动作。
 ---
 --- 参数说明：
---- - `target`：目标对象。类型为 `cc.Node`。
---- - `action`：动作对象。类型为 `cc.FiniteTimeAction`。
+--- - `target`：内部动作实际作用的目标节点。
+--- - `action`：要在强制目标上执行的有限时间动作。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
@@ -29,22 +29,22 @@ function TargetedAction:getForcedTarget() end
 ---@return boolean 初始化是否成功。
 function TargetedAction:initWithTarget(target, action) end
 
---- 设置 `cc.TargetedAction:setForcedTarget` 对应的值。
+--- 设置内部动作被强制作用的目标节点。
 ---
 --- 参数说明：
---- - `forcedTarget`：参数 `forcedTarget`，类型为 `cc.Node`。
+--- - `forcedTarget`：内部动作实际作用的目标节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param forcedTarget cc.Node 参数 `forcedTarget`，类型为 `cc.Node`。
+---@param forcedTarget cc.Node 内部动作实际作用的目标节点。
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:setForcedTarget(forcedTarget) end
 
---- 创建 `cc.TargetedAction:create` 对应的对象。
+--- 创建在指定节点上执行内部动作的定向动作。
 ---
 --- 参数说明：
---- - `target`：目标对象。类型为 `cc.Node`。
---- - `action`：动作对象。类型为 `cc.FiniteTimeAction`。
+--- - `target`：内部动作实际作用的目标节点。
+--- - `action`：要在强制目标上执行的有限时间动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -53,7 +53,7 @@ function TargetedAction:setForcedTarget(forcedTarget) end
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:create(target, action) end
 
---- 调用 `cc.TargetedAction:startWithTarget`。
+--- 启动定向动作；传入目标用于承载外层动作，内部动作仍作用于强制目标。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -64,39 +64,39 @@ function TargetedAction:create(target, action) end
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:startWithTarget(target) end
 
---- 调用 `cc.TargetedAction:clone`。
+--- 克隆定向动作及其内部动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:clone() end
 
---- 停止 `cc.TargetedAction:stop` 对应的流程。
+--- 停止内部动作和当前定向动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:stop() end
 
---- 调用 `cc.TargetedAction:reverse`。
+--- 创建内部动作反向执行的新定向动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:reverse() end
 
---- 更新 `cc.TargetedAction:update` 对应的状态。
+--- 按归一化进度更新内部动作。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：归一化动作进度，通常取值为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 归一化动作进度，通常取值为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function TargetedAction:update(time) end
 
---- 调用 `cc.TargetedAction:TargetedAction`。
+--- 构造定向动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

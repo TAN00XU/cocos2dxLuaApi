@@ -8,319 +8,319 @@
 local DrawNode = {}
 cc.DrawNode = DrawNode
 
---- 调用 `cc.DrawNode:drawLine`。
+--- 绘制两点之间的抗锯齿线段。
 ---
 --- 参数说明：
---- - `origin`：参数 `origin`，类型为 `vec2_table`。
---- - `destination`：参数 `destination`，类型为 `vec2_table`。
+--- - `origin`：线段起点。
+--- - `destination`：线段终点。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param origin vec2_table 参数 `origin`，类型为 `vec2_table`。
----@param destination vec2_table 参数 `destination`，类型为 `vec2_table`。
+---@param origin vec2_table 线段起点。
+---@param destination vec2_table 线段终点。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawLine(origin, destination, color) end
 
---- 设置 `cc.DrawNode:setIsolated` 对应的值。
+--- 设置绘制节点是否使用独立的渲染批次。
 ---
 --- 参数说明：
---- - `isolated`：参数 `isolated`，类型为 `boolean`。
+--- - `isolated`：是否与其他绘制节点隔离。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param isolated boolean 参数 `isolated`，类型为 `boolean`。
+---@param isolated boolean 是否与其他绘制节点隔离。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:setIsolated(isolated) end
 
---- 调用 `cc.DrawNode:drawRect`。
+--- 绘制矩形边框；三点重载绘制由两个角点确定的矩形。
 ---
 --- 参数说明：
---- - `p1`：参数 `p1`，类型为 `vec2_table`。
---- - `p2`：参数 `p2`，类型为 `vec2_table`。
---- - `p3`：参数 `p3`，类型为 `vec2_table`。
---- - `p4`：参数 `p4`，类型为 `vec2_table`。
+--- - `p1`：矩形第一个顶点或左下角。
+--- - `p2`：矩形第二个顶点或右上角。
+--- - `p3`：矩形第三个顶点（四点重载）。
+--- - `p4`：矩形第四个顶点（四点重载）。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(p1: vec2_table, p2: vec2_table, p3: vec2_table, p4: vec2_table, color: color4f_table): self
 ---@overload fun(p1: vec2_table, p2: vec2_table, p3: color4f_table): self
----@param p1? vec2_table 参数 `p1`，类型为 `vec2_table`。
----@param p2? vec2_table 参数 `p2`，类型为 `vec2_table`。
----@param p3? vec2_table 参数 `p3`，类型为 `vec2_table`。
----@param p4? vec2_table 参数 `p4`，类型为 `vec2_table`。
+---@param p1? vec2_table 矩形第一个顶点或左下角。
+---@param p2? vec2_table 矩形第二个顶点或右上角。
+---@param p3? vec2_table 矩形第三个顶点（四点重载）。
+---@param p4? vec2_table 矩形第四个顶点（四点重载）。
 ---@param color? color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawRect(p1, p2, p3, p4, color) end
 
---- 调用 `cc.DrawNode:drawSolidCircle`。
+--- 绘制填充圆或椭圆。
 ---
 --- 参数说明：
---- - `center`：中心点。类型为 `vec2_table`。
---- - `radius`：参数 `radius`，类型为 `number`。
---- - `angle`：参数 `angle`，类型为 `number`。
---- - `segments`：参数 `segments`，类型为 `integer`。
---- - `scaleX`：参数 `scaleX`，类型为 `number`。
---- - `scaleY`：参数 `scaleY`，类型为 `number`。
+--- - `center`：圆心。
+--- - `radius`：基础半径。
+--- - `angle`：起始旋转角，单位为弧度。
+--- - `segments`：近似圆周的线段数量。
+--- - `scaleX`：横向缩放系数。
+--- - `scaleY`：纵向缩放系数。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(center: vec2_table, radius: number, angle: number, segments: integer, scaleX: color4f_table): self
 ---@overload fun(center: vec2_table, radius: number, angle: number, segments: integer, scaleX: number, scaleY: number, color: color4f_table): self
----@param center? vec2_table 中心点。类型为 `vec2_table`。
----@param radius? number 参数 `radius`，类型为 `number`。
----@param angle? number 参数 `angle`，类型为 `number`。
----@param segments? integer 参数 `segments`，类型为 `integer`。
----@param scaleX? number 参数 `scaleX`，类型为 `number`。
----@param scaleY? number 参数 `scaleY`，类型为 `number`。
+---@param center? vec2_table 圆心。
+---@param radius? number 基础半径。
+---@param angle? number 起始旋转角，单位为弧度。
+---@param segments? integer 近似圆周的线段数量。
+---@param scaleX? number 横向缩放系数。
+---@param scaleY? number 纵向缩放系数。
 ---@param color? color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawSolidCircle(center, radius, angle, segments, scaleX, scaleY, color) end
 
---- 设置 `cc.DrawNode:setLineWidth` 对应的值。
+--- 设置线段和轮廓绘制的线宽。
 ---
 --- 参数说明：
---- - `lineWidth`：参数 `lineWidth`，类型为 `number`。
+--- - `lineWidth`：线宽，单位为点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param lineWidth number 参数 `lineWidth`，类型为 `number`。
+---@param lineWidth number 线宽，单位为点。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:setLineWidth(lineWidth) end
 
---- 调用 `cc.DrawNode:drawDot`。
+--- 绘制圆形点。
 ---
 --- 参数说明：
---- - `pos`：参数 `pos`，类型为 `vec2_table`。
---- - `radius`：参数 `radius`，类型为 `number`。
+--- - `pos`：点的中心位置。
+--- - `radius`：点半径。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pos vec2_table 参数 `pos`，类型为 `vec2_table`。
----@param radius number 参数 `radius`，类型为 `number`。
+---@param pos vec2_table 点的中心位置。
+---@param radius number 点半径。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawDot(pos, radius, color) end
 
---- 调用 `cc.DrawNode:drawSegment`。
+--- 绘制具有指定半径的圆头线段。
 ---
 --- 参数说明：
---- - `from`：参数 `from`，类型为 `vec2_table`。
---- - `to`：参数 `to`，类型为 `vec2_table`。
---- - `radius`：参数 `radius`，类型为 `number`。
+--- - `from`：线段起点。
+--- - `to`：线段终点。
+--- - `radius`：线段半径。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param from vec2_table 参数 `from`，类型为 `vec2_table`。
----@param to vec2_table 参数 `to`，类型为 `vec2_table`。
----@param radius number 参数 `radius`，类型为 `number`。
+---@param from vec2_table 线段起点。
+---@param to vec2_table 线段终点。
+---@param radius number 线段半径。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawSegment(from, to, radius, color) end
 
---- 获取 `cc.DrawNode:getBlendFunc` 对应的值。
+--- 获取绘制节点使用的颜色混合因子。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：当前混合配置。
+---@return cc.BlendFunc 当前混合配置。
 function DrawNode:getBlendFunc() end
 
---- 调用 `cc.DrawNode:drawCircle`。
+--- 绘制圆或椭圆轮廓，可选绘制圆心连线。
 ---
 --- 参数说明：
---- - `center`：中心点。类型为 `vec2_table`。
---- - `radius`：参数 `radius`，类型为 `number`。
---- - `angle`：参数 `angle`，类型为 `number`。
---- - `segments`：参数 `segments`，类型为 `integer`。
---- - `drawLineToCenter`：参数 `drawLineToCenter`，类型为 `boolean`。
---- - `scaleX`：参数 `scaleX`，类型为 `number`。
---- - `scaleY`：参数 `scaleY`，类型为 `number`。
+--- - `center`：圆心。
+--- - `radius`：基础半径。
+--- - `angle`：起始旋转角，单位为弧度。
+--- - `segments`：近似圆周的线段数量。
+--- - `drawLineToCenter`：是否从圆周绘制到圆心的连线。
+--- - `scaleX`：横向缩放系数。
+--- - `scaleY`：纵向缩放系数。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(center: vec2_table, radius: number, angle: number, segments: integer, drawLineToCenter: boolean, scaleX: color4f_table): self
 ---@overload fun(center: vec2_table, radius: number, angle: number, segments: integer, drawLineToCenter: boolean, scaleX: number, scaleY: number, color: color4f_table): self
----@param center? vec2_table 中心点。类型为 `vec2_table`。
----@param radius? number 参数 `radius`，类型为 `number`。
----@param angle? number 参数 `angle`，类型为 `number`。
----@param segments? integer 参数 `segments`，类型为 `integer`。
----@param drawLineToCenter? boolean 参数 `drawLineToCenter`，类型为 `boolean`。
----@param scaleX? number 参数 `scaleX`，类型为 `number`。
----@param scaleY? number 参数 `scaleY`，类型为 `number`。
+---@param center? vec2_table 圆心。
+---@param radius? number 基础半径。
+---@param angle? number 起始旋转角，单位为弧度。
+---@param segments? integer 近似圆周的线段数量。
+---@param drawLineToCenter? boolean 是否从圆周绘制到圆心的连线。
+---@param scaleX? number 横向缩放系数。
+---@param scaleY? number 纵向缩放系数。
 ---@param color? color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawCircle(center, radius, angle, segments, drawLineToCenter, scaleX, scaleY, color) end
 
---- 调用 `cc.DrawNode:drawQuadBezier`。
+--- 按指定分段数绘制二次贝塞尔曲线。
 ---
 --- 参数说明：
---- - `origin`：参数 `origin`，类型为 `vec2_table`。
---- - `control`：参数 `control`，类型为 `vec2_table`。
---- - `destination`：参数 `destination`，类型为 `vec2_table`。
---- - `segments`：参数 `segments`，类型为 `integer`。
+--- - `origin`：曲线起点。
+--- - `control`：二次贝塞尔控制点。
+--- - `destination`：曲线终点。
+--- - `segments`：曲线近似分段数。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param origin vec2_table 参数 `origin`，类型为 `vec2_table`。
----@param control vec2_table 参数 `control`，类型为 `vec2_table`。
----@param destination vec2_table 参数 `destination`，类型为 `vec2_table`。
----@param segments integer 参数 `segments`，类型为 `integer`。
+---@param origin vec2_table 曲线起点。
+---@param control vec2_table 二次贝塞尔控制点。
+---@param destination vec2_table 曲线终点。
+---@param segments integer 曲线近似分段数。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawQuadBezier(origin, control, destination, segments, color) end
 
---- 调用 `cc.DrawNode:drawTriangle`。
+--- 绘制三角形边框。
 ---
 --- 参数说明：
---- - `p1`：参数 `p1`，类型为 `vec2_table`。
---- - `p2`：参数 `p2`，类型为 `vec2_table`。
---- - `p3`：参数 `p3`，类型为 `vec2_table`。
+--- - `p1`：第一个顶点。
+--- - `p2`：第二个顶点。
+--- - `p3`：第三个顶点。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param p1 vec2_table 参数 `p1`，类型为 `vec2_table`。
----@param p2 vec2_table 参数 `p2`，类型为 `vec2_table`。
----@param p3 vec2_table 参数 `p3`，类型为 `vec2_table`。
+---@param p1 vec2_table 第一个顶点。
+---@param p2 vec2_table 第二个顶点。
+---@param p3 vec2_table 第三个顶点。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawTriangle(p1, p2, p3, color) end
 
---- 设置 `cc.DrawNode:setBlendFunc` 对应的值。
+--- 设置绘制节点使用的颜色混合因子。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：源颜色与目标颜色的混合配置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 源颜色与目标颜色的混合配置。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:setBlendFunc(blendFunc) end
 
---- 调用 `cc.DrawNode:clear`。
+--- 清除节点当前缓存的全部绘图几何数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:clear() end
 
---- 调用 `cc.DrawNode:drawSolidRect`。
+--- 绘制由两个对角点确定的填充矩形。
 ---
 --- 参数说明：
---- - `origin`：参数 `origin`，类型为 `vec2_table`。
---- - `destination`：参数 `destination`，类型为 `vec2_table`。
+--- - `origin`：矩形一个对角点。
+--- - `destination`：矩形相对对角点。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param origin vec2_table 参数 `origin`，类型为 `vec2_table`。
----@param destination vec2_table 参数 `destination`，类型为 `vec2_table`。
+---@param origin vec2_table 矩形一个对角点。
+---@param destination vec2_table 矩形相对对角点。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawSolidRect(origin, destination, color) end
 
---- 获取 `cc.DrawNode:getLineWidth` 对应的值。
+--- 获取线段和轮廓绘制的线宽。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前线宽，单位为点。
+---@return number 当前线宽，单位为点。
 function DrawNode:getLineWidth() end
 
---- 调用 `cc.DrawNode:drawPoint`。
+--- 绘制指定大小的方形点。
 ---
 --- 参数说明：
---- - `point`：参数 `point`，类型为 `vec2_table`。
---- - `pointSize`：参数 `pointSize`，类型为 `number`。
+--- - `point`：点的位置。
+--- - `pointSize`：点的边长，单位为点。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param point vec2_table 参数 `point`，类型为 `vec2_table`。
----@param pointSize number 参数 `pointSize`，类型为 `number`。
+---@param point vec2_table 点的位置。
+---@param pointSize number 点的边长，单位为点。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawPoint(point, pointSize, color) end
 
---- 判断 `cc.DrawNode:isIsolated` 对应状态是否成立。
+--- 判断绘制节点是否使用独立的渲染批次。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：处于独立批次时返回 `true`。
+---@return boolean 处于独立批次时返回 `true`。
 function DrawNode:isIsolated() end
 
---- 调用 `cc.DrawNode:drawCubicBezier`。
+--- 按指定分段数绘制三次贝塞尔曲线。
 ---
 --- 参数说明：
---- - `origin`：参数 `origin`，类型为 `vec2_table`。
---- - `control1`：参数 `control1`，类型为 `vec2_table`。
---- - `control2`：参数 `control2`，类型为 `vec2_table`。
---- - `destination`：参数 `destination`，类型为 `vec2_table`。
---- - `segments`：参数 `segments`，类型为 `integer`。
+--- - `origin`：曲线起点。
+--- - `control1`：第一个控制点。
+--- - `control2`：第二个控制点。
+--- - `destination`：曲线终点。
+--- - `segments`：曲线近似分段数。
 --- - `color`：颜色值。类型为 `color4f_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param origin vec2_table 参数 `origin`，类型为 `vec2_table`。
----@param control1 vec2_table 参数 `control1`，类型为 `vec2_table`。
----@param control2 vec2_table 参数 `control2`，类型为 `vec2_table`。
----@param destination vec2_table 参数 `destination`，类型为 `vec2_table`。
----@param segments integer 参数 `segments`，类型为 `integer`。
+---@param origin vec2_table 曲线起点。
+---@param control1 vec2_table 第一个控制点。
+---@param control2 vec2_table 第二个控制点。
+---@param destination vec2_table 曲线终点。
+---@param segments integer 曲线近似分段数。
 ---@param color color4f_table 颜色值。类型为 `color4f_table`。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:drawCubicBezier(origin, control1, control2, destination, segments, color) end
 
---- 创建 `cc.DrawNode:create` 对应的对象。
+--- 创建空的绘图节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:create() end
 
---- 调用 `cc.DrawNode:draw`。
+--- 将缓存的绘图几何数据提交给渲染器。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
---- - `flags`：标志位。类型为 `integer`。
+--- - `renderer`：接收绘制命令的渲染器。
+--- - `transform`：绘图节点的世界变换矩阵。
+--- - `flags`：节点变换与状态更新标志。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
----@param flags integer 标志位。类型为 `integer`。
+---@param renderer cc.Renderer 接收绘制命令的渲染器。
+---@param transform mat4_table 绘图节点的世界变换矩阵。
+---@param flags integer 节点变换与状态更新标志。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:draw(renderer, transform, flags) end
 
---- 调用 `cc.DrawNode:visit`。
+--- 访问绘图节点并提交其缓存的几何数据。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
---- - `parentFlags`：参数 `parentFlags`，类型为 `integer`。
+--- - `renderer`：接收渲染命令的渲染器。
+--- - `parentTransform`：父节点的世界变换矩阵。
+--- - `parentFlags`：父节点传入的变换与状态更新标志。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param parentTransform mat4_table 参数 `parentTransform`，类型为 `mat4_table`。
----@param parentFlags integer 参数 `parentFlags`，类型为 `integer`。
+---@param renderer cc.Renderer 接收渲染命令的渲染器。
+---@param parentTransform mat4_table 父节点的世界变换矩阵。
+---@param parentFlags integer 父节点传入的变换与状态更新标志。
 ---@return self 当前对象，便于链式调用。
 function DrawNode:visit(renderer, parentTransform, parentFlags) end
 
---- 初始化 `cc.DrawNode:init` 对应的对象或状态。
+--- 初始化绘图节点及其几何数据缓存。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function DrawNode:init() end
 
---- 调用 `cc.DrawNode:DrawNode`。
+--- 构造绘图节点对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

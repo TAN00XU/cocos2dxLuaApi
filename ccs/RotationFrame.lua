@@ -8,7 +8,7 @@
 local RotationFrame = {}
 ccs.RotationFrame = RotationFrame
 
---- 设置 `ccs.RotationFrame:setRotation` 对应的值。
+--- 设置目标旋转角度。
 ---
 --- 参数说明：
 --- - `rotation`：旋转角度。类型为 `number`。
@@ -19,28 +19,28 @@ ccs.RotationFrame = RotationFrame
 ---@return self 当前对象，便于链式调用。
 function RotationFrame:setRotation(rotation) end
 
---- 获取 `ccs.RotationFrame:getRotation` 对应的值。
+--- 获取目标旋转角度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：目标旋转角度，单位为度。
+---@return number 目标旋转角度，单位为度。
 function RotationFrame:getRotation() end
 
---- 创建 `ccs.RotationFrame:create` 对应的对象。
+--- 创建旋转关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RotationFrame:create() end
 
---- 调用 `ccs.RotationFrame:clone`。
+--- 复制当前旋转关键帧。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：复制得到的关键帧。
+---@return ccs.Frame 复制得到的关键帧。
 function RotationFrame:clone() end
 
---- 调用 `ccs.RotationFrame:RotationFrame`。
+--- 构造旋转关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

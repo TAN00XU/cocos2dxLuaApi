@@ -8,15 +8,15 @@
 local EventListenerAssetsManagerEx = {}
 cc.EventListenerAssetsManagerEx = EventListenerAssetsManagerEx
 
---- 初始化 `cc.EventListenerAssetsManagerEx:init` 对应的对象或状态。
+--- 使用资源管理器初始化资源更新事件监听器。
 ---
 --- 参数说明：
---- - `AssetsManagerEx`：参数 `AssetsManagerEx`，类型为 `cc.AssetsManagerEx`。
+--- - `AssetsManagerEx`：要监听的资源管理器。
 --- - `callback`：回调函数。类型为 `fun(...): any`。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param AssetsManagerEx cc.AssetsManagerEx 参数 `AssetsManagerEx`，类型为 `cc.AssetsManagerEx`。
+---@param AssetsManagerEx cc.AssetsManagerEx 要监听的资源管理器。
 ---@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
 ---@return boolean 初始化是否成功。
 function EventListenerAssetsManagerEx:init(AssetsManagerEx, callback) end

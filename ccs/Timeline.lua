@@ -8,14 +8,14 @@
 local Timeline = {}
 ccs.Timeline = Timeline
 
---- 调用 `ccs.Timeline:clone`。
+--- 克隆当前时间轴及其关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Timeline:clone() end
 
---- 调用 `ccs.Timeline:gotoFrame`。
+--- 将时间轴定位到指定帧，并应用对应关键帧状态。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
@@ -26,7 +26,7 @@ function Timeline:clone() end
 ---@return self 当前对象，便于链式调用。
 function Timeline:gotoFrame(frameIndex) end
 
---- 设置 `ccs.Timeline:setNode` 对应的值。
+--- 设置该时间轴作用的节点。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。
@@ -37,18 +37,18 @@ function Timeline:gotoFrame(frameIndex) end
 ---@return self 当前对象，便于链式调用。
 function Timeline:setNode(node) end
 
---- 获取 `ccs.Timeline:getActionTimeline` 对应的值。
+--- 获取该时间轴所属的动作时间轴。
 ---
 --- 返回说明：
---- - `ccs.ActionTimeline`：获取到的 `ccs.ActionTimeline` 对象或值。
----@return ccs.ActionTimeline 获取到的 `ccs.ActionTimeline` 对象或值。
+--- - `ccs.ActionTimeline`：所属的动作时间轴。
+---@return ccs.ActionTimeline 所属的动作时间轴；未关联时为空。
 function Timeline:getActionTimeline() end
 
---- 调用 `ccs.Timeline:insertFrame`。
+--- 在指定位置插入关键帧。
 ---
 --- 参数说明：
 --- - `frame`：帧对象。类型为 `ccs.Frame`。
---- - `index`：索引值。类型为 `integer`。
+--- - `index`：在关键帧列表中的插入位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -57,10 +57,10 @@ function Timeline:getActionTimeline() end
 ---@return self 当前对象，便于链式调用。
 function Timeline:insertFrame(frame, index) end
 
---- 设置 `ccs.Timeline:setActionTag` 对应的值。
+--- 设置该时间轴对应的节点动作标签。
 ---
 --- 参数说明：
---- - `tag`：标签值。类型为 `integer`。
+--- - `tag`：用于关联目标节点的动作标签。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -68,7 +68,7 @@ function Timeline:insertFrame(frame, index) end
 ---@return self 当前对象，便于链式调用。
 function Timeline:setActionTag(tag) end
 
---- 添加 `ccs.Timeline:addFrame` 对应的对象或数据。
+--- 向时间轴添加关键帧。
 ---
 --- 参数说明：
 --- - `frame`：帧对象。类型为 `ccs.Frame`。
@@ -79,28 +79,28 @@ function Timeline:setActionTag(tag) end
 ---@return self 当前对象，便于链式调用。
 function Timeline:addFrame(frame) end
 
---- 获取 `ccs.Timeline:getFrames` 对应的值。
+--- 获取时间轴中的全部关键帧。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：关键帧列表。
+---@return array_table 按时间顺序排列的关键帧列表。
 function Timeline:getFrames() end
 
---- 获取 `ccs.Timeline:getActionTag` 对应的值。
+--- 获取该时间轴对应的节点动作标签。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：用于关联目标节点的动作标签。
+---@return integer 用于关联目标节点的动作标签。
 function Timeline:getActionTag() end
 
---- 获取 `ccs.Timeline:getNode` 对应的值。
+--- 获取该时间轴作用的节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：目标节点。
+---@return cc.Node 时间轴作用的目标节点；未设置时为空。
 function Timeline:getNode() end
 
---- 移除 `ccs.Timeline:removeFrame` 对应的对象或数据。
+--- 从时间轴移除指定关键帧。
 ---
 --- 参数说明：
 --- - `frame`：帧对象。类型为 `ccs.Frame`。
@@ -111,7 +111,7 @@ function Timeline:getNode() end
 ---@return self 当前对象，便于链式调用。
 function Timeline:removeFrame(frame) end
 
---- 设置 `ccs.Timeline:setActionTimeline` 对应的值。
+--- 设置该时间轴所属的动作时间轴。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `ccs.ActionTimeline`。
@@ -122,7 +122,7 @@ function Timeline:removeFrame(frame) end
 ---@return self 当前对象，便于链式调用。
 function Timeline:setActionTimeline(action) end
 
---- 调用 `ccs.Timeline:stepToFrame`。
+--- 推进时间轴到指定帧，并根据相邻关键帧计算插值状态。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
@@ -133,14 +133,14 @@ function Timeline:setActionTimeline(action) end
 ---@return self 当前对象，便于链式调用。
 function Timeline:stepToFrame(frameIndex) end
 
---- 创建 `ccs.Timeline:create` 对应的对象。
+--- 创建时间轴对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Timeline:create() end
 
---- 调用 `ccs.Timeline:Timeline`。
+--- 构造时间轴对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,7 +8,7 @@
 local EaseQuinticActionOut = {}
 cc.EaseQuinticActionOut = EaseQuinticActionOut
 
---- 创建 `cc.EaseQuinticActionOut:create` 对应的对象。
+--- 创建五次方渐出缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -26,7 +26,7 @@ function EaseQuinticActionOut:create(action) end
 ---@return self 当前对象，便于链式调用。
 function EaseQuinticActionOut:clone() end
 
---- 更新 `cc.EaseQuinticActionOut:update` 对应的状态。
+--- 按五次方渐出曲线更新内部动作进度。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -40,8 +40,8 @@ function EaseQuinticActionOut:update(time) end
 --- 调用 `cc.EaseQuinticActionOut:reverse`。
 ---
 --- 返回说明：
---- - `cc.ActionEase`：`cc.ActionEase` 对象或值。
----@return cc.ActionEase `cc.ActionEase` 对象或值。
+--- - `cc.ActionEase`：反向缓动动作。
+---@return cc.ActionEase 反向缓动动作。
 function EaseQuinticActionOut:reverse() end
 
 --- 调用 `cc.EaseQuinticActionOut:EaseQuinticActionOut`。

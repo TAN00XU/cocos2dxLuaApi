@@ -8,24 +8,24 @@
 local TransitionZoomFlipY = {}
 cc.TransitionZoomFlipY = TransitionZoomFlipY
 
---- 创建 `cc.TransitionZoomFlipY:create` 对应的对象。
+--- 创建先缩放再沿 Y 轴翻转场景的过渡效果。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `s`：参数 `s`，类型为 `cc.Scene`。
---- - `o`：参数 `o`，类型为 `integer`。
+--- - `t`：过渡持续时间，单位为秒。
+--- - `s`：要切换到的目标场景。
+--- - `o`：场景方向枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(t: number, s: cc.Scene): self
 ---@overload fun(t: number, s: cc.Scene, o: integer): self
----@param t? number 参数 `t`，类型为 `number`。
----@param s? cc.Scene 参数 `s`，类型为 `cc.Scene`。
----@param o? integer 参数 `o`，类型为 `integer`。
+---@param t? number 过渡持续时间，单位为秒。
+---@param s? cc.Scene 要切换到的目标场景。
+---@param o? integer 场景方向枚举值。
 ---@return self 当前对象，便于链式调用。
 function TransitionZoomFlipY:create(t, s, o) end
 
---- 调用 `cc.TransitionZoomFlipY:TransitionZoomFlipY`。
+--- 初始化缩放翻转场景过渡。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

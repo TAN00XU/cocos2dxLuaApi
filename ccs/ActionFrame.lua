@@ -7,80 +7,80 @@
 ---@class ccs.ActionFrame : cc.Ref
 local ActionFrame = {}
 ccs.ActionFrame = ActionFrame
---- 创建 ActionFrame 对应的对象。
+--- 创建动作关键帧对象。
 ---@return ccs.ActionFrame
 function ActionFrame:new() end
 
---- 获取 `ccs.ActionFrame:getAction` 对应的值。
+--- 根据源帧生成关键帧区间动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `srcFrame`：参数 `srcFrame`，类型为 `ccs.ActionFrame`。
+--- - `srcFrame`：区间起始动作关键帧。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：获取到的 `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：生成的区间动作。
 ---@overload fun(duration: number, srcFrame: ccs.ActionFrame): cc.ActionInterval
 ---@overload fun(duration: number): cc.ActionInterval
 ---@param duration? number 持续时间。类型为 `number`。
----@param srcFrame? ccs.ActionFrame 参数 `srcFrame`，类型为 `ccs.ActionFrame`。
----@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
+---@param srcFrame? ccs.ActionFrame 区间起始动作关键帧。
+---@return cc.ActionInterval 生成的区间动作。
 function ActionFrame:getAction(duration, srcFrame) end
 
---- 获取 `ccs.ActionFrame:getFrameType` 对应的值。
+--- 获取动作关键帧类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：关键帧类型枚举值。
+---@return integer 关键帧类型枚举值。
 function ActionFrame:getFrameType() end
 
---- 设置 `ccs.ActionFrame:setFrameTime` 对应的值。
+--- 设置关键帧时间位置。
 ---
 --- 参数说明：
---- - `fTime`：参数 `fTime`，类型为 `number`。
+--- - `fTime`：时间位置，单位为帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param fTime number 参数 `fTime`，类型为 `number`。
+---@param fTime number 时间位置，单位为帧。
 ---@return self 当前对象，便于链式调用。
 function ActionFrame:setFrameTime(fTime) end
 
---- 设置 `ccs.ActionFrame:setEasingType` 对应的值。
+--- 设置关键帧缓动类型。
 ---
 --- 参数说明：
---- - `easingType`：参数 `easingType`，类型为 `integer`。
+--- - `easingType`：缓动类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param easingType integer 参数 `easingType`，类型为 `integer`。
+---@param easingType integer 缓动类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function ActionFrame:setEasingType(easingType) end
 
---- 获取 `ccs.ActionFrame:getFrameTime` 对应的值。
+--- 获取关键帧时间位置。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：时间位置，单位为帧。
+---@return number 时间位置，单位为帧。
 function ActionFrame:getFrameTime() end
 
---- 获取 `ccs.ActionFrame:getFrameIndex` 对应的值。
+--- 获取关键帧索引。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：关键帧索引。
+---@return integer 关键帧索引。
 function ActionFrame:getFrameIndex() end
 
---- 设置 `ccs.ActionFrame:setFrameType` 对应的值。
+--- 设置动作关键帧类型。
 ---
 --- 参数说明：
---- - `frameType`：参数 `frameType`，类型为 `integer`。
+--- - `frameType`：关键帧类型枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param frameType integer 参数 `frameType`，类型为 `integer`。
+---@param frameType integer 关键帧类型枚举值。
 ---@return self 当前对象，便于链式调用。
 function ActionFrame:setFrameType(frameType) end
 
---- 设置 `ccs.ActionFrame:setFrameIndex` 对应的值。
+--- 设置关键帧索引。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -91,20 +91,20 @@ function ActionFrame:setFrameType(frameType) end
 ---@return self 当前对象，便于链式调用。
 function ActionFrame:setFrameIndex(index) end
 
---- 设置 `ccs.ActionFrame:setEasingParameter` 对应的值。
+--- 设置缓动计算参数列表。
 ---
 --- 参数说明：
---- - `parameter`：参数 `parameter`，类型为 `array_table`。
+--- - `parameter`：缓动参数列表。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param parameter array_table 参数 `parameter`，类型为 `array_table`。
+---@param parameter array_table 缓动参数列表。
 ---@return self 当前对象，便于链式调用。
 function ActionFrame:setEasingParameter(parameter) end
 
---- 获取 `ccs.ActionFrame:getEasingType` 对应的值。
+--- 获取关键帧缓动类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：缓动类型枚举值。
+---@return integer 缓动类型枚举值。
 function ActionFrame:getEasingType() end

@@ -8,65 +8,65 @@
 local GUIReader = {}
 ccs.GUIReader = GUIReader
 
---- 设置 `ccs.GUIReader:setFilePath` 对应的值。
+--- 设置读取 UI 资源时使用的基础文件路径。
 ---
 --- 参数说明：
---- - `strFilePath`：参数 `strFilePath`，类型为 `string`。
+--- - `strFilePath`：UI 资源的基础目录或文件路径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param strFilePath string 参数 `strFilePath`，类型为 `string`。
+---@param strFilePath string UI 资源的基础目录或文件路径。
 ---@return self 当前对象，便于链式调用。
 function GUIReader:setFilePath(strFilePath) end
 
---- 调用 `ccs.GUIReader:widgetFromJsonFile`。
+--- 从 JSON UI 文件创建控件树。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
 --- 返回说明：
---- - `ccui.Widget`：`ccui.Widget` 对象或值。
+--- - `ccui.Widget`：从文件构建的根控件。
 ---@param fileName string 文件名或文件路径。类型为 `string`。
----@return ccui.Widget `ccui.Widget` 对象或值。
+---@return ccui.Widget 从文件构建的根控件。
 function GUIReader:widgetFromJsonFile(fileName) end
 
---- 获取 `ccs.GUIReader:getFilePath` 对应的值。
+--- 获取当前 UI 资源基础文件路径。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：当前基础文件路径。
+---@return string 当前基础文件路径。
 function GUIReader:getFilePath() end
 
---- 调用 `ccs.GUIReader:widgetFromBinaryFile`。
+--- 从二进制 UI 文件创建控件树。
 ---
 --- 参数说明：
 --- - `fileName`：文件名或文件路径。类型为 `string`。
 ---
 --- 返回说明：
---- - `ccui.Widget`：`ccui.Widget` 对象或值。
+--- - `ccui.Widget`：从文件构建的根控件。
 ---@param fileName string 文件名或文件路径。类型为 `string`。
----@return ccui.Widget `ccui.Widget` 对象或值。
+---@return ccui.Widget 从文件构建的根控件。
 function GUIReader:widgetFromBinaryFile(fileName) end
 
---- 获取 `ccs.GUIReader:getVersionInteger` 对应的值。
+--- 将版本字符串转换为整数版本号。
 ---
 --- 参数说明：
---- - `str`：参数 `str`，类型为 `string`。
+--- - `str`：待转换的版本字符串。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@param str string 参数 `str`，类型为 `string`。
----@return integer 获取到的 整数值。
+--- - `integer`：整数形式的版本号。
+---@param str string 待转换的版本字符串。
+---@return integer 整数形式的版本号。
 function GUIReader:getVersionInteger(str) end
 
---- 调用 `ccs.GUIReader:destroyInstance`。
+--- 销毁 GUIReader 单例及其缓存。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function GUIReader:destroyInstance() end
 
---- 获取 `ccs.GUIReader:getInstance` 对应的值。
+--- 获取 GUIReader 单例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

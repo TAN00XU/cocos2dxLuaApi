@@ -13,69 +13,69 @@ cc.LayerMultiplex = LayerMultiplex
 ---@return cc.LayerMultiplex layer 新创建的多路图层。
 function LayerMultiplex:createWithArray(layers) end
 
---- 初始化 `cc.LayerMultiplex:initWithArray` 对应的对象或状态。
+--- 使用图层数组初始化多路图层，初始显示数组中的第一个图层。
 ---
 --- 参数说明：
---- - `arrayOfLayers`：参数 `arrayOfLayers`，类型为 `array_table`。
+--- - `arrayOfLayers`：可供切换的图层数组。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param arrayOfLayers array_table 参数 `arrayOfLayers`，类型为 `array_table`。
+---@param arrayOfLayers array_table 可供切换的图层数组。
 ---@return boolean 初始化是否成功。
 function LayerMultiplex:initWithArray(arrayOfLayers) end
 
---- 调用 `cc.LayerMultiplex:switchToAndReleaseMe`。
+--- 切换到指定索引的图层，并释放当前显示的图层。
 ---
 --- 参数说明：
---- - `n`：参数 `n`，类型为 `integer`。
+--- - `n`：要显示的图层索引。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param n integer 参数 `n`，类型为 `integer`。
+---@param n integer 要显示的图层索引。
 ---@return self 当前对象，便于链式调用。
 function LayerMultiplex:switchToAndReleaseMe(n) end
 
---- 添加 `cc.LayerMultiplex:addLayer` 对应的对象或数据。
+--- 向可切换图层列表末尾添加图层。
 ---
 --- 参数说明：
---- - `layer`：参数 `layer`，类型为 `cc.Layer`。
+--- - `layer`：要添加的图层。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param layer cc.Layer 参数 `layer`，类型为 `cc.Layer`。
+---@param layer cc.Layer 要添加的图层。
 ---@return self 当前对象，便于链式调用。
 function LayerMultiplex:addLayer(layer) end
 
---- 调用 `cc.LayerMultiplex:switchTo`。
+--- 切换到指定索引的图层。
 ---
 --- 参数说明：
---- - `n`：参数 `n`，类型为 `integer`。
---- - `cleanup`：是否清理关联资源。类型为 `boolean`。
+--- - `n`：要显示的图层索引。
+--- - `cleanup`：移除当前图层时是否清理其动作和调度器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(n: integer, cleanup: boolean): self
 ---@overload fun(n: integer): self
----@param n? integer 参数 `n`，类型为 `integer`。
----@param cleanup? boolean 是否清理关联资源。类型为 `boolean`。
+---@param n? integer 要显示的图层索引。
+---@param cleanup? boolean 是否清理当前图层。
 ---@return self 当前对象，便于链式调用。
 function LayerMultiplex:switchTo(n, cleanup) end
 
---- 初始化 `cc.LayerMultiplex:init` 对应的对象或状态。
+--- 初始化空的多路图层。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function LayerMultiplex:init() end
 
---- 获取 `cc.LayerMultiplex:getDescription` 对应的值。
+--- 获取多路图层的调试描述文本。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：多路图层描述文本。
+---@return string 多路图层描述文本。
 function LayerMultiplex:getDescription() end
 
---- 调用 `cc.LayerMultiplex:LayerMultiplex`。
+--- 构造多路图层。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

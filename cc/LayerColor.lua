@@ -8,49 +8,49 @@
 local LayerColor = {}
 cc.LayerColor = LayerColor
 
---- 调用 `cc.LayerColor:changeWidthAndHeight`。
+--- 同时改变颜色层的宽度和高度。
 ---
 --- 参数说明：
---- - `w`：参数 `w`，类型为 `number`。
---- - `h`：参数 `h`，类型为 `number`。
+--- - `w`：新的宽度。
+--- - `h`：新的高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param w number 参数 `w`，类型为 `number`。
----@param h number 参数 `h`，类型为 `number`。
+---@param w number 新的宽度。
+---@param h number 新的高度。
 ---@return self 当前对象，便于链式调用。
 function LayerColor:changeWidthAndHeight(w, h) end
 
---- 获取 `cc.LayerColor:getBlendFunc` 对应的值。
+--- 获取颜色层的混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：颜色层混合函数。
+---@return cc.BlendFunc 颜色层混合函数。
 function LayerColor:getBlendFunc() end
 
---- 设置 `cc.LayerColor:setBlendFunc` 对应的值。
+--- 设置颜色层的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：源颜色和目标颜色的混合因子。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 源颜色和目标颜色的混合因子。
 ---@return self 当前对象，便于链式调用。
 function LayerColor:setBlendFunc(blendFunc) end
 
---- 调用 `cc.LayerColor:changeWidth`。
+--- 改变颜色层宽度。
 ---
 --- 参数说明：
---- - `w`：参数 `w`，类型为 `number`。
+--- - `w`：新的宽度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param w number 参数 `w`，类型为 `number`。
+---@param w number 新的宽度。
 ---@return self 当前对象，便于链式调用。
 function LayerColor:changeWidth(w) end
 
---- 初始化 `cc.LayerColor:initWithColor` 对应的对象或状态。
+--- 使用颜色和可选尺寸初始化颜色层。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -67,18 +67,18 @@ function LayerColor:changeWidth(w) end
 ---@return boolean 初始化是否成功。
 function LayerColor:initWithColor(color, width, height) end
 
---- 调用 `cc.LayerColor:changeHeight`。
+--- 改变颜色层高度。
 ---
 --- 参数说明：
---- - `h`：参数 `h`，类型为 `number`。
+--- - `h`：新的高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param h number 参数 `h`，类型为 `number`。
+---@param h number 新的高度。
 ---@return self 当前对象，便于链式调用。
 function LayerColor:changeHeight(h) end
 
---- 创建 `cc.LayerColor:create` 对应的对象。
+--- 创建颜色层，可指定颜色和尺寸。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -96,40 +96,40 @@ function LayerColor:changeHeight(h) end
 ---@return self 当前对象，便于链式调用。
 function LayerColor:create(color, width, height) end
 
---- 调用 `cc.LayerColor:draw`。
+--- 绘制颜色层矩形。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
+--- - `renderer`：用于提交颜色矩形绘制命令的渲染器。
+--- - `transform`：颜色层的节点变换矩阵。
 --- - `flags`：标志位。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param transform mat4_table 颜色层的节点变换矩阵。
 ---@param flags integer 标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function LayerColor:draw(renderer, transform, flags) end
 
---- 初始化 `cc.LayerColor:init` 对应的对象或状态。
+--- 初始化颜色层默认状态。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function LayerColor:init() end
 
---- 设置 `cc.LayerColor:setContentSize` 对应的值。
+--- 设置颜色层内容尺寸。
 ---
 --- 参数说明：
---- - `var`：参数 `var`，类型为 `size_table`。
+--- - `var`：新的宽度和高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param var size_table 参数 `var`，类型为 `size_table`。
+---@param var size_table 新的宽度和高度。
 ---@return self 当前对象，便于链式调用。
 function LayerColor:setContentSize(var) end
 
---- 调用 `cc.LayerColor:LayerColor`。
+--- 构造颜色层。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

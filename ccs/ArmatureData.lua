@@ -7,40 +7,40 @@
 ---@class ccs.ArmatureData : cc.Ref
 local ArmatureData = {}
 ccs.ArmatureData = ArmatureData
---- 创建 ArmatureData 对应的对象。
+--- 创建骨骼数据容器。
 ---@return ccs.ArmatureData
 function ArmatureData:new() end
 
---- 添加 `ccs.ArmatureData:addBoneData` 对应的对象或数据。
+--- 添加一个骨骼数据。
 ---
 --- 参数说明：
---- - `boneData`：参数 `boneData`，类型为 `ccs.BoneData`。
+--- - `boneData`：要加入骨架定义的骨骼数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param boneData ccs.BoneData 参数 `boneData`，类型为 `ccs.BoneData`。
+---@param boneData ccs.BoneData 要加入骨架定义的骨骼数据。
 ---@return self 当前对象，便于链式调用。
 function ArmatureData:addBoneData(boneData) end
 
---- 初始化 `ccs.ArmatureData:init` 对应的对象或状态。
+--- 初始化骨骼数据容器。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ArmatureData:init() end
 
---- 获取 `ccs.ArmatureData:getBoneData` 对应的值。
+--- 按名称获取骨骼数据。
 ---
 --- 参数说明：
---- - `boneName`：参数 `boneName`，类型为 `string`。
+--- - `boneName`：目标骨骼名称。
 ---
 --- 返回说明：
---- - `ccs.BoneData`：获取到的 `ccs.BoneData` 对象或值。
----@param boneName string 参数 `boneName`，类型为 `string`。
----@return ccs.BoneData 获取到的 `ccs.BoneData` 对象或值。
+--- - `ccs.BoneData`：匹配名称的骨骼数据。
+---@param boneName string 目标骨骼名称。
+---@return ccs.BoneData 匹配名称的骨骼数据。
 function ArmatureData:getBoneData(boneName) end
 
---- 创建 `ccs.ArmatureData:create` 对应的对象。
+--- 创建骨骼数据容器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

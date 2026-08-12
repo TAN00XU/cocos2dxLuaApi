@@ -8,7 +8,7 @@
 local HBox = {}
 ccui.HBox = HBox
 
---- 初始化 `ccui.HBox:initWithSize` 对应的对象或状态。
+--- 按指定尺寸初始化水平盒式布局。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -19,7 +19,7 @@ ccui.HBox = HBox
 ---@return boolean 初始化是否成功。
 function HBox:initWithSize(size) end
 
---- 创建 `ccui.HBox:create` 对应的对象。
+--- 创建水平盒式布局，可选定初始尺寸。
 ---
 --- 参数说明：
 --- - `size`：尺寸。类型为 `size_table`。
@@ -32,14 +32,14 @@ function HBox:initWithSize(size) end
 ---@return self 当前对象，便于链式调用。
 function HBox:create(size) end
 
---- 初始化 `ccui.HBox:init` 对应的对象或状态。
+--- 初始化水平盒式布局。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function HBox:init() end
 
---- 调用 `ccui.HBox:HBox`。
+--- 构造水平盒式布局对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,14 +8,14 @@
 local ClippingRectangleNode = {}
 cc.ClippingRectangleNode = ClippingRectangleNode
 
---- 判断 `cc.ClippingRectangleNode:isClippingEnabled` 对应状态是否成立。
+--- 判断矩形裁剪是否启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用矩形裁剪。
+---@return boolean 是否启用矩形裁剪。
 function ClippingRectangleNode:isClippingEnabled() end
 
---- 设置 `cc.ClippingRectangleNode:setClippingEnabled` 对应的值。
+--- 设置是否启用矩形裁剪。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -26,48 +26,48 @@ function ClippingRectangleNode:isClippingEnabled() end
 ---@return self 当前对象，便于链式调用。
 function ClippingRectangleNode:setClippingEnabled(enabled) end
 
---- 获取 `cc.ClippingRectangleNode:getClippingRegion` 对应的值。
+--- 获取当前矩形裁剪区域。
 ---
 --- 返回说明：
---- - `rect_table`：获取到的 Lua 表数据。
----@return rect_table 获取到的 Lua 表数据。
+--- - `rect_table`：包含位置和尺寸的裁剪矩形。
+---@return rect_table 包含位置和尺寸的裁剪矩形。
 function ClippingRectangleNode:getClippingRegion() end
 
---- 设置 `cc.ClippingRectangleNode:setClippingRegion` 对应的值。
+--- 设置矩形裁剪区域。
 ---
 --- 参数说明：
---- - `clippingRegion`：参数 `clippingRegion`，类型为 `rect_table`。
+--- - `clippingRegion`：包含位置和尺寸的裁剪矩形。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param clippingRegion rect_table 参数 `clippingRegion`，类型为 `rect_table`。
+---@param clippingRegion rect_table 包含位置和尺寸的裁剪矩形。
 ---@return self 当前对象，便于链式调用。
 function ClippingRectangleNode:setClippingRegion(clippingRegion) end
 
---- 创建 `cc.ClippingRectangleNode:create` 对应的对象。
+--- 创建矩形裁剪节点，可选指定初始裁剪区域。
 ---
 --- 参数说明：
---- - `clippingRegion`：参数 `clippingRegion`，类型为 `rect_table`。
+--- - `clippingRegion`：包含位置和尺寸的初始裁剪矩形。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(): self
 ---@overload fun(clippingRegion: rect_table): self
----@param clippingRegion? rect_table 参数 `clippingRegion`，类型为 `rect_table`。
+---@param clippingRegion? rect_table 包含位置和尺寸的初始裁剪矩形。
 ---@return self 当前对象，便于链式调用。
 function ClippingRectangleNode:create(clippingRegion) end
 
---- 调用 `cc.ClippingRectangleNode:visit`。
+--- 应用矩形裁剪区域并提交节点绘制命令。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
---- - `parentFlags`：参数 `parentFlags`，类型为 `integer`。
+--- - `renderer`：用于提交绘制命令的渲染器。
+--- - `parentTransform`：父节点世界变换矩阵。
+--- - `parentFlags`：父节点渲染标志位。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param parentTransform mat4_table 参数 `parentTransform`，类型为 `mat4_table`。
----@param parentFlags integer 参数 `parentFlags`，类型为 `integer`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param parentTransform mat4_table 父节点世界变换矩阵。
+---@param parentFlags integer 父节点渲染标志位。
 ---@return self 当前对象，便于链式调用。
 function ClippingRectangleNode:visit(renderer, parentTransform, parentFlags) end

@@ -8,80 +8,76 @@
 local PhysicsJointRotarySpring = {}
 cc.PhysicsJointRotarySpring = PhysicsJointRotarySpring
 
---- 获取 `cc.PhysicsJointRotarySpring:getDamping` 对应的值。
+--- 获取旋转弹簧的阻尼系数。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+---@return number 旋转阻尼系数。
 function PhysicsJointRotarySpring:getDamping() end
 
---- 设置 `cc.PhysicsJointRotarySpring:setRestAngle` 对应的值。
+--- 设置旋转弹簧的静止相对角度。
 ---
 --- 参数说明：
---- - `restAngle`：参数 `restAngle`，类型为 `number`。
+--- - `restAngle`：静止相对角度，单位为弧度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param restAngle number 参数 `restAngle`，类型为 `number`。
+---@param restAngle number 静止相对角度，单位为弧度。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointRotarySpring:setRestAngle(restAngle) end
 
---- 获取 `cc.PhysicsJointRotarySpring:getStiffness` 对应的值。
+--- 获取旋转弹簧的刚度系数。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+---@return number 旋转弹簧刚度系数。
 function PhysicsJointRotarySpring:getStiffness() end
 
---- 创建 `cc.PhysicsJointRotarySpring:createConstraints` 对应的对象。
+--- 为旋转弹簧关节创建底层物理约束。
 ---
 --- 返回说明：
---- - `boolean`：创建出的 布尔值。
----@return boolean 创建出的 布尔值。
+---@return boolean 底层约束是否创建成功。
 function PhysicsJointRotarySpring:createConstraints() end
 
---- 设置 `cc.PhysicsJointRotarySpring:setStiffness` 对应的值。
+--- 设置旋转弹簧的刚度系数。
 ---
 --- 参数说明：
---- - `stiffness`：参数 `stiffness`，类型为 `number`。
+--- - `stiffness`：旋转弹簧刚度系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param stiffness number 参数 `stiffness`，类型为 `number`。
+---@param stiffness number 旋转弹簧刚度系数。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointRotarySpring:setStiffness(stiffness) end
 
---- 设置 `cc.PhysicsJointRotarySpring:setDamping` 对应的值。
+--- 设置旋转弹簧的阻尼系数。
 ---
 --- 参数说明：
---- - `damping`：参数 `damping`，类型为 `number`。
+--- - `damping`：旋转阻尼系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param damping number 参数 `damping`，类型为 `number`。
+---@param damping number 旋转阻尼系数。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointRotarySpring:setDamping(damping) end
 
---- 获取 `cc.PhysicsJointRotarySpring:getRestAngle` 对应的值。
+--- 获取旋转弹簧的静止相对角度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+---@return number 静止相对角度，单位为弧度。
 function PhysicsJointRotarySpring:getRestAngle() end
 
---- 调用 `cc.PhysicsJointRotarySpring:construct`。
+--- 构造在两个刚体之间施加旋转回复力矩的弹簧关节。
 ---
 --- 参数说明：
---- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。
---- - `b`：参数 `b`，类型为 `cc.PhysicsBody`。
---- - `stiffness`：参数 `stiffness`，类型为 `number`。
---- - `damping`：参数 `damping`，类型为 `number`。
+--- - `a`：第一个物理刚体。
+--- - `b`：第二个物理刚体。
+--- - `stiffness`：旋转弹簧刚度系数。
+--- - `damping`：旋转阻尼系数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param a cc.PhysicsBody 参数 `a`，类型为 `cc.PhysicsBody`。
----@param b cc.PhysicsBody 参数 `b`，类型为 `cc.PhysicsBody`。
----@param stiffness number 参数 `stiffness`，类型为 `number`。
----@param damping number 参数 `damping`，类型为 `number`。
+---@param a cc.PhysicsBody 第一个物理刚体。
+---@param b cc.PhysicsBody 第二个物理刚体。
+---@param stiffness number 旋转弹簧刚度系数。
+---@param damping number 旋转阻尼系数。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointRotarySpring:construct(a, b, stiffness, damping) end

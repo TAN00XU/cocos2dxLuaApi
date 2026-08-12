@@ -8,7 +8,7 @@
 local EventFrame = {}
 ccs.EventFrame = EventFrame
 
---- 设置 `ccs.EventFrame:setEvent` 对应的值。
+--- 设置关键帧触发的事件字符串。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `string`。
@@ -19,21 +19,21 @@ ccs.EventFrame = EventFrame
 ---@return self 当前对象，便于链式调用。
 function EventFrame:setEvent(event) end
 
---- 初始化 `ccs.EventFrame:init` 对应的对象或状态。
+--- 使用事件字符串初始化关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function EventFrame:init() end
 
---- 获取 `ccs.EventFrame:getEvent` 对应的值。
+--- 获取关键帧触发的事件字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：事件名称或事件数据。
+---@return string 事件名称或事件数据。
 function EventFrame:getEvent() end
 
---- 创建 `ccs.EventFrame:create` 对应的对象。
+--- 创建事件关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -43,11 +43,11 @@ function EventFrame:create() end
 --- 调用 `ccs.EventFrame:clone`。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：创建的事件关键帧。
+---@return ccs.Frame 事件关键帧副本。
 function EventFrame:clone() end
 
---- 设置 `ccs.EventFrame:setNode` 对应的值。
+--- 设置事件关键帧作用的节点。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。

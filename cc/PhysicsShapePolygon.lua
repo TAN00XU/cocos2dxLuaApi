@@ -8,34 +8,34 @@
 local PhysicsShapePolygon = {}
 cc.PhysicsShapePolygon = PhysicsShapePolygon
 
---- 获取 `cc.PhysicsShapePolygon:getPointsCount` 对应的值。
+--- 获取多边形物理形状的顶点数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：多边形顶点数量。
+---@return integer 多边形顶点数量。
 function PhysicsShapePolygon:getPointsCount() end
 
---- 获取 `cc.PhysicsShapePolygon:getPoint` 对应的值。
+--- 获取指定索引处的多边形顶点。
 ---
 --- 参数说明：
---- - `i`：参数 `i`，类型为 `integer`。
+--- - `i`：顶点索引。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@param i integer 参数 `i`，类型为 `integer`。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：指定顶点的局部坐标。
+---@param i integer 顶点索引。
+---@return vec2_table 指定顶点的局部坐标。
 function PhysicsShapePolygon:getPoint(i) end
 
---- 调用 `cc.PhysicsShapePolygon:calculateDefaultMoment`。
+--- 根据当前多边形几何形状计算默认转动惯量。
 ---
 --- 返回说明：
---- - `number`：数值。
----@return number 数值。
+--- - `number`：默认转动惯量。
+---@return number 默认转动惯量。
 function PhysicsShapePolygon:calculateDefaultMoment() end
 
---- 获取 `cc.PhysicsShapePolygon:getCenter` 对应的值。
+--- 获取多边形物理形状的质心坐标。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：多边形质心的局部坐标。
+---@return vec2_table 多边形质心的局部坐标。
 function PhysicsShapePolygon:getCenter() end

@@ -8,49 +8,49 @@
 local DirectionLight = {}
 cc.DirectionLight = DirectionLight
 
---- 获取 `cc.DirectionLight:getDirection` 对应的值。
+--- 获取方向光在节点局部坐标系中的照射方向。
 ---
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `vec3_table`：局部坐标系中的方向向量。
+---@return vec3_table 局部坐标系中的方向向量。
 function DirectionLight:getDirection() end
 
---- 获取 `cc.DirectionLight:getDirectionInWorld` 对应的值。
+--- 获取方向光在世界坐标系中的照射方向。
 ---
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `vec3_table`：世界坐标系中的方向向量。
+---@return vec3_table 世界坐标系中的方向向量。
 function DirectionLight:getDirectionInWorld() end
 
---- 设置 `cc.DirectionLight:setDirection` 对应的值。
+--- 设置方向光在节点局部坐标系中的照射方向。
 ---
 --- 参数说明：
---- - `dir`：参数 `dir`，类型为 `vec3_table`。
+--- - `dir`：新的方向向量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param dir vec3_table 参数 `dir`，类型为 `vec3_table`。
+---@param dir vec3_table 新的方向向量。
 ---@return self 当前对象，便于链式调用。
 function DirectionLight:setDirection(dir) end
 
---- 创建 `cc.DirectionLight:create` 对应的对象。
+--- 使用照射方向和颜色创建方向光。
 ---
 --- 参数说明：
---- - `direction`：参数 `direction`，类型为 `vec3_table`。
+--- - `direction`：方向光的照射方向。
 --- - `color`：颜色值。类型为 `color3b_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param direction vec3_table 参数 `direction`，类型为 `vec3_table`。
+---@param direction vec3_table 方向光的照射方向。
 ---@param color color3b_table 颜色值。类型为 `color3b_table`。
 ---@return self 当前对象，便于链式调用。
 function DirectionLight:create(direction, color) end
 
---- 获取 `cc.DirectionLight:getLightType` 对应的值。
+--- 获取该灯光的类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：方向光类型枚举值。
+---@return integer 方向光类型枚举值。
 function DirectionLight:getLightType() end
 
 --- 调用 `cc.DirectionLight:DirectionLight`。

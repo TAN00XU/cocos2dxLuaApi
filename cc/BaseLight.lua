@@ -8,7 +8,7 @@
 local BaseLight = {}
 cc.BaseLight = BaseLight
 
---- 设置 `cc.BaseLight:setEnabled` 对应的值。
+--- 设置光源是否启用。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -19,52 +19,52 @@ cc.BaseLight = BaseLight
 ---@return self 当前对象，便于链式调用。
 function BaseLight:setEnabled(enabled) end
 
---- 获取 `cc.BaseLight:getIntensity` 对应的值。
+--- 获取光源强度。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：光源强度。
+---@return number 光源强度。
 function BaseLight:getIntensity() end
 
---- 判断 `cc.BaseLight:isEnabled` 对应状态是否成立。
+--- 判断光源是否启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：光源是否启用。
+---@return boolean 光源是否启用。
 function BaseLight:isEnabled() end
 
---- 获取 `cc.BaseLight:getLightType` 对应的值。
+--- 获取光源类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：光源类型枚举值。
+---@return integer 光源类型枚举值。
 function BaseLight:getLightType() end
 
---- 设置 `cc.BaseLight:setLightFlag` 对应的值。
+--- 设置光源影响的节点标志位。
 ---
 --- 参数说明：
---- - `flag`：参数 `flag`，类型为 `integer`。
+--- - `flag`：光源影响节点的标志位。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param flag integer 参数 `flag`，类型为 `integer`。
+---@param flag integer 光源影响节点的标志位。
 ---@return self 当前对象，便于链式调用。
 function BaseLight:setLightFlag(flag) end
 
---- 设置 `cc.BaseLight:setIntensity` 对应的值。
+--- 设置光源强度。
 ---
 --- 参数说明：
---- - `intensity`：参数 `intensity`，类型为 `number`。
+--- - `intensity`：光源强度值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param intensity number 参数 `intensity`，类型为 `number`。
+---@param intensity number 光源强度值。
 ---@return self 当前对象，便于链式调用。
 function BaseLight:setIntensity(intensity) end
 
---- 获取 `cc.BaseLight:getLightFlag` 对应的值。
+--- 获取光源影响的节点标志位。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：光源影响节点的标志位。
+---@return integer 光源影响节点的标志位。
 function BaseLight:getLightFlag() end

@@ -15,7 +15,7 @@ cc.EventListenerMouse = EventListenerMouse
 ---@return cc.EventListenerMouse 新创建的鼠标事件监听器对象
 function EventListenerMouse:create() end
 
---- 初始化 `cc.EventListenerMouse:init` 对应的对象或状态。
+--- 初始化鼠标事件监听器及其回调。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。

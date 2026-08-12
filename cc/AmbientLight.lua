@@ -8,7 +8,7 @@
 local AmbientLight = {}
 cc.AmbientLight = AmbientLight
 
---- 创建 `cc.AmbientLight:create` 对应的对象。
+--- 使用指定颜色创建环境光。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color3b_table`。
@@ -19,14 +19,14 @@ cc.AmbientLight = AmbientLight
 ---@return self 当前对象，便于链式调用。
 function AmbientLight:create(color) end
 
---- 获取 `cc.AmbientLight:getLightType` 对应的值。
+--- 获取环境光的光源类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：环境光类型枚举值。
+---@return integer 环境光类型枚举值。
 function AmbientLight:getLightType() end
 
---- 调用 `cc.AmbientLight:AmbientLight`。
+--- 构造环境光对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

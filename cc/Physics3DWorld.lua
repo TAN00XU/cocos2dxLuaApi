@@ -8,146 +8,146 @@
 local Physics3DWorld = {}
 cc.Physics3DWorld = Physics3DWorld
 
---- 设置 `cc.Physics3DWorld:setGravity` 对应的值。
+--- 设置 3D 物理世界的重力加速度。
 ---
 --- 参数说明：
---- - `gravity`：参数 `gravity`，类型为 `vec3_table`。
+--- - `gravity`：世界坐标系中的重力加速度向量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param gravity vec3_table 参数 `gravity`，类型为 `vec3_table`。
+---@param gravity vec3_table 世界坐标系中的重力加速度向量。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:setGravity(gravity) end
 
---- 调用 `cc.Physics3DWorld:stepSimulate`。
+--- 按指定时间步推进一次 3D 物理模拟。
 ---
 --- 参数说明：
---- - `dt`：帧间隔时间。类型为 `number`。
+--- - `dt`：本次模拟步经过的时间，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param dt number 帧间隔时间。类型为 `number`。
+---@param dt number 本次模拟步经过的时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:stepSimulate(dt) end
 
---- 调用 `cc.Physics3DWorld:needCollisionChecking`。
+--- 判断世界中是否有对象注册了碰撞回调，需要执行碰撞事件检查。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@return boolean 布尔值。
+--- - `boolean`：至少一个对象需要碰撞回调时返回 `true`。
+---@return boolean 是否需要检查并派发碰撞事件。
 function Physics3DWorld:needCollisionChecking() end
 
---- 调用 `cc.Physics3DWorld:collisionChecking`。
+--- 检查本次模拟步的接触对并派发对象碰撞回调。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:collisionChecking() end
 
---- 设置 `cc.Physics3DWorld:setGhostPairCallback` 对应的值。
+--- 为 Bullet 碰撞缓存安装幽灵对象重叠对回调。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:setGhostPairCallback() end
 
---- 移除 `cc.Physics3DWorld:removeAllPhysics3DObjects` 对应的对象或数据。
+--- 从物理世界移除全部 3D 物理对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:removeAllPhysics3DObjects() end
 
---- 判断 `cc.Physics3DWorld:isDebugDrawEnabled` 对应状态是否成立。
+--- 判断 3D 物理调试绘制是否启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用碰撞形状和约束调试绘制时返回 `true`。
+---@return boolean 是否启用 3D 物理调试绘制。
 function Physics3DWorld:isDebugDrawEnabled() end
 
---- 移除 `cc.Physics3DWorld:removeAllPhysics3DConstraints` 对应的对象或数据。
+--- 从物理世界移除全部 3D 约束。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:removeAllPhysics3DConstraints() end
 
---- 获取 `cc.Physics3DWorld:getGravity` 对应的值。
+--- 获取 3D 物理世界的重力加速度。
 ---
 --- 返回说明：
---- - `vec3_table`：获取到的 Lua 表数据。
----@return vec3_table 获取到的 Lua 表数据。
+--- - `vec3_table`：世界坐标系中的重力加速度向量。
+---@return vec3_table 世界坐标系中的重力加速度向量。
 function Physics3DWorld:getGravity() end
 
---- 移除 `cc.Physics3DWorld:removePhysics3DConstraint` 对应的对象或数据。
+--- 从物理世界移除指定 3D 约束。
 ---
 --- 参数说明：
---- - `constraint`：参数 `constraint`，类型为 `cc.Physics3DConstraint`。
+--- - `constraint`：要从世界注销的约束。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param constraint cc.Physics3DConstraint 参数 `constraint`，类型为 `cc.Physics3DConstraint`。
+---@param constraint cc.Physics3DConstraint 要从世界注销的约束。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:removePhysics3DConstraint(constraint) end
 
---- 添加 `cc.Physics3DWorld:addPhysics3DObject` 对应的对象或数据。
+--- 将 3D 物理对象注册到世界并参与模拟。
 ---
 --- 参数说明：
---- - `physicsObj`：参数 `physicsObj`，类型为 `cc.Physics3DObject`。
+--- - `physicsObj`：要加入世界的刚体、幽灵对象或其他物理对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param physicsObj cc.Physics3DObject 参数 `physicsObj`，类型为 `cc.Physics3DObject`。
+---@param physicsObj cc.Physics3DObject 要加入世界的 3D 物理对象。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:addPhysics3DObject(physicsObj) end
 
---- 设置 `cc.Physics3DWorld:setDebugDrawEnable` 对应的值。
+--- 设置是否绘制碰撞形状和约束等调试信息。
 ---
 --- 参数说明：
---- - `enableDebugDraw`：参数 `enableDebugDraw`，类型为 `boolean`。
+--- - `enableDebugDraw`：是否启用 3D 物理调试绘制。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enableDebugDraw boolean 参数 `enableDebugDraw`，类型为 `boolean`。
+---@param enableDebugDraw boolean 是否启用 3D 物理调试绘制。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:setDebugDrawEnable(enableDebugDraw) end
 
---- 移除 `cc.Physics3DWorld:removePhysics3DObject` 对应的对象或数据。
+--- 从物理世界移除指定 3D 物理对象。
 ---
 --- 参数说明：
---- - `physicsObj`：参数 `physicsObj`，类型为 `cc.Physics3DObject`。
+--- - `physicsObj`：要从世界注销的 3D 物理对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param physicsObj cc.Physics3DObject 参数 `physicsObj`，类型为 `cc.Physics3DObject`。
+---@param physicsObj cc.Physics3DObject 要从世界注销的 3D 物理对象。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:removePhysics3DObject(physicsObj) end
 
---- 添加 `cc.Physics3DWorld:addPhysics3DConstraint` 对应的对象或数据。
+--- 将 3D 约束注册到物理世界。
 ---
 --- 参数说明：
---- - `constraint`：参数 `constraint`，类型为 `cc.Physics3DConstraint`。
---- - `disableCollisionsBetweenLinkedObjs`：参数 `disableCollisionsBetweenLinkedObjs`，类型为 `boolean`。
+--- - `constraint`：要加入世界并参与求解的约束。
+--- - `disableCollisionsBetweenLinkedObjs`：是否禁止约束连接的两个对象彼此碰撞。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param constraint cc.Physics3DConstraint 参数 `constraint`，类型为 `cc.Physics3DConstraint`。
----@param disableCollisionsBetweenLinkedObjs boolean 参数 `disableCollisionsBetweenLinkedObjs`，类型为 `boolean`。
+---@param constraint cc.Physics3DConstraint 要加入世界并参与求解的约束。
+---@param disableCollisionsBetweenLinkedObjs boolean 是否禁止约束连接的两个对象彼此碰撞。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:addPhysics3DConstraint(constraint, disableCollisionsBetweenLinkedObjs) end
 
---- 调用 `cc.Physics3DWorld:debugDraw`。
+--- 向渲染器提交 3D 物理世界的调试几何图形。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
+--- - `renderer`：用于提交调试绘制命令的渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
+---@param renderer cc.Renderer 用于提交调试绘制命令的渲染器。
 ---@return self 当前对象，便于链式调用。
 function Physics3DWorld:debugDraw(renderer) end
 
---- 调用 `cc.Physics3DWorld:Physics3DWorld`。
+--- 构造 3D 物理世界对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

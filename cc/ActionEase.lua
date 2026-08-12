@@ -8,7 +8,7 @@
 local ActionEase = {}
 cc.ActionEase = ActionEase
 
---- 初始化 `cc.ActionEase:initWithAction` 对应的对象或状态。
+--- 使用内部区间动作初始化缓动动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
@@ -19,11 +19,11 @@ cc.ActionEase = ActionEase
 ---@return boolean 初始化是否成功。
 function ActionEase:initWithAction(action) end
 
---- 获取 `cc.ActionEase:getInnerAction` 对应的值。
+--- 获取缓动动作包装的内部动作。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：获取到的 `cc.ActionInterval` 对象或值。
----@return cc.ActionInterval 获取到的 `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：被包装的内部区间动作。
+---@return cc.ActionInterval 被包装的内部区间动作。
 function ActionEase:getInnerAction() end
 
 --- 调用 `cc.ActionEase:startWithTarget`。
@@ -37,14 +37,14 @@ function ActionEase:getInnerAction() end
 ---@return self 当前对象，便于链式调用。
 function ActionEase:startWithTarget(target) end
 
---- 停止 `cc.ActionEase:stop` 对应的流程。
+--- 停止缓动动作及其内部动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionEase:stop() end
 
---- 更新 `cc.ActionEase:update` 对应的状态。
+--- 根据缓动后的归一化时间更新内部动作。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

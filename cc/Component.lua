@@ -8,14 +8,14 @@
 local Component = {}
 cc.Component = Component
 
---- 创建 `cc.Component:new` 对应的对象。
+--- 创建组件对象。
 ---
 --- 返回说明：
---- - `cc.Component`：创建出的 `cc.Component` 对象或值。
----@return cc.Component 创建出的 `cc.Component` 对象或值。
+--- - `cc.Component`：新创建的组件对象。
+---@return cc.Component 新创建的组件对象。
 function Component:new() end
 
---- 设置 `cc.Component:setEnabled` 对应的值。
+--- 设置组件是否启用。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -33,65 +33,65 @@ function Component:setEnabled(enabled) end
 ---@return self 当前对象，便于链式调用。
 function Component:onRemove() end
 
---- 设置 `cc.Component:setName` 对应的值。
+--- 设置组件名称。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param name string 名称或标识。类型为 `string`。
+---@param name string 组件名称。
 ---@return self 当前对象，便于链式调用。
 function Component:setName(name) end
 
---- 判断 `cc.Component:isEnabled` 对应状态是否成立。
+--- 判断组件当前是否启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：组件是否启用。
+---@return boolean 组件是否启用。
 function Component:isEnabled() end
 
---- 更新 `cc.Component:update` 对应的状态。
+--- 按帧间隔更新组件逻辑。
 ---
 --- 参数说明：
 --- - `delta`：变化量。类型为 `number`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param delta number 变化量。类型为 `number`。
+---@param delta number 帧间隔时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Component:update(delta) end
 
---- 获取 `cc.Component:getOwner` 对应的值。
+--- 获取组件所属的节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：组件所属的节点。
+---@return cc.Node 组件所属的节点。
 function Component:getOwner() end
 
---- 初始化 `cc.Component:init` 对应的对象或状态。
+--- 初始化组件内部状态。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Component:init() end
 
---- 设置 `cc.Component:setOwner` 对应的值。
+--- 设置组件所属的节点。
 ---
 --- 参数说明：
---- - `owner`：参数 `owner`，类型为 `cc.Node`。
+--- - `owner`：组件所属的节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param owner cc.Node 参数 `owner`，类型为 `cc.Node`。
+---@param owner cc.Node 组件所属的节点。
 ---@return self 当前对象，便于链式调用。
 function Component:setOwner(owner) end
 
---- 获取 `cc.Component:getName` 对应的值。
+--- 获取组件名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：组件名称字符串。
+---@return string 组件名称字符串。
 function Component:getName() end
 
 --- 调用 `cc.Component:onAdd`。
@@ -101,7 +101,7 @@ function Component:getName() end
 ---@return self 当前对象，便于链式调用。
 function Component:onAdd() end
 
---- 创建 `cc.Component:create` 对应的对象。
+--- 创建并初始化组件对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

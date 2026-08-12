@@ -8,238 +8,238 @@
 local ControlStepper = {}
 cc.ControlStepper = ControlStepper
 
---- 获取 `cc.ControlStepper:getMinusSprite` 对应的值。
+--- 获取步进器减号区域的背景精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：减号区域背景精灵。
+---@return cc.Sprite 减号区域背景精灵。
 function ControlStepper:getMinusSprite() end
 
---- 设置 `cc.ControlStepper:setValue` 对应的值。
+--- 设置当前数值，并限制在最小值和最大值之间。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `number`。
+--- - `value`：新的当前数值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param value number 数值或对象值。类型为 `number`。
+---@param value number 新的当前数值。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setValue(value) end
 
---- 设置 `cc.ControlStepper:setStepValue` 对应的值。
+--- 设置每次点击加号或减号时改变的数值步长。
 ---
 --- 参数说明：
---- - `stepValue`：参数 `stepValue`，类型为 `number`。
+--- - `stepValue`：单次增减的数值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param stepValue number 参数 `stepValue`，类型为 `number`。
+---@param stepValue number 数值步长。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setStepValue(stepValue) end
 
---- 初始化 `cc.ControlStepper:initWithMinusSpriteAndPlusSprite` 对应的对象或状态。
+--- 使用减号和加号区域背景精灵初始化步进器。
 ---
 --- 参数说明：
---- - `minusSprite`：参数 `minusSprite`，类型为 `cc.Sprite`。
---- - `plusSprite`：参数 `plusSprite`，类型为 `cc.Sprite`。
+--- - `minusSprite`：减号区域背景精灵。
+--- - `plusSprite`：加号区域背景精灵。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param minusSprite cc.Sprite 参数 `minusSprite`，类型为 `cc.Sprite`。
----@param plusSprite cc.Sprite 参数 `plusSprite`，类型为 `cc.Sprite`。
+---@param minusSprite cc.Sprite 减号区域背景精灵。
+---@param plusSprite cc.Sprite 加号区域背景精灵。
 ---@return boolean 初始化是否成功。
 function ControlStepper:initWithMinusSpriteAndPlusSprite(minusSprite, plusSprite) end
 
---- 设置 `cc.ControlStepper:setValueWithSendingEvent` 对应的值。
+--- 设置当前数值，并按需发送值变化事件。
 ---
 --- 参数说明：
---- - `value`：数值或对象值。类型为 `number`。
---- - `send`：参数 `send`，类型为 `boolean`。
+--- - `value`：新的当前数值。
+--- - `send`：数值变化时是否发送控件事件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param value number 数值或对象值。类型为 `number`。
----@param send boolean 参数 `send`，类型为 `boolean`。
+---@param value number 新的当前数值。
+---@param send boolean 是否发送值变化事件。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setValueWithSendingEvent(value, send) end
 
---- 设置 `cc.ControlStepper:setMaximumValue` 对应的值。
+--- 设置允许的最大数值。
 ---
 --- 参数说明：
---- - `maximumValue`：参数 `maximumValue`，类型为 `number`。
+--- - `maximumValue`：允许的最大数值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param maximumValue number 参数 `maximumValue`，类型为 `number`。
+---@param maximumValue number 最大数值。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setMaximumValue(maximumValue) end
 
---- 获取 `cc.ControlStepper:getMinusLabel` 对应的值。
+--- 获取减号区域显示的标签。
 ---
 --- 返回说明：
---- - `cc.Label`：获取到的 `cc.Label` 对象或值。
----@return cc.Label 获取到的 `cc.Label` 对象或值。
+--- - `cc.Label`：减号标签。
+---@return cc.Label 减号标签。
 function ControlStepper:getMinusLabel() end
 
---- 获取 `cc.ControlStepper:getPlusLabel` 对应的值。
+--- 获取加号区域显示的标签。
 ---
 --- 返回说明：
---- - `cc.Label`：获取到的 `cc.Label` 对象或值。
----@return cc.Label 获取到的 `cc.Label` 对象或值。
+--- - `cc.Label`：加号标签。
+---@return cc.Label 加号标签。
 function ControlStepper:getPlusLabel() end
 
---- 设置 `cc.ControlStepper:setWraps` 对应的值。
+--- 设置达到边界后是否循环到另一端。
 ---
 --- 参数说明：
---- - `wraps`：参数 `wraps`，类型为 `boolean`。
+--- - `wraps`：是否在最大值和最小值之间循环。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param wraps boolean 参数 `wraps`，类型为 `boolean`。
+---@param wraps boolean 是否循环数值。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setWraps(wraps) end
 
---- 设置 `cc.ControlStepper:setMinusLabel` 对应的值。
+--- 设置减号区域显示的标签。
 ---
 --- 参数说明：
---- - `var`：参数 `var`，类型为 `cc.Label`。
+--- - `var`：减号标签。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param var cc.Label 参数 `var`，类型为 `cc.Label`。
+---@param var cc.Label 减号标签。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setMinusLabel(var) end
 
---- 调用 `cc.ControlStepper:startAutorepeat`。
+--- 开始长按加号或减号时的自动重复增减。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:startAutorepeat() end
 
---- 更新 `cc.ControlStepper:updateLayoutUsingTouchLocation` 对应的状态。
+--- 根据触摸位置更新加号和减号区域的高亮状态。
 ---
 --- 参数说明：
---- - `location`：参数 `location`，类型为 `vec2_table`。
+--- - `location`：控件局部触摸位置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param location vec2_table 参数 `location`，类型为 `vec2_table`。
+---@param location vec2_table 控件局部触摸位置。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:updateLayoutUsingTouchLocation(location) end
 
---- 判断 `cc.ControlStepper:isContinuous` 对应状态是否成立。
+--- 判断长按时是否连续发送数值变化事件。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否连续更新数值。
+---@return boolean 是否连续更新数值。
 function ControlStepper:isContinuous() end
 
---- 停止 `cc.ControlStepper:stopAutorepeat` 对应的流程。
+--- 停止长按自动重复增减。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:stopAutorepeat() end
 
---- 设置 `cc.ControlStepper:setMinimumValue` 对应的值。
+--- 设置允许的最小数值。
 ---
 --- 参数说明：
---- - `minimumValue`：参数 `minimumValue`，类型为 `number`。
+--- - `minimumValue`：允许的最小数值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param minimumValue number 参数 `minimumValue`，类型为 `number`。
+---@param minimumValue number 最小数值。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setMinimumValue(minimumValue) end
 
---- 设置 `cc.ControlStepper:setPlusLabel` 对应的值。
+--- 设置加号区域显示的标签。
 ---
 --- 参数说明：
---- - `var`：参数 `var`，类型为 `cc.Label`。
+--- - `var`：加号标签。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param var cc.Label 参数 `var`，类型为 `cc.Label`。
+---@param var cc.Label 加号标签。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setPlusLabel(var) end
 
---- 获取 `cc.ControlStepper:getValue` 对应的值。
+--- 获取当前数值。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前数值。
+---@return number 当前数值。
 function ControlStepper:getValue() end
 
---- 获取 `cc.ControlStepper:getPlusSprite` 对应的值。
+--- 获取步进器加号区域的背景精灵。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：加号区域背景精灵。
+---@return cc.Sprite 加号区域背景精灵。
 function ControlStepper:getPlusSprite() end
 
---- 设置 `cc.ControlStepper:setPlusSprite` 对应的值。
+--- 设置加号区域背景精灵。
 ---
 --- 参数说明：
---- - `var`：参数 `var`，类型为 `cc.Sprite`。
+--- - `var`：加号区域背景精灵。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param var cc.Sprite 参数 `var`，类型为 `cc.Sprite`。
+---@param var cc.Sprite 加号区域背景精灵。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setPlusSprite(var) end
 
---- 设置 `cc.ControlStepper:setMinusSprite` 对应的值。
+--- 设置减号区域背景精灵。
 ---
 --- 参数说明：
---- - `var`：参数 `var`，类型为 `cc.Sprite`。
+--- - `var`：减号区域背景精灵。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param var cc.Sprite 参数 `var`，类型为 `cc.Sprite`。
+---@param var cc.Sprite 减号区域背景精灵。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:setMinusSprite(var) end
 
---- 创建 `cc.ControlStepper:create` 对应的对象。
+--- 使用减号和加号区域背景精灵创建步进器。
 ---
 --- 参数说明：
---- - `minusSprite`：参数 `minusSprite`，类型为 `cc.Sprite`。
---- - `plusSprite`：参数 `plusSprite`，类型为 `cc.Sprite`。
+--- - `minusSprite`：减号区域背景精灵。
+--- - `plusSprite`：加号区域背景精灵。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param minusSprite cc.Sprite 参数 `minusSprite`，类型为 `cc.Sprite`。
----@param plusSprite cc.Sprite 参数 `plusSprite`，类型为 `cc.Sprite`。
+---@param minusSprite cc.Sprite 减号区域背景精灵。
+---@param plusSprite cc.Sprite 加号区域背景精灵。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:create(minusSprite, plusSprite) end
 
---- 调用 `cc.ControlStepper:onTouchMoved`。
+--- 处理触摸移动并切换当前按下的加号或减号区域。
 ---
 --- 参数说明：
---- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
---- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
+--- - `pTouch`：当前触摸点。
+--- - `pEvent`：触摸事件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pTouch cc.Touch 参数 `pTouch`，类型为 `cc.Touch`。
----@param pEvent cc.Event 参数 `pEvent`，类型为 `cc.Event`。
+---@param pTouch cc.Touch 当前触摸点。
+---@param pEvent cc.Event 触摸事件。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:onTouchMoved(pTouch, pEvent) end
 
---- 调用 `cc.ControlStepper:onTouchEnded`。
+--- 处理触摸结束，应用一次增减并停止自动重复。
 ---
 --- 参数说明：
---- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
---- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
+--- - `pTouch`：当前触摸点。
+--- - `pEvent`：触摸事件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pTouch cc.Touch 参数 `pTouch`，类型为 `cc.Touch`。
----@param pEvent cc.Event 参数 `pEvent`，类型为 `cc.Event`。
+---@param pTouch cc.Touch 当前触摸点。
+---@param pEvent cc.Event 触摸事件。
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:onTouchEnded(pTouch, pEvent) end
 
---- 更新 `cc.ControlStepper:update` 对应的状态。
+--- 按帧间隔更新长按自动重复计时。
 ---
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
@@ -250,20 +250,20 @@ function ControlStepper:onTouchEnded(pTouch, pEvent) end
 ---@return self 当前对象，便于链式调用。
 function ControlStepper:update(dt) end
 
---- 调用 `cc.ControlStepper:onTouchBegan`。
+--- 判断触摸是否落在控件内并开始加号或减号交互。
 ---
 --- 参数说明：
---- - `pTouch`：参数 `pTouch`，类型为 `cc.Touch`。
---- - `pEvent`：参数 `pEvent`，类型为 `cc.Event`。
+--- - `pTouch`：当前触摸点。
+--- - `pEvent`：触摸事件。
 ---
 --- 返回说明：
 --- - `boolean`：布尔值。
----@param pTouch cc.Touch 参数 `pTouch`，类型为 `cc.Touch`。
----@param pEvent cc.Event 参数 `pEvent`，类型为 `cc.Event`。
----@return boolean 布尔值。
+---@param pTouch cc.Touch 当前触摸点。
+---@param pEvent cc.Event 触摸事件。
+---@return boolean 是否接受该触摸。
 function ControlStepper:onTouchBegan(pTouch, pEvent) end
 
---- 调用 `cc.ControlStepper:ControlStepper`。
+--- 构造步进器控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

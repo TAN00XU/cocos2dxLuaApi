@@ -8,46 +8,46 @@
 local LayoutParameter = {}
 ccui.LayoutParameter = LayoutParameter
 
---- 调用 `ccui.LayoutParameter:clone`。
+--- 克隆当前布局参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function LayoutParameter:clone() end
 
---- 获取 `ccui.LayoutParameter:getLayoutType` 对应的值。
+--- 获取布局参数类型枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：布局参数类型。
+---@return integer 布局参数类型。
 function LayoutParameter:getLayoutType() end
 
---- 创建 `ccui.LayoutParameter:createCloneInstance` 对应的对象。
+--- 创建同类型的布局参数克隆实例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function LayoutParameter:createCloneInstance() end
 
---- 调用 `ccui.LayoutParameter:copyProperties`。
+--- 从另一个布局参数复制属性。
 ---
 --- 参数说明：
---- - `model`：参数 `model`，类型为 `ccui.LayoutParameter`。
+--- - `model`：提供属性的布局参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param model ccui.LayoutParameter 参数 `model`，类型为 `ccui.LayoutParameter`。
+---@param model ccui.LayoutParameter 提供属性的布局参数。
 ---@return self 当前对象，便于链式调用。
 function LayoutParameter:copyProperties(model) end
 
---- 创建 `ccui.LayoutParameter:create` 对应的对象。
+--- 创建默认布局参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function LayoutParameter:create() end
 
---- 调用 `ccui.LayoutParameter:LayoutParameter`。
+--- 构造布局参数对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

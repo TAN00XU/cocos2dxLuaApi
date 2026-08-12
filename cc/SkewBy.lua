@@ -8,33 +8,33 @@
 local SkewBy = {}
 cc.SkewBy = SkewBy
 
---- 初始化 `cc.SkewBy:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和相对倾斜角初始化动作。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `sx`：参数 `sx`，类型为 `number`。
---- - `sy`：参数 `sy`，类型为 `number`。
+--- - `t`：动作持续时间，单位为秒。
+--- - `sx`：X 轴相对倾斜角，单位为度。
+--- - `sy`：Y 轴相对倾斜角，单位为度。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param t number 参数 `t`，类型为 `number`。
----@param sx number 参数 `sx`，类型为 `number`。
----@param sy number 参数 `sy`，类型为 `number`。
+---@param t number 动作持续时间，单位为秒。
+---@param sx number X 轴相对倾斜角，单位为度。
+---@param sy number Y 轴相对倾斜角，单位为度。
 ---@return boolean 初始化是否成功。
 function SkewBy:initWithDuration(t, sx, sy) end
 
---- 创建 `cc.SkewBy:create` 对应的对象。
+--- 创建按相对倾斜角变换目标节点的动作。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `deltaSkewX`：参数 `deltaSkewX`，类型为 `number`。
---- - `deltaSkewY`：参数 `deltaSkewY`，类型为 `number`。
+--- - `t`：动作持续时间，单位为秒。
+--- - `deltaSkewX`：X 轴相对倾斜角，单位为度。
+--- - `deltaSkewY`：Y 轴相对倾斜角，单位为度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param deltaSkewX number 参数 `deltaSkewX`，类型为 `number`。
----@param deltaSkewY number 参数 `deltaSkewY`，类型为 `number`。
+---@param t number 动作持续时间，单位为秒。
+---@param deltaSkewX number X 轴相对倾斜角，单位为度。
+---@param deltaSkewY number Y 轴相对倾斜角，单位为度。
 ---@return self 当前对象，便于链式调用。
 function SkewBy:create(t, deltaSkewX, deltaSkewY) end
 

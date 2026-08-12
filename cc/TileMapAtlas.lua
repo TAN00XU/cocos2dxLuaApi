@@ -8,72 +8,72 @@
 local TileMapAtlas = {}
 cc.TileMapAtlas = TileMapAtlas
 
---- 初始化 `cc.TileMapAtlas:initWithTileFile` 对应的对象或状态。
+--- 使用瓦片图集、地图文件和瓦片尺寸初始化图集地图。
 ---
 --- 参数说明：
---- - `tile`：参数 `tile`，类型为 `string`。
---- - `mapFile`：参数 `mapFile`，类型为 `string`。
---- - `tileWidth`：参数 `tileWidth`，类型为 `integer`。
---- - `tileHeight`：参数 `tileHeight`，类型为 `integer`。
+--- - `tile`：瓦片图集纹理文件路径。
+--- - `mapFile`：包含瓦片索引数据的地图文件路径。
+--- - `tileWidth`：单个瓦片宽度。
+--- - `tileHeight`：单个瓦片高度。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param tile string 参数 `tile`，类型为 `string`。
----@param mapFile string 参数 `mapFile`，类型为 `string`。
----@param tileWidth integer 参数 `tileWidth`，类型为 `integer`。
----@param tileHeight integer 参数 `tileHeight`，类型为 `integer`。
+---@param tile string 瓦片图集纹理文件路径。
+---@param mapFile string 地图文件路径。
+---@param tileWidth integer 单个瓦片宽度。
+---@param tileHeight integer 单个瓦片高度。
 ---@return boolean 初始化是否成功。
 function TileMapAtlas:initWithTileFile(tile, mapFile, tileWidth, tileHeight) end
 
---- 调用 `cc.TileMapAtlas:releaseMap`。
+--- 释放地图数据表，但保留图集节点及纹理资源。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function TileMapAtlas:releaseMap() end
 
---- 获取 `cc.TileMapAtlas:getTileAt` 对应的值。
+--- 获取指定地图坐标处瓦片对应的颜色索引。
 ---
 --- 参数说明：
 --- - `position`：位置坐标。类型为 `vec2_table`。
 ---
 --- 返回说明：
---- - `color3b_table`：获取到的 Lua 表数据。
----@param position vec2_table 位置坐标。类型为 `vec2_table`。
----@return color3b_table 获取到的 Lua 表数据。
+--- - `color3b_table`：瓦片颜色索引值。
+---@param position vec2_table 地图列、行坐标。
+---@return color3b_table 瓦片颜色索引值。
 function TileMapAtlas:getTileAt(position) end
 
---- 设置 `cc.TileMapAtlas:setTile` 对应的值。
+--- 设置指定地图坐标处的瓦片颜色索引。
 ---
 --- 参数说明：
---- - `tile`：参数 `tile`，类型为 `color3b_table`。
---- - `position`：位置坐标。类型为 `vec2_table`。
+--- - `tile`：瓦片颜色索引值。
+--- - `position`：地图列、行坐标。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tile color3b_table 参数 `tile`，类型为 `color3b_table`。
----@param position vec2_table 位置坐标。类型为 `vec2_table`。
+---@param tile color3b_table 瓦片颜色索引值。
+---@param position vec2_table 地图列、行坐标。
 ---@return self 当前对象，便于链式调用。
 function TileMapAtlas:setTile(tile, position) end
 
---- 创建 `cc.TileMapAtlas:create` 对应的对象。
+--- 创建瓦片图集地图。
 ---
 --- 参数说明：
---- - `tile`：参数 `tile`，类型为 `string`。
---- - `mapFile`：参数 `mapFile`，类型为 `string`。
---- - `tileWidth`：参数 `tileWidth`，类型为 `integer`。
---- - `tileHeight`：参数 `tileHeight`，类型为 `integer`。
+--- - `tile`：瓦片图集纹理文件路径。
+--- - `mapFile`：地图文件路径。
+--- - `tileWidth`：单个瓦片宽度。
+--- - `tileHeight`：单个瓦片高度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tile string 参数 `tile`，类型为 `string`。
----@param mapFile string 参数 `mapFile`，类型为 `string`。
----@param tileWidth integer 参数 `tileWidth`，类型为 `integer`。
----@param tileHeight integer 参数 `tileHeight`，类型为 `integer`。
+---@param tile string 瓦片图集纹理文件路径。
+---@param mapFile string 地图文件路径。
+---@param tileWidth integer 单个瓦片宽度。
+---@param tileHeight integer 单个瓦片高度。
 ---@return self 当前对象，便于链式调用。
 function TileMapAtlas:create(tile, mapFile, tileWidth, tileHeight) end
 
---- 调用 `cc.TileMapAtlas:TileMapAtlas`。
+--- 构造瓦片图集地图。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

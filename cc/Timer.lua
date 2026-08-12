@@ -8,22 +8,22 @@
 local Timer = {}
 cc.Timer = Timer
 
---- 调用 `cc.Timer:setupTimerWithInterval`。
+--- 设置定时器的间隔、重复次数和首次触发延迟。
 ---
 --- 参数说明：
---- - `seconds`：参数 `seconds`，类型为 `number`。
---- - `_repeat`：参数 `_repeat`，类型为 `integer`。
---- - `delay`：参数 `delay`，类型为 `number`。
+--- - `seconds`：每次触发的间隔，单位为秒。
+--- - `_repeat`：重复触发次数。
+--- - `delay`：首次触发前的延迟，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param seconds number 参数 `seconds`，类型为 `number`。
----@param _repeat integer 参数 `_repeat`，类型为 `integer`。
----@param delay number 参数 `delay`，类型为 `number`。
+---@param seconds number 每次触发的间隔，单位为秒。
+---@param _repeat integer 重复触发次数。
+---@param delay number 首次触发前的延迟，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Timer:setupTimerWithInterval(seconds, _repeat, delay) end
 
---- 更新 `cc.Timer:update` 对应的状态。
+--- 按帧间隔推进定时器。
 ---
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
@@ -34,21 +34,21 @@ function Timer:setupTimerWithInterval(seconds, _repeat, delay) end
 ---@return self 当前对象，便于链式调用。
 function Timer:update(dt) end
 
---- 判断 `cc.Timer:isAborted` 对应状态是否成立。
+--- 判断定时器是否已被中止。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：定时器是否已中止。
+---@return boolean 定时器是否已中止。
 function Timer:isAborted() end
 
---- 判断 `cc.Timer:isExhausted` 对应状态是否成立。
+--- 判断定时器是否已达到重复次数上限。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：定时器是否已耗尽。
+---@return boolean 定时器是否已耗尽。
 function Timer:isExhausted() end
 
---- 调用 `cc.Timer:trigger`。
+--- 使用给定帧间隔触发一次定时器回调。
 ---
 --- 参数说明：
 --- - `dt`：帧间隔时间。类型为 `number`。
@@ -66,7 +66,7 @@ function Timer:trigger(dt) end
 ---@return self 当前对象，便于链式调用。
 function Timer:cancel() end
 
---- 设置 `cc.Timer:setAborted` 对应的值。
+--- 将定时器标记为中止状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

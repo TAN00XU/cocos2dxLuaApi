@@ -7,13 +7,13 @@
 local TransitionEaseScene = {}
 cc.TransitionEaseScene = TransitionEaseScene
 
---- 调用 `cc.TransitionEaseScene:easeActionWithAction`。
+--- 为场景过渡动作创建对应的缓动包装动作。
 ---
 --- 参数说明：
 --- - `action`：动作对象。类型为 `cc.ActionInterval`。
 ---
 --- 返回说明：
---- - `cc.ActionInterval`：`cc.ActionInterval` 对象或值。
----@param action cc.ActionInterval 动作对象。类型为 `cc.ActionInterval`。
----@return cc.ActionInterval `cc.ActionInterval` 对象或值。
+--- - `cc.ActionInterval`：应用过渡缓动后的动作。
+---@param action cc.ActionInterval 要包装的场景过渡动作。
+---@return cc.ActionInterval 应用过渡缓动后的动作。
 function TransitionEaseScene:easeActionWithAction(action) end

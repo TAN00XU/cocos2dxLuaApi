@@ -8,14 +8,14 @@
 local VisibleFrame = {}
 ccs.VisibleFrame = VisibleFrame
 
---- 判断 `ccs.VisibleFrame:isVisible` 对应状态是否成立。
+--- 获取时间轴关键帧记录的可见状态。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：关键帧是否可见。
+---@return boolean 关键帧是否可见。
 function VisibleFrame:isVisible() end
 
---- 设置 `ccs.VisibleFrame:setVisible` 对应的值。
+--- 设置时间轴关键帧记录的可见状态。
 ---
 --- 参数说明：
 --- - `visible`：是否可见。类型为 `boolean`。
@@ -26,21 +26,21 @@ function VisibleFrame:isVisible() end
 ---@return self 当前对象，便于链式调用。
 function VisibleFrame:setVisible(visible) end
 
---- 创建 `ccs.VisibleFrame:create` 对应的对象。
+--- 创建可见性关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function VisibleFrame:create() end
 
---- 调用 `ccs.VisibleFrame:clone`。
+--- 克隆当前可见性关键帧。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：当前关键帧的副本。
+---@return ccs.Frame 当前关键帧的副本。
 function VisibleFrame:clone() end
 
---- 调用 `ccs.VisibleFrame:VisibleFrame`。
+--- 构造可见性关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

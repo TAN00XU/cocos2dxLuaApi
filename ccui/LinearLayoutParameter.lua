@@ -8,50 +8,50 @@
 local LinearLayoutParameter = {}
 ccui.LinearLayoutParameter = LinearLayoutParameter
 
---- 设置 `ccui.LinearLayoutParameter:setGravity` 对应的值。
+--- 设置线性布局子项的对齐方式。
 ---
 --- 参数说明：
---- - `gravity`：参数 `gravity`，类型为 `integer`。
+--- - `gravity`：子项在交叉轴上的对齐方式枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param gravity integer 参数 `gravity`，类型为 `integer`。
+---@param gravity integer 子项在交叉轴上的对齐方式枚举值。
 ---@return self 当前对象，便于链式调用。
 function LinearLayoutParameter:setGravity(gravity) end
 
---- 获取 `ccui.LinearLayoutParameter:getGravity` 对应的值。
+--- 获取线性布局子项的对齐方式。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：子项对齐方式枚举值。
+---@return integer 子项对齐方式枚举值。
 function LinearLayoutParameter:getGravity() end
 
---- 创建 `ccui.LinearLayoutParameter:create` 对应的对象。
+--- 创建默认线性布局参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function LinearLayoutParameter:create() end
 
---- 创建 `ccui.LinearLayoutParameter:createCloneInstance` 对应的对象。
+--- 创建线性布局参数克隆实例。
 ---
 --- 返回说明：
---- - `ccui.LayoutParameter`：创建出的 `ccui.LayoutParameter` 对象或值。
----@return ccui.LayoutParameter 创建出的 `ccui.LayoutParameter` 对象或值。
+--- - `ccui.LayoutParameter`：创建出的线性布局参数。
+---@return ccui.LayoutParameter 创建出的线性布局参数。
 function LinearLayoutParameter:createCloneInstance() end
 
---- 调用 `ccui.LinearLayoutParameter:copyProperties`。
+--- 从另一个布局参数复制属性。
 ---
 --- 参数说明：
---- - `model`：参数 `model`，类型为 `ccui.LayoutParameter`。
+--- - `model`：提供属性的布局参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param model ccui.LayoutParameter 参数 `model`，类型为 `ccui.LayoutParameter`。
+---@param model ccui.LayoutParameter 提供属性的布局参数。
 ---@return self 当前对象，便于链式调用。
 function LinearLayoutParameter:copyProperties(model) end
 
---- 调用 `ccui.LinearLayoutParameter:LinearLayoutParameter`。
+--- 构造线性布局参数对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

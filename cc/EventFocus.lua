@@ -8,15 +8,15 @@
 local EventFocus = {}
 cc.EventFocus = EventFocus
 
---- 调用 `cc.EventFocus:EventFocus`。
+--- 初始化控件焦点转移事件。
 ---
 --- 参数说明：
---- - `widgetLoseFocus`：参数 `widgetLoseFocus`，类型为 `ccui.Widget`。
---- - `widgetGetFocus`：参数 `widgetGetFocus`，类型为 `ccui.Widget`。
+--- - `widgetLoseFocus`：失去焦点的控件。
+--- - `widgetGetFocus`：获得焦点的控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param widgetLoseFocus ccui.Widget 参数 `widgetLoseFocus`，类型为 `ccui.Widget`。
----@param widgetGetFocus ccui.Widget 参数 `widgetGetFocus`，类型为 `ccui.Widget`。
+---@param widgetLoseFocus ccui.Widget 失去焦点的控件。
+---@param widgetGetFocus ccui.Widget 获得焦点的控件。
 ---@return self 当前对象，便于链式调用。
 function EventFocus:EventFocus(widgetLoseFocus, widgetGetFocus) end

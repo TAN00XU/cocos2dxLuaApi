@@ -8,25 +8,25 @@
 local ReuseGrid = {}
 cc.ReuseGrid = ReuseGrid
 
---- 初始化 `cc.ReuseGrid:initWithTimes` 对应的对象或状态。
+--- 初始化重复网格动作。
 ---
 --- 参数说明：
---- - `times`：参数 `times`，类型为 `integer`。
+--- - `times`：网格重复使用次数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param times integer 参数 `times`，类型为 `integer`。
+---@param times integer 网格重复使用次数。
 ---@return boolean 初始化是否成功。
 function ReuseGrid:initWithTimes(times) end
 
---- 创建 `cc.ReuseGrid:create` 对应的对象。
+--- 创建重复网格动作。
 ---
 --- 参数说明：
---- - `times`：参数 `times`，类型为 `integer`。
+--- - `times`：网格重复使用次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param times integer 参数 `times`，类型为 `integer`。
+---@param times integer 网格重复使用次数。
 ---@return self 当前对象，便于链式调用。
 function ReuseGrid:create(times) end
 

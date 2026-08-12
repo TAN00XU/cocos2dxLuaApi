@@ -8,7 +8,7 @@
 local MenuItem = {}
 cc.MenuItem = MenuItem
 
---- 设置 `cc.MenuItem:setEnabled` 对应的值。
+--- 设置菜单项是否可交互。
 ---
 --- 参数说明：
 --- - `value`：数值或对象值。类型为 `boolean`。
@@ -29,8 +29,8 @@ function MenuItem:activate() end
 --- 判断 `cc.MenuItem:isEnabled` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：菜单项是否启用。
+---@return boolean 菜单项是否启用。
 function MenuItem:isEnabled() end
 
 --- 调用 `cc.MenuItem:selected`。
@@ -43,8 +43,8 @@ function MenuItem:selected() end
 --- 判断 `cc.MenuItem:isSelected` 对应状态是否成立。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：菜单项是否选中或激活。
+---@return boolean 菜单项是否选中或激活。
 function MenuItem:isSelected() end
 
 --- 调用 `cc.MenuItem:unselected`。
@@ -61,11 +61,11 @@ function MenuItem:unselected() end
 ---@return rect_table Lua 表数据。
 function MenuItem:rect() end
 
---- 获取 `cc.MenuItem:getDescription` 对应的值。
+--- 获取菜单项的调试描述字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：菜单项描述文本。
+---@return string 菜单项描述文本。
 function MenuItem:getDescription() end
 
 --- 调用 `cc.MenuItem:MenuItem`。

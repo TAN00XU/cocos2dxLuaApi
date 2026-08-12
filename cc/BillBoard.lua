@@ -15,30 +15,30 @@ cc.BillBoard = BillBoard
 ---@return self 当前对象，便于链式调用。
 function BillBoard:new() end
 
---- 获取 `cc.BillBoard:getMode` 对应的值。
+--- 获取公告板朝向摄像机的模式。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：公告板模式枚举值。
+---@return integer 公告板模式枚举值。
 function BillBoard:getMode() end
 
---- 设置 `cc.BillBoard:setMode` 对应的值。
+--- 设置公告板朝向摄像机的模式。
 ---
 --- 参数说明：
---- - `mode`：参数 `mode`，类型为 `integer`。
+--- - `mode`：公告板模式枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param mode integer 参数 `mode`，类型为 `integer`。
+---@param mode integer 公告板模式枚举值。
 ---@return self 当前对象，便于链式调用。
 function BillBoard:setMode(mode) end
 
---- 创建 `cc.BillBoard:create` 对应的对象。
+--- 从纹理文件创建公告板精灵。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
 --- - `rect`：矩形区域。类型为 `rect_table`。
---- - `mode`：参数 `mode`，类型为 `integer`。
+--- - `mode`：公告板模式枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -47,35 +47,35 @@ function BillBoard:setMode(mode) end
 ---@overload fun(filename: string, rect: rect_table, mode: integer): self
 ---@param filename? string 文件名或文件路径。类型为 `string`。
 ---@param rect? rect_table 矩形区域。类型为 `rect_table`。
----@param mode? integer 参数 `mode`，类型为 `integer`。
+---@param mode? integer 公告板模式枚举值。
 ---@return self 当前对象，便于链式调用。
 function BillBoard:create(filename, rect, mode) end
 
---- 创建 `cc.BillBoard:createWithTexture` 对应的对象。
+--- 从纹理对象创建公告板精灵。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
---- - `mode`：参数 `mode`，类型为 `integer`。
+--- - `mode`：公告板模式枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param texture cc.Texture2D 纹理对象。类型为 `cc.Texture2D`。
----@param mode integer 参数 `mode`，类型为 `integer`。
+---@param mode integer 公告板模式枚举值。
 ---@return self 当前对象，便于链式调用。
 function BillBoard:createWithTexture(texture, mode) end
 
---- 调用 `cc.BillBoard:visit`。
+--- 按父变换访问并绘制公告板。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
---- - `parentFlags`：参数 `parentFlags`，类型为 `integer`。
+--- - `renderer`：当前渲染器。
+--- - `parentTransform`：父节点变换矩阵。
+--- - `parentFlags`：父节点渲染标志位。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param parentTransform mat4_table 参数 `parentTransform`，类型为 `mat4_table`。
----@param parentFlags integer 参数 `parentFlags`，类型为 `integer`。
+---@param renderer cc.Renderer 当前渲染器。
+---@param parentTransform mat4_table 父节点变换矩阵。
+---@param parentFlags integer 父节点渲染标志位。
 ---@return self 当前对象，便于链式调用。
 function BillBoard:visit(renderer, parentTransform, parentFlags) end
 

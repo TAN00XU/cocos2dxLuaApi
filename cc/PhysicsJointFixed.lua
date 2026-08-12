@@ -8,24 +8,24 @@
 local PhysicsJointFixed = {}
 cc.PhysicsJointFixed = PhysicsJointFixed
 
---- 创建 `cc.PhysicsJointFixed:createConstraints` 对应的对象。
+--- 创建固定关节的物理约束。
 ---
 --- 返回说明：
---- - `boolean`：创建出的 布尔值。
----@return boolean 创建出的 布尔值。
+--- - `boolean`：物理约束是否创建成功。
+---@return boolean 物理约束是否创建成功。
 function PhysicsJointFixed:createConstraints() end
 
---- 调用 `cc.PhysicsJointFixed:construct`。
+--- 使用两个刚体和世界锚点构造固定关节。
 ---
 --- 参数说明：
---- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。
---- - `b`：参数 `b`，类型为 `cc.PhysicsBody`。
---- - `anchr`：参数 `anchr`，类型为 `vec2_table`。
+--- - `a`：第一个物理刚体。
+--- - `b`：第二个物理刚体。
+--- - `anchr`：固定关节在世界坐标中的锚点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param a cc.PhysicsBody 参数 `a`，类型为 `cc.PhysicsBody`。
----@param b cc.PhysicsBody 参数 `b`，类型为 `cc.PhysicsBody`。
----@param anchr vec2_table 参数 `anchr`，类型为 `vec2_table`。
+---@param a cc.PhysicsBody 第一个物理刚体。
+---@param b cc.PhysicsBody 第二个物理刚体。
+---@param anchr vec2_table 固定关节在世界坐标中的锚点。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointFixed:construct(a, b, anchr) end

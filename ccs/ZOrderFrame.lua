@@ -8,39 +8,39 @@
 local ZOrderFrame = {}
 ccs.ZOrderFrame = ZOrderFrame
 
---- 获取 `ccs.ZOrderFrame:getZOrder` 对应的值。
+--- 获取目标局部 Z 顺序。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：目标节点的局部 Z 顺序。
+---@return integer 目标节点的局部 Z 顺序。
 function ZOrderFrame:getZOrder() end
 
---- 设置 `ccs.ZOrderFrame:setZOrder` 对应的值。
+--- 设置目标局部 Z 顺序。
 ---
 --- 参数说明：
---- - `zorder`：参数 `zorder`，类型为 `integer`。
+--- - `zorder`：目标节点的局部 Z 顺序。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param zorder integer 参数 `zorder`，类型为 `integer`。
+---@param zorder integer 目标节点的局部 Z 顺序。
 ---@return self 当前对象，便于链式调用。
 function ZOrderFrame:setZOrder(zorder) end
 
---- 创建 `ccs.ZOrderFrame:create` 对应的对象。
+--- 创建 Z 顺序关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ZOrderFrame:create() end
 
---- 调用 `ccs.ZOrderFrame:clone`。
+--- 复制当前 Z 顺序关键帧。
 ---
 --- 返回说明：
---- - `ccs.Frame`：`ccs.Frame` 对象或值。
----@return ccs.Frame `ccs.Frame` 对象或值。
+--- - `ccs.Frame`：创建的 Z 顺序关键帧。
+---@return ccs.Frame Z 顺序关键帧副本。
 function ZOrderFrame:clone() end
 
---- 调用 `ccs.ZOrderFrame:ZOrderFrame`。
+--- 构造 Z 顺序关键帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

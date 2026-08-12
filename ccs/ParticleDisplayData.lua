@@ -7,11 +7,11 @@
 ---@class ccs.ParticleDisplayData : ccs.DisplayData
 local ParticleDisplayData = {}
 ccs.ParticleDisplayData = ParticleDisplayData
---- 创建 ParticleDisplayData 对应的对象。
+--- 构造粒子显示数据对象。
 ---@return ccs.ParticleDisplayData
 function ParticleDisplayData:new() end
 
---- 创建 `ccs.ParticleDisplayData:create` 对应的对象。
+--- 创建粒子显示数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

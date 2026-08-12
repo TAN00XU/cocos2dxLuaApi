@@ -8,12 +8,12 @@
 local RotateBy = {}
 cc.RotateBy = RotateBy
 
---- 初始化 `cc.RotateBy:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和各轴增量角初始化相对旋转动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `deltaAngleZ_X`：参数 `deltaAngleZ_X`，类型为 `number`。
---- - `deltaAngleZ_Y`：参数 `deltaAngleZ_Y`，类型为 `number`。
+--- - `deltaAngleZ_X`：X 轴增量角度，单位为度；也可传三维角度表。
+--- - `deltaAngleZ_Y`：Y 轴增量角度，单位为度。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
@@ -21,17 +21,17 @@ cc.RotateBy = RotateBy
 ---@overload fun(duration: number, deltaAngleZ_X: number): boolean
 ---@overload fun(duration: number, deltaAngleZ_X: vec3_table): boolean
 ---@param duration? number 持续时间。类型为 `number`。
----@param deltaAngleZ_X? number 参数 `deltaAngleZ_X`，类型为 `number`。
----@param deltaAngleZ_Y? number 参数 `deltaAngleZ_Y`，类型为 `number`。
+---@param deltaAngleZ_X? number X 轴增量角度，单位为度；也可传三维角度表。
+---@param deltaAngleZ_Y? number Y 轴增量角度，单位为度。
 ---@return boolean 初始化是否成功。
 function RotateBy:initWithDuration(duration, deltaAngleZ_X, deltaAngleZ_Y) end
 
---- 创建 `cc.RotateBy:create` 对应的对象。
+--- 创建按各轴增量角旋转目标节点的动作。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `number`。
---- - `deltaAngleZ_X`：参数 `deltaAngleZ_X`，类型为 `number`。
---- - `deltaAngleZ_Y`：参数 `deltaAngleZ_Y`，类型为 `number`。
+--- - `deltaAngleZ_X`：X 轴增量角度，单位为度；也可传三维角度表。
+--- - `deltaAngleZ_Y`：Y 轴增量角度，单位为度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -39,8 +39,8 @@ function RotateBy:initWithDuration(duration, deltaAngleZ_X, deltaAngleZ_Y) end
 ---@overload fun(duration: number, deltaAngleZ_X: number): self
 ---@overload fun(duration: number, deltaAngleZ_X: vec3_table): self
 ---@param duration? number 持续时间。类型为 `number`。
----@param deltaAngleZ_X? number 参数 `deltaAngleZ_X`，类型为 `number`。
----@param deltaAngleZ_Y? number 参数 `deltaAngleZ_Y`，类型为 `number`。
+---@param deltaAngleZ_X? number X 轴增量角度，单位为度；也可传三维角度表。
+---@param deltaAngleZ_Y? number Y 轴增量角度，单位为度。
 ---@return self 当前对象，便于链式调用。
 function RotateBy:create(duration, deltaAngleZ_X, deltaAngleZ_Y) end
 
@@ -69,14 +69,14 @@ function RotateBy:clone() end
 ---@return self 当前对象，便于链式调用。
 function RotateBy:reverse() end
 
---- 更新 `cc.RotateBy:update` 对应的状态。
+--- 按归一化进度应用相对旋转。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度，通常范围为 0 到 1。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度，通常范围为 0 到 1。
 ---@return self 当前对象，便于链式调用。
 function RotateBy:update(time) end
 

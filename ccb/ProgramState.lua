@@ -8,68 +8,68 @@
 local ProgramState = {}
 ccb.ProgramState = ProgramState
 
---- 设置 `ccb.ProgramState:setTexture` 对应的值。
+--- 将纹理绑定到指定 uniform 和纹理槽。
 ---
 --- 参数说明：
---- - `uniformLocation`：参数 `uniformLocation`，类型为 `cc.backend.UniformLocation`。
---- - `slot`：参数 `slot`，类型为 `integer`。
+--- - `uniformLocation`：uniform 变量的位置描述。
+--- - `slot`：要绑定的纹理单元编号。
 --- - `texture`：纹理对象。类型为 `cc.backend.TextureBackend`。
 ---
 --- 返回说明：
---- - `cc.backend.ProgramState`：`cc.backend.ProgramState` 对象或值。
----@param uniformLocation cc.backend.UniformLocation 参数 `uniformLocation`，类型为 `cc.backend.UniformLocation`。
----@param slot integer 参数 `slot`，类型为 `integer`。
+--- - `cc.backend.ProgramState`：当前程序状态对象。
+---@param uniformLocation cc.backend.UniformLocation uniform 变量的位置描述。
+---@param slot integer 要绑定的纹理单元编号。
 ---@param texture cc.backend.TextureBackend 纹理对象。类型为 `cc.backend.TextureBackend`。
----@return cc.backend.ProgramState `cc.backend.ProgramState` 对象或值。
+---@return cc.backend.ProgramState 当前程序状态对象。
 function ProgramState:setTexture(uniformLocation, slot, texture) end
 
---- 调用 `ccb.ProgramState:clone`。
+--- 克隆当前程序状态及其参数绑定。
 ---
 --- 返回说明：
---- - `cc.backend.ProgramState`：`cc.backend.ProgramState` 对象或值。
----@return cc.backend.ProgramState `cc.backend.ProgramState` 对象或值。
+--- - `cc.backend.ProgramState`：独立的程序状态副本。
+---@return cc.backend.ProgramState 程序状态副本。
 function ProgramState:clone() end
 
---- 设置 `ccb.ProgramState:setParameterAutoBinding` 对应的值。
+--- 为 uniform 参数设置引擎自动绑定名称。
 ---
 --- 参数说明：
---- - `uniformName`：参数 `uniformName`，类型为 `string`。
---- - `autoBinding`：参数 `autoBinding`，类型为 `string`。
+--- - `uniformName`：uniform 参数名称。
+--- - `autoBinding`：引擎自动绑定标识字符串。
 ---
 --- 返回说明：
---- - `cc.backend.ProgramState`：`cc.backend.ProgramState` 对象或值。
----@param uniformName string 参数 `uniformName`，类型为 `string`。
----@param autoBinding string 参数 `autoBinding`，类型为 `string`。
----@return cc.backend.ProgramState `cc.backend.ProgramState` 对象或值。
+--- - `cc.backend.ProgramState`：当前程序状态对象。
+---@param uniformName string uniform 参数名称。
+---@param autoBinding string 引擎自动绑定标识字符串。
+---@return cc.backend.ProgramState 当前程序状态对象。
 function ProgramState:setParameterAutoBinding(uniformName, autoBinding) end
 
---- 获取 `ccb.ProgramState:getProgram` 对应的值。
+--- 获取该状态关联的 GPU 程序。
 ---
 --- 返回说明：
---- - `cc.backend.Program`：获取到的 `cc.backend.Program` 对象或值。
----@return cc.backend.Program 获取到的 `cc.backend.Program` 对象或值。
+--- - `cc.backend.Program`：关联的后端 GPU 程序对象。
+---@return cc.backend.Program 关联的后端 GPU 程序对象。
 function ProgramState:getProgram() end
 
---- 获取 `ccb.ProgramState:getAttributeLocation` 对应的值。
+--- 查询顶点属性在关联程序中的位置。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
+--- - `integer`：顶点属性位置索引。
 ---@overload fun(name: integer): integer
 ---@overload fun(name: string): integer
 ---@param name string 名称或标识。类型为 `string`。
----@return integer 获取到的 整数值。
+---@return integer 顶点属性位置索引。
 function ProgramState:getAttributeLocation(name) end
 
---- 调用 `ccb.ProgramState:ProgramState`。
+--- 使用指定 GPU 程序初始化程序状态。
 ---
 --- 参数说明：
---- - `program`：参数 `program`，类型为 `cc.backend.Program`。
+--- - `program`：要关联的后端 GPU 程序。
 ---
 --- 返回说明：
---- - `cc.backend.ProgramState`：`cc.backend.ProgramState` 对象或值。
----@param program cc.backend.Program 参数 `program`，类型为 `cc.backend.Program`。
----@return cc.backend.ProgramState `cc.backend.ProgramState` 对象或值。
+--- - `cc.backend.ProgramState`：初始化后的程序状态对象。
+---@param program cc.backend.Program 要关联的后端 GPU 程序。
+---@return cc.backend.ProgramState 初始化后的程序状态对象。
 function ProgramState:ProgramState(program) end

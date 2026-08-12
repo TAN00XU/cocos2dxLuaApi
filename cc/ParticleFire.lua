@@ -8,39 +8,39 @@
 local ParticleFire = {}
 cc.ParticleFire = ParticleFire
 
---- 创建 `cc.ParticleFire:create` 对应的对象。
+--- 创建默认火焰粒子系统。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ParticleFire:create() end
 
---- 创建 `cc.ParticleFire:createWithTotalParticles` 对应的对象。
+--- 创建指定粒子总数的火焰粒子系统。
 ---
 --- 参数说明：
---- - `numberOfParticles`：参数 `numberOfParticles`，类型为 `integer`。
+--- - `numberOfParticles`：粒子总数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param numberOfParticles integer 参数 `numberOfParticles`，类型为 `integer`。
+---@param numberOfParticles integer 粒子总数。
 ---@return self 当前对象，便于链式调用。
 function ParticleFire:createWithTotalParticles(numberOfParticles) end
 
---- 初始化 `cc.ParticleFire:init` 对应的对象或状态。
+--- 初始化火焰粒子系统。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ParticleFire:init() end
 
---- 初始化 `cc.ParticleFire:initWithTotalParticles` 对应的对象或状态。
+--- 使用粒子总数初始化火焰粒子系统。
 ---
 --- 参数说明：
---- - `numberOfParticles`：参数 `numberOfParticles`，类型为 `integer`。
+--- - `numberOfParticles`：粒子总数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param numberOfParticles integer 参数 `numberOfParticles`，类型为 `integer`。
+---@param numberOfParticles integer 粒子总数。
 ---@return boolean 初始化是否成功。
 function ParticleFire:initWithTotalParticles(numberOfParticles) end
 

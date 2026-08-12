@@ -7,22 +7,22 @@
 ---@class ccs.SpriteDisplayData : ccs.DisplayData
 local SpriteDisplayData = {}
 ccs.SpriteDisplayData = SpriteDisplayData
---- 创建 SpriteDisplayData 对应的对象。
+--- 构造精灵显示数据对象。
 ---@return ccs.SpriteDisplayData
 function SpriteDisplayData:new() end
 
---- 调用 `ccs.SpriteDisplayData:copy`。
+--- 从指定显示数据复制精灵显示属性。
 ---
 --- 参数说明：
---- - `displayData`：参数 `displayData`，类型为 `ccs.DisplayData`。
+--- - `displayData`：要复制的显示数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param displayData ccs.DisplayData 参数 `displayData`，类型为 `ccs.DisplayData`。
+---@param displayData ccs.DisplayData 要复制的显示数据。
 ---@return self 当前对象，便于链式调用。
 function SpriteDisplayData:copy(displayData) end
 
---- 创建 `ccs.SpriteDisplayData:create` 对应的对象。
+--- 创建精灵显示数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,25 +8,25 @@
 local EventTouch = {}
 cc.EventTouch = EventTouch
 
---- 获取 `cc.EventTouch:getEventCode` 对应的值。
+--- 获取触摸事件类型代码。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：触摸开始、移动、结束或取消等事件代码。
+---@return integer 触摸事件类型代码。
 function EventTouch:getEventCode() end
 
---- 设置 `cc.EventTouch:setEventCode` 对应的值。
+--- 设置触摸事件类型代码。
 ---
 --- 参数说明：
---- - `eventCode`：参数 `eventCode`，类型为 `integer`。
+--- - `eventCode`：触摸开始、移动、结束或取消等事件代码。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param eventCode integer 参数 `eventCode`，类型为 `integer`。
+---@param eventCode integer 触摸事件类型代码。
 ---@return self 当前对象，便于链式调用。
 function EventTouch:setEventCode(eventCode) end
 
---- 调用 `cc.EventTouch:EventTouch`。
+--- 初始化触摸事件对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

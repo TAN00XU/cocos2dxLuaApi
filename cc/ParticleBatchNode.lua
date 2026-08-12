@@ -8,7 +8,7 @@
 local ParticleBatchNode = {}
 cc.ParticleBatchNode = ParticleBatchNode
 
---- 设置 `cc.ParticleBatchNode:setTexture` 对应的值。
+--- 设置批次中所有粒子系统共享的纹理。
 ---
 --- 参数说明：
 --- - `texture`：纹理对象。类型为 `cc.Texture2D`。
@@ -19,154 +19,154 @@ cc.ParticleBatchNode = ParticleBatchNode
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:setTexture(texture) end
 
---- 初始化 `cc.ParticleBatchNode:initWithTexture` 对应的对象或状态。
+--- 使用共享纹理和初始图集容量初始化粒子批次节点。
 ---
 --- 参数说明：
---- - `tex`：参数 `tex`，类型为 `cc.Texture2D`。
---- - `capacity`：参数 `capacity`，类型为 `integer`。
+--- - `tex`：所有子粒子系统共享的纹理。
+--- - `capacity`：纹理图集初始可容纳的粒子四边形数量。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param tex cc.Texture2D 参数 `tex`，类型为 `cc.Texture2D`。
----@param capacity integer 参数 `capacity`，类型为 `integer`。
+---@param tex cc.Texture2D 共享纹理。
+---@param capacity integer 初始粒子容量。
 ---@return boolean 初始化是否成功。
 function ParticleBatchNode:initWithTexture(tex, capacity) end
 
---- 调用 `cc.ParticleBatchNode:disableParticle`。
+--- 将指定图集索引处的粒子四边形顶点置零以停止绘制。
 ---
 --- 参数说明：
---- - `particleIndex`：参数 `particleIndex`，类型为 `integer`。
+--- - `particleIndex`：粒子在共享纹理图集中的索引。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param particleIndex integer 参数 `particleIndex`，类型为 `integer`。
+---@param particleIndex integer 粒子图集索引。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:disableParticle(particleIndex) end
 
---- 获取 `cc.ParticleBatchNode:getTexture` 对应的值。
+--- 获取批次共享纹理。
 ---
 --- 返回说明：
---- - `cc.Texture2D`：获取到的 `cc.Texture2D` 对象或值。
----@return cc.Texture2D 获取到的 `cc.Texture2D` 对象或值。
+--- - `cc.Texture2D`：共享纹理。
+---@return cc.Texture2D 共享纹理。
 function ParticleBatchNode:getTexture() end
 
---- 设置 `cc.ParticleBatchNode:setTextureAtlas` 对应的值。
+--- 设置保存全部粒子四边形的共享纹理图集。
 ---
 --- 参数说明：
---- - `atlas`：参数 `atlas`，类型为 `cc.TextureAtlas`。
+--- - `atlas`：共享纹理图集。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param atlas cc.TextureAtlas 参数 `atlas`，类型为 `cc.TextureAtlas`。
+---@param atlas cc.TextureAtlas 共享纹理图集。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:setTextureAtlas(atlas) end
 
---- 初始化 `cc.ParticleBatchNode:initWithFile` 对应的对象或状态。
+--- 使用纹理文件和初始容量初始化粒子批次节点。
 ---
 --- 参数说明：
---- - `fileImage`：参数 `fileImage`，类型为 `string`。
---- - `capacity`：参数 `capacity`，类型为 `integer`。
+--- - `fileImage`：共享纹理文件路径。
+--- - `capacity`：纹理图集初始可容纳的粒子数量。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param fileImage string 参数 `fileImage`，类型为 `string`。
----@param capacity integer 参数 `capacity`，类型为 `integer`。
+---@param fileImage string 共享纹理文件路径。
+---@param capacity integer 初始粒子容量。
 ---@return boolean 初始化是否成功。
 function ParticleBatchNode:initWithFile(fileImage, capacity) end
 
---- 设置 `cc.ParticleBatchNode:setBlendFunc` 对应的值。
+--- 设置批次中所有粒子系统共享的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：所有子粒子系统共享的混合函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 共享混合函数。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:setBlendFunc(blendFunc) end
 
---- 移除 `cc.ParticleBatchNode:removeAllChildrenWithCleanup` 对应的对象或数据。
+--- 移除全部子粒子系统及其图集数据，并按需清理动作和调度器。
 ---
 --- 参数说明：
---- - `doCleanup`：参数 `doCleanup`，类型为 `boolean`。
+--- - `doCleanup`：是否清理子粒子系统的动作和调度器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param doCleanup boolean 参数 `doCleanup`，类型为 `boolean`。
+---@param doCleanup boolean 是否清理子粒子系统。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:removeAllChildrenWithCleanup(doCleanup) end
 
---- 获取 `cc.ParticleBatchNode:getTextureAtlas` 对应的值。
+--- 获取保存全部粒子四边形的共享纹理图集。
 ---
 --- 返回说明：
---- - `cc.TextureAtlas`：获取到的 `cc.TextureAtlas` 对象或值。
----@return cc.TextureAtlas 获取到的 `cc.TextureAtlas` 对象或值。
+--- - `cc.TextureAtlas`：共享纹理图集。
+---@return cc.TextureAtlas 共享纹理图集。
 function ParticleBatchNode:getTextureAtlas() end
 
---- 获取 `cc.ParticleBatchNode:getBlendFunc` 对应的值。
+--- 获取批次共享混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：共享混合函数。
+---@return cc.BlendFunc 共享混合函数。
 function ParticleBatchNode:getBlendFunc() end
 
---- 调用 `cc.ParticleBatchNode:insertChild`。
+--- 将粒子系统插入子节点数组，并在共享图集中为其粒子预留位置。
 ---
 --- 参数说明：
---- - `system`：参数 `system`，类型为 `cc.ParticleSystem`。
+--- - `system`：要插入的粒子系统。
 --- - `index`：索引值。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param system cc.ParticleSystem 参数 `system`，类型为 `cc.ParticleSystem`。
+---@param system cc.ParticleSystem 要插入的粒子系统。
 ---@param index integer 索引值。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:insertChild(system, index) end
 
---- 移除 `cc.ParticleBatchNode:removeChildAtIndex` 对应的对象或数据。
+--- 按子节点索引移除粒子系统及其共享图集数据。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
---- - `doCleanup`：参数 `doCleanup`，类型为 `boolean`。
+--- - `doCleanup`：是否清理粒子系统的动作和调度器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param index integer 索引值。类型为 `integer`。
----@param doCleanup boolean 参数 `doCleanup`，类型为 `boolean`。
+---@param doCleanup boolean 是否清理粒子系统。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:removeChildAtIndex(index, doCleanup) end
 
---- 创建 `cc.ParticleBatchNode:create` 对应的对象。
+--- 使用共享纹理文件和初始容量创建粒子批次节点。
 ---
 --- 参数说明：
---- - `fileImage`：参数 `fileImage`，类型为 `string`。
---- - `capacity`：参数 `capacity`，类型为 `integer`。
+--- - `fileImage`：共享纹理文件路径。
+--- - `capacity`：初始粒子容量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param fileImage string 参数 `fileImage`，类型为 `string`。
----@param capacity integer 参数 `capacity`，类型为 `integer`。
+---@param fileImage string 共享纹理文件路径。
+---@param capacity integer 初始粒子容量。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:create(fileImage, capacity) end
 
---- 创建 `cc.ParticleBatchNode:createWithTexture` 对应的对象。
+--- 使用共享纹理和初始容量创建粒子批次节点。
 ---
 --- 参数说明：
---- - `tex`：参数 `tex`，类型为 `cc.Texture2D`。
---- - `capacity`：参数 `capacity`，类型为 `integer`。
+--- - `tex`：共享纹理。
+--- - `capacity`：初始粒子容量。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param tex cc.Texture2D 参数 `tex`，类型为 `cc.Texture2D`。
----@param capacity integer 参数 `capacity`，类型为 `integer`。
+---@param tex cc.Texture2D 共享纹理。
+---@param capacity integer 初始粒子容量。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:createWithTexture(tex, capacity) end
 
---- 添加 `cc.ParticleBatchNode:addChild` 对应的对象或数据。
+--- 添加使用相同纹理和混合函数的粒子系统子节点。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
---- - `zOrder`：参数 `zOrder`，类型为 `integer`。
+--- - `zOrder`：粒子系统的局部 Z 顺序。
 --- - `tag`：标签值。类型为 `integer`。
 ---
 --- 返回说明：
@@ -174,55 +174,55 @@ function ParticleBatchNode:createWithTexture(tex, capacity) end
 ---@overload fun(child: cc.Node, zOrder: integer, tag: string): self
 ---@overload fun(child: cc.Node, zOrder: integer, tag: integer): self
 ---@param child cc.Node 子节点对象。类型为 `cc.Node`。
----@param zOrder integer 参数 `zOrder`，类型为 `integer`。
+---@param zOrder integer 粒子系统的局部 Z 顺序。
 ---@param tag integer 标签值。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:addChild(child, zOrder, tag) end
 
---- 调用 `cc.ParticleBatchNode:draw`。
+--- 使用一次批次绘制提交共享图集中的全部粒子四边形。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `transform`：参数 `transform`，类型为 `mat4_table`。
+--- - `renderer`：用于提交批次绘制命令的渲染器。
+--- - `transform`：批次节点的变换矩阵。
 --- - `flags`：标志位。类型为 `integer`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param transform mat4_table 参数 `transform`，类型为 `mat4_table`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param transform mat4_table 批次节点变换矩阵。
 ---@param flags integer 标志位。类型为 `integer`。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:draw(renderer, transform, flags) end
 
---- 调用 `cc.ParticleBatchNode:visit`。
+--- 更新子粒子系统并提交批次绘制。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
---- - `parentTransform`：参数 `parentTransform`，类型为 `mat4_table`。
---- - `parentFlags`：参数 `parentFlags`，类型为 `integer`。
+--- - `renderer`：用于提交绘制命令的渲染器。
+--- - `parentTransform`：父节点的世界变换矩阵。
+--- - `parentFlags`：父节点传入的变换或渲染脏标志。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
----@param parentTransform mat4_table 参数 `parentTransform`，类型为 `mat4_table`。
----@param parentFlags integer 参数 `parentFlags`，类型为 `integer`。
+---@param renderer cc.Renderer 用于提交绘制命令的渲染器。
+---@param parentTransform mat4_table 父节点的世界变换矩阵。
+---@param parentFlags integer 父节点传入的脏标志。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:visit(renderer, parentTransform, parentFlags) end
 
---- 调用 `cc.ParticleBatchNode:reorderChild`。
+--- 修改子粒子系统 Z 顺序并重新排列其图集片段。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
---- - `zOrder`：参数 `zOrder`，类型为 `integer`。
+--- - `zOrder`：新的局部 Z 顺序。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param child cc.Node 子节点对象。类型为 `cc.Node`。
----@param zOrder integer 参数 `zOrder`，类型为 `integer`。
+---@param zOrder integer 新的局部 Z 顺序。
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:reorderChild(child, zOrder) end
 
---- 移除 `cc.ParticleBatchNode:removeChild` 对应的对象或数据。
+--- 移除指定子粒子系统及其共享图集数据。
 ---
 --- 参数说明：
 --- - `child`：子节点对象。类型为 `cc.Node`。
@@ -235,7 +235,7 @@ function ParticleBatchNode:reorderChild(child, zOrder) end
 ---@return self 当前对象，便于链式调用。
 function ParticleBatchNode:removeChild(child, cleanup) end
 
---- 调用 `cc.ParticleBatchNode:ParticleBatchNode`。
+--- 构造粒子批次节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

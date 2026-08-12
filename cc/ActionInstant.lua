@@ -8,7 +8,7 @@
 local ActionInstant = {}
 cc.ActionInstant = ActionInstant
 
---- 调用 `cc.ActionInstant:startWithTarget`。
+--- 将瞬时动作绑定到目标节点。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -19,21 +19,21 @@ cc.ActionInstant = ActionInstant
 ---@return self 当前对象，便于链式调用。
 function ActionInstant:startWithTarget(target) end
 
---- 调用 `cc.ActionInstant:reverse`。
+--- 创建瞬时动作的逆向副本。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionInstant:reverse() end
 
---- 调用 `cc.ActionInstant:clone`。
+--- 克隆瞬时动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionInstant:clone() end
 
---- 更新 `cc.ActionInstant:update` 对应的状态。
+--- 执行瞬时动作的更新逻辑。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。
@@ -55,9 +55,9 @@ function ActionInstant:update(time) end
 ---@return self 当前对象，便于链式调用。
 function ActionInstant:step(dt) end
 
---- 判断 `cc.ActionInstant:isDone` 对应状态是否成立。
+--- 判断瞬时动作是否已完成。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：瞬时动作是否已完成。
+---@return boolean 瞬时动作是否已完成。
 function ActionInstant:isDone() end

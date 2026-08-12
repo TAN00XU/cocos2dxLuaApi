@@ -8,33 +8,33 @@
 local SkewTo = {}
 cc.SkewTo = SkewTo
 
---- 初始化 `cc.SkewTo:initWithDuration` 对应的对象或状态。
+--- 使用持续时间和目标倾斜角初始化动作。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `sx`：参数 `sx`，类型为 `number`。
---- - `sy`：参数 `sy`，类型为 `number`。
+--- - `t`：动作持续时间，单位为秒。
+--- - `sx`：目标 X 轴倾斜角，单位为度。
+--- - `sy`：目标 Y 轴倾斜角，单位为度。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param t number 参数 `t`，类型为 `number`。
----@param sx number 参数 `sx`，类型为 `number`。
----@param sy number 参数 `sy`，类型为 `number`。
+---@param t number 动作持续时间，单位为秒。
+---@param sx number 目标 X 轴倾斜角，单位为度。
+---@param sy number 目标 Y 轴倾斜角，单位为度。
 ---@return boolean 初始化是否成功。
 function SkewTo:initWithDuration(t, sx, sy) end
 
---- 创建 `cc.SkewTo:create` 对应的对象。
+--- 创建倾斜目标节点到指定角度的动作。
 ---
 --- 参数说明：
---- - `t`：参数 `t`，类型为 `number`。
---- - `sx`：参数 `sx`，类型为 `number`。
---- - `sy`：参数 `sy`，类型为 `number`。
+--- - `t`：动作持续时间，单位为秒。
+--- - `sx`：目标 X 轴倾斜角，单位为度。
+--- - `sy`：目标 Y 轴倾斜角，单位为度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param t number 参数 `t`，类型为 `number`。
----@param sx number 参数 `sx`，类型为 `number`。
----@param sy number 参数 `sy`，类型为 `number`。
+---@param t number 动作持续时间，单位为秒。
+---@param sx number 目标 X 轴倾斜角，单位为度。
+---@param sy number 目标 Y 轴倾斜角，单位为度。
 ---@return self 当前对象，便于链式调用。
 function SkewTo:create(t, sx, sy) end
 
@@ -63,7 +63,7 @@ function SkewTo:clone() end
 ---@return self 当前对象，便于链式调用。
 function SkewTo:reverse() end
 
---- 更新 `cc.SkewTo:update` 对应的状态。
+--- 按归一化进度插值到目标倾斜角。
 ---
 --- 参数说明：
 --- - `time`：时间值。类型为 `number`。

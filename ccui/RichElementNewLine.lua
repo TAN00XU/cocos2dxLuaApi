@@ -8,7 +8,7 @@
 local RichElementNewLine = {}
 ccui.RichElementNewLine = RichElementNewLine
 
---- 创建 `ccui.RichElementNewLine:create` 对应的对象。
+--- 创建用于在富文本中换行的元素。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -23,7 +23,7 @@ ccui.RichElementNewLine = RichElementNewLine
 ---@return self 当前对象，便于链式调用。
 function RichElementNewLine:create(tag, color, opacity) end
 
---- 调用 `ccui.RichElementNewLine:RichElementNewLine`。
+--- 构造富文本换行元素。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

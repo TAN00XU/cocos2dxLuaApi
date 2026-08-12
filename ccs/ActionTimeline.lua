@@ -8,80 +8,80 @@
 local ActionTimeline = {}
 ccs.ActionTimeline = ActionTimeline
 
---- 调用 `ccs.ActionTimeline:clearFrameEndCallFuncs`。
+--- 清除全部关键帧结束回调。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:clearFrameEndCallFuncs() end
 
---- 设置 `ccs.ActionTimeline:setAnimationEndCallFunc` 对应的值。
+--- 设置指定动画片段播放结束时的回调。
 ---
 --- 参数说明：
 --- - `animationName`：动画名称。类型为 `string`。
---- - `func`：参数 `func`，类型为 `fun(...): any`。
+--- - `func`：动画片段结束时调用的函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param animationName string 动画名称。类型为 `string`。
----@param func fun(...): any 参数 `func`，类型为 `fun(...): any`。
+---@param func fun(...): any 动画片段结束时调用的函数。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:setAnimationEndCallFunc(animationName, func) end
 
---- 添加 `ccs.ActionTimeline:addTimeline` 对应的对象或数据。
+--- 添加一条关键帧时间轴。
 ---
 --- 参数说明：
---- - `timeline`：参数 `timeline`，类型为 `ccs.Timeline`。
+--- - `timeline`：要添加的时间轴。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param timeline ccs.Timeline 参数 `timeline`，类型为 `ccs.Timeline`。
+---@param timeline ccs.Timeline 要添加的时间轴。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:addTimeline(timeline) end
 
---- 获取 `ccs.ActionTimeline:getCurrentFrame` 对应的值。
+--- 获取当前播放帧索引。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：当前帧索引。
+---@return integer 当前帧索引。
 function ActionTimeline:getCurrentFrame() end
 
---- 获取 `ccs.ActionTimeline:getStartFrame` 对应的值。
+--- 获取当前播放区间的起始帧。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：起始帧索引。
+---@return integer 起始帧索引。
 function ActionTimeline:getStartFrame() end
 
---- 暂停 `ccs.ActionTimeline:pause` 对应的流程。
+--- 暂停动作时间轴播放。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:pause() end
 
---- 调用 `ccs.ActionTimeline:start`。
+--- 从当前状态开始播放动作时间轴。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:start() end
 
---- 初始化 `ccs.ActionTimeline:init` 对应的对象或状态。
+--- 初始化动作时间轴。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function ActionTimeline:init() end
 
---- 移除 `ccs.ActionTimeline:removeTimeline` 对应的对象或数据。
+--- 移除指定关键帧时间轴。
 ---
 --- 参数说明：
---- - `timeline`：参数 `timeline`，类型为 `ccs.Timeline`。
+--- - `timeline`：要从动作中移除的节点时间轴。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param timeline ccs.Timeline 参数 `timeline`，类型为 `ccs.Timeline`。
+---@param timeline ccs.Timeline 要移除的时间轴。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:removeTimeline(timeline) end
 
@@ -92,71 +92,71 @@ function ActionTimeline:removeTimeline(timeline) end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:clearFrameEventCallFunc() end
 
---- 设置 `ccs.ActionTimeline:setLastFrameCallFunc` 对应的值。
+--- 设置动作播放到最后一帧时的回调。
 ---
 --- 参数说明：
---- - `listener`：参数 `listener`，类型为 `fun(...): any`。
+--- - `listener`：最后一帧到达时调用的函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param listener fun(...): any 参数 `listener`，类型为 `fun(...): any`。
+---@param listener fun(...): any 最后一帧到达时调用的函数。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:setLastFrameCallFunc(listener) end
 
---- 获取 `ccs.ActionTimeline:getTimelines` 对应的值。
+--- 获取动作时间轴包含的全部时间轴。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：时间轴对象列表。
+---@return array_table 时间轴对象列表。
 function ActionTimeline:getTimelines() end
 
---- 调用 `ccs.ActionTimeline:play`。
+--- 按名称播放动画片段。
 ---
 --- 参数说明：
 --- - `animationName`：动画名称。类型为 `string`。
---- - `loop`：参数 `loop`，类型为 `boolean`。
+--- - `loop`：是否循环播放。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param animationName string 动画名称。类型为 `string`。
----@param loop boolean 参数 `loop`，类型为 `boolean`。
+---@param loop boolean 是否循环播放。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:play(animationName, loop) end
 
---- 获取 `ccs.ActionTimeline:getAnimationInfo` 对应的值。
+--- 获取指定名称的动画片段信息。
 ---
 --- 参数说明：
 --- - `animationName`：动画名称。类型为 `string`。
 ---
 --- 返回说明：
---- - `ccs.AnimationInfo`：获取到的 `ccs.AnimationInfo` 对象或值。
+--- - `ccs.AnimationInfo`：动画片段的起止帧和循环信息。
 ---@param animationName string 动画名称。类型为 `string`。
----@return ccs.AnimationInfo 获取到的 `ccs.AnimationInfo` 对象或值。
+---@return ccs.AnimationInfo 动画片段的起止帧和循环信息。
 function ActionTimeline:getAnimationInfo(animationName) end
 
---- 恢复 `ccs.ActionTimeline:resume` 对应的流程。
+--- 恢复已暂停的动作时间轴播放。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:resume() end
 
---- 添加 `ccs.ActionTimeline:addFrameEndCallFunc` 对应的对象或数据。
+--- 为指定帧注册结束回调。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
---- - `funcKey`：参数 `funcKey`，类型为 `string`。
---- - `func`：参数 `func`，类型为 `fun(...): any`。
+--- - `funcKey`：回调的唯一键名。
+--- - `func`：该帧到达时调用的函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param frameIndex integer 帧索引。类型为 `integer`。
----@param funcKey string 参数 `funcKey`，类型为 `string`。
----@param func fun(...): any 参数 `func`，类型为 `fun(...): any`。
+---@param funcKey string 回调的唯一键名。
+---@param func fun(...): any 该帧到达时调用的函数。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:addFrameEndCallFunc(frameIndex, funcKey, func) end
 
---- 移除 `ccs.ActionTimeline:removeAnimationInfo` 对应的对象或数据。
+--- 移除指定名称的动画片段信息。
 ---
 --- 参数说明：
 --- - `animationName`：动画名称。类型为 `string`。
@@ -167,50 +167,50 @@ function ActionTimeline:addFrameEndCallFunc(frameIndex, funcKey, func) end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:removeAnimationInfo(animationName) end
 
---- 获取 `ccs.ActionTimeline:getTimeSpeed` 对应的值。
+--- 获取动作时间轴的播放速度倍率。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：播放速度倍率，1 表示正常速度。
+---@return number 播放速度倍率，1 表示正常速度。
 function ActionTimeline:getTimeSpeed() end
 
---- 添加 `ccs.ActionTimeline:addAnimationInfo` 对应的对象或数据。
+--- 添加一个命名动画片段信息。
 ---
 --- 参数说明：
---- - `animationInfo`：参数 `animationInfo`，类型为 `ccs.AnimationInfo`。
+--- - `animationInfo`：包含名称、起始帧、结束帧和循环状态的片段信息。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param animationInfo ccs.AnimationInfo 参数 `animationInfo`，类型为 `ccs.AnimationInfo`。
+---@param animationInfo ccs.AnimationInfo 包含名称、起止帧和循环状态的片段信息。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:addAnimationInfo(animationInfo) end
 
---- 获取 `ccs.ActionTimeline:getDuration` 对应的值。
+--- 获取动作时间轴总帧数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：动作持续的帧数。
+---@return integer 动作持续的帧数。
 function ActionTimeline:getDuration() end
 
---- 调用 `ccs.ActionTimeline:gotoFrameAndPause`。
+--- 跳转到指定帧并暂停播放。
 ---
 --- 参数说明：
---- - `startIndex`：参数 `startIndex`，类型为 `integer`。
+--- - `startIndex`：要跳转到的帧索引。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param startIndex integer 参数 `startIndex`，类型为 `integer`。
+---@param startIndex integer 要跳转到的帧索引。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:gotoFrameAndPause(startIndex) end
 
---- 判断 `ccs.ActionTimeline:isPlaying` 对应状态是否成立。
+--- 判断动作时间轴当前是否正在播放。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：正在播放时为 true。
+---@return boolean 正在播放时为 true。
 function ActionTimeline:isPlaying() end
 
---- 移除 `ccs.ActionTimeline:removeFrameEndCallFuncs` 对应的对象或数据。
+--- 移除指定帧注册的全部结束回调。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
@@ -221,13 +221,13 @@ function ActionTimeline:isPlaying() end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:removeFrameEndCallFuncs(frameIndex) end
 
---- 调用 `ccs.ActionTimeline:gotoFrameAndPlay`。
+--- 从指定帧开始，在给定区间内播放。
 ---
 --- 参数说明：
---- - `startIndex`：参数 `startIndex`，类型为 `integer`。
---- - `endIndex`：参数 `endIndex`，类型为 `integer`。
---- - `currentFrameIndex`：参数 `currentFrameIndex`，类型为 `integer`。
---- - `loop`：参数 `loop`，类型为 `boolean`。
+--- - `startIndex`：播放区间起始帧。
+--- - `endIndex`：播放区间结束帧。
+--- - `currentFrameIndex`：开始播放时的当前帧。
+--- - `loop`：是否循环播放。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -235,39 +235,39 @@ function ActionTimeline:removeFrameEndCallFuncs(frameIndex) end
 ---@overload fun(startIndex: integer): self
 ---@overload fun(startIndex: integer, endIndex: integer, currentFrameIndex: boolean): self
 ---@overload fun(startIndex: integer, endIndex: integer, currentFrameIndex: integer, loop: boolean): self
----@param startIndex? integer 参数 `startIndex`，类型为 `integer`。
----@param endIndex? integer 参数 `endIndex`，类型为 `integer`。
----@param currentFrameIndex? integer 参数 `currentFrameIndex`，类型为 `integer`。
----@param loop? boolean 参数 `loop`，类型为 `boolean`。
+---@param startIndex? integer 播放区间起始帧。
+---@param endIndex? integer 播放区间结束帧。
+---@param currentFrameIndex? integer 开始播放时的当前帧。
+---@param loop? boolean 是否循环播放。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:gotoFrameAndPlay(startIndex, endIndex, currentFrameIndex, loop) end
 
---- 调用 `ccs.ActionTimeline:IsAnimationInfoExists`。
+--- 判断指定名称的动画片段信息是否存在。
 ---
 --- 参数说明：
 --- - `animationName`：动画名称。类型为 `string`。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
+--- - `boolean`：存在时为 true。
 ---@param animationName string 动画名称。类型为 `string`。
 ---@return boolean 布尔值。
 function ActionTimeline:IsAnimationInfoExists(animationName) end
 
---- 获取 `ccs.ActionTimeline:getEndFrame` 对应的值。
+--- 获取当前播放区间的结束帧。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：结束帧索引。
+---@return integer 结束帧索引。
 function ActionTimeline:getEndFrame() end
 
---- 设置 `ccs.ActionTimeline:setTimeSpeed` 对应的值。
+--- 设置动作时间轴的播放速度倍率。
 ---
 --- 参数说明：
---- - `speed`：参数 `speed`，类型为 `number`。
+--- - `speed`：播放速度倍率，1 表示正常速度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param speed number 参数 `speed`，类型为 `number`。
+---@param speed number 播放速度倍率，1 表示正常速度。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:setTimeSpeed(speed) end
 
@@ -278,7 +278,7 @@ function ActionTimeline:setTimeSpeed(speed) end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:clearLastFrameCallFunc() end
 
---- 设置 `ccs.ActionTimeline:setDuration` 对应的值。
+--- 设置动作时间轴总帧数。
 ---
 --- 参数说明：
 --- - `duration`：持续时间。类型为 `integer`。
@@ -289,7 +289,7 @@ function ActionTimeline:clearLastFrameCallFunc() end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:setDuration(duration) end
 
---- 设置 `ccs.ActionTimeline:setCurrentFrame` 对应的值。
+--- 设置当前播放帧索引。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
@@ -300,27 +300,27 @@ function ActionTimeline:setDuration(duration) end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:setCurrentFrame(frameIndex) end
 
---- 移除 `ccs.ActionTimeline:removeFrameEndCallFunc` 对应的对象或数据。
+--- 移除指定帧上具有指定键名的结束回调。
 ---
 --- 参数说明：
 --- - `frameIndex`：帧索引。类型为 `integer`。
---- - `funcKey`：参数 `funcKey`，类型为 `string`。
+--- - `funcKey`：要移除的回调键名。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param frameIndex integer 帧索引。类型为 `integer`。
----@param funcKey string 参数 `funcKey`，类型为 `string`。
+---@param funcKey string 要移除的回调键名。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:removeFrameEndCallFunc(frameIndex, funcKey) end
 
---- 创建 `ccs.ActionTimeline:create` 对应的对象。
+--- 创建动作时间轴对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:create() end
 
---- 调用 `ccs.ActionTimeline:startWithTarget`。
+--- 设置动作目标节点并开始动作。
 ---
 --- 参数说明：
 --- - `target`：目标对象。类型为 `cc.Node`。
@@ -331,31 +331,31 @@ function ActionTimeline:create() end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:startWithTarget(target) end
 
---- 调用 `ccs.ActionTimeline:reverse`。
+--- 创建当前动作的反向动作对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:reverse() end
 
---- 调用 `ccs.ActionTimeline:clone`。
+--- 克隆动作时间轴及其时间轴数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:clone() end
 
---- 停止 `ccs.ActionTimeline:stop` 对应的流程。
+--- 停止动作时间轴播放。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:stop() end
 
---- 调用 `ccs.ActionTimeline:step`。
+--- 按时间增量推进动作时间轴。
 ---
 --- 参数说明：
---- - `delta`：变化量。类型为 `number`。
+--- - `delta`：经过的时间增量，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -363,14 +363,14 @@ function ActionTimeline:stop() end
 ---@return self 当前对象，便于链式调用。
 function ActionTimeline:step(delta) end
 
---- 判断 `ccs.ActionTimeline:isDone` 对应状态是否成立。
+--- 判断动作时间轴是否已播放完成。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：播放完成时为 true。
+---@return boolean 播放完成时为 true。
 function ActionTimeline:isDone() end
 
---- 调用 `ccs.ActionTimeline:ActionTimeline`。
+--- 构造动作时间轴对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

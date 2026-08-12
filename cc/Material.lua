@@ -8,7 +8,7 @@
 local Material = {}
 cc.Material = Material
 
---- 调用 `cc.Material:clone`。
+--- 克隆材质及其全部渲染技术和 Pass 状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -27,14 +27,14 @@ function Material:clone() end
 ---@param indexCount any 参数 `indexCount`，原始类型信息缺失。
 ---@param modelView any 参数 `modelView`，原始类型信息缺失。
 function Material:draw(meshCommand, globalZOrder, vertexBuffer, indexBuffer, primitive, indexFormat, indexCount, modelView) end
---- 获取 `cc.Material:getRenderState` 对应的值。
+--- 获取材质当前渲染状态。
 ---
 --- 返回说明：
---- - `cc.RenderState`：获取到的 `cc.RenderState` 对象或值。
----@return cc.RenderState 获取到的 `cc.RenderState` 对象或值。
+--- - `cc.RenderState`：当前渲染状态。
+---@return cc.RenderState 当前渲染状态。
 function Material:getRenderState() end
 
---- 设置 `cc.Material:setName` 对应的值。
+--- 设置材质名称。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -45,79 +45,79 @@ function Material:getRenderState() end
 ---@return self 当前对象，便于链式调用。
 function Material:setName(name) end
 
---- 获取 `cc.Material:getTechniqueByIndex` 对应的值。
+--- 获取指定索引处的渲染技术。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `cc.Technique`：获取到的 `cc.Technique` 对象或值。
+--- - `cc.Technique`：指定索引处的渲染技术。
 ---@param index integer 索引值。类型为 `integer`。
----@return cc.Technique 获取到的 `cc.Technique` 对象或值。
+---@return cc.Technique 指定索引处的渲染技术。
 function Material:getTechniqueByIndex(index) end
 
---- 获取 `cc.Material:getName` 对应的值。
+--- 获取材质名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：材质名称。
+---@return string 材质名称。
 function Material:getName() end
 
---- 获取 `cc.Material:getTechniques` 对应的值。
+--- 获取材质包含的全部渲染技术。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：渲染技术数组。
+---@return array_table 渲染技术数组。
 function Material:getTechniques() end
 
---- 获取 `cc.Material:getTechniqueCount` 对应的值。
+--- 获取材质包含的渲染技术数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：渲染技术数量。
+---@return integer 渲染技术数量。
 function Material:getTechniqueCount() end
 
---- 设置 `cc.Material:setTechnique` 对应的值。
+--- 按名称选择材质当前使用的渲染技术。
 ---
 --- 参数说明：
---- - `techniqueName`：参数 `techniqueName`，类型为 `string`。
+--- - `techniqueName`：要设为当前技术的名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param techniqueName string 参数 `techniqueName`，类型为 `string`。
+---@param techniqueName string 渲染技术名称。
 ---@return self 当前对象，便于链式调用。
 function Material:setTechnique(techniqueName) end
 
---- 获取 `cc.Material:getTechniqueByName` 对应的值。
+--- 按名称获取渲染技术。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
 ---
 --- 返回说明：
---- - `cc.Technique`：获取到的 `cc.Technique` 对象或值。
+--- - `cc.Technique`：匹配的渲染技术。
 ---@param name string 名称或标识。类型为 `string`。
----@return cc.Technique 获取到的 `cc.Technique` 对象或值。
+---@return cc.Technique 匹配的渲染技术。
 function Material:getTechniqueByName(name) end
 
---- 添加 `cc.Material:addTechnique` 对应的对象或数据。
+--- 向材质添加渲染技术。
 ---
 --- 参数说明：
---- - `technique`：参数 `technique`，类型为 `cc.Technique`。
+--- - `technique`：要添加的渲染技术。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param technique cc.Technique 参数 `technique`，类型为 `cc.Technique`。
+---@param technique cc.Technique 要添加的渲染技术。
 ---@return self 当前对象，便于链式调用。
 function Material:addTechnique(technique) end
 
---- 获取 `cc.Material:getTechnique` 对应的值。
+--- 获取材质当前选中的渲染技术。
 ---
 --- 返回说明：
---- - `cc.Technique`：获取到的 `cc.Technique` 对象或值。
----@return cc.Technique 获取到的 `cc.Technique` 对象或值。
+--- - `cc.Technique`：当前渲染技术。
+---@return cc.Technique 当前渲染技术。
 function Material:getTechnique() end
 
---- 创建 `cc.Material:createWithFilename` 对应的对象。
+--- 从材质配置文件创建材质。
 ---
 --- 参数说明：
 --- - `path`：路径。类型为 `string`。
@@ -128,24 +128,24 @@ function Material:getTechnique() end
 ---@return self 当前对象，便于链式调用。
 function Material:createWithFilename(path) end
 
---- 创建 `cc.Material:createWithProperties` 对应的对象。
+--- 从已解析的属性对象创建材质。
 ---
 --- 参数说明：
---- - `materialProperties`：参数 `materialProperties`，类型为 `cc.Properties`。
+--- - `materialProperties`：材质属性配置。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param materialProperties cc.Properties 参数 `materialProperties`，类型为 `cc.Properties`。
+---@param materialProperties cc.Properties 材质属性配置。
 ---@return self 当前对象，便于链式调用。
 function Material:createWithProperties(materialProperties) end
 
---- 创建 `cc.Material:createWithProgramState` 对应的对象。
+--- 使用程序状态创建包含单个技术和 Pass 的材质。
 ---
 --- 参数说明：
---- - `programState`：参数 `programState`，类型为 `cc.backend.ProgramState`。
+--- - `programState`：着色器程序及其 Uniform 状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param programState cc.backend.ProgramState 参数 `programState`，类型为 `cc.backend.ProgramState`。
+---@param programState cc.backend.ProgramState 着色器程序状态。
 ---@return self 当前对象，便于链式调用。
 function Material:createWithProgramState(programState) end

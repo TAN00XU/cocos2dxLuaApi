@@ -7,40 +7,40 @@
 ---@class ccs.AnimationData : cc.Ref
 local AnimationData = {}
 ccs.AnimationData = AnimationData
---- 创建 AnimationData 对应的对象。
+--- 创建动画数据容器。
 ---@return ccs.AnimationData
 function AnimationData:new() end
 
---- 获取 `ccs.AnimationData:getMovement` 对应的值。
+--- 按名称获取一个动画片段数据。
 ---
 --- 参数说明：
---- - `movementName`：参数 `movementName`，类型为 `string`。
+--- - `movementName`：目标动画片段名称。
 ---
 --- 返回说明：
---- - `ccs.MovementData`：获取到的 `ccs.MovementData` 对象或值。
----@param movementName string 参数 `movementName`，类型为 `string`。
----@return ccs.MovementData 获取到的 `ccs.MovementData` 对象或值。
+--- - `ccs.MovementData`：匹配名称的动画片段数据。
+---@param movementName string 目标动画片段名称。
+---@return ccs.MovementData 匹配名称的动画片段数据。
 function AnimationData:getMovement(movementName) end
 
---- 获取 `ccs.AnimationData:getMovementCount` 对应的值。
+--- 获取动画片段数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：已登记的动画片段数量。
+---@return integer 已登记的动画片段数量。
 function AnimationData:getMovementCount() end
 
---- 添加 `ccs.AnimationData:addMovement` 对应的对象或数据。
+--- 添加一个动画片段数据。
 ---
 --- 参数说明：
---- - `movData`：参数 `movData`，类型为 `ccs.MovementData`。
+--- - `movData`：要加入容器的动画片段数据。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param movData ccs.MovementData 参数 `movData`，类型为 `ccs.MovementData`。
+---@param movData ccs.MovementData 要加入容器的动画片段数据。
 ---@return self 当前对象，便于链式调用。
 function AnimationData:addMovement(movData) end
 
---- 创建 `ccs.AnimationData:create` 对应的对象。
+--- 创建动画数据容器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -22,21 +22,21 @@ function PhysicsSprite3D:syncNodeToPhysics() end
 ---@return self 当前对象，便于链式调用。
 function PhysicsSprite3D:syncPhysicsToNode() end
 
---- 获取 `cc.PhysicsSprite3D:getPhysicsObj` 对应的值。
+--- 获取精灵绑定的 3D 物理对象。
 ---
 --- 返回说明：
---- - `cc.Physics3DObject`：获取到的 `cc.Physics3DObject` 对象或值。
----@return cc.Physics3DObject 获取到的 `cc.Physics3DObject` 对象或值。
+--- - `cc.Physics3DObject`：绑定的 3D 物理对象。
+---@return cc.Physics3DObject 绑定的 3D 物理对象。
 function PhysicsSprite3D:getPhysicsObj() end
 
---- 设置 `cc.PhysicsSprite3D:setSyncFlag` 对应的值。
+--- 设置物理对象与精灵变换同步的方向标志。
 ---
 --- 参数说明：
---- - `syncFlag`：参数 `syncFlag`，类型为 `integer`。
+--- - `syncFlag`：物理对象与节点同步方向枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param syncFlag integer 参数 `syncFlag`，类型为 `integer`。
+---@param syncFlag integer 物理对象与节点同步方向枚举值。
 ---@return self 当前对象，便于链式调用。
 function PhysicsSprite3D:setSyncFlag(syncFlag) end
 

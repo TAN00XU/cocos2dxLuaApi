@@ -8,7 +8,7 @@
 local Text = {}
 ccui.Text = Text
 
---- 调用 `ccui.Text:enableShadow`。
+--- 启用标签阴影效果。
 ---
 --- 参数说明：
 --- - `shadowColor`：阴影颜色。类型为 `cc.Color4B`，默认值为黑色。
@@ -25,66 +25,66 @@ ccui.Text = Text
 ---@return self 当前对象，便于链式调用。
 function Text:enableShadow(shadowColor, offset, blurRadius) end
 
---- 获取 `ccui.Text:getFontSize` 对应的值。
+--- 获取文本的字体大小。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：当前字体大小。
+---@return number 当前字体大小。
 function Text:getFontSize() end
 
---- 获取 `ccui.Text:getString` 对应的值。
+--- 获取当前显示的文本内容。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：文本内容。
+---@return string 文本内容。
 function Text:getString() end
 
---- 调用 `ccui.Text:disableEffect`。
+--- 禁用全部文本效果，或禁用指定的标签效果。
 ---
 --- 参数说明：
---- - `effect`：参数 `effect`，类型为 `integer`。
+--- - `effect`：要禁用的 `cc.LabelEffect` 枚举值；省略时禁用阴影、描边和辉光等全部效果。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(effect: integer): self
 ---@overload fun(): self
----@param effect? integer 参数 `effect`，类型为 `integer`。
+---@param effect? integer 要禁用的 `cc.LabelEffect` 枚举值。
 ---@return self 当前对象，便于链式调用。
 function Text:disableEffect(effect) end
 
---- 获取 `ccui.Text:getLabelEffectType` 对应的值。
+--- 获取当前文本效果类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：当前 `cc.LabelEffect` 枚举值。
+---@return integer 当前 `cc.LabelEffect` 枚举值。
 function Text:getLabelEffectType() end
 
---- 获取 `ccui.Text:getTextColor` 对应的值。
+--- 获取文本颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：当前文本颜色。
+---@return color4b_table 当前文本颜色。
 function Text:getTextColor() end
 
---- 获取 `ccui.Text:getBlendFunc` 对应的值。
+--- 获取当前使用的混合函数。
 ---
 --- 返回说明：
---- - `cc.BlendFunc`：获取到的 `cc.BlendFunc` 对象或值。
----@return cc.BlendFunc 获取到的 `cc.BlendFunc` 对象或值。
+--- - `cc.BlendFunc`：包含源因子和目标因子的混合函数。
+---@return cc.BlendFunc 当前混合函数。
 function Text:getBlendFunc() end
 
---- 设置 `ccui.Text:setTextVerticalAlignment` 对应的值。
+--- 设置文本的垂直对齐方式。
 ---
 --- 参数说明：
---- - `alignment`：参数 `alignment`，类型为 `integer`。
+--- - `alignment`：`cc.VERTICAL_TEXT_ALIGNMENT_*` 对齐枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param alignment integer 参数 `alignment`，类型为 `integer`。
+---@param alignment integer 垂直对齐枚举值。
 ---@return self 当前对象，便于链式调用。
 function Text:setTextVerticalAlignment(alignment) end
 
---- 设置 `ccui.Text:setFontName` 对应的值。
+--- 设置字体名称或 TTF 字体文件路径。
 ---
 --- 参数说明：
 --- - `name`：名称或标识。类型为 `string`。
@@ -95,7 +95,7 @@ function Text:setTextVerticalAlignment(alignment) end
 ---@return self 当前对象，便于链式调用。
 function Text:setFontName(name) end
 
---- 设置 `ccui.Text:setTouchScaleChangeEnabled` 对应的值。
+--- 设置按下控件时是否启用缩放反馈。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -106,14 +106,14 @@ function Text:setFontName(name) end
 ---@return self 当前对象，便于链式调用。
 function Text:setTouchScaleChangeEnabled(enabled) end
 
---- 获取 `ccui.Text:getShadowOffset` 对应的值。
+--- 获取阴影效果的偏移量。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：阴影偏移量。
+---@return size_table 阴影偏移量。
 function Text:getShadowOffset() end
 
---- 设置 `ccui.Text:setString` 对应的值。
+--- 设置标签显示的文本内容。
 ---
 --- 参数说明：
 --- - `text`：文本内容。类型为 `string`。
@@ -124,53 +124,53 @@ function Text:getShadowOffset() end
 ---@return self 当前对象，便于链式调用。
 function Text:setString(text) end
 
---- 获取 `ccui.Text:getOutlineSize` 对应的值。
+--- 获取描边效果的宽度。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：描边宽度。
+---@return integer 描边宽度。
 function Text:getOutlineSize() end
 
---- 初始化 `ccui.Text:init` 对应的对象或状态。
+--- 使用文本内容、字体和字号初始化控件。
 ---
 --- 参数说明：
---- - `textContent`：参数 `textContent`，类型为 `string`。
+--- - `textContent`：初始文本内容。
 --- - `fontName`：字体名称。类型为 `string`。
---- - `fontSize`：参数 `fontSize`，类型为 `number`。
+--- - `fontSize`：字体大小。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param textContent string 参数 `textContent`，类型为 `string`。
+---@param textContent string 初始文本内容。
 ---@param fontName    string 字体名称。类型为 `string`。
----@param fontSize    number 参数 `fontSize`，类型为 `number`。
+---@param fontSize    number 字体大小。
 ---@return boolean 初始化是否成功。
 function Text:init(textContent, fontName, fontSize) end
 
---- 获取 `ccui.Text:getShadowBlurRadius` 对应的值。
+--- 获取阴影效果的模糊半径。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：阴影模糊半径。
+---@return number 阴影模糊半径。
 function Text:getShadowBlurRadius() end
 
---- 判断 `ccui.Text:isTouchScaleChangeEnabled` 对应状态是否成立。
+--- 判断是否启用了按下缩放反馈。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用时返回 `true`。
+---@return boolean 是否启用按下缩放反馈。
 function Text:isTouchScaleChangeEnabled() end
 
---- 获取 `ccui.Text:getFontName` 对应的值。
+--- 获取当前字体名称或 TTF 字体文件路径。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：字体名称或文件路径。
+---@return string 字体名称或 TTF 文件路径。
 function Text:getFontName() end
 
---- 设置 `ccui.Text:setTextAreaSize` 对应的值。
+--- 设置文本渲染区域大小。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `size_table`。
+--- - `size`：文本渲染区域大小；需配合 `ignoreContentAdaptWithSize(false)` 使用。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -178,65 +178,65 @@ function Text:getFontName() end
 ---@return self 当前对象，便于链式调用。
 function Text:setTextAreaSize(size) end
 
---- 获取 `ccui.Text:getStringLength` 对应的值。
+--- 获取标签的渲染字符数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：渲染字符数；可能大于 `getString()` 返回值的原始字节长度。
+---@return integer 渲染字符数。
 function Text:getStringLength() end
 
---- 获取 `ccui.Text:getAutoRenderSize` 对应的值。
+--- 获取自动尺寸模式下的渲染大小。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：自动计算的渲染大小。
+---@return size_table 自动计算的渲染大小。
 function Text:getAutoRenderSize() end
 
---- 调用 `ccui.Text:enableOutline`。
+--- 启用文本描边效果。
 ---
 --- 参数说明：
---- - `outlineColor`：参数 `outlineColor`，类型为 `color4b_table`。
---- - `outlineSize`：参数 `outlineSize`，类型为 `integer`。
+--- - `outlineColor`：描边颜色。
+--- - `outlineSize`：描边宽度；系统字体仅在 iOS 和 Android 上支持此效果。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param outlineColor color4b_table 参数 `outlineColor`，类型为 `color4b_table`。
----@param outlineSize  integer       参数 `outlineSize`，类型为 `integer`。
+---@param outlineColor color4b_table 描边颜色。
+---@param outlineSize  integer       描边宽度。
 ---@return self 当前对象，便于链式调用。
 function Text:enableOutline(outlineColor, outlineSize) end
 
---- 获取 `ccui.Text:getEffectColor` 对应的值。
+--- 获取当前文本效果的颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：当前效果颜色。
+---@return color4b_table 当前效果颜色。
 function Text:getEffectColor() end
 
---- 获取 `ccui.Text:getType` 对应的值。
+--- 获取字体类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：字体类型枚举值，表示系统字体或 TTF 字体。
+---@return integer 字体类型枚举值。
 function Text:getType() end
 
---- 获取 `ccui.Text:getTextHorizontalAlignment` 对应的值。
+--- 获取文本的水平对齐方式。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：`cc.TEXT_ALIGNMENT_*` 对齐枚举值。
+---@return integer 水平对齐枚举值。
 function Text:getTextHorizontalAlignment() end
 
---- 判断 `ccui.Text:isShadowEnabled` 对应状态是否成立。
+--- 判断是否启用了阴影效果。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用阴影时返回 `true`。
+---@return boolean 是否启用阴影效果。
 function Text:isShadowEnabled() end
 
---- 设置 `ccui.Text:setFontSize` 对应的值。
+--- 设置文本的字体大小。
 ---
 --- 参数说明：
---- - `size`：尺寸。类型为 `number`。
+--- - `size`：字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -244,14 +244,14 @@ function Text:isShadowEnabled() end
 ---@return self 当前对象，便于链式调用。
 function Text:setFontSize(size) end
 
---- 获取 `ccui.Text:getShadowColor` 对应的值。
+--- 获取阴影效果的颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：阴影颜色。
+---@return color4b_table 阴影颜色。
 function Text:getShadowColor() end
 
---- 设置 `ccui.Text:setTextColor` 对应的值。
+--- 设置文本颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
@@ -262,117 +262,117 @@ function Text:getShadowColor() end
 ---@return self 当前对象，便于链式调用。
 function Text:setTextColor(color) end
 
---- 调用 `ccui.Text:enableGlow`。
+--- 启用文本辉光效果；仅 TTF 字体支持。
 ---
 --- 参数说明：
---- - `glowColor`：参数 `glowColor`，类型为 `color4b_table`。
+--- - `glowColor`：辉光颜色。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param glowColor color4b_table 参数 `glowColor`，类型为 `color4b_table`。
+---@param glowColor color4b_table 辉光颜色。
 ---@return self 当前对象，便于链式调用。
 function Text:enableGlow(glowColor) end
 
---- 获取 `ccui.Text:getLetter` 对应的值。
+--- 获取指定字符对应的精灵节点；系统字体不支持。
 ---
 --- 参数说明：
---- - `lettetIndex`：参数 `lettetIndex`，类型为 `integer`。
+--- - `lettetIndex`：字符索引。
 ---
 --- 返回说明：
---- - `cc.Sprite`：获取到的 `cc.Sprite` 对象或值。
----@param lettetIndex integer 参数 `lettetIndex`，类型为 `integer`。
----@return cc.Sprite 获取到的 `cc.Sprite` 对象或值。
+--- - `cc.Sprite`：字符对应的精灵节点。
+---@param lettetIndex integer 字符索引。
+---@return cc.Sprite 字符对应的精灵节点。
 function Text:getLetter(lettetIndex) end
 
---- 设置 `ccui.Text:setBlendFunc` 对应的值。
+--- 设置文本渲染使用的混合函数。
 ---
 --- 参数说明：
---- - `blendFunc`：参数 `blendFunc`，类型为 `cc.BlendFunc`。
+--- - `blendFunc`：包含源因子和目标因子的混合函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param blendFunc cc.BlendFunc 参数 `blendFunc`，类型为 `cc.BlendFunc`。
+---@param blendFunc cc.BlendFunc 混合函数。
 ---@return self 当前对象，便于链式调用。
 function Text:setBlendFunc(blendFunc) end
 
---- 获取 `ccui.Text:getTextVerticalAlignment` 对应的值。
+--- 获取文本的垂直对齐方式。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：`cc.VERTICAL_TEXT_ALIGNMENT_*` 对齐枚举值。
+---@return integer 垂直对齐枚举值。
 function Text:getTextVerticalAlignment() end
 
---- 获取 `ccui.Text:getTextAreaSize` 对应的值。
+--- 获取文本渲染区域大小。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：文本渲染区域大小。
+---@return size_table 文本渲染区域大小。
 function Text:getTextAreaSize() end
 
---- 设置 `ccui.Text:setTextHorizontalAlignment` 对应的值。
+--- 设置文本的水平对齐方式。
 ---
 --- 参数说明：
---- - `alignment`：参数 `alignment`，类型为 `integer`。
+--- - `alignment`：`cc.TEXT_ALIGNMENT_*` 对齐枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param alignment integer 参数 `alignment`，类型为 `integer`。
+---@param alignment integer 水平对齐枚举值。
 ---@return self 当前对象，便于链式调用。
 function Text:setTextHorizontalAlignment(alignment) end
 
---- 创建 `ccui.Text:create` 对应的对象。
+--- 创建空文本控件，或使用文本内容、字体和字号创建控件。
 ---
 --- 参数说明：
---- - `textContent`：参数 `textContent`，类型为 `string`。
+--- - `textContent`：初始文本内容。
 --- - `fontName`：字体名称。类型为 `string`。
---- - `fontSize`：参数 `fontSize`，类型为 `number`。
+--- - `fontSize`：字体大小。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(textContent: string, fontName: string, fontSize: number): self
 ---@overload fun(): self
----@param textContent? string 参数 `textContent`，类型为 `string`。
+---@param textContent? string 初始文本内容。
 ---@param fontName?    string 字体名称。类型为 `string`。
----@param fontSize?    number 参数 `fontSize`，类型为 `number`。
+---@param fontSize?    number 字体大小。
 ---@return self 当前对象，便于链式调用。
 function Text:create(textContent, fontName, fontSize) end
 
---- 创建 `ccui.Text:createInstance` 对应的对象。
+--- 创建用于克隆机制的控件实例。
 ---
 --- 返回说明：
---- - `cc.Ref`：创建出的 `cc.Ref` 对象或值。
----@return cc.Ref 创建出的 `cc.Ref` 对象或值。
+--- - `cc.Ref`：新建的控件实例。
+---@return cc.Ref 新建的控件实例。
 function Text:createInstance() end
 
---- 获取 `ccui.Text:getVirtualRenderer` 对应的值。
+--- 获取控件内部使用的标签渲染器。
 ---
 --- 返回说明：
---- - `cc.Label`：获取到的 `cc.Label` 对象或值。
----@return cc.Label 获取到的 `cc.Label` 对象或值。
+--- - `cc.Label`：内部标签渲染器。
+---@return cc.Label 内部标签渲染器。
 function Text:getVirtualRenderer() end
 
---- 初始化 `ccui.Text:init` 对应的对象或状态。
+--- 初始化空文本控件。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Text:init() end
 
---- 获取 `ccui.Text:getDescription` 对应的值。
+--- 获取控件的类描述字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：控件类描述字符串。
+---@return string 控件类描述字符串。
 function Text:getDescription() end
 
---- 获取 `ccui.Text:getVirtualRendererSize` 对应的值。
+--- 获取内部标签渲染器的大小。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：内部渲染器大小。
+---@return size_table 内部渲染器大小。
 function Text:getVirtualRendererSize() end
 
---- 调用 `ccui.Text:Text`。
+--- 构造 `ccui.Text` 对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

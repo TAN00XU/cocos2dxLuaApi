@@ -8,28 +8,28 @@
 local PhysicsJointPin = {}
 cc.PhysicsJointPin = PhysicsJointPin
 
---- 创建 `cc.PhysicsJointPin:createConstraints` 对应的对象。
+--- 创建销钉关节的物理约束。
 ---
 --- 返回说明：
---- - `boolean`：创建出的 布尔值。
----@return boolean 创建出的 布尔值。
+--- - `boolean`：物理约束是否创建成功。
+---@return boolean 物理约束是否创建成功。
 function PhysicsJointPin:createConstraints() end
 
---- 调用 `cc.PhysicsJointPin:construct`。
+--- 使用两个刚体的锚点构造销钉关节。
 ---
 --- 参数说明：
---- - `a`：参数 `a`，类型为 `cc.PhysicsBody`。
---- - `b`：参数 `b`，类型为 `cc.PhysicsBody`。
---- - `anchr1`：参数 `anchr1`，类型为 `vec2_table`。
---- - `anchr2`：参数 `anchr2`，类型为 `vec2_table`。
+--- - `a`：第一个物理刚体。
+--- - `b`：第二个物理刚体。
+--- - `anchr1`：第一个刚体上的锚点。
+--- - `anchr2`：第二个刚体上的锚点，可省略并使用第一个锚点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(a: cc.PhysicsBody, b: cc.PhysicsBody, anchr1: vec2_table, anchr2: vec2_table): self
 ---@overload fun(a: cc.PhysicsBody, b: cc.PhysicsBody, anchr1: vec2_table): self
----@param a? cc.PhysicsBody 参数 `a`，类型为 `cc.PhysicsBody`。
----@param b? cc.PhysicsBody 参数 `b`，类型为 `cc.PhysicsBody`。
----@param anchr1? vec2_table 参数 `anchr1`，类型为 `vec2_table`。
----@param anchr2? vec2_table 参数 `anchr2`，类型为 `vec2_table`。
+---@param a? cc.PhysicsBody 第一个物理刚体。
+---@param b? cc.PhysicsBody 第二个物理刚体。
+---@param anchr1? vec2_table 第一个刚体上的锚点。
+---@param anchr2? vec2_table 第二个刚体上的锚点，可省略并使用第一个锚点。
 ---@return self 当前对象，便于链式调用。
 function PhysicsJointPin:construct(a, b, anchr1, anchr2) end

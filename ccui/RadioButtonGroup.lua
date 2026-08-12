@@ -8,43 +8,43 @@
 local RadioButtonGroup = {}
 ccui.RadioButtonGroup = RadioButtonGroup
 
---- 移除 `ccui.RadioButtonGroup:removeRadioButton` 对应的对象或数据。
+--- 从单选按钮组移除指定按钮。
 ---
 --- 参数说明：
---- - `radioButton`：参数 `radioButton`，类型为 `ccui.RadioButton`。
+--- - `radioButton`：要移除的单选按钮。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param radioButton ccui.RadioButton 参数 `radioButton`，类型为 `ccui.RadioButton`。
+---@param radioButton ccui.RadioButton 要移除的单选按钮。
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:removeRadioButton(radioButton) end
 
---- 判断 `ccui.RadioButtonGroup:isAllowedNoSelection` 对应状态是否成立。
+--- 判断是否允许单选按钮组不选中任何按钮。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否允许不选中任何按钮。
+---@return boolean 是否允许不选中任何按钮。
 function RadioButtonGroup:isAllowedNoSelection() end
 
---- 获取 `ccui.RadioButtonGroup:getSelectedButtonIndex` 对应的值。
+--- 获取当前选中按钮的索引。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：当前选中按钮索引。
+---@return integer 当前选中按钮索引。
 function RadioButtonGroup:getSelectedButtonIndex() end
 
---- 设置 `ccui.RadioButtonGroup:setAllowedNoSelection` 对应的值。
+--- 设置是否允许单选按钮组不选中任何按钮。
 ---
 --- 参数说明：
---- - `allowedNoSelection`：参数 `allowedNoSelection`，类型为 `boolean`。
+--- - `allowedNoSelection`：是否允许不选中任何按钮。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param allowedNoSelection boolean 参数 `allowedNoSelection`，类型为 `boolean`。
+---@param allowedNoSelection boolean 是否允许不选中任何按钮。
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:setAllowedNoSelection(allowedNoSelection) end
 
---- 设置 `ccui.RadioButtonGroup:setSelectedButtonWithoutEvent` 对应的值。
+--- 设置选中按钮但不触发选中事件。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -57,7 +57,7 @@ function RadioButtonGroup:setAllowedNoSelection(allowedNoSelection) end
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:setSelectedButtonWithoutEvent(index) end
 
---- 添加 `ccui.RadioButtonGroup:addEventListener` 对应的对象或数据。
+--- 注册单选按钮组选中状态变化回调。
 ---
 --- 参数说明：
 --- - `callback`：回调函数。类型为 `fun(...): any`。
@@ -68,43 +68,43 @@ function RadioButtonGroup:setSelectedButtonWithoutEvent(index) end
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:addEventListener(callback) end
 
---- 移除 `ccui.RadioButtonGroup:removeAllRadioButtons` 对应的对象或数据。
+--- 移除组内全部单选按钮。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:removeAllRadioButtons() end
 
---- 获取 `ccui.RadioButtonGroup:getRadioButtonByIndex` 对应的值。
+--- 获取指定索引的单选按钮。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `ccui.RadioButton`：获取到的 `ccui.RadioButton` 对象或值。
+--- - `ccui.RadioButton`：指定索引的单选按钮。
 ---@param index integer 索引值。类型为 `integer`。
----@return ccui.RadioButton 获取到的 `ccui.RadioButton` 对象或值。
+---@return ccui.RadioButton 指定索引的单选按钮。
 function RadioButtonGroup:getRadioButtonByIndex(index) end
 
---- 获取 `ccui.RadioButtonGroup:getNumberOfRadioButtons` 对应的值。
+--- 获取组内单选按钮数量。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：组内单选按钮数量。
+---@return integer 组内单选按钮数量。
 function RadioButtonGroup:getNumberOfRadioButtons() end
 
---- 添加 `ccui.RadioButtonGroup:addRadioButton` 对应的对象或数据。
+--- 向单选按钮组添加按钮。
 ---
 --- 参数说明：
---- - `radioButton`：参数 `radioButton`，类型为 `ccui.RadioButton`。
+--- - `radioButton`：要加入按钮组的单选按钮。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param radioButton ccui.RadioButton 参数 `radioButton`，类型为 `ccui.RadioButton`。
+---@param radioButton ccui.RadioButton 要加入按钮组的单选按钮。
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:addRadioButton(radioButton) end
 
---- 设置 `ccui.RadioButtonGroup:setSelectedButton` 对应的值。
+--- 设置当前选中的单选按钮并触发事件。
 ---
 --- 参数说明：
 --- - `index`：索引值。类型为 `integer`。
@@ -117,21 +117,21 @@ function RadioButtonGroup:addRadioButton(radioButton) end
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:setSelectedButton(index) end
 
---- 创建 `ccui.RadioButtonGroup:create` 对应的对象。
+--- 创建单选按钮组。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function RadioButtonGroup:create() end
 
---- 获取 `ccui.RadioButtonGroup:getDescription` 对应的值。
+--- 获取单选按钮组的类型描述。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：控件类型描述字符串。
+---@return string 控件类型描述字符串。
 function RadioButtonGroup:getDescription() end
 
---- 调用 `ccui.RadioButtonGroup:RadioButtonGroup`。
+--- 构造单选按钮组对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

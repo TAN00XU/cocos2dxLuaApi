@@ -97,7 +97,7 @@ function Widget:onTouchEnded(touch, event) end
 ---@return self 当前对象，便于链式调用。
 function Widget:onTouchCancelled(touch, event) end
 
---- 设置 `ccui.Widget:setLayoutComponentEnabled` 对应的值。
+--- 设置是否启用控件的布局组件。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -108,7 +108,7 @@ function Widget:onTouchCancelled(touch, event) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setLayoutComponentEnabled(enable) end
 
---- 设置 `ccui.Widget:setSizePercent` 对应的值。
+--- 设置控件相对于父容器的尺寸百分比。
 ---
 --- 参数说明：
 --- - `percent`：百分比数值。类型为 `vec2_table`。
@@ -119,21 +119,21 @@ function Widget:setLayoutComponentEnabled(enable) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setSizePercent(percent) end
 
---- 获取 `ccui.Widget:getCustomSize` 对应的值。
+--- 获取控件的自定义尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：控件当前自定义尺寸。
+---@return size_table 控件当前自定义尺寸。
 function Widget:getCustomSize() end
 
---- 获取 `ccui.Widget:getLeftBoundary` 对应的值。
+--- 获取控件左边界在父节点坐标系中的位置。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：控件左边界在父坐标系中的 X 坐标。
+---@return number 控件左边界 X 坐标。
 function Widget:getLeftBoundary() end
 
---- 设置 `ccui.Widget:setFlippedX` 对应的值。
+--- 设置控件是否水平翻转。
 ---
 --- 参数说明：
 --- - `flippedX`：是否水平翻转。类型为 `boolean`。
@@ -144,50 +144,50 @@ function Widget:getLeftBoundary() end
 ---@return self 当前对象，便于链式调用。
 function Widget:setFlippedX(flippedX) end
 
---- 设置 `ccui.Widget:setCallbackName` 对应的值。
+--- 设置控件在 Cocos Studio 中使用的回调名称。
 ---
 --- 参数说明：
---- - `callbackName`：参数 `callbackName`，类型为 `string`。
+--- - `callbackName`：Cocos Studio 中配置的回调名称。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param callbackName string 参数 `callbackName`，类型为 `string`。
+---@param callbackName string Cocos Studio 中配置的回调名称。
 ---@return self 当前对象，便于链式调用。
 function Widget:setCallbackName(callbackName) end
 
---- 获取 `ccui.Widget:getVirtualRenderer` 对应的值。
+--- 获取控件的虚拟渲染器节点。
 ---
 --- 返回说明：
---- - `cc.Node`：获取到的 `cc.Node` 对象或值。
----@return cc.Node 获取到的 `cc.Node` 对象或值。
+--- - `cc.Node`：控件实际使用的内部渲染节点。
+---@return cc.Node 控件内部渲染节点。
 function Widget:getVirtualRenderer() end
 
---- 设置 `ccui.Widget:setPropagateTouchEvents` 对应的值。
+--- 设置触摸事件是否向父控件传播。
 ---
 --- 参数说明：
---- - `isPropagate`：参数 `isPropagate`，类型为 `boolean`。
+--- - `isPropagate`：是否把触摸事件继续传播给父控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param isPropagate boolean 参数 `isPropagate`，类型为 `boolean`。
+---@param isPropagate boolean 是否向父控件传播触摸事件。
 ---@return self 当前对象，便于链式调用。
 function Widget:setPropagateTouchEvents(isPropagate) end
 
---- 判断 `ccui.Widget:isUnifySizeEnabled` 对应状态是否成立。
+--- 判断是否启用了统一尺寸模式。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用了统一尺寸模式。
+---@return boolean 是否启用了统一尺寸模式。
 function Widget:isUnifySizeEnabled() end
 
---- 获取 `ccui.Widget:getSizePercent` 对应的值。
+--- 获取控件相对于父容器的尺寸百分比。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：相对于父容器的尺寸百分比。
+---@return vec2_table 相对于父容器的尺寸百分比。
 function Widget:getSizePercent() end
 
---- 设置 `ccui.Widget:setPositionPercent` 对应的值。
+--- 设置控件相对于父容器的位置百分比。
 ---
 --- 参数说明：
 --- - `percent`：百分比数值。类型为 `vec2_table`。
@@ -198,36 +198,36 @@ function Widget:getSizePercent() end
 ---@return self 当前对象，便于链式调用。
 function Widget:setPositionPercent(percent) end
 
---- 设置 `ccui.Widget:setSwallowTouches` 对应的值。
+--- 设置控件是否吞噬触摸事件。
 ---
 --- 参数说明：
---- - `swallow`：参数 `swallow`，类型为 `boolean`。
+--- - `swallow`：是否吞噬触摸事件，阻止其继续传递。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param swallow boolean 参数 `swallow`，类型为 `boolean`。
+---@param swallow boolean 是否吞噬触摸事件。
 ---@return self 当前对象，便于链式调用。
 function Widget:setSwallowTouches(swallow) end
 
---- 获取 `ccui.Widget:getLayoutSize` 对应的值。
+--- 获取控件用于布局计算的尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：控件用于布局计算的尺寸。
+---@return size_table 控件用于布局计算的尺寸。
 function Widget:getLayoutSize() end
 
---- 设置 `ccui.Widget:setHighlighted` 对应的值。
+--- 设置控件是否处于高亮状态。
 ---
 --- 参数说明：
---- - `highlight`：参数 `highlight`，类型为 `boolean`。
+--- - `highlight`：是否将控件设置为高亮状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param highlight boolean 参数 `highlight`，类型为 `boolean`。
+---@param highlight boolean 是否设置为高亮状态。
 ---@return self 当前对象，便于链式调用。
 function Widget:setHighlighted(highlight) end
 
---- 设置 `ccui.Widget:setPositionType` 对应的值。
+--- 设置控件的位置类型（绝对位置或百分比位置）。
 ---
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
@@ -238,140 +238,140 @@ function Widget:setHighlighted(highlight) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setPositionType(type) end
 
---- 判断 `ccui.Widget:isIgnoreContentAdaptWithSize` 对应状态是否成立。
+--- 判断控件是否忽略内容自适应尺寸。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否忽略内容自适应尺寸。
+---@return boolean 控件是否忽略内容自适应尺寸。
 function Widget:isIgnoreContentAdaptWithSize() end
 
---- 获取 `ccui.Widget:getVirtualRendererSize` 对应的值。
+--- 获取虚拟渲染器的实际尺寸。
 ---
 --- 返回说明：
---- - `size_table`：获取到的 Lua 表数据。
----@return size_table 获取到的 Lua 表数据。
+--- - `size_table`：虚拟渲染器的实际尺寸。
+---@return size_table 虚拟渲染器的实际尺寸。
 function Widget:getVirtualRendererSize() end
 
---- 判断 `ccui.Widget:isHighlighted` 对应状态是否成立。
+--- 判断控件当前是否处于高亮状态。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件当前是否处于高亮状态。
+---@return boolean 控件当前是否处于高亮状态。
 function Widget:isHighlighted() end
 
---- 获取 `ccui.Widget:getLayoutParameter` 对应的值。
+--- 获取控件的布局参数对象。
 ---
 --- 返回说明：
---- - `ccui.LayoutParameter`：获取到的 `ccui.LayoutParameter` 对象或值。
----@return ccui.LayoutParameter 获取到的 `ccui.LayoutParameter` 对象或值。
+--- - `ccui.LayoutParameter`：控件当前使用的布局参数对象。
+---@return ccui.LayoutParameter 控件当前布局参数。
 function Widget:getLayoutParameter() end
 
---- 获取 `ccui.Widget:getPositionType` 对应的值。
+--- 获取控件的位置类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：控件位置类型枚举值。
+---@return integer 控件位置类型。
 function Widget:getPositionType() end
 
---- 获取 `ccui.Widget:getTopBoundary` 对应的值。
+--- 获取控件上边界在父节点坐标系中的位置。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：控件上边界在父坐标系中的 Y 坐标。
+---@return number 控件上边界 Y 坐标。
 function Widget:getTopBoundary() end
 
---- 调用 `ccui.Widget:ignoreContentAdaptWithSize`。
+--- 设置是否忽略控件内容自适应尺寸。
 ---
 --- 参数说明：
---- - `ignore`：参数 `ignore`，类型为 `boolean`。
+--- - `ignore`：是否忽略虚拟渲染器尺寸对控件尺寸的适配。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param ignore boolean 参数 `ignore`，类型为 `boolean`。
+---@param ignore boolean 是否忽略内容尺寸自适应。
 ---@return self 当前对象，便于链式调用。
 function Widget:ignoreContentAdaptWithSize(ignore) end
 
---- 调用 `ccui.Widget:findNextFocusedWidget`。
+--- 按指定方向查找下一个可获取焦点的控件。
 ---
 --- 参数说明：
---- - `direction`：参数 `direction`，类型为 `integer`。
---- - `current`：参数 `current`，类型为 `ccui.Widget`。
+--- - `direction`：焦点导航方向枚举值。
+--- - `current`：当前获得焦点的控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param direction integer 参数 `direction`，类型为 `integer`。
----@param current ccui.Widget 参数 `current`，类型为 `ccui.Widget`。
+---@param direction integer 焦点导航方向。
+---@param current ccui.Widget 当前焦点控件。
 ---@return self 当前对象，便于链式调用。
 function Widget:findNextFocusedWidget(direction, current) end
 
---- 判断 `ccui.Widget:isEnabled` 对应状态是否成立。
+--- 判断控件是否已启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否已启用。
+---@return boolean 控件是否已启用。
 function Widget:isEnabled() end
 
---- 判断 `ccui.Widget:isFocused` 对应状态是否成立。
+--- 判断控件当前是否拥有焦点。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件当前是否拥有焦点。
+---@return boolean 控件当前是否拥有焦点。
 function Widget:isFocused() end
 
---- 获取 `ccui.Widget:getTouchBeganPosition` 对应的值。
+--- 获取最近一次触摸开始时的坐标。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：最近一次触摸开始位置。
+---@return vec2_table 最近一次触摸开始位置。
 function Widget:getTouchBeganPosition() end
 
---- 判断 `ccui.Widget:isTouchEnabled` 对应状态是否成立。
+--- 判断控件是否启用了触摸。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否启用了触摸处理。
+---@return boolean 控件是否启用了触摸处理。
 function Widget:isTouchEnabled() end
 
---- 获取 `ccui.Widget:getCallbackName` 对应的值。
+--- 获取控件在 Cocos Studio 中使用的回调名称。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：Cocos Studio 中配置的回调名称。
+---@return string Cocos Studio 中配置的回调名称。
 function Widget:getCallbackName() end
 
---- 获取 `ccui.Widget:getActionTag` 对应的值。
+--- 获取控件动作标签值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：控件的动作标签。
+---@return integer 控件的动作标签。
 function Widget:getActionTag() end
 
---- 获取 `ccui.Widget:getWorldPosition` 对应的值。
+--- 获取控件在世界坐标系中的位置。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：控件在世界坐标系中的位置。
+---@return vec2_table 控件的世界坐标位置。
 function Widget:getWorldPosition() end
 
---- 判断 `ccui.Widget:isFocusEnabled` 对应状态是否成立。
+--- 判断控件是否允许获取焦点。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否允许获取焦点。
+---@return boolean 控件是否允许获取焦点。
 function Widget:isFocusEnabled() end
 
---- 设置 `ccui.Widget:setFocused` 对应的值。
+--- 设置控件是否拥有焦点。
 ---
 --- 参数说明：
---- - `focus`：参数 `focus`，类型为 `boolean`。
+--- - `focus`：是否将控件设置为当前焦点控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param focus boolean 参数 `focus`，类型为 `boolean`。
+---@param focus boolean 是否设置控件为焦点控件。
 ---@return self 当前对象，便于链式调用。
 function Widget:setFocused(focus) end
 
---- 设置 `ccui.Widget:setActionTag` 对应的值。
+--- 设置控件的动作标签值。
 ---
 --- 参数说明：
 --- - `tag`：标签值。类型为 `integer`。
@@ -382,7 +382,7 @@ function Widget:setFocused(focus) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setActionTag(tag) end
 
---- 设置 `ccui.Widget:setTouchEnabled` 对应的值。
+--- 设置是否启用控件触摸。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -393,7 +393,7 @@ function Widget:setActionTag(tag) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setTouchEnabled(enabled) end
 
---- 设置 `ccui.Widget:setFlippedY` 对应的值。
+--- 设置控件是否垂直翻转。
 ---
 --- 参数说明：
 --- - `flippedY`：是否垂直翻转。类型为 `boolean`。
@@ -404,7 +404,7 @@ function Widget:setTouchEnabled(enabled) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setFlippedY(flippedY) end
 
---- 设置 `ccui.Widget:setEnabled` 对应的值。
+--- 设置控件是否启用。
 ---
 --- 参数说明：
 --- - `enabled`：是否启用。类型为 `boolean`。
@@ -415,43 +415,43 @@ function Widget:setFlippedY(flippedY) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setEnabled(enabled) end
 
---- 获取 `ccui.Widget:getRightBoundary` 对应的值。
+--- 获取控件右边界在父节点坐标系中的位置。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：控件右边界在父坐标系中的 X 坐标。
+---@return number 控件右边界 X 坐标。
 function Widget:getRightBoundary() end
 
---- 设置 `ccui.Widget:setBrightStyle` 对应的值。
+--- 设置控件的明亮样式（普通或高亮）。
 ---
 --- 参数说明：
---- - `style`：参数 `style`，类型为 `integer`。
+--- - `style`：明亮样式枚举值。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param style integer 参数 `style`，类型为 `integer`。
+---@param style integer 明亮样式枚举值。
 ---@return self 当前对象，便于链式调用。
 function Widget:setBrightStyle(style) end
 
---- 设置 `ccui.Widget:setLayoutParameter` 对应的值。
+--- 设置控件的布局参数对象。
 ---
 --- 参数说明：
---- - `parameter`：参数 `parameter`，类型为 `ccui.LayoutParameter`。
+--- - `parameter`：用于布局计算的布局参数对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param parameter ccui.LayoutParameter 参数 `parameter`，类型为 `ccui.LayoutParameter`。
+---@param parameter ccui.LayoutParameter 用于布局计算的布局参数对象。
 ---@return self 当前对象，便于链式调用。
 function Widget:setLayoutParameter(parameter) end
 
---- 调用 `ccui.Widget:clone`。
+--- 克隆当前控件并返回独立副本。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:clone() end
 
---- 设置 `ccui.Widget:setFocusEnabled` 对应的值。
+--- 设置控件是否允许获取焦点。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -462,34 +462,34 @@ function Widget:clone() end
 ---@return self 当前对象，便于链式调用。
 function Widget:setFocusEnabled(enable) end
 
---- 获取 `ccui.Widget:getBottomBoundary` 对应的值。
+--- 获取控件底边界在父节点坐标系中的位置。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：控件底边界在父坐标系中的 Y 坐标。
+---@return number 控件底边界 Y 坐标。
 function Widget:getBottomBoundary() end
 
---- 判断 `ccui.Widget:isBright` 对应状态是否成立。
+--- 判断控件当前是否为明亮状态。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件当前是否为明亮状态。
+---@return boolean 控件当前是否为明亮状态。
 function Widget:isBright() end
 
---- 调用 `ccui.Widget:dispatchFocusEvent`。
+--- 分发控件焦点切换事件。
 ---
 --- 参数说明：
---- - `widgetLoseFocus`：参数 `widgetLoseFocus`，类型为 `ccui.Widget`。
---- - `widgetGetFocus`：参数 `widgetGetFocus`，类型为 `ccui.Widget`。
+--- - `widgetLoseFocus`：失去焦点的控件。
+--- - `widgetGetFocus`：获得焦点的控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param widgetLoseFocus ccui.Widget 参数 `widgetLoseFocus`，类型为 `ccui.Widget`。
----@param widgetGetFocus ccui.Widget 参数 `widgetGetFocus`，类型为 `ccui.Widget`。
+---@param widgetLoseFocus ccui.Widget 失去焦点的控件。
+---@param widgetGetFocus ccui.Widget 获得焦点的控件。
 ---@return self 当前对象，便于链式调用。
 function Widget:dispatchFocusEvent(widgetLoseFocus, widgetGetFocus) end
 
---- 设置 `ccui.Widget:setUnifySizeEnabled` 对应的值。
+--- 设置是否启用统一尺寸模式。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -500,144 +500,144 @@ function Widget:dispatchFocusEvent(widgetLoseFocus, widgetGetFocus) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setUnifySizeEnabled(enable) end
 
---- 判断 `ccui.Widget:isPropagateTouchEvents` 对应状态是否成立。
+--- 判断触摸事件是否会向父控件传播。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用了触摸事件向父控件传播。
+---@return boolean 是否启用了触摸事件传播。
 function Widget:isPropagateTouchEvents() end
 
---- 调用 `ccui.Widget:hitTest`。
+--- 判断指定屏幕点是否命中控件。
 ---
 --- 参数说明：
---- - `pt`：参数 `pt`，类型为 `vec2_table`。
---- - `camera`：参数 `camera`，类型为 `cc.Camera`。
---- - `p`：参数 `p`，类型为 `vec3_table`。
+--- - `pt`：待检测的屏幕坐标点。
+--- - `camera`：用于坐标反投影的摄像机。
+--- - `p`：用于接收命中点的三维坐标，可为空。
 ---
 --- 返回说明：
---- - `boolean`：布尔值。
----@param pt vec2_table 参数 `pt`，类型为 `vec2_table`。
----@param camera cc.Camera 参数 `camera`，类型为 `cc.Camera`。
----@param p vec3_table 参数 `p`，类型为 `vec3_table`。
----@return boolean 布尔值。
+--- - `boolean`：该点是否命中控件区域。
+---@param pt vec2_table 待检测的屏幕坐标点。
+---@param camera cc.Camera 用于坐标反投影的摄像机。
+---@param p vec3_table 用于接收命中点的三维坐标。
+---@return boolean 该点是否命中控件区域。
 function Widget:hitTest(pt, camera, p) end
 
---- 判断 `ccui.Widget:isLayoutComponentEnabled` 对应状态是否成立。
+--- 判断控件的布局组件是否已启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：是否启用了布局组件。
+---@return boolean 是否启用了布局组件。
 function Widget:isLayoutComponentEnabled() end
 
---- 调用 `ccui.Widget:requestFocus`。
+--- 请求将键盘或导航焦点设置到当前控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:requestFocus() end
 
---- 更新 `ccui.Widget:updateSizeAndPosition` 对应的状态。
+--- 根据父容器尺寸更新控件的布局尺寸和位置。
 ---
 --- 参数说明：
---- - `parentSize`：参数 `parentSize`，类型为 `size_table`。
+--- - `parentSize`：父容器尺寸；省略时使用当前父容器尺寸。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(parentSize: size_table): self
 ---@overload fun(): self
----@param parentSize? size_table 参数 `parentSize`，类型为 `size_table`。
+---@param parentSize? size_table 父容器尺寸。
 ---@return self 当前对象，便于链式调用。
 function Widget:updateSizeAndPosition(parentSize) end
 
---- 调用 `ccui.Widget:onFocusChange`。
+--- 处理控件焦点发生变化的回调。
 ---
 --- 参数说明：
---- - `widgetLostFocus`：参数 `widgetLostFocus`，类型为 `ccui.Widget`。
---- - `widgetGetFocus`：参数 `widgetGetFocus`，类型为 `ccui.Widget`。
+--- - `widgetLostFocus`：失去焦点的控件。
+--- - `widgetGetFocus`：获得焦点的控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param widgetLostFocus ccui.Widget 参数 `widgetLostFocus`，类型为 `ccui.Widget`。
----@param widgetGetFocus ccui.Widget 参数 `widgetGetFocus`，类型为 `ccui.Widget`。
+---@param widgetLostFocus ccui.Widget 失去焦点的控件。
+---@param widgetGetFocus ccui.Widget 获得焦点的控件。
 ---@return self 当前对象，便于链式调用。
 function Widget:onFocusChange(widgetLostFocus, widgetGetFocus) end
 
---- 获取 `ccui.Widget:getTouchMovePosition` 对应的值。
+--- 获取最近一次触摸移动时的坐标。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：最近一次触摸移动位置。
+---@return vec2_table 最近一次触摸移动位置。
 function Widget:getTouchMovePosition() end
 
---- 获取 `ccui.Widget:getSizeType` 对应的值。
+--- 获取控件的尺寸类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：控件尺寸类型枚举值。
+---@return integer 控件尺寸类型。
 function Widget:getSizeType() end
 
---- 获取 `ccui.Widget:getCallbackType` 对应的值。
+--- 获取控件在 Cocos Studio 中使用的回调类型。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：Cocos Studio 中配置的回调类型。
+---@return string Cocos Studio 中配置的回调类型。
 function Widget:getCallbackType() end
 
---- 获取 `ccui.Widget:getTouchEndPosition` 对应的值。
+--- 获取最近一次触摸结束时的坐标。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：最近一次触摸结束位置。
+---@return vec2_table 最近一次触摸结束位置。
 function Widget:getTouchEndPosition() end
 
---- 获取 `ccui.Widget:getPositionPercent` 对应的值。
+--- 获取控件相对于父容器的位置百分比。
 ---
 --- 返回说明：
---- - `vec2_table`：获取到的 Lua 表数据。
----@return vec2_table 获取到的 Lua 表数据。
+--- - `vec2_table`：控件相对于父容器的位置百分比。
+---@return vec2_table 控件相对于父容器的位置百分比。
 function Widget:getPositionPercent() end
 
---- 调用 `ccui.Widget:propagateTouchEvent`。
+--- 将触摸事件传播给父控件处理。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `integer`。
---- - `sender`：参数 `sender`，类型为 `ccui.Widget`。
---- - `touch`：参数 `touch`，类型为 `cc.Touch`。
+--- - `sender`：触发传播的子控件。
+--- - `touch`：触摸对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param event integer 事件对象。类型为 `integer`。
----@param sender ccui.Widget 参数 `sender`，类型为 `ccui.Widget`。
----@param touch cc.Touch 参数 `touch`，类型为 `cc.Touch`。
+---@param sender ccui.Widget 触发传播的子控件。
+---@param touch cc.Touch 触摸对象。
 ---@return self 当前对象，便于链式调用。
 function Widget:propagateTouchEvent(event, sender, touch) end
 
---- 判断 `ccui.Widget:isFlippedX` 对应状态是否成立。
+--- 判断控件是否水平翻转。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否水平翻转。
+---@return boolean 控件是否水平翻转。
 function Widget:isFlippedX() end
 
---- 判断 `ccui.Widget:isFlippedY` 对应状态是否成立。
+--- 判断控件是否垂直翻转。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：控件是否垂直翻转。
+---@return boolean 控件是否垂直翻转。
 function Widget:isFlippedY() end
 
---- 判断 `ccui.Widget:isClippingParentContainsPoint` 对应状态是否成立。
+--- 判断指定点是否位于裁剪父控件区域内。
 ---
 --- 参数说明：
---- - `pt`：参数 `pt`，类型为 `vec2_table`。
+--- - `pt`：待检测的控件坐标点。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@param pt vec2_table 参数 `pt`，类型为 `vec2_table`。
----@return boolean 状态判断结果。
+--- - `boolean`：该点是否位于裁剪父控件区域内。
+---@param pt vec2_table 待检测的控件坐标点。
+---@return boolean 该点是否位于裁剪父控件区域内。
 function Widget:isClippingParentContainsPoint(pt) end
 
---- 设置 `ccui.Widget:setSizeType` 对应的值。
+--- 设置控件的尺寸类型（绝对尺寸或百分比尺寸）。
 ---
 --- 参数说明：
 --- - `type`：类型标识。类型为 `integer`。
@@ -648,51 +648,51 @@ function Widget:isClippingParentContainsPoint(pt) end
 ---@return self 当前对象，便于链式调用。
 function Widget:setSizeType(type) end
 
---- 调用 `ccui.Widget:interceptTouchEvent`。
+--- 截获子控件传来的触摸事件。
 ---
 --- 参数说明：
 --- - `event`：事件对象。类型为 `integer`。
---- - `sender`：参数 `sender`，类型为 `ccui.Widget`。
---- - `touch`：参数 `touch`，类型为 `cc.Touch`。
+--- - `sender`：发送触摸事件的子控件。
+--- - `touch`：触摸对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@param event integer 事件对象。类型为 `integer`。
----@param sender ccui.Widget 参数 `sender`，类型为 `ccui.Widget`。
----@param touch cc.Touch 参数 `touch`，类型为 `cc.Touch`。
+---@param sender ccui.Widget 发送触摸事件的子控件。
+---@param touch cc.Touch 触摸对象。
 ---@return self 当前对象，便于链式调用。
 function Widget:interceptTouchEvent(event, sender, touch) end
 
---- 设置 `ccui.Widget:setBright` 对应的值。
+--- 设置控件是否处于明亮状态。
 ---
 --- 参数说明：
---- - `bright`：参数 `bright`，类型为 `boolean`。
+--- - `bright`：是否将控件设置为明亮状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param bright boolean 参数 `bright`，类型为 `boolean`。
+---@param bright boolean 是否设置为明亮状态。
 ---@return self 当前对象，便于链式调用。
 function Widget:setBright(bright) end
 
---- 设置 `ccui.Widget:setCallbackType` 对应的值。
+--- 设置控件在 Cocos Studio 中使用的回调类型。
 ---
 --- 参数说明：
---- - `callbackType`：参数 `callbackType`，类型为 `string`。
+--- - `callbackType`：Cocos Studio 中配置的回调类型。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param callbackType string 参数 `callbackType`，类型为 `string`。
+---@param callbackType string Cocos Studio 中配置的回调类型。
 ---@return self 当前对象，便于链式调用。
 function Widget:setCallbackType(callbackType) end
 
---- 判断 `ccui.Widget:isSwallowTouches` 对应状态是否成立。
+--- 判断控件是否吞噬触摸事件。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：该点是否位于裁剪父控件区域内。
+---@return boolean 该点是否位于裁剪父控件区域内。
 function Widget:isSwallowTouches() end
 
---- 调用 `ccui.Widget:enableDpadNavigation`。
+--- 全局启用或禁用方向键焦点导航。
 ---
 --- 参数说明：
 --- - `enable`：是否启用。类型为 `boolean`。
@@ -703,35 +703,35 @@ function Widget:isSwallowTouches() end
 ---@return self 当前对象，便于链式调用。
 function Widget:enableDpadNavigation(enable) end
 
---- 获取 `ccui.Widget:getCurrentFocusedWidget` 对应的值。
+--- 获取当前拥有焦点的控件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:getCurrentFocusedWidget() end
 
---- 创建 `ccui.Widget:create` 对应的对象。
+--- 创建并返回一个新的控件实例。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Widget:create() end
 
---- 获取 `ccui.Widget:getDescription` 对应的值。
+--- 获取控件的类型描述字符串。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：控件的类型描述字符串。
+---@return string 控件的类型描述字符串。
 function Widget:getDescription() end
 
---- 初始化 `ccui.Widget:init` 对应的对象或状态。
+--- 初始化控件并返回是否成功。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Widget:init() end
 
---- 调用 `ccui.Widget:Widget`。
+--- 调用控件构造函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

@@ -8,33 +8,33 @@
 local EventListenerPhysicsContactWithShapes = {}
 cc.EventListenerPhysicsContactWithShapes = EventListenerPhysicsContactWithShapes
 
---- 调用 `cc.EventListenerPhysicsContactWithShapes:hitTest`。
+--- 判断接触形状是否与监听器指定的两个形状匹配。
 ---
 --- 参数说明：
---- - `shapeA`：参数 `shapeA`，类型为 `cc.PhysicsShape`。
---- - `shapeB`：参数 `shapeB`，类型为 `cc.PhysicsShape`。
+--- - `shapeA`：参与接触的第一个物理形状。
+--- - `shapeB`：参与接触的第二个物理形状。
 ---
 --- 返回说明：
 --- - `boolean`：布尔值。
----@param shapeA cc.PhysicsShape 参数 `shapeA`，类型为 `cc.PhysicsShape`。
----@param shapeB cc.PhysicsShape 参数 `shapeB`，类型为 `cc.PhysicsShape`。
----@return boolean 布尔值。
+---@param shapeA cc.PhysicsShape 参与接触的第一个物理形状。
+---@param shapeB cc.PhysicsShape 参与接触的第二个物理形状。
+---@return boolean 是否匹配指定形状。
 function EventListenerPhysicsContactWithShapes:hitTest(shapeA, shapeB) end
 
---- 创建 `cc.EventListenerPhysicsContactWithShapes:create` 对应的对象。
+--- 创建只监听指定两个物理形状接触的监听器。
 ---
 --- 参数说明：
---- - `shapeA`：参数 `shapeA`，类型为 `cc.PhysicsShape`。
---- - `shapeB`：参数 `shapeB`，类型为 `cc.PhysicsShape`。
+--- - `shapeA`：第一个目标物理形状。
+--- - `shapeB`：第二个目标物理形状。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param shapeA cc.PhysicsShape 参数 `shapeA`，类型为 `cc.PhysicsShape`。
----@param shapeB cc.PhysicsShape 参数 `shapeB`，类型为 `cc.PhysicsShape`。
+---@param shapeA cc.PhysicsShape 第一个目标物理形状。
+---@param shapeB cc.PhysicsShape 第二个目标物理形状。
 ---@return self 当前对象，便于链式调用。
 function EventListenerPhysicsContactWithShapes:create(shapeA, shapeB) end
 
---- 调用 `cc.EventListenerPhysicsContactWithShapes:clone`。
+--- 克隆形状接触监听器及其筛选条件。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

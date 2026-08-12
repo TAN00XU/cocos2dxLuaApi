@@ -7,22 +7,22 @@
 local Helper = {}
 ccui.Helper = Helper
 
---- 获取 `ccui.Helper:getSubStringOfUTF8String` 对应的值。
+--- 按 UTF-8 字符边界截取字符串。
 ---
 --- 参数说明：
---- - `str`：参数 `str`，类型为 `string`。
---- - `start`：参数 `start`，类型为 `integer`。
---- - `length`：参数 `length`，类型为 `integer`。
+--- - `str`：待截取的 UTF-8 字符串。
+--- - `start`：起始字符索引。
+--- - `length`：要截取的字符数量。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@param str string 参数 `str`，类型为 `string`。
----@param start integer 参数 `start`，类型为 `integer`。
----@param length integer 参数 `length`，类型为 `integer`。
----@return string 获取到的 字符串。
+--- - `string`：截取后的 UTF-8 子字符串。
+---@param str string 待截取的 UTF-8 字符串。
+---@param start integer 起始字符索引。
+---@param length integer 要截取的字符数量。
+---@return string 截取后的 UTF-8 子字符串。
 function Helper:getSubStringOfUTF8String(str, start, length) end
 
---- 调用 `ccui.Helper:convertBoundingBoxToScreen`。
+--- 将节点包围盒转换为屏幕坐标矩形。
 ---
 --- 参数说明：
 --- - `node`：节点对象。类型为 `cc.Node`。
@@ -33,76 +33,76 @@ function Helper:getSubStringOfUTF8String(str, start, length) end
 ---@return rect_table Lua 表数据。
 function Helper:convertBoundingBoxToScreen(node) end
 
---- 调用 `ccui.Helper:changeLayoutSystemActiveState`。
+--- 设置全局布局系统是否处于活动状态。
 ---
 --- 参数说明：
---- - `active`：参数 `active`，类型为 `boolean`。
+--- - `active`：是否启用布局系统。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param active boolean 参数 `active`，类型为 `boolean`。
+---@param active boolean 是否启用布局系统。
 ---@return self 当前对象，便于链式调用。
 function Helper:changeLayoutSystemActiveState(active) end
 
---- 调用 `ccui.Helper:seekActionWidgetByActionTag`。
+--- 按动作标签递归查找控件。
 ---
 --- 参数说明：
---- - `root`：参数 `root`，类型为 `ccui.Widget`。
+--- - `root`：开始搜索的根控件。
 --- - `tag`：标签值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `ccui.Widget`：`ccui.Widget` 对象或值。
----@param root ccui.Widget 参数 `root`，类型为 `ccui.Widget`。
+--- - `ccui.Widget`：匹配的控件，不存在时返回 nil。
+---@param root ccui.Widget 开始搜索的根控件。
 ---@param tag integer 标签值。类型为 `integer`。
----@return ccui.Widget `ccui.Widget` 对象或值。
+---@return ccui.Widget 匹配的控件，不存在时返回 nil。
 function Helper:seekActionWidgetByActionTag(root, tag) end
 
---- 调用 `ccui.Helper:seekWidgetByName`。
+--- 按名称递归查找控件。
 ---
 --- 参数说明：
---- - `root`：参数 `root`，类型为 `ccui.Widget`。
+--- - `root`：开始搜索的根控件。
 --- - `name`：名称或标识。类型为 `string`。
 ---
 --- 返回说明：
---- - `ccui.Widget`：`ccui.Widget` 对象或值。
----@param root ccui.Widget 参数 `root`，类型为 `ccui.Widget`。
+--- - `ccui.Widget`：匹配的控件，不存在时返回 nil。
+---@param root ccui.Widget 开始搜索的根控件。
 ---@param name string 名称或标识。类型为 `string`。
----@return ccui.Widget `ccui.Widget` 对象或值。
+---@return ccui.Widget 匹配的控件，不存在时返回 nil。
 function Helper:seekWidgetByName(root, name) end
 
---- 调用 `ccui.Helper:seekWidgetByTag`。
+--- 按标签递归查找控件。
 ---
 --- 参数说明：
---- - `root`：参数 `root`，类型为 `ccui.Widget`。
+--- - `root`：开始搜索的根控件。
 --- - `tag`：标签值。类型为 `integer`。
 ---
 --- 返回说明：
---- - `ccui.Widget`：`ccui.Widget` 对象或值。
----@param root ccui.Widget 参数 `root`，类型为 `ccui.Widget`。
+--- - `ccui.Widget`：匹配的控件，不存在时返回 nil。
+---@param root ccui.Widget 开始搜索的根控件。
 ---@param tag integer 标签值。类型为 `integer`。
----@return ccui.Widget `ccui.Widget` 对象或值。
+---@return ccui.Widget 匹配的控件，不存在时返回 nil。
 function Helper:seekWidgetByTag(root, tag) end
 
---- 调用 `ccui.Helper:restrictCapInsetRect`。
+--- 将九宫格边距限制在纹理尺寸范围内。
 ---
 --- 参数说明：
 --- - `capInsets`：九宫格缩放边距。类型为 `rect_table`。
---- - `textureSize`：参数 `textureSize`，类型为 `size_table`。
+--- - `textureSize`：纹理的宽度和高度。
 ---
 --- 返回说明：
 --- - `rect_table`：Lua 表数据。
 ---@param capInsets rect_table 九宫格缩放边距。类型为 `rect_table`。
----@param textureSize size_table 参数 `textureSize`，类型为 `size_table`。
+---@param textureSize size_table 纹理的宽度和高度。
 ---@return rect_table Lua 表数据。
 function Helper:restrictCapInsetRect(capInsets, textureSize) end
 
---- 调用 `ccui.Helper:doLayout`。
+--- 立即对指定根节点执行布局计算。
 ---
 --- 参数说明：
---- - `rootNode`：参数 `rootNode`，类型为 `cc.Node`。
+--- - `rootNode`：需要重新布局的根节点。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param rootNode cc.Node 参数 `rootNode`，类型为 `cc.Node`。
+---@param rootNode cc.Node 需要重新布局的根节点。
 ---@return self 当前对象，便于链式调用。
 function Helper:doLayout(rootNode) end

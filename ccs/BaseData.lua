@@ -7,29 +7,29 @@
 ---@class ccs.BaseData : cc.Ref
 local BaseData = {}
 ccs.BaseData = BaseData
---- 创建 BaseData 对应的对象。
+--- 构造基础变换数据对象。
 ---@return ccs.BaseData
 function BaseData:new() end
 
---- 获取 `ccs.BaseData:getColor` 对应的值。
+--- 获取基础数据中的颜色。
 ---
 --- 返回说明：
---- - `color4b_table`：获取到的 Lua 表数据。
----@return color4b_table 获取到的 Lua 表数据。
+--- - `color4b_table`：包含红、绿、蓝、透明度分量的颜色表。
+---@return color4b_table 包含红、绿、蓝、透明度分量的颜色表。
 function BaseData:getColor() end
 
---- 设置 `ccs.BaseData:setColor` 对应的值。
+--- 设置基础数据中的颜色。
 ---
 --- 参数说明：
 --- - `color`：颜色值。类型为 `color4b_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param color color4b_table 颜色值。类型为 `color4b_table`。
+---@param color color4b_table 包含红、绿、蓝、透明度分量的颜色表。
 ---@return self 当前对象，便于链式调用。
 function BaseData:setColor(color) end
 
---- 创建 `ccs.BaseData:create` 对应的对象。
+--- 创建基础变换数据对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

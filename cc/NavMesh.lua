@@ -8,104 +8,104 @@
 local NavMesh = {}
 cc.NavMesh = NavMesh
 
---- 移除 `cc.NavMesh:removeNavMeshObstacle` 对应的对象或数据。
+--- 从导航网格中注销一个动态障碍物。
 ---
 --- 参数说明：
---- - `obstacle`：参数 `obstacle`，类型为 `cc.NavMeshObstacle`。
+--- - `obstacle`：要注销的导航网格障碍物。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param obstacle cc.NavMeshObstacle 参数 `obstacle`，类型为 `cc.NavMeshObstacle`。
+---@param obstacle cc.NavMeshObstacle 要注销的导航网格障碍物。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:removeNavMeshObstacle(obstacle) end
 
---- 移除 `cc.NavMesh:removeNavMeshAgent` 对应的对象或数据。
+--- 从导航网格中注销一个寻路代理。
 ---
 --- 参数说明：
---- - `agent`：参数 `agent`，类型为 `cc.NavMeshAgent`。
+--- - `agent`：要注销的导航网格代理。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param agent cc.NavMeshAgent 参数 `agent`，类型为 `cc.NavMeshAgent`。
+---@param agent cc.NavMeshAgent 要注销的导航网格代理。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:removeNavMeshAgent(agent) end
 
---- 更新 `cc.NavMesh:update` 对应的状态。
+--- 按帧推进导航网格代理和障碍物的同步状态。
 ---
 --- 参数说明：
---- - `dt`：帧间隔时间。类型为 `number`。
+--- - `dt`：自上一帧以来经过的时间，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param dt number 帧间隔时间。类型为 `number`。
+---@param dt number 自上一帧以来经过的时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:update(dt) end
 
---- 判断 `cc.NavMesh:isDebugDrawEnabled` 对应状态是否成立。
+--- 判断导航网格调试绘制是否启用。
 ---
 --- 返回说明：
---- - `boolean`：状态判断结果。
----@return boolean 状态判断结果。
+--- - `boolean`：启用调试绘制时返回 `true`。
+---@return boolean 是否启用导航网格调试绘制。
 function NavMesh:isDebugDrawEnabled() end
 
---- 添加 `cc.NavMesh:addNavMeshAgent` 对应的对象或数据。
+--- 将寻路代理注册到导航网格。
 ---
 --- 参数说明：
---- - `agent`：参数 `agent`，类型为 `cc.NavMeshAgent`。
+--- - `agent`：要注册的导航网格代理。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param agent cc.NavMeshAgent 参数 `agent`，类型为 `cc.NavMeshAgent`。
+---@param agent cc.NavMeshAgent 要注册的导航网格代理。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:addNavMeshAgent(agent) end
 
---- 添加 `cc.NavMesh:addNavMeshObstacle` 对应的对象或数据。
+--- 将动态障碍物注册到导航网格。
 ---
 --- 参数说明：
---- - `obstacle`：参数 `obstacle`，类型为 `cc.NavMeshObstacle`。
+--- - `obstacle`：要注册的导航网格障碍物。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param obstacle cc.NavMeshObstacle 参数 `obstacle`，类型为 `cc.NavMeshObstacle`。
+---@param obstacle cc.NavMeshObstacle 要注册的导航网格障碍物。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:addNavMeshObstacle(obstacle) end
 
---- 设置 `cc.NavMesh:setDebugDrawEnable` 对应的值。
+--- 设置导航网格调试几何图形是否可见。
 ---
 --- 参数说明：
---- - `enable`：是否启用。类型为 `boolean`。
+--- - `enable`：是否绘制导航多边形、代理和障碍物调试信息。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param enable boolean 是否启用。类型为 `boolean`。
+---@param enable boolean 是否绘制导航多边形、代理和障碍物调试信息。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:setDebugDrawEnable(enable) end
 
---- 调用 `cc.NavMesh:debugDraw`。
+--- 向渲染器提交导航网格调试几何图形。
 ---
 --- 参数说明：
---- - `renderer`：参数 `renderer`，类型为 `cc.Renderer`。
+--- - `renderer`：用于提交调试绘制命令的渲染器。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param renderer cc.Renderer 参数 `renderer`，类型为 `cc.Renderer`。
+---@param renderer cc.Renderer 用于提交调试绘制命令的渲染器。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:debugDraw(renderer) end
 
---- 创建 `cc.NavMesh:create` 对应的对象。
+--- 从导航网格数据文件和几何数据文件创建导航网格。
 ---
 --- 参数说明：
---- - `navFilePath`：参数 `navFilePath`，类型为 `string`。
---- - `geomFilePath`：参数 `geomFilePath`，类型为 `string`。
+--- - `navFilePath`：烘焙后的导航网格数据文件路径。
+--- - `geomFilePath`：用于调试或构建关联的场景几何数据文件路径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param navFilePath string 参数 `navFilePath`，类型为 `string`。
----@param geomFilePath string 参数 `geomFilePath`，类型为 `string`。
+---@param navFilePath string 烘焙后的导航网格数据文件路径。
+---@param geomFilePath string 用于关联导航网格的场景几何数据文件路径。
 ---@return self 当前对象，便于链式调用。
 function NavMesh:create(navFilePath, geomFilePath) end
 
---- 调用 `cc.NavMesh:NavMesh`。
+--- 构造空的导航网格对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

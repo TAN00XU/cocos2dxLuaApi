@@ -8,7 +8,7 @@
 local Show = {}
 cc.Show = Show
 
---- 创建 `cc.Show:create` 对应的对象。
+--- 创建将目标节点显示的瞬时动作。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
@@ -22,22 +22,22 @@ function Show:create() end
 ---@return self 当前对象，便于链式调用。
 function Show:clone() end
 
---- 更新 `cc.Show:update` 对应的状态。
+--- 执行显示动作；瞬时动作不使用进度值。
 ---
 --- 参数说明：
---- - `time`：时间值。类型为 `number`。
+--- - `time`：动作归一化进度参数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param time number 时间值。类型为 `number`。
+---@param time number 动作归一化进度参数。
 ---@return self 当前对象，便于链式调用。
 function Show:update(time) end
 
---- 调用 `cc.Show:reverse`。
+--- 获取显示动作的反向动作，即隐藏动作。
 ---
 --- 返回说明：
---- - `cc.ActionInstant`：`cc.ActionInstant` 对象或值。
----@return cc.ActionInstant `cc.ActionInstant` 对象或值。
+--- - `cc.ActionInstant`：显示动作副本。
+---@return cc.ActionInstant 显示动作副本。
 function Show:reverse() end
 
 --- 调用 `cc.Show:Show`。

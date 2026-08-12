@@ -8,67 +8,67 @@
 local Sprite3DMaterial = {}
 cc.Sprite3DMaterial = Sprite3DMaterial
 
---- 获取 `cc.Sprite3DMaterial:getMaterialType` 对应的值。
+--- 获取此 3D 精灵材质使用的内置材质类型。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：内置材质类型枚举值。
+---@return integer 内置材质类型枚举值。
 function Sprite3DMaterial:getMaterialType() end
 
---- 创建 `cc.Sprite3DMaterial:createWithFilename` 对应的对象。
+--- 从材质配置文件创建 3D 精灵材质。
 ---
 --- 参数说明：
---- - `path`：路径。类型为 `string`。
+--- - `path`：材质配置文件路径。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param path string 路径。类型为 `string`。
+---@param path string 材质配置文件路径。
 ---@return self 当前对象，便于链式调用。
 function Sprite3DMaterial:createWithFilename(path) end
 
---- 调用 `cc.Sprite3DMaterial:releaseCachedMaterial`。
+--- 释放从材质配置文件缓存的全部 3D 精灵材质。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite3DMaterial:releaseCachedMaterial() end
 
---- 创建 `cc.Sprite3DMaterial:createBuiltInMaterial` 对应的对象。
+--- 创建指定类型的内置 3D 精灵材质。
 ---
 --- 参数说明：
---- - `type`：类型标识。类型为 `integer`。
---- - `skinned`：参数 `skinned`，类型为 `boolean`。
+--- - `type`：内置材质类型枚举值。
+--- - `skinned`：是否创建支持骨骼蒙皮的材质变体。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(): self
 ---@overload fun(type: integer, skinned: boolean): self
----@param type? integer 类型标识。类型为 `integer`。
----@param skinned? boolean 参数 `skinned`，类型为 `boolean`。
+---@param type? integer 内置材质类型枚举值。
+---@param skinned? boolean 是否创建支持骨骼蒙皮的材质变体。
 ---@return self 当前对象，便于链式调用。
 function Sprite3DMaterial:createBuiltInMaterial(type, skinned) end
 
---- 调用 `cc.Sprite3DMaterial:releaseBuiltInMaterial`。
+--- 释放缓存的全部内置 3D 精灵材质。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Sprite3DMaterial:releaseBuiltInMaterial() end
 
---- 创建 `cc.Sprite3DMaterial:createWithProgramState` 对应的对象。
+--- 使用指定后端程序状态创建 3D 精灵材质。
 ---
 --- 参数说明：
---- - `programState`：参数 `programState`，类型为 `cc.backend.ProgramState`。
+--- - `programState`：材质渲染时使用的着色器程序状态。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param programState cc.backend.ProgramState 参数 `programState`，类型为 `cc.backend.ProgramState`。
+---@param programState cc.backend.ProgramState 材质渲染时使用的着色器程序状态。
 ---@return self 当前对象，便于链式调用。
 function Sprite3DMaterial:createWithProgramState(programState) end
 
---- 调用 `cc.Sprite3DMaterial:clone`。
+--- 克隆此材质及其渲染状态。
 ---
 --- 返回说明：
---- - `cc.Material`：`cc.Material` 对象或值。
----@return cc.Material `cc.Material` 对象或值。
+--- - `cc.Material`：克隆得到的独立材质对象。
+---@return cc.Material 克隆得到的独立材质对象。
 function Sprite3DMaterial:clone() end

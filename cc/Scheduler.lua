@@ -8,32 +8,32 @@
 local Scheduler = {}
 cc.Scheduler = Scheduler
 
---- 设置 `cc.Scheduler:setTimeScale` 对应的值。
+--- 设置调度器的全局时间缩放倍率。
 ---
 --- 参数说明：
---- - `timeScale`：参数 `timeScale`，类型为 `number`。
+--- - `timeScale`：时间缩放倍率，1 表示正常速度。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param timeScale number 参数 `timeScale`，类型为 `number`。
+---@param timeScale number 时间缩放倍率，1 表示正常速度。
 ---@return self 当前对象，便于链式调用。
 function Scheduler:setTimeScale(timeScale) end
 
---- 移除 `cc.Scheduler:removeAllFunctionsToBePerformedInCocosThread` 对应的对象或数据。
+--- 移除所有等待在 Cocos 主线程执行的函数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function Scheduler:removeAllFunctionsToBePerformedInCocosThread() end
 
---- 获取 `cc.Scheduler:getTimeScale` 对应的值。
+--- 获取调度器的全局时间缩放倍率。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：时间缩放倍率，1 表示正常速度。
+---@return number 时间缩放倍率，1 表示正常速度。
 function Scheduler:getTimeScale() end
 
---- 调用 `cc.Scheduler:Scheduler`。
+--- 初始化调度器对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。

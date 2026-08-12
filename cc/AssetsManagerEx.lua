@@ -8,117 +8,117 @@
 local AssetsManagerEx = {}
 cc.AssetsManagerEx = AssetsManagerEx
 
---- 获取 `cc.AssetsManagerEx:getState` 对应的值。
+--- 获取热更新管理器当前状态枚举值。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：热更新状态枚举值。
+---@return integer 热更新状态枚举值。
 function AssetsManagerEx:getState() end
 
---- 获取 `cc.AssetsManagerEx:getMaxConcurrentTask` 对应的值。
+--- 获取同时执行的最大下载任务数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：最大并发下载任务数。
+---@return integer 最大并发下载任务数。
 function AssetsManagerEx:getMaxConcurrentTask() end
 
---- 调用 `cc.AssetsManagerEx:checkUpdate`。
+--- 检查远程清单并开始异步更新流程。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:checkUpdate() end
 
---- 设置 `cc.AssetsManagerEx:setVerifyCallback` 对应的值。
+--- 设置资源文件完整性校验回调。
 ---
 --- 参数说明：
---- - `callback`：回调函数。类型为 `fun(...): any`。
+--- - `callback`：接收资源路径并返回校验结果的回调。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param callback fun(...): any 回调函数。类型为 `fun(...): any`。
+---@param callback fun(...): any 接收资源路径并返回校验结果的回调。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:setVerifyCallback(callback) end
 
---- 获取 `cc.AssetsManagerEx:getStoragePath` 对应的值。
+--- 获取热更新资源本地存储目录。
 ---
 --- 返回说明：
---- - `string`：获取到的 字符串。
----@return string 获取到的 字符串。
+--- - `string`：热更新资源本地存储目录。
+---@return string 热更新资源本地存储目录。
 function AssetsManagerEx:getStoragePath() end
 
---- 更新 `cc.AssetsManagerEx:update` 对应的状态。
+--- 开始执行清单中的资源更新任务。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:update() end
 
---- 设置 `cc.AssetsManagerEx:setVersionCompareHandle` 对应的值。
+--- 设置版本字符串比较回调。
 ---
 --- 参数说明：
---- - `handle`：参数 `handle`，类型为 `fun(...): any`。
+--- - `handle`：比较本地版本与远程版本的回调。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param handle fun(...): any 参数 `handle`，类型为 `fun(...): any`。
+---@param handle fun(...): any 比较本地版本与远程版本的回调。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:setVersionCompareHandle(handle) end
 
---- 设置 `cc.AssetsManagerEx:setMaxConcurrentTask` 对应的值。
+--- 设置同时执行的最大下载任务数。
 ---
 --- 参数说明：
---- - `max`：参数 `max`，类型为 `integer`。
+--- - `max`：最大并发下载任务数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param max integer 参数 `max`，类型为 `integer`。
+---@param max integer 最大并发下载任务数。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:setMaxConcurrentTask(max) end
 
---- 获取 `cc.AssetsManagerEx:getLocalManifest` 对应的值。
+--- 获取本地资源清单对象。
 ---
 --- 返回说明：
---- - `cc.Manifest`：获取到的 `cc.Manifest` 对象或值。
----@return cc.Manifest 获取到的 `cc.Manifest` 对象或值。
+--- - `cc.Manifest`：本地资源清单。
+---@return cc.Manifest 本地资源清单。
 function AssetsManagerEx:getLocalManifest() end
 
---- 获取 `cc.AssetsManagerEx:getRemoteManifest` 对应的值。
+--- 获取远程资源清单对象。
 ---
 --- 返回说明：
---- - `cc.Manifest`：获取到的 `cc.Manifest` 对象或值。
----@return cc.Manifest 获取到的 `cc.Manifest` 对象或值。
+--- - `cc.Manifest`：远程资源清单。
+---@return cc.Manifest 远程资源清单。
 function AssetsManagerEx:getRemoteManifest() end
 
---- 调用 `cc.AssetsManagerEx:downloadFailedAssets`。
+--- 重新下载上次更新失败的资源。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:downloadFailedAssets() end
 
---- 创建 `cc.AssetsManagerEx:create` 对应的对象。
+--- 根据远程清单 URL 和本地目录创建热更新管理器。
 ---
 --- 参数说明：
---- - `manifestUrl`：参数 `manifestUrl`，类型为 `string`。
---- - `storagePath`：参数 `storagePath`，类型为 `string`。
+--- - `manifestUrl`：远程资源清单 URL。
+--- - `storagePath`：资源本地存储目录。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param manifestUrl string 参数 `manifestUrl`，类型为 `string`。
----@param storagePath string 参数 `storagePath`，类型为 `string`。
+---@param manifestUrl string 远程资源清单 URL。
+---@param storagePath string 资源本地存储目录。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:create(manifestUrl, storagePath) end
 
---- 调用 `cc.AssetsManagerEx:AssetsManagerEx`。
+--- 初始化热更新管理器实例。
 ---
 --- 参数说明：
---- - `manifestUrl`：参数 `manifestUrl`，类型为 `string`。
---- - `storagePath`：参数 `storagePath`，类型为 `string`。
+--- - `manifestUrl`：远程资源清单 URL。
+--- - `storagePath`：资源本地存储目录。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param manifestUrl string 参数 `manifestUrl`，类型为 `string`。
----@param storagePath string 参数 `storagePath`，类型为 `string`。
+---@param manifestUrl string 远程资源清单 URL。
+---@param storagePath string 资源本地存储目录。
 ---@return self 当前对象，便于链式调用。
 function AssetsManagerEx:AssetsManagerEx(manifestUrl, storagePath) end

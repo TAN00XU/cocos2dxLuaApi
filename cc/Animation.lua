@@ -8,14 +8,14 @@
 local Animation = {}
 cc.Animation = Animation
 
---- 获取 `cc.Animation:getLoops` 对应的值。
+--- 获取动画循环次数。
 ---
 --- 返回说明：
---- - `integer`：获取到的 整数值。
----@return integer 获取到的 整数值。
+--- - `integer`：动画循环次数。
+---@return integer 动画循环次数。
 function Animation:getLoops() end
 
---- 添加 `cc.Animation:addSpriteFrame` 对应的对象或数据。
+--- 向动画末尾添加精灵帧。
 ---
 --- 参数说明：
 --- - `frame`：帧对象。类型为 `cc.SpriteFrame`。
@@ -26,14 +26,14 @@ function Animation:getLoops() end
 ---@return self 当前对象，便于链式调用。
 function Animation:addSpriteFrame(frame) end
 
---- 设置 `cc.Animation:setRestoreOriginalFrame` 对应的值。
+--- 设置动画结束时是否恢复首帧。
 ---
 --- 参数说明：
---- - `restoreOriginalFrame`：参数 `restoreOriginalFrame`，类型为 `boolean`。
+--- - `restoreOriginalFrame`：是否恢复动画开始前的帧。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param restoreOriginalFrame boolean 参数 `restoreOriginalFrame`，类型为 `boolean`。
+---@param restoreOriginalFrame boolean 是否恢复动画开始前的帧。
 ---@return self 当前对象，便于链式调用。
 function Animation:setRestoreOriginalFrame(restoreOriginalFrame) end
 
@@ -44,76 +44,76 @@ function Animation:setRestoreOriginalFrame(restoreOriginalFrame) end
 ---@return self 当前对象，便于链式调用。
 function Animation:clone() end
 
---- 获取 `cc.Animation:getDuration` 对应的值。
+--- 获取动画总持续时间。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：动画总持续时间，单位为秒。
+---@return number 动画总持续时间，单位为秒。
 function Animation:getDuration() end
 
---- 初始化 `cc.Animation:initWithAnimationFrames` 对应的对象或状态。
+--- 使用动画帧对象数组初始化动画。
 ---
 --- 参数说明：
---- - `arrayOfAnimationFrameNames`：参数 `arrayOfAnimationFrameNames`，类型为 `array_table`。
---- - `delayPerUnit`：参数 `delayPerUnit`，类型为 `number`。
---- - `loops`：参数 `loops`，类型为 `integer`。
+--- - `arrayOfAnimationFrameNames`：动画帧对象数组。
+--- - `delayPerUnit`：每个时间单位的持续时间，单位为秒。
+--- - `loops`：循环次数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param arrayOfAnimationFrameNames array_table 参数 `arrayOfAnimationFrameNames`，类型为 `array_table`。
----@param delayPerUnit number 参数 `delayPerUnit`，类型为 `number`。
----@param loops integer 参数 `loops`，类型为 `integer`。
+---@param arrayOfAnimationFrameNames array_table 动画帧对象数组。
+---@param delayPerUnit number 每个时间单位的持续时间，单位为秒。
+---@param loops integer 循环次数。
 ---@return boolean 初始化是否成功。
 function Animation:initWithAnimationFrames(arrayOfAnimationFrameNames, delayPerUnit, loops) end
 
---- 初始化 `cc.Animation:init` 对应的对象或状态。
+--- 初始化空动画对象。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
 ---@return boolean 初始化是否成功。
 function Animation:init() end
 
---- 设置 `cc.Animation:setFrames` 对应的值。
+--- 设置动画帧数组。
 ---
 --- 参数说明：
---- - `frames`：参数 `frames`，类型为 `array_table`。
+--- - `frames`：动画帧对象数组。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param frames array_table 参数 `frames`，类型为 `array_table`。
+---@param frames array_table 动画帧对象数组。
 ---@return self 当前对象，便于链式调用。
 function Animation:setFrames(frames) end
 
---- 获取 `cc.Animation:getFrames` 对应的值。
+--- 获取动画帧数组。
 ---
 --- 返回说明：
---- - `array_table`：获取到的 Lua 表数据。
----@return array_table 获取到的 Lua 表数据。
+--- - `array_table`：动画帧对象数组。
+---@return array_table 动画帧对象数组。
 function Animation:getFrames() end
 
---- 设置 `cc.Animation:setLoops` 对应的值。
+--- 设置动画循环次数。
 ---
 --- 参数说明：
---- - `loops`：参数 `loops`，类型为 `integer`。
+--- - `loops`：循环次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param loops integer 参数 `loops`，类型为 `integer`。
+---@param loops integer 循环次数。
 ---@return self 当前对象，便于链式调用。
 function Animation:setLoops(loops) end
 
---- 设置 `cc.Animation:setDelayPerUnit` 对应的值。
+--- 设置每个时间单位的持续时间。
 ---
 --- 参数说明：
---- - `delayPerUnit`：参数 `delayPerUnit`，类型为 `number`。
+--- - `delayPerUnit`：每个时间单位的持续时间，单位为秒。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param delayPerUnit number 参数 `delayPerUnit`，类型为 `number`。
+---@param delayPerUnit number 每个时间单位的持续时间，单位为秒。
 ---@return self 当前对象，便于链式调用。
 function Animation:setDelayPerUnit(delayPerUnit) end
 
---- 添加 `cc.Animation:addSpriteFrameWithFile` 对应的对象或数据。
+--- 从图片文件创建精灵帧并追加到动画。
 ---
 --- 参数说明：
 --- - `filename`：文件名或文件路径。类型为 `string`。
@@ -124,88 +124,88 @@ function Animation:setDelayPerUnit(delayPerUnit) end
 ---@return self 当前对象，便于链式调用。
 function Animation:addSpriteFrameWithFile(filename) end
 
---- 获取 `cc.Animation:getTotalDelayUnits` 对应的值。
+--- 获取所有动画帧的总时间单位数。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：所有动画帧的总时间单位数。
+---@return number 所有动画帧的总时间单位数。
 function Animation:getTotalDelayUnits() end
 
---- 获取 `cc.Animation:getDelayPerUnit` 对应的值。
+--- 获取每个时间单位的持续时间。
 ---
 --- 返回说明：
---- - `number`：获取到的 数值。
----@return number 获取到的 数值。
+--- - `number`：每个时间单位的持续时间，单位为秒。
+---@return number 每个时间单位的持续时间，单位为秒。
 function Animation:getDelayPerUnit() end
 
---- 初始化 `cc.Animation:initWithSpriteFrames` 对应的对象或状态。
+--- 使用精灵帧数组初始化动画。
 ---
 --- 参数说明：
---- - `arrayOfSpriteFrameNames`：参数 `arrayOfSpriteFrameNames`，类型为 `array_table`。
---- - `delay`：参数 `delay`，类型为 `number`。
---- - `loops`：参数 `loops`，类型为 `integer`。
+--- - `arrayOfSpriteFrameNames`：精灵帧对象数组。
+--- - `delay`：每个时间单位的持续时间，单位为秒。
+--- - `loops`：循环次数。
 ---
 --- 返回说明：
 --- - `boolean`：初始化是否成功。
----@param arrayOfSpriteFrameNames array_table 参数 `arrayOfSpriteFrameNames`，类型为 `array_table`。
----@param delay number 参数 `delay`，类型为 `number`。
----@param loops integer 参数 `loops`，类型为 `integer`。
+---@param arrayOfSpriteFrameNames array_table 精灵帧对象数组。
+---@param delay number 每个时间单位的持续时间，单位为秒。
+---@param loops integer 循环次数。
 ---@return boolean 初始化是否成功。
 function Animation:initWithSpriteFrames(arrayOfSpriteFrameNames, delay, loops) end
 
---- 获取 `cc.Animation:getRestoreOriginalFrame` 对应的值。
+--- 获取动画结束时是否恢复首帧的设置。
 ---
 --- 返回说明：
---- - `boolean`：获取到的 布尔值。
----@return boolean 获取到的 布尔值。
+--- - `boolean`：是否恢复首帧。
+---@return boolean 是否恢复首帧。
 function Animation:getRestoreOriginalFrame() end
 
---- 添加 `cc.Animation:addSpriteFrameWithTexture` 对应的对象或数据。
+--- 从纹理和矩形区域创建精灵帧并追加到动画。
 ---
 --- 参数说明：
---- - `pobTexture`：参数 `pobTexture`，类型为 `cc.Texture2D`。
+--- - `pobTexture`：用于创建精灵帧的纹理对象。
 --- - `rect`：矩形区域。类型为 `rect_table`。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param pobTexture cc.Texture2D 参数 `pobTexture`，类型为 `cc.Texture2D`。
+---@param pobTexture cc.Texture2D 用于创建精灵帧的纹理对象。
 ---@param rect rect_table 矩形区域。类型为 `rect_table`。
 ---@return self 当前对象，便于链式调用。
 function Animation:addSpriteFrameWithTexture(pobTexture, rect) end
 
---- 创建 `cc.Animation:create` 对应的对象。
+--- 创建动画对象。
 ---
 --- 参数说明：
---- - `arrayOfAnimationFrameNames`：参数 `arrayOfAnimationFrameNames`，类型为 `array_table`。
---- - `delayPerUnit`：参数 `delayPerUnit`，类型为 `number`。
---- - `loops`：参数 `loops`，类型为 `integer`。
+--- - `arrayOfAnimationFrameNames`：动画帧对象数组。
+--- - `delayPerUnit`：每个时间单位的持续时间，单位为秒。
+--- - `loops`：循环次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
 ---@overload fun(arrayOfAnimationFrameNames: array_table, delayPerUnit: number, loops: integer): self
 ---@overload fun(): self
----@param arrayOfAnimationFrameNames? array_table 参数 `arrayOfAnimationFrameNames`，类型为 `array_table`。
----@param delayPerUnit? number 参数 `delayPerUnit`，类型为 `number`。
----@param loops? integer 参数 `loops`，类型为 `integer`。
+---@param arrayOfAnimationFrameNames? array_table 动画帧对象数组。
+---@param delayPerUnit? number 每个时间单位的持续时间，单位为秒。
+---@param loops? integer 循环次数。
 ---@return self 当前对象，便于链式调用。
 function Animation:create(arrayOfAnimationFrameNames, delayPerUnit, loops) end
 
---- 创建 `cc.Animation:createWithSpriteFrames` 对应的对象。
+--- 使用精灵帧数组创建动画对象。
 ---
 --- 参数说明：
---- - `arrayOfSpriteFrameNames`：参数 `arrayOfSpriteFrameNames`，类型为 `array_table`。
---- - `delay`：参数 `delay`，类型为 `number`。
---- - `loops`：参数 `loops`，类型为 `integer`。
+--- - `arrayOfSpriteFrameNames`：精灵帧对象数组。
+--- - `delay`：每个时间单位的持续时间，单位为秒。
+--- - `loops`：循环次数。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
----@param arrayOfSpriteFrameNames array_table 参数 `arrayOfSpriteFrameNames`，类型为 `array_table`。
----@param delay number 参数 `delay`，类型为 `number`。
----@param loops integer 参数 `loops`，类型为 `integer`。
+---@param arrayOfSpriteFrameNames array_table 精灵帧对象数组。
+---@param delay number 每个时间单位的持续时间，单位为秒。
+---@param loops integer 循环次数。
 ---@return self 当前对象，便于链式调用。
 function Animation:createWithSpriteFrames(arrayOfSpriteFrameNames, delay, loops) end
 
---- 调用 `cc.Animation:Animation`。
+--- 构造动画对象。
 ---
 --- 返回说明：
 --- - `self`：当前对象，便于链式调用。
